@@ -15,7 +15,7 @@ npm ci
 npm run dev
 ```
 
-打开终端输出的本地地址。配置对话时，把 `.env.example` 复制为 `.env.local` 并填写服务端 `DEEPSEEK_API_KEY`，可选 `DEEPSEEK_MODEL`。未配置时，对话页明确提示服务尚未连接，资料阅读正常使用。实际环境文件全部忽略，不将密钥随源码提交或打包到公开资源。
+打开终端输出的本地地址。配置对话时，把 `.env.example` 复制为 `.env.local` 并填写服务端 `DEEPSEEK_API_KEY`，可选 `DEEPSEEK_BASE_URL` 和 `DEEPSEEK_MODEL`，默认使用官方接口的 `deepseek-flash`。本机也可让忽略的 `.env.local` 链接到已有的私密 DeepSeek 配置，仅复用该服务的三个配置项；部署平台独立配置服务端变量。对话使用非思考模式和 JSON 输出，来源由服务端核验后返回。未配置时，对话页明确提示服务尚未连接，资料阅读正常使用。实际环境文件全部忽略，不将密钥随源码提交或打包到公开资源。
 
 ## 内容与蒸馏
 
