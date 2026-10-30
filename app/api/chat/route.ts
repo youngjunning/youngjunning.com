@@ -5,7 +5,15 @@ export const runtime = 'nodejs';
 const usage = new Map<string, { time: number; count: number }>();
 export async function POST(request: Request) {
   const origin = request.headers.get('origin');
-  if (origin && origin !== new URL(request.url).origin) return Response.json({ error: '请从本站发起对话。' }, { status: 403 });
+  let sameSite = !origin;
+  if (origin) {
+    try {
+      const source = new URL(origin);
+      const host = request.headers.get('x-forwarded-host')?.split(',')[0].trim() || request.headers.get('host') || new URL(request.url).host;
+      sameSite = ['http:', 'https:'].includes(source.protocol) && source.host === host;
+    } catch { sameSite = false; }
+  }
+  if (!sameSite) return Response.json({ error: '请从本站发起对话。' }, { status: 403 });
   if (!process.env.DEEPSEEK_API_KEY) return Response.json({ error: '数字分身暂未连接模型服务。公开记录和文章仍可直接阅读。' }, { status: 503 });
   const ip = request.headers.get('x-forwarded-for')?.split(',')[0].trim() || 'local';
   const now = Date.now();
@@ -19,7 +27,7 @@ export async function POST(request: Request) {
     const input = JSON.parse(body);
     if (!Array.isArray(input.messages) || input.messages.length > 12 || input.messages.length === 0 || input.messages.some((m: {role: string; content: string}) => !m || !['user','assistant'].includes(m.role) || typeof m.content !== 'string' || !m.content.trim() || m.content.length > 2000) || input.messages.at(-1).role !== 'user') return Response.json({ error: '请输入有效的问题。' }, { status: 400 });
     const { records, posts } = getContent();
-    const knowledge = [{ id: 'persona', title: '关于俊宁', href: '/', text: persona.bio }, ...records.map(item => ({ id: item.id, title: item.title, href: '/records/' + item.id, text: JSON.stringify(item) })), ...posts.map(post => ({ id: post.id, title: post.title, href: '/blog/' + post.id, text: post.title + '\n' + post.body }))];
+    const knowledge = [{ id: 'persona', title: '关于俊宁', href: '/', text: '自我介绍、姓名、职业背景、最近关注方向：' + persona.bio + ' ' + persona.focus.join('、') }, ...records.map(item => ({ id: item.id, title: item.title, href: '/records/' + item.id, text: JSON.stringify(item) })), ...posts.map(post => ({ id: post.id, title: post.title, href: '/blog/' + post.id, text: post.title + '\n' + post.body }))];
     const sources = selectSources(input.messages.slice(-3).map((m: { content: string }) => m.content).join('\n'), knowledge);
     if (!sources.length) return Response.json({ answer: '当前公开记录中没有足够资料回答这个问题。可以换个问题，或先浏览个人记录和文章。', sources: [] });
     const response = await fetch('https://api.deepseek.com/chat/completions', {
