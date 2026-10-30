@@ -1,6 +1,6 @@
 # 硅基俊宁公开目标
 
-根目录为本文件上一层目录（..）。主体为俊宁（Aaron），站名硅基俊宁，正式域名 youngjunning.com。先读取 AGENTS.md、content/README.md 与 lib/model.mjs。
+根目录为本文件上一层目录（..）。主体为俊宁，站名硅基俊宁，正式域名 youngjunning.com。先读取 AGENTS.md、content/README.md 与 lib/model.mjs。
 
 个人记录写入 content/records.json，version: 2；字段和专有类型与硅基紫升一致。正文/标题/背景映射 text/title/context，类型 experience/project/judgment/change/thought。id 为 16 位小写十六进制稳定 ID，跨目标同步保留原 ID。date 是发生日期，未知为 null，recordedAt 是录入日期。sources.kind 为 statement/archive/article，label 仅保存可公开来源。未知理由写明，未知备选为空数组、结果为 null。修复保留 ID，真实变化新增关联 change。
 

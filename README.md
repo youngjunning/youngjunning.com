@@ -1,6 +1,6 @@
 # 硅基俊宁
 
-俊宁（Aaron）的公开数字分身，正式域名 **youngjunning.com**。记录个人经历、项目参与、判断与变化，独立维护精选文章和收藏。介绍：俊宁（Aaron），阿里高级工程师、AI 开发者，拥有 10 年研发经验，现专注 AI 应用、AI 浏览器、Agent、AI Infra 与软件工程。
+俊宁的公开数字分身，正式域名 **youngjunning.com**。记录个人经历、项目参与、判断与变化，独立维护精选文章和收藏。介绍：俊宁，阿里高级工程师、AI 开发者，拥有 10 年研发经验，现专注 AI 应用、AI 浏览器、Agent、AI Infra 与软件工程。
 
 UI 基于 [Magic UI](https://magicui.design/)，使用适配的 BlurFade 与 BentoGrid，保留来源和 MIT 许可。使用 Next.js、React、Tailwind CSS 与 Motion。
 

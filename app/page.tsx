@@ -7,13 +7,13 @@ import persona from '@/content/persona.json';
 export default function Home() {
   const { records, favorites, posts } = getContent();
   return <>
-    <section className="hero"><BlurFade><div className="intro-label"><span className="status-dot" /> AARON'S DIGITAL SELF <span className="intro-rule" /></div>
+    <section className="hero"><BlurFade><div className="intro-label"><span className="status-dot" /> A DIGITAL SELF <span className="intro-rule" /></div>
       <h1>人的经历，<br />在硅基世界<span className="serif">生长。</span><span className="hero-asterisk">✳</span></h1>
       <div className="hero-bottom"><p>我是俊宁，AI 开发者。<br />这里记录我做过的项目、当时的判断，以及后来的变化。</p><Link href="/chat" className="primary-link">认识另一个我 <ArrowUpRight size={18} /></Link></div>
     </BlurFade></section>
     <div className="section-caption"><span>01 / 认识俊宁</span><span>AN OPEN, EVOLVING PORTRAIT</span></div>
     <BentoGrid>
-      <BentoCard label="ABOUT / 关于" title="俊宁 Aaron" description="阿里高级工程师 · AI 开发者 · 10 年研发经验" href="/records" className="about-card">
+      <BentoCard label="ABOUT / 关于" title="俊宁" description="阿里高级工程师 · AI 开发者 · 10 年研发经验" href="/records" className="about-card">
         <div className="identity-art" aria-hidden="true"><div className="identity-orbit orbit-one" /><div className="identity-orbit orbit-two" /><div className="identity-disc"><Fingerprint size={74} strokeWidth={0.8} /></div><span className="art-coordinate">30° N · ALWAYS BUILDING</span></div>
       </BentoCard>
       <BentoCard label="FOCUS / 正在关注" title="从想法到可用的产品" description="AI 应用、AI 浏览器、Agent、AI Infra 与软件工程。" href="/records" className="focus-card"><div className="focus-cloud" aria-hidden="true"><span>Agent</span><span>AI Infra</span><span className="focus-big">Build with AI<Command size={24} /></span><span>Browser</span><span>Engineering</span></div></BentoCard>
