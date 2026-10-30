@@ -2,6 +2,23 @@
   "version": 2,
   "records": [
     {
+      "id": "b48272e13c0a9fd6",
+      "kind": "judgment",
+      "title": "引擎建设由业务需求牵引",
+      "text": "在制定阶段性工作目标时，我要求引擎建设随具体业务需求发展，不独立立项。跨端执行、通用组件与自进化能力应服务于实际任务。",
+      "context": "2026-10-30 对阶段性技术规划的要求。这是当时的建设原则，不代表相关目标已经完成。",
+      "date": "2026-10-30",
+      "recordedAt": "2026-10-30",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [{"kind": "statement", "label": "本人陈述，2026-10-30，公开摘要。"}],
+      "basis": "本人明确提出引擎因业务而建、自用为本；未进一步说明其他取舍理由。",
+      "alternatives": [],
+      "outcome": null
+    },
+    {
       "id": "c310000000000001",
       "kind": "project",
       "title": "Owlet：从个人需求出发的 macOS 工具",
