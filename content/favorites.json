@@ -2,6 +2,207 @@
   "version": 1,
   "favorites": [
     {
+      "kind": "project",
+      "title": "Cua：Computer Use 执行环境与工具链",
+      "url": "https://github.com/trycua/cua",
+      "summary": "提供桌面执行环境、Cua Driver、Lume、决策模型与评测工具。官方区分各组件许可，Cua Spaces 采用 FSL-1.1-MIT，不能将整个产品一概视为 MIT。",
+      "reason": "作为 Agent 执行环境、登录态迁移与人机共用桌面的研究入口，比较隔离、授权和接管设计；收藏不代表已采用或完成实测。",
+      "tags": [
+        "Agent",
+        "Computer Use",
+        "执行环境",
+        "人机协作"
+      ],
+      "id": "93863398f0fa2a2c",
+      "savedAt": "2026-10-30",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "本人陈述，2026-10-30，公开摘要：主动收藏该资源，用于研究 Agent 执行环境与移动自动化；收藏不表示已采用或完成实测。"
+        },
+        {
+          "label": "2026-10-30 核验官方来源：https://github.com/trycua/cua"
+        }
+      ]
+    },
+    {
+      "kind": "knowledge",
+      "title": "Cua Bench：Computer Use 任务与评测框架",
+      "url": "https://cua.ai/docs/cua-bench",
+      "summary": "提供可验证的 Computer Use 任务、任务变体、执行器、Agent 适配与评分接口，支持编写自定义任务并评估最终状态。",
+      "reason": "为走查任务集、评分器和代码变更后的回归评测提供参考；需要另行构建业务任务与基线，不能将收藏资料等同于已有评测能力。",
+      "tags": [
+        "Agent",
+        "Computer Use",
+        "评测",
+        "回归测试"
+      ],
+      "id": "30b88c96fd2ad602",
+      "savedAt": "2026-10-30",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "本人陈述，2026-10-30，公开摘要：主动收藏该资源，用于研究 Agent 执行环境与移动自动化；收藏不表示已采用或完成实测。"
+        },
+        {
+          "label": "2026-10-30 核验官方来源：https://cua.ai/docs/cua-bench"
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "title": "UFO³：多设备 Agent 编排框架",
+      "url": "https://github.com/microsoft/UFO",
+      "summary": "微软的 UFO³ Galaxy 用 DAG 表达任务依赖，支持结果驱动的任务图调整、设备能力匹配和异步协同；UFO² 可独立使用或作为 Windows 设备 Agent。",
+      "reason": "用于研究跨设备任务拆分、调度、并发安全与渐进迁移，区分执行环境供应和上层任务编排的职责。",
+      "tags": [
+        "Agent",
+        "多设备",
+        "任务编排",
+        "DAG"
+      ],
+      "id": "78cc71039f781c38",
+      "savedAt": "2026-10-30",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "本人陈述，2026-10-30，公开摘要：主动收藏该资源，用于研究 Agent 执行环境与移动自动化；收藏不表示已采用或完成实测。"
+        },
+        {
+          "label": "2026-10-30 核验官方来源：https://github.com/microsoft/UFO"
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "title": "Omarchy：面向 Agent 的 Linux 发行版",
+      "url": "https://omarchy.org/",
+      "summary": "DHH 发起的 Linux 发行版，将默认 Agent 配置、崩溃排查和应用、插件、主题定制纳入系统体验。",
+      "reason": "观察 Agent 如何进入操作系统日常工作流，研究系统集成、故障处理和社区扩展方式；未在本轮安装或验收。",
+      "tags": [
+        "Agent",
+        "Linux",
+        "操作系统",
+        "开发环境"
+      ],
+      "id": "5bb4e2a5478752f8",
+      "savedAt": "2026-10-30",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "本人陈述，2026-10-30，公开摘要：主动收藏该资源，用于研究 Agent 执行环境与移动自动化；收藏不表示已采用或完成实测。"
+        },
+        {
+          "label": "2026-10-30 核验官方来源：https://omarchy.org/"
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "title": "mobile-mcp：跨 iOS 与 Android 的自动化接口",
+      "url": "https://github.com/mobile-next/mobile-mcp",
+      "summary": "为 MCP 客户端提供 iOS、Android 模拟器及真机操作，支持结构化无障碍快照和截图坐标交互；具体目标需满足平台与设备配置条件。",
+      "reason": "作为移动端走查的驱动层候选，与 Android 实例环境分开评估。与 Redroid 的组合仍需 PoC 验证，不能推定已兼容。",
+      "tags": [
+        "MCP",
+        "移动自动化",
+        "Android",
+        "iOS",
+        "体验走查"
+      ],
+      "id": "dc3f9f14d62dc2d9",
+      "savedAt": "2026-10-30",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "本人陈述，2026-10-30，公开摘要：主动收藏该资源，用于研究 Agent 执行环境与移动自动化；收藏不表示已采用或完成实测。"
+        },
+        {
+          "label": "2026-10-30 核验官方来源：https://github.com/mobile-next/mobile-mcp"
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "title": "iphone-use：真实 iPhone 的 Agent 操作工具",
+      "url": "https://github.com/leeguooooo/iphone-use",
+      "summary": "通过 macOS 上的自有 XCTest runner 操作真实 iPhone，提供读屏、点击、输入、滑动与可回放流程。仓库标明 PolyForm Shield 1.0.0，并限制竞争性产品或服务用途。",
+      "reason": "用于比较真机执行、动作结果与流程回放设计；复用代码前需核对适用许可与使用范围，不按宽松开源依赖处理。",
+      "tags": [
+        "Agent",
+        "iOS",
+        "真机自动化",
+        "许可边界"
+      ],
+      "id": "349ec51efde62bcb",
+      "savedAt": "2026-10-30",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "本人陈述，2026-10-30，公开摘要：主动收藏该资源，用于研究 Agent 执行环境与移动自动化；收藏不表示已采用或完成实测。"
+        },
+        {
+          "label": "2026-10-30 核验官方来源：https://github.com/leeguooooo/iphone-use"
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "title": "warmwind：托管云端数字员工",
+      "url": "https://warmwind.com/",
+      "summary": "提供在独立云端桌面中操作应用的 AI worker，强调以视觉交互执行工作流。该描述来自官方产品介绍，本轮未登录或验证实际任务表现。",
+      "reason": "比较托管云端 Agent 的产品形态、环境交付、人机接管与数据边界，作为自建执行环境之外的参考。",
+      "tags": [
+        "Agent",
+        "云端桌面",
+        "数字员工",
+        "托管服务"
+      ],
+      "id": "f9fe5b8db76f3c70",
+      "savedAt": "2026-10-30",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "本人陈述，2026-10-30，公开摘要：主动收藏该资源，用于研究 Agent 执行环境与移动自动化；收藏不表示已采用或完成实测。"
+        },
+        {
+          "label": "2026-10-30 核验官方来源：https://warmwind.com/；官方团队介绍：https://huggingface.co/WarmwindOS"
+        }
+      ]
+    },
+    {
+      "id": "a8153013aad881ee",
+      "kind": "project",
+      "title": "Redroid：Android 容器运行环境",
+      "url": "https://github.com/remote-android/redroid-doc",
+      "summary": "在 Linux 主机上通过容器运行多个 Android 实例，提供 arm64 和 amd64 镜像。官方文档包含部署、显示参数与 Native Bridge 说明。",
+      "reason": "用于比较移动自动化的实例环境、主机要求和跨架构兼容选项。与 mobile-mcp 的组合仍需 PoC 验证，不代表目标 App 已通过兼容性验收。",
+      "tags": [
+        "Android",
+        "执行环境",
+        "容器",
+        "移动自动化"
+      ],
+      "savedAt": "2026-10-30",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "本人陈述，2026-10-30，公开摘要：主动收藏该资源，用于研究 Agent 执行环境与移动自动化；收藏不表示已采用或完成实测。"
+        },
+        {
+          "label": "2026-10-30 核验官方来源：https://github.com/remote-android/redroid-doc"
+        }
+      ]
+    },
+    {
       "id": "e310000000000001",
       "kind": "knowledge",
       "title": "ReAct：推理、行动与环境反馈",
