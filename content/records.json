@@ -1,0 +1,304 @@
+{
+  "version": 2,
+  "records": [
+    {
+      "id": "c310000000000001",
+      "kind": "project",
+      "title": "Owlet：从个人需求出发的 macOS 工具",
+      "text": "我为看清 Claude Code 与 Codex 的使用成本，开发了 macOS 工具 Owlet。它围绕菜单栏、浮动会话面板和历史用量视图组织信息；我负责产品方向、关键取舍和验收，AI 协助实现。",
+      "context": "2026-07-10 的公开文章回顾个人工具的开发动机与分工；确切立项日期未知。这里保留当时的项目自述，不据此推定当前版本、用户规模或上线状态。",
+      "date": null,
+      "recordedAt": "2026-10-30",
+      "visibility": "shared",
+      "articleId": "f7523c8f3399ed39",
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "article",
+          "label": "本人公开文章，原日期 2026-07-10；本条为归纳。 https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/%E6%88%91%E7%94%A8%20Claude%20Code%20%2B%20Codex%20vibe%20%E4%BA%86%E4%B8%80%E4%B8%AA%20macOS%20App%EF%BC%9AOwlet.md#L18-L30",
+          "articleId": "f7523c8f3399ed39"
+        }
+      ],
+      "label": "Owlet",
+      "role": "个人工具开发者，负责产品取舍和验收；参与范围依据本人文章自述。",
+      "tags": [
+        "macOS",
+        "Agent",
+        "可观测性"
+      ],
+      "status": "unknown",
+      "goal": "看清 AI 开发工具的使用量与项目成本。",
+      "outcomes": []
+    },
+    {
+      "id": "c310000000000002",
+      "kind": "judgment",
+      "title": "AI 协作仍需要由人负责选择与验收",
+      "text": "在 Owlet 的开发中，我把系统边界和架构取舍、小范围实现与快速试验分开处理，并由自己决定方向、优先级和验收标准。这个分工是当时项目中的选择，不表示不同工具永远只能承担固定角色。",
+      "context": "根据 Owlet 开发复盘中对 Claude Code、Codex 与本人分工的描述归纳；工具表现属于当时语境。",
+      "date": "2026-07-10",
+      "recordedAt": "2026-10-30",
+      "visibility": "shared",
+      "articleId": "f7523c8f3399ed39",
+      "projectId": "c310000000000001",
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "article",
+          "label": "本人公开文章，原日期 2026-07-10；本条为归纳。 https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/%E6%88%91%E7%94%A8%20Claude%20Code%20%2B%20Codex%20vibe%20%E4%BA%86%E4%B8%80%E4%B8%AA%20macOS%20App%EF%BC%9AOwlet.md#L28-L30",
+          "articleId": "f7523c8f3399ed39"
+        }
+      ],
+      "basis": "项目既需要跨模块理解，也需要快速验证具体改动；关键产品选择和结果验收由本人承担。",
+      "alternatives": [],
+      "outcome": null
+    },
+    {
+      "id": "c310000000000003",
+      "kind": "judgment",
+      "title": "性能优化先减少无效工作，再讨论快了多少",
+      "text": "在 Owlet 的本地数据刷新中，我选择合并短时间内的更新，按菜单栏与仪表盘的实际需要分层计算，并在值发生变化时才发布 UI 状态。刷新期间的最后一次变化必须保留；没有运行时测量，就不宣称 CPU 或耗时改善了某个百分比。",
+      "context": "公开复盘讨论本地日志、SQLite 与多个 SwiftUI 界面共享数据时的重复刷新问题；原文没有给出可复验的性能提升百分比。",
+      "date": "2026-07-13",
+      "recordedAt": "2026-10-30",
+      "visibility": "shared",
+      "articleId": "659fd45b5fca08f1",
+      "projectId": "c310000000000001",
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "article",
+          "label": "本人公开文章，原日期 2026-07-13；本条为归纳。 https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/%E4%BB%8E%E9%AB%98%E9%A2%91%E8%BD%AE%E8%AF%A2%E5%88%B0%E6%8C%89%E9%9C%80%E5%88%B7%E6%96%B0%EF%BC%9A%E6%9C%AC%E5%9C%B0%20Agent%20%E6%95%B0%E6%8D%AE%E9%9D%A2%E7%9A%84%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96.md#L17-L33",
+          "articleId": "659fd45b5fca08f1"
+        }
+      ],
+      "basis": "重复读取、重型查询和无变化状态发布会叠加成本；减少这些工作仍需分别核验行为、数据与运行时表现。",
+      "alternatives": [],
+      "outcome": null
+    },
+    {
+      "id": "c310000000000004",
+      "kind": "project",
+      "title": "better-imagegen：将视觉生成整理成工程流程",
+      "text": "我持续完善 better-imagegen，把视觉资产的类型选择、规格约束、后处理、失败处理和验收写成可复用流程。它服务封面、角色、图标和帧动画等不同交付，不把一张模型生成的图片视为全部工程产物。",
+      "context": "2026-07-15 的公开文章回顾近期实践；项目起始日期未详。这里保留维护方向，不推定当前支持模型或发布状态。",
+      "date": null,
+      "recordedAt": "2026-10-30",
+      "visibility": "shared",
+      "articleId": "510c0b2daf2fa791",
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "article",
+          "label": "本人公开文章，原日期 2026-07-15；本条为归纳。 https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/%E6%88%91%E6%8A%8AAI%E7%94%9F%E5%9B%BE%E5%81%9A%E6%88%90%E4%BA%86%E5%B7%A5%E7%A8%8B%E8%83%BD%E5%8A%9B%EF%BC%9Abetter-imagegen%E7%9A%84%E5%AE%9E%E6%88%98%E4%B8%8E%E5%88%A4%E6%96%AD.md#L17-L25",
+          "articleId": "510c0b2daf2fa791"
+        }
+      ],
+      "label": "better-imagegen",
+      "role": "技能维护与流程设计，依据本人公开文章自述。",
+      "tags": [
+        "视觉资产",
+        "Agent Skill",
+        "工程交付"
+      ],
+      "status": "unknown",
+      "goal": "让生成资产满足实际产品的规格、可追溯和验收需求。",
+      "outcomes": []
+    },
+    {
+      "id": "c310000000000005",
+      "kind": "judgment",
+      "title": "视觉资产按最终使用场景定义交付",
+      "text": "做 AI 视觉资产时，我先确定文件由谁使用，再决定生成与后处理流程。需要准确文字时，用 HTML/CSS 排版；需要同一角色时，优先参考图编辑；图标和帧动画要检查透明通道、循环与实际运行尺寸，不能只验收大图预览。",
+      "context": "从封面、角色、菜单栏动画和 macOS 图标的公开实践中归纳；这些是工作流取舍，不是对当前模型能力的保证。",
+      "date": "2026-07-15",
+      "recordedAt": "2026-10-30",
+      "visibility": "shared",
+      "articleId": "510c0b2daf2fa791",
+      "projectId": "c310000000000004",
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "article",
+          "label": "本人公开文章，原日期 2026-07-15；本条为归纳。 https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/%E6%88%91%E6%8A%8AAI%E7%94%9F%E5%9B%BE%E5%81%9A%E6%88%90%E4%BA%86%E5%B7%A5%E7%A8%8B%E8%83%BD%E5%8A%9B%EF%BC%9Abetter-imagegen%E7%9A%84%E5%AE%9E%E6%88%98%E4%B8%8E%E5%88%A4%E6%96%AD.md#L45-L103",
+          "articleId": "510c0b2daf2fa791"
+        }
+      ],
+      "basis": "不同使用场景的验收标准不同；生成图片的视觉效果不能替代平台格式、文字准确性与缩小后的可识别性。",
+      "alternatives": [],
+      "outcome": null
+    },
+    {
+      "id": "c310000000000006",
+      "kind": "judgment",
+      "title": "把判断写成 Agent 能执行和验收的约束",
+      "text": "我把 Taste 理解为对目标、取舍、边界和完成标准负责的判断。AI 提供更多候选后，人仍要决定什么值得做、什么应当删去，以及结果是否解决问题；稳定的判断应继续写成 Agent 可以读取和验收的约束。",
+      "context": "公开文章讨论 Owlet、视觉系统和 Agent 工作台中的人机协作；这里记录作者立场，不推定 AI 自动拥有产品判断。",
+      "date": "2026-08-10",
+      "recordedAt": "2026-10-30",
+      "visibility": "shared",
+      "articleId": "497451432d1eee6a",
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "article",
+          "label": "本人公开文章，原日期 2026-08-10；本条为归纳。 https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/Taste%20Is%20All%20You%20Need.md#L27-L33",
+          "articleId": "497451432d1eee6a"
+        }
+      ],
+      "basis": "生成候选的成本降低，不会使选择、验收和承担结果的责任消失。",
+      "alternatives": [],
+      "outcome": null
+    },
+    {
+      "id": "c310000000000007",
+      "kind": "judgment",
+      "title": "Skill 上下文按消费者和阶段组织",
+      "text": "在自定义 Skill 的上下文优化中，我优先按不同阶段需要的内容拆分 reference，再处理重复规则和过多示例。高频任务应避免加载无关材料；低频、内容内聚的规则不必为了形式拆分，也不能为压缩而删掉必要约束。",
+      "context": "原文回顾一次 Skill reference 优化，涉及特定任务阶段；本条保留方法与适用条件，不把文件大小变化改写成模型 token 实测结果。",
+      "date": "2026-07-04",
+      "recordedAt": "2026-10-30",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "archive",
+          "label": "本人公开文章，原日期 2026-07-04；本条为归纳。 https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/Claude%20Code%20Skill%20Token%20%E4%BC%98%E5%8C%96%E5%AE%9E%E8%B7%B5.md#L30-L53"
+        }
+      ],
+      "basis": "按消费者减少不必要的加载，可降低每次调用的固定上下文负担，同时保留任务需要的规则与示例。",
+      "alternatives": [],
+      "outcome": null
+    },
+    {
+      "id": "c310000000000008",
+      "kind": "judgment",
+      "title": "交付汇报应提供可继续工作的真实状态",
+      "text": "我把 Coding Agent 的汇报看成一次工程交接：写清变更范围、验证证据、Git 状态、部署状态和下一步。构建通过只能证明对应构建，推送成功不能证明已经部署；报告应让下一个人可以复现、验证或接着推进。",
+      "context": "公开文章比较完成交付、进行中、阻塞、诊断、决策和发布等场景；其中示例不是本站真实任务状态。",
+      "date": "2026-07-23",
+      "recordedAt": "2026-10-30",
+      "visibility": "shared",
+      "articleId": "d156a11b53dd7cbc",
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "article",
+          "label": "本人公开文章，原日期 2026-07-23；本条为归纳。 https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/Coding%20Agent%20%E7%9A%84%E4%BA%A4%E4%BB%98%E6%B1%87%E6%8A%A5%EF%BC%9A6%20%E7%A7%8D%E7%8A%B6%E6%80%81%E6%80%8E%E4%B9%88%E5%86%99.md#L18-L35",
+          "articleId": "d156a11b53dd7cbc"
+        }
+      ],
+      "basis": "接手者需要根据证据决定能否继续开发、合并、发布或验收，而不仅是知道执行过哪些动作。",
+      "alternatives": [],
+      "outcome": null
+    },
+    {
+      "id": "c310000000000009",
+      "kind": "judgment",
+      "title": "按所有权与验收证据划分 Agent Skill",
+      "text": "当共享平台开发和产品发行分别拥有源码、凭据与验收责任时，我倾向于拆分 Skill，并用已发布依赖和明确制品连接两者。是否拆分要看负责人、事实来源、受控环境和交付证据是否分叉；单仓库内的简单任务不为形式增加边界。",
+      "context": "从平台工程与发行版职责划分的公开讨论归纳，已泛化具体工程名称与产品路径。",
+      "date": "2026-08-23",
+      "recordedAt": "2026-10-30",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "archive",
+          "label": "本人公开文章，原日期 2026-08-23；本条为归纳。 https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/%E6%8A%8A%20Agent%20Skill%20%E5%BD%93%E4%BD%9C%E6%9E%B6%E6%9E%84%E8%BE%B9%E7%95%8C%EF%BC%9A%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91%E4%B8%8E%E5%8F%91%E8%A1%8C%E7%89%88%E5%BC%80%E5%8F%91%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%8B%86%E5%BC%80.md#L57-L78"
+        }
+      ],
+      "basis": "错误的上下文和依赖方向会让 Agent 越过真实交付边界，把源码或包状态误报成最终产品结果。",
+      "alternatives": [],
+      "outcome": null
+    },
+    {
+      "id": "c31000000000000a",
+      "kind": "thought",
+      "title": "沿 AI 系统工程与产品工程交叉方向成长",
+      "text": "我希望继续留在工程一线，沿 AI Systems & Product Engineering 方向成长，同时加强复杂系统设计、真实用户问题判断和端到端产品交付。Staff 是希望承担的问题范围，不是当前已经拥有的头衔；规划中的 Runtime 实验、产品结果与影响力目标仍需要后续实践证明。",
+      "context": "来自 2027—2029 职业规划中的目标与能力取舍，保留“希望”和待验证属性，不当作已完成履历。",
+      "date": "2026-10-25",
+      "recordedAt": "2026-10-30",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "archive",
+          "label": "本人公开文章，原日期 2026-10-25；本条为归纳。 https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/%E4%BB%8E%20AI%20%E5%B7%A5%E7%A8%8B%E5%88%B0%E4%BA%A7%E5%93%81%E6%8A%80%E6%9C%AF%E4%B8%93%E5%AE%B6%EF%BC%9A%E6%88%91%E7%9A%84%E4%B8%89%E5%B9%B4%E8%81%8C%E4%B8%9A%E5%8F%91%E5%B1%95%E8%A7%84%E5%88%92.md#L20-L48"
+        }
+      ]
+    },
+    {
+      "id": "c31000000000000b",
+      "kind": "judgment",
+      "title": "并行开发按任务隔离工作目录",
+      "text": "在多个开发、排障和发布任务并行时，我更推荐按任务边界建立 worktree，并让每个工作目录对应明确目标、分支和验证证据。发布从确定的 commit 出发；worktree 只隔离代码工作区，端口、缓存、数据库和权限仍须另行管理。",
+      "context": "公开文章讨论人和 Agent 并行工作的组织方法，不意味着任意任务都需要并行或新增工作区。",
+      "date": "2026-08-18",
+      "recordedAt": "2026-10-30",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "archive",
+          "label": "本人公开文章，原日期 2026-08-18；本条为归纳。 https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/Git-worktree%EF%BC%9AAI%20%E6%97%B6%E4%BB%A3%E7%9A%84%E5%B9%B6%E8%A1%8C%E5%BC%80%E5%8F%91%E5%B7%A5%E4%BD%9C%E5%8F%B0.md#L67-L111"
+        }
+      ],
+      "basis": "共享未提交修改和构建输入会削弱可追溯性；目录与 Git 状态可以让任务输入输出更清楚。",
+      "alternatives": [],
+      "outcome": null
+    },
+    {
+      "id": "c31000000000000c",
+      "kind": "judgment",
+      "title": "Enter 快捷键必须服从输入法的真实状态",
+      "text": "在中文聊天输入框的修复中，我采用组件内组合输入状态、浏览器 IME 信号以及 composition 结束后的短时保护，区分确认候选与提交消息。验收要覆盖真实输入法与目标 WebView 的事件顺序，不能把英文键盘下正常当作中文输入已经通过。",
+      "context": "原文记录 React Chat Composer 的 IME 修复；具体保护时长是当时实现的取舍，并非协议常量或所有浏览器的统一保证。",
+      "date": "2026-07-21",
+      "recordedAt": "2026-10-30",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "archive",
+          "label": "本人公开文章，原日期 2026-07-21；本条为归纳。 https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/%E4%BF%AE%E5%A4%8D%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95%E6%8C%89%E5%9B%9E%E8%BD%A6%E8%AF%AF%E5%8F%91%E9%80%81%EF%BC%9AReact%20Chat%20Composer%20%E7%9A%84%20IME%20%E4%BA%8B%E4%BB%B6%E9%99%B7%E9%98%B1.md#L111-L178"
+        }
+      ],
+      "basis": "部分系统的 composition 与 Enter 事件顺序会使单一 isComposing 判断不足，快捷键需要考虑输入状态。",
+      "alternatives": [],
+      "outcome": null
+    },
+    {
+      "id": "f604bcfbe98aa301",
+      "kind": "judgment",
+      "title": "建立面向公开交流的数字分身",
+      "text": "我把 youngjunning.com 定位为硅基俊宁：外部项目中的个人经历与判断直接记录，内部项目只同步脱敏后的内容。公开站与内部数字分身使用相同的蒸馏协议，保留来源、时间、上下文与变化关系。",
+      "context": "2026 年 10 月 30 日，确定公开数字分身的定位、UI 组件来源与记忆分流方式。",
+      "date": "2026-10-30",
+      "recordedAt": "2026-10-30",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [{ "kind": "statement", "label": "俊宁本人陈述，2026-10-30，公开摘要；已移除内部出处。" }],
+      "basis": "本人明确选择；当时未说明其他取舍理由。",
+      "alternatives": [],
+      "outcome": null
+    }
+  ]
+}

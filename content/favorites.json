@@ -1,0 +1,215 @@
+{
+  "version": 1,
+  "favorites": [
+    {
+      "id": "e310000000000001",
+      "kind": "knowledge",
+      "title": "ReAct：推理、行动与环境反馈",
+      "url": "https://react-lm.github.io/",
+      "summary": "通过原论文项目页回看推理与行动交错、工具反馈和失败案例。",
+      "reason": "从旧知识库的 ReAct 论文笔记和概念译文合并保留原始来源，避免重复保存译文或沿用未经核验的概念对比。",
+      "tags": [
+        "Agent",
+        "ReAct",
+        "论文"
+      ],
+      "sources": [
+        {
+          "label": "原个人知识库中的两篇 ReAct 资料整理；2026-10-30 核验原论文项目页。发生日期未详，不代表本人已经实践或掌握。"
+        }
+      ],
+      "savedAt": "2026-10-30",
+      "selection": "discovered",
+      "visibility": "shared"
+    },
+    {
+      "id": "e310000000000002",
+      "kind": "knowledge",
+      "title": "Patterns.dev：Web 设计、渲染与性能模式",
+      "url": "https://www.patterns.dev/",
+      "summary": "按 JavaScript、React 与性能主题检索 Web 模式及其取舍。",
+      "reason": "从旧官网的技术英语资料入口保留，适合带着具体工程问题查阅英文解释；不搬运大批词汇与通用教程。",
+      "tags": [
+        "软件工程",
+        "性能",
+        "技术英语"
+      ],
+      "sources": [
+        {
+          "label": "原个人知识库的英文技术资料目录；2026-10-30 核验官方站点。"
+        }
+      ],
+      "savedAt": "2026-10-30",
+      "selection": "discovered",
+      "visibility": "shared"
+    },
+    {
+      "id": "e310000000000003",
+      "kind": "knowledge",
+      "title": "React 官方学习文档",
+      "url": "https://react.dev/learn",
+      "summary": "查阅组件、状态、事件与数据共享的官方说明。",
+      "reason": "旧官网多篇 React 译文与语句分析可回到同一权威入口；保留来源以便查证，不重复收录零散转述。",
+      "tags": [
+        "React",
+        "官方文档",
+        "技术英语"
+      ],
+      "sources": [
+        {
+          "label": "原个人知识库的英文文档与阅读笔记；2026-10-30 核验官方学习页。"
+        }
+      ],
+      "savedAt": "2026-10-30",
+      "selection": "discovered",
+      "visibility": "shared"
+    },
+    {
+      "id": "e310000000000004",
+      "kind": "knowledge",
+      "title": "LLM wiki 的规则、技能与文章分层",
+      "url": "https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/%E6%88%91%E5%9C%A8%E7%BB%99%E8%87%AA%E5%B7%B1%E5%BB%BA%E4%B8%80%E4%B8%AA%20LLM%20wiki.md",
+      "summary": "把稳定约束、可执行流程与判断依据分别组织，关注触发条件和真实结果校验。",
+      "reason": "保留可复用的内容分层方法。原文部分叙述存在人和 AI 第一人称混用，因此不将其中执行事件提取为本人经历。",
+      "tags": [
+        "知识管理",
+        "Agent Skill",
+        "上下文"
+      ],
+      "sources": [
+        {
+          "label": "本人公开博客的 LLM wiki 文章；只保存方法参考，不认领未能明确归属的执行事件。"
+        }
+      ],
+      "savedAt": "2026-10-30",
+      "selection": "discovered",
+      "visibility": "shared"
+    },
+    {
+      "id": "e310000000000005",
+      "kind": "project",
+      "title": "Magic UI",
+      "url": "https://github.com/magicuidesign/magicui",
+      "summary": "React 界面组件来源，本项目使用其 BlurFade 与 BentoGrid 的适配版本。",
+      "reason": "本轮建站需要可回查组件实现和许可，保留官方仓库用于后续维护。",
+      "tags": [
+        "UI",
+        "React",
+        "组件"
+      ],
+      "sources": [
+        {
+          "label": "2026-10-30 建站过程核验 Magic UI 官方源码与 MIT 许可；会话发现。"
+        }
+      ],
+      "savedAt": "2026-10-30",
+      "selection": "discovered",
+      "visibility": "shared"
+    },
+    {
+      "id": "e310000000000006",
+      "kind": "knowledge",
+      "title": "AI Native 知识库的内容与证据分层",
+      "url": "https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/AI%20Native%20%E7%9F%A5%E8%AF%86%E5%BA%93%EF%BC%9A%E7%BB%99%E4%BA%BA%E7%BB%B4%E6%8A%A4%EF%BC%8C%E7%BB%99%20Agent%20%E8%B0%83%E7%94%A8%EF%BC%8C%E7%BB%99%E5%8F%8C%E6%96%B9%E8%BF%BD%E6%BA%AF.md",
+      "summary": "讨论事实源、检索、Agent 消费与可追溯引用的关系。",
+      "reason": "作为知识库设计的深度参考保留；与本站记录、引用和对话边界直接相关，不把文章内容当作本人的全部实践成果。",
+      "tags": [
+        "AI Infra",
+        "知识库",
+        "检索"
+      ],
+      "savedAt": "2026-10-30",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "本人公开博客的历史技术文章；2026-10-30 按长期参考价值筛选，仅保存来源摘要。"
+        }
+      ]
+    },
+    {
+      "id": "e310000000000007",
+      "kind": "knowledge",
+      "title": "Agent Runtime 与 Harness 的可靠性边界",
+      "url": "https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/%E5%A6%82%E4%BD%95%E6%9E%84%E5%BB%BA%E5%8F%AF%E9%AA%8C%E8%AF%81%E3%80%81%E5%8F%AF%E6%81%A2%E5%A4%8D%E3%80%81%E5%8F%AF%E8%AF%84%E6%B5%8B%E7%9A%84%20Agent%20Runtime%20%E4%B8%8E%20Harness.md",
+      "summary": "从执行状态、恢复、验证与评测角度组织 Agent 运行时问题。",
+      "reason": "保留系统级设计的参考入口；关注可验证完成与故障恢复，替代零散框架使用教程。",
+      "tags": [
+        "Agent Runtime",
+        "评测",
+        "可靠性"
+      ],
+      "savedAt": "2026-10-30",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "本人公开博客的历史技术文章；2026-10-30 按长期参考价值筛选，仅保存来源摘要。"
+        }
+      ]
+    },
+    {
+      "id": "e310000000000008",
+      "kind": "knowledge",
+      "title": "Evidence：把任务结果与可核验证据连接",
+      "url": "https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/Evidence%20%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9AAgent%20%E7%B3%BB%E7%BB%9F%E5%A6%82%E4%BD%95%E8%AF%81%E6%98%8E%E8%87%AA%E5%B7%B1%E7%9C%9F%E7%9A%84%E5%AE%8C%E6%88%90%E4%BA%86%E4%BB%BB%E5%8A%A1.md",
+      "summary": "梳理 Claim、证据与日志、知识、引用之间的区别。",
+      "reason": "对评审 Agent 是否完成任务有长期参考价值；记录概念来源，不推定本人已经实现全部机制。",
+      "tags": [
+        "Evidence",
+        "验证",
+        "Agent"
+      ],
+      "savedAt": "2026-10-30",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "本人公开博客的历史技术文章；2026-10-30 按长期参考价值筛选，仅保存来源摘要。"
+        }
+      ]
+    },
+    {
+      "id": "e310000000000009",
+      "kind": "knowledge",
+      "title": "从 BrowserOS 看 AI 浏览器的系统边界",
+      "url": "https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/AI%20%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8D%E6%98%AF%20Chrome%20%E5%8A%A0%E4%B8%AA%E8%81%8A%E5%A4%A9%E6%A1%86%EF%BC%9A%E4%BB%8E%20BrowserOS%20%E6%8B%86%E8%A7%A3%E4%B8%83%E5%B1%82%E6%9E%B6%E6%9E%84.md",
+      "summary": "以公开源码为线索讨论内核、原生集成、Runtime、工具、模型与交付。",
+      "reason": "保留跨层架构分析，帮助区分演示、平台与产品交付；源码与依赖状态应回到当前项目重新核验。",
+      "tags": [
+        "AI 浏览器",
+        "架构",
+        "BrowserOS"
+      ],
+      "savedAt": "2026-10-30",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "本人公开博客的历史技术文章；2026-10-30 按长期参考价值筛选，仅保存来源摘要。"
+        }
+      ]
+    },
+    {
+      "id": "e31000000000000a",
+      "kind": "knowledge",
+      "title": "Chromium 自动更新的客户端、协议与服务端",
+      "url": "https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/Omaha%20%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9A%E4%B8%80%E7%AF%87%E8%AE%B2%E6%B8%85%20Chromium%20%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0%E7%9A%84%E5%AE%A2%E6%88%B7%E7%AB%AF%E3%80%81%E5%8D%8F%E8%AE%AE%E4%B8%8E%E6%9C%8D%E5%8A%A1%E7%AB%AF.md",
+      "summary": "区分更新客户端、Omaha 协议、服务端及签名相关概念。",
+      "reason": "更新链路涉及多种独立交付证据，保留这一系统说明比单条发布命令更便于后续查证。",
+      "tags": [
+        "Chromium",
+        "自动更新",
+        "软件交付"
+      ],
+      "savedAt": "2026-10-30",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "本人公开博客的历史技术文章；2026-10-30 按长期参考价值筛选，仅保存来源摘要。"
+        }
+      ]
+    }
+  ]
+}
