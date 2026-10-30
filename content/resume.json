@@ -1,0 +1,94 @@
+{
+  "name": "俊宁",
+  "role": "AI 开发者 · Browser Agent 开发工程师",
+  "summary": "俊宁，阿里高级工程师、AI 开发者，拥有 10 年研发经验，现专注 AI 应用、AI 浏览器、Agent、AI Infra 与软件工程。",
+  "location": "杭州",
+  "email": "luozhu2021@gmail.com",
+  "github": "https://github.com/youngjunning",
+  "updatedAt": "2026-10-30",
+  "source": "本人提供的简历，2026-10-30 整理为公开版本。",
+  "skills": [
+    { "title": "Agent 执行与验证", "text": "Browser Agent Runtime、Workflow / Skill 协同、云端浏览器执行、人工接管与结果验证。" },
+    { "title": "AI 浏览器工程", "text": "Chromium 定制、Browser Tools / CDP、Profile / Tab 授权，以及浏览器与 Agent Runtime 的跨平台交付。" },
+    { "title": "全栈与跨端开发", "text": "TypeScript、React、React Native、Next.js、Node.js、Midway.js / FaaS 与 BullMQ，覆盖界面、服务接口和异步任务。" }
+  ],
+  "experience": [
+    {
+      "company": "飞猪网络技术有限公司",
+      "period": "2023.06 — 至今",
+      "role": "资深前端开发 / Agent 开发",
+      "details": [
+        "负责 Browser Agent 架构与核心开发，将业务目标转化为可执行、可验证的浏览器任务；设计 AI 浏览器开发框架。",
+        "担任客服平台技术负责人，统筹在线客服、热线客服、工单与订单工作台的需求评审、技术设计和核心开发。",
+        "推进工作台融合、埋点与录屏关联，治理内存泄漏和重复渲染；担任业务系统前端技术 PM，统筹插件、表单与微应用联调。"
+      ]
+    },
+    {
+      "company": "杭州涂鸦科技有限公司",
+      "period": "2020.09 — 2023.06",
+      "role": "前端架构组 · 前端开发",
+      "details": [
+        "负责开发者社区、tuya-panel-sdk 与跨端组件库，引入 Jest，开发 VS Code、ESLint 和 Babel 插件。",
+        "主导开发工具的框架适配与性能优化，通过 AST 按需提取 useSelector 依赖，减少冗余订阅与无效渲染。",
+        "负责前端资产平台的 Web 架构、跨平台权限与组件预览，参与 SaaS、小程序及定制业务开发。"
+      ]
+    },
+    {
+      "company": "浩鲸云计算科技",
+      "period": "2020.05 — 2020.09",
+      "role": "高级前端开发",
+      "details": ["独立负责智慧环保城市项目及两个中台项目的前端搭建与联调。"]
+    },
+    {
+      "company": "河南省私塾世纪",
+      "period": "2018.03 — 2020.05",
+      "role": "跨端开发团队负责人",
+      "details": ["负责跨端开发团队与工程规范建设，交付基于 React Native 的教务 App。"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Browser Agent 自动化平台",
+      "role": "架构与核心开发 · 2026",
+      "description": "将业务目标拆解为浏览器任务，以 Workflow / Skill 处理稳定步骤，Agent 应对页面变化。",
+      "details": [
+        "建设 Node.js 执行集群与云端浏览器环境，定义任务计划、失败出口和人工接管。",
+        "结合 DOM、Accessibility Tree 与页面截图完成元素定位、动作执行与效果校验。",
+        "以终态、URL、截图和报告验证执行结果；执行日志形成候选 Skill，经回归验证与人工审核后采纳。"
+      ]
+    },
+    {
+      "title": "AI 浏览器开发框架",
+      "role": "框架设计 · 2026",
+      "description": "覆盖 Chromium Kernel、Browser Tools、Agent Runtime 与构建交付，支持多个浏览器产品复用。",
+      "details": [
+        "管理 Chromium 基线与 C++ / GN 补丁，使干净检出后的重放和构建具有明确输入。",
+        "通过 Browser Tools / CDP 提供快照、导航、输入和标签页操作，按 Profile / Tab 与 capability 授权。",
+        "将浏览器、内置扩展与 Agent Runtime 分开交付，固定版本、配置和依赖。"
+      ]
+    },
+    {
+      "title": "面向客服场景的 AI 浏览器",
+      "role": "稳定性、Runtime 接入与发行交付 · 2026",
+      "description": "参与浏览器稳定性治理、本地 Agent Runtime 接入与跨平台发行。",
+      "details": [
+        "为工作台设置独立 Renderer 与限次恢复，处理语言资源与长时间多系统作业的稳定性问题。",
+        "按浏览器、扩展和 Agent Runtime 的版本边界推进构建、升级与真实安装验收。"
+      ]
+    }
+  ],
+  "contributions": [
+    { "title": "browser-use", "description": "页面高亮层背景修复", "url": "https://github.com/browser-use/browser-use/pull/1414", "label": "PR #1414" },
+    { "title": "UI-TARS Desktop", "description": "页面高亮层背景修复", "url": "https://github.com/bytedance/UI-TARS-desktop/pull/500", "label": "PR #500" },
+    { "title": "DefinitelyTyped", "description": "tuya-panel-kit 类型定义", "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/49429", "label": "PR #49429" },
+    { "title": "DefinitelyTyped", "description": "tuya-panel-kit 类型维护", "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/49919", "label": "PR #49919" },
+    { "title": "microsoft/vscode-vsce", "description": "补充打包忽略项", "url": "https://github.com/microsoft/vscode-vsce/pull/614", "label": "PR #614" },
+    { "title": "React Navigation", "description": "导出转场预设", "url": "https://github.com/react-navigation/react-navigation/pull/9173", "label": "PR #9173" }
+  ],
+  "education": {
+    "school": "中原工学院信息商务学院",
+    "degree": "本科 · 网络工程",
+    "period": "2012 — 2016",
+    "qualifications": "英语 CET-4 · 中级网络工程师"
+  }
+}

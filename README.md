@@ -20,6 +20,7 @@ npm run dev
 ## 内容与蒸馏
 
 - `content/persona.json`：本人介绍与关注方向。
+- `content/resume.json`：公开简历，展示于 `/resume`；保留经历与技术职责，移除私密联系方式、内部项目标识和未公开指标。原始简历在仓库外单独保留。
 - `content/records.json`：version 2 个人记录，支持经历、项目、判断、变化与想法。
 - `content/favorites.json`：version 1 收藏，区分本人主动收藏与会话发现，知识卡片独立保存。
 - `content/posts/`：精选 Markdown 文章，稳定 ID 对应 `/blog/:id`。
