@@ -2,6 +2,152 @@
   "version": 1,
   "favorites": [
     {
+      "id": "8838524aac092773",
+      "kind": "project",
+      "title": "hunch",
+      "url": "https://github.com/HAR5HA-7663/hunch",
+      "summary": "基于 Jev 与 agent-browser 的浏览器执行循环：从页面快照选择动作和目标，由代码执行并检查结果。",
+      "reason": "回看快照引用、单次请求决策、低置信交接与结果校验的组合方式。",
+      "tags": [
+        "Jev",
+        "Browser Agent",
+        "agent-browser"
+      ],
+      "savedAt": "2026-10-31",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "本人陈述，2026-10-31，公开摘要：明确要求收藏这六个 Jev 浏览器自动化项目；收藏不表示已采用、实测或参与开发。"
+        },
+        {
+          "label": "官方项目仓库与 README，2026-10-31 核验：https://github.com/HAR5HA-7663/hunch"
+        }
+      ]
+    },
+    {
+      "id": "1b8e35a5a0147eea",
+      "kind": "project",
+      "title": "jev-ultrafast",
+      "url": "https://github.com/browser-use/jev-ultrafast",
+      "summary": "将页面控件组织为动态索引动作空间，由 Jev 在一次请求中选择操作与目标，需要输入文本时可交给独立文本模型。",
+      "reason": "研究批量观察、减少浏览器协议往返、目标有效性校验及决策与文本生成的职责划分。",
+      "tags": [
+        "Jev",
+        "Browser Agent",
+        "性能优化"
+      ],
+      "savedAt": "2026-10-31",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "本人陈述，2026-10-31，公开摘要：明确要求收藏这六个 Jev 浏览器自动化项目；收藏不表示已采用、实测或参与开发。"
+        },
+        {
+          "label": "官方项目仓库与 README，2026-10-31 核验：https://github.com/browser-use/jev-ultrafast"
+        }
+      ]
+    },
+    {
+      "id": "ef32f6d3f97f6937",
+      "kind": "project",
+      "title": "jev-browser",
+      "url": "https://github.com/jkudish/jev-browser",
+      "summary": "提供 MCP、CLI 和 library 入口，由 Jev 选择页面动作，代码管理预算、恢复、停止条件和执行轨迹。",
+      "reason": "比较浏览器 Agent 的接口设计、完成证据、置信信息与逐步执行记录。",
+      "tags": [
+        "Jev",
+        "Browser Agent",
+        "MCP"
+      ],
+      "savedAt": "2026-10-31",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "本人陈述，2026-10-31，公开摘要：明确要求收藏这六个 Jev 浏览器自动化项目；收藏不表示已采用、实测或参与开发。"
+        },
+        {
+          "label": "官方项目仓库与 README，2026-10-31 核验：https://github.com/jkudish/jev-browser"
+        }
+      ]
+    },
+    {
+      "id": "c450686e5af95c27",
+      "kind": "project",
+      "title": "jev-ra",
+      "url": "https://github.com/brnyxx/jev-ra",
+      "summary": "面向编码 Agent 的浏览器 MCP 服务与 CLI，由 Jev 决定局部动作，通过浏览器执行并核验结果。",
+      "reason": "研究 CDP 执行、独立结果断言、有限预算以及失败后的结构化交接。",
+      "tags": [
+        "Jev",
+        "Browser Agent",
+        "CDP",
+        "MCP"
+      ],
+      "savedAt": "2026-10-31",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "本人陈述，2026-10-31，公开摘要：明确要求收藏这六个 Jev 浏览器自动化项目；收藏不表示已采用、实测或参与开发。"
+        },
+        {
+          "label": "官方项目仓库与 README，2026-10-31 核验：https://github.com/brnyxx/jev-ra"
+        }
+      ]
+    },
+    {
+      "id": "84ac495cdb0c1827",
+      "kind": "project",
+      "title": "jev-browser-wingman",
+      "url": "https://github.com/coderexpert123/jev-browser-wingman",
+      "summary": "在已有浏览器与 Playwright MCP 工具前接入 Jev 局部决策，执行动作、检查效果，并将无法处理的步骤交回上层 Agent。",
+      "reason": "回看局部执行能力与现有 Agent 的交接方式，分析额外接入对端到端耗时的影响。",
+      "tags": [
+        "Jev",
+        "Browser Agent",
+        "Playwright",
+        "MCP"
+      ],
+      "savedAt": "2026-10-31",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "本人陈述，2026-10-31，公开摘要：明确要求收藏这六个 Jev 浏览器自动化项目；收藏不表示已采用、实测或参与开发。"
+        },
+        {
+          "label": "官方项目仓库与 README，2026-10-31 核验：https://github.com/coderexpert123/jev-browser-wingman"
+        }
+      ]
+    },
+    {
+      "id": "440e6d3a3f457bb6",
+      "kind": "project",
+      "title": "jev-browser-use",
+      "url": "https://github.com/wy-coliney/jev-browser-use",
+      "summary": "面向 Codex 的浏览器 Skill：Jev 处理导航、点击和滚动，上层 Agent 保留文本输入、视觉判断与最终校验。",
+      "reason": "比较持久浏览器连接下的职责分配与调用次数优化，不将作者的操作提速直接视为完整任务收益。",
+      "tags": [
+        "Jev",
+        "Browser Agent",
+        "Skill"
+      ],
+      "savedAt": "2026-10-31",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "本人陈述，2026-10-31，公开摘要：明确要求收藏这六个 Jev 浏览器自动化项目；收藏不表示已采用、实测或参与开发。"
+        },
+        {
+          "label": "官方项目仓库与 README，2026-10-31 核验：https://github.com/wy-coliney/jev-browser-use"
+        }
+      ]
+    },
+    {
       "kind": "project",
       "title": "Cua：Computer Use 执行环境与工具链",
       "url": "https://github.com/trycua/cua",
