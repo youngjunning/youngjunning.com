@@ -2,6 +2,31 @@
   "version": 2,
   "records": [
     {
+      "id": "5dbcb3463af529c5",
+      "kind": "project",
+      "title": "客户体验治理办公 AI 产品",
+      "text": "将一款 AI Work 产品定位于客户体验治理办公场景，产品形态参考 ACCIO Work。",
+      "context": "2026-10-31 本人明确的产品定位，本文为脱敏归纳。项目起始日期、具体职责、实施进度和成果尚未说明；类比仅表达产品定位。",
+      "date": null,
+      "recordedAt": "2026-10-31",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-10-31，公开摘要。"
+        }
+      ],
+      "label": "客户体验治理 AI Work",
+      "role": "具体职责待补充",
+      "tags": ["AI Work", "客户体验治理", "办公"],
+      "status": "unknown",
+      "goal": "面向客户体验治理办公场景，建设垂类 AI Work 产品。",
+      "outcomes": []
+    },
+    {
       "id": "b48272e13c0a9fd6",
       "kind": "judgment",
       "title": "引擎建设由业务需求牵引",
