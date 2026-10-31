@@ -1,7 +1,14 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-30",
+  "updatedAt": "2026-10-31",
   "skills": [
+    {
+      "id": "df18c7b59a42e630",
+      "name": "数字分身资料检索",
+      "summary": "从授权共享的个人记录与文章中检索经历、项目、判断和变化，依据原文回答并附上可回查来源；区分收藏资料与个人经历。",
+      "group": "self",
+      "sourceUrl": null
+    },
     {
       "id": "5c6ca4fa2d004a71",
       "name": "writting-skill",
