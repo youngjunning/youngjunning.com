@@ -12,7 +12,7 @@
     {
       "id": "5c6ca4fa2d004a71",
       "name": "writting-skill",
-      "summary": "辅助中英文文章、技术文档与书稿的起草和修订，检查结构、论证、文风和证据边界。漫画文章维护正文与分镜；绘本负责故事、含封皮页数、分页、文字排版、印刷模板适配和整本交付，指定 better-imagegen 生成与修改插画。",
+      "summary": "仅在用户明确提出写作、续写、改写、润色或审阅正文时调用；支持文章、书稿与绘本，绘本插画指定 better-imagegen。普通问答、代码工作和自动收尾不触发写作流程。",
       "group": "self",
       "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/writing/writting-skill"
     },
@@ -40,7 +40,7 @@
     {
       "id": "c8ed10a6f42975b3",
       "name": "report-skill",
-      "summary": "工程汇报与交付证据",
+      "summary": "按需生成正式工程汇报或复杂交付说明，呈现验证依据、风险与遗留项；普通回复直接说明结果，默认不显示技能署名。",
       "group": "self",
       "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/engineering/report-skill"
     },
