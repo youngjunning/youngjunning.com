@@ -1,10 +1,10 @@
 {
   "version": 1,
   "audience": "external",
-  "updatedAt": "2026-11-01T18:04:59.751Z",
+  "updatedAt": "2026-11-01T18:25:56.543Z",
   "metric": "verified_skill_read_turns",
   "totals": {
-    "triggerCount": 456,
+    "triggerCount": 460,
     "skillCount": 14,
     "projectCount": 8,
     "directoryGroupCount": 0,
@@ -15,12 +15,12 @@
   "coverage": {
     "fileCount": 0,
     "firstSeen": "2026-07-04T05:20:27.882Z",
-    "lastSeen": "2026-11-01T18:02:34.005Z"
+    "lastSeen": "2026-11-01T18:22:09.586Z"
   },
   "skills": [
     {
       "name": "macos-app-develop",
-      "triggerCount": 158,
+      "triggerCount": 159,
       "projects": [
         {
           "projectId": "git:504b91c3cd03c11a",
@@ -28,13 +28,13 @@
         },
         {
           "projectId": "git:38c889f3f90409c5",
-          "triggerCount": 2
+          "triggerCount": 3
         }
       ]
     },
     {
       "name": "report-skill",
-      "triggerCount": 76,
+      "triggerCount": 77,
       "projects": [
         {
           "projectId": "git:504b91c3cd03c11a",
@@ -42,7 +42,7 @@
         },
         {
           "projectId": "git:b98a39597e403453",
-          "triggerCount": 6
+          "triggerCount": 7
         },
         {
           "projectId": "git:25361c8b154a49b9",
@@ -152,7 +152,7 @@
     },
     {
       "name": "memory-distill",
-      "triggerCount": 12,
+      "triggerCount": 13,
       "projects": [
         {
           "projectId": "git:504b91c3cd03c11a",
@@ -164,7 +164,7 @@
         },
         {
           "projectId": "git:25361c8b154a49b9",
-          "triggerCount": 3
+          "triggerCount": 4
         },
         {
           "projectId": "git:38c889f3f90409c5",
@@ -194,7 +194,7 @@
     },
     {
       "name": "diagnosing-bugs",
-      "triggerCount": 2,
+      "triggerCount": 3,
       "projects": [
         {
           "projectId": "git:b98a39597e403453",
@@ -202,6 +202,10 @@
         },
         {
           "projectId": "git:25361c8b154a49b9",
+          "triggerCount": 1
+        },
+        {
+          "projectId": "git:38c889f3f90409c5",
           "triggerCount": 1
         }
       ]
@@ -244,25 +248,25 @@
       "id": "git:b98a39597e403453",
       "name": "TaleFrame",
       "kind": "git",
-      "triggerCount": 17
+      "triggerCount": 18
     },
     {
       "id": "git:25361c8b154a49b9",
       "name": "youngjunning.com",
       "kind": "git",
-      "triggerCount": 7
+      "triggerCount": 8
+    },
+    {
+      "id": "git:38c889f3f90409c5",
+      "name": "owlet",
+      "kind": "git",
+      "triggerCount": 6
     },
     {
       "id": "git:c13c8d2cc6be59dc",
       "name": "yang-xudong-growth-book",
       "kind": "git",
       "triggerCount": 6
-    },
-    {
-      "id": "git:38c889f3f90409c5",
-      "name": "owlet",
-      "kind": "git",
-      "triggerCount": 4
     },
     {
       "id": "git:69d08711563f984a",
