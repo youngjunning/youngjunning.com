@@ -93,9 +93,17 @@
           "label": "官方仓库或文档，2026-11-01 会话检索核验：https://github.com/DavidHDev/react-bits"
         }
       ],
-      "priority": "evaluate",
-      "adoption": "not_selected",
-      "usages": []
+      "priority": "reference",
+      "adoption": "adopted",
+      "usages": [
+        {
+          "project": "youngjunning.com",
+          "projectUrl": "https://github.com/youngjunning/youngjunning.com",
+          "stage": "adopted",
+          "purpose": "首页渐变文字及 React Bits 风格组件",
+          "evidence": "2026-11-01 源码核验：https://github.com/youngjunning/youngjunning.com/blob/5a28f230f92d53ba73078bc448504d272ba11577/app/page.tsx；https://github.com/youngjunning/youngjunning.com/blob/5a28f230f92d53ba73078bc448504d272ba11577/THIRD_PARTY_NOTICES.md；仅证明代码接入。"
+        }
+      ]
     },
     {
       "id": "ce11d50c8c1a996b",
@@ -118,7 +126,7 @@
         }
       ],
       "priority": "evaluate",
-      "adoption": "not_selected",
+      "adoption": "unknown",
       "usages": []
     },
     {
@@ -142,7 +150,7 @@
         }
       ],
       "priority": "evaluate",
-      "adoption": "not_selected",
+      "adoption": "unknown",
       "usages": []
     },
     {
@@ -166,7 +174,7 @@
         }
       ],
       "priority": "evaluate",
-      "adoption": "not_selected",
+      "adoption": "unknown",
       "usages": []
     },
     {
@@ -190,7 +198,7 @@
         }
       ],
       "priority": "evaluate",
-      "adoption": "not_selected",
+      "adoption": "unknown",
       "usages": []
     },
     {
@@ -214,7 +222,7 @@
         }
       ],
       "priority": "evaluate",
-      "adoption": "not_selected",
+      "adoption": "unknown",
       "usages": []
     },
     {
@@ -238,7 +246,7 @@
         }
       ],
       "priority": "evaluate",
-      "adoption": "not_selected",
+      "adoption": "unknown",
       "usages": []
     },
     {
@@ -334,9 +342,17 @@
           "label": "官方仓库 AvdLee/SwiftUI-Agent-Skill，commit 204dba7c67256a8b707ee3fbc5759a824191974f；LICENSE 与 analyze_trace.py 公开 blob，2026-11-01 核验。"
         }
       ],
-      "priority": "lead",
-      "adoption": "unknown",
-      "usages": []
+      "priority": "reference",
+      "adoption": "adopted",
+      "usages": [
+        {
+          "project": "skills",
+          "projectUrl": "https://github.com/youngjunning/skills",
+          "stage": "adopted",
+          "purpose": "macos-app-develop 参考和脚本的许可改编",
+          "evidence": "2026-11-01 源码核验：https://github.com/youngjunning/skills/blob/705d1c58e60abf402d09dea61cf4e539a1ce027e/skills/engineering/macos-app-develop/NOTICE；https://github.com/youngjunning/skills/blob/705d1c58e60abf402d09dea61cf4e539a1ce027e/THIRD_PARTY.md；仅证明代码接入。"
+        }
+      ]
     },
     {
       "id": "84d1b9c307ef625a",
@@ -898,11 +914,11 @@
       "adoption": "adopted",
       "usages": [
         {
-          "project": "硅基俊宁",
+          "project": "youngjunning.com",
           "projectUrl": "https://github.com/youngjunning/youngjunning.com",
           "stage": "adopted",
-          "purpose": "主页 BlurFade 与 BentoGrid 组件适配",
-          "evidence": "https://github.com/youngjunning/youngjunning.com/blob/main/THIRD_PARTY_NOTICES.md"
+          "purpose": "首页 BlurFade 与 BentoGrid",
+          "evidence": "2026-11-01 源码核验：https://github.com/youngjunning/youngjunning.com/blob/5a28f230f92d53ba73078bc448504d272ba11577/app/page.tsx；https://github.com/youngjunning/youngjunning.com/blob/5a28f230f92d53ba73078bc448504d272ba11577/THIRD_PARTY_NOTICES.md；仅证明代码接入。"
         }
       ]
     },
