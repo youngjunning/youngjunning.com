@@ -12,7 +12,7 @@
     {
       "id": "5c6ca4fa2d004a71",
       "name": "writting-skill",
-      "summary": "辅助中英文文章、技术文档与书稿的起草和修订，检查结构、论证、文风和证据边界。漫画文章同时维护正文与分镜，使用 better-imagegen 生成场景，附小界与小南的人设、肖像和全身参考图，保持角色一致并核对技术文字。",
+      "summary": "辅助中英文文章、技术文档与书稿的起草和修订，检查结构、论证、文风和证据边界。漫画文章维护正文与分镜；绘本负责故事、含封皮页数、分页、文字排版、印刷模板适配和整本交付，指定 better-imagegen 生成与修改插画。",
       "group": "self",
       "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/writing/writting-skill"
     },
@@ -33,7 +33,7 @@
     {
       "id": "b27a941e06cf835d",
       "name": "better-imagegen",
-      "summary": "图像生成、编辑与素材校验，支持绘本分镜、角色一致性、逐页插画和整本排版检查",
+      "summary": "图像生成、编辑与素材校验；按 writting-skill 的逐页分镜生成绘本插画，保持角色一致，支持背景扩展和局部修图。",
       "group": "self",
       "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/design/better-imagegen"
     },
