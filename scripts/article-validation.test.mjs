@@ -28,3 +28,22 @@ test('legacy npm UUID credentials are rejected even in reviewed examples', () =>
   const entry = { ...data, status: 'migrated', importedSha256: hash(body), bodySha256: hash(body) };
   assert.throws(() => assertArticleText(body, data, body, [entry]), /credential/);
 });
+
+test('content checks reject broken emphasis with source line numbers, including drafts', () => {
+  const body = '**重点。**后文';
+  const raw = '---\ntitle: 示例\n---\n' + body;
+  for (const draft of [false, true]) {
+    assert.throws(() => assertArticleText(raw, { title: '示例', draft }, body), /示例 \(4:6\).*标点/);
+  }
+});
+
+test('verbatim archives are exempt, but reviewed revisions cannot bypass the bold check', () => {
+  const body = '**重点。**后文';
+  const data = { id: 'test', title: 'Example', source: 'https://example.com/source', originalBodySha256: hash(body) };
+  const entry = { ...data, status: 'migrated', importedSha256: hash(body), bodySha256: hash(body) };
+  assert.doesNotThrow(() => assertArticleText(body, data, body, [entry]));
+  const revised = body + '。';
+  const reviewed = { ...entry, importedSha256: hash(revised), bodySha256: hash(revised) };
+  assert.throws(() => assertArticleText(revised, data, revised, [reviewed]), /Unrendered Markdown bold/);
+  assert.doesNotThrow(() => assertArticleText(body, { title: 'HTML', kind: 'html' }, body));
+});
