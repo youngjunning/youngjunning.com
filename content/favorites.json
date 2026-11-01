@@ -2,6 +2,27 @@
   "version": 1,
   "favorites": [
     {
+      "id": "84d1b9c307ef625a",
+      "kind": "project",
+      "title": "Matt Pocock 的 Agent Skills",
+      "url": "https://github.com/mattpocock/skills",
+      "summary": "按工程与生产力分类维护 Agent Skills，提供统一安装入口、贡献规则与本地软链接脚本。",
+      "reason": "用于参考多技能仓库的目录、安装与维护方式。本条为会话发现，不表示已采用其全部技能或流程。",
+      "tags": [
+        "Agent Skills",
+        "工程工作流",
+        "仓库管理"
+      ],
+      "savedAt": "2026-11-01",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "官方仓库 mattpocock/skills 的 README、CONTRIBUTING.md 与 scripts/link-skills.sh，2026-11-01 核验。"
+        }
+      ]
+    },
+    {
       "id": "6a8c3e740f921db5",
       "kind": "project",
       "title": "Stagehand：浏览器 AI 自动化 SDK",

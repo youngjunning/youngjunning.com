@@ -2,6 +2,28 @@
   "version": 2,
   "records": [
     {
+      "id": "c7a148d0b5329e64",
+      "kind": "judgment",
+      "title": "用统一仓库维护可公开的技能体系",
+      "text": "除涉及内网敏感数据的技能外，我希望将自己维护的技能开源，参考 mattpocock/skills 的管理方式，集中到 youngjunning/skills 仓库维护；迁移完成后，可以删除原来的独立技能仓库。",
+      "context": "2026-11-01 对个人技能体系的维护与开源范围提出的要求。第三方安装与自有技能分开，敏感内容不随仓库整合进入公开源。",
+      "date": "2026-11-01",
+      "recordedAt": "2026-11-01",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "basis": "本人明确提出统一仓库与默认开源的范围；未说明更多取舍理由。",
+      "alternatives": [],
+      "outcome": null,
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-01，公开摘要：将无内网敏感数据的自有技能集中开源维护，迁移后可删除独立仓库。"
+        }
+      ]
+    },
+    {
       "id": "4d1792c6e8b0a35f",
       "kind": "judgment",
       "title": "自动化框架架构先独立调研社区方案",

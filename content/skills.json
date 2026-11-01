@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-31",
+  "updatedAt": "2026-11-01",
   "skills": [
     {
       "id": "df18c7b59a42e630",
@@ -14,7 +14,7 @@
       "name": "writting-skill",
       "summary": "辅助中英文文章、技术文档与书稿的起草和修订。先明确读者、目的与事实来源，再检查结构、论证、文风和证据边界；按发表场景调整选题，区分技术新意、真实使用问题、实现机制与可验证结果。",
       "group": "self",
-      "sourceUrl": null
+      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/writing/writting-skill"
     },
     {
       "id": "faad36c651afcb0d",
@@ -22,6 +22,69 @@
       "summary": "从会话中整理有依据的个人记录、收藏和技能用途，区分本人陈述与工具执行结果。每轮核对公开同步状态，将合格增量脱敏后保存；没有变化时不重复写入。",
       "group": "self",
       "sourceUrl": null
+    },
+    {
+      "id": "a1cb9754d63208fe",
+      "name": "top-architect",
+      "summary": "架构讨论、决策与评审",
+      "group": "self",
+      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/engineering/top-architect"
+    },
+    {
+      "id": "b27a941e06cf835d",
+      "name": "better-imagegen",
+      "summary": "图像生成、编辑与素材校验",
+      "group": "self",
+      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/design/better-imagegen"
+    },
+    {
+      "id": "c8ed10a6f42975b3",
+      "name": "report-skill",
+      "summary": "工程汇报与交付证据",
+      "group": "self",
+      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/engineering/report-skill"
+    },
+    {
+      "id": "d913f26c0ae8574b",
+      "name": "tauri-skills",
+      "summary": "Tauri 2 安全边界与 Node.js sidecar",
+      "group": "self",
+      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/engineering/tauri-skills"
+    },
+    {
+      "id": "e4a372d910bf6c85",
+      "name": "qingshan-design",
+      "summary": "青山湖跨平台设计系统",
+      "group": "self",
+      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/design/qingshan-design"
+    },
+    {
+      "id": "f2be9a1548d06c73",
+      "name": "windows-app-automation",
+      "summary": "Windows 桌面自动化与状态验收",
+      "group": "self",
+      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/engineering/windows-app-automation"
+    },
+    {
+      "id": "18f53ad027c6be94",
+      "name": "fiction-site-builder",
+      "summary": "小说创作与阅读站点建设",
+      "group": "self",
+      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/writing/fiction-site-builder"
+    },
+    {
+      "id": "2a8e437d51f09cb6",
+      "name": "adsense-site-builder",
+      "summary": "AdSense 站点规划、建设与就绪审查",
+      "group": "self",
+      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/publishing/adsense-site-builder"
+    },
+    {
+      "id": "3b4c6901d82fe57a",
+      "name": "browser-performance-audit",
+      "summary": "浏览器加载、资源与长会话性能审查",
+      "group": "self",
+      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/engineering/browser-performance-audit"
     }
   ]
 }
