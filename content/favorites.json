@@ -2,6 +2,19 @@
   "version": 1,
   "favorites": [
     {
+      "id": "e81bc6847d38f902",
+      "kind": "project",
+      "title": "GBrain：Agent 知识库实现",
+      "url": "https://github.com/garrytan/gbrain",
+      "summary": "以 Bun 为主要运行时的 Agent 知识库，提供 PGLite/PostgreSQL 存储、文本检索、页面链接与时间线等实现，代码采用 MIT 许可证。",
+      "reason": "用于核查来源索引、图谱遍历、版本一致性和嵌入式存储的实现边界；会话发现，不代表已验证全部功能或整体效果。",
+      "tags": ["Agent Memory", "知识管理", "GBrain"],
+      "savedAt": "2026-11-01",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [{ "label": "原作者仓库，2026-11-01 核验固定版本 88d3f572950a772d268b22afe0bd53c2a2f090ff：https://github.com/garrytan/gbrain/tree/88d3f572950a772d268b22afe0bd53c2a2f090ff" }]
+    },
+    {
       "id": "91fc906a99431e8a",
       "kind": "knowledge",
       "title": "LLM Wiki：原作者设计提案",
