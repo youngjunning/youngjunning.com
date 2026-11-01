@@ -47,3 +47,19 @@ test('the career article renders each repaired bold span with punctuation outsid
   }
   assert.ok(strong.every(text => !/[。！？：]$/u.test(text)));
 });
+
+test('the platform article renders its three previously broken bold passages', () => {
+  const filename = 'content/posts/从 Linux 与 Ubuntu 到 Chromium 与 Chrome：理解平台与发行版的边界.md';
+  const { content } = matter(fs.readFileSync(filename, 'utf8'));
+  assert.deepEqual(markdownEmphasisIssues(content), []);
+  const strong = [];
+  function visit(node) {
+    if (node.type === 'strong') strong.push(node.children.map(child => child.value || '').join(''));
+    node.children?.forEach(visit);
+  }
+  visit(unified().use(remarkParse).use(remarkGfm).parse(content));
+  for (const label of ['同一上游代码不等于同一产品', '浏览器产品的分界比“fork 了多少代码”更重要', '不要认为共享底座就应该统一版本和统一发版']) {
+    assert.ok(strong.includes(label), label);
+  }
+  assert.ok(strong.every(text => !/[。！？：]$/u.test(text)));
+});
