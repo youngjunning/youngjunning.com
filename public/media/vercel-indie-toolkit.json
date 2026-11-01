@@ -1,0 +1,25 @@
+{
+  "file": "/media/vercel-indie-toolkit.webp",
+  "model": "gpt-image-2.5-all",
+  "requested_size": "1280x720",
+  "actual_resolution": "1280x720",
+  "generation_time_seconds": 35.58,
+  "response_format": "b64_json",
+  "output_format": "webp",
+  "file_size_bytes": 35062,
+  "postprocess": "WebP quality 78",
+  "prompt": "Landscape editorial article cover, 1280 by 720. A compact independent developer workbench: one elegant open laptop and an upright smartphone beside a small open paper book, all arranged as a single cohesive still life on a pale natural desk. The laptop screen contains a restrained abstract content editor with simple lines; the phone screen shows a minimal book reading page without actual words. A small soft cloud-shaped sculptural form in the background quietly suggests hosted infrastructure. Scene-led premium editorial illustration, fine matte ceramic and paper textures, natural soft daylight, slight elevated three-quarter view. Qingshan Lake light visual language: warm mist-white, lake teal, cypress green, subtle gray-blue, tiny warm dawn accent. Calm capable atmosphere, generous breathing room, entire objects inside a safe central 80 percent area so image crops safely. No people, no arrows, no architecture diagram, no labels, no text, no letters, no watermark, no logos, no platform brand marks, no neon.",
+  "created_at": "2026-11-01",
+  "cover_brief": {
+    "article": "围绕 Vercel，搭一套独立开发者的交付套件",
+    "reader": "Independent app developers",
+    "promise": "A maintainable small product with a hosted backend and native client",
+    "scene": "Compact laptop, phone and book workbench",
+    "identity": "No people or brand marks",
+    "visual_language": "Qingshan Lake Light",
+    "safe_area": "Central 80 percent",
+    "text_policy": "No text",
+    "surface": "Public technical blog, landscape",
+    "public_asset": "/media/vercel-indie-toolkit.webp"
+  }
+}
