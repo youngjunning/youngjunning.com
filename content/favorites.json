@@ -2,6 +2,25 @@
   "version": 1,
   "favorites": [
     {
+      "id": "6f597c80ab124de9",
+      "kind": "project",
+      "title": "Vercount：兼容不蒜子的免费访客计数器",
+      "url": "https://github.com/EvanNotFound/vercount",
+      "summary": "提供网站访问量（PV）和访客数（UV）统计，兼容不蒜子标签；Go 与 Redis 负责计数，提供免费公益服务并支持自托管。",
+      "reason": "主动收藏，用于回查网站访客统计的接入方式、计数口径与自托管方案。",
+      "tags": ["网站统计", "PV/UV", "不蒜子", "开源工具"],
+      "savedAt": "2026-11-01",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        { "label": "本人陈述，2026-11-01，公开摘要：明确要求收藏 Vercount。" },
+        { "label": "2026-11-01 核验官方仓库与 README：https://github.com/EvanNotFound/vercount" }
+      ],
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": []
+    },
+    {
       "id": "a832d4fb6130e725",
       "kind": "project",
       "title": "Storybook Generator Skill：绘本分镜与图文验收",
