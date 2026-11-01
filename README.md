@@ -50,4 +50,4 @@ npm start
 
 内容检查验证字段、日期、关系、去重和部分敏感标记，不能代替人工审读。所有源码及 Git 历史公开，禁止以 private 标志保存敏感内容。代码与设计来源许可见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 
-公开站使用 OpenAI SDK 调用 DeepSeek，保留本地公开资料检索，不安装 GBrain 或 PGLite。
+公开站使用 OpenAI SDK 调用 DeepSeek，检索基于本地公开文件和显式来源关系，不安装 GBrain 或 PGLite。模型参数仍使用上述 DEEPSEEK 服务端变量。

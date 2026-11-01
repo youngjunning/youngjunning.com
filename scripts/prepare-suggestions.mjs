@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {projectPreparedSuggestions} from '../lib/prepared-suggestions.mjs';
+const root=process.cwd(),file=path.join(root,'content/suggestions.json'),snapshot=path.join(root,'.content/conversation.json');
+const index=JSON.parse(fs.readFileSync(snapshot,'utf8'));
+const artifact=fs.existsSync(file)?JSON.parse(fs.readFileSync(file,'utf8')):undefined;
+const suggestions=projectPreparedSuggestions(index,artifact);
+if(!suggestions?.length)throw new Error('Prepared suggestions are missing or stale; ask Codex to update content/suggestions.json from current sources before building');
+index.preparedSuggestions=artifact;
+fs.writeFileSync(snapshot+'.pending',JSON.stringify(index));fs.renameSync(snapshot+'.pending',snapshot);
+console.log(JSON.stringify({suggestions:'prepared-files-only',count:suggestions.length,modelCalls:0}));

@@ -3,21 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "npm run content:prepare && next dev",
+    "build": "npm run wiki:prepare && npm run suggestions:prepare && next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "content:check": "node scripts/check-content.mjs",
     "schema:compare": "node scripts/compare-content-contract.mjs",
+    "content:prepare": "node scripts/prepare-content.mjs",
+    "wiki:prepare": "node scripts/prepare-wiki.mjs",
+    "content:new": "node scripts/new-article.mjs",
+    "article:sync": "node scripts/article-sync.mjs",
+    "code:connect": "node scripts/connect-code.mjs",
+    "code:review": "node scripts/review-code.mjs",
     "test": "node --test scripts/*.test.mjs",
-    "prebuild": "npm run content:check"
+    "prebuild": "npm run content:check",
+    "suggestions:prepare": "node scripts/prepare-suggestions.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",
     "gray-matter": "^4.0.3",
+    "hast-util-from-html": "2.0.3",
     "lucide-react": "^0.468.0",
     "motion": "^12.23.0",
     "next": "16.4.3",
+    "openai": "6.49.0",
     "react": "19.3.1",
     "react-dom": "19.3.1",
     "react-markdown": "^10.1.0",
@@ -26,9 +35,9 @@
     "rehype-slug": "^6.0.0",
     "remark-gfm": "^4.0.1",
     "remark-parse": "11.0.0",
+    "remark-rehype": "11.1.2",
     "tailwind-merge": "^3.3.0",
-    "unified": "11.0.5",
-    "openai": "6.49.0"
+    "unified": "11.0.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

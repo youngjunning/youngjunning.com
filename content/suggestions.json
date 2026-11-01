@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "policy": "codex-prepared-suggestions-1",
+  "key": "6460ec6e9f964b00ec751b35580c5969df99eabaee7dfa38ea00b925e4e56696",
+  "generatedAt": "2026-11-01T16:25:31.410Z",
+  "suggestions": [
+    {
+      "id": "d3fe84379d67e0ae",
+      "question": "TaleFrame 在正文存 Postgres 与拆对象文件之间，当前规模下取舍依据是什么？",
+      "kind": "blog",
+      "topic": "TaleFrame 架构实录：原生 Android 如何接上 Vercel 小说后台",
+      "angle": "tradeoff",
+      "evidence": [
+        {
+          "sourceId": "blog-b7e91c4a20d865f3-132",
+          "quote": "这组数据支持的是一个有限判断：在当前书库规模下，正文并没有大到必须拆出另一套文本文件服务。"
+        },
+        {
+          "sourceId": "blog-a4d52e70c1968bf3-45",
+          "quote": "也可以将正文存成对象文件，数据库只保留索引。但这样需要额外处理上传成功而数据库更新失败、快照引用了不存在的对象、旧对象清理与回退发生冲突等情况。"
+        }
+      ]
+    },
+    {
+      "id": "e33b73c336dc26ef",
+      "question": "TaleFrame 发布快照与正文版本去重机制，如何避免只改一章时复制整本正文？",
+      "kind": "blog",
+      "topic": "围绕 Vercel，搭一套独立开发者的交付套件",
+      "angle": "mechanism",
+      "evidence": [
+        {
+          "sourceId": "blog-a4d52e70c1968bf3-45",
+          "quote": "正文版本按“章节 ID 与内容哈希”去重。只修改一章时，其余章节可以复用已有正文版本；发布快照保存引用，无需每次复制整本正文。"
+        },
+        {
+          "sourceId": "blog-b7e91c4a20d865f3-132",
+          "quote": "发布正文并非全库按哈希去重，唯一键是“章节 ID + 哈希”；不同章节即便正文相同，也不是同一条版本记录。"
+        }
+      ]
+    },
+    {
+      "id": "73438c969425d3cd",
+      "question": "TaleFrame 下架后，共享缓存与设备离线内容分别留下什么无法远程收回的边界？",
+      "kind": "blog",
+      "topic": "TaleFrame 架构实录：原生 Android 如何接上 Vercel 小说后台",
+      "angle": "boundary",
+      "evidence": [
+        {
+          "sourceId": "blog-b7e91c4a20d865f3-132",
+          "quote": "下架会清空该书的发布指针，之后公开目录不再列出它；正文接口回源时也检查书籍仍处于已发布状态。不过，共享缓存存在有效期，已经下载到手机里的内容也无法远程收回。"
+        },
+        {
+          "sourceId": "blog-a4d52e70c1968bf3-45",
+          "quote": "已经到达 CDN 的响应可能在缓存期内继续可用，设备上已有的离线内容也无法靠下架动作远程抹除。当前接口缓存窗口为 60 秒。"
+        }
+      ]
+    },
+    {
+      "id": "31c312b5f26ca2fb",
+      "question": "青山湖风格中保留“雾白”视觉语义但放弃系统采样，具体用什么实现替代？",
+      "kind": "blog",
+      "topic": "青山湖设计风格的诞生记",
+      "angle": "tradeoff",
+      "evidence": [
+        {
+          "sourceId": "blog-92475e72a3319ba5-48",
+          "quote": "最后采用的是纯 SwiftUI 内部绘制： - 大面积雾白柔焦带； - 左上角雾白 soft blur； - 右下角很淡的湖水青 blur； - 所有效果裁剪在卡片内部； - 不使用 NSVisualEffectView； - 不使用 .behindWindow 或 .underWindowBackground。"
+        },
+        {
+          "sourceId": "blog-497451432d1eee6a-85",
+          "quote": "最后我没有放弃“雾”，也没有为了视觉效果继续赌系统边界，而是改用纯 SwiftUI 绘制柔焦层：保留雾白的视觉职责，换掉高风险实现。"
+        }
+      ]
+    },
+    {
+      "id": "28290f4cb11b3d5d",
+      "question": "青山湖风格为何把“删减规则”而非允许清单作为设计体系的核心？",
+      "kind": "blog",
+      "topic": "青山湖设计风格的诞生记",
+      "angle": "mechanism",
+      "evidence": [
+        {
+          "sourceId": "blog-92475e72a3319ba5-48",
+          "quote": "如果一套风格只告诉 Agent“可以用什么”，它很快就会把所有特征同时用上。真正能提高输出稳定性的，是同时写清楚“最多用多少”“只能用在哪里”“什么情况下不要用”。"
+        },
+        {
+          "sourceId": "blog-497451432d1eee6a-85",
+          "quote": "这段过程让我确认：设计风格首先是一套删减规则。 如果只告诉 AI“可以用什么”，它会很积极地把所有特征一起用上。输出真正开始稳定，是因为规则同时写清了“最多用多少”“只能用在哪里”“什么情况下不要用”。"
+        }
+      ]
+    },
+    {
+      "id": "4a005ec3291e899c",
+      "question": "TaleFrame 的 Vercel On-Demand Budget 为何不能当作精确、即时的账单硬上限？",
+      "kind": "blog",
+      "topic": "围绕 Vercel，搭一套独立开发者的交付套件",
+      "angle": "boundary",
+      "evidence": [
+        {
+          "sourceId": "blog-a4d52e70c1968bf3-106",
+          "quote": "Vercel 的 On-Demand Budget 本身不会停止用量；只有启用相应暂停动作，达到阈值后才会暂停团队所有项目的生产部署。检查存在几分钟延迟，暂停后存储费用仍可能继续产生。"
+        },
+        {
+          "sourceId": "blog-a4d52e70c1968bf3-106",
+          "quote": "因此，它不能被描述成精确、即时、覆盖所有服务的账单硬上限。"
+        }
+      ]
+    }
+  ]
+}

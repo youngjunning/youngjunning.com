@@ -11,7 +11,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <header className="header shell"><Link href="/" className="brand"><span className="brand-icon"><Fingerprint size={22} /></span>硅基俊宁<span className="brand-dot">.</span></Link>
       <nav aria-label="主导航"><Link href="/resume">简历</Link><Link href="/records">记录</Link><Link href="/blog">文章</Link><Link href="/favorites">收藏</Link><Link href="/chat" className="nav-chat" aria-label="与我对话">与我对话 <ArrowUpRight size={15} /></Link></nav>
     </header>
-    <div className="style-bar shell" style={{ gap: 16, alignItems: 'center', flexWrap: 'wrap' }}><Link href="/skills">Skills · 技能体系 ↗</Link><StyleSwitcher /></div>
+    <div className="style-bar shell" style={{ gap: 16, alignItems: 'center', flexWrap: 'wrap' }}><nav aria-label="资料导航"><Link href="/skills">Skills</Link><Link href="/graph">图谱</Link><Link href="/wiki">Wiki</Link><Link href="/engineering">工程资料</Link><Link href="/okr">目标</Link><Link href="/manage">写作</Link></nav><StyleSwitcher /></div>
     <main id="main" className="shell">{children}</main>
     <footer className="footer shell"><span>© 2026 俊宁<span className="footer-note"> · 记录思考，也记录变化</span></span><div><Link href="/protocol">蒸馏协议</Link><a href={persona.github} target="_blank" rel="noreferrer">GitHub ↗</a><a href="/api/records">开放数据 ↗</a></div></footer>
   </body></html>;

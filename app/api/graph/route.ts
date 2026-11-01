@@ -1,3 +1,2 @@
-import {getContent} from '@/lib/content';
-import {favoriteGraph} from '@/lib/favorite-tracking.mjs';
-export function GET(){return Response.json(favoriteGraph(getContent().favorites));}
+import { buildPublicSnapshot } from '@/lib/content-store.mjs';
+export function GET() { return Response.json(buildPublicSnapshot().graph); }

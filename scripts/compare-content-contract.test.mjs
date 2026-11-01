@@ -4,13 +4,12 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { compareContentContract } from './compare-content-contract.mjs';
+import { compareContentContract, files } from './compare-content-contract.mjs';
 
 test('contract comparison detects drift and missing files without changing either repository', () => {
   const root = fileURLToPath(new URL('..', import.meta.url));
   const peer = fs.mkdtempSync(path.join(os.tmpdir(), 'content-contract-'));
   try {
-    const files = ['lib/record-model.mjs', 'lib/favorite-model.mjs', 'lib/record-types.ts', 'lib/favorite-types.ts', 'lib/favorite-tracking.mjs', 'content/sync.README.md'];
     for (const file of files) {
       fs.mkdirSync(path.dirname(path.join(peer, file)), { recursive: true });
       fs.copyFileSync(path.join(root, file), path.join(peer, file));

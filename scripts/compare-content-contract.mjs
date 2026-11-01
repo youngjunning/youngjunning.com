@@ -3,7 +3,42 @@ import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
-const files = ['lib/record-model.mjs', 'lib/favorite-model.mjs', 'lib/record-types.ts', 'lib/favorite-types.ts', 'lib/favorite-tracking.mjs', 'content/sync.README.md'];
+export const files = [
+  'lib/record-model.mjs',
+  'lib/favorite-model.mjs',
+  'lib/record-types.ts',
+  'lib/favorite-types.ts',
+  'lib/favorite-tracking.mjs',
+  'lib/article-resources.mjs',
+  'lib/article-model.mjs',
+  'lib/article-sync.mjs',
+  'lib/audience-policy.mjs',
+  'lib/source-credentials.mjs',
+  'lib/twin-knowledge.mjs',
+  'lib/twin-types.ts',
+  'lib/twin-wiki.mjs',
+  'lib/twin-chat.mjs',
+  'lib/twin-suggestion-generator.mjs',
+  'lib/twin-suggestions.mjs',
+  'lib/code-brain-model.mjs',
+  'lib/prepared-suggestions.mjs',
+  'lib/engineering-model.mjs',
+  'lib/engineering-answer-policy.mjs',
+  'lib/code-evidence.mjs',
+  'lib/okr-schema.mjs',
+  'lib/okr-types.ts',
+  'lib/skill-usage.mjs',
+  'lib/skill-usage-types.ts',
+  'lib/article-draft.mjs',
+  'lib/topics.mjs',
+  'lib/article-reading.mjs',
+  'lib/types.ts',
+  'scripts/prepare-suggestions.mjs',
+  'scripts/article-sync.mjs',
+  'scripts/prepare-wiki.mjs',
+  'scripts/review-code.mjs',
+  'content/sync.README.md',
+];
 
 // Explicit peer only: builds and hosted requests never read another repository.
 export function compareContentContract(root, peer) {

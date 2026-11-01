@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-01T00:00:00Z",
+  "metric": "verified_skill_read_turns",
+  "totals": { "triggerCount": 0, "skillCount": 0, "projectCount": 0, "directoryGroupCount": 0, "unattributedTriggers": 0, "ambiguousTriggers": 0, "pendingBackfillObservations": 0 },
+  "coverage": { "fileCount": 0, "firstSeen": null, "lastSeen": null },
+  "skills": [],
+  "projects": []
+}
