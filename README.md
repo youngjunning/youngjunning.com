@@ -28,7 +28,7 @@ npm run dev
 - `content/records.json`：version 2 个人记录，支持经历、项目、判断、变化与想法。
 - `content/favorites.json`：version 1 收藏，区分本人主动收藏与会话发现，知识卡片独立保存。
 - `content/posts/`：精选 Markdown 文章，稳定 ID 对应 `/blog/:id`。
-- `.codex/memory-distill.md`：memory-distill 的公开目标接入约定。
+- `.codex/memory-distill.md`：通用 memory-distill 的公开目标接入约定；每轮自动收尾由 digital-twin-maintenance 编排，只接收公司来源的单向同步，本站独立维护。
 
 协议沿用硅基紫升的字段语义、来源、时间精度、去重和变化关系。外部项目中的合格内容直接记录；内部项目只同步已脱敏公开版本，原始证据与精确出处保留内部。不会自动复制内部仓库历史、文章、环境配置或附件。低价值文档、模板、重复内容、缺乏上下文的任务流水与来源不明结论不收录。完整说明见 [内容协议](content/README.md)，访客入口为 `/protocol`。
 

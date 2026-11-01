@@ -19,7 +19,7 @@
     {
       "id": "faad36c651afcb0d",
       "name": "memory-distill",
-      "summary": "按授权分别整理个人记录、参考资料与概念笔记，支持脱敏同步、技能清单维护和本机 Codex 按项目触发统计；通用解释与本人理解分别注明归属，统计证据仅留本机。",
+      "summary": "从会话或指定材料提炼有证据的个人记录、参考资料与概念笔记，核对上下文、来源、时间和重复；支持只输出候选或按明确接入约定保存。",
       "group": "self",
       "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/productivity/memory-distill"
     },

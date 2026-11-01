@@ -2,23 +2,23 @@
 
 根目录为本文件上一层目录（..）。主体为俊宁，站名硅基俊宁，正式域名 youngjunning.com。先读取 AGENTS.md、content/README.md 与 lib/model.mjs。
 
-双站 schema、蒸馏语义与功能模块一致，UI 和受众策略分别维护；先读 `content/sync.README.md`。公司内站不是个人私密存储，求职意向、面试、薪资谈判和其他不允许公司知道的个人信息，未经针对公司读者的明确授权不得反向同步，已经公开也不代表公司同步授权。私密原始资料及精确映射留在本机或明确配置的个人私有目标，不因 internal 项目分类而进入公司仓库。
+本文件仅定义通用 memory-distill 的公开目标字段与校验。自动收尾由 digital-twin-maintenance 编排；本站独立维护，仅接收硅基紫升到本站的单向同步，公开增改删除不回灌公司。现有 schema 语义兼容不代表未来持续维护公司站的义务；先读 `content/sync.README.md`。公司内站不是个人私密存储，求职意向、面试、薪资谈判和其他不允许公司知道的个人信息，未经针对公司读者的明确授权不得反向同步，已经公开也不代表公司同步授权。私密原始资料及精确映射留在本机或明确配置的个人私有目标，不因 internal 项目分类而进入公司仓库。
 
-文章是独立增量同步分支：每轮检查本轮新写、实质修订、撤回的文章与已知未完成项，保留稳定 ID，针对接收方审查正文、元数据、来源、封面、附件和引用后才写入。内部 CDN 和原始内部证据不进入本站；无法保真脱敏时跳过并说明。完整操作沿用全局 Skill 的 `references/audience-sync.md`，不整库复制历史稿，不声称有后台自动同步服务。模块缺失应报告待实现，数据可因受众限制不同或为空。
+文章是独立增量同步分支：定制流程每轮检查公司来源本轮新写、实质修订、撤回的文章与已知公开待同步项；本站自有稿直接维护，保留稳定 ID，针对接收方审查正文、元数据、来源、封面、附件和引用后才写入。内部 CDN 和原始内部证据不进入本站；无法保真脱敏时跳过并说明。完整操作沿用 digital-twin-maintenance 的 `references/audience-sync.md`，不整库复制历史稿，不声称有后台自动同步服务。模块缺失应报告待实现，数据可因受众限制不同或为空。
 
-个人记录写入 content/records.json，version: 2；字段和专有类型与硅基紫升一致。正文/标题/背景映射 text/title/context，类型 experience/project/judgment/change/thought。id 为 16 位小写十六进制稳定 ID，跨目标同步保留原 ID。date 是发生日期，未知为 null，recordedAt 是录入日期。sources.kind 为 statement/archive/article，label 仅保存可公开来源。未知理由写明，未知备选为空数组、结果为 null。修复保留 ID，真实变化新增关联 change。
+传入 memory-distill 时显式指定本接入文件，不依赖默认双站配置。个人记录写入 content/records.json，version: 2；字段和专有类型与硅基紫升一致。正文/标题/背景映射 text/title/context，类型 experience/project/judgment/change/thought。id 为 16 位小写十六进制稳定 ID，跨目标同步保留原 ID。date 是发生日期，未知为 null，recordedAt 是录入日期。sources.kind 为 statement/archive/article，label 仅保存可公开来源。未知理由写明，未知备选为空数组、结果为 null。修复保留 ID，真实变化新增关联 change。
 
 收藏独立写 content/favorites.json，version: 1。kind 为 project/knowledge/card，explicit 仅表示本人明确收藏，Agent 发现使用 discovered。按原始 URL 去重；card 的 url 为 null，并映射 date、recordedAt、context、understanding、example、distinction。收藏不作为本人参与、认可或掌握的证据。
 
 参考资料和概念笔记独立于个人记忆判断，合格会话发现内容可按既有授权自动保存。通用概念笔记不要求本人已掌握，在 context、sources 中标明资料整理或 AI 辅助解释，understanding 承载概念要点；声称本人理解、判断或实践时才要求本人证据。仅出现术语或重复资料摘要时不新增笔记，同概念补全纠错保留 ID。未配置一种类型只限制该类型，不跳过其他分支。
 
-external 项目只写本目标；internal 项目仅接收已脱敏公开版本，原始证据、摘录、会话位置和跨目标映射保留内部。unknown 只输出候选。原始来源不适合公开时用“本人陈述，日期，公开摘要”，不要把不可访问内网链接改写成虚构公共链接。不在本仓库创建原始证据 archive。仅使用 shared，拒绝 private；所有源文件均公开。
+external 项目只写本目标；internal 项目仅接收已脱敏公开版本，原始证据、摘录、会话位置和跨目标映射仅留获准接收的位置，个人私密出处不进入公司。unknown 只输出候选。原始来源不适合公开时用“本人陈述，日期，公开摘要”，不要把不可访问内网链接改写成虚构公共链接。不在本仓库创建原始证据 archive。仅使用 shared，拒绝 private；所有源文件均公开。
 
 写入前读取现有数据，按事件、对象、立场、出处和 URL 去重，保留并行修改。完成后执行 npm run content:check 和 npm test，回读对应数据；有运行服务时检查 /records/:id、/api/records/:id 或 /favorites 与 /api/favorites，没有服务则如实报告页面未验收。应用修改再执行 typecheck 与 build。验证后自动提交并推送本任务内容，单独报告部署状态。
 
 ## Skills 公开同步
 
-每轮核对个人记录、收藏以及 Skills 的合格增量和已知待同步项。Skills 独立存入 `content/skills.json`，格式为 `{ "version": 1, "updatedAt": "YYYY-MM-DD", "skills": [] }`。条目字段为 id（16 位小写十六进制稳定 ID）、name（可公开名称或泛化标题）、summary（独立可读的用途）、group（self/adopted）、sourceUrl（已核验的公共来源或 null）。这些数据说明维护或引入的工具，不作为本人经历、熟练程度或认可的证据。
+由 digital-twin-maintenance 每轮核对个人记录、收藏以及 Skills 的合格增量和已知公开待同步项；内站停用后不读取或扫描公司目录。memory-distill 不运行清单同步。Skills 独立存入 `content/skills.json`，格式为 `{ "version": 1, "updatedAt": "YYYY-MM-DD", "skills": [] }`。条目字段为 id（16 位小写十六进制稳定 ID）、name（可公开名称或泛化标题）、summary（独立可读的用途）、group（self/adopted）、sourceUrl（已核验的公共来源或 null）。这些数据说明维护或引入的工具，不作为本人经历、熟练程度或认可的证据。
 
 内部名称与公开 ID 的映射只留内部目标；本目标不存内部名称、安装路径、主机、原始指纹、会话标识、凭证或源码。内部条目被删除或纠正时核对对应公开条目，保留仅在本站独立维护的内容。原名包含内部项目身份时使用泛化标题；无法在脱敏后保留真实用途则跳过并说明，不编造公共来源。
 
