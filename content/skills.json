@@ -108,13 +108,6 @@
       "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/engineering/polyglot-service-deploy"
     },
     {
-      "id": "77f2dea51b649938",
-      "name": "browser-distribution-engineering",
-      "summary": "浏览器平台、产品发行、签名与通道验收",
-      "group": "self",
-      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/engineering/browser-distribution-engineering"
-    },
-    {
       "id": "88a3efb62c750a49",
       "name": "lake-report-design",
       "summary": "可移植 HTML 报告、语义设计与可探索图表",
@@ -127,13 +120,6 @@
       "summary": "原生 macOS、SwiftUI 与 Instruments 工作流（含许可改编）",
       "group": "self",
       "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/engineering/macos-app-develop"
-    },
-    {
-      "id": "aac5b1d84e972c61",
-      "name": "localize",
-      "summary": "保留结构和占位符的多语言增量更新",
-      "group": "self",
-      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/engineering/localize"
     }
   ]
 }
