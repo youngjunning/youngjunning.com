@@ -25,3 +25,15 @@ test('SDK does not retry provider errors or expose their bodies', async () => {
   assert.equal(response.status, 429);
   assert.ok(!(await response.text()).includes('PRIVATE_PROVIDER_BODY'));
 });
+
+test('missing site credentials cannot fall back to another provider global key', async () => {
+  const previous = process.env.OPENAI_API_KEY;
+  process.env.OPENAI_API_KEY = 'unrelated-global-fixture';
+  let called = false;
+  try {
+    await assert.rejects(createChatCompletion({}, { messages: [] }, { fetcher: async () => { called = true; return Response.json({}); } }), /not configured/);
+    assert.equal(called, false);
+  } finally {
+    if (previous === undefined) delete process.env.OPENAI_API_KEY; else process.env.OPENAI_API_KEY = previous;
+  }
+});
