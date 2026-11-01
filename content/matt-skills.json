@@ -1,0 +1,525 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-01",
+  "upstreamCommit": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
+  "skills": [
+    {
+      "name": "ask-matt",
+      "category": "已引入",
+      "summary": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/ask-matt/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "code-review",
+      "category": "已引入",
+      "summary": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/code-review/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "codebase-design",
+      "category": "已引入",
+      "summary": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/codebase-design/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "桌面应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "diagnosing-bugs",
+      "category": "已引入",
+      "summary": "Diagnosis loop for hard bugs and performance regressions. Use when the user says \"diagnose\"/\"debug this\", or reports something broken/throwing/failing/slow.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/diagnosing-bugs/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "domain-modeling",
+      "category": "已引入",
+      "summary": "Build and sharpen a project's domain model. Use when discussing codebase terminology, writing or editing a GLOSSARY.md, or recording or editing an ADR.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/domain-modeling/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "桌面应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "grill-with-docs",
+      "category": "已引入",
+      "summary": "A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/grill-with-docs/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "桌面应用项目",
+        "浏览器项目",
+        "自动化平台前端"
+      ],
+      "usage": "桌面应用项目的协作规范约定在产品定位、视觉方向与交互讨论中使用；约定不代表实际调用。"
+    },
+    {
+      "name": "implement-spec",
+      "category": "已引入",
+      "summary": "Implement a specification in code.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/implement-spec/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "implement",
+      "category": "已引入",
+      "summary": "Implement a piece of work based on a spec or set of tickets.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/implement/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "improve-codebase-architecture",
+      "category": "已引入",
+      "summary": "Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/improve-codebase-architecture/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目",
+        "桌面应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "pr",
+      "category": "未引入",
+      "summary": "组织 PR 说明、验证证据与合并风险。",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/pr/SKILL.md",
+      "scope": "未安装",
+      "projects": [],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "prototype",
+      "category": "已引入",
+      "summary": "Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/prototype/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "桌面应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "research",
+      "category": "已引入",
+      "summary": "Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/research/SKILL.md",
+      "scope": "全局",
+      "projects": [],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "retro",
+      "category": "已引入",
+      "summary": "Conduct a retrospective on a coding session.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/retro/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "setup-matt-pocock-skills",
+      "category": "已引入",
+      "summary": "Configure this repo for the engineering skills: set up its issue tracker, triage label vocabulary, and domain doc layout. Run once before first use of the other engineering skills.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/setup-matt-pocock-skills/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "tdd",
+      "category": "已引入",
+      "summary": "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/tdd/SKILL.md",
+      "scope": "全局",
+      "projects": [],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "to-spec",
+      "category": "已引入",
+      "summary": "Turn the current conversation into a spec and publish it to the project issue tracker: no interview, just synthesis of what you've already discussed.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/to-spec/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "to-tickets",
+      "category": "已引入",
+      "summary": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker (edges as text in one file per ticket locally, or native blocking links on a real tracker).",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/to-tickets/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端"
+      ],
+      "usage": "服务端、自动化平台前端与 AI 应用项目的协作规范约定使用该技能管理任务与问题；约定不代表实际调用。"
+    },
+    {
+      "name": "triage",
+      "category": "已引入",
+      "summary": "Move issues and external PRs through a state machine of triage roles, categorise, verify, grill if needed, and write agent-ready briefs.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/triage/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "wayfinder",
+      "category": "已引入",
+      "summary": "Plan a huge chunk of work (more than one agent session can hold) as a shared map of decision tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/wayfinder/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "wizard",
+      "category": "已引入",
+      "summary": "Generate an interactive bash wizard that walks a human through steps only they can perform. Use when provisioning infrastructure, setting up credentials or CI secrets, walking an unfamiliar third-party dashboard, or running a one-off migration or cutover. Don't invoke this for steps the agent can perform itself.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/wizard/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "chief-of-staff",
+      "category": "未引入",
+      "summary": "上游开发中的 chief-of-staff 技能，尚未引入。",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/in-progress/chief-of-staff/SKILL.md",
+      "scope": "未安装",
+      "projects": [],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "claude-handoff",
+      "category": "已引入",
+      "summary": "Hand the current conversation off to a fresh background agent that picks up the work immediately.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/in-progress/claude-handoff/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "loop-me",
+      "category": "已引入",
+      "summary": "Grill me about specs for the workflows I want to build, within this workspace.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/in-progress/loop-me/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "setup-ts-deep-modules",
+      "category": "已引入",
+      "summary": "Wire dependency-cruiser into a TypeScript repo so each package is a deep module, with implementation hidden in subfolders and reachable only through its entry-point files. User-invoked.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/in-progress/setup-ts-deep-modules/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "software-factory",
+      "category": "未引入",
+      "summary": "上游开发中的 software-factory 技能，尚未引入。",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/in-progress/software-factory/SKILL.md",
+      "scope": "未安装",
+      "projects": [],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "writing-beats",
+      "category": "已引入",
+      "summary": "Writing, exploit; assemble raw material into a journey of beats, grounding each term before a beat leans on it.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/in-progress/writing-beats/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "writing-fragments",
+      "category": "已引入",
+      "summary": "Writing, explore: mine raw fragments, no structure yet.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/in-progress/writing-fragments/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "writing-shape",
+      "category": "已引入",
+      "summary": "Writing, exploit: shape raw material into an article, paragraph by paragraph.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/in-progress/writing-shape/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "git-guardrails-claude-code",
+      "category": "已引入",
+      "summary": "Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execute. Use when user wants to prevent destructive git operations, add git safety hooks, or block git push/reset in Claude Code.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/misc/git-guardrails-claude-code/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "migrate-to-shoehorn",
+      "category": "已引入",
+      "summary": "Migrate test files from `as` type assertions to @total-typescript/shoehorn. Use when user mentions shoehorn, wants to replace `as` in tests, or needs partial test data.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/misc/migrate-to-shoehorn/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "scaffold-exercises",
+      "category": "已引入",
+      "summary": "Create exercise directory structures with sections, problems, solutions, and explainers that pass linting. Use when user wants to scaffold exercises, create exercise stubs, or set up a new course section.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/misc/scaffold-exercises/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "setup-pre-commit",
+      "category": "已引入",
+      "summary": "Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests in the current repo. Use when user wants to add pre-commit hooks, set up Husky, configure lint-staged, or add commit-time formatting/typechecking/testing.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/misc/setup-pre-commit/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "grill-me",
+      "category": "已引入",
+      "summary": "A relentless interview to sharpen a plan or design.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/productivity/grill-me/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "grilling",
+      "category": "已引入",
+      "summary": "Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/productivity/grilling/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "桌面应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "handoff",
+      "category": "已引入",
+      "summary": "Compact the current conversation into a handoff document for another agent to pick up.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/productivity/handoff/SKILL.md",
+      "scope": "全局",
+      "projects": [],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "teach",
+      "category": "已引入",
+      "summary": "Teach the user a new skill or concept, within this workspace.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/productivity/teach/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "to-questionnaire",
+      "category": "已引入",
+      "summary": "Turn a decision you can't fully answer into a questionnaire for someone else to fill in.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/productivity/to-questionnaire/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "wait-what",
+      "category": "已引入",
+      "summary": "Stop. That last message did not land: re-pitch it.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/productivity/wait-what/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "writing-for-agents",
+      "category": "已引入",
+      "summary": "Writing documents for agents. Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md.",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/productivity/writing-for-agents/SKILL.md",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    },
+    {
+      "name": "resolving-merge-conflicts",
+      "category": "历史保留",
+      "summary": "Use when you need to resolve an in-progress git merge/rebase conflict.",
+      "sourceUrl": "https://github.com/mattpocock/skills",
+      "scope": "全局",
+      "projects": [
+        "服务端项目",
+        "浏览器项目",
+        "自动化平台前端",
+        "AI 应用项目"
+      ],
+      "usage": "尚未登记实际调用证据；已安装不等于已使用。"
+    }
+  ]
+}
