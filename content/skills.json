@@ -33,7 +33,7 @@
     {
       "id": "b27a941e06cf835d",
       "name": "better-imagegen",
-      "summary": "图像生成、编辑与素材校验",
+      "summary": "图像生成、编辑与素材校验，支持绘本分镜、角色一致性、逐页插画和整本排版检查",
       "group": "self",
       "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/design/better-imagegen"
     },
