@@ -17,6 +17,7 @@
     "code:review": "node scripts/review-code.mjs",
     "test": "node --test scripts/*.test.mjs",
     "prebuild": "npm run content:check",
+    "postbuild": "node scripts/check-runtime-assets.mjs",
     "suggestions:prepare": "node scripts/prepare-suggestions.mjs"
   },
   "dependencies": {
