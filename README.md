@@ -42,6 +42,8 @@ npm run build
 npm start
 ```
 
-构建与运行采用标准 Next.js Node.js 部署。可接入支持 Next.js 的平台，在平台配置服务端模型环境变量，然后绑定正式域名。需要服务端运行时以提供 `/api/chat`，GitHub 仓库公开本身不代表网站已经部署或域名已绑定。
+构建与运行采用标准 Next.js Node.js 部署。2026-11-01 已部署到 Vercel 项目 `youngjunning-com`，连接本仓库的 GitHub 自动部署，并绑定正式域名 `youngjunning.com`；平台地址为 `youngjunning-com.vercel.app`。阿里云继续管理 DNS，根域名使用 Vercel 推荐的 A 记录。域名解析目标可能调整，后续以项目 Domains 页面为准。
+
+生产环境单独配置 `DEEPSEEK_API_KEY`、`DEEPSEEK_BASE_URL` 与 `DEEPSEEK_MODEL`，提供 `/api/chat` 所需的服务端模型配置。本地环境文件不随部署上传；`.vercel` 项目关联文件不提交。文章、封面和内容数据推送到 `main` 后，由 Vercel 构建发布；推送成功仍需核对部署结果和线上页面。回退使用 Vercel 中的上一份可用部署。
 
 内容检查验证字段、日期、关系、去重和部分敏感标记，不能代替人工审读。所有源码及 Git 历史公开，禁止以 private 标志保存敏感内容。代码与设计来源许可见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
