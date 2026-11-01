@@ -2,7 +2,7 @@
   "version": 1,
   "policy": "evidence-wiki-4-reviewed-engineering",
   "modelKey": "d724ae6af851de534ad4f33c317efa04fbc375d5c4be10721e48920d1a9dfc25",
-  "generatedAt": "2026-11-01T16:24:34.617Z",
+  "generatedAt": "2026-11-01T17:27:12.981Z",
   "pages": [
     {
       "id": "0063e6a2ad1b8039",
@@ -3165,6 +3165,59 @@
         }
       ],
       "review": "model-reviewed"
+    },
+    {
+      "id": "22681b04c89e311f",
+      "key": "78391a0d889b95fb1aa4cd858d40bd7305dd1bc35d15b4171119eb7d2ad39ae6",
+      "title": "客户体验治理办公 AI 产品",
+      "type": "project",
+      "dependencies": [
+        {
+          "id": "record-5dbcb3463af529c5",
+          "sha256": "6d35515bb975d513ad24ed77d4b9c1b3df70cd15c2894181657f79cac9c130ca"
+        }
+      ],
+      "coverage": {
+        "totalSources": 1,
+        "sampledSources": 1,
+        "totalEntries": 1,
+        "sampledEntries": 1,
+        "complete": true
+      },
+      "paragraphs": [
+        {
+          "id": "f2b9a410206aaf8a",
+          "kind": "synthesis",
+          "text": "公开记录将该项目定位为面向客户体验治理办公场景的垂类 AI Work 产品，产品形态参考 ACCIO Work。记录确认俊宁主导该项目；对 ACCIO Work 的类比仅表达产品定位，不能据此认定已实现相同功能或完成交付。",
+          "attribution": "model-synthesis",
+          "evidence": [
+            {
+              "sourceId": "record-5dbcb3463af529c5",
+              "sha256": "6d35515bb975d513ad24ed77d4b9c1b3df70cd15c2894181657f79cac9c130ca",
+              "quote": "将一款 AI Work 产品定位于客户体验治理办公场景，产品形态参考 ACCIO Work。"
+            },
+            {
+              "sourceId": "record-5dbcb3463af529c5",
+              "sha256": "6d35515bb975d513ad24ed77d4b9c1b3df70cd15c2894181657f79cac9c130ca",
+              "quote": "2026-10-31 本人明确的产品定位，本文为脱敏归纳。2026-11-01 本人确认项目主导身份。项目起始日期、具体执行职责、实施进度和成果尚未说明；类比仅表达产品定位。"
+            }
+          ]
+        },
+        {
+          "id": "c460c96f16a84f9d",
+          "kind": "synthesis",
+          "text": "该记录未说明项目起始日期、具体执行职责、实施进度和成果。归纳只能确认已记录的定位与主导身份，不能据此给出上线时间、完成状态或效果指标；未记录成果也不能被解释为项目没有成果。",
+          "attribution": "model-synthesis",
+          "evidence": [
+            {
+              "sourceId": "record-5dbcb3463af529c5",
+              "sha256": "6d35515bb975d513ad24ed77d4b9c1b3df70cd15c2894181657f79cac9c130ca",
+              "quote": "项目起始日期、具体执行职责、实施进度和成果尚未说明；类比仅表达产品定位。"
+            }
+          ]
+        }
+      ],
+      "review": "codex-reviewed"
     },
     {
       "id": "25a1cc8d4f4721c4",
@@ -16465,12 +16518,10 @@
   ],
   "stats": {
     "planned": 76,
-    "reused": 0,
-    "generated": 75,
-    "failed": 1,
-    "rejected": 64,
-    "failures": {
-      "validate: Invalid Wiki paragraph list": 1
-    }
+    "reused": 75,
+    "generated": 1,
+    "failed": 0,
+    "rejected": 0,
+    "failures": {}
   }
 }
