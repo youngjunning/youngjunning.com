@@ -1,10 +1,10 @@
 {
   "version": 1,
   "audience": "external",
-  "updatedAt": "2026-11-01T18:31:28.247Z",
+  "updatedAt": "2026-11-01T18:40:33.813Z",
   "metric": "verified_skill_read_turns",
   "totals": {
-    "triggerCount": 461,
+    "triggerCount": 462,
     "skillCount": 14,
     "projectCount": 8,
     "directoryGroupCount": 0,
@@ -15,7 +15,7 @@
   "coverage": {
     "fileCount": 0,
     "firstSeen": "2026-07-04T05:20:27.882Z",
-    "lastSeen": "2026-11-01T18:30:45.184Z"
+    "lastSeen": "2026-11-01T18:38:37.205Z"
   },
   "skills": [
     {
@@ -34,7 +34,7 @@
     },
     {
       "name": "report-skill",
-      "triggerCount": 77,
+      "triggerCount": 78,
       "projects": [
         {
           "projectId": "git:504b91c3cd03c11a",
@@ -47,6 +47,10 @@
         {
           "projectId": "git:25361c8b154a49b9",
           "triggerCount": 2
+        },
+        {
+          "projectId": "git:38c889f3f90409c5",
+          "triggerCount": 1
         },
         {
           "projectId": "git:69d08711563f984a",
@@ -260,7 +264,7 @@
       "id": "git:38c889f3f90409c5",
       "name": "owlet",
       "kind": "git",
-      "triggerCount": 6
+      "triggerCount": 7
     },
     {
       "id": "git:c13c8d2cc6be59dc",
