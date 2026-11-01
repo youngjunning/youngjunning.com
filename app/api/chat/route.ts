@@ -5,4 +5,4 @@ export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 const handle = createConversationHandler({ loadKnowledge: getConversationKnowledge, env: process.env, retrieve: retrieveTwinEvidence, fingerprint: knowledgeFingerprint, identity: { name: persona.siteName, subject: persona.name } });
 export async function POST(request: Request) { return handle(request); }
-export function GET() { return Response.json({ available: isConversationAvailable(), model: getConversationModelName(), retrieval: 'local' }, { headers: { 'Cache-Control': 'no-store' } }); }
+export function GET() { return Response.json({ available: isConversationAvailable(), model: getConversationModelName(), retrieval: 'gbrain' }, { headers: { 'Cache-Control': 'no-store' } }); }

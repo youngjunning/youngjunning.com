@@ -15,7 +15,7 @@ UI 基于 [Magic UI](https://magicui.design/)，使用适配的 BlurFade 与 Ben
 需要 Node.js 20.9 或以上版本。
 
 ```sh
-npm ci
+npm ci --ignore-scripts
 npm run dev
 ```
 
@@ -52,4 +52,6 @@ npm start
 
 内容检查验证字段、日期、关系、去重和部分敏感标记，不能代替人工审读。所有源码及 Git 历史公开，禁止以 private 标志保存敏感内容。代码与设计来源许可见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 
-公开站使用 OpenAI SDK 调用 DeepSeek，检索基于本地公开文件和显式来源关系，不安装 GBrain 或 PGLite。模型参数仍使用上述 DEEPSEEK 服务端变量。
+公开站使用 OpenAI SDK 调用本站独立的 DeepSeek 配置。固定版本 GBrain 对已审核的公开文件、显式来源关系与 Wiki 导航建立进程内索引，不接外部数据库，也不连接公司 Code Brain。检索不调用模型；模型费用来自回答及必要的审核、重试。
+
+构建使用 Node 22，安装跳过 GBrain CLI 的默认 Brain 迁移。Next 部署追踪显式包含其 TypeScript、WASM 与生产依赖。首次索引初始化会增加延迟和内存使用，不能以 token 减少推断托管费用降低。Wiki 和推荐题仍由 Codex 预先整理提交，构建只校验、打包。
