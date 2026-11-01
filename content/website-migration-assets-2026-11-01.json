@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "cover": {
+    "path": "/media/knowledge-notes-21cc1f2b153367a1.png",
+    "sha256": "21cc1f2b153367a16f071a1a931baeead1192b26a53df5ecb6ab3ccc86816d55",
+    "bytes": 2393947,
+    "kind": "generated collection cover"
+  },
+  "resources": {
+    "https://youke3.picui.cn/s1/2026/01/07/695d820db9060.png": {
+      "status": "unavailable",
+      "reason": "fetch failed"
+    },
+    "https://youke3.picui.cn/s1/2026/01/13/69657499da4b9.png": {
+      "status": "unavailable",
+      "reason": "fetch failed"
+    },
+    "https://cdn.jsdelivr.net/gh/youngjuning/images@main/1744689807043.png": {
+      "status": "local",
+      "path": "/media/c77fe8a7b0bc6e1227e12020.png",
+      "sha256": "c77fe8a7b0bc6e1227e12020ef356cb9cf80a50f284acd2e2eddf701acc812f2",
+      "bytes": 29699
+    },
+    "https://cdn.jsdelivr.net/gh/youngjuning/images@main/1744688322503.png": {
+      "status": "local",
+      "path": "/media/c666c0d9ff69fbfeef44b435.png",
+      "sha256": "c666c0d9ff69fbfeef44b435c381ab190908b3e3d4eed17491f6ba49f49ae4f1",
+      "bytes": 394593
+    },
+    "https://cdn.jsdelivr.net/gh/youngjuning/images@main/1744678111027.png": {
+      "status": "local",
+      "path": "/media/ca939e980c1d1be167a72631.png",
+      "sha256": "ca939e980c1d1be167a726319e47caa88579deca656bc4a888632616332bf1b2",
+      "bytes": 163258
+    },
+    "https://cdn.jsdelivr.net/gh/youngjuning/images@main/1745219268550.png": {
+      "status": "local",
+      "path": "/media/105dcc4a62c5512666fb2621.png",
+      "sha256": "105dcc4a62c5512666fb26210092b95b8328db7eff597ea47d31eced37bfe190",
+      "bytes": 534570
+    },
+    "https://cdn.jsdelivr.net/gh/youngjuning/images@main/1744689694284.png": {
+      "status": "local",
+      "path": "/media/32c56ae2b67a22538eddfd10.png",
+      "sha256": "32c56ae2b67a22538eddfd10131f2eca0ca47d1662a977abc6e95f94318e323f",
+      "bytes": 380020
+    }
+  }
+}

@@ -27,6 +27,7 @@ export default async function PostDetail({ params }: { params: Promise<{ id: str
   const coverInBody = Object.entries(post.assets || {}).some(([url, asset]) => asset === post.cover && post.body.includes(url));
   return <article className="detail prose"><Link className="back-link" href="/blog">← 返回文章</Link><h1>{post.title}</h1><span className="eyebrow">俊宁 · {post.date || '日期未详'}{post.updated && ` · 原文更新 ${post.updated}`}</span>
     {post.source && <div className="source-box">迁自历史博客，保留原文、署名、引用与原始日期；文中的版本、成果与性能结论不代表重新完成了当前验收。<br /><a href={post.source} target="_blank" rel="noreferrer">查看原始出处 ↗</a> · <Link href="/blog/migration">查看迁移清单</Link>{post.migrationNote && <><br />{post.migrationNote}</>}</div>}
+    {!post.source && post.migrationNote && <div className="source-box">{post.migrationNote}{post.migrationReport && <><br /><Link href={post.migrationReport}>查看官网迁移清单</Link></>}</div>}
     {post.cover && !coverInBody && <img className="article-cover" src={post.cover} alt={post.title + '封面'} />}
     <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw, rehypeSlug, rehypeSanitize]}
       urlTransform={(url, key) => defaultUrlTransform(key === 'src' ? assetUrl(url) : articleUrl(url))}

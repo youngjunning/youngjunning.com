@@ -1,0 +1,743 @@
+{
+  "version": 1,
+  "date": "2026-11-01",
+  "origin": "原官网知识库",
+  "counts": {
+    "reviewed": 93,
+    "imported": 11,
+    "reference": 2,
+    "excluded": 80
+  },
+  "scope": "核对页面源稿与学习草稿；项目配置、未公开个人材料和凭证不在公开迁移范围。原始位置与工作区证据仅留本机归档，不将私有仓库伪装成公共出处。",
+  "entries": [
+    {
+      "sourceKey": "8d00dd8f5579c101",
+      "title": "5 Zustand BEST Practices in 5 Minutes",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "视频转录中的 Emma、ZooStand 等术语尚未校正，暂不作为成熟的 Zustand 教程迁移。"
+    },
+    {
+      "sourceKey": "419d48239d4b0d5c",
+      "title": "AI 圈名词读音",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "专有名词读音和公司简介缺少逐项出处，需核验后才能作为发音参考。"
+    },
+    {
+      "sourceKey": "89028b24eb5ff3a8",
+      "title": "人工智能",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "词条未完成，含 mamba、jupyter 等 TODO，且与已有技术词汇重叠。"
+    },
+    {
+      "sourceKey": "7241d2f9935fc509",
+      "title": "算法",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "中文段落把 BFS 写成 DFS，并有定义与措辞错误，未形成可靠的双语算法说明。"
+    },
+    {
+      "sourceKey": "15e6786800724766",
+      "title": "名人堂",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "人物、公司名称与简介混排，属于资料摘记，缺少独立问题和实践内容。"
+    },
+    {
+      "sourceKey": "5cd1ed60a323c1f4",
+      "title": "Claude Code 的状态词",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "状态词列表具有版本依赖，彩蛋与内部代号等说法没有出处；本次不迁移未核实的清单。"
+    },
+    {
+      "sourceKey": "6246e4c8b62c1492",
+      "title": "JavaScript 闭包：双语学习笔记",
+      "section": "页面源稿",
+      "status": "imported",
+      "reason": "围绕词法环境、闭包与循环变量展开，保留双语解释和词汇积累。",
+      "id": "6246e4c8b62c1492",
+      "file": "content/posts/JavaScript 闭包：双语学习笔记.md",
+      "originalBodySha256": "dde079bd4318a1a3d8ac6be919440993624ca98946bc5a3758a9fb9a9954039b",
+      "bodySha256": "dde079bd4318a1a3d8ac6be919440993624ca98946bc5a3758a9fb9a9954039b",
+      "importedSha256": "fc6d071c7ca45c93072e3f32a5c79b7ed18516085be4bdef6f1f7ddd2cb08f9f",
+      "adjustments": []
+    },
+    {
+      "sourceKey": "1509cd60dbe9ea34",
+      "title": "经济学",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "仅有少量经济学缩写和释义，内容碎片化，缺少独立阅读价值。"
+    },
+    {
+      "sourceKey": "915e81b61d781950",
+      "title": "Electron JS in 100 Seconds",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "Electron 入门视频的逐句译文；本次优先保留更深入的语言机制和个人听写练习。"
+    },
+    {
+      "sourceKey": "ba411843b260fc08",
+      "title": "全栈英语",
+      "section": "页面源稿",
+      "status": "reference",
+      "reason": "学习资源导航不整页复制；保留可核验的 JavaScript 教程入口，React 与 Patterns.dev 沿用已有收藏。"
+    },
+    {
+      "sourceKey": "5e15a9900694745d",
+      "title": "JavaScript 变量提升：双语学习笔记",
+      "section": "页面源稿",
+      "status": "imported",
+      "reason": "对变量与函数声明的提升行为有连续解释，保留中英对照及相关术语。",
+      "id": "5e15a9900694745d",
+      "file": "content/posts/JavaScript 变量提升：双语学习笔记.md",
+      "originalBodySha256": "0ce2dccb49f561a55f00ca6e22e01b7ff1f325e65f001042132b03f841c2c289",
+      "bodySha256": "0ce2dccb49f561a55f00ca6e22e01b7ff1f325e65f001042132b03f841c2c289",
+      "importedSha256": "ab93278b7d1c06fbbd7889789a7dd765a6213952450be17936c615435d32dfd5",
+      "adjustments": []
+    },
+    {
+      "sourceKey": "7506c6a3d0518be9",
+      "title": "Javascript in 100 Seconds",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "JavaScript 概览视频译文，内容与更深入的作用域、闭包及 this 笔记重合。"
+    },
+    {
+      "sourceKey": "1661e378f9311ee5",
+      "title": "Javascript Modules in 100 Seconds",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "模块机制的短视频译文，缺少独立代码实践或工程问题分析。"
+    },
+    {
+      "sourceKey": "c8eabf9c57d0cf2a",
+      "title": "Javascript Promise in 100 Seconds",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "Promise 入门视频译文，异步任务部分优先保留有执行顺序示例的事件循环笔记。"
+    },
+    {
+      "sourceKey": "4d1d0c48f5da6def",
+      "title": "K.K 音标",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "音标体系与发音对比存在混用，例如将 /ɛ/ 近似为英式 /æ/，需校订后再作为参考。"
+    },
+    {
+      "sourceKey": "5f4e1d4ffa6f0398",
+      "title": "Prisma in 100 Seconds",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "Prisma 概览视频译文，没有数据库建模或迁移案例。"
+    },
+    {
+      "sourceKey": "d8d3d8467820351c",
+      "title": "React in 100 Seconds",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "React 入门概览译文，已有 React 官方学习资料收藏，暂不重复保存基础介绍。"
+    },
+    {
+      "sourceKey": "df5b4353603f02b8",
+      "title": "React Native in 100 Seconds",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "React Native 概览译文，缺少实际跨端开发案例，与已迁移的工程文章相比信息增量有限。"
+    },
+    {
+      "sourceKey": "fa9b3dc9d0b72a6f",
+      "title": "ReAct：推理与行动的论文阅读笔记",
+      "section": "页面源稿",
+      "status": "imported",
+      "reason": "保留论文的原始实验语境、图表和原始项目链接，不冒充本人研究成果。",
+      "id": "fa9b3dc9d0b72a6f",
+      "file": "content/posts/ReAct：推理与行动的论文阅读笔记.md",
+      "originalBodySha256": "122e5e7d623170998fc0f98fd06dc4029c8b06d8fc8a9829bfbaf8a74cfb9a92",
+      "bodySha256": "a60c9f0bdeb8cd846c5da07e5c3747d0cebddafbd7f746a7a8824110daa2b40f",
+      "importedSha256": "67a55fe4fbc7ab495b813f7e8e1eefdd4b45102813012101a112d9e03ff4f80b",
+      "adjustments": [
+        "将嵌入页面改为原始资料链接，保留来源入口。"
+      ]
+    },
+    {
+      "sourceKey": "72b1e11920caaebc",
+      "title": "英文和中文的异同点",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "存在把介词短语称为定语从句、例句语法错误等问题，需重新校订。"
+    },
+    {
+      "sourceKey": "30a871e6911ef066",
+      "title": "Redux in 100 Seconds",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "Redux 入门概览译文，状态管理的主要词汇在保留的技术词汇笔记中已有说明。"
+    },
+    {
+      "sourceKey": "deb8dcc8ec999f93",
+      "title": "发音技巧",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "若干连读标音缺少口音和语境限定，尚不适合作为稳定的发音指导。"
+    },
+    {
+      "sourceKey": "ee3d4a5189aeee06",
+      "title": "The event loop in 60 seconds",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "短视频译文与事件循环笔记重合，保留后者的完整任务顺序示例。"
+    },
+    {
+      "sourceKey": "f55398d7f6a267fa",
+      "title": "TikTok just released its React Native killer Lynx",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "围绕 Lynx 发布消息的新闻译文，时效性强且缺乏实际使用对比。"
+    },
+    {
+      "sourceKey": "83c7b7cf87c05dfe",
+      "title": "TypeScript in 100 Seconds",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "TypeScript 的基础概览译文，没有类型设计或真实工程问题。"
+    },
+    {
+      "sourceKey": "c92852c18f70720b",
+      "title": "JavaScript 作用域：双语学习笔记",
+      "section": "页面源稿",
+      "status": "imported",
+      "reason": "解释作用域链及内外作用域关系，与闭包笔记形成可回看的知识链。",
+      "id": "c92852c18f70720b",
+      "file": "content/posts/JavaScript 作用域：双语学习笔记.md",
+      "originalBodySha256": "f1fe34a11fc183bf3ccf138bb80b3d85bb205d0a0bc3179fe96490e36d034fa3",
+      "bodySha256": "f1fe34a11fc183bf3ccf138bb80b3d85bb205d0a0bc3179fe96490e36d034fa3",
+      "importedSha256": "d1e9f80384c9d47f66c15020b40bbd986476e642a7669e7a60a6401d860fb9dc",
+      "adjustments": []
+    },
+    {
+      "sourceKey": "84e8a73935b031ba",
+      "title": "Vite in 100 Seconds",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "Vite 的基础概览译文，没有构建链路分析或使用案例。"
+    },
+    {
+      "sourceKey": "0f9aa4bd865a686c",
+      "title": "Vue.js Explained in 100 Seconds",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "Vue 基础概览译文，未形成独立实践或技术取舍。"
+    },
+    {
+      "sourceKey": "aa89c4c52bdf701d",
+      "title": "JavaScript 原型链：双语学习笔记",
+      "section": "页面源稿",
+      "status": "imported",
+      "reason": "包含 Object.create 的具体示例和属性查找过程，保留原作者署名及词汇。",
+      "id": "aa89c4c52bdf701d",
+      "file": "content/posts/JavaScript 原型链：双语学习笔记.md",
+      "originalBodySha256": "828b102b321210484daa5ed5ae6df6dd359fcc78111b485caf2e2cc550cb063f",
+      "bodySha256": "828b102b321210484daa5ed5ae6df6dd359fcc78111b485caf2e2cc550cb063f",
+      "importedSha256": "c73554fdac6c87a0416b2fe2b1705c43471034b624c11783a0f09ee0cabc4f48",
+      "adjustments": []
+    },
+    {
+      "sourceKey": "4aac56b1ddc6cf70",
+      "title": "算法英语听写与跟读练习",
+      "section": "页面源稿",
+      "status": "imported",
+      "reason": "包含逐句听写、语音标记和明确的 TED-Ed 来源，属于具体学习材料。",
+      "id": "4aac56b1ddc6cf70",
+      "file": "content/posts/算法英语听写与跟读练习.md",
+      "originalBodySha256": "10d9cab2d4cf6ae83005b26711d7d00c23faeb7f7428eb0266877bad580582ce",
+      "bodySha256": "7a9f9398fd6dfb06edf60212de95ee2639a2ef1168c3282839c737dfe01d0f15",
+      "importedSha256": "85ac38f45a9fabe51e4d4a4956890cd8ca04f67443b8884ab6492b64db082a04",
+      "adjustments": [
+        "将旧站专用提示块和标签转换为普通 Markdown。"
+      ]
+    },
+    {
+      "sourceKey": "928595d47f418e3a",
+      "title": "什么是 ReAct agents？",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "与保留的 ReAct 论文笔记及新站已有 Agent 文章重合，优先保留原始研究出处。"
+    },
+    {
+      "sourceKey": "7dec52ebcec42d10",
+      "title": "JavaScript 的 this：双语学习笔记",
+      "section": "页面源稿",
+      "status": "imported",
+      "reason": "围绕调用上下文、bind、call、apply 展开，保留原视频和中英对照。",
+      "id": "7dec52ebcec42d10",
+      "file": "content/posts/JavaScript 的 this：双语学习笔记.md",
+      "originalBodySha256": "016fed394b8ce8702d0e96eace30848cb567927b0ed935e734cdedbaf886baeb",
+      "bodySha256": "8f998312c95d3a6a3e43e42d7a9990372e738a0decc84f5c659ac911235fe465",
+      "importedSha256": "dc62dde43bc936b97b0c44048a0a11e081e1bf29e9c8cf071adf5c3540d4a23c",
+      "adjustments": [
+        "将嵌入页面改为原始资料链接，保留来源入口。"
+      ]
+    },
+    {
+      "sourceKey": "6c27730679aa80e0",
+      "title": "软件开发英语词汇与例句",
+      "section": "页面源稿",
+      "status": "imported",
+      "reason": "长期积累的技术词汇、音标与应用例句，适合检索复习。",
+      "id": "6c27730679aa80e0",
+      "file": "content/posts/软件开发英语词汇与例句.md",
+      "originalBodySha256": "c2b6f2fd2791ef1ce3901b8c830d92186f59bfb46f023c07b6e734d1fed560c0",
+      "bodySha256": "c2b6f2fd2791ef1ce3901b8c830d92186f59bfb46f023c07b6e734d1fed560c0",
+      "importedSha256": "bf1bfc2232b7f198ef65ac400df796a0c9b6800041b9686df6e58ecd9982eba1",
+      "adjustments": []
+    },
+    {
+      "sourceKey": "9ca0b989f165b512",
+      "title": "浏览器事件循环与微任务笔记",
+      "section": "页面源稿",
+      "status": "imported",
+      "reason": "有任务顺序代码和微任务示例；修正浏览器与 Node.js 混用及执行时机表述后保留。",
+      "id": "9ca0b989f165b512",
+      "file": "content/posts/浏览器事件循环与微任务笔记.md",
+      "originalBodySha256": "0768dce0e71bbdcb6c0da7b0bdda06177253385eb07b7bbd8087a1c39c9ee822",
+      "bodySha256": "542a9f1032af3def8cd871e88e5fd5e9c172104706e0bb04a67fc3bf01f5b336",
+      "importedSha256": "d0c61c90bb1e2077b003c88eff116f15703eb4be20d71f202d6471d65e5f128e",
+      "adjustments": [
+        "限定浏览器语境，修正微任务时机、队尾追加与按需渲染表述，并补充 MDN 依据。"
+      ]
+    },
+    {
+      "sourceKey": "747956cabf075c7d",
+      "title": "前端",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "前端学习导航和索引，条目本身不是完整文章。"
+    },
+    {
+      "sourceKey": "3201802ae3adeb23",
+      "title": "技能进化，潜力无限",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "站点首页配置，正文为空，不作为文章迁移。"
+    },
+    {
+      "sourceKey": "29966cbf23453d37",
+      "title": "Ubuntu 云服务器",
+      "section": "页面源稿",
+      "status": "excluded",
+      "reason": "个人服务器安装与环境操作清单，包含推广入口；不将机器环境配置搬入公开文章库。"
+    },
+    {
+      "sourceKey": "9f74e096517ab4b1",
+      "title": "入门生成式 AI（JavaScript 版）",
+      "section": "学习草稿",
+      "status": "reference",
+      "reason": "微软生成式 AI 课程介绍转为原始仓库收藏，避免把课程译介认作本人实践。"
+    },
+    {
+      "sourceKey": "08dc441c19945d22",
+      "title": "index",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "AGI 草稿导航，只有定义和链接，没有独立正文。"
+    },
+    {
+      "sourceKey": "d7bfc24f0849f1c3",
+      "title": "OpenAI 消息角色",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "历史 API 角色介绍混用不同接口形态，缺少版本边界，需按官方文档重写。"
+    },
+    {
+      "sourceKey": "9a29847ee74d6a34",
+      "title": "1. 两数之和",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "97317e353cbdd24a",
+      "title": "11. 盛最多水的容器",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "e7088852d2e38e75",
+      "title": "1143. 最长公共子序列",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "1b79e19876b594fd",
+      "title": "121. 买卖股票的最佳时机",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "13f801800c1c66f4",
+      "title": "124. 最长连续序列",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "7e5e5c9cad2d31e8",
+      "title": "128. 最长连续序列",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "74ad053355d2672f",
+      "title": "131. 分割回文串",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "44a2f35aa7d4e0c4",
+      "title": "141. 环形链表",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "d6089df67dfaf3f7",
+      "title": "146. LRU 缓存",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "e10c377fef57d700",
+      "title": "三数之和：排序与双指针",
+      "section": "学习草稿",
+      "status": "imported",
+      "reason": "有完整思路、去重规则、示例和可运行代码，保留原解法署名。",
+      "id": "e10c377fef57d700",
+      "file": "content/posts/三数之和：排序与双指针.md",
+      "originalBodySha256": "88bf8d767633036bc0629186c655d4fea7d5d5c0b4f5bc03779a593c4bab7ea8",
+      "bodySha256": "69dd01386ca7fd729fe939b5a43a064eb19d7b5446d54acd07e08cd684996c5a",
+      "importedSha256": "f90c7b0c1b900a02578ddddb6ec14fe11d0312ed94604d6b6ca435f517da8cd6",
+      "adjustments": [
+        "将旧站专用提示块和标签转换为普通 Markdown。"
+      ]
+    },
+    {
+      "sourceKey": "30b116a5a8ff394f",
+      "title": "152. 乘积最大子数组",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "6d4c40b7aa10b28d",
+      "title": "160. 相交链表",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "bb19ba876498b9bc",
+      "title": "189. 轮转数组",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "3ea84040b37edd66",
+      "title": "198. 打家劫舍",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "84ce9b7592b7793b",
+      "title": "199. 二叉树的右视图",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "f285350e549ddafa",
+      "title": "2. 两数相加",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "d5aec1adc9827028",
+      "title": "200. ⭐️岛屿数量",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "69af799bf5476414",
+      "title": "206. 反转链表",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "c5c3dd1a37587f95",
+      "title": "207. 课程表",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "0b740d349b4692c9",
+      "title": "208. 实现 Trie（前缀树）",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "6ba70b106341aee6",
+      "title": "21. 合并两个有序链表",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "ed46290c2584ebb3",
+      "title": "22. 括号生成",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "973b9fbbc9e49f69",
+      "title": "23. 合并 K 个升序链表",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "4c63d75feb3bb966",
+      "title": "236. 二叉树的最近公共祖先",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "203530d22e9b5534",
+      "title": "238. 除自身以外数组的乘积",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "5d08c69c99e9ec63",
+      "title": "240. 搜索二维矩阵 II",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "48d0f883705955b1",
+      "title": "283. 移动零",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "dc3cf863bb4b02f9",
+      "title": "3. ⭐️无重复子符的最长子串",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "704cc754dbab9d62",
+      "title": "300. 最长递增子序列",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "5a803adcd2366570",
+      "title": "35. 搜索插入位置",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "3181f25c9f293ee4",
+      "title": "41. 缺失的第一个正数",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "e397c5624281c9ff",
+      "title": "42. ⭐️接雨水",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题目标题与一个解题链接，没有自己的题解或笔记。"
+    },
+    {
+      "sourceKey": "db0b01cd25c4e7b7",
+      "title": "46. 全排列",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "b1826c1e8ddbe31f",
+      "title": "48. 旋转图像",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "6cbaa9a40506c43d",
+      "title": "49. 字母异位词分组",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "f5d37ee60d7117a8",
+      "title": "5. 最长回文子串",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "c35cb07f9c5fdf65",
+      "title": "53. 最大子数组和",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "771f57b461348f71",
+      "title": "54. 螺旋矩阵",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "ef43c1d778dea967",
+      "title": "56. ⭐️合并区间",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "443a963296b2f21a",
+      "title": "560. 和为 K 的子数组",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "bb19d60efc1e6382",
+      "title": "72. 编辑距离",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "0fe28e533fda92cf",
+      "title": "74. 搜索二维矩阵",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "a332682024c58913",
+      "title": "76. 最小覆盖子串",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "66616a1783c3ece2",
+      "title": "78. 子集",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "2f012533a7430274",
+      "title": "79. 单词搜索",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "f89e06d095d3a875",
+      "title": "98. 验证二叉搜索树",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "只有题号和标题，缺少解题思路、代码或测试。"
+    },
+    {
+      "sourceKey": "c30db5b7ef5a231b",
+      "title": "二分查找与左右边界",
+      "section": "学习草稿",
+      "status": "imported",
+      "reason": "有实现、边界变体和测试示例；修正说明中的中点括号及术语错误后保留。",
+      "id": "c30db5b7ef5a231b",
+      "file": "content/posts/二分查找与左右边界.md",
+      "originalBodySha256": "df1d3089389fb74ca55ca92c8605fdfabdad6a560cce0b98c1b16b74cc5fdfba",
+      "bodySha256": "143cc9e3b317872a795b3f47528d85a5ae732a39e38320805647916f96cfdbfb",
+      "importedSha256": "f9139d683973485511478f3997b69676b1c5fa3b0c0384cc0a17ee94b6525de8",
+      "adjustments": [
+        "修正中点公式的括号、线性查找术语及 JavaScript 数值说明；保留算法实现。"
+      ]
+    },
+    {
+      "sourceKey": "4ce9a94589ff9046",
+      "title": "力扣题单",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "题单导航，大部分目标文件只有标题，不迁移空题单和失效的内部跳转。"
+    },
+    {
+      "sourceKey": "8029623e5be39c60",
+      "title": "Vite.js 核心原理",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "正文为空，仅有标题和页面配置。"
+    },
+    {
+      "sourceKey": "1be15a967975e4d7",
+      "title": "核心作用是",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "把路由组目录误作中间件作用域，并把 (...slug) 写成多段路由语法，需重新修订。"
+    },
+    {
+      "sourceKey": "cb740406b640cfc2",
+      "title": "Python 语法",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "基础语法摘记，缺少实际程序或独立问题，与官方入门资料重复。"
+    },
+    {
+      "sourceKey": "12b5c0664efe40e0",
+      "title": "Python 代码风格",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "围绕缩进和括号反复展开的基础说明，存在把风格建议混作语法限制的表述。"
+    },
+    {
+      "sourceKey": "f82e36341a8b3ce9",
+      "title": "第一天：环境搭建",
+      "section": "学习草稿",
+      "status": "excluded",
+      "reason": "环境安装与分日学习计划，尚无对应练习结果或完整实现。"
+    }
+  ]
+}

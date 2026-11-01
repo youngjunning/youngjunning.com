@@ -23,6 +23,7 @@ for (const file of fs.readdirSync(path.join(directory,'posts')).filter(file => f
   for (const asset of Object.values(data.assets || {})) if (typeof asset !== 'string' || !asset.startsWith('/media/') || asset.includes('..') || !fs.existsSync(path.resolve('public', asset.slice(1)))) throw new Error('Missing imported asset: ' + file);
   for (const match of content.matchAll(/!\[[^\]]*\]\((\/media\/[^)]+)\)/g)) if (!fs.existsSync(path.resolve('public',match[1].slice(1)))) throw new Error('Missing article image: ' + file);
   if (data.source && !/^https:\/\/github\.com\/youngjunning\/blog\.zisheng\.pro\/blob\/[a-f0-9]{40}\//.test(data.source)) throw new Error('Invalid imported article provenance: ' + file);
+  if (data.migrationReport && data.migrationReport !== '/blog/website-migration') throw new Error('Invalid migration report: ' + file);
   if (data.draft !== true) { visibleIds.add(data.id); articles++; }
 }
 const records = validateRecords(JSON.parse(fs.readFileSync(path.join(directory,'records.json'),'utf8')),visibleIds);
@@ -40,4 +41,21 @@ for (const asset of Object.values(resources)) {
   if (bytes.length !== asset.bytes || createHash('sha256').update(bytes).digest('hex') !== asset.sha256) throw new Error('Imported asset changed: ' + asset.path);
 }
 for (const destination of Object.values(JSON.parse(fs.readFileSync('content/blog-legacy-links.json', 'utf8')))) if (!visibleIds.has(destination.replace('/blog/', ''))) throw new Error('Broken legacy article mapping: ' + destination);
+const websiteMigration = JSON.parse(fs.readFileSync('content/website-migration-2026-11-01.json', 'utf8'));
+if (websiteMigration.entries.length !== websiteMigration.counts.reviewed || new Set(websiteMigration.entries.map(item => item.sourceKey)).size !== websiteMigration.entries.length) throw new Error('Incomplete website migration inventory');
+for (const status of ['imported', 'reference', 'excluded']) if (websiteMigration.entries.filter(entry => entry.status === status).length !== websiteMigration.counts[status]) throw new Error('Incorrect website migration count: ' + status);
+for (const entry of websiteMigration.entries) {
+  if (!entry.title?.trim() || !entry.reason?.trim() || !/^[a-f0-9]{16}$/.test(entry.sourceKey) || !['imported','reference','excluded'].includes(entry.status)) throw new Error('Invalid website migration decision');
+  if (entry.status !== 'imported') continue;
+  if (!visibleIds.has(entry.id) || !entry.file.startsWith('content/posts/') || entry.file.includes('..')) throw new Error('Missing website article: ' + entry.title);
+  const raw = fs.readFileSync(entry.file, 'utf8');
+  const { data, content } = matter(raw);
+  if (data.id !== entry.id || createHash('sha256').update(raw).digest('hex') !== entry.importedSha256 || createHash('sha256').update(content).digest('hex') !== entry.bodySha256) throw new Error('Website migration content changed: ' + entry.title);
+}
+const websiteAssets = JSON.parse(fs.readFileSync('content/website-migration-assets-2026-11-01.json', 'utf8'));
+for (const asset of [websiteAssets.cover, ...Object.values(websiteAssets.resources).filter(item => item.status === 'local')]) {
+  if (!asset.path.startsWith('/media/') || asset.path.includes('..')) throw new Error('Invalid website asset path');
+  const bytes = fs.readFileSync(path.resolve('public', asset.path.slice(1)));
+  if (bytes.length !== asset.bytes || createHash('sha256').update(bytes).digest('hex') !== asset.sha256) throw new Error('Website asset changed: ' + asset.path);
+}
 console.log(`Public content valid: ${records.length} records, ${favorites.length} favorites, ${articles} articles.`);

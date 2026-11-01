@@ -2,6 +2,38 @@
   "version": 1,
   "favorites": [
     {
+      "id": "5ae070dbca4b8e19",
+      "kind": "knowledge",
+      "title": "JavaScript.info：现代 JavaScript 教程",
+      "url": "https://javascript.info/",
+      "summary": "按语言基础、对象、函数、异步编程和浏览器主题组织的教程，配有示例与练习。",
+      "reason": "旧官网学习资源整理时保留的原始入口，可用于回查闭包、作用域与异步任务笔记；未据此认定本人完成了课程。",
+      "tags": ["JavaScript", "学习资料"],
+      "savedAt": "2026-11-01",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [{ "label": "JavaScript.info 官方教程目录，原官网学习资源整理时核对原始入口。" }],
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": []
+    },
+    {
+      "id": "b9f6c02ae3187d54",
+      "kind": "project",
+      "title": "微软生成式 AI 入门：JavaScript 课程",
+      "url": "https://github.com/microsoft/generative-ai-with-javascript",
+      "summary": "微软维护的 JavaScript 生成式 AI 学习仓库，提供课程资料与代码示例。",
+      "reason": "将旧官网中的课程介绍整理为原始仓库入口，用于后续查阅和练习，不把课程内容当作本人项目经验。",
+      "tags": ["AI", "JavaScript", "课程"],
+      "savedAt": "2026-11-01",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [{ "label": "Microsoft 官方 GitHub 仓库 microsoft/generative-ai-with-javascript 的 README 和课程目录。" }],
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": []
+    },
+    {
       "id": "1f84a6c02bbd5709",
       "kind": "project",
       "title": "react-markdown：Markdown 渲染与 HTML 安全边界",
