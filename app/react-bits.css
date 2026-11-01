@@ -3,31 +3,63 @@
 .style-switcher button{border:0;background:transparent;color:var(--muted);border-radius:999px;padding:7px 13px;font-size:11px;cursor:pointer}
 .style-switcher button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
 .spotlight-card-light{display:none}
-html[data-style=react-bits]{--ink:#242039;--muted:#726c84;--paper:#f8f7fc;--line:#e1ddec;--green:#d9caff;--dark:#282039}
-[data-style=react-bits] body{background:radial-gradient(ellipse at 85% 10%,#e5ddff80,transparent 42%),var(--paper)}
+html[data-style=react-bits]{--ink:#293d32;--muted:#6c786a;--paper:#f8f7ef;--line:#dce2d4;--green:#d6e3bd;--dark:#30483b}
+[data-style=react-bits] body{background:radial-gradient(ellipse at 85% 10%,#dbe6cd70,transparent 42%),var(--paper)}
 [data-style=react-bits] .hero{padding-top:50px}
-[data-style=react-bits] .gradient-text{background:linear-gradient(90deg,#6940c5,#b74589,#5049bd,#6940c5);background-size:300% 100%;background-clip:text;-webkit-background-clip:text;color:transparent;animation:bits-gradient 10s ease-in-out infinite alternate}
-[data-style=react-bits] .hero-asterisk{color:#a78bdf;text-shadow:0 0 60px #b896ef60}
-[data-style=react-bits] .status-dot{background:#9065d2;box-shadow:0 0 0 4px #ebe3f7}
-[data-style=react-bits] .brand-dot,[data-style=react-bits] .tiny-dot{color:#8d61c8}
-[data-style=react-bits] .bento-card{background:#f0ecf8;border-color:#dcd4eb;border-radius:24px;isolation:isolate}
+[data-style=react-bits] .gradient-text{background:linear-gradient(90deg,#526f46,#7f8a56,#416951,#526f46);background-size:300% 100%;background-clip:text;-webkit-background-clip:text;color:transparent;animation:bits-gradient 24s ease-in-out infinite alternate}
+[data-style=react-bits] .hero-asterisk{color:#91a47c;text-shadow:0 0 60px #c4d2a630}
+[data-style=react-bits] .status-dot{background:#869c69;box-shadow:0 0 0 4px #e8eddd}
+[data-style=react-bits] .brand-dot,[data-style=react-bits] .tiny-dot{color:#809263}
+[data-style=react-bits] .bento-card{background:#eef1e5;border-color:#d8dfcb;border-radius:24px;isolation:isolate}
 [data-style=react-bits] .bento-card> :not(.spotlight-card-light){position:relative;z-index:1}
-[data-style=react-bits] .spotlight-card-light{display:block;position:absolute;inset:0;pointer-events:none;opacity:0;background:radial-gradient(circle 260px at var(--spotlight-x,50%) var(--spotlight-y,50%),#b18aef55,transparent 80%);transition:opacity .25s}
+[data-style=react-bits] .spotlight-card-light{display:block;position:absolute;inset:0;pointer-events:none;opacity:0;background:radial-gradient(circle 260px at var(--spotlight-x,50%) var(--spotlight-y,50%),#d5dfac55,transparent 80%);transition:opacity .25s}
 [data-style=react-bits] .spotlight-card:hover .spotlight-card-light,[data-style=react-bits] .spotlight-card:focus-visible .spotlight-card-light{opacity:1}
-[data-style=react-bits] .conversation-card{background:#282039;color:#f5efff}
-[data-style=react-bits] .identity-disc{background:radial-gradient(circle at 35% 20%,#fcf9ff,#cbb7e5);color:#795da0;border-color:#c3acdd}
-[data-style=react-bits] .identity-orbit{border-color:#cfc0e3}
-[data-style=react-bits] .art-coordinate{color:#7b6599}
-[data-style=react-bits] .focus-cloud span{background:#faf7ff;color:#75658c;border-color:#ddd2ed}
-[data-style=react-bits] .focus-cloud .focus-big{background:#dcc6ff;color:#4f327a}
-[data-style=react-bits] .chat-visual{color:#d8bbff}
-[data-style=react-bits] .chat-visual div{border-color:#726185;color:#f0e4ff}
-[data-style=react-bits] .chat-visual div:last-child{background:#40324f;border-color:#594669}
-[data-style=react-bits] .library-strip,[data-style=react-bits] .article-card{background:#f0ecf7}
-[data-style=react-bits] .hero-bottom p,[data-style=react-bits] .detail p,[data-style=react-bits] .detail li{color:#6c637a}
-[data-style=react-bits] .detail code,[data-style=react-bits] .detail pre,[data-style=react-bits] .detail blockquote,[data-style=react-bits] .source-box,[data-style=react-bits] .message:not(.user){background:#eee7f7}
-[data-style=react-bits] .detail a,[data-style=react-bits] .source-box a,[data-style=react-bits] nav a:hover,[data-style=react-bits] .record-row:hover h3{color:#7450a5}
-[data-style=react-bits] a:focus-visible,[data-style=react-bits] button:focus-visible{outline-color:#8053bb}
+[data-style=react-bits] .conversation-card{background:#30483b;color:#f5f4e8}
+[data-style=react-bits] .identity-disc{background:radial-gradient(circle at 35% 20%,#fcfbef,#cad6b6);color:#6c8059;border-color:#bac8a5}
+[data-style=react-bits] .identity-orbit{border-color:#cbd5bd}
+[data-style=react-bits] .art-coordinate{color:#71845c}
+[data-style=react-bits] .focus-cloud span{background:#fafaf1;color:#6b7c5d;border-color:#d9dfce}
+[data-style=react-bits] .focus-cloud .focus-big{background:#dce7c3;color:#49603a}
+[data-style=react-bits] .chat-visual{color:#dbdfae}
+[data-style=react-bits] .chat-visual div{border-color:#72856a;color:#f1efd9}
+[data-style=react-bits] .chat-visual div:last-child{background:#415846;border-color:#60765c}
+[data-style=react-bits] .library-strip,[data-style=react-bits] .article-card{background:#f0f2e7}
+[data-style=react-bits] .hero-bottom p,[data-style=react-bits] .detail p,[data-style=react-bits] .detail li{color:#65725f}
+[data-style=react-bits] .detail code,[data-style=react-bits] .detail pre,[data-style=react-bits] .detail blockquote,[data-style=react-bits] .source-box,[data-style=react-bits] .message:not(.user){background:#eef1e3}
+[data-style=react-bits] .detail a,[data-style=react-bits] .source-box a,[data-style=react-bits] nav a:hover,[data-style=react-bits] .record-row:hover h3{color:#587342}
+[data-style=react-bits] a:focus-visible,[data-style=react-bits] button:focus-visible{outline-color:#64844b}
 @keyframes bits-gradient{from{background-position:0% 50%}to{background-position:100% 50%}}
 @media(prefers-reduced-motion:reduce){[data-style=react-bits] .gradient-text{animation:none}[data-style=react-bits] .spotlight-card-light{display:none}}
 @media(max-width:600px){.style-bar{padding-top:12px}[data-style=react-bits] .hero{padding-top:32px}}
+
+/* A quiet garden: botanical shapes, paper surfaces and a small magical reading nook. */
+.hero-asterisk svg{width:1em;height:1em}
+[data-style=react-bits] .hero h1{font-weight:500;letter-spacing:-2px}
+[data-style=react-bits] .bento-card:hover{transform:translateY(-2px);box-shadow:0 10px 30px #394c2f08}
+[data-style=react-bits] .identity-orbit{border-radius:70% 10% 70% 10%;width:165px;height:100px;transform:rotate(-28deg)}
+[data-style=react-bits] .orbit-two{transform:rotate(40deg)}
+[data-style=react-bits] .focus-cloud .focus-big{transform:rotate(-2deg);font-weight:500}
+[data-style=react-bits] .primary-link{border-color:#9ba98c}
+.magic-book{position:relative;isolation:isolate;width:220px;height:160px;margin:0 auto;color:#61794f}
+.magic-book-glow{position:absolute;inset:10px 20px;background:radial-gradient(ellipse,#e6dca775,transparent 68%);border-radius:50%;z-index:-1}
+.magic-book .magic-book-pages{position:absolute;width:112px;height:88px;left:54px;bottom:12px;color:inherit}
+.magic-book .magic-book-wand{position:absolute;width:43px;height:43px;left:132px;top:23px;transform:rotate(-15deg);color:#a48b51}
+.magic-book .magic-book-sprout{position:absolute;width:42px;height:52px;left:84px;top:15px;color:#7e9562}
+.magic-mote{position:absolute;width:3px;height:3px;border-radius:50%;background:#b49b55;box-shadow:0 0 9px #d5bd7970;animation:garden-mote 8s ease-in-out infinite alternate}
+.mote-one{left:53px;top:42px}.mote-two{right:45px;top:82px;animation-delay:-3s}.mote-three{left:103px;top:8px;animation-delay:-6s}
+.magic-book-compact{height:200px;margin:0 auto;color:#e6e7c8}
+.magic-book-compact .magic-book-pages{bottom:30px}
+.magic-book-compact .magic-book-wand{top:45px;color:#d8c795}
+.magic-book-compact .magic-book-sprout{top:37px;color:#c5d6ac}
+.magic-book-compact .magic-book-glow{inset:20px 0;background:radial-gradient(ellipse,#c9d9a51c,transparent 68%)}
+.magic-chat .chat-intro{padding:12px 0 30px}
+.magic-chat-label{display:block;font-size:11px;letter-spacing:3px;color:#788361;margin-top:12px}
+.magic-chat .chat-intro h1{font-family:"Songti SC","STSong",Georgia,serif;font-size:34px;font-weight:500;letter-spacing:1px;margin-top:16px}
+.magic-chat .suggestions button{background:#fafaf3;border-color:#dce2d2;padding:12px 17px}
+.magic-chat .suggestions button:hover{background:#eef2e3;border-color:#a6b78e}
+.magic-chat .chat-form{background:#fffef8;border-color:#cdd7bf;box-shadow:0 8px 30px #465c3208;border-radius:18px;padding:14px}
+.magic-chat .chat-form:focus-within{outline:2px solid #829669;outline-offset:3px}
+.magic-chat .chat-foot{line-height:1.8}
+@keyframes garden-mote{from{opacity:.3;translate:0 2px}to{opacity:.8;translate:0 -5px}}
+@media(max-width:600px){.magic-chat{padding-top:24px}.magic-chat .chat-intro h1{font-size:28px}.magic-book{height:145px}.magic-book-compact{height:190px}.magic-chat .suggestions{gap:8px}.magic-chat .suggestions button{font-size:11px;padding:10px 12px}}
+@media(prefers-reduced-motion:reduce){.magic-mote{animation:none}}

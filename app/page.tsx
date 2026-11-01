@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { ArrowUpRight, ArrowRight, Fingerprint, Command, Sparkles } from 'lucide-react';
+import { ArrowUpRight, ArrowRight, Fingerprint, Command, Sprout } from 'lucide-react';
+import { MagicBook } from '@/components/magic-book';
 import { BlurFade } from '@/components/magicui/blur-fade';
 import { BentoCard, BentoGrid } from '@/components/magicui/bento-grid';
 import { getContent } from '@/lib/content';
@@ -9,7 +10,7 @@ export default function Home() {
   const { records, favorites, posts } = getContent();
   return <>
     <section className="hero"><BlurFade><div className="intro-label"><span className="status-dot" /> A DIGITAL SELF <span className="intro-rule" /></div>
-      <h1>人的经历，<br />在硅基世界<GradientText>生长。</GradientText><span className="hero-asterisk">✳</span></h1>
+      <h1>人的经历，<br />在硅基世界<GradientText>生长。</GradientText><span className="hero-asterisk" aria-hidden="true"><Sprout strokeWidth={0.7} /></span></h1>
       <div className="hero-bottom"><p>我是俊宁，AI 开发者。<br />这里记录我做过的项目、当时的判断，以及后来的变化。</p><Link href="/chat" className="primary-link">认识另一个我 <ArrowUpRight size={18} /></Link></div>
     </BlurFade></section>
     <div className="section-caption"><span>01 / 认识俊宁</span><span>AN OPEN, EVOLVING PORTRAIT</span></div>
@@ -18,7 +19,7 @@ export default function Home() {
         <div className="identity-art" aria-hidden="true"><div className="identity-orbit orbit-one" /><div className="identity-orbit orbit-two" /><div className="identity-disc"><Fingerprint size={74} strokeWidth={0.8} /></div><span className="art-coordinate">30° N · ALWAYS BUILDING</span></div>
       </BentoCard>
       <BentoCard label="FOCUS / 正在关注" title="从想法到可用的产品" description="AI 应用、AI 浏览器、Agent、AI Infra 与软件工程。" href="/records" className="focus-card"><div className="focus-cloud" aria-hidden="true"><span>Agent</span><span>AI Infra</span><span className="focus-big">Build with AI<Command size={24} /></span><span>Browser</span><span>Engineering</span></div></BentoCard>
-      <BentoCard label="CONVERSATION / 数字分身" title="带着问题，来聊聊" description="从我的公开记录和文章出发，了解经历与思考。" href="/chat" className="conversation-card"><div className="chat-visual" aria-hidden="true"><Sparkles size={28} /><div>你最近在关注什么？</div><div>聊聊 AI、Agent 和软件工程。</div></div></BentoCard>
+      <BentoCard label="CONVERSATION / 数字分身" title="翻开花园里的魔法书" description="带着一个问题，从公开记录与文章里寻找线索。" href="/chat" className="conversation-card"><MagicBook compact /></BentoCard>
     </BentoGrid>
     <section className="recent"><div className="section-heading"><div><span className="eyebrow">02 / 思考的切片</span><h2>最近留下的记录<span className="tiny-dot">●</span></h2></div><Link href="/records">全部记录 <ArrowRight size={16} /></Link></div>
       {records.slice(0, 3).map((record) => <Link className="record-row" href={'/records/' + record.id} key={record.id}><div className="record-date">{record.date || '时间未详'}<span>{record.kind === 'judgment' ? '判断' : '记录'}</span></div><div><h3>{record.title}</h3><p>{record.text}</p></div><ArrowUpRight size={22} /></Link>)}
