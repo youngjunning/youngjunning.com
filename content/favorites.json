@@ -2,6 +2,22 @@
   "version": 1,
   "favorites": [
     {
+      "id": "ce63a109bf24d857",
+      "kind": "knowledge",
+      "title": "Google WebView API for Ads：iOS 网页广告接入",
+      "url": "https://developers.google.com/admob/ios/browser/webview/api-for-ads",
+      "summary": "Google 官方的 iOS WKWebView 广告接入说明：在主线程向 Mobile Ads SDK 注册 WebView，网页专用集成使用 GADIntegrationManager=webview。网页的隐私同意不会从 App 自动传入。",
+      "reason": "用于核对 iOS 网页广告注册、Info.plist 配置和官方连接测试，避免把 SDK 接通当作真实广告填充或收益验证。",
+      "tags": ["iOS", "WKWebView", "AdSense"],
+      "savedAt": "2026-11-02",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [{ "label": "Google for Developers，Integrate the WebView API for Ads，2026-11-02 核验 iOS 官方说明及连接测试页。" }],
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": []
+    },
+    {
       "id": "e62d7a098bf134c5",
       "kind": "knowledge",
       "title": "Google WebView API for Ads：Android 网页广告接入",
