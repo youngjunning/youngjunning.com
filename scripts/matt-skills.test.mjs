@@ -18,7 +18,8 @@ test('Matt public data accepts only public fields and generalized project types'
   for (const s of catalog.skills) {
     assert.deepEqual(Object.keys(s).sort(), ['category', 'name', 'projects', 'scope', 'sourceUrl', 'summary', 'usage']);
     assert(s.projects.every(p => projectTypes.has(p)));
-    assert.match(s.sourceUrl, /^https:\/\/github\.com\/mattpocock\/skills\/blob\/[a-f0-9]{40}\//);
+    if (s.category === '历史保留') assert.equal(s.sourceUrl, 'https://github.com/mattpocock/skills');
+    else assert.match(s.sourceUrl, /^https:\/\/github\.com\/mattpocock\/skills\/blob\/[a-f0-9]{40}\//);
     assert.match(s.usage, /约定不代表实际调用|尚未登记实际调用证据/);
   }
 });
