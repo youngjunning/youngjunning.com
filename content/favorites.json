@@ -2,17 +2,193 @@
   "version": 1,
   "favorites": [
     {
+      "id": "9005d098dc844cdb",
+      "kind": "project",
+      "title": "Lucian UXUI：交互元素检索与适配 Skill",
+      "url": "https://github.com/Seokwoooo/lucian-uxui",
+      "summary": "面向编码 Agent 的 Skill，支持检索 Lucian UX/UI Prompt 的交互元素，并将原生 HTML、CSS、JavaScript 示例适配到目标项目。",
+      "reason": "用于比较 Skill 驱动的组件发现与移植流程；保留其与 React 原生组件 Registry 的区别。 本条为会话发现，未据此认定本人已采用或完成集成验证。",
+      "tags": [
+        "AI 辅助开发",
+        "组件库",
+        "Agent Skills"
+      ],
+      "savedAt": "2026-11-01",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "官方仓库或文档，2026-11-01 会话检索核验：https://github.com/Seokwoooo/lucian-uxui"
+        }
+      ]
+    },
+    {
+      "id": "58ee05520f6e84b5",
+      "kind": "project",
+      "title": "React Bits：可供 Agent 检索的动效组件",
+      "url": "https://github.com/DavidHDev/react-bits",
+      "summary": "React 动效与交互组件集合，提供 JavaScript、TypeScript 及 CSS、Tailwind 版本，并支持通过 shadcn MCP 查找和添加组件。",
+      "reason": "用于在 AI 生成页面时获取真实动效组件源码，按项目技术栈选择变体并核对依赖。 本条为会话发现，未据此认定本人已采用或完成集成验证。",
+      "tags": [
+        "AI 辅助开发",
+        "组件库",
+        "MCP"
+      ],
+      "savedAt": "2026-11-01",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "官方仓库或文档，2026-11-01 会话检索核验：https://github.com/DavidHDev/react-bits"
+        }
+      ]
+    },
+    {
+      "id": "ce11d50c8c1a996b",
+      "kind": "project",
+      "title": "daisyUI：机器可读文档与 Blueprint MCP",
+      "url": "https://github.com/saadeghi/daisyui",
+      "summary": "Tailwind CSS 组件库，提供精简的 llms.txt 和 AI 编辑器接入指南；官方 Blueprint MCP 需要许可证。",
+      "reason": "用于轻量、多框架页面的 AI 辅助开发，并区分免费文档上下文与需授权的 MCP 服务。 本条为会话发现，未据此认定本人已采用或完成集成验证。",
+      "tags": [
+        "AI 辅助开发",
+        "组件库",
+        "MCP"
+      ],
+      "savedAt": "2026-11-01",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "官方仓库或文档，2026-11-01 会话检索核验：https://daisyui.com/docs/editor/windsurf/?lang=en"
+        }
+      ]
+    },
+    {
+      "id": "240f05a3610b5718",
+      "kind": "project",
+      "title": "Chakra UI：组件与设计 Tokens MCP",
+      "url": "https://github.com/chakra-ui/chakra-ui",
+      "summary": "官方 MCP 提供组件列表、Props、示例、设计 Tokens 和版本迁移指导；Pro 模板工具需要相应许可证。",
+      "reason": "用于比较 AI 对完整设计系统的接入能力，重点核查组件用法、主题约束与迁移信息。 本条为会话发现，未据此认定本人已采用或完成集成验证。",
+      "tags": [
+        "AI 辅助开发",
+        "组件库",
+        "MCP"
+      ],
+      "savedAt": "2026-11-01",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "官方仓库或文档，2026-11-01 会话检索核验：https://chakra-ui.com/docs/get-started/ai/mcp-server"
+        }
+      ]
+    },
+    {
+      "id": "3ad86e9295020a3c",
+      "kind": "project",
+      "title": "HeroUI：组件文档与源码 MCP",
+      "url": "https://github.com/heroui-inc/heroui",
+      "summary": "官方 React MCP 面向 HeroUI v3，提供组件文档、TSX 源码、CSS 样式及主题变量查询。",
+      "reason": "用于让 AI 根据当前组件 API 和主题变量实现应用界面，减少凭旧版本知识生成代码。 本条为会话发现，未据此认定本人已采用或完成集成验证。",
+      "tags": [
+        "AI 辅助开发",
+        "组件库",
+        "MCP"
+      ],
+      "savedAt": "2026-11-01",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "官方仓库或文档，2026-11-01 会话检索核验：https://heroui.com/en/docs/react/getting-started/mcp-server"
+        }
+      ]
+    },
+    {
+      "id": "5e2ea2cdfa8d7fe5",
+      "kind": "project",
+      "title": "21st MCP：UI 组件搜索与生成",
+      "url": "https://github.com/21st-dev/magic-mcp",
+      "summary": "面向 AI 编辑器的组件搜索与 UI 生成入口。官方仓库说明 Magic MCP 已更名为 21st MCP，旧包用于兼容既有配置。",
+      "reason": "用于比较组件聚合平台与单一组件库的检索方式，接入前核对当前服务配置和账户要求。 本条为会话发现，未据此认定本人已采用或完成集成验证。",
+      "tags": [
+        "AI 辅助开发",
+        "组件库",
+        "MCP"
+      ],
+      "savedAt": "2026-11-01",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "官方仓库或文档，2026-11-01 会话检索核验：https://github.com/21st-dev/magic-mcp"
+        }
+      ]
+    },
+    {
+      "id": "fe95afe989157b02",
+      "kind": "project",
+      "title": "Kokonut UI：面向 Agent 的交互组件",
+      "url": "https://github.com/kokonut-labs/kokonutui",
+      "summary": "基于 React、Tailwind CSS、Motion 和 shadcn/ui 的组件集合，提供 Agents 指南、shadcn MCP 接入、规则文件与 Markdown 文档。",
+      "reason": "用于查找 AI 可直接读取和集成的交互组件，比较组件发现、依赖安装与主题适配流程。 本条为会话发现，未据此认定本人已采用或完成集成验证。",
+      "tags": [
+        "AI 辅助开发",
+        "组件库",
+        "MCP"
+      ],
+      "savedAt": "2026-11-01",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "官方仓库或文档，2026-11-01 会话检索核验：https://kokonutui.com/docs/agents"
+        }
+      ]
+    },
+    {
+      "id": "fcbb542c5cf563a3",
+      "kind": "project",
+      "title": "shadcn/ui：组件 Registry 与 AI 接入",
+      "url": "https://github.com/shadcn-ui/ui",
+      "summary": "官方 MCP 支持浏览、搜索组件 Registry，并获取组件安装命令；Registry 提供组件源码及依赖描述。",
+      "reason": "为 AI 编程工具建立统一的组件检索与安装入口，可连接项目配置中的第三方 Registry。 本条为会话发现，未据此认定本人已采用或完成集成验证。",
+      "tags": [
+        "AI 辅助开发",
+        "组件库",
+        "MCP"
+      ],
+      "savedAt": "2026-11-01",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "官方仓库或文档，2026-11-01 会话检索核验：https://ui.shadcn.com/docs/mcp"
+        }
+      ]
+    },
+    {
       "id": "e81bc6847d38f902",
       "kind": "project",
       "title": "GBrain：Agent 知识库实现",
       "url": "https://github.com/garrytan/gbrain",
       "summary": "以 Bun 为主要运行时的 Agent 知识库，提供 PGLite/PostgreSQL 存储、文本检索、页面链接与时间线等实现，代码采用 MIT 许可证。",
       "reason": "用于核查来源索引、图谱遍历、版本一致性和嵌入式存储的实现边界；会话发现，不代表已验证全部功能或整体效果。",
-      "tags": ["Agent Memory", "知识管理", "GBrain"],
+      "tags": [
+        "Agent Memory",
+        "知识管理",
+        "GBrain"
+      ],
       "savedAt": "2026-11-01",
       "selection": "discovered",
       "visibility": "shared",
-      "sources": [{ "label": "原作者仓库，2026-11-01 核验固定版本 88d3f572950a772d268b22afe0bd53c2a2f090ff：https://github.com/garrytan/gbrain/tree/88d3f572950a772d268b22afe0bd53c2a2f090ff" }]
+      "sources": [
+        {
+          "label": "原作者仓库，2026-11-01 核验固定版本 88d3f572950a772d268b22afe0bd53c2a2f090ff：https://github.com/garrytan/gbrain/tree/88d3f572950a772d268b22afe0bd53c2a2f090ff"
+        }
+      ]
     },
     {
       "id": "91fc906a99431e8a",
@@ -21,11 +197,19 @@
       "url": "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
       "summary": "个人知识库的维护模式：保留原始资料，由 LLM 维护带来源链接的主题综合页面；原提案没有提供可直接接入的完整系统。",
       "reason": "用于比较资料检索与持久化跨文综合的职责，并检查来源引用、冲突和维护规则；会话发现，不表示本人已采用或验证效果。",
-      "tags": ["LLM Wiki", "知识管理", "来源追溯"],
+      "tags": [
+        "LLM Wiki",
+        "知识管理",
+        "来源追溯"
+      ],
       "savedAt": "2026-11-01",
       "selection": "discovered",
       "visibility": "shared",
-      "sources": [{ "label": "Karpathy 原始 gist，2026-04-04；2026-11-01 核验固定版本 ac46de1ad27f92b28ac95459c782c07f6b8c964a：https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f/ac46de1ad27f92b28ac95459c782c07f6b8c964a" }]
+      "sources": [
+        {
+          "label": "Karpathy 原始 gist，2026-04-04；2026-11-01 核验固定版本 ac46de1ad27f92b28ac95459c782c07f6b8c964a：https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f/ac46de1ad27f92b28ac95459c782c07f6b8c964a"
+        }
+      ]
     },
     {
       "id": "12f51ecafa480a20",
@@ -34,11 +218,19 @@
       "url": "https://github.com/xiaowu0162/LongMemEval",
       "summary": "长时对话记忆评测资料，覆盖信息提取、跨会话推理、时间推理、知识更新与拒答，并提供必要证据和回答评测的研究入口。",
       "reason": "为个人记忆系统设计测试类别和必要来源标注提供参考；公开基准结果不能直接视为某个具体系统的表现，收藏不代表本人已运行该基准。",
-      "tags": ["Agent Memory", "评测", "时间推理"],
+      "tags": [
+        "Agent Memory",
+        "评测",
+        "时间推理"
+      ],
       "savedAt": "2026-11-01",
       "selection": "discovered",
       "visibility": "shared",
-      "sources": [{ "label": "原作者论文与代码仓库，2026-11-01 核验：https://arxiv.org/abs/2410.10813 与 https://github.com/xiaowu0162/LongMemEval" }]
+      "sources": [
+        {
+          "label": "原作者论文与代码仓库，2026-11-01 核验：https://arxiv.org/abs/2410.10813 与 https://github.com/xiaowu0162/LongMemEval"
+        }
+      ]
     },
     {
       "id": "bbc6c2e95fa83d72",
@@ -540,8 +732,8 @@
       "kind": "project",
       "title": "Magic UI",
       "url": "https://github.com/magicuidesign/magicui",
-      "summary": "React 界面组件来源，本项目使用其 BlurFade 与 BentoGrid 的适配版本。",
-      "reason": "本轮建站需要可回查组件实现和许可，保留官方仓库用于后续维护。",
+      "summary": "React 动效组件库，提供官方 MCP，使 AI 编程工具能够获取组件上下文与源码。",
+      "reason": "本轮建站需要可回查组件实现和许可，保留官方仓库用于后续维护。 用于回查官方 MCP 接入方式，让 Agent 获取真实组件信息后再集成页面。",
       "tags": [
         "UI",
         "React",
@@ -550,6 +742,9 @@
       "sources": [
         {
           "label": "2026-10-30 建站过程核验 Magic UI 官方源码与 MIT 许可；会话发现。"
+        },
+        {
+          "label": "官方 MCP 文档，2026-11-01 会话检索核验：https://magicui.design/docs/mcp"
         }
       ],
       "savedAt": "2026-10-30",
