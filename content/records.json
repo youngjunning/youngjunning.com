@@ -523,6 +523,23 @@
       "basis": "本人明确选择；当时未说明其他取舍理由。",
       "alternatives": [],
       "outcome": null
+    },
+    {
+      "id": "0c6e6c5d7f91b4a3",
+      "kind": "judgment",
+      "title": "Owlet 以工作陪伴和学习成长为核心",
+      "text": "我把 Owlet 的核心确定为陪伴工作、学习成长，以灵动卡承载日常体验，让灵动台围绕灵动卡收轻，并把会话管理交给 Codex。这个选择明确了产品的重心，具体界面和窗口如何收敛仍在梳理中。",
+      "context": "2026 年 11 月 1 日，在讨论 Owlet 灵动台是否需要继续承担较重的会话管理时，明确选择工作陪伴与学习成长的产品定位。",
+      "date": "2026-11-01",
+      "recordedAt": "2026-11-01",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": "c310000000000001",
+      "relatedIds": [],
+      "sources": [{ "kind": "statement", "label": "俊宁本人陈述，2026-11-01，公开摘要。" }],
+      "basis": "Codex 本身已承担会话管理；本人明确选择陪伴工作、学习成长作为 Owlet 的核心，并要求灵动台围绕灵动卡收轻。",
+      "alternatives": ["以 Agent 状态与用量监控为产品核心"],
+      "outcome": null
     }
   ]
 }
