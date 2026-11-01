@@ -4,10 +4,10 @@
   "skills": [
     {
       "id": "df18c7b59a42e630",
-      "name": "数字分身资料检索",
-      "summary": "从授权共享的个人记录与文章中检索经历、项目、判断和变化，依据原文回答并附上可回查来源；区分收藏资料与个人经历。",
+      "name": "personal-records-reader",
+      "summary": "从显式配置的个人资料站检索共享记录、文章、引用与收藏，检查原文哈希并依据真实来源回答；访问被拒或格式不匹配时如实失败，不内置站点和身份。",
       "group": "self",
-      "sourceUrl": null
+      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/productivity/personal-records-reader"
     },
     {
       "id": "5c6ca4fa2d004a71",
@@ -19,9 +19,9 @@
     {
       "id": "faad36c651afcb0d",
       "name": "memory-distill",
-      "summary": "从会话中整理有依据的个人记录、收藏和技能用途，区分本人陈述与工具执行结果。每轮核对公开同步状态，将合格增量脱敏后保存；没有变化时不重复写入。",
+      "summary": "按用户授权和目标配置蒸馏有依据的个人记录、收藏与技能清单；私有主机策略由使用者提供，内部来源保留在私有目标，公开版本经脱敏后同步。",
       "group": "self",
-      "sourceUrl": null
+      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/productivity/memory-distill"
     },
     {
       "id": "a1cb9754d63208fe",
@@ -85,6 +85,41 @@
       "summary": "浏览器加载、资源与长会话性能审查",
       "group": "self",
       "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/engineering/browser-performance-audit"
+    },
+    {
+      "id": "44c9af72de318605",
+      "name": "qoderwork-cup",
+      "summary": "QoderWork Chat 的 Computer Use 验收",
+      "group": "self",
+      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/engineering/qoderwork-cup"
+    },
+    {
+      "id": "55d0bc83ef429716",
+      "name": "qwenwork-cup",
+      "summary": "千问办公 Chat 的 Computer Use 验收",
+      "group": "self",
+      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/engineering/qwenwork-cup"
+    },
+    {
+      "id": "66e1cd940a538827",
+      "name": "polyglot-service-deploy",
+      "summary": "多运行时服务的构建、监督与部署诊断",
+      "group": "self",
+      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/engineering/polyglot-service-deploy"
+    },
+    {
+      "id": "77f2dea51b649938",
+      "name": "browser-distribution-engineering",
+      "summary": "浏览器平台、产品发行、签名与通道验收",
+      "group": "self",
+      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/engineering/browser-distribution-engineering"
+    },
+    {
+      "id": "88a3efb62c750a49",
+      "name": "lake-report-design",
+      "summary": "可移植 HTML 报告、语义设计与可探索图表",
+      "group": "self",
+      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/design/lake-report-design"
     }
   ]
 }
