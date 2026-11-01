@@ -1174,6 +1174,98 @@
       "priority": "lead",
       "adoption": "unknown",
       "usages": []
+    },
+    {
+      "id": "a4d52e70c1968c01",
+      "kind": "knowledge",
+      "title": "Vercel Pro 计划与计费",
+      "url": "https://vercel.com/docs/plans/pro-plan",
+      "summary": "核对平台费、部署席位和使用额度，区分固定订阅费用与额外用量。",
+      "reason": "围绕 Vercel 的独立开发方案写作时核对的官方资料，可用于后续容量规划和成本复查；规则可能变化，以官方当前页面为准。",
+      "tags": [
+        "独立开发",
+        "成本控制"
+      ],
+      "savedAt": "2026-11-01",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "2026-11-01 写作时核对的官方产品文档及价格页面。"
+        }
+      ],
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": []
+    },
+    {
+      "id": "a4d52e70c1968c02",
+      "kind": "knowledge",
+      "title": "Vercel Spend Management 的暂停边界",
+      "url": "https://vercel.com/docs/spend-management",
+      "summary": "核对预算通知、全团队生产暂停、检查延迟和暂停后仍产生的存储费用。",
+      "reason": "围绕 Vercel 的独立开发方案写作时核对的官方资料，可用于后续容量规划和成本复查；规则可能变化，以官方当前页面为准。",
+      "tags": [
+        "独立开发",
+        "成本控制"
+      ],
+      "savedAt": "2026-11-01",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "2026-11-01 写作时核对的官方产品文档及价格页面。"
+        }
+      ],
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": []
+    },
+    {
+      "id": "a4d52e70c1968c03",
+      "kind": "knowledge",
+      "title": "Neon 数据库价格与免费额度",
+      "url": "https://neon.com/pricing",
+      "summary": "核对托管 Postgres 的存储与计算额度，避免只按数据库大小估算费用。",
+      "reason": "围绕 Vercel 的独立开发方案写作时核对的官方资料，可用于后续容量规划和成本复查；规则可能变化，以官方当前页面为准。",
+      "tags": [
+        "独立开发",
+        "成本控制"
+      ],
+      "savedAt": "2026-11-01",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "2026-11-01 写作时核对的官方产品文档及价格页面。"
+        }
+      ],
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": []
+    },
+    {
+      "id": "a4d52e70c1968c04",
+      "kind": "knowledge",
+      "title": "Vercel Blob 的存储、操作与传输计费",
+      "url": "https://vercel.com/docs/vercel-blob/usage-and-pricing",
+      "summary": "核对对象存储各计费项，区分资源压缩、缓存命中与实际账单变化。",
+      "reason": "围绕 Vercel 的独立开发方案写作时核对的官方资料，可用于后续容量规划和成本复查；规则可能变化，以官方当前页面为准。",
+      "tags": [
+        "独立开发",
+        "成本控制"
+      ],
+      "savedAt": "2026-11-01",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "2026-11-01 写作时核对的官方产品文档及价格页面。"
+        }
+      ],
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": []
     }
   ]
 }
