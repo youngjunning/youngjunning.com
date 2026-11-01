@@ -2,6 +2,28 @@
   "version": 1,
   "favorites": [
     {
+      "id": "bbc6c2e95fa83d72",
+      "kind": "project",
+      "title": "SwiftUI Agent Skill",
+      "url": "https://github.com/AvdLee/SwiftUI-Agent-Skill",
+      "summary": "提供 SwiftUI 开发参考与 Instruments trace 录制、解析脚本，采用 MIT 许可；本轮核对了公开源代码和许可，并为维护改编补齐归属。",
+      "reason": "用于回查维护改编的上游来源，后续更新 SwiftUI 参考或 Instruments 工具时核对原始实现与许可。作为会话发现保存，不表示本人采纳全部指导或完成目标应用的性能验收。",
+      "tags": [
+        "SwiftUI",
+        "macOS",
+        "Instruments",
+        "Agent Skills"
+      ],
+      "savedAt": "2026-11-01",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "官方仓库 AvdLee/SwiftUI-Agent-Skill，commit 204dba7c67256a8b707ee3fbc5759a824191974f；LICENSE 与 analyze_trace.py 公开 blob，2026-11-01 核验。"
+        }
+      ]
+    },
+    {
       "id": "84d1b9c307ef625a",
       "kind": "project",
       "title": "Matt Pocock 的 Agent Skills",
