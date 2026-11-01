@@ -2,6 +2,32 @@
   "version": 1,
   "favorites": [
     {
+      "id": "a832d4fb6130e725",
+      "kind": "project",
+      "title": "Storybook Generator Skill：绘本分镜与图文验收",
+      "url": "https://github.com/weaiw/storybook-generator-skill",
+      "summary": "面向 Agent 的绘本制作流程，包含角色设定、逐页提示词、文字与画面的对应检查，以及局部返工规则。",
+      "reason": "可用于检查绘本生产流程是否遗漏角色连续性、样页验收和可见叙事证据；其固定文字区方案仍需根据具体版式要求调整。会话发现，不代表本人已完成该项目的生成效果验证。",
+      "tags": ["绘本", "Agent Skills", "图像生成"],
+      "savedAt": "2026-11-01",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [{"label": "官方仓库角色连续性、提示词与 QA 文档，2026-11-01 核验：https://github.com/weaiw/storybook-generator-skill/tree/72d30ecd51d12986738db6d4f40d79cd7fa6358a"}]
+    },
+    {
+      "id": "cf1923de758ab604",
+      "kind": "project",
+      "title": "StoryDiffusion：连续图像中的角色一致性",
+      "url": "https://github.com/HVision-NKU/StoryDiffusion",
+      "summary": "长序列图像与视频生成的研究实现，使用一致性自注意力改善跨图像的角色一致性。",
+      "reason": "用于理解跨页身份保持与单页构图是不同问题；其方法需要模型内部支持，不能把普通图像 API 的参考图输入等同于该实现。会话发现，未运行模型或验证复现效果。",
+      "tags": ["图像生成", "角色一致性", "研究实现"],
+      "savedAt": "2026-11-01",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [{"label": "官方仓库与论文，2026-11-01 核验：https://github.com/HVision-NKU/StoryDiffusion；https://arxiv.org/abs/2405.01434"}]
+    },
+    {
       "id": "9005d098dc844cdb",
       "kind": "project",
       "title": "Lucian UXUI：交互元素检索与适配 Skill",
