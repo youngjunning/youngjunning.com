@@ -2,6 +2,32 @@
   "version": 1,
   "favorites": [
     {
+      "id": "91fc906a99431e8a",
+      "kind": "knowledge",
+      "title": "LLM Wiki：原作者设计提案",
+      "url": "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
+      "summary": "个人知识库的维护模式：保留原始资料，由 LLM 维护带来源链接的主题综合页面；原提案没有提供可直接接入的完整系统。",
+      "reason": "用于比较资料检索与持久化跨文综合的职责，并检查来源引用、冲突和维护规则；会话发现，不表示本人已采用或验证效果。",
+      "tags": ["LLM Wiki", "知识管理", "来源追溯"],
+      "savedAt": "2026-11-01",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [{ "label": "Karpathy 原始 gist，2026-04-04；2026-11-01 核验固定版本 ac46de1ad27f92b28ac95459c782c07f6b8c964a：https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f/ac46de1ad27f92b28ac95459c782c07f6b8c964a" }]
+    },
+    {
+      "id": "12f51ecafa480a20",
+      "kind": "knowledge",
+      "title": "LongMemEval：长时交互记忆评测",
+      "url": "https://github.com/xiaowu0162/LongMemEval",
+      "summary": "长时对话记忆评测资料，覆盖信息提取、跨会话推理、时间推理、知识更新与拒答，并提供必要证据和回答评测的研究入口。",
+      "reason": "为个人记忆系统设计测试类别和必要来源标注提供参考；公开基准结果不能直接视为某个具体系统的表现，收藏不代表本人已运行该基准。",
+      "tags": ["Agent Memory", "评测", "时间推理"],
+      "savedAt": "2026-11-01",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [{ "label": "原作者论文与代码仓库，2026-11-01 核验：https://arxiv.org/abs/2410.10813 与 https://github.com/xiaowu0162/LongMemEval" }]
+    },
+    {
       "id": "bbc6c2e95fa83d72",
       "kind": "project",
       "title": "SwiftUI Agent Skill",
