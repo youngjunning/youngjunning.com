@@ -1,0 +1,12 @@
+{
+  "file": "taleframe-architecture.webp",
+  "model": "gpt-image-2.5-all",
+  "requested_size": "1280x720",
+  "actual_resolution": "1280x720",
+  "generation_time_seconds": 31.77,
+  "response_format": "b64_json",
+  "output_format": "webp",
+  "file_size_bytes": 49430,
+  "postprocess": "WebP quality 78",
+  "prompt": "Landscape editorial cover, 16:9. A quiet independent developer reading workspace: one upright modern Android-style phone with a plain softly illuminated blank cream reading screen next to an open hardcover novel on a pale wooden desk, a few neatly filed manuscript pages behind the book. Warm mist-white background, lake teal and cypress green accents, gray blue distant atmosphere, subtle morning window light, tactile paper and restrained elegant realistic 3D editorial illustration. Main objects in right two-thirds, generous calm negative space on left. No people, no architecture diagram, no arrows, no floating dashboards, no code. No text, no letters, no watermark, no brand marks, no platform logos."
+}

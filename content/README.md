@@ -51,3 +51,9 @@ URL 应为可核验公共原始来源，按移除锚点、utm 参数与尾斜杠
 收藏增加 priority（lead 线索、evaluate 待评估、reference 重点参考）、adoption（unknown 未核实、not_selected 未选用、trial 试用中、adopted 已选用、retired 已停用）、usages 数组。优先级是回看顺序，不是质量评分。历史缺证据默认 lead / unknown / []；明确仅作为候选才标未选用。
 
 usages 每项包含 project、projectUrl、stage（trial/adopted/retired）、purpose、evidence。项目使用必须有源码、依赖、公开文档或明确陈述依据，区分原型试用和正式采用；试用中或已选用必须存在同阶段使用记录。更新时保留稳定 ID。公开使用记录不得暴露内部项目名称和地址，不能公开的关系仅留内部。图谱用 uses 表达项目使用，用 tagged 表达主题相关，不从相同标签推导使用事实。
+
+## 硅基俊宁专属内容
+
+2026-11-01，作者明确指定：TaleFrame 这类个人独立产品的架构与开发实践文章属于硅基俊宁专有内容，只在本站维护和发布，不反向同步到公司站。公开可读不构成跨站同步授权。
+
+本规则已覆盖文章 `b7e91c4a20d865f3`《TaleFrame 架构实录：原生 Android 如何接上 Vercel 小说后台》，包括后续修订及关联封面；除非作者另行明确授权，跨站同步时跳过。
