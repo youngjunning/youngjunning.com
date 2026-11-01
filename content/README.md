@@ -16,7 +16,7 @@ experience 增加 period、start、end、ongoing，start/end 支持年、月、�
 
 `favorites.json` 顶层为 `{ "version": 1, "favorites": [] }`。每项包含 id、kind（project/knowledge/card）、title、url、summary、reason、tags、savedAt、selection、visibility、sources。selection: explicit 仅用于本人明确收藏，Agent 发现使用 discovered；sources 为非空的 `{ "label": "公开出处" }` 数组。
 
-URL 应为可核验公共原始来源，按移除锚点、utm 参数与尾斜杠后的地址去重，保留有语义查询参数。知识卡片 kind: card，url 为 null，另含 card: {date, recordedAt, context, understanding, example, distinction}，示例区分假设与真实经历。知识卡片需要本人理解的证据，不能把资料摘要冒充本人理解。
+URL 应为可核验公共原始来源，按移除锚点、utm 参数与尾斜杠后的地址去重，保留有语义查询参数。概念笔记 kind: card，url 为 null，另含 card: {date, recordedAt, context, understanding, example, distinction}，示例区分假设与真实经历。通用笔记可自动保存有来源的完整概念解释、示例和适用边界，context、sources 注明资料整理或 AI 辅助解释，understanding 承载概念要点；仅声称本人理解、判断或实践时要求本人证据。没有个人事实不影响资料或笔记的收藏判断；已授权的合格内容按 discovered 保存，不要求本轮再次明确收藏。按概念、范围和来源去重，补全纠错保留 ID，不为单纯术语提及或重复外链摘要制造笔记。
 
 ## 文章
 
