@@ -9,3 +9,7 @@
 - 文章正文维护于 content/posts，资料规范见 content/README.md。阅读、API、对话共用同一份验证过的公开内容。对话仅根据个人记录与文章回答，收藏不冒充本人观点，不自动写回记忆或执行外部操作。
 - 密钥仅配置为服务端环境变量，本仓库忽略全部实际 .env 文件。不要复制内部项目的环境或构建发布配置。
 - 修改后执行 npm run content:check、npm test、npm run typecheck；应用改动执行 npm run build，再检查受影响页面。只提交任务范围，完成并验证后自动 commit 和 push；部署与线上域名单独报告。
+
+## 数字分身模型与检索边界
+
+模型继续使用 DeepSeek，通过服务端 DEEPSEEK_API_KEY、DEEPSEEK_BASE_URL、DEEPSEEK_MODEL 配置。用户明确要求公开站不接入 GBrain、PGLite 或原生 Code Brain；使用本地关键词、显式来源关系与已审核的文件快照。模型配置和检索实现是两站有意保留的差异，通用协议同步不能将内部引擎和配置复制过来。

@@ -49,3 +49,5 @@ npm start
 生产环境单独配置 `DEEPSEEK_API_KEY`、`DEEPSEEK_BASE_URL` 与 `DEEPSEEK_MODEL`，提供 `/api/chat` 所需的服务端模型配置。本地环境文件不随部署上传；`.vercel` 项目关联文件不提交。文章、封面和内容数据推送到 `main` 后，由 Vercel 构建发布；推送成功仍需核对部署结果和线上页面。回退使用 Vercel 中的上一份可用部署。
 
 内容检查验证字段、日期、关系、去重和部分敏感标记，不能代替人工审读。所有源码及 Git 历史公开，禁止以 private 标志保存敏感内容。代码与设计来源许可见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+
+公开站使用 OpenAI SDK 调用 DeepSeek，保留本地公开资料检索，不安装 GBrain 或 PGLite。
