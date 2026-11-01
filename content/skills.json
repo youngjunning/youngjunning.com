@@ -372,6 +372,13 @@
       "summary": "Writing documents for agents. Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md.",
       "group": "adopted",
       "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "653ec094dc48223a",
+      "name": "resolving-merge-conflicts",
+      "summary": "按双方变更意图处理进行中的 Git merge/rebase 冲突，并执行项目检查。保留的 Matt Pocock 历史技能，上游现已移除。",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills/commit/daa01d8aa68ad5c61b68970ec2018d0ce9567be6"
     }
   ]
 }
