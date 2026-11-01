@@ -1,10 +1,10 @@
 {
   "version": 1,
   "audience": "external",
-  "updatedAt": "2026-11-01T17:56:30.212Z",
+  "updatedAt": "2026-11-01T18:04:59.751Z",
   "metric": "verified_skill_read_turns",
   "totals": {
-    "triggerCount": 453,
+    "triggerCount": 456,
     "skillCount": 14,
     "projectCount": 8,
     "directoryGroupCount": 0,
@@ -15,12 +15,12 @@
   "coverage": {
     "fileCount": 0,
     "firstSeen": "2026-07-04T05:20:27.882Z",
-    "lastSeen": "2026-11-01T17:54:27.186Z"
+    "lastSeen": "2026-11-01T18:02:34.005Z"
   },
   "skills": [
     {
       "name": "macos-app-develop",
-      "triggerCount": 157,
+      "triggerCount": 158,
       "projects": [
         {
           "projectId": "git:504b91c3cd03c11a",
@@ -28,23 +28,13 @@
         },
         {
           "projectId": "git:38c889f3f90409c5",
-          "triggerCount": 1
-        }
-      ]
-    },
-    {
-      "name": "fiction-site-builder",
-      "triggerCount": 75,
-      "projects": [
-        {
-          "projectId": "git:7fded60475070299",
-          "triggerCount": 75
+          "triggerCount": 2
         }
       ]
     },
     {
       "name": "report-skill",
-      "triggerCount": 75,
+      "triggerCount": 76,
       "projects": [
         {
           "projectId": "git:504b91c3cd03c11a",
@@ -52,7 +42,7 @@
         },
         {
           "projectId": "git:b98a39597e403453",
-          "triggerCount": 5
+          "triggerCount": 6
         },
         {
           "projectId": "git:25361c8b154a49b9",
@@ -65,6 +55,16 @@
         {
           "projectId": "git:6276ac4ed50dfc4d",
           "triggerCount": 3
+        }
+      ]
+    },
+    {
+      "name": "fiction-site-builder",
+      "triggerCount": 75,
+      "projects": [
+        {
+          "projectId": "git:7fded60475070299",
+          "triggerCount": 75
         }
       ]
     },
@@ -110,7 +110,7 @@
     },
     {
       "name": "writting-skill",
-      "triggerCount": 23,
+      "triggerCount": 24,
       "projects": [
         {
           "projectId": "git:504b91c3cd03c11a",
@@ -122,7 +122,7 @@
         },
         {
           "projectId": "git:b98a39597e403453",
-          "triggerCount": 4
+          "triggerCount": 5
         },
         {
           "projectId": "git:69d08711563f984a",
@@ -244,7 +244,7 @@
       "id": "git:b98a39597e403453",
       "name": "TaleFrame",
       "kind": "git",
-      "triggerCount": 15
+      "triggerCount": 17
     },
     {
       "id": "git:25361c8b154a49b9",
@@ -259,16 +259,16 @@
       "triggerCount": 6
     },
     {
-      "id": "git:69d08711563f984a",
-      "name": "design.zisheng.pro",
+      "id": "git:38c889f3f90409c5",
+      "name": "owlet",
       "kind": "git",
       "triggerCount": 4
     },
     {
-      "id": "git:38c889f3f90409c5",
-      "name": "owlet",
+      "id": "git:69d08711563f984a",
+      "name": "design.zisheng.pro",
       "kind": "git",
-      "triggerCount": 3
+      "triggerCount": 4
     },
     {
       "id": "git:6276ac4ed50dfc4d",
