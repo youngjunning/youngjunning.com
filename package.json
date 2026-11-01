@@ -8,6 +8,7 @@
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "content:check": "node scripts/check-content.mjs",
+    "schema:compare": "node scripts/compare-content-contract.mjs",
     "test": "node --test scripts/*.test.mjs",
     "prebuild": "npm run content:check"
   },

@@ -29,3 +29,19 @@ test('favorites deduplicate tracking noise but preserve semantic query parameter
   assert.equal(validateFavorites({version:1,favorites:[favorite]})[0].selection,'discovered');
   assert.throws(() => validateFavorites({version:1,favorites:[favorite,{...favorite,id:'0000000000000002',url:'https://example.com/tool/?utm_source=mail'}]}));
 });
+
+test('shared schemas retain private filtering while public policy rejects source persistence', async () => {
+  const { prepareRecords } = await import('../lib/record-model.mjs');
+  const hidden = { ...record, visibility: 'private' };
+  assert.deepEqual(prepareRecords({ version: 2, records: [hidden] }, new Set()).records, []);
+  assert.throws(() => validateRecords({ version: 2, records: [hidden] }), /private/);
+  const related = { ...record, id: '0000000000000002', relatedIds: [record.id] };
+  assert.throws(() => prepareRecords({ version: 2, records: [hidden, related] }, new Set()), /cannot link private/);
+});
+
+test('public favorites apply audience checks after shared card validation', () => {
+  const favorite = { id: '0000000000000001', kind: 'card', title: '概念笔记', url: null, summary: '资料整理。', reason: '便于回查。', tags: [], savedAt: '2026-11-01', selection: 'discovered', visibility: 'shared', sources: [{ label: '公开资料整理。' }], card: { date: null, recordedAt: '2026-11-01', context: '假设示例。', understanding: '概念要点。', example: '假设场景。', distinction: '适用边界。' } };
+  assert.equal(validateFavorites({ version: 1, favorites: [favorite] })[0].card.date, null);
+  for (const changes of [{ visibility: 'private' }, { card: { ...favorite.card, recordedAt: null } }, { sources: [{ label: '/Users/example/private' }] }]) assert.throws(() => validateFavorites({ version: 1, favorites: [{ ...favorite, ...changes }] }));
+  assert.equal(canonicalUrl('https://example.com/tool///'), canonicalUrl('https://example.com/tool'));
+});

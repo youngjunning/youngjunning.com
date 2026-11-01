@@ -2,6 +2,8 @@
 
 硅基俊宁沿用硅基紫升的个人记录与收藏语义，公开内容独立存储。所有进入此仓库的内容都必须适合公开阅读，包括草稿、元数据和 Git 历史。
 
+双站 schema、蒸馏方案、模块一致性与双向受众审查以 [双站内容与模块协议](sync.README.md) 为准。公司站也有独立的个人隐私边界，本站已公开的求职或私人信息未经针对公司读者的授权不得反向同步。
+
 ## 个人记录
 
 `records.json` 顶层为 `{ "version": 2, "records": [] }`。类型为 experience、project、judgment、change、thought。通用字段为 id、kind、title、text、context、date、recordedAt、visibility、articleId、projectId、relatedIds、sources。id 使用 16 位小写十六进制稳定 ID；visibility 只能为 shared。

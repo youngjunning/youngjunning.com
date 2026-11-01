@@ -1,0 +1,20 @@
+export type RecordSource = { kind: 'statement' | 'archive' | 'article'; label: string; articleId?: string };
+type RecordBase = {
+  id: string;
+  title: string;
+  date: string | null;
+  recordedAt: string;
+  text: string;
+  context: string;
+  visibility: 'shared' | 'private';
+  articleId: string | null;
+  projectId: string | null;
+  relatedIds: string[];
+  sources: RecordSource[];
+};
+export type ExperienceRecord = RecordBase & { kind: 'experience'; period: string; start: string | null; end: string | null; ongoing: boolean };
+export type ProjectRecord = RecordBase & { kind: 'project'; label: string; role: string; tags: string[]; status: 'ongoing' | 'completed' | 'paused' | 'unknown'; goal: string; outcomes: string[] };
+export type JudgmentRecord = RecordBase & { kind: 'judgment'; basis: string; alternatives: string[]; outcome: string | null };
+export type ChangeRecord = RecordBase & { kind: 'change'; subjectId: string; before: string; after: string; reason: string };
+export type PersonalRecord = ExperienceRecord | ProjectRecord | JudgmentRecord | ChangeRecord | (RecordBase & { kind: 'thought' });
+export type RecordStore = { version: 2; records: PersonalRecord[] };
