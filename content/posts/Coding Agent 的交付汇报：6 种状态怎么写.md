@@ -1,15 +1,18 @@
 ---
 id: "d156a11b53dd7cbc"
 title: "Coding Agent 的交付汇报：6 种状态怎么写"
-date: "2026-07-23"
 description: "Coding Agent 的汇报不是给管理者读的周报，而是交付给下一个执行者的状态接口。本文拆分完成交付、进行中、失败阻塞、Bug 诊断、方案决策和评审发布 6 种场景，说明每种状态必须留下哪些变更、验证与 Git/部署证据。"
-topic: "engineering"
+date: "2026-07-23"
+topic: "principles"
 tags: ["Coding Agent","Agentic Engineering","工程效率","项目管理","软件交付"]
-cover: "/media/2f856eac4b9be9afefc2.webp"
-source: "https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/Coding%20Agent%20%E7%9A%84%E4%BA%A4%E4%BB%98%E6%B1%87%E6%8A%A5%EF%BC%9A6%20%E7%A7%8D%E7%8A%B6%E6%80%81%E6%80%8E%E4%B9%88%E5%86%99.md"
+source: "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Coding%20Agent%20%E7%9A%84%E4%BA%A4%E4%BB%98%E6%B1%87%E6%8A%A5%EF%BC%9A6%20%E7%A7%8D%E7%8A%B6%E6%80%81%E6%80%8E%E4%B9%88%E5%86%99.md"
+sourceDate: "2026-07-23T20:15:00.000Z"
+cover: "/media/2f856eac4b9be9afefc27e74.webp"
+assets: {"/images/工作汇报框架选择.webp":"/media/2f856eac4b9be9afefc27e74.webp"}
+originalBodySha256: "8b373500cc1e0cad3c27f695d4da9fce1c6bd92697207adf23515d1d0abf67be"
 ---
 
-![Coding Agent 交付汇报的 6 种状态：完成交付、进行中、失败阻塞、Bug 诊断、方案决策和评审发布](/media/2f856eac4b9be9afefc2.webp)
+![Coding Agent 交付汇报的 6 种状态：完成交付、进行中、失败阻塞、Bug 诊断、方案决策和评审发布](/images/工作汇报框架选择.webp)
 
 *Coding Agent 的汇报要让下一个执行者能复现、验证或继续推进，而不是只知道“做了很多事”。*
 

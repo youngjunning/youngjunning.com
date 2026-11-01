@@ -2,6 +2,22 @@
   "version": 1,
   "favorites": [
     {
+      "id": "1f84a6c02bbd5709",
+      "kind": "project",
+      "title": "react-markdown：Markdown 渲染与 HTML 安全边界",
+      "url": "https://github.com/remarkjs/react-markdown",
+      "summary": "React 的 Markdown 渲染组件，通过 remark 与 rehype 扩展语法。官方文档区分原生 HTML 解析与安全过滤；引入 HTML 插件时仍需检查链接转换和允许的元素。",
+      "reason": "迁移历史博客时用于保留表格、原生 HTML 图片和代码块，官方的 HTML 与安全章节可供后续维护查证。",
+      "tags": ["Markdown", "React", "内容迁移"],
+      "savedAt": "2026-11-01",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [{ "label": "react-markdown 官方 README 的 HTML、组件扩展与 Security 章节；硅基俊宁公开源码的依赖和文章渲染实现。" }],
+      "priority": "reference",
+      "adoption": "adopted",
+      "usages": [{ "project": "硅基俊宁", "projectUrl": "https://github.com/youngjunning/youngjunning.com", "stage": "adopted", "purpose": "渲染历史博客，配合 rehype-raw、rehype-sanitize 与资源映射保留内容并过滤不安全 HTML。", "evidence": "package.json 已声明依赖，app/blog/[id]/page.tsx 已接入；本地构建与阅读页面检查通过，不表示域名已部署。" }]
+    },
+    {
       "id": "f43c1a9e7b625d08",
       "kind": "knowledge",
       "title": "Active Memory：Muse Wonder 官方能力说明",

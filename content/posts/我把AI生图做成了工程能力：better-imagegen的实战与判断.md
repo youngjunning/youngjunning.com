@@ -1,12 +1,15 @@
 ---
 id: "510c0b2daf2fa791"
 title: "我把AI生图做成了工程能力：better-imagegen的实战与判断"
-date: "2026-07-15"
 description: "这篇文章复盘我近期把 AI 生图用于产品视觉、角色设计、透明图标、macOS App Icon、动态壁纸与帧动画的真实过程，并介绍 better-imagegen 如何把模型路由、Prompt 约束、后处理、交付规格和元数据沉淀成一套可复用的视觉工程能力。"
+date: "2026-07-15"
 topic: "engineering"
 tags: ["better-imagegen","GPT Image 2","Image Generation","Agent Skill","Sprite Animation","AI Infra"]
-cover: "/media/527469a63459c3e3a1c6.webp"
-source: "https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/%E6%88%91%E6%8A%8AAI%E7%94%9F%E5%9B%BE%E5%81%9A%E6%88%90%E4%BA%86%E5%B7%A5%E7%A8%8B%E8%83%BD%E5%8A%9B%EF%BC%9Abetter-imagegen%E7%9A%84%E5%AE%9E%E6%88%98%E4%B8%8E%E5%88%A4%E6%96%AD.md"
+source: "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E6%88%91%E6%8A%8AAI%E7%94%9F%E5%9B%BE%E5%81%9A%E6%88%90%E4%BA%86%E5%B7%A5%E7%A8%8B%E8%83%BD%E5%8A%9B%EF%BC%9Abetter-imagegen%E7%9A%84%E5%AE%9E%E6%88%98%E4%B8%8E%E5%88%A4%E6%96%AD.md"
+sourceDate: "2026-07-15T16:30:00.000Z"
+cover: "/media/527469a63459c3e3a1c629a7.webp"
+assets: {"/images/better-imagegen-capability-map.webp":"/media/2def77bb90606f17caf38b75.webp","/images/better-imagegen-sprite-loop.gif":"/media/9f88fab5161a01bf02a70144.gif","/images/better-imagegen-argos-case.webp":"/media/f33296ab573243712e10af14.webp","/images/better-imagegen-engineering-practice.webp":"/media/527469a63459c3e3a1c629a7.webp"}
+originalBodySha256: "ae7970ca849f381f95767f7d201baba3bf3b97f412b71cf05aa8cce64a01794c"
 ---
 
 最近两周，我密集地用 AI 生成了几类差异很大的视觉资产：产品竞赛主视觉、Agent 角色分身、18px 菜单栏帧动画、macOS App Icon、动态壁纸、错误状态插画，以及博客和社交媒体封面。
@@ -19,7 +22,7 @@ source: "https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff
 
 **AI 生图要从“抽卡”走向工程化，关键不是把 Prompt 写得更长，而是把类型路由、规格约束、模型回退、后处理、质量检查和产物封装变成稳定流程。**
 
-![better-imagegen 能力概览](/media/2def77bb90606f17caf3.webp)
+![better-imagegen 能力概览](/images/better-imagegen-capability-map.webp)
 
 ## 我最近到底拿它做了什么
 
@@ -99,7 +102,7 @@ WebP 压缩 + 尺寸检查
 
 ## 第四条经验：角色一致性必须走 Image Edit
 
-在一组产品角色设计里，我需要同一角色拥有不同身份和动作，同时保持可识别的形象。具体业务分工不影响这里讨论的角色一致性方法。
+在“小界”和“录制小界”的角色设计里，我需要同一角色拥有不同身份和动作：基础小界负责体验治理，录制小界负责根据目标自动探索操作路径并沉淀技能。
 
 如果每次都从文本重新生成，脸型、发型、服装结构和整体年龄感都会漂。更可靠的方法是把现有角色图作为 reference，通过 image edit 只修改服装、姿态、表情或手持物。
 
@@ -109,7 +112,7 @@ WebP 压缩 + 尺寸检查
 - 只需要同类风格、不要求身份连续时，才用 text-to-image。
 - 角色进入帧动画时，先锁定标准立绘，再做动作变化。
 
-![角色帧动画交付示例](/media/9f88fab5161a01bf02a7.gif)
+![角色帧动画交付示例](/images/better-imagegen-sprite-loop.gif)
 
 ## 第五条经验：帧动画的验收单位不是大图，而是运行尺寸
 
@@ -210,7 +213,7 @@ better-imagegen 现在默认使用 GPT Image 2，失败后归一化 Prompt 重�
 
 这就是我理解的 Agent skill：不是一段“万能指令”，而是把成功经验变成一套带条件分支、失败处理和交付标准的操作系统。
 
-![Argos 产品概念视觉案例](/media/f33296ab573243712e10.webp)
+![Argos 产品概念视觉案例](/images/better-imagegen-argos-case.webp)
 
 ## better-imagegen 的能力边界
 

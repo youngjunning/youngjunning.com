@@ -1,0 +1,2251 @@
+{
+  "version": 1,
+  "date": "2026-11-01",
+  "sourceRepository": "https://github.com/youngjunning/blog.zisheng.pro",
+  "sourceCommit": "3edd776416630100b4a100bc90b84dd1d66b3596",
+  "policy": "用户确认本次来源为 blog.zisheng.pro，不做项目或身份脱敏改写。80 篇正文逐字保留；1 篇仅将 GitHub 拦截的一处历史 npm 令牌替换为占位符。格式和资源映射发生于展示层；保留原始日期、署名、引文及版权声明。",
+  "counts": {
+    "reviewed": 238,
+    "migrated": 76,
+    "updated": 5,
+    "excluded": 157
+  },
+  "entries": [
+    {
+      "sourceFile": "2020 年中总结.md",
+      "title": "2020 年中总结",
+      "status": "migrated",
+      "reason": "保留早期职业转折、工作选择与社区参与的第一人称复盘。",
+      "id": "678100b865f40d5e",
+      "file": "2020 年中总结.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/2020%20%E5%B9%B4%E4%B8%AD%E6%80%BB%E7%BB%93.md",
+      "sourceSha256": "fa39153b872b43ab77e3a4d579a7855a6656d1ba0ca8fd4b654f9675cc0ead80",
+      "bodySha256": "941dd5a6e087fdf1427576e4495cde438ad1236675df30c8e5b271042d8491c2",
+      "importedSha256": "dfe0ea67ab26fe7a50d9dc2096f944f7d8b9fd5bffb831487197c003ca0540d4"
+    },
+    {
+      "sourceFile": "2021-Flutter-和-React-Native-如何选.md",
+      "title": "2021 Flutter 和 React Native 如何选",
+      "status": "excluded",
+      "reason": "2021 年的跨端选型译文，比较依赖当时生态与性能结论；优先保留本人跨端实践，旧译文留原站。",
+      "sourceSha256": "ebfbb7b07396bcfa3369b5b412623b86e5e06e59d1b8754ec901b5f0be780b3e",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/2021-Flutter-%E5%92%8C-React-Native-%E5%A6%82%E4%BD%95%E9%80%89.md"
+    },
+    {
+      "sourceFile": "2023 Google Adsense 账户注册教程.md",
+      "title": "2023 Google Adsense 中国大陆账户注册教程",
+      "status": "excluded",
+      "reason": "账户注册与界面操作教程，依赖地区及平台流程，没有可长期复用的工程分析。",
+      "sourceSha256": "2539c74929ea450ab1648bfd074ae0d68a1829fdc61ceec7a78a46171c50fcbe",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/2023%20Google%20Adsense%20%E8%B4%A6%E6%88%B7%E6%B3%A8%E5%86%8C%E6%95%99%E7%A8%8B.md"
+    },
+    {
+      "sourceFile": "2023 hosts 切换工具推荐.md",
+      "title": "2023 hosts 切换工具推荐",
+      "status": "excluded",
+      "reason": "三款 hosts 工具的介绍与安装清单，缺少实际对比或排障案例。",
+      "sourceSha256": "481a93d7848371e266b0b9170e665330bb1ff25dd25a2f823df1243951a4c3ce",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/2023%20hosts%20%E5%88%87%E6%8D%A2%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90.md"
+    },
+    {
+      "sourceFile": "2023 常用 NPM 包推荐.md",
+      "title": "2023 常用 NPM 包推荐",
+      "status": "excluded",
+      "reason": "以包名和链接为主的资源索引，不是完整实践文章。",
+      "sourceSha256": "2365c0692ca5a81db3094c1d15737ac530db50d374b27509beaf0c3c92b69d26",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/2023%20%E5%B8%B8%E7%94%A8%20NPM%20%E5%8C%85%E6%8E%A8%E8%8D%90.md"
+    },
+    {
+      "sourceFile": "2023-Google-Adsense-付款周期和时间.md",
+      "title": "2023 Google Adsense 付款周期和时间",
+      "status": "excluded",
+      "reason": "付款日期与门槛的政策说明，迁移为当前指南前需重新核实。",
+      "sourceSha256": "358dd7d34dbf8b16b24dc4207f5259f05e66530ab4bae022bb519aaf77d4a351",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/2023-Google-Adsense-%E4%BB%98%E6%AC%BE%E5%91%A8%E6%9C%9F%E5%92%8C%E6%97%B6%E9%97%B4.md"
+    },
+    {
+      "sourceFile": "2023-React-Native-Top5-动画库.md",
+      "title": "2023 React Native Top5 动画库",
+      "status": "excluded",
+      "reason": "动画库推荐与基础用法汇编，版本依赖强，缺少本人选择及效果验证。",
+      "sourceSha256": "caf6db96b776542c4e83a5b950a12b3345efe80c929f4a9617845b65f469ef75",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/2023-React-Native-Top5-%E5%8A%A8%E7%94%BB%E5%BA%93.md"
+    },
+    {
+      "sourceFile": "2023-中国大陆可以收到-Google-Adsense-PIN-码吗.md",
+      "title": "2023 中国大陆可以收到 Google Adsense PIN 码吗?",
+      "status": "excluded",
+      "reason": "PIN 邮寄经验与账户验证流程，场景窄且时效性强。",
+      "sourceSha256": "084302bbf9292faedb75399b1844fac9b6aac95d2fdc313d52c58dc97f4af30a",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/2023-%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E5%8F%AF%E4%BB%A5%E6%94%B6%E5%88%B0-Google-Adsense-PIN-%E7%A0%81%E5%90%97.md"
+    },
+    {
+      "sourceFile": "2023-中国大陆如何设置-Google-Adsense-付款方式.md",
+      "title": "2023 Google Adsense 付款方式设置教程",
+      "status": "excluded",
+      "reason": "支付渠道、账户与结汇操作依赖当时政策，不直接迁为当前操作指南。",
+      "sourceSha256": "d984a045320655a67460c5cc4292c061d663c37e7cfdbbaa75ea2c5f498ce930",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/2023-%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE-Google-Adsense-%E4%BB%98%E6%AC%BE%E6%96%B9%E5%BC%8F.md"
+    },
+    {
+      "sourceFile": "2023-如何成功创建-Google-账户.md",
+      "title": "2023 大陆人如何成功创建 Google 账户",
+      "status": "excluded",
+      "reason": "账号注册的网络与时区绕行操作，成功条件不可稳定复现。",
+      "sourceSha256": "a17dbcedf33da764d9743965d9a0277e82ada8a2a60bfb2eb9ec02cfc3518648",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/2023-%E5%A6%82%E4%BD%95%E6%88%90%E5%8A%9F%E5%88%9B%E5%BB%BA-Google-%E8%B4%A6%E6%88%B7.md"
+    },
+    {
+      "sourceFile": "2023-年最值得使用的-Node-js-框架.md",
+      "title": "2023 年最值得使用的 Node.js 框架",
+      "status": "excluded",
+      "reason": "标题为 2023 推荐，出处是 2021 框架榜单；版本和时间语境不一致。",
+      "sourceSha256": "847dfb524fe3bd0174fc1eae6bd641a72efbeb9ebc0bea56c027a7c4713ceac6",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/2023-%E5%B9%B4%E6%9C%80%E5%80%BC%E5%BE%97%E4%BD%BF%E7%94%A8%E7%9A%84-Node-js-%E6%A1%86%E6%9E%B6.md"
+    },
+    {
+      "sourceFile": "AI Native 知识库：给人维护，给 Agent 调用，给双方追溯.md",
+      "title": "AI Native 知识库：给人维护，给 Agent 调用，给双方追溯",
+      "status": "migrated",
+      "reason": "保留 Source of Truth、索引、权限、Evidence 与知识调用的完整架构。",
+      "id": "b4769d7651bfe440",
+      "file": "AI Native 知识库：给人维护，给 Agent 调用，给双方追溯.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/AI%20Native%20%E7%9F%A5%E8%AF%86%E5%BA%93%EF%BC%9A%E7%BB%99%E4%BA%BA%E7%BB%B4%E6%8A%A4%EF%BC%8C%E7%BB%99%20Agent%20%E8%B0%83%E7%94%A8%EF%BC%8C%E7%BB%99%E5%8F%8C%E6%96%B9%E8%BF%BD%E6%BA%AF.md",
+      "sourceSha256": "d6441f1519db961cde3d98c20b0e8f71ea080d06c1e764eb8da5773fc5197eca",
+      "bodySha256": "19421d40f47373be10229119eb5cbb94dc717336123704741acf46c92e9c606e",
+      "importedSha256": "9b1e79cc2ac7c6c2b5c059c38c8c4d8ecec2609a615811d1f99aeb6a6fb0f9b1"
+    },
+    {
+      "sourceFile": "AI 概念学习.md",
+      "title": "人工智能概念学习",
+      "status": "excluded",
+      "reason": "通用 AI 概念与论文简介汇编，缺少独立推导；已选文章提供更具体的 Agent 与知识架构。",
+      "sourceSha256": "2f635f256519b148112aba4fccbd9a0600b7c8b4fb3b2029330a0f6944457e5a",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/AI%20%E6%A6%82%E5%BF%B5%E5%AD%A6%E4%B9%A0.md"
+    },
+    {
+      "sourceFile": "AI 浏览器不是 Chrome 加个聊天框：从 BrowserOS 拆解七层架构.md",
+      "title": "AI 浏览器不是 Chrome 加个聊天框：从 BrowserOS 拆解七层架构",
+      "status": "migrated",
+      "reason": "保留从 BrowserOS 源码展开的七层架构及产品、内核与交付边界。",
+      "id": "812a897a94fb07c7",
+      "file": "AI 浏览器不是 Chrome 加个聊天框：从 BrowserOS 拆解七层架构.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/AI%20%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8D%E6%98%AF%20Chrome%20%E5%8A%A0%E4%B8%AA%E8%81%8A%E5%A4%A9%E6%A1%86%EF%BC%9A%E4%BB%8E%20BrowserOS%20%E6%8B%86%E8%A7%A3%E4%B8%83%E5%B1%82%E6%9E%B6%E6%9E%84.md",
+      "sourceSha256": "224eaa458ee87142a632917839f1998c7a54daf8ad396ce6e82fe04cd218ffa0",
+      "bodySha256": "cd37cd0ccb02655d71f955df71d68aeee94edad56385c9f47429e788dca1af57",
+      "importedSha256": "8edbe082972b569282302ec7d931d77734fe1f39a31092c3888a57edd1d47819"
+    },
+    {
+      "sourceFile": "Agent 系统的一级领域对象：从 Task、Run 到 Evidence.md",
+      "title": "Agent 系统的一级领域对象：从 Task、Run 到 Evidence",
+      "status": "migrated",
+      "reason": "保留 Task、Run、Artifact、Evidence 等领域对象的关系与建模依据。",
+      "id": "fe301a0e4d6f3991",
+      "file": "Agent 系统的一级领域对象：从 Task、Run 到 Evidence.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Agent%20%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%B8%80%E7%BA%A7%E9%A2%86%E5%9F%9F%E5%AF%B9%E8%B1%A1%EF%BC%9A%E4%BB%8E%20Task%E3%80%81Run%20%E5%88%B0%20Evidence.md",
+      "sourceSha256": "75dcf42540563c4c25fa169cb92425691417050eb7c7c68aa9937aec7efcc30a",
+      "bodySha256": "89129c771006855d7f0a80da2e7ff24d76140993c549c07047c04cef54cffc11",
+      "importedSha256": "bf814e1b980629c5a13245b82219110cd30771a984c56d15bad0d4d2aada8a85"
+    },
+    {
+      "sourceFile": "Agentic-System-Engineer-成长路线图与学习.md",
+      "title": "Agentic System Engineer 成长路线图与学习指南",
+      "status": "migrated",
+      "reason": "保留有背景、分层目标和执行阶段的个人成长路线；规划仍按规划理解。",
+      "id": "d822d522839c3354",
+      "file": "Agentic System Engineer 成长路线图与学习指南.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Agentic-System-Engineer-%E6%88%90%E9%95%BF%E8%B7%AF%E7%BA%BF%E5%9B%BE%E4%B8%8E%E5%AD%A6%E4%B9%A0.md",
+      "sourceSha256": "840b1e3c0d8416bf98ccca6816817a80fb7b12a3c09ef20c20c31085b3e14072",
+      "bodySha256": "36516ec7bce47e48d3b520a6721b628fc8ed090e4cee63d9c776d598579290b7",
+      "importedSha256": "e4033f11382e285e5ff1b4094dfa69c872a27bffb024e99e7bb4d79f0b64f453"
+    },
+    {
+      "sourceFile": "All-纠音-port-词根.md",
+      "title": "All 纠音 & port 词根",
+      "status": "excluded",
+      "reason": "单词发音与词根的零散练习，不形成独立的个人实践文章。",
+      "sourceSha256": "f6a99b7612120c114195f44ee1eddcee6c63733bbc2cbd736717065309fb96c8",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/All-%E7%BA%A0%E9%9F%B3-port-%E8%AF%8D%E6%A0%B9.md"
+    },
+    {
+      "sourceFile": "Ant-Design-Pro-实战记录.md",
+      "title": "Ant Design Pro 实战记录",
+      "status": "excluded",
+      "reason": "主要是脚手架初始化、mock 和部署步骤，缺少项目结果或深入取舍。",
+      "sourceSha256": "c81b52996f054039ee3b28c80b5abc7e342f10e8266bbe2e8926bd83cb343dc7",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Ant-Design-Pro-%E5%AE%9E%E6%88%98%E8%AE%B0%E5%BD%95.md"
+    },
+    {
+      "sourceFile": "Antd form TextArea 隐藏右下角.md",
+      "title": "Antd form TextArea 隐藏右下角",
+      "status": "excluded",
+      "reason": "单个 resize 样式属性及表单示例，适合速查，不单独迁为文章。",
+      "sourceSha256": "3ac94920f5ef5fffd8a414be48c19f6b8f6168a248dfa9f77cfde04edaee2124",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Antd%20form%20TextArea%20%E9%9A%90%E8%97%8F%E5%8F%B3%E4%B8%8B%E8%A7%92.md"
+    },
+    {
+      "sourceFile": "Antd-DatePicker-date-clone-is-not-a-function.md",
+      "title": "Antd <DatePicker /> date.clone is not a function",
+      "status": "excluded",
+      "reason": "以 moment 默认值为前提的短修复，适用版本未明确，解法主要位于截图。",
+      "sourceSha256": "31d5d1a0edf799cc805c17cb35b70bed68188472fdf8189d64d9fadfc07b3807",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Antd-DatePicker-date-clone-is-not-a-function.md"
+    },
+    {
+      "sourceFile": "Antd-Descriptions-组件隐藏-label-的冒号.md",
+      "title": "Antd Descriptions 组件隐藏 label 的冒号",
+      "status": "excluded",
+      "reason": "单个 colon 属性与 padding 样式技巧，信息量适合速查。",
+      "sourceSha256": "0e2ea80bd5ab4a8319d900a2d464b5b5b8df83d54645f60c20d12480e80001fb",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Antd-Descriptions-%E7%BB%84%E4%BB%B6%E9%9A%90%E8%97%8F-label-%E7%9A%84%E5%86%92%E5%8F%B7.md"
+    },
+    {
+      "sourceFile": "Bearer Token Authentication 到底是什么：从 Authorization Header 到安全验证.md",
+      "title": "Bearer Token Authentication 到底是什么：从 Authorization Header 到安全验证",
+      "status": "migrated",
+      "reason": "保留鉴权概念区分、验证代码与错误场景，便于服务端工程复用。",
+      "id": "6d9782a77ae81401",
+      "file": "Bearer Token Authentication 到底是什么：从 Authorization Header 到安全验证.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Bearer%20Token%20Authentication%20%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9A%E4%BB%8E%20Authorization%20Header%20%E5%88%B0%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81.md",
+      "sourceSha256": "16048379c289084a5e86769c5eae5336dc29838b93c9ec8983f640f922d0731b",
+      "bodySha256": "94224a4bc4da0aa3c6b7b0f36b354838cab648aa4d9e0b67593668768fb8096d",
+      "importedSha256": "0782e7d80a2fa7373516aa09de272851a1943025ffdd2d1b69618475e29cf74f"
+    },
+    {
+      "sourceFile": "CSS 中的居中操作.md",
+      "title": "CSS 中的居中操作",
+      "status": "excluded",
+      "reason": "常见居中写法汇编，未展开复杂布局约束或实际项目取舍。",
+      "sourceSha256": "db248e46bf5fa4a7b87f1c50e1accae31bad318d9f700f124d4b1b196123d98f",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/CSS%20%E4%B8%AD%E7%9A%84%E5%B1%85%E4%B8%AD%E6%93%8D%E4%BD%9C.md"
+    },
+    {
+      "sourceFile": "Chat-GPT-4-is-here-Will-it-change-our-lives.md",
+      "title": "Chat GPT-4 已经问世——它会改变我们的生活吗？",
+      "status": "excluded",
+      "reason": "GPT-4 发布时期的新闻译文，缺少持续可复用的技术分析。",
+      "sourceSha256": "61cf47220bb6b5d080c5054a6cc00a85866b561fa2df181e5ce6fc7313fe1edb",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Chat-GPT-4-is-here-Will-it-change-our-lives.md"
+    },
+    {
+      "sourceFile": "Claude Code Skill Token 优化实践.md",
+      "title": "Claude Code Skill Token 优化实践：从 162KB 到 117KB",
+      "status": "migrated",
+      "reason": "保留 Skill 文件拆分、上下文加载粒度与优化前后数据。",
+      "id": "09b53a54b2ffdee1",
+      "file": "Claude Code Skill Token 优化实践：从 162KB 到 117KB.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Claude%20Code%20Skill%20Token%20%E4%BC%98%E5%8C%96%E5%AE%9E%E8%B7%B5.md",
+      "sourceSha256": "17a7958fa11f8190194bce81e0fa109550eb8f0f865b5f01590edde051c9389b",
+      "bodySha256": "3fddb7c50da4ef7d555799cdd344c50248d7a9c9168ec7bb2fccdd39b878d0a8",
+      "importedSha256": "130966cbdca2176e6f1fdd09dbd1f05a3a302e7b407397b24607d2941bae46ae"
+    },
+    {
+      "sourceFile": "Claude Code btw 实践指南.md",
+      "title": "Claude Code /btw 实践指南",
+      "status": "excluded",
+      "reason": "主要记录特定 Claude Code 版本的命令与快捷键，缺少可独立验证的完整案例。",
+      "sourceSha256": "c080ca056970ffc0b39fc262748599bd4d90e0f020414eb876deb60c10bf3966",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Claude%20Code%20btw%20%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97.md"
+    },
+    {
+      "sourceFile": "Claude-Design-上手：前端视角看-Anthropic-的-AI-设计工具.md",
+      "title": "Claude Design 上手：前端视角看 Anthropic 的 AI 设计工具",
+      "status": "excluded",
+      "reason": "产品发布与功能介绍为主，规格和可用性依赖当时版本。",
+      "sourceSha256": "9e2c5289077942b777c0e48563dac72384360f855b377abb853bcd57398a551c",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Claude-Design-%E4%B8%8A%E6%89%8B%EF%BC%9A%E5%89%8D%E7%AB%AF%E8%A7%86%E8%A7%92%E7%9C%8B-Anthropic-%E7%9A%84-AI-%E8%AE%BE%E8%AE%A1%E5%B7%A5%E5%85%B7.md"
+    },
+    {
+      "sourceFile": "Claude-Fable-5-发布：有哪些大更新.md",
+      "title": "Claude Fable 5 发布：有哪些大更新？",
+      "status": "excluded",
+      "reason": "主要是模型发布、定价和能力声明，正文未提供充分可核查的发布依据，先保留原站。",
+      "sourceSha256": "cfb95479bc0f0d43e3535bc24077f249c7dfd390833ecafc3131499394c2bd6f",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Claude-Fable-5-%E5%8F%91%E5%B8%83%EF%BC%9A%E6%9C%89%E5%93%AA%E4%BA%9B%E5%A4%A7%E6%9B%B4%E6%96%B0.md"
+    },
+    {
+      "sourceFile": "Cobra-中文文档.md",
+      "title": "Cobra 中文文档",
+      "status": "excluded",
+      "reason": "上游工具文档的整篇翻译；真实 Go CLI 项目实践已选，避免再复制一套维护易漂移的 API 文档。",
+      "sourceSha256": "0e94f564753b71af8e93758ef6ffe1c1e5d599314fe23ac7371fa73d171433c9",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Cobra-%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3.md"
+    },
+    {
+      "sourceFile": "Coding Agent 的交付汇报：6 种状态怎么写.md",
+      "title": "Coding Agent 的交付汇报：6 种状态怎么写",
+      "status": "updated",
+      "reason": "已有文章；按当前源文核对，保留六类交付状态与验收依据。",
+      "id": "d156a11b53dd7cbc",
+      "file": "Coding Agent 的交付汇报：6 种状态怎么写.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Coding%20Agent%20%E7%9A%84%E4%BA%A4%E4%BB%98%E6%B1%87%E6%8A%A5%EF%BC%9A6%20%E7%A7%8D%E7%8A%B6%E6%80%81%E6%80%8E%E4%B9%88%E5%86%99.md",
+      "sourceSha256": "324322e2b92f848d623d0f29b0984a7751a09285b170428082f64a4dc9b6b329",
+      "bodySha256": "8b373500cc1e0cad3c27f695d4da9fce1c6bd92697207adf23515d1d0abf67be",
+      "importedSha256": "4237438dde28508221587df996f566e5227719535a9303dc9918e5d0512ee09c"
+    },
+    {
+      "sourceFile": "Docker-安装配置宝塔面板.md",
+      "title": "Docker 安装配置宝塔面板",
+      "status": "excluded",
+      "reason": "第三方面板安装教程，重在镜像、端口与运维命令；容器原理与实践已由 Docker 笔记覆盖。",
+      "sourceSha256": "abd9e941c6838bd599d56c3b3f75cb432c6f2b9663d1c5c7f1b07b4575275a45",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Docker-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF.md"
+    },
+    {
+      "sourceFile": "ES 标准中相等比较算法 SameValue 和 SameValueZero.md",
+      "title": "ES 标准中相等比较算法 SameValue 和 SameValueZero",
+      "status": "migrated",
+      "reason": "虽短，但明确区分 NaN、正负零及 includes 的相等语义，有独立查阅价值。",
+      "id": "2245b342a181d416",
+      "file": "ES 标准中相等比较算法 SameValue 和 SameValueZero.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/ES%20%E6%A0%87%E5%87%86%E4%B8%AD%E7%9B%B8%E7%AD%89%E6%AF%94%E8%BE%83%E7%AE%97%E6%B3%95%20SameValue%20%E5%92%8C%20SameValueZero.md",
+      "sourceSha256": "8dcc2b215b0831434dab40aecb6a28cfa35ccd48f81b40d770385f20435acc05",
+      "bodySha256": "2b84407deecb648581e5740d65fffa2b329fb9b806c0d0a41efa3a5c7018bae9",
+      "importedSha256": "407ce8a25310bc10522cfdb4df169a166c0b3deef0151e5ba5e0293597911a5c"
+    },
+    {
+      "sourceFile": "Error-error-0308010C-digital-envelope-routines-unsupported.md",
+      "title": "「已解决」error:0308010C:digital envelope routines::unsupported",
+      "status": "migrated",
+      "reason": "虽短，但给出 OpenSSL 根因、临时绕过与长期修复的边界。",
+      "id": "d7a987238c980821",
+      "file": "「已解决」error:0308010C:digital envelope routines::unsupported.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Error-error-0308010C-digital-envelope-routines-unsupported.md",
+      "sourceSha256": "c4b651c863e51c9a03b3f624fbf6e0dc30bfa541c43dc0b2850c21c7902c561a",
+      "bodySha256": "1e06b35405b56add77fc3564061cb53b92cf652048d44466cf86a5dcffc5553d",
+      "importedSha256": "07ae740844e0fafe8c249973d99dbb3004f717fc24766e89f1f7912b2958b2ee"
+    },
+    {
+      "sourceFile": "Evidence 到底是什么：Agent 系统如何证明自己真的完成了任务.md",
+      "title": "Evidence 到底是什么：Agent 系统如何证明自己真的完成了任务",
+      "status": "migrated",
+      "reason": "保留 Evidence 的资格、结构、生命周期与验证模型。",
+      "id": "71172ac5216cb6d8",
+      "file": "Evidence 到底是什么：Agent 系统如何证明自己真的完成了任务.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Evidence%20%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9AAgent%20%E7%B3%BB%E7%BB%9F%E5%A6%82%E4%BD%95%E8%AF%81%E6%98%8E%E8%87%AA%E5%B7%B1%E7%9C%9F%E7%9A%84%E5%AE%8C%E6%88%90%E4%BA%86%E4%BB%BB%E5%8A%A1.md",
+      "sourceSha256": "18ae0fdd45340101c8068c70f645514758c6a2e93cd04c05175e246c38a12a99",
+      "bodySha256": "8bb4c2fc5d2f4096987a60c56d30d7ccfc944c85c181e0af9f6467f6dcac0b4e",
+      "importedSha256": "bf79e3fd35945490e97381940fb3aad959a3c696077471d4407a294db6c7d1ba"
+    },
+    {
+      "sourceFile": "Facebook Pixel 事件分层：用错事件等于训练算法找错人.md",
+      "title": "Facebook Pixel 事件分层：用错事件等于训练算法找错人",
+      "status": "excluded",
+      "reason": "保留了 AEM 八槽与优先级配置说法，后续踩坑文章明确修正该前提；迁移后续复盘。",
+      "sourceSha256": "20b7f29df06c14a483398db3b94a83724a8fdd7129457111fd425d5a6eeb1301",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Facebook%20Pixel%20%E4%BA%8B%E4%BB%B6%E5%88%86%E5%B1%82%EF%BC%9A%E7%94%A8%E9%94%99%E4%BA%8B%E4%BB%B6%E7%AD%89%E4%BA%8E%E8%AE%AD%E7%BB%83%E7%AE%97%E6%B3%95%E6%89%BE%E9%94%99%E4%BA%BA.md"
+    },
+    {
+      "sourceFile": "Facebook Pixel 从入门到精通.md",
+      "title": "Facebook Pixel 从入门到精通",
+      "status": "excluded",
+      "reason": "与后续 Pixel 踩坑复盘大量重叠，包含未经实验支撑的通用增效论断；优先后续问题复盘。",
+      "sourceSha256": "208edf760edf2b161249747ec3f649c2f11f5f89a35d9d2a65d28b0f706c8b75",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Facebook%20Pixel%20%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A.md"
+    },
+    {
+      "sourceFile": "Facebook Pixel 接入踩坑全记录：从 AEM 到 ChapterCompleted 触发时机.md",
+      "title": "Facebook Pixel 接入踩坑全记录：从 AEM 到 ChapterCompleted 触发时机",
+      "status": "migrated",
+      "reason": "保留真实接入问题及事件触发、测试和静态站服务端成本的复盘，保留原始时间。",
+      "id": "bb2df3b88b0dac4a",
+      "file": "Facebook Pixel 接入踩坑全记录：从 AEM 到 ChapterCompleted 触发时机.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Facebook%20Pixel%20%E6%8E%A5%E5%85%A5%E8%B8%A9%E5%9D%91%E5%85%A8%E8%AE%B0%E5%BD%95%EF%BC%9A%E4%BB%8E%20AEM%20%E5%88%B0%20ChapterCompleted%20%E8%A7%A6%E5%8F%91%E6%97%B6%E6%9C%BA.md",
+      "sourceSha256": "e80901c7586f952231ef33849dd6c7ca6c0970427a44336c93b01abfe62ab6f0",
+      "bodySha256": "574cf429a82eb7bcfab0f0ca43b2b56852cf6571f5f547033893433bfe4f2a2f",
+      "importedSha256": "837639954d81cead071aad360cf8627e93922fea60bc1d4e67b0fb28724e7b73"
+    },
+    {
+      "sourceFile": "Facebook广告投小说站只投Android不投iOS.md",
+      "title": "Facebook 广告投小说站：为什么只投 Android，不投 iOS",
+      "status": "excluded",
+      "reason": "按设备推导购买力与费用，并给出覆盖率等数值，却未给对应样本与出处。",
+      "sourceSha256": "9dfb8878cffc42e224ccec47b898d8f299ce0d844bfa78ac366c15f925cb1936",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Facebook%E5%B9%BF%E5%91%8A%E6%8A%95%E5%B0%8F%E8%AF%B4%E7%AB%99%E5%8F%AA%E6%8A%95Android%E4%B8%8D%E6%8A%95iOS.md"
+    },
+    {
+      "sourceFile": "Facebook广告预算反推：一天100元想拿2000成效现实吗.md",
+      "title": "Facebook广告预算反推：一天100元想拿2000成效现实吗",
+      "status": "migrated",
+      "reason": "保留预算、目标成本与转化量的推导，避免把投放愿望当成可行目标。",
+      "id": "fe6835643d38473b",
+      "file": "Facebook广告预算反推：一天100元想拿2000成效现实吗.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Facebook%E5%B9%BF%E5%91%8A%E9%A2%84%E7%AE%97%E5%8F%8D%E6%8E%A8%EF%BC%9A%E4%B8%80%E5%A4%A9100%E5%85%83%E6%83%B3%E6%8B%BF2000%E6%88%90%E6%95%88%E7%8E%B0%E5%AE%9E%E5%90%97.md",
+      "sourceSha256": "227f07b040872aca3fb4084d3dbf078e9fc88c14a3d7caf5b08dbf3cd46b6243",
+      "bodySha256": "e35c491b8ca49ba5ff35656ca73e419d547b7cdec667f0f5cf38e41225e560fc",
+      "importedSha256": "6034b1f093dd302157b804558254ce53a6bc581f7d80f39ba09ebff876216f0b"
+    },
+    {
+      "sourceFile": "GBrain-从入门到精通：构建可引用的本地知识层.md",
+      "title": "GBrain 从入门到精通：构建可引用的本地知识层",
+      "status": "migrated",
+      "reason": "保留本地知识层的数据流、检索、引用和分阶段接入方法。",
+      "id": "a9bdefae165a6c3b",
+      "file": "GBrain 从入门到精通：构建可引用的本地知识层.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/GBrain-%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A%EF%BC%9A%E6%9E%84%E5%BB%BA%E5%8F%AF%E5%BC%95%E7%94%A8%E7%9A%84%E6%9C%AC%E5%9C%B0%E7%9F%A5%E8%AF%86%E5%B1%82.md",
+      "sourceSha256": "10a30feb8d479e0b98ba79dfb9adff2e2dc0242cb5f525fb633a227830f0d809",
+      "bodySha256": "032db1a9382ef57a07c2be1df11e71d543843930d45061149f8dcdf5fae198c0",
+      "importedSha256": "db9a5b1778d75931f3e2249fa170700fd438549d647df63397190f058502f553"
+    },
+    {
+      "sourceFile": "GBrain、Sirchmunk、Understand Anything 怎么搭配：Agent 知识基础设施的三层实践.md",
+      "title": "GBrain、Sirchmunk、Understand Anything 怎么搭配：Agent 知识基础设施的三层实践",
+      "status": "migrated",
+      "reason": "保留三类知识工具的职责划分、引入顺序与维护成本判断。",
+      "id": "55e39dc93b1db5f4",
+      "file": "GBrain、Sirchmunk、Understand Anything 怎么搭配：Agent 知识基础设施的三层实践.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/GBrain%E3%80%81Sirchmunk%E3%80%81Understand%20Anything%20%E6%80%8E%E4%B9%88%E6%90%AD%E9%85%8D%EF%BC%9AAgent%20%E7%9F%A5%E8%AF%86%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E7%9A%84%E4%B8%89%E5%B1%82%E5%AE%9E%E8%B7%B5.md",
+      "sourceSha256": "501dc8670a702f7eabf41c62b597167c9b1c89ccb7830854eae7824d789d6204",
+      "bodySha256": "41ffbd2536ec2eaa0d56b31011eaf769564a718861c375e535d79164141961aa",
+      "importedSha256": "6882a3130e9922e09f4cd4addd645c5ef61c71eb43bf971a44a0699ba4ea7c10"
+    },
+    {
+      "sourceFile": "Git-worktree：AI 时代的并行开发工作台.md",
+      "title": "Git worktree：AI 时代的并行开发工作台",
+      "status": "migrated",
+      "reason": "保留并行开发的目录隔离、分支管理与合并工作流。",
+      "id": "365a48a69601f016",
+      "file": "Git worktree：AI 时代的并行开发工作台.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Git-worktree%EF%BC%9AAI%20%E6%97%B6%E4%BB%A3%E7%9A%84%E5%B9%B6%E8%A1%8C%E5%BC%80%E5%8F%91%E5%B7%A5%E4%BD%9C%E5%8F%B0.md",
+      "sourceSha256": "c8501f49e30478658179c5f08b69cd84e51d3adba6dc08775e83cc3fc6dbc381",
+      "bodySha256": "d43a218fdfe27bc5e89e94fef4597c68a4801d7ce37611bebf8d435d58de69ca",
+      "importedSha256": "4445939e4d34257ba231ce84b643b36c4aceeab8d88838ca06830d3ac59c26cf"
+    },
+    {
+      "sourceFile": "Go-语言系列教程のMap.md",
+      "title": "Go 语言系列教程のMap",
+      "status": "excluded",
+      "reason": "Go 基础教程系列译文，内容主要是语言入门语法；保留原站系列，本站优先迁入真实 Go CLI 项目。",
+      "sourceSha256": "0b9d0fc7f2388cb827f7c3c00dc6b92fdb1b67cc1879dfa3fa2a46f235157726",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Go-%E8%AF%AD%E8%A8%80%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B%E3%81%AEMap.md"
+    },
+    {
+      "sourceFile": "Go-语言系列教程の切片.md",
+      "title": "Go 语言系列教程の切片",
+      "status": "excluded",
+      "reason": "Go 基础教程系列译文，内容主要是语言入门语法；保留原站系列，本站优先迁入真实 Go CLI 项目。",
+      "sourceSha256": "d0ee4303514a5ce1cd2feef584dccd223511d679a89747cb237b87ba638080e7",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Go-%E8%AF%AD%E8%A8%80%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B%E3%81%AE%E5%88%87%E7%89%87.md"
+    },
+    {
+      "sourceFile": "Go-语言系列教程の参数可变的函数.md",
+      "title": "Go 语言系列教程の参数可变的函数",
+      "status": "excluded",
+      "reason": "Go 基础教程系列译文，内容主要是语言入门语法；保留原站系列，本站优先迁入真实 Go CLI 项目。",
+      "sourceSha256": "4858a169dd104824dfeef4709bff6c60b3e5fe559d171af611b82b9324f29e64",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Go-%E8%AF%AD%E8%A8%80%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B%E3%81%AE%E5%8F%82%E6%95%B0%E5%8F%AF%E5%8F%98%E7%9A%84%E5%87%BD%E6%95%B0.md"
+    },
+    {
+      "sourceFile": "Go-语言系列教程の字符串.md",
+      "title": "Go 语言系列教程の字符串",
+      "status": "excluded",
+      "reason": "Go 基础教程系列译文，内容主要是语言入门语法；保留原站系列，本站优先迁入真实 Go CLI 项目。",
+      "sourceSha256": "7782a10096259bd663b7fd218fa59ab9f9423929ca3cfa969d661e1c4a5c8568",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Go-%E8%AF%AD%E8%A8%80%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B%E3%81%AE%E5%AD%97%E7%AC%A6%E4%B8%B2.md"
+    },
+    {
+      "sourceFile": "Go-语言系列教程の数组.md",
+      "title": "Go 语言系列教程の数组",
+      "status": "excluded",
+      "reason": "Go 基础教程系列译文，内容主要是语言入门语法；保留原站系列，本站优先迁入真实 Go CLI 项目。",
+      "sourceSha256": "e13135aab498580c5f06ca8e167119046362b89f476e0e028626b6a968a298b4",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Go-%E8%AF%AD%E8%A8%80%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B%E3%81%AE%E6%95%B0%E7%BB%84.md"
+    },
+    {
+      "sourceFile": "Google-Adsense-High-eCPM-Keyword.md",
+      "title": "Google Adsense High eCPM",
+      "status": "excluded",
+      "reason": "高 eCPM 行业和频道推荐，未提供可复核样本或收益对比。",
+      "sourceSha256": "ed92ee9482ad59f0aad4274e3e8ce273588a1a9a424564a342bc0fff0d665493",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Google-Adsense-High-eCPM-Keyword.md"
+    },
+    {
+      "sourceFile": "Go语言教程系列のHello World.md",
+      "title": "Go 语言教程系列のHello World",
+      "status": "excluded",
+      "reason": "Go 基础教程系列译文，内容主要是语言入门语法；保留原站系列，本站优先迁入真实 Go CLI 项目。",
+      "sourceSha256": "697f12fae64ac2c0bd6c7166ceefa4ce6f78e1b85bf56dbe49a6e78e97202cb8",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Go%E8%AF%AD%E8%A8%80%E6%95%99%E7%A8%8B%E7%B3%BB%E5%88%97%E3%81%AEHello%20World.md"
+    },
+    {
+      "sourceFile": "Go语言教程系列のSwitch 语句.md",
+      "title": "Go 语言教程系列のSwitch 语句",
+      "status": "excluded",
+      "reason": "Go 基础教程系列译文，内容主要是语言入门语法；保留原站系列，本站优先迁入真实 Go CLI 项目。",
+      "sourceSha256": "c8aa239a379db8a3bc9a1de345b5de1a29bb884857e1f240fd95c18e188fe958",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Go%E8%AF%AD%E8%A8%80%E6%95%99%E7%A8%8B%E7%B3%BB%E5%88%97%E3%81%AESwitch%20%E8%AF%AD%E5%8F%A5.md"
+    },
+    {
+      "sourceFile": "Go语言教程系列のif else 语句.md",
+      "title": "Go 语言教程系列のif else 语句",
+      "status": "excluded",
+      "reason": "Go 基础教程系列译文，内容主要是语言入门语法；保留原站系列，本站优先迁入真实 Go CLI 项目。",
+      "sourceSha256": "3c0ffd7b4b20d201712ab3c1d13a4281780a58a9c5544e34322d2090adb851f7",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Go%E8%AF%AD%E8%A8%80%E6%95%99%E7%A8%8B%E7%B3%BB%E5%88%97%E3%81%AEif%20else%20%E8%AF%AD%E5%8F%A5.md"
+    },
+    {
+      "sourceFile": "Go语言教程系列の介绍和环境安装.md",
+      "title": "Go 语言教程系列の介绍和环境安装",
+      "status": "excluded",
+      "reason": "Go 基础教程系列译文，内容主要是语言入门语法；保留原站系列，本站优先迁入真实 Go CLI 项目。",
+      "sourceSha256": "687d5ddebf51d6eaef0c1c7810c0f1c1e3a7f9513bc9bb64bc63cc71659fb33e",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Go%E8%AF%AD%E8%A8%80%E6%95%99%E7%A8%8B%E7%B3%BB%E5%88%97%E3%81%AE%E4%BB%8B%E7%BB%8D%E5%92%8C%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85.md"
+    },
+    {
+      "sourceFile": "Go语言教程系列の函数.md",
+      "title": "Go 语言教程系列の函数",
+      "status": "excluded",
+      "reason": "Go 基础教程系列译文，内容主要是语言入门语法；保留原站系列，本站优先迁入真实 Go CLI 项目。",
+      "sourceSha256": "debc1cfc64bdaa396039fb95217fd7e96c0d0ed248dea3357262b3e7a58f79fe",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Go%E8%AF%AD%E8%A8%80%E6%95%99%E7%A8%8B%E7%B3%BB%E5%88%97%E3%81%AE%E5%87%BD%E6%95%B0.md"
+    },
+    {
+      "sourceFile": "Go语言教程系列の包.md",
+      "title": "Go 语言教程系列の包",
+      "status": "excluded",
+      "reason": "Go 基础教程系列译文，内容主要是语言入门语法；保留原站系列，本站优先迁入真实 Go CLI 项目。",
+      "sourceSha256": "c7f2eaf6947f6d96880840c5af756242f3f786223171f521e699938e235c505d",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Go%E8%AF%AD%E8%A8%80%E6%95%99%E7%A8%8B%E7%B3%BB%E5%88%97%E3%81%AE%E5%8C%85.md"
+    },
+    {
+      "sourceFile": "Go语言教程系列の变量.md",
+      "title": "Go 语言教程系列の变量",
+      "status": "excluded",
+      "reason": "Go 基础教程系列译文，内容主要是语言入门语法；保留原站系列，本站优先迁入真实 Go CLI 项目。",
+      "sourceSha256": "0ed838e434a0f575c9829e557bf4c9324d73107b2b432d00251bab2939a514a5",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Go%E8%AF%AD%E8%A8%80%E6%95%99%E7%A8%8B%E7%B3%BB%E5%88%97%E3%81%AE%E5%8F%98%E9%87%8F.md"
+    },
+    {
+      "sourceFile": "Go语言教程系列の常量.md",
+      "title": "Go 语言教程系列の常量",
+      "status": "excluded",
+      "reason": "Go 基础教程系列译文，内容主要是语言入门语法；保留原站系列，本站优先迁入真实 Go CLI 项目。",
+      "sourceSha256": "f284dff36ca09e99b94ae5c2fbe823d5a5c41f0501a398325e16b904e554f7a2",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Go%E8%AF%AD%E8%A8%80%E6%95%99%E7%A8%8B%E7%B3%BB%E5%88%97%E3%81%AE%E5%B8%B8%E9%87%8F.md"
+    },
+    {
+      "sourceFile": "Go语言教程系列の循环.md",
+      "title": "Go 语言教程系列の循环",
+      "status": "excluded",
+      "reason": "Go 基础教程系列译文，内容主要是语言入门语法；保留原站系列，本站优先迁入真实 Go CLI 项目。",
+      "sourceSha256": "dc4a32ed6b2e3cff463ac67b9aa6202bfb9536a81563af68400b49d09e0ada47",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Go%E8%AF%AD%E8%A8%80%E6%95%99%E7%A8%8B%E7%B3%BB%E5%88%97%E3%81%AE%E5%BE%AA%E7%8E%AF.md"
+    },
+    {
+      "sourceFile": "Go语言教程系列の数据类型.md",
+      "title": "Go 语言教程系列の数据类型",
+      "status": "excluded",
+      "reason": "Go 基础教程系列译文，内容主要是语言入门语法；保留原站系列，本站优先迁入真实 Go CLI 项目。",
+      "sourceSha256": "94c0dc7aa600e50eb856d401475e55a291c42e5c3c1dcc3400c2eadb69ace468",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Go%E8%AF%AD%E8%A8%80%E6%95%99%E7%A8%8B%E7%B3%BB%E5%88%97%E3%81%AE%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.md"
+    },
+    {
+      "sourceFile": "Hello 纠音 & priv 词根.md",
+      "title": "Hello 纠音 & priv 词根",
+      "status": "excluded",
+      "reason": "单词纠音与词根练习，属于碎片学习素材。",
+      "sourceSha256": "1fe49f945b4df93f3e71c811ab575b6478258699569acdf49bf8afc13d9b2469",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Hello%20%E7%BA%A0%E9%9F%B3%20%26%20priv%20%E8%AF%8D%E6%A0%B9.md"
+    },
+    {
+      "sourceFile": "Hexo × Github 免费搭建联盟营销独立站.md",
+      "title": "Hexo × Github Pages 免费搭建博客",
+      "status": "excluded",
+      "reason": "标准 Hexo 和 GitHub Pages 搭建步骤，缺少独有项目分析。",
+      "sourceSha256": "e9ced9cd459c3d7b4d59c829eb72af7948a6a206c1f839ce86ab0f4d8f7d02a3",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Hexo%20%C3%97%20Github%20%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E8%81%94%E7%9B%9F%E8%90%A5%E9%94%80%E7%8B%AC%E7%AB%8B%E7%AB%99.md"
+    },
+    {
+      "sourceFile": "Hexo 博客 SEO 优化实战.md",
+      "title": "Hexo 博客 SEO 优化实战",
+      "status": "excluded",
+      "reason": "以通用 SEO 标签、关键词和友链建议为主，缺少效果测量与案例。",
+      "sourceSha256": "3541132c736df05124c8b572f061f7e26bbdea8ccd75d950f2fb7e8c6632c912",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Hexo%20%E5%8D%9A%E5%AE%A2%20SEO%20%E4%BC%98%E5%8C%96%E5%AE%9E%E6%88%98.md"
+    },
+    {
+      "sourceFile": "HyperFrames 的原理：让 HTML 成为可寻址的视频时间线.md",
+      "title": "HyperFrames 的原理：让 HTML 成为可寻址的视频时间线",
+      "status": "migrated",
+      "reason": "保留可寻址时间线、确定性渲染和媒体生命周期的机制分析。",
+      "id": "d5ef8aec0f020b70",
+      "file": "HyperFrames 的原理：让 HTML 成为可寻址的视频时间线.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/HyperFrames%20%E7%9A%84%E5%8E%9F%E7%90%86%EF%BC%9A%E8%AE%A9%20HTML%20%E6%88%90%E4%B8%BA%E5%8F%AF%E5%AF%BB%E5%9D%80%E7%9A%84%E8%A7%86%E9%A2%91%E6%97%B6%E9%97%B4%E7%BA%BF.md",
+      "sourceSha256": "6dd06241f9224036af67fcddc963fedeb378ca253c2af1244b42522f9090d7b9",
+      "bodySha256": "c7f83f1ff289e0c8ac4c4b60f0c8260df75393ffca3e9e1bb2a106b8f9fa70d2",
+      "importedSha256": "2159595933f46b26b0f035574ab4d5697ad062fe3b425a4f7342338cbb79f440"
+    },
+    {
+      "sourceFile": "JavaScript apply、call、bind 三兄弟.md",
+      "title": "JavaScript apply、call、bind 三兄弟",
+      "status": "excluded",
+      "reason": "apply/call/bind 基础语法示例，官方资料可直接替代。",
+      "sourceSha256": "d3b43bdd6069002993c84564e694e52d754aa3251881b6bcffd7e9ba3b8a596f",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/JavaScript%20apply%E3%80%81call%E3%80%81bind%20%E4%B8%89%E5%85%84%E5%BC%9F.md"
+    },
+    {
+      "sourceFile": "JavaScript 函数节流和函数防抖.md",
+      "title": "JavaScript 函数节流与函数防抖",
+      "status": "excluded",
+      "reason": "基础节流防抖实现，未处理参数、上下文与复杂调度边界，不作为完整工程方案迁移。",
+      "sourceSha256": "3049caef1eb89949ead6aba387bf9bf2cbafee8e3d41b5f4b7c1bc2c7fcfff87",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/JavaScript%20%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81%E5%92%8C%E5%87%BD%E6%95%B0%E9%98%B2%E6%8A%96.md"
+    },
+    {
+      "sourceFile": "JavaScript 异步编程.md",
+      "title": "JavaScript 异步编程",
+      "status": "excluded",
+      "reason": "回调、Promise 与 async 的基础概览，未展开具体异步问题。",
+      "sourceSha256": "e90f64ef4db9fcf6b4b9dccd23ca30a9e31bae4626c748c912288bee89bd72a3",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/JavaScript%20%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B.md"
+    },
+    {
+      "sourceFile": "JavaScript 循环闭包.md",
+      "title": "JavaScript 循环闭包",
+      "status": "excluded",
+      "reason": "经典循环闭包练习，属于基础语法速查。",
+      "sourceSha256": "f14cc83d392cb582c79e6b7cd8dfff601cee2a64ff9f6927bff8a0ed1874eb9a",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/JavaScript%20%E5%BE%AA%E7%8E%AF%E9%97%AD%E5%8C%85.md"
+    },
+    {
+      "sourceFile": "JavaScript 数据结构.md",
+      "title": "JavaScript 数据结构",
+      "status": "excluded",
+      "reason": "数组与链表等基础笔记，内容覆盖宽但缺少具体应用与复杂度分析。",
+      "sourceSha256": "e7c9084c495b8f6498860b0fe2de1ac8a90fe6fcbeb6d5dac8614bbc148bcf04",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/JavaScript%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.md"
+    },
+    {
+      "sourceFile": "JavaScript 浅拷贝与深拷贝.md",
+      "title": "JavaScript 浅拷贝与深拷贝",
+      "status": "excluded",
+      "reason": "浅拷贝、深拷贝的基础汇编，缺少完整实现及循环引用等工程边界。",
+      "sourceSha256": "b1ec5e427155a76acc805d7679486f040b3508fa0d226372a57be20da3c3f203",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/JavaScript%20%E6%B5%85%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B7%B1%E6%8B%B7%E8%B4%9D.md"
+    },
+    {
+      "sourceFile": "JavaScript 浅比较和深比较.md",
+      "title": "JavaScript 浅比较和深比较",
+      "status": "excluded",
+      "reason": "基础类型和相等比较笔记；类型列表只有旧版五种，优先迁移比较算法专文。",
+      "sourceSha256": "bbeb793adc3fb15cb41c8946976ee8d8821f1232429603259973837d8524de12",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/JavaScript%20%E6%B5%85%E6%AF%94%E8%BE%83%E5%92%8C%E6%B7%B1%E6%AF%94%E8%BE%83.md"
+    },
+    {
+      "sourceFile": "JavaScript 隐式类型转换之相等操作符.md",
+      "title": "JavaScript 隐式类型转换之相等操作符",
+      "status": "excluded",
+      "reason": "相等操作符速查与图表，比较语义已由 SameValue 专文承接。",
+      "sourceSha256": "d4810549b6db130346e4f7048a8ad348506e360a75e96636dc3ef15a788c1d41",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/JavaScript%20%E9%9A%90%E5%BC%8F%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E4%B9%8B%E7%9B%B8%E7%AD%89%E6%93%8D%E4%BD%9C%E7%AC%A6.md"
+    },
+    {
+      "sourceFile": "JavaScript 高级程序设计阅读笔记.md",
+      "title": "《JavaScript高级程序设计》学习笔记",
+      "status": "excluded",
+      "reason": "原文已明确 All in One 学习笔记不可持续且可读性差；不把整份书摘重新搬入精选区。",
+      "sourceSha256": "400462bb5bd80f19fc109bf902ffd79aef5a6367e153f5775260d4e42e3dc3bc",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/JavaScript%20%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0.md"
+    },
+    {
+      "sourceFile": "JavaScript-Array-完全指南.md",
+      "title": "JavaScript Array 完全指南",
+      "status": "excluded",
+      "reason": "Array API 与常见操作的大型速查表，缺少独立项目场景。",
+      "sourceSha256": "abe4c3858ad62ac1f94164e584617b1cc1bf7ec235a38fc1883169c3f11b0140",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/JavaScript-Array-%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8D%97.md"
+    },
+    {
+      "sourceFile": "Kick OFF 简称 KO 项目启动.md",
+      "title": "KO 会议是什么？",
+      "status": "excluded",
+      "reason": "Kick-off 概念和会议议程模板，没有个人项目复盘。",
+      "sourceSha256": "61ea237eeee054732963bc3badee55dc8e0c2f7ccf8cc59f1159921634d3a7bb",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Kick%20OFF%20%E7%AE%80%E7%A7%B0%20KO%20%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8.md"
+    },
+    {
+      "sourceFile": "Mac 切换 github 账号.md",
+      "title": "Mac 切换 github 账号",
+      "status": "excluded",
+      "reason": "全局替换 Git 配置与删除钥匙串的短操作，没有并行多账号的隔离设计。",
+      "sourceSha256": "f1edf0b1c2aeccf9d75229204228c11e8b7fe70e49cf3a1340627fadc203d412",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Mac%20%E5%88%87%E6%8D%A2%20github%20%E8%B4%A6%E5%8F%B7.md"
+    },
+    {
+      "sourceFile": "Mac(M2) 正确安装 picgo 姿势.md",
+      "title": "Mac(M2) 正确安装 picgo 姿势",
+      "status": "excluded",
+      "reason": "PicGo 安装与本机故障操作记录，复用范围窄。",
+      "sourceSha256": "c22d67e0c547bcd1cf1af24408d9bc71f062c40c373f089876752f638a1e9489",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Mac(M2)%20%E6%AD%A3%E7%A1%AE%E5%AE%89%E8%A3%85%20picgo%20%E5%A7%BF%E5%8A%BF.md"
+    },
+    {
+      "sourceFile": "Meta Events Manager 深度指南：让广告数据不再是黑盒.md",
+      "title": "Meta Events Manager 深度指南：让广告数据不再是黑盒",
+      "status": "excluded",
+      "reason": "与已选 Pixel 踩坑文章的事件检测及转化配置重复，本文更多是产品功能概览。",
+      "sourceSha256": "63e902bf994b60a18a317f08abc846797edbfb81773369849a12702b94b2a06f",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Meta%20Events%20Manager%20%E6%B7%B1%E5%BA%A6%E6%8C%87%E5%8D%97%EF%BC%9A%E8%AE%A9%E5%B9%BF%E5%91%8A%E6%95%B0%E6%8D%AE%E4%B8%8D%E5%86%8D%E6%98%AF%E9%BB%91%E7%9B%92.md"
+    },
+    {
+      "sourceFile": "MongoDB 学习笔记.md",
+      "title": "MongoDB 学习笔记",
+      "status": "excluded",
+      "reason": "数据库安装、CRUD 速查笔记，缺少数据建模或性能实践。",
+      "sourceSha256": "089b4ee820babda7379cd0fe386436f69f9a5e9563b16b59117c23a1f7ab1e7c",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/MongoDB%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md"
+    },
+    {
+      "sourceFile": "NPM 常用命令.md",
+      "title": "NPM 常用命令",
+      "status": "excluded",
+      "reason": "npm 命令与字段速查表，不单独迁为文章。",
+      "sourceSha256": "2200ea059abefdf965cfbf400eb9bbbc84bcc387858af38b816ed557a537e105",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/NPM%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md"
+    },
+    {
+      "sourceFile": "Nest.js 快速上手.md",
+      "title": "Nest.js 快速上手",
+      "status": "excluded",
+      "reason": "框架介绍及脚手架启动流程，未形成项目实践。",
+      "sourceSha256": "c9eb68dd8e1cd4880053a29e800e5caf91796342744b54d50cd2c6537654d9f8",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Nest.js%20%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B.md"
+    },
+    {
+      "sourceFile": "Omaha 到底是什么：一篇讲清 Chromium 自动更新的客户端、协议与服务端.md",
+      "title": "Omaha 到底是什么：一篇讲清 Chromium 自动更新的客户端、协议与服务端",
+      "status": "migrated",
+      "reason": "保留更新客户端、协议、服务端、签名及安装制品的边界。",
+      "id": "9bc84c83cdd82bb9",
+      "file": "Omaha 到底是什么：一篇讲清 Chromium 自动更新的客户端、协议与服务端.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Omaha%20%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9A%E4%B8%80%E7%AF%87%E8%AE%B2%E6%B8%85%20Chromium%20%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0%E7%9A%84%E5%AE%A2%E6%88%B7%E7%AB%AF%E3%80%81%E5%8D%8F%E8%AE%AE%E4%B8%8E%E6%9C%8D%E5%8A%A1%E7%AB%AF.md",
+      "sourceSha256": "687a9dd40e85ef9661e8db74cf56322c95715b6f9d0e6c6d4805267b1f9b9e35",
+      "bodySha256": "b444717ce333a077c38c20d3f8761ba3a703e75e92cfd735dff9e4b3bc2966b6",
+      "importedSha256": "415282a37854baab32fcb5c7223af1f3d20e7c2cf99d19acf60cb0cfde0121a8"
+    },
+    {
+      "sourceFile": "Parsing-error-The-keyword-enum-is-reserved.md",
+      "title": "「已解决」Parsing error: The keyword 'enum' is reserved",
+      "status": "excluded",
+      "reason": "ESLint parser 的单点配置问题，缺少更广的工具链诊断。",
+      "sourceSha256": "85f1c3cb526b607c9d6ddda8fab7c95de71fdaa93ad33abe01bcd73e8b2a8cbb",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Parsing-error-The-keyword-enum-is-reserved.md"
+    },
+    {
+      "sourceFile": "Profile 到底是什么意思：先分清用户资料、构建方案与交付策略.md",
+      "title": "Profile 到底是什么意思：先分清用户资料、构建方案与交付策略",
+      "status": "migrated",
+      "reason": "保留术语在用户资料、构建及发行语境中的区分，避免设计混淆。",
+      "id": "e9bdf2152ef8e1d3",
+      "file": "Profile 到底是什么意思：先分清用户资料、构建方案与交付策略.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Profile%20%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D%EF%BC%9A%E5%85%88%E5%88%86%E6%B8%85%E7%94%A8%E6%88%B7%E8%B5%84%E6%96%99%E3%80%81%E6%9E%84%E5%BB%BA%E6%96%B9%E6%A1%88%E4%B8%8E%E4%BA%A4%E4%BB%98%E7%AD%96%E7%95%A5.md",
+      "sourceSha256": "134f3dc142938f641dbe7cd1f65b57f310359dc29aa0ff3971c78a3f1cfce429",
+      "bodySha256": "e158105171328efbca58996a1e3837e1b0153606c7b6fdb3f8942fad535de9bc",
+      "importedSha256": "337e4c9be251b797f9550acfc42c779511a576a1b025ec4af31f5aba78065f77"
+    },
+    {
+      "sourceFile": "Provider Pattern：在 Agent Ops App 中统一 Codex、Qoder 与未来执行引擎.md",
+      "title": "Provider Pattern：在 Agent Ops App 中统一 Codex、Qoder 与未来执行引擎",
+      "status": "migrated",
+      "reason": "保留多执行引擎的接口、事件和生命周期隔离设计。",
+      "id": "aa1705c9ace57ee1",
+      "file": "Provider Pattern：在 Agent Ops App 中统一 Codex、Qoder 与未来执行引擎.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Provider%20Pattern%EF%BC%9A%E5%9C%A8%20Agent%20Ops%20App%20%E4%B8%AD%E7%BB%9F%E4%B8%80%20Codex%E3%80%81Qoder%20%E4%B8%8E%E6%9C%AA%E6%9D%A5%E6%89%A7%E8%A1%8C%E5%BC%95%E6%93%8E.md",
+      "sourceSha256": "95de1a3e92b493f6fd5305c00c1473e8c0d5773d15e64b12ff6b50dbf6ec3ff3",
+      "bodySha256": "ace2890d81ca5137d7d44aad0a5241f23764cb7ee416fc269c5f9cd4e27f6933",
+      "importedSha256": "cfe47460d75dee3c9f73b95c28620979181026abc00aa969d85ef467eae96bcb"
+    },
+    {
+      "sourceFile": "Puppeteer-学习笔记（一）-入门.md",
+      "title": "Puppeteer 学习笔记（一）: 入门",
+      "status": "excluded",
+      "reason": "Puppeteer 基础 API 及常规示例，优先保留 Agent 与浏览器体系化实践。",
+      "sourceSha256": "b4b49e5895258e5962929306da5ebbc1e4eeb06ce2d6d7aa8addeb55b3efd674",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Puppeteer-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89-%E5%85%A5%E9%97%A8.md"
+    },
+    {
+      "sourceFile": "Puppeteer-学习笔记（示例）-打开多个页面并依次切换tab.md",
+      "title": "Puppeteer 学习笔记（示例）: 打开多个页面并依次切换tab",
+      "status": "excluded",
+      "reason": "Puppeteer 单一操作示例，与基础教程重复且缺少任务约束、失败处理和结果验证，不单独迁为文章。",
+      "sourceSha256": "18813a357a3975a70e2bf52639651f67b71290f347e4575c1ffbb01db17aa534",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Puppeteer-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%A4%BA%E4%BE%8B%EF%BC%89-%E6%89%93%E5%BC%80%E5%A4%9A%E4%B8%AA%E9%A1%B5%E9%9D%A2%E5%B9%B6%E4%BE%9D%E6%AC%A1%E5%88%87%E6%8D%A2tab.md"
+    },
+    {
+      "sourceFile": "Puppeteer-学习笔记（示例）-打开页面并滑动到底部.md",
+      "title": "Puppeteer 学习笔记（示例）: 打开页面并滑动到底部",
+      "status": "excluded",
+      "reason": "Puppeteer 单一操作示例，与基础教程重复且缺少任务约束、失败处理和结果验证，不单独迁为文章。",
+      "sourceSha256": "f9b384d19917662ccd4bce9bf7d1ccd35e92248292ce05e7ea67d205efb695c8",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Puppeteer-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%A4%BA%E4%BE%8B%EF%BC%89-%E6%89%93%E5%BC%80%E9%A1%B5%E9%9D%A2%E5%B9%B6%E6%BB%91%E5%8A%A8%E5%88%B0%E5%BA%95%E9%83%A8.md"
+    },
+    {
+      "sourceFile": "Puppeteer-学习笔记（示例）-禁止加载图片资源.md",
+      "title": "Puppeteer 学习笔记（示例）: 禁止加载图片资源",
+      "status": "excluded",
+      "reason": "Puppeteer 单一操作示例，与基础教程重复且缺少任务约束、失败处理和结果验证，不单独迁为文章。",
+      "sourceSha256": "388e7ab2d92f6099087b786c35d4943ce788d7aea12a2f561666b7a9ceb9eebc",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Puppeteer-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%A4%BA%E4%BE%8B%EF%BC%89-%E7%A6%81%E6%AD%A2%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87%E8%B5%84%E6%BA%90.md"
+    },
+    {
+      "sourceFile": "Puppeteer-学习笔记（示例）-逐个打开多个页面.md",
+      "title": "Puppeteer 学习笔记（示例）: 逐个打开页面并滑动到底部",
+      "status": "excluded",
+      "reason": "Puppeteer 单一操作示例，与基础教程重复且缺少任务约束、失败处理和结果验证，不单独迁为文章。",
+      "sourceSha256": "6b2f1e93e318b44e8e0660f7737d2b56773169bcd43fba2d16302363a31de2f6",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Puppeteer-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%A4%BA%E4%BE%8B%EF%BC%89-%E9%80%90%E4%B8%AA%E6%89%93%E5%BC%80%E5%A4%9A%E4%B8%AA%E9%A1%B5%E9%9D%A2.md"
+    },
+    {
+      "sourceFile": "Puppeteer-学习笔记（示例）并行打开多个页面.md",
+      "title": "Puppeteer 学习笔记（示例）: 并行打开多个页面",
+      "status": "excluded",
+      "reason": "Puppeteer 单一操作示例，与基础教程重复且缺少任务约束、失败处理和结果验证，不单独迁为文章。",
+      "sourceSha256": "0aa9a0cb74e0287ff9ae55a146451327b48b006adac976d8cb5b9d417c4c769d",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Puppeteer-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%A4%BA%E4%BE%8B%EF%BC%89%E5%B9%B6%E8%A1%8C%E6%89%93%E5%BC%80%E5%A4%9A%E4%B8%AA%E9%A1%B5%E9%9D%A2.md"
+    },
+    {
+      "sourceFile": "Python-中的-JSON-库：按速度、成熟度和操作安全性进行比较.md",
+      "title": "Python 中的 JSON 库：按速度、成熟度和操作安全性进行比较",
+      "status": "excluded",
+      "reason": "JSON 库性能对比译文，结论受当时版本与测试环境限制，未在本次复测。",
+      "sourceSha256": "9b896ace624fca31f4110322137313514f7a95c0ccddcfbbec50132dbbf7d43d",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Python-%E4%B8%AD%E7%9A%84-JSON-%E5%BA%93%EF%BC%9A%E6%8C%89%E9%80%9F%E5%BA%A6%E3%80%81%E6%88%90%E7%86%9F%E5%BA%A6%E5%92%8C%E6%93%8D%E4%BD%9C%E5%AE%89%E5%85%A8%E6%80%A7%E8%BF%9B%E8%A1%8C%E6%AF%94%E8%BE%83.md"
+    },
+    {
+      "sourceFile": "QDII-是什么-懒人无脑定投的产品有什么.md",
+      "title": "QDII 是什么？懒人无脑定投的产品有哪些？",
+      "status": "excluded",
+      "reason": "包含具体基金和定投推荐，缺少充分风险与适用条件，不作为投资指南迁移。",
+      "sourceSha256": "97b85940f69c337cea5e7de30039c057ee7c923a73a7b666ddd1924c09a5be9f",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/QDII-%E6%98%AF%E4%BB%80%E4%B9%88-%E6%87%92%E4%BA%BA%E6%97%A0%E8%84%91%E5%AE%9A%E6%8A%95%E7%9A%84%E4%BA%A7%E5%93%81%E6%9C%89%E4%BB%80%E4%B9%88.md"
+    },
+    {
+      "sourceFile": "RPM-广告是什么.md",
+      "title": "RPM 广告是什么?",
+      "status": "excluded",
+      "reason": "单一广告指标介绍，且发布商收入与广告主收益表述混用，需要先修订。",
+      "sourceSha256": "e01710d16e61c3b917c053620cfe78eda9c6c021187ffa8f2ce16924633b385c",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/RPM-%E5%B9%BF%E5%91%8A%E6%98%AF%E4%BB%80%E4%B9%88.md"
+    },
+    {
+      "sourceFile": "RSS 到底是什么：为什么 FlyOS 性能评测不能只看一个内存数字.md",
+      "title": "RSS 到底是什么：为什么 FlyOS 性能评测不能只看一个内存数字",
+      "status": "migrated",
+      "reason": "保留 RSS 与 Physical Footprint 的口径、采样与比较方法。",
+      "id": "96b0b4568452fc13",
+      "file": "RSS 到底是什么：为什么 FlyOS 性能评测不能只看一个内存数字.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/RSS%20%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20FlyOS%20%E6%80%A7%E8%83%BD%E8%AF%84%E6%B5%8B%E4%B8%8D%E8%83%BD%E5%8F%AA%E7%9C%8B%E4%B8%80%E4%B8%AA%E5%86%85%E5%AD%98%E6%95%B0%E5%AD%97.md",
+      "sourceSha256": "f52ec939e6787102205930c01aad5b49cb9a700db0da6f178e7324cbb1107a48",
+      "bodySha256": "5d9e21e554ce2c50b59eaae54ba9a62e7c4ec62e34b72808dd9daffcc1236019",
+      "importedSha256": "42c0bb2807841a04430fb48ee36b5177f3b4ec5c62a5522e47858d5734fffa4e"
+    },
+    {
+      "sourceFile": "Raw Knowledge 如何变成可信知识资产：以及中文 FTS 为什么不是改个配置.md",
+      "title": "Raw Knowledge 如何变成可信知识资产：以及中文 FTS 为什么不是改个配置",
+      "status": "migrated",
+      "reason": "保留知识入库、版本治理与中文全文检索失效的原因分析。",
+      "id": "d20e1dcb5f624265",
+      "file": "Raw Knowledge 如何变成可信知识资产：以及中文 FTS 为什么不是改个配置.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Raw%20Knowledge%20%E5%A6%82%E4%BD%95%E5%8F%98%E6%88%90%E5%8F%AF%E4%BF%A1%E7%9F%A5%E8%AF%86%E8%B5%84%E4%BA%A7%EF%BC%9A%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%20FTS%20%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E6%94%B9%E4%B8%AA%E9%85%8D%E7%BD%AE.md",
+      "sourceSha256": "a4aa2c1405e289d2e90e73adf1f3a2f171b2decdddbbdbc6098349c036b5590d",
+      "bodySha256": "1ae0312e805b6f4350baedd8d49a65ef769c5c68d0305aaaff74293389584ae1",
+      "importedSha256": "10615bbad2ee1732b4b09a8b2b2e5f2a7a0a237bdcd47e6a48d71ff73ea6710f"
+    },
+    {
+      "sourceFile": "React Hooks 问题记录.md",
+      "title": "React Hooks 问题记录",
+      "status": "excluded",
+      "reason": "单个卸载后状态更新警告的旧版处理代码，缺少取消请求等完整生命周期方案。",
+      "sourceSha256": "564466c412580553d7cae87a46fc48f1ba8b2eb7bd0c7701333cab4856b8f507",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/React%20Hooks%20%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95.md"
+    },
+    {
+      "sourceFile": "React Native 安卓必知必会.md",
+      "title": "React Native 安卓必知必会",
+      "status": "excluded",
+      "reason": "安卓打包与配置杂项，按 Android P 等旧环境组织，缺少统一工程主线。",
+      "sourceSha256": "4e3451a8bb70955be62826743768c8afd3586f1cd96490015c01abb424b7fc0e",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/React%20Native%20%E5%AE%89%E5%8D%93%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A.md"
+    },
+    {
+      "sourceFile": "React Native 引入第三方 SDK.md",
+      "title": "React Native 引入第三方 Android SDK",
+      "status": "migrated",
+      "reason": "保留原生 SDK 集成、依赖方式与桥接实践；按原文版本阅读。",
+      "id": "e25e916d0544d77d",
+      "file": "React Native 引入第三方 Android SDK.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/React%20Native%20%E5%BC%95%E5%85%A5%E7%AC%AC%E4%B8%89%E6%96%B9%20SDK.md",
+      "sourceSha256": "3737cb6d9b18523c8c7a0ca58436973274ef3c827c9bd09e7db9f04ae3f30b98",
+      "bodySha256": "21d9b8dcd76342ba64ecd64d386caa64d9919ee6d5e3857b7713a14c4fc552ad",
+      "importedSha256": "c594386f860923e726d2f3305e9c4f572aa75530f0645627359458cdb72dc2b7"
+    },
+    {
+      "sourceFile": "React Native 拆包解决方案.md",
+      "title": "React Native 拆包解决方案",
+      "status": "excluded",
+      "reason": "简短拆包方案与命令，缺少独立性能测量及完整实现。",
+      "sourceSha256": "dc8ca40916688ad4eab15610a27c4fc2c890e18bdb963850e23ef2344d8fa588",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/React%20Native%20%E6%8B%86%E5%8C%85%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.md"
+    },
+    {
+      "sourceFile": "React Native 收藏夹.md",
+      "title": "React Native 收藏夹",
+      "status": "excluded",
+      "reason": "收藏链接目录，文章迁移不直接复制大批未经重新核验的链接。",
+      "sourceSha256": "bbc8960ad997b3d8559553f82aee4a9a2cd92243e8485a136dd44ca73ca50c65",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/React%20Native%20%E6%94%B6%E8%97%8F%E5%A4%B9.md"
+    },
+    {
+      "sourceFile": "React Native 架构面面观.md",
+      "title": "React Native 架构面面观",
+      "status": "migrated",
+      "reason": "保留完整 React Native 项目架构、工程目录和跨端实践的历史记录。",
+      "id": "772498190d28843f",
+      "file": "React Native 架构面面观.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/React%20Native%20%E6%9E%B6%E6%9E%84%E9%9D%A2%E9%9D%A2%E8%A7%82.md",
+      "sourceSha256": "f3d8fcfbf32390e25d4b3bba227168f528be04967ed391b132013e12bc8c009b",
+      "bodySha256": "b065615ebf7403f0bfe3f92ab98c1782187896971006b5bd1722d1cac5606acf",
+      "importedSha256": "16c44a6d9c9cd66d6e4978c5bb1338b7d27930f336b357fd795c8f19b88e4823"
+    },
+    {
+      "sourceFile": "React Native 热更新不求人.md",
+      "title": "React Native 热更新不求人",
+      "status": "excluded",
+      "reason": "围绕特定自建 CodePush 服务的配置手册，服务环境耦合强；不在本次迁移维护。",
+      "sourceSha256": "9dc756714a00cd3bc16be4f49ba847d62e572b0affe214c3156db14ebe004134",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/React%20Native%20%E7%83%AD%E6%9B%B4%E6%96%B0%E4%B8%8D%E6%B1%82%E4%BA%BA.md"
+    },
+    {
+      "sourceFile": "React Native 配置字体大小不随字体设置变化.md",
+      "title": "React Native 字体缩放：别为了布局稳定一刀切关掉无障碍",
+      "status": "migrated",
+      "reason": "虽短，但有无障碍与布局稳定性的明确取舍和组件级方案。",
+      "id": "ac13e2393d51039f",
+      "file": "React Native 字体缩放：别为了布局稳定一刀切关掉无障碍.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/React%20Native%20%E9%85%8D%E7%BD%AE%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F%E4%B8%8D%E9%9A%8F%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE%E5%8F%98%E5%8C%96.md",
+      "sourceSha256": "3cff174141fa7ed3789de7f46da2fee6422ae90b654baeacaab50c43d0fe52fb",
+      "bodySha256": "620cf48ff89edab249e780962508b8ef70bc99215a09d24d26b11160a3a23e35",
+      "importedSha256": "9865992a85eb4de73a28dd96348b08df5b330d6b93baaba027b90074d026b962"
+    },
+    {
+      "sourceFile": "React Native 集成 CodePush 指南.md",
+      "title": "React Native 集成 CodePush 指南",
+      "status": "excluded",
+      "reason": "CodePush 服务注册、部署和客户端接入手册，版本与服务依赖强。",
+      "sourceSha256": "b1093825dc4862ec5b6248e704fd6dd013bff962b9f6f3f3784c2b12a6ad545c",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/React%20Native%20%E9%9B%86%E6%88%90%20CodePush%20%E6%8C%87%E5%8D%97.md"
+    },
+    {
+      "sourceFile": "React Navigation 5 最佳实践.md",
+      "title": "React Navigation 5 最佳实践",
+      "status": "excluded",
+      "reason": "明确面向 React Navigation 5 的配置大全，历史版本依赖强，优先保留跨端架构与本人实践。",
+      "sourceSha256": "a7493f9decf21b9e90bb5591322d2293bbef27fcb91b6a06511cb46b9e38bc6d",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/React%20Navigation%205%20%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5.md"
+    },
+    {
+      "sourceFile": "React-Native-调试最佳实践.md",
+      "title": "React Native 调试最佳实践",
+      "status": "excluded",
+      "reason": "调试工具介绍汇编，主要围绕当时的 Debugger、Flipper，缺少完整诊断案例。",
+      "sourceSha256": "284cb710a63c94e49301b998627082c8780c2af10e076db17a68f2f8ae336999",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/React-Native-%E8%B0%83%E8%AF%95%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5.md"
+    },
+    {
+      "sourceFile": "React-发布-10-周年.md",
+      "title": "React 发布 10 周年",
+      "status": "excluded",
+      "reason": "周年新闻与历史概览，缺少源码或个人实践证据。",
+      "sourceSha256": "a486446f7e033204d9777fb70927ce1efc5625c686bca70857fc3a20963810d2",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/React-%E5%8F%91%E5%B8%83-10-%E5%91%A8%E5%B9%B4.md"
+    },
+    {
+      "sourceFile": "React-性能优化实践.md",
+      "title": "React 性能优化实践",
+      "status": "migrated",
+      "reason": "保留 Profiler 分析、优化机制和两个案例，而非只给优化清单。",
+      "id": "eb33ea666c5414ff",
+      "file": "React 性能优化实践.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/React-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E5%AE%9E%E8%B7%B5.md",
+      "sourceSha256": "180bdaede5bb00682bc575c4b534fca5466918c10a5aae4a99a8f934ed80938c",
+      "bodySha256": "ca9570b2a7be7806d8e30e755cb048187b0f6711028cacabf4ba26cce0a5c2bb",
+      "importedSha256": "a61a1e251294861751b0b9f7bcb884421d2f06e216f134a50807a69f37c4842b"
+    },
+    {
+      "sourceFile": "React-虚拟-DOM-原理.md",
+      "title": "React VDOM 原理",
+      "status": "excluded",
+      "reason": "VDOM 通用概念简介，未展开调度、协调算法或源码分析。",
+      "sourceSha256": "d4e11660caea77f92964b62684ddec31f3e384d7d71379745154146e114f4dfc",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/React-%E8%99%9A%E6%8B%9F-DOM-%E5%8E%9F%E7%90%86.md"
+    },
+    {
+      "sourceFile": "Rollup-插件机制浅析.md",
+      "title": "2023 Rollup 插件机制源码解析",
+      "status": "migrated",
+      "reason": "保留 Rollup 插件系统、模块关系与钩子执行机制的源码分析。",
+      "id": "1ddb921587a79d4d",
+      "file": "2023 Rollup 插件机制源码解析.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Rollup-%E6%8F%92%E4%BB%B6%E6%9C%BA%E5%88%B6%E6%B5%85%E6%9E%90.md",
+      "sourceSha256": "0821c65e0efcb0247a36011eed37860df40d0b16c9715c6ac25bddd1883ea9ce",
+      "bodySha256": "93db69ca13246a5b43caa56338c8b20bb66da99e7ae57ef16a2cd921964e550b",
+      "importedSha256": "6d0077c21830b948ab4260e6550eba22eb78e1dd3dd605d398e2e3e31e2ed5d6"
+    },
+    {
+      "sourceFile": "Rust-极速入门教程.md",
+      "title": "Rust 极速入门教程",
+      "status": "excluded",
+      "reason": "安装、Hello World 与 Cargo 入门，Rust 核心概念由已选文章承接。",
+      "sourceSha256": "48b8bf10689a030220159bff9acb19b45bf678025a0b18b97e6ae2f4f25e2115",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Rust-%E6%9E%81%E9%80%9F%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B.md"
+    },
+    {
+      "sourceFile": "Rust-编写猜数游戏.md",
+      "title": "Rust 编写猜数游戏",
+      "status": "excluded",
+      "reason": "跟随入门教材的猜数游戏练习，缺少独立问题与取舍。",
+      "sourceSha256": "f45819cf7b078c48c65f0650f31a56ba309828181c8cb4b4e2cd3e9aa5e42d9b",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Rust-%E7%BC%96%E5%86%99%E7%8C%9C%E6%95%B0%E6%B8%B8%E6%88%8F.md"
+    },
+    {
+      "sourceFile": "Rust-语法学习笔记.md",
+      "title": "Rust 语法学习笔记",
+      "status": "excluded",
+      "reason": "基础语法学习笔记；所有权和变量隐藏已单独精选。",
+      "sourceSha256": "60d1089406d332eddb86e212a440a53a422e00cdeb0951d900c2ea7637c10640",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Rust-%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md"
+    },
+    {
+      "sourceFile": "Sidecar边车模式：给本地Agent划出一间受控执行舱.md",
+      "title": "Sidecar 边车模式：给本地 Agent 划出一间受控执行舱",
+      "status": "migrated",
+      "reason": "保留本地 Agent 的可信边界、进程隔离与生命周期治理。",
+      "id": "db56871fc29b563f",
+      "file": "Sidecar 边车模式：给本地 Agent 划出一间受控执行舱.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Sidecar%E8%BE%B9%E8%BD%A6%E6%A8%A1%E5%BC%8F%EF%BC%9A%E7%BB%99%E6%9C%AC%E5%9C%B0Agent%E5%88%92%E5%87%BA%E4%B8%80%E9%97%B4%E5%8F%97%E6%8E%A7%E6%89%A7%E8%A1%8C%E8%88%B1.md",
+      "sourceSha256": "391d538a0cc962e090553fb322ea69fe197eb5e1668f9241fafe743b78b26d13",
+      "bodySha256": "b4fc01cf3a94de29c1c17bb702ac369945385fb57eb2a8d7d25eaef99bdda8bc",
+      "importedSha256": "c8929c647515750ef904f695bf80f85696042e55aed1cc8227b8ff29913bfc06"
+    },
+    {
+      "sourceFile": "Taste Is All You Need.md",
+      "title": "Taste Is All You Need",
+      "status": "updated",
+      "reason": "已有文章；保留作者对判断力、取舍和 AI 协作的系统复盘。",
+      "id": "497451432d1eee6a",
+      "file": "Taste Is All You Need.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Taste%20Is%20All%20You%20Need.md",
+      "sourceSha256": "427eea398d75fab7bed7c5e74c9d30cf2170feb3560be46987b9d99564499931",
+      "bodySha256": "f3ded38ab89c98c012f95dbd94348c3a2202b3e3c545e37d6c941fe7a9fef10a",
+      "importedSha256": "92f7c66ff529483c5b479f622bb33ea8d55d2e709860a0e4737c35f0ae8bb9b8"
+    },
+    {
+      "sourceFile": "TypeScript 中 type 和 interface 的区别.md",
+      "title": "TypeScript 中 type 和 interface 的区别",
+      "status": "excluded",
+      "reason": "type/interface 基础对比，示例含 type 声明格式问题，需要修订而非直接迁移。",
+      "sourceSha256": "014150e48a1aace8bb087564b183d0895329753380f2a1f2daed1b7a8773e666",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/TypeScript%20%E4%B8%AD%20type%20%E5%92%8C%20interface%20%E7%9A%84%E5%8C%BA%E5%88%AB.md"
+    },
+    {
+      "sourceFile": "TypeScript-Jest-Coverage-项目初始化.md",
+      "title": "TypeScript+Jest+Coverage+Eslint+Prettier 项目初始化",
+      "status": "excluded",
+      "reason": "测试、格式工具初始化配置汇编，与已选规范化实践和测试文章重复。",
+      "sourceSha256": "517cb9d69685f950e424d52407e7deea6cf96d65057c2815b56160a7c050ffa5",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/TypeScript-Jest-Coverage-%E9%A1%B9%E7%9B%AE%E5%88%9D%E5%A7%8B%E5%8C%96.md"
+    },
+    {
+      "sourceFile": "TypeScript-描述树结构.md",
+      "title": "TypeScript 描述树结构",
+      "status": "excluded",
+      "reason": "递归类型的单段示例，适合速查。",
+      "sourceSha256": "e4c9e7e17ed1eb14fb82e4afaaf84e8dfc74722637a4fdaa45b417af2fc02f14",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/TypeScript-%E6%8F%8F%E8%BF%B0%E6%A0%91%E7%BB%93%E6%9E%84.md"
+    },
+    {
+      "sourceFile": "Typescript 项目使用 Jest 入门.md",
+      "title": "Typescript 项目使用 Jest 入门",
+      "status": "excluded",
+      "reason": "Jest 安装及配置短教程，已选完整单元测试实践。",
+      "sourceSha256": "d3c495212bace7cf24241308b97f67ee098f01e9bd9af1edf9c52658d9b68cab",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Typescript%20%E9%A1%B9%E7%9B%AE%E4%BD%BF%E7%94%A8%20Jest%20%E5%85%A5%E9%97%A8.md"
+    },
+    {
+      "sourceFile": "Typora 基于 PicGo-Core 实现粘贴上传图片.md",
+      "title": "Typora 基于 PicGo-Core 实现粘贴上传图片",
+      "status": "excluded",
+      "reason": "图床客户端的安装配置与上传操作，缺少长期方法或项目复盘。",
+      "sourceSha256": "65d308066b97abf1a31c702613da309de16f303ec5bbdb5e68aa96e4610678dc",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Typora%20%E5%9F%BA%E4%BA%8E%20PicGo-Core%20%E5%AE%9E%E7%8E%B0%E7%B2%98%E8%B4%B4%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87.md"
+    },
+    {
+      "sourceFile": "UmiJS 开发技巧.md",
+      "title": "UmiJS开发技巧",
+      "status": "excluded",
+      "reason": "Umi/dva 零散配置与技巧合集，缺少统一问题和版本边界。",
+      "sourceSha256": "b6772760a8deab96d0b0fa92f148dd3ac06533cceb3ca5b6f9d3c253d1084b2c",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/UmiJS%20%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7.md"
+    },
+    {
+      "sourceFile": "Using-React-Router-to-Optimize-Single-Page-Applications-SPAs.md",
+      "title": "使用 React Router 优化单页应用程序（SPAs）",
+      "status": "excluded",
+      "reason": "开头仍标注 DRAFT，内容主要是旧路由库入门练习，不作为完成稿迁移。",
+      "sourceSha256": "67e9a409a21c0e137b585ac7a7ef35c127fbaefc6eed567efd57d4ce23cd0a4f",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Using-React-Router-to-Optimize-Single-Page-Applications-SPAs.md"
+    },
+    {
+      "sourceFile": "Using-eslint-with-typescript-Unable-to-resolve-path-to-module.md",
+      "title": "「已解决」Using eslint with typescript - Unable to resolve path to module",
+      "status": "excluded",
+      "reason": "import resolver 的单点配置修复，信息量适合工具链速查。",
+      "sourceSha256": "572fab4028c848d6315748a07c44be3b2f0c8976f42ba50d2aa714547fc58cdd",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Using-eslint-with-typescript-Unable-to-resolve-path-to-module.md"
+    },
+    {
+      "sourceFile": "What-is-CTR-in-Google-Adsense.md",
+      "title": "Google Adsense 的 CTR 是什么？",
+      "status": "excluded",
+      "reason": "CTR 的通用定义与营销概述，缺少本人案例。",
+      "sourceSha256": "574b4fe4c9ca147efae4fa73bfbdd7bd67a83f404f6013d7ac4045e694ef8841",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/What-is-CTR-in-Google-Adsense.md"
+    },
+    {
+      "sourceFile": "Windows 下 AI 浏览器的最佳启动参数配置.md",
+      "title": "Windows 下 AI 浏览器的最佳启动参数配置",
+      "status": "migrated",
+      "reason": "保留生产入口与诊断参数分离，以及 Windows 安装包验收方法。",
+      "id": "a8f7d048a31f1839",
+      "file": "Windows 下 AI 浏览器的最佳启动参数配置.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Windows%20%E4%B8%8B%20AI%20%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E5%90%AF%E5%8A%A8%E5%8F%82%E6%95%B0%E9%85%8D%E7%BD%AE.md",
+      "sourceSha256": "d0700e2801e467a35e18078a29d8607e5b4bfc4ced667fed3da3a3faf8dc45a8",
+      "bodySha256": "cbec58f95da7b377995db45a5e0134bc8f1a3a6f895c366370072ef159b8f4b3",
+      "importedSha256": "81c46da1c7c7eb460456f73fa40cd7aeb62c701d3bb8d06e87b683ab4d170a09"
+    },
+    {
+      "sourceFile": "antd 开发技巧.md",
+      "title": "Antd 开发技巧",
+      "status": "excluded",
+      "reason": "Antd 属性和组件用法速查，缺少独立工程主线。",
+      "sourceSha256": "b6d627c2baf37e0796545dbaf539f51724cf5ec03f9a9cce292b37e328a0f300",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/antd%20%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7.md"
+    },
+    {
+      "sourceFile": "antd 快速上手.md",
+      "title": "Antd 快速上手教程",
+      "status": "excluded",
+      "reason": "Antd 初始化与常用配置，版本依赖强；不重复搬运组件库入门资料。",
+      "sourceSha256": "44822738bb3588f7702d98deb685a14bd6f867bba427f5df9e1a1ef9d316ed41",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/antd%20%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B.md"
+    },
+    {
+      "sourceFile": "antd-pro-modal-form 使用.md",
+      "title": "Antd Pro ModalFrom 使用记录",
+      "status": "excluded",
+      "reason": "ModalForm API 的逐项使用记录，缺少更完整的表单工程设计。",
+      "sourceSha256": "c4949f736cf9b4ca5ad6ff65fd84bb5e20695cdb66b8efa2e6b16f8a02f9ca75",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/antd-pro-modal-form%20%E4%BD%BF%E7%94%A8.md"
+    },
+    {
+      "sourceFile": "code-server 尝鲜.md",
+      "title": "基于 code-server 实现 WebIDE 的探索",
+      "status": "migrated",
+      "reason": "保留 WebIDE 技术路线、code-server 接入和部署探索。",
+      "id": "e7bc762c5b096149",
+      "file": "基于 code-server 实现 WebIDE 的探索.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/code-server%20%E5%B0%9D%E9%B2%9C.md",
+      "sourceSha256": "cf068265f6c3623c8b948b20378b79581a8c5a98dc62d8d46621f4d79195e468",
+      "bodySha256": "7c002bcffcd554842eb4f5cb8e9dbcd5c03f1006dbeb35238189a610f439f336",
+      "importedSha256": "ff9af8859bc14641d904be50b27589bb5b2729b8957890e4072882ec5bd18a37"
+    },
+    {
+      "sourceFile": "darwin-arm64、win32-x64、linux-x64 到底是什么：一篇讲清安装包命名.md",
+      "title": "darwin-arm64、win32-x64、linux-x64 到底是什么：一篇讲清安装包命名",
+      "status": "migrated",
+      "reason": "保留 OS、CPU、ABI 与发行物命名的体系化解释。",
+      "id": "5100d513ff66efc7",
+      "file": "darwin-arm64、win32-x64、linux-x64 到底是什么：一篇讲清安装包命名.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/darwin-arm64%E3%80%81win32-x64%E3%80%81linux-x64%20%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9A%E4%B8%80%E7%AF%87%E8%AE%B2%E6%B8%85%E5%AE%89%E8%A3%85%E5%8C%85%E5%91%BD%E5%90%8D.md",
+      "sourceSha256": "ef5030ecd8dfa0e88579ee6ede000cf5a4d5fdccdb0f8114e542bca96d026e60",
+      "bodySha256": "429336f6ddaebc4127229a3a7486ef28ca32027e64bcdbb253b9a350815cc7bd",
+      "importedSha256": "6a6e37e805b16b69961b0767f8535ec71212f14dfc94ac38c7882fcf9e758432"
+    },
+    {
+      "sourceFile": "eaddrinuse-address-already-in-use.md",
+      "title": "「已解决」EADDRINUSE: address already in use",
+      "status": "excluded",
+      "reason": "端口占用说明与终止进程操作，未展开服务进程所有权和恢复方案。",
+      "sourceSha256": "1b6fd64a16c50eb1715a6488491f189102f91a8dc35b4685c01c7f61b795eb40",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/eaddrinuse-address-already-in-use.md"
+    },
+    {
+      "sourceFile": "echarts 开发技巧.md",
+      "title": "Echarts 开发技巧",
+      "status": "excluded",
+      "reason": "两个图表样式配置片段，不独立迁为文章。",
+      "sourceSha256": "e6218215c0b2929ca23e2c97c7507566904f8006f7d7c7e897a7531d47f1ca2f",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/echarts%20%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7.md"
+    },
+    {
+      "sourceFile": "for-in 和 for-of 的区别.md",
+      "title": "for-in 和 for-of 的区别",
+      "status": "excluded",
+      "reason": "基础迭代语法对比，适合速查而非精选文章。",
+      "sourceSha256": "29e5c640932775dfca490fc6f91cb5f2ed3c4c367e4b17b7e3aadc94535a8b41",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/for-in%20%E5%92%8C%20for-of%20%E7%9A%84%E5%8C%BA%E5%88%AB.md"
+    },
+    {
+      "sourceFile": "hexo-theme-butterfly 魔改与美化.md",
+      "title": "hexo-theme-butterfly 魔改与美化",
+      "status": "excluded",
+      "reason": "针对 Hexo 6.3/butterfly 4.7 的主题补丁与样式记录，平台版本耦合强。",
+      "sourceSha256": "39a45a9c7ca799bcd0c96644243a60418ad9c3152c14d10a05b1cc794bb5a3a8",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/hexo-theme-butterfly%20%E9%AD%94%E6%94%B9%E4%B8%8E%E7%BE%8E%E5%8C%96.md"
+    },
+    {
+      "sourceFile": "job-using-GitHub-Actions.md",
+      "title": "「已解决」Error \"Waiting for a runner to pick up this job\" using GitHub Actions",
+      "status": "excluded",
+      "reason": "通过更换 runner 镜像解决等待的短记录，根因未经定位，不能当成通用方案。",
+      "sourceSha256": "909ccd67558df943b6d5103302a211e3c0f66ad6afe88f83ed5e083f7a28003a",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/job-using-GitHub-Actions.md"
+    },
+    {
+      "sourceFile": "let 和 const 的区别.md",
+      "title": "let 和 const 的区别",
+      "status": "excluded",
+      "reason": "let/const 的基础定义及示例，官方资料可替代。",
+      "sourceSha256": "cf0f6d5b5b1053b57fd472782599a1a69bf28232d7d62739417f116d2c8d4d09",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/let%20%E5%92%8C%20const%20%E7%9A%84%E5%8C%BA%E5%88%AB.md"
+    },
+    {
+      "sourceFile": "macOS 长按 Backspace 删除太慢？改这两个设置.md",
+      "title": "macOS 长按 Backspace 删除太慢？改这两个设置",
+      "status": "excluded",
+      "reason": "键盘重复速率的两项系统设置，信息量与复用范围都较窄。",
+      "sourceSha256": "76287d380135818f51ea184030bcaf9fab922b52b79336a60ccd171fe8811d68",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/macOS%20%E9%95%BF%E6%8C%89%20Backspace%20%E5%88%A0%E9%99%A4%E5%A4%AA%E6%85%A2%EF%BC%9F%E6%94%B9%E8%BF%99%E4%B8%A4%E4%B8%AA%E8%AE%BE%E7%BD%AE.md"
+    },
+    {
+      "sourceFile": "react-interview.md",
+      "title": "2023 React 面试题与答案",
+      "status": "excluded",
+      "reason": "大规模基础面试问答合集，缺少独立经历、取舍或源码推导。",
+      "sourceSha256": "1c782f9841a5cf102ee3deca307315551d9bf06d16daacda2fa9fbf936ab0ebd",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/react-interview.md"
+    },
+    {
+      "sourceFile": "react-native-create-library-中文文档.md",
+      "title": "react-native-create-library 中文文档",
+      "status": "excluded",
+      "reason": "旧原生库脚手架文档翻译，缺少本人实际集成问题。",
+      "sourceSha256": "4d50872aa4a60e5747274a7b77d2daa41aad9aaaf6a3629f16a0572401210a0d",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/react-native-create-library-%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3.md"
+    },
+    {
+      "sourceFile": "react-native-scrollable-tab-view.md",
+      "title": "react-native-scrollable-tab-view",
+      "status": "excluded",
+      "reason": "单个 Tab 组件的 API 配置与示例，历史库依赖强。",
+      "sourceSha256": "29551654be2eb0b610bb1d6464586c67005b555db67fa4875d20e7f76188487b",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/react-native-scrollable-tab-view.md"
+    },
+    {
+      "sourceFile": "react-router-interview.md",
+      "title": "2023 React Router 面试题与答案",
+      "status": "excluded",
+      "reason": "旧版 React Router 面试问答，缺少工程实践且版本边界不足。",
+      "sourceSha256": "0eeb967b88dcf851a85ce27d40a02028ad9d335ef14578f982fb579d68d28d06",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/react-router-interview.md"
+    },
+    {
+      "sourceFile": "sequelize 实现分页接口.md",
+      "title": "实现 sequelize 分页和条件查询",
+      "status": "excluded",
+      "reason": "ORM 分页与条件查询 API 速查，缺少数据量、索引或一致性问题。",
+      "sourceSha256": "444c7c1a0ce5770eef7db9706f3be5eef0307405bf0eaf9b3ea527efd0c79ed3",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/sequelize%20%E5%AE%9E%E7%8E%B0%E5%88%86%E9%A1%B5%E6%8E%A5%E5%8F%A3.md"
+    },
+    {
+      "sourceFile": "single-spa-原理解析（内部分享）.md",
+      "title": "single-spa 原理解析",
+      "status": "migrated",
+      "reason": "保留微前端生命周期、路由与源码分析及实际经验。",
+      "id": "c18fb2bebab84c5d",
+      "file": "single-spa 原理解析.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/single-spa-%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90%EF%BC%88%E5%86%85%E9%83%A8%E5%88%86%E4%BA%AB%EF%BC%89.md",
+      "sourceSha256": "f355f08b13d9eeace1ffdbc6c6b1abccb606b9c973ead00250cf24c42a7e880d",
+      "bodySha256": "7211379cbf873e80bcf96f9469bf5866fb2fbb4cba1e67ecae99ea5ceaa5bbd0",
+      "importedSha256": "6e01d604b699bf64ee13bb753e34cd9315a91597f04f1c4e9881b6abcb79e127"
+    },
+    {
+      "sourceFile": "slice、substring 和 substr 的区别.md",
+      "title": "slice、substring 和 substr 的区别",
+      "status": "excluded",
+      "reason": "字符串方法的参数与返回值对照表，适合速查。",
+      "sourceSha256": "f968f695a1ae3f4b30e18947ebb02764ac9ab1d9b8a6981b91b14863a95bbd58",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/slice%E3%80%81substring%20%E5%92%8C%20substr%20%E7%9A%84%E5%8C%BA%E5%88%AB.md"
+    },
+    {
+      "sourceFile": "unchecked Sendable 骗过了编译器：一次 Swift 并发字典崩溃复盘.md",
+      "title": "@unchecked Sendable 骗过了编译器：一次 Swift 并发字典崩溃复盘",
+      "status": "migrated",
+      "reason": "保留 Swift 并发崩溃证据、错误假设与 actor/锁的选择。",
+      "id": "8e4bac4796844e79",
+      "file": "@unchecked Sendable 骗过了编译器：一次 Swift 并发字典崩溃复盘.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/unchecked%20Sendable%20%E9%AA%97%E8%BF%87%E4%BA%86%E7%BC%96%E8%AF%91%E5%99%A8%EF%BC%9A%E4%B8%80%E6%AC%A1%20Swift%20%E5%B9%B6%E5%8F%91%E5%AD%97%E5%85%B8%E5%B4%A9%E6%BA%83%E5%A4%8D%E7%9B%98.md",
+      "sourceSha256": "6d79c6a81a2467ab01d1795b631c4767db63da38bbcb02ea2a7f659b31e0e444",
+      "bodySha256": "8a79860f065fb5e05d8c31526c0b95c775ff4f6a17bede55559e6e81751a38bf",
+      "importedSha256": "ff407241562361a547620c326dd78f7635572506ce9fd3fc180a1cfc1c1f3f40"
+    },
+    {
+      "sourceFile": "vscode 插件发布.md",
+      "title": "2023 保姆级 VsCode 插件发布教程",
+      "status": "excluded",
+      "reason": "插件市场注册、令牌与发布操作步骤，插件开发的完整实践已选。",
+      "sourceSha256": "01af1cd7b6daa45f5e799d8cd9fb189b923d94b7082401a50c1b6613b9433767",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/vscode%20%E6%8F%92%E4%BB%B6%E5%8F%91%E5%B8%83.md"
+    },
+    {
+      "sourceFile": "vscode-选择多行，将光标定位至每行行首或行尾.md",
+      "title": "vscode 选择多行，将光标定位至每行行首或行尾",
+      "status": "excluded",
+      "reason": "编辑器多光标快捷操作，信息量不足以独立迁移。",
+      "sourceSha256": "70d2c823d72d46ca8d50ea3cb1138e68b494c6cb4415e8d27f23710c60e0313e",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/vscode-%E9%80%89%E6%8B%A9%E5%A4%9A%E8%A1%8C%EF%BC%8C%E5%B0%86%E5%85%89%E6%A0%87%E5%AE%9A%E4%BD%8D%E8%87%B3%E6%AF%8F%E8%A1%8C%E8%A1%8C%E9%A6%96%E6%88%96%E8%A1%8C%E5%B0%BE.md"
+    },
+    {
+      "sourceFile": "word-wrap 和 word-break.md",
+      "title": "word-wrap 和 word-break",
+      "status": "excluded",
+      "reason": "两个 CSS 属性的速查，未展开复杂排版约束。",
+      "sourceSha256": "d4ea4187a4a47646e70b8da27ea4af66d42e008c4deecf51a0e9335ebf3f1df4",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/word-wrap%20%E5%92%8C%20word-break.md"
+    },
+    {
+      "sourceFile": "wx-promise-pro.md",
+      "title": "wx-promise-pro",
+      "status": "migrated",
+      "reason": "保留本人开源项目的设计目标、使用方式和源码出处。",
+      "id": "a5eefac0df0dab90",
+      "file": "wx-promise-pro.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/wx-promise-pro.md",
+      "sourceSha256": "f39aa6ddd9c196cc33016874d67e09f7e00ec54b937450f6ec41ca481a432613",
+      "bodySha256": "e0c3cc8ec191c821dc850323423f45afed0bae31d89fc6dfd5bd14b5740962e5",
+      "importedSha256": "2bb2a52f00cb4a55ab244a26c00ab2ffd9709cca5e2e7d104b5cb7024e7ba12e"
+    },
+    {
+      "sourceFile": "「已解决」Antd-Table-columns-fixed-不生效.md",
+      "title": "「已解决」Antd Table columns fixed 不生效",
+      "status": "excluded",
+      "reason": "固定列失效的单个配置示例，缺少更广的表格布局分析。",
+      "sourceSha256": "9d5f5a2b210e02fb6f975b2166b9390187f88aa6519a429c18c20bcb4d9fe7d4",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E3%80%8C%E5%B7%B2%E8%A7%A3%E5%86%B3%E3%80%8DAntd-Table-columns-fixed-%E4%B8%8D%E7%94%9F%E6%95%88.md"
+    },
+    {
+      "sourceFile": "「已解决」Failed to connect to github.com port 443.md",
+      "title": "「已解决」Failed to connect to github.com port 443",
+      "status": "migrated",
+      "reason": "虽短，但区分 DNS、代理、网络出口和 SSH，提供可复用排障顺序。",
+      "id": "d27eaaf6a37504fa",
+      "file": "「已解决」Failed to connect to github.com port 443.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E3%80%8C%E5%B7%B2%E8%A7%A3%E5%86%B3%E3%80%8DFailed%20to%20connect%20to%20github.com%20port%20443.md",
+      "sourceSha256": "34617fce5ebe6066f12bfc4605c301ae69ab35df21dea0b697cab4aa97f40e2c",
+      "bodySha256": "1f90b9425aa2fec6c91bb183b72a339db8d79fbe4621769bf7089cec7b149a72",
+      "importedSha256": "2ce087438f964cb66580567ff69da8f67b18d3e194a53be9d0dfb6b9465e8d8c"
+    },
+    {
+      "sourceFile": "「已解决」TypeError-moment-tz-is-not-a-function.md",
+      "title": "「已解决」TypeError: moment().tz is not a function",
+      "status": "migrated",
+      "reason": "虽短，但说明插件未注入与多实例问题，并提供排查清单。",
+      "id": "1834f34c8ae64abe",
+      "file": "「已解决」TypeError: moment().tz is not a function.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E3%80%8C%E5%B7%B2%E8%A7%A3%E5%86%B3%E3%80%8DTypeError-moment-tz-is-not-a-function.md",
+      "sourceSha256": "64220e01708aec097818bd9aead50b142eb553dbdf102d080961f01601a3afb2",
+      "bodySha256": "30c0010e018c94470bd77bc93dc488582dc0543431b19b17cb09f95cdfe4e4dc",
+      "importedSha256": "fb9a6ca148111f78e3488557f56641b539729499167bd0ea7381aae6ef3429fe"
+    },
+    {
+      "sourceFile": "【已解决】Mac-电脑删除软件报-“不能完成此操作-xxx-已锁定”.md",
+      "title": "「已解决」Mac 电脑删除软件报 “不能完成此操作,xxx 已锁定”",
+      "status": "excluded",
+      "reason": "特定电脑上的软件锁定及卸载操作，不具备通用工程复盘价值。",
+      "sourceSha256": "1e94a9c2aca83161d9201188fba21528c2a8eaf67fc8a851bd35cc1dd66436ca",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E3%80%90%E5%B7%B2%E8%A7%A3%E5%86%B3%E3%80%91Mac-%E7%94%B5%E8%84%91%E5%88%A0%E9%99%A4%E8%BD%AF%E4%BB%B6%E6%8A%A5-%E2%80%9C%E4%B8%8D%E8%83%BD%E5%AE%8C%E6%88%90%E6%AD%A4%E6%93%8D%E4%BD%9C-xxx-%E5%B7%B2%E9%94%81%E5%AE%9A%E2%80%9D.md"
+    },
+    {
+      "sourceFile": "一个前端工程师的 Docker 学习笔记.md",
+      "title": "一个前端工程师的 Docker 学习笔记",
+      "status": "migrated",
+      "reason": "保留容器、镜像、持久化和 Dockerfile 的完整实践笔记。",
+      "id": "a05a3e1a8316669c",
+      "file": "一个前端工程师的 Docker 学习笔记.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%B8%80%E4%B8%AA%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%84%20Docker%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md",
+      "sourceSha256": "f8fdf7f3d2f97ce555431fe605bdf3ff2495cb50c1f0e82e148874eb7ef407f5",
+      "bodySha256": "864a2f0476c92d36fed022b140e51761c12356f1f90a690c5d15f985edf2b2c3",
+      "importedSha256": "4e237fd10fab6e272ab85da919146ae8dff1af5bb64de488d83441f2b40a0b9a"
+    },
+    {
+      "sourceFile": "一次 macOS 灵动卡崩溃排查：别把桌面小组件当普通窗口.md",
+      "title": "一次 macOS 灵动卡崩溃排查：别把桌面小组件当普通窗口",
+      "status": "migrated",
+      "reason": "保留桌面小组件的窗口行为、用户环境差异与崩溃排查。",
+      "id": "232a888c9d0bab96",
+      "file": "一次 macOS 灵动卡崩溃排查：别把桌面小组件当普通窗口.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%B8%80%E6%AC%A1%20macOS%20%E7%81%B5%E5%8A%A8%E5%8D%A1%E5%B4%A9%E6%BA%83%E6%8E%92%E6%9F%A5%EF%BC%9A%E5%88%AB%E6%8A%8A%E6%A1%8C%E9%9D%A2%E5%B0%8F%E7%BB%84%E4%BB%B6%E5%BD%93%E6%99%AE%E9%80%9A%E7%AA%97%E5%8F%A3.md",
+      "sourceSha256": "932c447bc7c369afd73568dc237c76923ff5a4a7ad51c703ad4d2f34664181ed",
+      "bodySha256": "3ba6f3a91cd969585a8937ba033c084470635ebf6539e67edd6990441cfb3db9",
+      "importedSha256": "0ae433756092d80d75238f64bffd7fa827f20605b78950112f526d14c4889cd5"
+    },
+    {
+      "sourceFile": "个人目标管理工具-OKR-和-SMART-的区别.md",
+      "title": "个人目标管理模型 OKR 和 SMART 的区别",
+      "status": "excluded",
+      "reason": "OKR/SMART 通用对比，缺少本人执行与回看证据。",
+      "sourceSha256": "8952a7920bca6cf70b44c72ae235f496434255a8f18275c3ec4b42d8e76c3b35",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%B8%AA%E4%BA%BA%E7%9B%AE%E6%A0%87%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7-OKR-%E5%92%8C-SMART-%E7%9A%84%E5%8C%BA%E5%88%AB.md"
+    },
+    {
+      "sourceFile": "为什么-Rust-需要局部变量隐藏.md",
+      "title": "为什么 Rust 需要局部变量隐藏",
+      "status": "migrated",
+      "reason": "保留变量隐藏的设计动机及与可变性、类型变化的区别。",
+      "id": "2f24697d260eea88",
+      "file": "为什么 Rust 需要局部变量隐藏.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%B8%BA%E4%BB%80%E4%B9%88-Rust-%E9%9C%80%E8%A6%81%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F%E9%9A%90%E8%97%8F.md",
+      "sourceSha256": "db775c7da9ff6e07efea5cde07c43aa78a54e9bce93340f47cf381c1cc12ee74",
+      "bodySha256": "079f75099890725dd53aad4f22c12ed5afa8f71386c2345035af483464b6564c",
+      "importedSha256": "30afca57bef0ddb14df6d242f1e19a88bcee1b5bfc1ec6c01cb3df37ea4a1ab1"
+    },
+    {
+      "sourceFile": "为什么选 Fumadocs：Node.js 项目接入开箱即用文档站.md",
+      "title": "为什么选 Fumadocs：Node.js 项目接入开箱即用文档站",
+      "status": "migrated",
+      "reason": "保留文档框架选型、现有服务接入与版本对齐经验。",
+      "id": "3ec9ae7d572cb78b",
+      "file": "为什么选 Fumadocs：Node.js 项目接入开箱即用文档站.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%20Fumadocs%EF%BC%9ANode.js%20%E9%A1%B9%E7%9B%AE%E6%8E%A5%E5%85%A5%E5%BC%80%E7%AE%B1%E5%8D%B3%E7%94%A8%E6%96%87%E6%A1%A3%E7%AB%99.md",
+      "sourceSha256": "1769b3ff325848f61a01ab84d5af43bfec51241e9533f4b3d4c205ca982595cc",
+      "bodySha256": "04722062a057d5d04929b756c257e738de49f1036f55c6418a12cca4bfdf6cb7",
+      "importedSha256": "ba12c51279727a73fce3e9f6b69d37afae1e4647dc7ccdc1b1659fd0b259d842"
+    },
+    {
+      "sourceFile": "什么是-CPA.md",
+      "title": "什么是 CPA",
+      "status": "excluded",
+      "reason": "CPA 的基础定义和一般优缺点，未形成实际投放分析。",
+      "sourceSha256": "7d0224e47097fc9cb6cefafe7ca562d20d1773a4ebcbd57c7116b1e2a09916c9",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%BB%80%E4%B9%88%E6%98%AF-CPA.md"
+    },
+    {
+      "sourceFile": "从 AI 工程到产品技术专家：我的三年职业发展规划.md",
+      "title": "从 AI 工程到产品技术专家：我的三年职业发展规划",
+      "status": "migrated",
+      "reason": "保留本人职业方向与最新三年规划，明确目标不等于已取得成果。",
+      "id": "873215a5db96ccec",
+      "file": "从 AI 工程到产品技术专家：我的三年职业发展规划.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%BB%8E%20AI%20%E5%B7%A5%E7%A8%8B%E5%88%B0%E4%BA%A7%E5%93%81%E6%8A%80%E6%9C%AF%E4%B8%93%E5%AE%B6%EF%BC%9A%E6%88%91%E7%9A%84%E4%B8%89%E5%B9%B4%E8%81%8C%E4%B8%9A%E5%8F%91%E5%B1%95%E8%A7%84%E5%88%92.md",
+      "sourceSha256": "e19bae19aaf990f886848247b8432fa328034c71229e67afbb643486f1ac57d0",
+      "bodySha256": "f44235c6739e41ecf086a880c463d4508f0115237f18ce18e1682d07a8999ed1",
+      "importedSha256": "f634fe9722ec2cf236700b491499bb06204c891c9629362b2f68589e0c6dc763"
+    },
+    {
+      "sourceFile": "从 rcedit 到 resedit：给 Bun 单文件 EXE 修改 VERSIONINFO 的兼容层设计.md",
+      "title": "从 rcedit 到 resedit：给 Bun 单文件 EXE 修改 VERSIONINFO 的兼容层设计",
+      "status": "migrated",
+      "reason": "保留 PE 资源编辑、Bun 单文件制品兼容性与工具归属的完整取舍。",
+      "id": "3b707d058f08cd95",
+      "file": "从 rcedit 到 resedit：给 Bun 单文件 EXE 修改 VERSIONINFO 的兼容层设计.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%BB%8E%20rcedit%20%E5%88%B0%20resedit%EF%BC%9A%E7%BB%99%20Bun%20%E5%8D%95%E6%96%87%E4%BB%B6%20EXE%20%E4%BF%AE%E6%94%B9%20VERSIONINFO%20%E7%9A%84%E5%85%BC%E5%AE%B9%E5%B1%82%E8%AE%BE%E8%AE%A1.md",
+      "sourceSha256": "09e61c555c1c5cf0406d3d5a26a2870e172e7057262b79c1a131a291b252f396",
+      "bodySha256": "74986c2b21b91b4e4af9516354f5d7790782f603c6d14af95220dfa5573381ee",
+      "importedSha256": "d1a691511b864734ae6c3b9d3485742454fb1630a4c0233041175803f9adade2"
+    },
+    {
+      "sourceFile": "从-FTS-BM25-到-LLM-Wiki：把-RAG-知识检索讲明白.md",
+      "title": "从 FTS、BM25 到 LLM Wiki：把 RAG 知识检索讲明白",
+      "status": "migrated",
+      "reason": "保留检索方式、知识表示和治理方法之间的区分。",
+      "id": "a06ff9f844a1755e",
+      "file": "从 FTS、BM25 到 LLM Wiki：把 RAG 知识检索讲明白.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%BB%8E-FTS-BM25-%E5%88%B0-LLM-Wiki%EF%BC%9A%E6%8A%8A-RAG-%E7%9F%A5%E8%AF%86%E6%A3%80%E7%B4%A2%E8%AE%B2%E6%98%8E%E7%99%BD.md",
+      "sourceSha256": "a6055eec27b5e2b136837080312b1b3cc0f3d3116e20aa18ed3e979cdad3f1b7",
+      "bodySha256": "543527012ec8c1c2e781049269f264ecba182fae8f51a53c95f46e80d1bcab6d",
+      "importedSha256": "cf58f42cf221475bd2ef0f6ab415494d94b195eec72536989b744ea52f5117d7"
+    },
+    {
+      "sourceFile": "从零使用-Go-语言构建-CLI-项目.md",
+      "title": "从零使用 Go 语言构建 CLI 项目",
+      "status": "migrated",
+      "reason": "保留真实 CLI 项目的技术选型、实现过程与复盘。",
+      "id": "17cd966c1c37e420",
+      "file": "从零使用 Go 语言构建 CLI 项目.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%BB%8E%E9%9B%B6%E4%BD%BF%E7%94%A8-Go-%E8%AF%AD%E8%A8%80%E6%9E%84%E5%BB%BA-CLI-%E9%A1%B9%E7%9B%AE.md",
+      "sourceSha256": "ac56558ea1917f934bad763aad9929f8aeaedbeaf25f49bcc6bc608be94edb82",
+      "bodySha256": "914ee8e647ffd3e716a41e309fbf763f3c1ef0f2ebc30670d867f639e8b77907",
+      "importedSha256": "bd12a898759ae1fe38777829852875709c995475836ce2926d4eade9b4730ec3"
+    },
+    {
+      "sourceFile": "从零开发一个 Node Cli.md",
+      "title": "从零开发一个 Node Cli",
+      "status": "migrated",
+      "reason": "保留从命令注册到交互与动态模板的完整 CLI 实现链路。",
+      "id": "1932fadccd1cfb6c",
+      "file": "从零开发一个 Node Cli.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AA%20Node%20Cli.md",
+      "sourceSha256": "da904c8982097d7340e37051b31d030f6635f781f4dee1a86355c3eec9e3ae7b",
+      "bodySha256": "12dad6dce9f5744b54935afe753eafffd59a9e8f29edb68f9b53312c297226ca",
+      "importedSha256": "fc3893fc11b77a282d93db30be770f2e1002b15b02d47fb965ef79bda5e48758"
+    },
+    {
+      "sourceFile": "从静态 Reference 到 LLM Wiki：让 Agent Skill 拥有可持续演进的知识底座.md",
+      "title": "从静态 Reference 到 LLM Wiki：让 Agent Skill 拥有可持续演进的知识底座",
+      "status": "migrated",
+      "reason": "保留 Skill 与持续演进知识库之间的职责、审核和版本边界。",
+      "id": "d23833d5e4117ca4",
+      "file": "从静态 Reference 到 LLM Wiki：让 Agent Skill 拥有可持续演进的知识底座.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%BB%8E%E9%9D%99%E6%80%81%20Reference%20%E5%88%B0%20LLM%20Wiki%EF%BC%9A%E8%AE%A9%20Agent%20Skill%20%E6%8B%A5%E6%9C%89%E5%8F%AF%E6%8C%81%E7%BB%AD%E6%BC%94%E8%BF%9B%E7%9A%84%E7%9F%A5%E8%AF%86%E5%BA%95%E5%BA%A7.md",
+      "sourceSha256": "1f1ec213d0e0ced48026a4c23cebbb9f2a22d531ea6ba1d0554a02950b38f842",
+      "bodySha256": "45a01fcfafa53b8e176a6e9ab289708d90d3852caa5048764fbce268b9db3170",
+      "importedSha256": "3b733eb483004f3e0ba5ea239e92710520450a61e3bc86f50b5148ec7c03c6b0"
+    },
+    {
+      "sourceFile": "从高频轮询到按需刷新：本地 Agent 数据面的性能优化.md",
+      "title": "从高频轮询到按需刷新：本地 Agent 数据面的性能优化",
+      "status": "updated",
+      "reason": "已有文章；保留刷新语义、计算和 UI 发布解耦的性能实践。",
+      "id": "659fd45b5fca08f1",
+      "file": "从高频轮询到按需刷新：本地 Agent 数据面的性能优化.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%BB%8E%E9%AB%98%E9%A2%91%E8%BD%AE%E8%AF%A2%E5%88%B0%E6%8C%89%E9%9C%80%E5%88%B7%E6%96%B0%EF%BC%9A%E6%9C%AC%E5%9C%B0%20Agent%20%E6%95%B0%E6%8D%AE%E9%9D%A2%E7%9A%84%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96.md",
+      "sourceSha256": "8edc47402f4d4cb8f8df404a86204c6479630a3e9fcc1526804020adde8eb4dc",
+      "bodySha256": "9b7a1b5ce065a71c17cd598c06018627ba6eb43925fc65cdc580cc447a07873b",
+      "importedSha256": "627214b764e393ea7e49f974328178f1e80a37d82340119c605d0d0bb4a870b4"
+    },
+    {
+      "sourceFile": "使用 Docker 安装配置 Jenkins.md",
+      "title": "使用 Docker 安装配置 Jenkins",
+      "status": "excluded",
+      "reason": "围绕旧 Jenkins 镜像、插件和 Android 环境的安装配置，优先保留 CI 源码分析。",
+      "sourceSha256": "650fc2fceb31e9022711145e619a2c97bc89d4b62c9f2900ecaf8b727c6c7982",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%BD%BF%E7%94%A8%20Docker%20%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%20Jenkins.md"
+    },
+    {
+      "sourceFile": "使用 MetaMask 连接到币安智能链-BSC.md",
+      "title": "使用 MetaMask 连接到币安智能链（BSC）",
+      "status": "excluded",
+      "reason": "钱包网络连接的短配置，且开头把链与交易所混淆，需要先修订。",
+      "sourceSha256": "7e80fb1b78c8f3decb56ff783883df26f8e38d879eba58b06e84af03d654d712",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%BD%BF%E7%94%A8%20MetaMask%20%E8%BF%9E%E6%8E%A5%E5%88%B0%E5%B8%81%E5%AE%89%E6%99%BA%E8%83%BD%E9%93%BE-BSC.md"
+    },
+    {
+      "sourceFile": "使用 git-filter-branch 删除单个文件及其相关的 commit 信息.md",
+      "title": "使用 git-filter-branch 删除单个文件及其相关的 commit 信息",
+      "status": "excluded",
+      "reason": "旧历史重写命令教程，缺少协作者、分支和恢复策略，不直接迁为推荐流程。",
+      "sourceSha256": "c28dd87c1a292499b83da08ed403a3b9b90a9b0655c81dbd45b43f4610ecb3fa",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%BD%BF%E7%94%A8%20git-filter-branch%20%E5%88%A0%E9%99%A4%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E5%8F%8A%E5%85%B6%E7%9B%B8%E5%85%B3%E7%9A%84%20commit%20%E4%BF%A1%E6%81%AF.md"
+    },
+    {
+      "sourceFile": "使用 react-native-amap-geolocation 接入高德地图定位.md",
+      "title": "使用 react-native-amap-geolocation 接入高德地图定位",
+      "status": "excluded",
+      "reason": "特定 React Native 0.60 插件接入手册，未展开完整桥接设计；原生 SDK 实践已选。",
+      "sourceSha256": "b26e232a86812bfca0a9f58594609fb697be564896913ba3715f9f978e67ec53",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%BD%BF%E7%94%A8%20react-native-amap-geolocation%20%E6%8E%A5%E5%85%A5%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE%E5%AE%9A%E4%BD%8D.md"
+    },
+    {
+      "sourceFile": "使用 wml 进行模块调试.md",
+      "title": "使用 wml 进行模块调试",
+      "status": "excluded",
+      "reason": "模块文件同步工具的安装使用，特定工具耦合强，缺少系统性调试分析。",
+      "sourceSha256": "8aa59e0b8dacddc6447186f7af075bb08cca78e869a46501f5457e224d5e9447",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%BD%BF%E7%94%A8%20wml%20%E8%BF%9B%E8%A1%8C%E6%A8%A1%E5%9D%97%E8%B0%83%E8%AF%95.md"
+    },
+    {
+      "sourceFile": "使用-Jest-和-Enzyme-进行-React-Native-单元测试.md",
+      "title": "使用 Jest 和 Enzyme 进行 React Native 单元测试",
+      "status": "migrated",
+      "reason": "保留组件测试、覆盖率、mock 与 FAQ 的实践记录；工具版本按原文。",
+      "id": "e749b3a78acee689",
+      "file": "使用 Jest 和 Enzyme 进行 React Native 单元测试.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%BD%BF%E7%94%A8-Jest-%E5%92%8C-Enzyme-%E8%BF%9B%E8%A1%8C-React-Native-%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95.md",
+      "sourceSha256": "b6a59b31f8a8b0c3a6e7efe78bd1fb01eb4c9582bb6a1cc0100ab9ccc95bb70f",
+      "bodySha256": "e067880236aea0ead30180f5e215c200e6c7fedeeec5d7a5613d349c12ee89d0",
+      "importedSha256": "a8c70099686ff6c3724f2125bc5c51d74fbd4cf5d6b1f2ac42d8fbdc2fcab2f6"
+    },
+    {
+      "sourceFile": "使用-rollup-打包-React-Native-插件并发布.md",
+      "title": "使用 rollup 打包 React Native 插件并发布",
+      "status": "migrated",
+      "reason": "保留 React Native 包的多格式构建、类型与发布配置。",
+      "id": "9137344cde878ae9",
+      "file": "使用 rollup 打包 React Native 插件并发布.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%BD%BF%E7%94%A8-rollup-%E6%89%93%E5%8C%85-React-Native-%E6%8F%92%E4%BB%B6%E5%B9%B6%E5%8F%91%E5%B8%83.md",
+      "sourceSha256": "6c1b73d85f478cc1c3da2a240284d90e9864c24b91a667a92dc07de7d61e90d0",
+      "bodySha256": "d9d6ab78fc803406b71649751b80541b28252b33dfc6e3fc3360380a2307ed19",
+      "importedSha256": "54d31443895f226fc11b8147d821fbb90067a36f610ccfe8379044292aaa9d2a"
+    },
+    {
+      "sourceFile": "信息系统项目管理师备考指南.md",
+      "title": "信息系统项目管理师备考指南",
+      "status": "excluded",
+      "reason": "考试报名、费用与大纲信息，时效性强且不是工程实践。",
+      "sourceSha256": "3422d9254eb153780e779ed8541b0b516e13b37248456cf9f53cad9b651090fe",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%B8%88%E5%A4%87%E8%80%83%E6%8C%87%E5%8D%97.md"
+    },
+    {
+      "sourceFile": "信息系统项目管理师备考笔记.md",
+      "title": "信息系统项目管理师笔记の第一章、信息化和信息系统",
+      "status": "excluded",
+      "reason": "原文说明教材已变化且学习中断；第一章教材摘录不作为完整文章迁入。",
+      "sourceSha256": "94e319f973c04919bc36ebe85a73daccca23adced56ec9077b6f8351be71ca2a",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%B8%88%E5%A4%87%E8%80%83%E7%AC%94%E8%AE%B0.md"
+    },
+    {
+      "sourceFile": "修复中文输入法按回车误发送：React Chat Composer 的 IME 事件陷阱.md",
+      "title": "修复中文输入法按回车误发送：React Chat Composer 的 IME 事件陷阱",
+      "status": "migrated",
+      "reason": "保留 IME 事件时序、WebKit 差异及真实输入验收方法。",
+      "id": "bc122ab4363c1bb1",
+      "file": "修复中文输入法按回车误发送：React Chat Composer 的 IME 事件陷阱.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%BF%AE%E5%A4%8D%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95%E6%8C%89%E5%9B%9E%E8%BD%A6%E8%AF%AF%E5%8F%91%E9%80%81%EF%BC%9AReact%20Chat%20Composer%20%E7%9A%84%20IME%20%E4%BA%8B%E4%BB%B6%E9%99%B7%E9%98%B1.md",
+      "sourceSha256": "9c2aa36d10ad58ae24404ba9dd44a1e6a70980c91f0dc1c2f3a7ef74cac23ae1",
+      "bodySha256": "9f0fbd0ad5678fd2207f0487cf9dca5f127c0eb0bf42e2cc5f14620f12da3a97",
+      "importedSha256": "73a14c18a6d82cb520fec0c3c55651b9f7444e623157e9db923fb499d2882e8c"
+    },
+    {
+      "sourceFile": "修订后的参与-TC39-标准委员会的模式.md",
+      "title": "修订后的参与 TC39 标准委员会的模式",
+      "status": "excluded",
+      "reason": "标准委员会参与模式的历史译文，和本站本人实践主线关联较弱。",
+      "sourceSha256": "f6720ea7050243d33c9d22616bc33b39ad096ef75ec9940ee5039a0c80174422",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%BF%AE%E8%AE%A2%E5%90%8E%E7%9A%84%E5%8F%82%E4%B8%8E-TC39-%E6%A0%87%E5%87%86%E5%A7%94%E5%91%98%E4%BC%9A%E7%9A%84%E6%A8%A1%E5%BC%8F.md"
+    },
+    {
+      "sourceFile": "写给前端的 Linux 实战教程.md",
+      "title": "写给前端的 Linux 实战教程",
+      "status": "migrated",
+      "reason": "保留面向前端的 Linux、权限、进程、SSH、网络与备份实践。",
+      "id": "821bb3f19dfcc4b6",
+      "file": "写给前端的 Linux 实战教程.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%86%99%E7%BB%99%E5%89%8D%E7%AB%AF%E7%9A%84%20Linux%20%E5%AE%9E%E6%88%98%E6%95%99%E7%A8%8B.md",
+      "sourceSha256": "a96a15b074fa4a4db35dc24f0c3b34682e2f42cdc97f303ec07928db596afe2f",
+      "bodySha256": "b795497473ffeb5639b231b7e672b2333e6c49d8f150c936204167c9e7a6f971",
+      "importedSha256": "b0939a651353a6f2890826e1c3fffc82b97c7f711054e6293ae415bc28e883c4"
+    },
+    {
+      "sourceFile": "冷流量 Ch1 钩子：把第一章当 Landing Page 来写.md",
+      "title": "冷流量 Ch1 钩子：把第一章当 Landing Page 来写",
+      "status": "migrated",
+      "reason": "保留内容产品中首章承接冷流量的设计、止损测试与判断。",
+      "id": "1bb3f1aacb2cc072",
+      "file": "冷流量 Ch1 钩子：把第一章当 Landing Page 来写.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%86%B7%E6%B5%81%E9%87%8F%20Ch1%20%E9%92%A9%E5%AD%90%EF%BC%9A%E6%8A%8A%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%BD%93%20Landing%20Page%20%E6%9D%A5%E5%86%99.md",
+      "sourceSha256": "0a0472b59643415819205874874d76e9767b6113d8b222a570fefe95f755ba1f",
+      "bodySha256": "feef2d9ceabd47d8f856b3e3eb0d6e77508f7864beb0c3f55cdefd927b17945c",
+      "importedSha256": "54ff862e804b5230a08e94fd2c32ae42dd035b420087f2ca595bc4172ae21027"
+    },
+    {
+      "sourceFile": "利用 Metro 配置 React Native 端口.md",
+      "title": "利用 Metro 配置 React Native 端口",
+      "status": "excluded",
+      "reason": "Metro 端口的单点配置，适合速查。",
+      "sourceSha256": "64dabee5038dcfce8f84b799253a817d86f672e0a9cab51aa19427f661174dcb",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%88%A9%E7%94%A8%20Metro%20%E9%85%8D%E7%BD%AE%20React%20Native%20%E7%AB%AF%E5%8F%A3.md"
+    },
+    {
+      "sourceFile": "前端无感知刷新 Token.md",
+      "title": "前端无感知刷新 Token",
+      "status": "migrated",
+      "reason": "保留三种 Token 刷新方案、并发请求处理和取舍。",
+      "id": "6df66fddb4f33cf8",
+      "file": "前端无感知刷新 Token.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%89%8D%E7%AB%AF%E6%97%A0%E6%84%9F%E7%9F%A5%E5%88%B7%E6%96%B0%20Token.md",
+      "sourceSha256": "cce3cc6d3527298b12f322d23c559809ff7271a0bcb500805f968dc7a9fa819a",
+      "bodySha256": "1bc3983295053e28126c77132ba990037fc06a021e5398cc5d8e0c57cfa49fd5",
+      "importedSha256": "3f9d810e92a83f4dfc62bfb3d3b00e6af7efca05e7dcf4f7684c96ae9a8e8724"
+    },
+    {
+      "sourceFile": "前端框架如何描述和组织 UI 与逻辑.md",
+      "title": "前端框架如何描述和组织 UI 与逻辑",
+      "status": "excluded",
+      "reason": "组件化、模块化等通用概念概览，未展开具体框架机制。",
+      "sourceSha256": "6fd24601d6f24a663247a48cac207e673393d51dce646ca1ac70b045b7511ac3",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6%E5%A6%82%E4%BD%95%E6%8F%8F%E8%BF%B0%E5%92%8C%E7%BB%84%E7%BB%87%20UI%20%E4%B8%8E%E9%80%BB%E8%BE%91.md"
+    },
+    {
+      "sourceFile": "前端组件化实战之-Button.md",
+      "title": "前端组件化实战之 Button",
+      "status": "migrated",
+      "reason": "保留自研 Button 的交互、主题、状态、测试与工程化；原署名及版权声明保留。",
+      "id": "20d8c61c79a3d8e5",
+      "file": "前端组件化实战之 Button.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%89%8D%E7%AB%AF%E7%BB%84%E4%BB%B6%E5%8C%96%E5%AE%9E%E6%88%98%E4%B9%8B-Button.md",
+      "sourceSha256": "6f0c8a83668e778518e12de5e54d91d2bae17062b5d74734cf4fb95a1245b124",
+      "bodySha256": "a3b50375437b25599c01168a43f6def847b1826d27e29de89fd48ee20b84abf0",
+      "importedSha256": "db62d3dee33e3193659a29cd996e466bf105d70dc00bfe3dba1cf36652214b0d"
+    },
+    {
+      "sourceFile": "前端规范化开发实践.md",
+      "title": "前端规范化开发实践",
+      "status": "migrated",
+      "reason": "保留格式、静态检查、提交规范和发布流程的工程化串联。",
+      "id": "052360ec4d73f9c2",
+      "file": "前端规范化开发实践.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83%E5%8C%96%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5.md",
+      "sourceSha256": "5b5b5964f49830f416732fa402051908d7cca8b0cd696eae690c4413ffc0a04a",
+      "bodySha256": "25b5d6859ecb31437c559fb1b0bbab4b927b3ae2e37fd886cd65735babfa513f",
+      "importedSha256": "c182bbbaa7b2c17ba8f30937be699db122b7c7afe25d441f0c2f347b1104825e"
+    },
+    {
+      "sourceFile": "叮，一份-Deno-GitHub-Action-源码解析请查收.md",
+      "title": "叮，一份 Deno GitHub Action 源码解析请查收",
+      "status": "migrated",
+      "reason": "保留 Deno CI 的多平台矩阵、缓存、构建、测试与发布源码拆解。",
+      "id": "1bc61c78edfa4ea9",
+      "file": "叮，一份 Deno GitHub Action 源码解析请查收.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%8F%AE%EF%BC%8C%E4%B8%80%E4%BB%BD-Deno-GitHub-Action-%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90%E8%AF%B7%E6%9F%A5%E6%94%B6.md",
+      "sourceSha256": "2c0e1e6a558396c15d8199b72177dfeee0736eb0016170d0d219c4a250e995b1",
+      "bodySha256": "fff649d4e564a9e2830d15202a09e3cd62f07a76a3270f3eee17e0f9e8c1749f",
+      "importedSha256": "ca4fbfab967e7a7085f6951e6f504d9008a6f2c9e992b54e907245cfd59f02ab"
+    },
+    {
+      "sourceFile": "向微软官方贡献-types-包后引发的思考.md",
+      "title": "向微软官方贡献 @types 包后引发的思考",
+      "status": "migrated",
+      "reason": "保留本人 DefinitelyTyped 贡献过程、Review 反馈与规范判断。",
+      "id": "8d5d0102649818ec",
+      "file": "向微软官方贡献 @types 包后引发的思考.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%90%91%E5%BE%AE%E8%BD%AF%E5%AE%98%E6%96%B9%E8%B4%A1%E7%8C%AE-types-%E5%8C%85%E5%90%8E%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83.md",
+      "sourceSha256": "25db06045ffd6c27ad08e73f59ea54b9b1849b9dc61cd4c56271be8dfdb44755",
+      "bodySha256": "75f80d7d9c223038c26cdc5fccd19700fe392d9e23b453d3832720465818e5dc",
+      "importedSha256": "0b6b1a57330bd77ff2e3453da2c802b21eb0b3febea0fc81249743a3db92ff27"
+    },
+    {
+      "sourceFile": "向量 RAG、GraphRAG、编译式 RAG：用一个客服实战讲清如何选.md",
+      "title": "向量 RAG、GraphRAG、编译式 RAG：用一个客服实战讲清如何选",
+      "status": "migrated",
+      "reason": "保留三种 RAG 路线的适用问题、运行时与分阶段实施对比。",
+      "id": "a3af15525510bded",
+      "file": "向量 RAG、GraphRAG、编译式 RAG：用一个客服实战讲清如何选.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%90%91%E9%87%8F%20RAG%E3%80%81GraphRAG%E3%80%81%E7%BC%96%E8%AF%91%E5%BC%8F%20RAG%EF%BC%9A%E7%94%A8%E4%B8%80%E4%B8%AA%E5%AE%A2%E6%9C%8D%E5%AE%9E%E6%88%98%E8%AE%B2%E6%B8%85%E5%A6%82%E4%BD%95%E9%80%89.md",
+      "sourceSha256": "f59a0e59435952d0ce11d5a94688e8bf3ff010e0e1901218bf65c14c52ba3f43",
+      "bodySha256": "7251a700c56592a21fa3e60416099668a3272c2807e6c68fd5301f278d538f9f",
+      "importedSha256": "c922dd01c7f839485a9c7359dad8116140df0bb46aadd1abbd37927abd5cd285"
+    },
+    {
+      "sourceFile": "在 React Native 中使用 mobx.md",
+      "title": "在 React Native 中使用 Mobx",
+      "status": "excluded",
+      "reason": "MobX 安装与基础状态配置，缺少实际状态建模和问题分析。",
+      "sourceSha256": "481e5d6d75530194bcb363b3958aea0273a96b5d9d98b8112aae7934cbf8bde5",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%9C%A8%20React%20Native%20%E4%B8%AD%E4%BD%BF%E7%94%A8%20mobx.md"
+    },
+    {
+      "sourceFile": "在-JavaScript-中实现一个延迟函数.md",
+      "title": "在 JavaScript 中实现一个延迟函数",
+      "status": "excluded",
+      "reason": "Promise + setTimeout 的单段延迟函数示例，适合代码速查。",
+      "sourceSha256": "b1c092c30dbd60150640cd9a204b4dc4652ffc72367565424f7e8ef6d67b5d86",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%9C%A8-JavaScript-%E4%B8%AD%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E5%BB%B6%E8%BF%9F%E5%87%BD%E6%95%B0.md"
+    },
+    {
+      "sourceFile": "在-Mac-上搭建-Java-开发环境.md",
+      "title": "在 Mac 上搭建 Java 开发环境",
+      "status": "excluded",
+      "reason": "JDK/Maven 安装与本机路径记录，缺少工程问题与取舍。",
+      "sourceSha256": "5aa6712a5c05e68f25e05a6450d9cfac712a1a14358d2d2f1a13217164f59bad",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%9C%A8-Mac-%E4%B8%8A%E6%90%AD%E5%BB%BA-Java-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.md"
+    },
+    {
+      "sourceFile": "在-mac-上安装-v8.md",
+      "title": "在 Mac 上安装 V8",
+      "status": "excluded",
+      "reason": "旧版 V8/macOS 编译及调试步骤，环境约束强，需要先重现验证。",
+      "sourceSha256": "2a374f43f01745beef29a1014c8fe8607d1842137c39e1d6fbeee695648d263e",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%9C%A8-mac-%E4%B8%8A%E5%AE%89%E8%A3%85-v8.md"
+    },
+    {
+      "sourceFile": "基于 Next.js 开发 BSC DApp.md",
+      "title": "基于 Next.js 开发 BSC DApp",
+      "status": "excluded",
+      "reason": "大量篇幅是 Next.js/Antd 初始化配置，DApp 场景和验证结果不够完整。",
+      "sourceSha256": "17d2663f5cc69e5e78452a7078c24c4e886edacaeed72104bce0fd5949849820",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%9F%BA%E4%BA%8E%20Next.js%20%E5%BC%80%E5%8F%91%20BSC%20DApp.md"
+    },
+    {
+      "sourceFile": "基于-Probot-实现-GitHub-NPM-发布机器人🤖.md",
+      "title": "基于 Probot 实现 GitHub NPM 发布机器人🤖",
+      "status": "migrated",
+      "reason": "保留 GitHub App、Webhook、权限与 npm 自动发布的完整实现。",
+      "id": "cdd0e68a08b40ded",
+      "file": "基于 Probot 实现 GitHub NPM 发布机器人🤖.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%9F%BA%E4%BA%8E-Probot-%E5%AE%9E%E7%8E%B0-GitHub-NPM-%E5%8F%91%E5%B8%83%E6%9C%BA%E5%99%A8%E4%BA%BA%F0%9F%A4%96.md",
+      "sourceSha256": "37055397f32e83eb93f093093c1687a3fb40896ec5125a552aafe63530151aa9",
+      "bodySha256": "f5d565c0f367547871a16abbdb6eddb99d6e1bc0778717e32f949b820e7c7c8f",
+      "importedSha256": "012e882ea0cab3a98119bba61b79fe7a25b7fe4d6542ac2fd8e5d68371ae4b06",
+      "redactions": [
+        {
+          "kind": "credential",
+          "type": "npm access token",
+          "count": 1,
+          "replacement": "YOUR_NPM_TOKEN"
+        }
+      ]
+    },
+    {
+      "sourceFile": "基于-lerna-的多包-JavaScript-项目搭建维护.md",
+      "title": "基于 lerna 的多包 JavaScript 项目搭建维护",
+      "status": "excluded",
+      "reason": "Lerna 基础多包配置，已选完整组件库建设文章覆盖相同主题。",
+      "sourceSha256": "53a77ac6627a5921d24782b451c2c3f12f8d363e3b3a82cc617a6d42af3a50aa",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%9F%BA%E4%BA%8E-lerna-%E7%9A%84%E5%A4%9A%E5%8C%85-JavaScript-%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA%E7%BB%B4%E6%8A%A4.md"
+    },
+    {
+      "sourceFile": "如何优化 Google Adsense CPC 提高广告收入.md",
+      "title": "如何优化 Google Adsense CPC 提高广告收入",
+      "status": "excluded",
+      "reason": "广告收入优化建议缺少可复核的对照实验，且涉及变化中的平台计费方式。",
+      "sourceSha256": "054c8a0ec2e39fbd92a7296b6b3da3fd4ef2b0aca5a39b5149d12ddef4031b24",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%A6%82%E4%BD%95%E4%BC%98%E5%8C%96%20Google%20Adsense%20CPC%20%E6%8F%90%E9%AB%98%E5%B9%BF%E5%91%8A%E6%94%B6%E5%85%A5.md"
+    },
+    {
+      "sourceFile": "如何使用-Node-js-将你的设备变成一个简单的服务器.md",
+      "title": "如何使用 Node.js 将你的设备变成一个简单的服务器",
+      "status": "excluded",
+      "reason": "部署简单 Node 服务的入门译文，通用示例可替代，没有本人工程判断。",
+      "sourceSha256": "993535d7dffc975d7933a0cd3f7e4069700fcc9182b5ccb6453daca292e680ac",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Node-js-%E5%B0%86%E4%BD%A0%E7%9A%84%E8%AE%BE%E5%A4%87%E5%8F%98%E6%88%90%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8.md"
+    },
+    {
+      "sourceFile": "如何在-React-Native-中声明全局类型.md",
+      "title": "如何在 React Native 中声明全局类型",
+      "status": "excluded",
+      "reason": "global.d.ts 单段声明示例，适合速查。",
+      "sourceSha256": "a9aa103dbc6b9c2bece52597199bd3e155fca4d28804ca81bf0ceccfe5f45b5e",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%A6%82%E4%BD%95%E5%9C%A8-React-Native-%E4%B8%AD%E5%A3%B0%E6%98%8E%E5%85%A8%E5%B1%80%E7%B1%BB%E5%9E%8B.md"
+    },
+    {
+      "sourceFile": "如何在VS Code中找回以前的文件版本.md",
+      "title": "如何在 VS Code 中找回以前的文件版本",
+      "status": "excluded",
+      "reason": "VS Code Local History 的界面操作介绍，缺少恢复失败等完整问题。",
+      "sourceSha256": "3b51b55ea708b4c314c645b4af80126ea6bc43db52b9f8c0cba6745cab0f0c42",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%A6%82%E4%BD%95%E5%9C%A8VS%20Code%E4%B8%AD%E6%89%BE%E5%9B%9E%E4%BB%A5%E5%89%8D%E7%9A%84%E6%96%87%E4%BB%B6%E7%89%88%E6%9C%AC.md"
+    },
+    {
+      "sourceFile": "如何填写 Google Adsense 税务信息可以免税 W-8BEN.md",
+      "title": "如何填写 Google Adsense 税务信息可以免税 | W-8BEN",
+      "status": "excluded",
+      "reason": "税务表单和免税结论依赖个人情况与规则，需要专业核实，不迁为税务指南。",
+      "sourceSha256": "75fdd227a6a830312cda7fd705eb0e386d2bc026b1976bf6cf762c1c67722c40",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%A6%82%E4%BD%95%E5%A1%AB%E5%86%99%20Google%20Adsense%20%E7%A8%8E%E5%8A%A1%E4%BF%A1%E6%81%AF%E5%8F%AF%E4%BB%A5%E5%85%8D%E7%A8%8E%20W-8BEN.md"
+    },
+    {
+      "sourceFile": "如何开发一款 VS Code yarn.lock 预览插件.md",
+      "title": "如何开发一款 VS Code yarn.lock 预览插件",
+      "status": "migrated",
+      "reason": "保留已开发插件的自定义编辑器、Webview 通信与文档同步实现。",
+      "id": "ac121cb8c2f4988c",
+      "file": "如何开发一款 VS Code yarn.lock 预览插件.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%A6%82%E4%BD%95%E5%BC%80%E5%8F%91%E4%B8%80%E6%AC%BE%20VS%20Code%20yarn.lock%20%E9%A2%84%E8%A7%88%E6%8F%92%E4%BB%B6.md",
+      "sourceSha256": "3eec189209e3c0a402e9d0d32020b4e8318aa8e11c556afdad4f7a3d239eaa87",
+      "bodySha256": "950f8d89653825bd66e440d1323857a26a55c22b8267a28c723ccffbe762a063",
+      "importedSha256": "77857e88ba2ae8f58f24584992f5a7ccd6a11ce40d9753429a3f8e0c8fee1b8e"
+    },
+    {
+      "sourceFile": "如何构建可验证、可恢复、可评测的 Agent Runtime 与 Harness.md",
+      "title": "如何构建可验证、可恢复、可评测的 Agent Runtime 与 Harness",
+      "status": "migrated",
+      "reason": "保留 Agent Runtime 的验证、恢复、评测及状态边界。",
+      "id": "bdd2819886ea40ab",
+      "file": "如何构建可验证、可恢复、可评测的 Agent Runtime 与 Harness.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%A6%82%E4%BD%95%E6%9E%84%E5%BB%BA%E5%8F%AF%E9%AA%8C%E8%AF%81%E3%80%81%E5%8F%AF%E6%81%A2%E5%A4%8D%E3%80%81%E5%8F%AF%E8%AF%84%E6%B5%8B%E7%9A%84%20Agent%20Runtime%20%E4%B8%8E%20Harness.md",
+      "sourceSha256": "9bbf96e454e74aa89ff62a1d4b02d35144c1409630201adfb70a3755ccbf695d",
+      "bodySha256": "3eecfed735d4d58c2d5b77db52519a602437d2850733cd02feee219ba6399406",
+      "importedSha256": "c089f12a54dbe88861fcbce300609f1656734f7058b22bef4025af5ea997d8d5"
+    },
+    {
+      "sourceFile": "如何设置-Gatsby-绝对路径引用别名.md",
+      "title": "如何设置 Gatsby 绝对路径引用别名",
+      "status": "excluded",
+      "reason": "Gatsby alias 的配置步骤，特定框架耦合强。",
+      "sourceSha256": "8ad1ed62a9e304956f43b1bbb57ef43e8195bbb298c3c1db5a4b647c8fc87332",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE-Gatsby-%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84%E5%BC%95%E7%94%A8%E5%88%AB%E5%90%8D.md"
+    },
+    {
+      "sourceFile": "如何设置-React-Typescript-项目绝对路径引用别名.md",
+      "title": "如何设置 React Typescript 项目绝对路径引用别名",
+      "status": "excluded",
+      "reason": "CRA/craco alias 的配置步骤，特定脚手架耦合强。",
+      "sourceSha256": "201f300a488651700c8b6905033f479ec3c137adbacd6b442d491d24f574aef0",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE-React-Typescript-%E9%A1%B9%E7%9B%AE%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84%E5%BC%95%E7%94%A8%E5%88%AB%E5%90%8D.md"
+    },
+    {
+      "sourceFile": "字节-agent-tars-技术揭秘.md",
+      "title": "字节 agent-tars 技术揭秘（硬啃）",
+      "status": "migrated",
+      "reason": "保留 Agent TARS 的进程、MCP、渲染端与 Agent 模块源码分析。",
+      "id": "703fecb59ff6830e",
+      "file": "字节 agent-tars 技术揭秘（硬啃）.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%AD%97%E8%8A%82-agent-tars-%E6%8A%80%E6%9C%AF%E6%8F%AD%E7%A7%98.md",
+      "sourceSha256": "ef3e45d3c4b87ce2681a0a7247a60df1b7f3bbb7b9745f5cf228e15db5689651",
+      "bodySha256": "e6448530d4ad2b84a33f00bdf0dfb456c8b8eb0df1822fe22492f6ad1f6b8ca5",
+      "importedSha256": "c989f02407a34714469c9b53f0c96df37d2c33d417fef78f25c913f51ae2be50"
+    },
+    {
+      "sourceFile": "宝塔面板安装-wordpress.md",
+      "title": "宝塔面板安装 WordPress 详细教程：从零开始搭建网站",
+      "status": "excluded",
+      "reason": "面板截图和安装步骤为主，缺少部署、备份、安全或性能的完整分析。",
+      "sourceSha256": "d3fdf7f2be25e5f419904caab2cfd186aaabd76f24ef30de661b240cc37c6dba",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E5%AE%89%E8%A3%85-wordpress.md"
+    },
+    {
+      "sourceFile": "小狐狸钱包教程.md",
+      "title": "小狐狸钱包（MetaMask）教程",
+      "status": "excluded",
+      "reason": "钱包创建的截图教程，缺少开发实践。",
+      "sourceSha256": "a44ad89bdf17b09f6a27c48547e573a19a14db18958e3cf1f0abd45a2497e935",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%B0%8F%E7%8B%90%E7%8B%B8%E9%92%B1%E5%8C%85%E6%95%99%E7%A8%8B.md"
+    },
+    {
+      "sourceFile": "小说站 Facebook Pixel 深度配置：用 scroll depth 事件训练算法找「真实读者」.md",
+      "title": "小说站 Facebook Pixel 深度配置：用 scroll depth 事件训练算法找「真实读者」",
+      "status": "excluded",
+      "reason": "阅读事件设计与后续 Pixel 踩坑复盘重复；后者对事件触发与平台配置作了修正。",
+      "sourceSha256": "7d3805fbfde8560f4c4904e150fdbf4809e173a85cfb1905659afed4e27e0f5f",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%B0%8F%E8%AF%B4%E7%AB%99%20Facebook%20Pixel%20%E6%B7%B1%E5%BA%A6%E9%85%8D%E7%BD%AE%EF%BC%9A%E7%94%A8%20scroll%20depth%20%E4%BA%8B%E4%BB%B6%E8%AE%AD%E7%BB%83%E7%AE%97%E6%B3%95%E6%89%BE%E3%80%8C%E7%9C%9F%E5%AE%9E%E8%AF%BB%E8%80%85%E3%80%8D.md"
+    },
+    {
+      "sourceFile": "小说站 Facebook 广告版位选择指南.md",
+      "title": "小说站 Facebook 广告版位选择指南",
+      "status": "excluded",
+      "reason": "特定投放受众与版位建议，没有对应样本和效果数据，难以支持普遍结论。",
+      "sourceSha256": "5bbd39a25977413946a020c1c8a16fbf440e0c82e30406ae7feed8f7bd0b1bc8",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%B0%8F%E8%AF%B4%E7%AB%99%20Facebook%20%E5%B9%BF%E5%91%8A%E7%89%88%E4%BD%8D%E9%80%89%E6%8B%A9%E6%8C%87%E5%8D%97.md"
+    },
+    {
+      "sourceFile": "少壮不努力，老大写博客.md",
+      "title": "少壮不努力，老大写博客",
+      "status": "migrated",
+      "reason": "保留作者写作动机、开源传播与持续写作的个人经历。",
+      "id": "41adee0d91740e51",
+      "file": "少壮不努力，老大写博客.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%B0%91%E5%A3%AE%E4%B8%8D%E5%8A%AA%E5%8A%9B%EF%BC%8C%E8%80%81%E5%A4%A7%E5%86%99%E5%8D%9A%E5%AE%A2.md",
+      "sourceSha256": "064c3cc37d60acea75032bf21629bbf8dc54bdc943699a9b9fb24959953a1fc3",
+      "bodySha256": "93b2b83e966d9879395b81ead1e71a4d224ca94860cf4f83ec7b664afed20afb",
+      "importedSha256": "02cd59fd90a3914302b6b7dcc48ecedd8ce0c99c787e5ea1cb7d048d484a6a0e"
+    },
+    {
+      "sourceFile": "当我们在聊-RN-时，我们在聊什么.md",
+      "title": "当我们在聊 React Native 时，我们在聊什么",
+      "status": "migrated",
+      "reason": "保留 React Native 项目起点、跨端经验和本人社区贡献。",
+      "id": "846c047d1b11cef0",
+      "file": "当我们在聊 React Native 时，我们在聊什么.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%BD%93%E6%88%91%E4%BB%AC%E5%9C%A8%E8%81%8A-RN-%E6%97%B6%EF%BC%8C%E6%88%91%E4%BB%AC%E5%9C%A8%E8%81%8A%E4%BB%80%E4%B9%88.md",
+      "sourceSha256": "ae50e8c29e7b7c042b8a8c0913cd983b562af8c9b5e4516fb40337fa9187086a",
+      "bodySha256": "0335d30c7f2c161950fc3eacdd8033a48ac376fb616d61d0e8621218719c3d64",
+      "importedSha256": "e04750e1a4de09532878622399cec9fde30aad4e96faf9d5072c55049d5423b3"
+    },
+    {
+      "sourceFile": "微信oAuth网页授权.md",
+      "title": "微信 oAuth 网页授权流程",
+      "status": "excluded",
+      "reason": "微信公众号配置入口和域名说明，缺少完整 OAuth 链路和故障案例。",
+      "sourceSha256": "3ba8e5b40692d93d0872c487df4b0c2f1600d769d641a9c99711f55aa59ecf19",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%BE%AE%E4%BF%A1oAuth%E7%BD%91%E9%A1%B5%E6%8E%88%E6%9D%83.md"
+    },
+    {
+      "sourceFile": "微精通之 Vue 移动端开发.md",
+      "title": "微精通之 Vue 移动端开发",
+      "status": "excluded",
+      "reason": "主要是 Vue CLI/Vant 初始化与 API 笔记，缺少完成项目后的检验和复盘。",
+      "sourceSha256": "500d2f63aa2e0ce2113337f2f024590ca370d3b862c9e9a79e0880a6bf6426c3",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%BE%AE%E7%B2%BE%E9%80%9A%E4%B9%8B%20Vue%20%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91.md"
+    },
+    {
+      "sourceFile": "忽略 incompatible engine node error.md",
+      "title": "Node.js 的 incompatible engine：该忽略，还是该修依赖？",
+      "status": "migrated",
+      "reason": "虽短，但区分兼容性声明、临时忽略与生产修复的适用条件。",
+      "id": "fb11513e600ad8d1",
+      "file": "Node.js 的 incompatible engine：该忽略，还是该修依赖？.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E5%BF%BD%E7%95%A5%20incompatible%20engine%20node%20error.md",
+      "sourceSha256": "373751dc3d4ea85c9675530288929eb3eef034575bfdf7c1c69db803a44228b1",
+      "bodySha256": "c0090cf34047ef905ce5ea45245a148c25af855d350c086bdc20b2ad99e0ccfe",
+      "importedSha256": "6700704615d86bbc965a30b0fca014542ca245aded83d014099305827bf75147"
+    },
+    {
+      "sourceFile": "我在给自己建一个 LLM wiki.md",
+      "title": "我在给自己建一个 LLM wiki",
+      "status": "migrated",
+      "reason": "保留个人知识沉淀方式的演变、失败教训与复用实践。",
+      "id": "0665e617c71673c6",
+      "file": "我在给自己建一个 LLM wiki.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E6%88%91%E5%9C%A8%E7%BB%99%E8%87%AA%E5%B7%B1%E5%BB%BA%E4%B8%80%E4%B8%AA%20LLM%20wiki.md",
+      "sourceSha256": "8e660dcd8021a502b21251b729026d96e5bc515f08ec5de4f62eef659519ab2d",
+      "bodySha256": "8c881b08407d402fa85e6a55e715a6da5977444d608d8aa4d10ac7f173c0c9b9",
+      "importedSha256": "65da5a118bbd463b522a4bc49ab801e7201c7843b2e31de70561c38c1cc8d2e4"
+    },
+    {
+      "sourceFile": "我把AI生图做成了工程能力：better-imagegen的实战与判断.md",
+      "title": "我把AI生图做成了工程能力：better-imagegen的实战与判断",
+      "status": "updated",
+      "reason": "已有文章；按用户要求恢复源文，不沿用先前的脱敏改写。",
+      "id": "510c0b2daf2fa791",
+      "file": "我把AI生图做成了工程能力：better-imagegen的实战与判断.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E6%88%91%E6%8A%8AAI%E7%94%9F%E5%9B%BE%E5%81%9A%E6%88%90%E4%BA%86%E5%B7%A5%E7%A8%8B%E8%83%BD%E5%8A%9B%EF%BC%9Abetter-imagegen%E7%9A%84%E5%AE%9E%E6%88%98%E4%B8%8E%E5%88%A4%E6%96%AD.md",
+      "sourceSha256": "0d021009031c4b5fed7be3e020fc7ab225ca1bf28ce0dd9428e780c473961404",
+      "bodySha256": "ae7970ca849f381f95767f7d201baba3bf3b97f412b71cf05aa8cce64a01794c",
+      "importedSha256": "fe1613602e2bffd4405f5c2e20480d5f4cb5598e9f7b30a9d56dd30d53e617fc"
+    },
+    {
+      "sourceFile": "我用 Claude Code + Codex vibe 了一个 macOS App：Owlet.md",
+      "title": "我用 Claude Code + Codex vibe 了一个 macOS App：Owlet",
+      "status": "updated",
+      "reason": "已有文章；保留 macOS 产品开发、性能与 AI 协作的实践。",
+      "id": "f7523c8f3399ed39",
+      "file": "我用 Claude Code + Codex vibe 了一个 macOS App：Owlet.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E6%88%91%E7%94%A8%20Claude%20Code%20%2B%20Codex%20vibe%20%E4%BA%86%E4%B8%80%E4%B8%AA%20macOS%20App%EF%BC%9AOwlet.md",
+      "sourceSha256": "e3e457097a4e7acc5b0f20580c5d90c201f1a08f815d3cd94367d3adc2b45c82",
+      "bodySha256": "9204eb7c6f8b63d37829a22b3732d752564e354e6ae8290cea33f181f6476fe9",
+      "importedSha256": "fb89955d5d1d2f363d1323e7c2624400343f69a7beac588b297582110782d71f"
+    },
+    {
+      "sourceFile": "手写 JavaScript bind 函数.md",
+      "title": "手写 JavaScript bind 函数",
+      "status": "excluded",
+      "reason": "基础 bind 手写练习，未覆盖构造调用等边界。",
+      "sourceSha256": "228d5b15db8eb02a4f787271d18abfa2e86e2ce136f1cf6deaf5bbf9a673fa8d",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E6%89%8B%E5%86%99%20JavaScript%20bind%20%E5%87%BD%E6%95%B0.md"
+    },
+    {
+      "sourceFile": "打包后 Bundle.module 直接崩：一个 SPM app 首启必崩的资源陷阱.md",
+      "title": "打包后 Bundle.module 直接崩：一个 SPM app 首启必崩的资源陷阱",
+      "status": "migrated",
+      "reason": "保留 SwiftPM 资源定位、打包后崩溃与发布验收的证据链。",
+      "id": "cabbb4b1d236cda3",
+      "file": "打包后 Bundle.module 直接崩：一个 SPM app 首启必崩的资源陷阱.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E6%89%93%E5%8C%85%E5%90%8E%20Bundle.module%20%E7%9B%B4%E6%8E%A5%E5%B4%A9%EF%BC%9A%E4%B8%80%E4%B8%AA%20SPM%20app%20%E9%A6%96%E5%90%AF%E5%BF%85%E5%B4%A9%E7%9A%84%E8%B5%84%E6%BA%90%E9%99%B7%E9%98%B1.md",
+      "sourceSha256": "6a62c72e709648bb5d9a1cf6a2dfb714eb58d74b102b919cf6c2e9ee9b4fd56e",
+      "bodySha256": "7a45f4728f4add91c32f03f330d3b652003a503f7c05873fb9f92012239aa727",
+      "importedSha256": "fdac42cb4f8f08b9e2b5a9e99a443ab5234603021b232d60e0a33199ea23916a"
+    },
+    {
+      "sourceFile": "把 Agent Skill 当作架构边界：平台开发与发行版开发为什么要拆开.md",
+      "title": "把 Agent Skill 当作架构边界：平台开发与发行版开发为什么要拆开",
+      "status": "migrated",
+      "reason": "保留通过 Skill 划定平台和发行版职责与依赖方向的判断。",
+      "id": "21ab3945545c8b76",
+      "file": "把 Agent Skill 当作架构边界：平台开发与发行版开发为什么要拆开.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E6%8A%8A%20Agent%20Skill%20%E5%BD%93%E4%BD%9C%E6%9E%B6%E6%9E%84%E8%BE%B9%E7%95%8C%EF%BC%9A%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91%E4%B8%8E%E5%8F%91%E8%A1%8C%E7%89%88%E5%BC%80%E5%8F%91%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%8B%86%E5%BC%80.md",
+      "sourceSha256": "cb2d1609442f4abe3579cbb80c7db2e96ab0fbc460e98b4e42fb07b55ac4b2f6",
+      "bodySha256": "fb1815588590cbffebd2976c67fa85e40fd33dba3abce70441e670e44d88076f",
+      "importedSha256": "153c3a29145fbe63c08ed94af13a821894becbe2d781bf320afd496966b10da3"
+    },
+    {
+      "sourceFile": "掘金一下-从零开发一款基于-webview-的-vscode-扩展.md",
+      "title": "掘金一下 | 从零开发一款基于 webview 的 vscode 扩展",
+      "status": "migrated",
+      "reason": "保留完整 VS Code Webview 扩展实现及通信与国际化；原版权声明保留。",
+      "id": "060818f868763adb",
+      "file": "掘金一下 | 从零开发一款基于 webview 的 vscode 扩展.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E6%8E%98%E9%87%91%E4%B8%80%E4%B8%8B-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%8F%91%E4%B8%80%E6%AC%BE%E5%9F%BA%E4%BA%8E-webview-%E7%9A%84-vscode-%E6%89%A9%E5%B1%95.md",
+      "sourceSha256": "74e372423b72409dc802c0b232ac9f1035128b0021489a3dc62292f6e7b8e93c",
+      "bodySha256": "85b70e5a4b632c7ba00a1279ce5a27685d6fe65aaefea0c03ce262b184705ba1",
+      "importedSha256": "bf8751cbebf4bcb43c99333bd001f07749607fa8a89aacf57005c2b626669d2b"
+    },
+    {
+      "sourceFile": "每个前端都值得拥有自己的组件库，就像每个夏天都拥有西瓜🍉.md",
+      "title": "每个前端都值得拥有自己的组件库，就像每个夏天都拥有西瓜🍉",
+      "status": "migrated",
+      "reason": "保留组件库从多包管理、按需加载到文档、测试、发布的完整建设实践。",
+      "id": "078c733d794d42cb",
+      "file": "每个前端都值得拥有自己的组件库，就像每个夏天都拥有西瓜🍉.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E6%AF%8F%E4%B8%AA%E5%89%8D%E7%AB%AF%E9%83%BD%E5%80%BC%E5%BE%97%E6%8B%A5%E6%9C%89%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BB%84%E4%BB%B6%E5%BA%93%EF%BC%8C%E5%B0%B1%E5%83%8F%E6%AF%8F%E4%B8%AA%E5%A4%8F%E5%A4%A9%E9%83%BD%E6%8B%A5%E6%9C%89%E8%A5%BF%E7%93%9C%F0%9F%8D%89.md",
+      "sourceSha256": "9c8c169e3dce8a97dae51c4a7dc7fd3a60b95cb673cd42061aea25c4b3563c3e",
+      "bodySha256": "43baecf3e0ca1b24f1315a281b57da35df40637bdc2be926eb9ddfc0ad51dc13",
+      "importedSha256": "18d9f63c3921e7d66b849a329d6742d4a3b603f8049fdb6f78d73ae3704a2729"
+    },
+    {
+      "sourceFile": "深入理解 JavaScript 中的 IIFE.md",
+      "title": "深入理解 JavaScript 中的 IIFE",
+      "status": "excluded",
+      "reason": "IIFE 的通用概念、语法与作用概述，官方资料可替代。",
+      "sourceSha256": "da5edec8cb13a121fb17d77e209c45c3365390f0e15bab7873116ce2f8d88064",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%20JavaScript%20%E4%B8%AD%E7%9A%84%20IIFE.md"
+    },
+    {
+      "sourceFile": "深入理解-Rust-所有权、借用、生命周期.md",
+      "title": "深入理解 Rust 所有权、借用、生命周期",
+      "status": "migrated",
+      "reason": "保留所有权、借用与生命周期的深入译文；保留原作者及翻译来源。",
+      "id": "a3d744485696bb21",
+      "file": "深入理解 Rust 所有权、借用、生命周期.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3-Rust-%E6%89%80%E6%9C%89%E6%9D%83%E3%80%81%E5%80%9F%E7%94%A8%E3%80%81%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.md",
+      "sourceSha256": "3724f91dc05c6ed4b60397d99283ca09c123a1477c2a0cfab8c155b2ef3c2bb7",
+      "bodySha256": "fbf3d0f1c7fecfbd9ae036b2340662c5a14c39b349f32ae6ac9c9e4f447e2854",
+      "importedSha256": "63b71cc829042af9ac9d42ca57e6f8d96d19550065d0c608c052dda0f07e509a"
+    },
+    {
+      "sourceFile": "玩转 React Native 自定义字体.md",
+      "title": "玩转 React Native 自定义字体",
+      "status": "excluded",
+      "reason": "依赖外部字体与软件网盘资源，资源授权和可用性未交代，不直接迁为字体工程指南。",
+      "sourceSha256": "d932738f7abd73c09acc2e888df1abb87ad36308717e3d90cc7c278f99cc6acf",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E7%8E%A9%E8%BD%AC%20React%20Native%20%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AD%97%E4%BD%93.md"
+    },
+    {
+      "sourceFile": "用 Context7、Serena 和 Session 把 Codex 的 token 花在刀刃上.md",
+      "title": "用 Context7、Serena 和 Session 把 Codex 的 token 花在刀刃上",
+      "status": "migrated",
+      "reason": "保留文档查询、符号检索和会话边界的上下文组织方法。",
+      "id": "5b02cc4e3187c457",
+      "file": "用 Context7、Serena 和 Session 把 Codex 的 token 花在刀刃上.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E7%94%A8%20Context7%E3%80%81Serena%20%E5%92%8C%20Session%20%E6%8A%8A%20Codex%20%E7%9A%84%20token%20%E8%8A%B1%E5%9C%A8%E5%88%80%E5%88%83%E4%B8%8A.md",
+      "sourceSha256": "c26a44b637cd612e18f977a09ab28abc8d3a2a3e09293fdf0c4b823cf8fdc888",
+      "bodySha256": "4c066aa712bf79077994c286a2896845485ab0967914cc179153ac18bf18ef78",
+      "importedSha256": "0fd11264d821765cd39783f99026225b0c7a39409a08de4e46cd9b8ea2cc8453"
+    },
+    {
+      "sourceFile": "用-Claude-Code-加-Remotion-复刻-RunCat-奔跑的猫帧动画.md",
+      "title": "用 Claude Code + Remotion 复刻 RunCat 奔跑的猫帧动画",
+      "status": "migrated",
+      "reason": "保留声明式帧动画、图集输出与负载驱动速度的实现实践。",
+      "id": "21dcfbf212bfb5c2",
+      "file": "用 Claude Code + Remotion 复刻 RunCat 奔跑的猫帧动画.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E7%94%A8-Claude-Code-%E5%8A%A0-Remotion-%E5%A4%8D%E5%88%BB-RunCat-%E5%A5%94%E8%B7%91%E7%9A%84%E7%8C%AB%E5%B8%A7%E5%8A%A8%E7%94%BB.md",
+      "sourceSha256": "f2c7d7ac71ec4e0a53e66a4d1fa5a012905d1eed5550287049a0f9c5e469a45c",
+      "bodySha256": "da6a9d8dbef7299a6bd4595fc5a760e7a03dbc4d618deedb64bce6a1049414c9",
+      "importedSha256": "bf7c4d5415fab31b908a9f7755fd6de2a74e6cdc8ec51d32edb0fa1eeb9c4e9b"
+    },
+    {
+      "sourceFile": "程序员的 Mac 开发环境.md",
+      "title": "程序员的 Mac 开发环境",
+      "status": "excluded",
+      "reason": "旧版 Mac 开发环境安装清单，版本与第三方安装脚本耦合强。",
+      "sourceSha256": "dd579b6affccf9481a72a4a3e3c710ae1db7e09e2a152cd17710140e7488c5f5",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%20Mac%20%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.md"
+    },
+    {
+      "sourceFile": "算法学习计划.md",
+      "title": "算法学习计划",
+      "status": "excluded",
+      "reason": "只有通用学习阶段，没有实际执行、项目或复盘证据。",
+      "sourceSha256": "fa7c201c8c9573b76c0e5c7e6bd3e9ade5b04dd259cfcf0142705208846bfc69",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92.md"
+    },
+    {
+      "sourceFile": "粒子系统实践：从一版难看的彩纸特效说起.md",
+      "title": "粒子系统实践：从一版难看的彩纸特效说起",
+      "status": "migrated",
+      "reason": "保留粒子视觉迭代中的失败样例、参数与验收判断。",
+      "id": "2a1be56a76790425",
+      "file": "粒子系统实践：从一版难看的彩纸特效说起.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E7%B2%92%E5%AD%90%E7%B3%BB%E7%BB%9F%E5%AE%9E%E8%B7%B5%EF%BC%9A%E4%BB%8E%E4%B8%80%E7%89%88%E9%9A%BE%E7%9C%8B%E7%9A%84%E5%BD%A9%E7%BA%B8%E7%89%B9%E6%95%88%E8%AF%B4%E8%B5%B7.md",
+      "sourceSha256": "104660f032e269d51f49d49c3210fd5c444fcee2b03e7b2bb0b404055656a333",
+      "bodySha256": "8462763792d6d4be1335f50998038095e3fb22873763e64e602d91f2900c2e47",
+      "importedSha256": "3157abffc0e955bf8f6286da8b5d0cadd3a9b14671337dbecc139ce4a74d07c6"
+    },
+    {
+      "sourceFile": "英语学习方法论.md",
+      "title": "程序员如何学习英语",
+      "status": "excluded",
+      "reason": "通用背词、练听力和学习资源建议，缺少个人实践验证。",
+      "sourceSha256": "e8836ec06054efd6e6d340491937cd9f4698d7a4405157bbf5246f2fcd594786",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E8%AE%BA.md"
+    },
+    {
+      "sourceFile": "解决方案架构师技巧：架构图的-5-种类型.md",
+      "title": "解决方案架构师技巧：架构图的 5 种类型",
+      "status": "migrated",
+      "reason": "保留按读者与用途选择架构图的长期方法；保留原作者及翻译来源。",
+      "id": "c9677a0854ef02b4",
+      "file": "解决方案架构师技巧：架构图的 5 种类型.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%9E%B6%E6%9E%84%E5%B8%88%E6%8A%80%E5%B7%A7%EF%BC%9A%E6%9E%B6%E6%9E%84%E5%9B%BE%E7%9A%84-5-%E7%A7%8D%E7%B1%BB%E5%9E%8B.md",
+      "sourceSha256": "a552c4fddd14a591603fe3bf86dc02bc01b98b8c9500033fdd1c0dfc99be2c16",
+      "bodySha256": "4dc2ace0bd42a40a4c62f748bf3370f9fe4ec9b3e129a7a99d8e98ac07673315",
+      "importedSha256": "5ec6a1a175f77b36458a875718c19290718a6c32285c35241d52127f6bb754f2"
+    },
+    {
+      "sourceFile": "让云雾动起来：聊天界面的分层氛围动画.md",
+      "title": "让云雾动起来：聊天界面的分层氛围动画",
+      "status": "migrated",
+      "reason": "保留 CSS 氛围层的范围、层级、动效和可访问性取舍。",
+      "id": "be592261c3e99c8f",
+      "file": "让云雾动起来：聊天界面的分层氛围动画.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E8%AE%A9%E4%BA%91%E9%9B%BE%E5%8A%A8%E8%B5%B7%E6%9D%A5%EF%BC%9A%E8%81%8A%E5%A4%A9%E7%95%8C%E9%9D%A2%E7%9A%84%E5%88%86%E5%B1%82%E6%B0%9B%E5%9B%B4%E5%8A%A8%E7%94%BB.md",
+      "sourceSha256": "2b83ab782fcbf8d7b33b82c4d6e9754636c14d96bcc640a4c626894f598fd900",
+      "bodySha256": "b0cad73f01763030d58b9454fb1dbd414595be0a2ecb33be37ec2e25cbe5e396",
+      "importedSha256": "6309bd0b3b821c10fd8ef543a61566ef573f6e63761620138e5faefb58ddd57a"
+    },
+    {
+      "sourceFile": "谷歌抨击微软“试图破坏开放-web-的运作方式”.md",
+      "title": "谷歌抨击微软“试图破坏开放 web 的运作方式”",
+      "status": "excluded",
+      "reason": "围绕特定新闻事件的译文，长期技术复用价值有限。",
+      "sourceSha256": "439a763d30329197fc54f4119f2c3ea47d2463d9994b085f9d24b1ff4d81a46f",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E8%B0%B7%E6%AD%8C%E6%8A%A8%E5%87%BB%E5%BE%AE%E8%BD%AF%E2%80%9C%E8%AF%95%E5%9B%BE%E7%A0%B4%E5%9D%8F%E5%BC%80%E6%94%BE-web-%E7%9A%84%E8%BF%90%E4%BD%9C%E6%96%B9%E5%BC%8F%E2%80%9D.md"
+    },
+    {
+      "sourceFile": "配置 react native splash screen 防止启动白屏.md",
+      "title": "配置 React Native Splash Screen 防止启动白屏",
+      "status": "excluded",
+      "reason": "旧原生启动屏插件的配置教程，平台和版本依赖强。",
+      "sourceSha256": "fc29b2b64ac356fcb467c4445e9f4bd4e77e0d2312a8fc771984ae9177a44fed",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E9%85%8D%E7%BD%AE%20react%20native%20splash%20screen%20%E9%98%B2%E6%AD%A2%E5%90%AF%E5%8A%A8%E7%99%BD%E5%B1%8F.md"
+    },
+    {
+      "sourceFile": "闲鱼宗心大佬聊跨端职业发展.md",
+      "title": "闲鱼宗心大佬聊跨端职业发展",
+      "status": "migrated",
+      "reason": "保留跨端职业选择的真实问答与个人反思，不将历史观点写成当前结论。",
+      "id": "1864af17545d95e3",
+      "file": "闲鱼宗心大佬聊跨端职业发展.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E9%97%B2%E9%B1%BC%E5%AE%97%E5%BF%83%E5%A4%A7%E4%BD%AC%E8%81%8A%E8%B7%A8%E7%AB%AF%E8%81%8C%E4%B8%9A%E5%8F%91%E5%B1%95.md",
+      "sourceSha256": "42de9f5c28e1b5b700dbfb6ea4de93dcbbc4542fab3f2bb74c271eff610e5019",
+      "bodySha256": "c9411531f7f260690c9b971fb9b873ecf8774ef15f809e871d2dd11238c9cba7",
+      "importedSha256": "46320c6bef7a5ef6480caf62158d9e3fa2d8d759af0733a44f96fae5b4fe5ccb"
+    },
+    {
+      "sourceFile": "阿里云 PouchContainer 容器技术详解.md",
+      "title": "阿里云 PouchContainer 容器技术详解",
+      "status": "excluded",
+      "reason": "容器项目历史和功能简介，缺少本人部署、源码或对比验证。",
+      "sourceSha256": "509586fa8077aa45294a10929b142b38e5ba4de2a7c7eb646914ccb374d3dbaf",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E9%98%BF%E9%87%8C%E4%BA%91%20PouchContainer%20%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3.md"
+    },
+    {
+      "sourceFile": "青山湖设计风格的诞生记.md",
+      "title": "青山湖设计风格的诞生记",
+      "status": "migrated",
+      "reason": "保留个人设计语言从意象、色板到语义系统的演变过程。",
+      "id": "92475e72a3319ba5",
+      "file": "青山湖设计风格的诞生记.md",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E9%9D%92%E5%B1%B1%E6%B9%96%E8%AE%BE%E8%AE%A1%E9%A3%8E%E6%A0%BC%E7%9A%84%E8%AF%9E%E7%94%9F%E8%AE%B0.md",
+      "sourceSha256": "fed5c31f4f148c6dd853f28d3b5ae4eaa2a442a25eefcf3a00495e42635972b0",
+      "bodySha256": "11bcf06d100d32a2602fb5ba8422070039c11f1c9d6c948758434082a7f814a2",
+      "importedSha256": "30a65a2304279ee6ade45f3b9353b7ec638375e3c039b374677429982f0d67e9"
+    },
+    {
+      "sourceFile": "静态博客管理器-qexo-搭建指南.md",
+      "title": "静态博客管理器 qexo 搭建指南",
+      "status": "excluded",
+      "reason": "依赖当时 Vercel Beta 数据库界面的安装教程，未提供持续维护验证。",
+      "sourceSha256": "bf7e10b6ef3fffb55d5b05650d440539d44624699aae4496603ce0e8919ae517",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%AE%A1%E7%90%86%E5%99%A8-qexo-%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97.md"
+    },
+    {
+      "sourceFile": "马斯克开源的推特推荐算法是什么.md",
+      "title": "马斯克开源的推特推荐算法是什么？",
+      "status": "excluded",
+      "reason": "算法开源时的新闻及上游概述，缺少源码拆解和本人实验。",
+      "sourceSha256": "57074fee5a57d86bf3488743deb4f988ac7dadacd151b0b74206c1f6406b30cb",
+      "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E9%A9%AC%E6%96%AF%E5%85%8B%E5%BC%80%E6%BA%90%E7%9A%84%E6%8E%A8%E7%89%B9%E6%8E%A8%E8%8D%90%E7%AE%97%E6%B3%95%E6%98%AF%E4%BB%80%E4%B9%88.md"
+    }
+  ]
+}

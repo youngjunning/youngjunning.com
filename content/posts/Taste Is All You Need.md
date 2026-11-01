@@ -1,12 +1,15 @@
 ---
 id: "497451432d1eee6a"
 title: "Taste Is All You Need"
-date: "2026-08-10"
 description: "当 AI 把实现和生成的成本迅速压低，真正稀缺的能力开始转向问题选择、方案取舍、边界判断与结果验收。本文结合 Owlet、青山湖设计语言和跨端 Design Skill，讨论 Taste 为什么会成为 AI 时代的核心生产力，以及怎样把个人直觉沉淀为 Agent 可以执行和验证的规则。"
-topic: "reflections"
+date: "2026-08-10"
+topic: "principles"
 tags: ["AI","Taste","Vibe Coding","Agent","UI Design","Design System","Owlet"]
-cover: "/media/a8f03f6982b09a00562e.webp"
-source: "https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/Taste%20Is%20All%20You%20Need.md"
+source: "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Taste%20Is%20All%20You%20Need.md"
+sourceDate: "2026-08-10T00:18:00.000Z"
+cover: "/media/a8f03f6982b09a00562e7edd.webp"
+assets: {"/images/taste-is-all-you-need-options.webp":"/media/c70e0ce7db2539e2260ae319.webp","/images/owlet-vibe-coding-cover.webp":"/media/3f68dcdc69b493f676c7aae0.webp","/images/owlet-qingshan-lake-palette.webp":"/media/95b0bcf9974c69d940fe5716.webp","/images/qingshan-lake-design-birth.webp":"/media/59c9c3e0c1a4abbed0c50a64.webp","/images/taste-is-all-you-need-skill.webp":"/media/ff3fb0ed418065084e86cabd.webp","/images/taste-is-all-you-need-loop.svg":"/media/2d9807dfccbe8212fb4be017.svg","/images/taste-is-all-you-need.webp":"/media/a8f03f6982b09a00562e7edd.webp"}
+originalBodySha256: "f3ded38ab89c98c012f95dbd94348c3a2202b3e3c545e37d6c941fe7a9fef10a"
 ---
 
 > 当 AI 把实现速度拉到过去难以想象的水平，作品之间的差距就不再只取决于“能不能做出来”，还取决于你选择做什么、删掉什么，以及用什么标准宣布完成。
@@ -45,7 +48,7 @@ AI 没有让工程能力失去价值，它改变了瓶颈的位置：生成候�
 
 AI 可以把货架迅速摆满，但它不会替产品负责人决定什么应该上架。方向准确时，它能让模糊想法迅速长成产品；方向错误时，它也能以很高的完成度把错误做得更远。
 
-![候选越多，选择越重要](/media/c70e0ce7db2539e2260a.webp)
+![候选越多，选择越重要](/images/taste-is-all-you-need-options.webp)
 
 ## Taste 是一套带责任的判断
 
@@ -67,7 +70,7 @@ Taste 也不只体现在加了什么。那些没有进入最终版本的颜色�
 
 ## Owlet：AI 帮我跨进陌生领域，产品仍然需要我拍板
 
-![Owlet 主视觉](/media/3f68dcdc69b493f676c7.webp)
+![Owlet 主视觉](/images/owlet-vibe-coding-cover.webp)
 
 Owlet 是我用 Claude Code 和 Codex 做的一款 macOS menu-bar 应用。它来自一个很私人的问题：我每天大量使用 Coding Agent，到底消耗了多少 token，哪些项目最活跃？
 
@@ -91,7 +94,7 @@ Owlet 早期也出现过许多容易生成的方案：更强的光效、更满�
 
 这句话没有指定 hex，也没有规定某个组件怎么写。它给了产品一个母题，让后续的局部选择拥有共同来源。
 
-![Owlet 的青山湖配色体系](/media/95b0bcf9974c69d940fe.webp)
+![Owlet 的青山湖配色体系](/images/owlet-qingshan-lake-palette.webp)
 
 湖面变成主操作的湖水青，水杉变成成功和运行状态，远山承担次级信息，雾白负责空间和层次，晨光金只留在极少量高光里。母题也同时定义了禁区：不做赛博霓虹，不让金色主导 surface，不用重阴影堆层级，不为了“可爱”牺牲信息效率。
 
@@ -101,7 +104,7 @@ Owlet 早期也出现过许多容易生成的方案：更强的光效、更满�
 
 ## 青山湖：一套风格要先学会删
 
-![青山湖设计风格](/media/59c9c3e0c1a4abbed0c5.webp)
+![青山湖设计风格](/images/qingshan-lake-design-birth.webp)
 
 青山湖风格是在一次次“不对”里长出来的，色板只是后来沉淀出的结果。
 
@@ -159,7 +162,7 @@ Taste 走到最后一层，才不再依赖某一次聊天的运气，而成为�
 
 只在一个产品、一个页面或一次会话里成立的偏好，还不是可复用能力。
 
-![从景观母题到跨端设计系统](/media/ff3fb0ed418065084e86.webp)
+![从景观母题到跨端设计系统](/images/taste-is-all-you-need-skill.webp)
 
 我后来把 Owlet、专业 Agent 工作台、Design Language Atlas 和相关 Landing Page 里的实践重新扫描了一遍，抽取出公开的 [Qingshan Lake Design Skill](https://github.com/youngjunning/qingshan-lake-design)。它覆盖 macOS、iPhone/iPad、Android、React Native、Web dashboard 和 Landing Page。
 
@@ -202,7 +205,7 @@ AI 对 Taste 最有价值的地方，是降低探索和对照成本。过去做�
 
 我现在使用这样一条循环：
 
-![Taste 从参考、发散、选择、约束、验证到记忆的循环](/media/2d9807dfccbe8212fb4b.svg)
+![Taste 从参考、发散、选择、约束、验证到记忆的循环](/images/taste-is-all-you-need-loop.svg)
 
 ### Reference：先扩大看过的世界
 

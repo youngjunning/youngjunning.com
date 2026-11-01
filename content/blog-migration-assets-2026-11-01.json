@@ -1,0 +1,1438 @@
+{
+  "version": 1,
+  "resources": {
+    "/images/ai-native-knowledge-base.webp": {
+      "status": "local",
+      "path": "/media/e5f1e7df48f23120a373d72d.webp",
+      "sha256": "e5f1e7df48f23120a373d72da82e3f40ecd99c25ce39e8edd901e33b96a11ffa",
+      "bytes": 137642
+    },
+    "https://i.loli.net/2020/07/16/zxg29fl1ptGhIAb.png": {
+      "status": "local",
+      "path": "/media/17a45c3fa43be6bd2374993f.png",
+      "sha256": "17a45c3fa43be6bd2374993feecb7c2121a0eac807cbb9ea80146acddddc2de1",
+      "bytes": 83613
+    },
+    "/images/ai-native-knowledge-base-architecture.webp": {
+      "status": "local",
+      "path": "/media/bda3d5675cf6635bad698b4d.webp",
+      "sha256": "bda3d5675cf6635bad698b4ddbd91a2d86706ca689e12736ddd159a511491b30",
+      "bytes": 269550
+    },
+    "/images/ai-browser-browseros-seven-layers.webp": {
+      "status": "local",
+      "path": "/media/3c80f0f84a85a6571ab96ab8.webp",
+      "sha256": "3c80f0f84a85a6571ab96ab89f504c77b9ca35a666fdc956bff2a0fd89677c83",
+      "bytes": 63862
+    },
+    "/images/knowledge-stack-evolution.webp": {
+      "status": "local",
+      "path": "/media/ae431da39eec8c2e6964476b.webp",
+      "sha256": "ae431da39eec8c2e6964476bbd875f08bd2d6df1b9d53b9e072c26e6f13267d4",
+      "bytes": 168042
+    },
+    "/images/agent-domain-model.webp": {
+      "status": "local",
+      "path": "/media/3232655f2497017468f51b3a.webp",
+      "sha256": "3232655f2497017468f51b3ae0b1792da4ac4db3e9cc5e68648ea7d3c8c248bf",
+      "bytes": 123346
+    },
+    "https://blog.zisheng.pro/images/agent-domain-model.webp": {
+      "status": "local",
+      "path": "/media/3232655f2497017468f51b3a.webp",
+      "sha256": "3232655f2497017468f51b3ae0b1792da4ac4db3e9cc5e68648ea7d3c8c248bf",
+      "bytes": 123346
+    },
+    "https://img.alicdn.com/imgextra/i2/O1CN01cbuFjJ1RXTCX2ovap_!!6000000002121-2-tps-1672-941.png": {
+      "status": "local",
+      "path": "/media/ce0127eab12db880454ce500.jpg",
+      "sha256": "ce0127eab12db880454ce500a72ee08f07095cd16a75c5bb0456581714b6ba35",
+      "bytes": 252520
+    },
+    "/images/claude-code-skill-token-optimization.webp": {
+      "status": "local",
+      "path": "/media/8376f2f1cf0ff8f4f82efa6c.webp",
+      "sha256": "8376f2f1cf0ff8f4f82efa6c25d4185294b67e6168aa5d7ff9034444fd46e939",
+      "bytes": 129354
+    },
+    "/images/bearer-token-authentication.webp": {
+      "status": "local",
+      "path": "/media/19197cfaaf6af81bbb9d4b16.webp",
+      "sha256": "19197cfaaf6af81bbb9d4b161f091e2161c5f94a6f330c236900761662397988",
+      "bytes": 113574
+    },
+    "https://blog.zisheng.pro/images/evidence-verification-chain.webp": {
+      "status": "local",
+      "path": "/media/e5773d434d05656b1780a593.webp",
+      "sha256": "e5773d434d05656b1780a5935168d80fbdab006ff228922740bb2bb2884d24c0",
+      "bytes": 111364
+    },
+    "/images/工作汇报框架选择.webp": {
+      "status": "local",
+      "path": "/media/2f856eac4b9be9afefc27e74.webp",
+      "sha256": "2f856eac4b9be9afefc27e742dcc76491d8f11659a8a513adee90e02399b7373",
+      "bytes": 142342
+    },
+    "https://blog.zisheng.pro/images/evidence-boundary-map.webp": {
+      "status": "local",
+      "path": "/media/fe998e3162df24a8514407b8.webp",
+      "sha256": "fe998e3162df24a8514407b8677275e42343b701c40e641e5404fa24cb0225e3",
+      "bytes": 97998
+    },
+    "https://blog.zisheng.pro/images/evidence-qualification-gates.webp": {
+      "status": "local",
+      "path": "/media/56daedc36ab481f2b38edc6e.webp",
+      "sha256": "56daedc36ab481f2b38edc6efa709b415bff8b60cc5f304cc301014e6a461ca6",
+      "bytes": 96556
+    },
+    "https://blog.zisheng.pro/images/evidence-delivery-ladder.webp": {
+      "status": "local",
+      "path": "/media/cb48c8f875412e5a54c619ae.webp",
+      "sha256": "cb48c8f875412e5a54c619ae37deadc161f140e7d358f12ad681e79c6fc98700",
+      "bytes": 83308
+    },
+    "https://blog.zisheng.pro/images/evidence-object-anatomy.webp": {
+      "status": "local",
+      "path": "/media/300680b94d47b506aa663f99.webp",
+      "sha256": "300680b94d47b506aa663f99cc233770b55678e218dcd6f4823537d15e9f7803",
+      "bytes": 104970
+    },
+    "/images/fb-pixel-pitfalls.webp": {
+      "status": "local",
+      "path": "/media/bb80575225fe5b49db1c9dd0.webp",
+      "sha256": "bb80575225fe5b49db1c9dd09af839898a20eed7ce3000893d322e60e601af20",
+      "bytes": 109366
+    },
+    "/images/facebook-budget-target-math.webp": {
+      "status": "local",
+      "path": "/media/bbe4c26d2c5173cf0a75ac06.webp",
+      "sha256": "bbe4c26d2c5173cf0a75ac063778a4561fe9bdcf6fab3039305d3129c6efb103",
+      "bytes": 115488
+    },
+    "/images/gbrain从入门到精通.webp": {
+      "status": "local",
+      "path": "/media/8934f0342412366d3d2f6709.webp",
+      "sha256": "8934f0342412366d3d2f6709013a979c59c2e662fb17a44ef0b91e0b494c0067",
+      "bytes": 464430
+    },
+    "/images/gbrain-sirchmunk-understand-anything.webp": {
+      "status": "local",
+      "path": "/media/0dedfb29b147303fdddae7d8.webp",
+      "sha256": "0dedfb29b147303fdddae7d8f3343cb1775035fd38d21a110a4db6dfa28a00d1",
+      "bytes": 211112
+    },
+    "/images/hyperframes-principles.webp": {
+      "status": "local",
+      "path": "/media/a1e062ea5be3ff4eac2759f3.webp",
+      "sha256": "a1e062ea5be3ff4eac2759f3fb8022160e118272955c0143a5d1d82bec132cf5",
+      "bytes": 87680
+    },
+    "/images/git-worktree-ai-era-topology.png": {
+      "status": "local",
+      "path": "/media/ec4293df1fedd5ee42205d23.png",
+      "sha256": "ec4293df1fedd5ee42205d235eb2e13ed70bdba0679b6df7b1576b4cdcbfd0b8",
+      "bytes": 1025436
+    },
+    "/images/omaha-update-protocol.webp": {
+      "status": "local",
+      "path": "/media/3d62953b2d2dbd0678317007.webp",
+      "sha256": "3d62953b2d2dbd06783170077e56a513b6a68fa0c01f7de22df40f07862b0c51",
+      "bytes": 135778
+    },
+    "/images/profile-meaning-contexts.webp": {
+      "status": "local",
+      "path": "/media/bb0152e57b3654446b0c0a9a.webp",
+      "sha256": "bb0152e57b3654446b0c0a9ad4de4e282c8e802919cc5fcab41be0c49b10ccf4",
+      "bytes": 75054
+    },
+    "/images/provider-pattern-agent-ops.webp": {
+      "status": "local",
+      "path": "/media/d330a747525923e475ed4438.webp",
+      "sha256": "d330a747525923e475ed443869759559ee9d22ffe6511f62a7e0c5c97178d2c6",
+      "bytes": 80586
+    },
+    "/images/rss-resident-set-size.webp": {
+      "status": "local",
+      "path": "/media/54799ca639ef831e9f041e1b.webp",
+      "sha256": "54799ca639ef831e9f041e1b97e06d6f39c38c3575810e2e76d442ec7e28064b",
+      "bytes": 38762
+    },
+    "/images/raw-knowledge-to-asset-chinese-fts.webp": {
+      "status": "local",
+      "path": "/media/e74e1ab11d2ab9efafe41b37.webp",
+      "sha256": "e74e1ab11d2ab9efafe41b37a2c785e59cc7f6485838b7fb36a32e10e52cf9d6",
+      "bytes": 68796
+    },
+    "/images/git-worktree-ai-era-collaboration.png": {
+      "status": "local",
+      "path": "/media/563cd4677929a1987a97fee8.png",
+      "sha256": "563cd4677929a1987a97fee881d7b589796b3c04c9fed8f478a0acac11c03677",
+      "bytes": 1655145
+    },
+    "/images/git-worktree-ai-era-cover.png": {
+      "status": "local",
+      "path": "/media/c615dca3857c9e5a578068f0.png",
+      "sha256": "c615dca3857c9e5a578068f0fc435d0f669116dfbeaf6824f42fd9cd059de654",
+      "bytes": 1618296
+    },
+    "https://i.loli.net/2019/06/05/5cf73b7ea3e2b53276.jpg": {
+      "status": "local",
+      "path": "/media/59794439dcda707e87bee016.png",
+      "sha256": "59794439dcda707e87bee016e7ec7a178113913c278f328bfe64ed5761506765",
+      "bytes": 126867
+    },
+    "https://i.loli.net/2021/04/07/Vm2bOetv4HuB3Al.png": {
+      "status": "local",
+      "path": "/media/2fd18f58d19f53ccbec43b56.png",
+      "sha256": "2fd18f58d19f53ccbec43b5668a333fc8bf0c8a4e640c3dde130987435acbb27",
+      "bytes": 98659
+    },
+    "https://zh-hans.reactjs.org/static/bae8d10e17f06eeb8c512c91c0153cff/ad997/start-profiling.png": {
+      "status": "local",
+      "path": "/media/a267df6d504d102bb5edab88.png",
+      "sha256": "a267df6d504d102bb5edab88c399d145e43a202a08fe73b56dc5243513f080e6",
+      "bytes": 12982
+    },
+    "https://zh-hans.reactjs.org/static/45619de03bed468869f7a0878f220586/ad997/stop-profiling.png": {
+      "status": "local",
+      "path": "/media/57d1e76e5f9d930c9712b886.png",
+      "sha256": "57d1e76e5f9d930c9712b8863d5839b1198b3a00ffc4317581b9d8da45489e4b",
+      "bytes": 11108
+    },
+    "https://s2.loli.net/2022/09/25/zKn9HslamJi6Ro5.png": {
+      "status": "local",
+      "path": "/media/6efb7a452cd2fbda3010232c.png",
+      "sha256": "6efb7a452cd2fbda3010232c4c4130e476d974a35e80629a95491a92552c6f15",
+      "bytes": 14879
+    },
+    "https://user-gold-cdn.xitu.io/2020/2/24/17074acbb24c7412?w=200&h=200&f=jpeg&s=17183": {
+      "status": "unavailable",
+      "url": "https://user-gold-cdn.xitu.io/2020/2/24/17074acbb24c7412?w=200&h=200&f=jpeg&s=17183",
+      "reason": "fetch failed"
+    },
+    "https://i.loli.net/2020/02/24/hPsv4Q87zlIrX6x.png": {
+      "status": "local",
+      "path": "/media/3fe6c552feecc53095cab619.png",
+      "sha256": "3fe6c552feecc53095cab6191b90dfb7da0e8c848d4d7c5257149e351c3d7986",
+      "bytes": 858986
+    },
+    "https://user-gold-cdn.xitu.io/2020/2/24/17074acbb26af8e1?w=200&h=200&f=png&s=39093": {
+      "status": "unavailable",
+      "url": "https://user-gold-cdn.xitu.io/2020/2/24/17074acbb26af8e1?w=200&h=200&f=png&s=39093",
+      "reason": "fetch failed"
+    },
+    "https://user-gold-cdn.xitu.io/2020/2/24/17074acbb338c643?w=698&h=700&f=png&s=315492": {
+      "status": "unavailable",
+      "url": "https://user-gold-cdn.xitu.io/2020/2/24/17074acbb338c643?w=698&h=700&f=png&s=315492",
+      "reason": "fetch failed"
+    },
+    "/images/sidecar-pattern-overview.svg": {
+      "status": "local",
+      "path": "/media/2b58b05ce5e2b521a0d2a29c.svg",
+      "sha256": "2b58b05ce5e2b521a0d2a29cb48faa1b1da649d931dce8f3f46824e98b635ebb",
+      "bytes": 4668
+    },
+    "/images/sidecar-request-flow.svg": {
+      "status": "local",
+      "path": "/media/fbdcf60ef5207cd504e8fe6b.svg",
+      "sha256": "fbdcf60ef5207cd504e8fe6b6a3759f35cc7b01433ec62d80979274f513065de",
+      "bytes": 2521
+    },
+    "/images/sidecar-trust-boundary.svg": {
+      "status": "local",
+      "path": "/media/e6403a46e7120ba3e5b8c072.svg",
+      "sha256": "e6403a46e7120ba3e5b8c07260363128c85208ed4f993e9c123d1fdc06981c88",
+      "bytes": 3647
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3bd4a66beffc4b6182498a4bda07ce8f~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/a5d60caade231424a97b6034.png",
+      "sha256": "a5d60caade231424a97b6034f08f696cb34152a7f49e9d183a341bc6faa4846e",
+      "bytes": 104011
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2bba7776f98d4cbc9d184101d1f1b752~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/f3fe0900bd82af3585c7c744.png",
+      "sha256": "f3fe0900bd82af3585c7c744d4f472d864fb4046879e59a113a0eb69112337fc",
+      "bytes": 178154
+    },
+    "https://s2.loli.net/2022/09/25/YheAM9ZuviaJDmo.png": {
+      "status": "local",
+      "path": "/media/8d6a32edf50b7050c03da3b1.png",
+      "sha256": "8d6a32edf50b7050c03da3b1494278f9bdfd8da4bdef87aa28fda491f798e6f1",
+      "bytes": 23808
+    },
+    "https://cdn.jsdelivr.net/gh/youngjuning/images@main/1680796317834.png": {
+      "status": "local",
+      "path": "/media/b6f5dcdb49e74d813ddfb4d4.png",
+      "sha256": "b6f5dcdb49e74d813ddfb4d416474f679feeb2ea7259de2e720bdf97ebb047bd",
+      "bytes": 288347
+    },
+    "/images/sidecar-pattern-overview.webp": {
+      "status": "local",
+      "path": "/media/95544aedba36112519655d31.webp",
+      "sha256": "95544aedba36112519655d313a16217a6b0903f5095d4d165cdf2dc214059f40",
+      "bytes": 55718
+    },
+    "/images/taste-is-all-you-need-options.webp": {
+      "status": "local",
+      "path": "/media/c70e0ce7db2539e2260ae319.webp",
+      "sha256": "c70e0ce7db2539e2260ae319aec8147dc545770e2c82ed2a1e3acbf44e002dce",
+      "bytes": 46352
+    },
+    "/images/owlet-qingshan-lake-palette.webp": {
+      "status": "local",
+      "path": "/media/95b0bcf9974c69d940fe5716.webp",
+      "sha256": "95b0bcf9974c69d940fe5716ab7c8da3589a2e288030573ea5ea2af2706ddaf9",
+      "bytes": 48274
+    },
+    "/images/owlet-vibe-coding-cover.webp": {
+      "status": "local",
+      "path": "/media/3f68dcdc69b493f676c7aae0.webp",
+      "sha256": "3f68dcdc69b493f676c7aae07d5026daa0047f266d77527d5a755d8e35ae25e5",
+      "bytes": 79220
+    },
+    "/images/taste-is-all-you-need-loop.svg": {
+      "status": "local",
+      "path": "/media/2d9807dfccbe8212fb4be017.svg",
+      "sha256": "2d9807dfccbe8212fb4be01706d99707a11faebaa0a1d6a95fd138d7a3733671",
+      "bytes": 3134
+    },
+    "/images/qingshan-lake-design-birth.webp": {
+      "status": "local",
+      "path": "/media/59c9c3e0c1a4abbed0c50a64.webp",
+      "sha256": "59c9c3e0c1a4abbed0c50a649a0836233cfac8953983655f1f5ad888e7556721",
+      "bytes": 82072
+    },
+    "/images/taste-is-all-you-need-skill.webp": {
+      "status": "local",
+      "path": "/media/ff3fb0ed418065084e86cabd.webp",
+      "sha256": "ff3fb0ed418065084e86cabd169c36add906c865f6911ae527a4f0806714ce29",
+      "bytes": 55172
+    },
+    "/images/windows-ai-browser-launch-parameters.webp": {
+      "status": "local",
+      "path": "/media/7fe2c2d4737b1932daa399ce.webp",
+      "sha256": "7fe2c2d4737b1932daa399ce3a68041670e46588f08860dc161450a13cbfc393",
+      "bytes": 54022
+    },
+    "https://s2.loli.net/2022/03/23/UfjaX4QpTmg5MKu.png": {
+      "status": "local",
+      "path": "/media/9a3aafbdae1a98d3e902f20b.png",
+      "sha256": "9a3aafbdae1a98d3e902f20b80290a3d7941a159c75da7deaa145b26cae50ec3",
+      "bytes": 10451
+    },
+    "/images/taste-is-all-you-need.webp": {
+      "status": "local",
+      "path": "/media/a8f03f6982b09a00562e7edd.webp",
+      "sha256": "a8f03f6982b09a00562e7eddf20bcdd956c201c0eeea82a9df6ffb9f0ee25d40",
+      "bytes": 48926
+    },
+    "/images/platform-architecture-package-naming.webp": {
+      "status": "local",
+      "path": "/media/a7d2d26b3f8eea4c18b2106a.webp",
+      "sha256": "a7d2d26b3f8eea4c18b2106ade81041fafc48480c0fad7bf9230959a55e3cbe9",
+      "bytes": 105626
+    },
+    "https://cdn.jsdelivr.net/gh/youngjuning/images/202111221420019.png": {
+      "status": "local",
+      "path": "/media/c3beb1575cf2433c9b829f34.png",
+      "sha256": "c3beb1575cf2433c9b829f349bb26a0e83bb72f33a423edea48f81fbd4f6eda9",
+      "bytes": 85598
+    },
+    "https://cdn.jsdelivr.net/gh/youngjuning/images/202111221452146.png": {
+      "status": "local",
+      "path": "/media/2b1b08842b9078502f0614f2.png",
+      "sha256": "2b1b08842b9078502f0614f26684ab355bc7c57bbd46337c322b2076ab1244a4",
+      "bytes": 74986
+    },
+    "https://user-gold-cdn.xitu.io/2020/2/18/1705883821e962d8?w=297&h=45&f=png&s=3701": {
+      "status": "unavailable",
+      "url": "https://user-gold-cdn.xitu.io/2020/2/18/1705883821e962d8?w=297&h=45&f=png&s=3701",
+      "reason": "fetch failed"
+    },
+    "https://user-gold-cdn.xitu.io/2020/2/18/17058837fd8af7c9?w=890&h=74&f=svg&s=150945": {
+      "status": "unavailable",
+      "url": "https://user-gold-cdn.xitu.io/2020/2/18/17058837fd8af7c9?w=890&h=74&f=svg&s=150945",
+      "reason": "fetch failed"
+    },
+    "https://s2.loli.net/2022/03/28/gcfxtdC7vX3pHQe.png": {
+      "status": "local",
+      "path": "/media/a7159b23a6502c1c7fc85a05.png",
+      "sha256": "a7159b23a6502c1c7fc85a05cf7576c2309a7502098754c8df602a18a879c014",
+      "bytes": 1061757
+    },
+    "https://cdn.jsdelivr.net/gh/youngjuning/images/202111221423521.png": {
+      "status": "local",
+      "path": "/media/19a920097b97f780922cf9f1.png",
+      "sha256": "19a920097b97f780922cf9f16440797c91ca9c185c431c7fa799f2514395cc6d",
+      "bytes": 94752
+    },
+    "/images/swift-unchecked-sendable-dictionary-crash.webp": {
+      "status": "local",
+      "path": "/media/c1c7ea8f59f62ebd31ec6775.webp",
+      "sha256": "c1c7ea8f59f62ebd31ec677574f3775f510167420196e7362606719462d8607d",
+      "bytes": 125454
+    },
+    "https://cdn.jsdelivr.net/gh/youngjuning/images/202111221417558.png": {
+      "status": "local",
+      "path": "/media/52047b3eb110ba9f2112f669.png",
+      "sha256": "52047b3eb110ba9f2112f66967444e5cd84a4f0989b6be5d92fba65879c94b03",
+      "bytes": 430397
+    },
+    "https://i.loli.net/2020/03/31/mZiyHL2kGAgrMFx.png": {
+      "status": "local",
+      "path": "/media/489dda67cc3b4e94f5e3daec.png",
+      "sha256": "489dda67cc3b4e94f5e3daec811139db1c13c36c4383aa1b28527f8e02f896cc",
+      "bytes": 95077
+    },
+    "/images/argos-dynamic-card-crash-dialog.webp": {
+      "status": "local",
+      "path": "/media/bd4371afbd4aa8a8ba894fb3.webp",
+      "sha256": "bd4371afbd4aa8a8ba894fb363756414aa686222e7ebcf5b3d2a8b4a4544316e",
+      "bytes": 19188
+    },
+    "https://i.loli.net/2020/03/31/UI9JSTCENRvqDwY.png": {
+      "status": "local",
+      "path": "/media/59a63ce3893293bb99a4b23b.png",
+      "sha256": "59a63ce3893293bb99a4b23bab665a729d2ca0b02e8a3c1e68a287a7c407019a",
+      "bytes": 119496
+    },
+    "https://i.loli.net/2020/04/11/hmlMV4QA2opON9j.png": {
+      "status": "local",
+      "path": "/media/6d284223e499b0c7fb4b52f9.png",
+      "sha256": "6d284223e499b0c7fb4b52f934c51b5b5d01a6a0cf742fc3006777a7bd287a04",
+      "bytes": 110168
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6956030e8f734c3a81e5598aa9123dd7~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/be4e706cbbdf106ba11fa88e.png",
+      "sha256": "be4e706cbbdf106ba11fa88e48934203f76e7961d37b58863c14dc163f25be9a",
+      "bytes": 68607
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/666f1cfe0c0e4a7f97779b7cc95dedf7~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/d3bbd7df0f53f058d526c428.png",
+      "sha256": "d3bbd7df0f53f058d526c428e7e3a1eefd025efe7642f55df50bb981cf4df13a",
+      "bytes": 102404
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/699da31543d44ae99d95e0d371e9fce8~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/bc3fd95a54a2349347a1692d.png",
+      "sha256": "bc3fd95a54a2349347a1692d345acfc865a6ce442d2de2b990e0ea0b2ce7d3e4",
+      "bytes": 67835
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e9b00e7afe1946ed84b10d7085f0a320~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/daea65dcabdfed77be793743.png",
+      "sha256": "daea65dcabdfed77be793743885c351b73b72c1622168ec40342c39c4bc9efa6",
+      "bytes": 78618
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f2a0e9fa316c4ad8a95d655d76b9295b~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/ab038be6e37d8ff5547dbaa8.png",
+      "sha256": "ab038be6e37d8ff5547dbaa876964c88202c565ee2c067c81560f57a769a6f8c",
+      "bytes": 104884
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/551b748ead0b4ae89a1797d0032b79f5~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/e924134be2f7ce6e63fee671.png",
+      "sha256": "e924134be2f7ce6e63fee6711071056c383b3c2217207f6291ce4ec503d60a44",
+      "bytes": 132153
+    },
+    "/images/fumadocs-cover.webp": {
+      "status": "local",
+      "path": "/media/19641d8e73bb6d2b66128ac5.webp",
+      "sha256": "19641d8e73bb6d2b66128ac5181ad6c5f0e20bf60b5c01ed50be37fb3a150179",
+      "bytes": 39542
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/07fc8946bff243ddaf9abac9db16b02d~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/596255bc68c1d82e4fb0c854.png",
+      "sha256": "596255bc68c1d82e4fb0c854a83eb1c8cd4593a5ae0f39e406a526e2a17988b1",
+      "bytes": 82888
+    },
+    "/images/agentic-computing-technology-thesis-2027-2029.png": {
+      "status": "local",
+      "path": "/media/e429ce37d58424e32602c1a6.png",
+      "sha256": "e429ce37d58424e32602c1a6886cb256c4629d53c48f0f42facf9f57caaf52d2",
+      "bytes": 108113
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c15812c59a3248c99c77eeed7838fabe~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/d497043607c5388336b022b0.png",
+      "sha256": "d497043607c5388336b022b0fb9c3b398ebee5081cc109a5fd3a136b445b5014",
+      "bytes": 228605
+    },
+    "/images/ai-career-identity-2027-2029.png": {
+      "status": "local",
+      "path": "/media/9daa6f0329ff330726d9eb0d.png",
+      "sha256": "9daa6f0329ff330726d9eb0dd0ccdae29a8487c14eba18e5d9f7387224d41d5b",
+      "bytes": 99257
+    },
+    "/images/from-rcedit-to-resedit-bun-pe.webp": {
+      "status": "local",
+      "path": "/media/762ba0307caba7a7e443be18.webp",
+      "sha256": "762ba0307caba7a7e443be18ec4258965b45f510d00fc507fa17b07b9204730a",
+      "bytes": 57376
+    },
+    "/images/windows-pe-section-layout.webp": {
+      "status": "local",
+      "path": "/media/35bf0a31a6af87dc642e88e6.webp",
+      "sha256": "35bf0a31a6af87dc642e88e6d771c73a403ef35086fa632c292efb98e85321e4",
+      "bytes": 86568
+    },
+    "/images/resedit-safe-build-pipeline.webp": {
+      "status": "local",
+      "path": "/media/45ce2168cff8f3053ec15a89.webp",
+      "sha256": "45ce2168cff8f3053ec15a89143fa29d4322a43ac6c6e67849caae95ea68b018",
+      "bytes": 87670
+    },
+    "https://i.loli.net/2020/03/04/IZEm27KSLcz3h9r.png": {
+      "status": "local",
+      "path": "/media/8f297ed18fe3f62f2a97890a.png",
+      "sha256": "8f297ed18fe3f62f2a97890a54fbb0f9a9c38d5cdef8e991a2768bbe7b75266e",
+      "bytes": 36602
+    },
+    "/images/rag-llm-wiki知识检索地图.webp": {
+      "status": "local",
+      "path": "/media/30ec91e4b72ba393c886c8b1.webp",
+      "sha256": "30ec91e4b72ba393c886c8b1d57142d01fdd76f0faba242f63b2a19d87dffaf3",
+      "bytes": 327964
+    },
+    "/images/从高频轮询到按需刷新：本地 Agent 数据面的性能优化.webp": {
+      "status": "local",
+      "path": "/media/6d1730fcdc503ef1838d4b25.webp",
+      "sha256": "6d1730fcdc503ef1838d4b25dea127cfab037932dc13f3c71346b502a1253b59",
+      "bytes": 112842
+    },
+    "/images/agent-skill-llm-wiki-knowledge-loop.webp": {
+      "status": "local",
+      "path": "/media/f355303ac994a88b043b5845.webp",
+      "sha256": "f355303ac994a88b043b5845e9152ba8fabdb28ae2efaffed003f35745fad538",
+      "bytes": 57468
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/411210ad2c1b46a69444efca8b5f9c35~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/7ad083a186f3755d08477752.png",
+      "sha256": "7ad083a186f3755d0847775258f021a480f2599352196f70c1b1bf8a2e0f86ca",
+      "bytes": 18166
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/304867f9cd894882b110a3f36eb491f4~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/b564f2358f74628036d0a615.png",
+      "sha256": "b564f2358f74628036d0a615277e9bb97b8defec3cd01a928255d371145d6452",
+      "bytes": 35448
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0f9eaa5afd7c48a8a0c6e354075790db~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/b471fa305392b926960ad55a.png",
+      "sha256": "b471fa305392b926960ad55a27e9d3aa842e7339a90e7615d05b2f893e80080d",
+      "bytes": 23706
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7eeb936770f44767ba14ce60a170737b~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/420a63156f8b8f9d5daf6a9d.png",
+      "sha256": "420a63156f8b8f9d5daf6a9d8bd9833a8970fb0157345cb7723674375a350034",
+      "bytes": 1889967
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ee160384538a4fba8882ccf08bed0cb0~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/4b2e6f75305ebd9f6bdff56d.gif",
+      "sha256": "4b2e6f75305ebd9f6bdff56d43ca96122b5338818c68f4a043cdf070bff44631",
+      "bytes": 2349611
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2215ef958ea5409aad116f07f42543d8~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/d347176b528ed2db19af47dc.png",
+      "sha256": "d347176b528ed2db19af47dce9edf2000fe312b87deea7d86e544949c040da65",
+      "bytes": 7947
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9c6240f0c86b497999fe854b20533b1a~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/121f1a91504222a04ff7fc8c.png",
+      "sha256": "121f1a91504222a04ff7fc8cc6b346b6c6f6c3d0ba517d2f0fb6b1e76984e7a9",
+      "bytes": 151563
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/530b087960784ddd821a4fe86d06525e~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/8d0c3e9384324e0ae7e452b8.png",
+      "sha256": "8d0c3e9384324e0ae7e452b81332e06ea910e0d742c44b2b6a028f57fc0beb9c",
+      "bytes": 13026
+    },
+    "/images/ime-composition-enter-submit.webp": {
+      "status": "local",
+      "path": "/media/95f5914cac759704c608310f.webp",
+      "sha256": "95f5914cac759704c608310f984ccdc8abeedd0829214772ee8ed2b0eb4a7eb6",
+      "bytes": 72876
+    },
+    "https://cdn.jsdelivr.net/gh/youngjuning/images@main/1680953626459.png": {
+      "status": "local",
+      "path": "/media/247a0a05e2094188f9217bb0.png",
+      "sha256": "247a0a05e2094188f9217bb0e3f49df8e6adfa77c6ee3ca1f09e65db02d8655d",
+      "bytes": 168441
+    },
+    "https://i.loli.net/2020/03/28/fiXQkrtNn8yZLWY.png": {
+      "status": "local",
+      "path": "/media/f0226ef7e0e6dd7e0e4d03d0.png",
+      "sha256": "f0226ef7e0e6dd7e0e4d03d06588667fdc286aebbc7bbad34046c4ff064f697b",
+      "bytes": 138148
+    },
+    "https://i.loli.net/2020/03/29/Y15XE8zCdVKDrJP.png": {
+      "status": "local",
+      "path": "/media/da87bb92d7de085d48743ae2.png",
+      "sha256": "da87bb92d7de085d48743ae29e0dbb45dcf456380bff1cf45a7df9052432a12e",
+      "bytes": 89861
+    },
+    "/images/ch1-cold-traffic-hook.webp": {
+      "status": "local",
+      "path": "/media/df9a36fa87f3a10512ea28ef.jpg",
+      "sha256": "df9a36fa87f3a10512ea28ef91352ee6c70a59d40e49eb85aa9278e6ff1e9f85",
+      "bytes": 175036
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/58285f3cce144972b2ccb88e11efd73f~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/61213b7735a385e06c1e73a2.png",
+      "sha256": "61213b7735a385e06c1e73a2545d674a5c8033a9e9c32abea9bee14414344922",
+      "bytes": 34062
+    },
+    "https://i.loli.net/2020/03/29/jZbnwPI3BKq4lES.png": {
+      "status": "local",
+      "path": "/media/6e18d9bb511be1dcf0681443.png",
+      "sha256": "6e18d9bb511be1dcf0681443f71db853d423244b3bc8affe2e1e7ab164164c7b",
+      "bytes": 1336498
+    },
+    "https://i.loli.net/2020/03/30/rzVCW97GcjAa81k.png": {
+      "status": "local",
+      "path": "/media/8dddfbb673f66aad96caa493.png",
+      "sha256": "8dddfbb673f66aad96caa493d7fa71ea849840c25f6e9367050cd18e807fed1d",
+      "bytes": 1680843
+    },
+    "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/633381b8c2c342ed94bf024dbc19cf76~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/bef621ec4d3bd41dc0a3bf80.png",
+      "sha256": "bef621ec4d3bd41dc0a3bf80e2a7b48aaeb21b3382fa167230b1e6535f4ed56c",
+      "bytes": 42054
+    },
+    "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/542a6bbb880e4594ae384ee0bd1e511d~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/a614e39e6d778c9607983bbe.png",
+      "sha256": "a614e39e6d778c9607983bbe77528b58270684888a17686f663767c621511d6a",
+      "bytes": 508067
+    },
+    "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d2c2a8abbe84471f96a67e18196c53fb~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/8533f0403bd61452af0c072b.png",
+      "sha256": "8533f0403bd61452af0c072bd508af1f28640fe35e80d14a98d1b46069e7fb19",
+      "bytes": 29514
+    },
+    "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4a0b412c227e4dc994b818294165240d~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/1ed5f534f0d47010d27c00c8.png",
+      "sha256": "1ed5f534f0d47010d27c00c84245c0f6e3e19426d49f2ecf7920036dd712054d",
+      "bytes": 139713
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0fc1bedf56fe4dd0a31e6d18b048665c~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/c65d0e4c3a884b7abcafc04d.png",
+      "sha256": "c65d0e4c3a884b7abcafc04d75f20df48d8c9d6b3e685aad24de0ea51c01174e",
+      "bytes": 65900
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/88c6754b28984fc3866319c35790fc03~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/b3416a42094e013c846793ee.png",
+      "sha256": "b3416a42094e013c846793ee1e84be55e2cc602c4865b2081084c71dc6e00af3",
+      "bytes": 803145
+    },
+    "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/43d80d537b07487d9043d718e6541f7e~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/d0b3065b1067c20dd8e16010.png",
+      "sha256": "d0b3065b1067c20dd8e16010611dbe3cdd002c02e189aae09a60e016b6612d7a",
+      "bytes": 64845
+    },
+    "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/27c4340df2254245a3c830bf667a2e28~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/6495dc615291b5d2bba9d201.png",
+      "sha256": "6495dc615291b5d2bba9d201d7d37d3ea7db4bf660ee286306f620174a956fd9",
+      "bytes": 24833
+    },
+    "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/892589086d07426a8346319d8466bccf~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/98ea96cc9845dbbeefe2dbbb.png",
+      "sha256": "98ea96cc9845dbbeefe2dbbb87bbd32b2cd2f81c71cae1caf7df43c46dfc2857",
+      "bytes": 57864
+    },
+    "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/59c01002f25b477d85ed26fa1e21c86b~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/33727c74978dd45da2421d08.png",
+      "sha256": "33727c74978dd45da2421d08d46b193ebe0efbe3df7e82abc4b0e20228ba8a2e",
+      "bytes": 23477
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d1402517566e49d1a1920fd9b3f7bb20~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/4121abbdbae3da4399b3f5d0.png",
+      "sha256": "4121abbdbae3da4399b3f5d08e5189772d0fa2867f87479cff41ea6255828a4b",
+      "bytes": 20075
+    },
+    "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7bedac7240334ff79c4142005a66b158~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/09485031da9fb9a44bcdcfcd.png",
+      "sha256": "09485031da9fb9a44bcdcfcd14d9068ca686ece751ee36d99e11cff6d41e4b9f",
+      "bytes": 202850
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8efffdbfd6424618be6152895a53e8ee~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/9132b7e2ad60ef8906679569.png",
+      "sha256": "9132b7e2ad60ef8906679569a78b9272a3f291a0813833fb4b622ef376489903",
+      "bytes": 20081
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bf4cb8b7ef5c41989660e735e621fc4e~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/15ec6e39b5466b908c957344.png",
+      "sha256": "15ec6e39b5466b908c957344da3fbecf2bc173f5458ba35f6d7c3a9571bca54c",
+      "bytes": 59589
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/726bd5144a104902ae27ad31e1d46f93~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/0f2d051ddd9bf35db76e60b8.png",
+      "sha256": "0f2d051ddd9bf35db76e60b825b2df1e97a1d3b9b3e7e47b3452faf0251584b3",
+      "bytes": 20023
+    },
+    "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b79b60e52f9b4e199372d26724e81a59~tplv-k3u1fbpfcp-zoom-crop-mark:1512:1512:1512:851.awebp": {
+      "status": "local",
+      "path": "/media/f1bc40d178f5f587c1286778.webp",
+      "sha256": "f1bc40d178f5f587c12867787c24f369c9282b2696a37ea635a7025ed4174d62",
+      "bytes": 23542
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4ba477bcbd8b4ef6b880c7e8e5a095bc~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/20d006f6d71e3bf2f107e2e9.gif",
+      "sha256": "20d006f6d71e3bf2f107e2e900ff1915439e402889d84eca52e8afd746d7ed3e",
+      "bytes": 5141203
+    },
+    "https://i.loli.net/2020/03/24/EKCvkLJZNtfBrpu.png": {
+      "status": "local",
+      "path": "/media/a0e347b1bab21a8c9bd7f5b7.png",
+      "sha256": "a0e347b1bab21a8c9bd7f5b7dfd0eefe84ab5ded40ca042a7d3d2a8052304ec8",
+      "bytes": 56926
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b76f02c91de841d587084fbc73a2cca3~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/e7a2ea1cbe38bb05a49eb391.png",
+      "sha256": "e7a2ea1cbe38bb05a49eb39179fb5d210dea5f44b0a31b53f4d7bfc659866a7b",
+      "bytes": 60832
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/04d3d4f533e74d0795d70e5cffd69699~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/c155b1624cca0584057a617a.png",
+      "sha256": "c155b1624cca0584057a617a8293a98d8300b884537e6f38f4d25ccf8ccb880c",
+      "bytes": 74307
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bf73fe62dcbc48f69272f97a1a139444~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/3b3b4dd1b2f0af55976bbbb6.png",
+      "sha256": "3b3b4dd1b2f0af55976bbbb63fb775079c6a7d6de230736943e3af46fb24de4b",
+      "bytes": 63352
+    },
+    "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/04f411da146740aab8f620337a592850~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/1b9e688c7194f01b69e391bb.png",
+      "sha256": "1b9e688c7194f01b69e391bb5d131d30efd210bc6f7ae4784b199a02829b22da",
+      "bytes": 185212
+    },
+    "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d503ee17f0ab45068a0d50a4d6f6034a~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/2a82831da3cdfa72d824b21c.png",
+      "sha256": "2a82831da3cdfa72d824b21cc2e44530499c4fa177c64261d641e449f5f8e0f2",
+      "bytes": 151276
+    },
+    "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b4aeb4e02f1640069b7e763ea0b5be40~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/f1a7d64fb2a8673a5437f4d8.png",
+      "sha256": "f1a7d64fb2a8673a5437f4d8b98ba8930d713c31fe17a5fa9716590978bbcd25",
+      "bytes": 233964
+    },
+    "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/21a0b43a6f464c47a1b94a5fc7ed619f~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/e17676f370f308d2ffae4588.png",
+      "sha256": "e17676f370f308d2ffae45888dca53476830a901802fa445c1688456a09b1bd4",
+      "bytes": 112299
+    },
+    "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fafa598fac2e4015ab496cc15fd94496~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/a08a6c6257e9c1d01c50c61e.png",
+      "sha256": "a08a6c6257e9c1d01c50c61e89468a723e5e4dff5454344086fa664fac84fa7a",
+      "bytes": 86390
+    },
+    "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/140adf442a17460aa845aef8e4b8ac18~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/508adf058688f5839ec16f81.png",
+      "sha256": "508adf058688f5839ec16f819c27b381081e67af0e7db5ce375734e318f4caa2",
+      "bytes": 62049
+    },
+    "https://blog.zisheng.pro/images/rag-three-routes-decision.webp": {
+      "status": "local",
+      "path": "/media/06aa5f3bca6c9473260eaecb.webp",
+      "sha256": "06aa5f3bca6c9473260eaecbff6f85352243c13d0690e1bd5df112d7262a3fc6",
+      "bytes": 134028
+    },
+    "https://blog.zisheng.pro/images/rag-terminology-chain.webp": {
+      "status": "local",
+      "path": "/media/8cb0c2368d92c0fc54e91808.webp",
+      "sha256": "8cb0c2368d92c0fc54e918083b63a92759e84c6357043b0d1268837bebccffcb",
+      "bytes": 109570
+    },
+    "https://blog.zisheng.pro/images/rag-customer-service-routing.webp": {
+      "status": "local",
+      "path": "/media/1e6dc2076647327264213914.webp",
+      "sha256": "1e6dc2076647327264213914d172f3255af88e625b740fa18371dab00f16b38e",
+      "bytes": 122062
+    },
+    "https://blog.zisheng.pro/images/rag-hybrid-retrieval-flow.webp": {
+      "status": "local",
+      "path": "/media/5851679663a927a3652f0992.webp",
+      "sha256": "5851679663a927a3652f099202e46f2695980caa927ac3663f2149324d2579e7",
+      "bytes": 116380
+    },
+    "https://blog.zisheng.pro/images/rag-customer-graph-path.webp": {
+      "status": "local",
+      "path": "/media/1b0570c21cdf53448de9d2c2.webp",
+      "sha256": "1b0570c21cdf53448de9d2c2b6d9d3370b06ffaeb6c6a4e3c0e8c1972ebbdbf1",
+      "bytes": 126260
+    },
+    "https://blog.zisheng.pro/images/rag-compiled-knowledge-loop.webp": {
+      "status": "local",
+      "path": "/media/b8a14ccf91c03d122a26ab37.webp",
+      "sha256": "b8a14ccf91c03d122a26ab374f45d24fe6bf9d768c34067519f6d443a42db76c",
+      "bytes": 126976
+    },
+    "https://blog.zisheng.pro/images/rag-three-routes-runtime.webp": {
+      "status": "local",
+      "path": "/media/37e35ce8ef81e6fe3a482d52.webp",
+      "sha256": "37e35ce8ef81e6fe3a482d523ecf94ffdec8b0294fd1187bf3049932fdd00fef",
+      "bytes": 126156
+    },
+    "https://blog.zisheng.pro/images/rag-three-routes-workshop.webp": {
+      "status": "local",
+      "path": "/media/aba1ee304b7836347294e9fe.webp",
+      "sha256": "aba1ee304b7836347294e9fef025399a1d6c36cac6a76987d81a336cf8bfc49b",
+      "bytes": 67884
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0e1601ae833f47a1815d79cb1dea2e6f~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/b4c1844a3a59629c5782cf51.png",
+      "sha256": "b4c1844a3a59629c5782cf51e894c2687868a9a45081f4cc4be756e620369940",
+      "bytes": 302314
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a5e7c791feb140cbb537a79c89450842~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/307275c96e55b1891ce28442.png",
+      "sha256": "307275c96e55b1891ce28442c15e158593f3ca69e1f150fb9cbf2f78f33ebe79",
+      "bytes": 19291
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2e077e9f9d0a4dc8bde0a24e121461c3~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/03fe2d91b9407a80b6539b8c.png",
+      "sha256": "03fe2d91b9407a80b6539b8c00452d59fc4da0bcb80171c292aadd7918fc1130",
+      "bytes": 59399
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/82e09021f85c413d80ac77ed3df6746e~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/c4be63442ac1923574ed8739.png",
+      "sha256": "c4be63442ac1923574ed8739d3a1c3e12c423b865e23bbe6ae334b957e8e4610",
+      "bytes": 49591
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/256574d0e063410aa50c85d469346809~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/f9c72db62488981e779dff25.png",
+      "sha256": "f9c72db62488981e779dff251a45b9004742078db73584673261138c5adbb9f7",
+      "bytes": 193274
+    },
+    "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c054b9bca3b44b61b7b9ecc7206240a4~tplv-k3u1fbpfcp-watermark.image?": {
+      "status": "local",
+      "path": "/media/4c89e78b8be21bfc24a01091.png",
+      "sha256": "4c89e78b8be21bfc24a010919dd7aa03385838150e966ccf0a698e5f5b1e1402",
+      "bytes": 108679
+    },
+    "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/643f9dd16c734e8487866f6a3306f0f3~tplv-k3u1fbpfcp-watermark.image?": {
+      "status": "local",
+      "path": "/media/a6b546d573048da29beada54.png",
+      "sha256": "a6b546d573048da29beada54a7016bb50e67efe9d7501c5b2b8a02bb91820f4f",
+      "bytes": 51206
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/301eab5bbab04c65aec4a927b7d306a9~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/bb5a7c5f1fccd98358ab452f.png",
+      "sha256": "bb5a7c5f1fccd98358ab452f55a892aea69b9fb2e34467fc0032fd63e5cce8f0",
+      "bytes": 366282
+    },
+    "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/95d979f9b7c549e68f8321dac0aaa481~tplv-k3u1fbpfcp-watermark.image?": {
+      "status": "local",
+      "path": "/media/eb47fe8bcdeada41eab14762.png",
+      "sha256": "eb47fe8bcdeada41eab14762da1c42cb360f36b2c3e97ee6dd146d764b52213c",
+      "bytes": 34552
+    },
+    "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4ee531d6d54d4d269984174b5bae97b8~tplv-k3u1fbpfcp-watermark.image?": {
+      "status": "local",
+      "path": "/media/564fcb7faee8a5563f81c271.png",
+      "sha256": "564fcb7faee8a5563f81c2715c31f0c0e1d10480848eca2c703a3dedacbaebd5",
+      "bytes": 245661
+    },
+    "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7c9f81662bba4518b8d075d132d870e1~tplv-k3u1fbpfcp-watermark.image?": {
+      "status": "local",
+      "path": "/media/f71404a84b5946ba6a9a1ac5.png",
+      "sha256": "f71404a84b5946ba6a9a1ac55f7f36328f2e87386e8d310d85a85a908f5c023b",
+      "bytes": 120233
+    },
+    "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7bc01f9c7df543db90d6f6b31444eeca~tplv-k3u1fbpfcp-watermark.image?": {
+      "status": "local",
+      "path": "/media/30d4ece27727f7ca068ceb84.png",
+      "sha256": "30d4ece27727f7ca068ceb849f794120cea0d53c74d8f6d9875eec3fbc6b8190",
+      "bytes": 98365
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/116948b627f4406ba51faa0353f147a7~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/e5a3c71f377aec7c7af4cbd9.png",
+      "sha256": "e5a3c71f377aec7c7af4cbd96010748970a2267a9bd5f8f7e1ca7ec58dca9a44",
+      "bytes": 15839
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/20f34a967c234945afbaf9aaf2901163~tplv-k3u1fbpfcp-watermark.image?": {
+      "status": "local",
+      "path": "/media/93e8c38827287a70d0bfd236.png",
+      "sha256": "93e8c38827287a70d0bfd236f7ab7a5e84958c37a70d7dc984594ccdc3f55508",
+      "bytes": 40471
+    },
+    "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c2faa24d3cee4c9088e83c4d0ee06c63~tplv-k3u1fbpfcp-watermark.image?": {
+      "status": "local",
+      "path": "/media/3adab5fcbc57337cd81f701d.gif",
+      "sha256": "3adab5fcbc57337cd81f701dc89d20163fccf748239e95633a30a375979726df",
+      "bytes": 3241440
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cb03abea51634bd3a0a8c1a27b155ec0~tplv-k3u1fbpfcp-watermark.image?": {
+      "status": "local",
+      "path": "/media/434dcf857685ba83549ed4fd.gif",
+      "sha256": "434dcf857685ba83549ed4fd626cf0527bd75cb455f4dea2f22d5bdc209585e8",
+      "bytes": 668300
+    },
+    "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/376a6b66b7c24de589fb48a54d29efb6~tplv-k3u1fbpfcp-watermark.image?": {
+      "status": "local",
+      "path": "/media/c05f0e73d452baebb9353c28.gif",
+      "sha256": "c05f0e73d452baebb9353c282244d0d2a6fcd862648cd949a6fd77fb89a07096",
+      "bytes": 1261622
+    },
+    "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8449b0b270aa423da2ede94f4ad10805~tplv-k3u1fbpfcp-watermark.image?": {
+      "status": "local",
+      "path": "/media/eccee5c3e810a5543b0e0c03.png",
+      "sha256": "eccee5c3e810a5543b0e0c03573230ae8a390d6e3691da740abd2fc9860489f0",
+      "bytes": 282210
+    },
+    "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e6addd1cb739448db52db1767154fe65~tplv-k3u1fbpfcp-watermark.image?": {
+      "status": "local",
+      "path": "/media/14b8cedcc3d6826c631a8de7.gif",
+      "sha256": "14b8cedcc3d6826c631a8de7956f1b0bd6723deb7c153a58a28eeb110150618e",
+      "bytes": 2397733
+    },
+    "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/979363c7be8c42d59e2aa564cf687c26~tplv-k3u1fbpfcp-watermark.image?": {
+      "status": "local",
+      "path": "/media/5f7be827337a243733b77147.gif",
+      "sha256": "5f7be827337a243733b77147f3423053cd3b07c7f31d90f3310e616bd65139d7",
+      "bytes": 607788
+    },
+    "/images/agent-runtime-harness-architecture.webp": {
+      "status": "local",
+      "path": "/media/36cf04c9de76590b6d2615bc.webp",
+      "sha256": "36cf04c9de76590b6d2615bc110267af0ae05a0b8d8b014d98dcc426c4e56261",
+      "bytes": 53990
+    },
+    "https://cdn.jsdelivr.net/gh/youngjuning/images@main/1743757036182.png": {
+      "status": "local",
+      "path": "/media/71717ec862eaaf808834fa23.png",
+      "sha256": "71717ec862eaaf808834fa23a5b6ae33cd1516b152a2e16061a6eb2e60e5ea96",
+      "bytes": 131688
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2109e0efc60e4ccda679b599b0298235~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/58be71bbbed8dc85b84e0a56.png",
+      "sha256": "58be71bbbed8dc85b84e0a56167ce9950e4a6a36e5f524c77644b8c9422f5126",
+      "bytes": 119302
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e34344c7ef6847c2a3597ac75df1220e~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/0963343ec3e23669759be110.png",
+      "sha256": "0963343ec3e23669759be1100d43edb6975a0da5740cc90875bc8742aaa3bfb5",
+      "bytes": 13498
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4718dc1b6e574a9e9e92f3c8e91037b6~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/a023a37b4a30feff1332f523.png",
+      "sha256": "a023a37b4a30feff1332f523fdc0ba96baad60dd318d93dbfc4fe20701f2dd65",
+      "bytes": 23625
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a95ad345f27a4a4b8fb446670ad006e3~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/056df6b350530063b9548fe1.png",
+      "sha256": "056df6b350530063b9548fe186dbcc2e039f857f2981fc1c8c23f803d844d64d",
+      "bytes": 153932
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0b26b3a1f44b4e50a6e3ac9b53d39606~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/d4c6628268a1cb93229f2a86.png",
+      "sha256": "d4c6628268a1cb93229f2a86f0c7ad947c045660b58bb5cb5cae938c15fd41d0",
+      "bytes": 285444
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8251ea3c43f74027a3c215c3f321db3f~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/53106335233848f0d5da946b.jpg",
+      "sha256": "53106335233848f0d5da946bd771f989c4446598b7f6aaf29cc9c45e4d2a1900",
+      "bytes": 79723
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/952e21273503469ea3e72fd65389a204~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/306fd4328c8c8d44e78eb205.png",
+      "sha256": "306fd4328c8c8d44e78eb20515306c46e3af74a6991d2bcf51736591e99c97a5",
+      "bytes": 550238
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8c7dd5af95d74bba8381bef755a77527~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/4d846a16ea852c3e1a8bfa87.png",
+      "sha256": "4d846a16ea852c3e1a8bfa878c4e298af884876868bab885373a7639be927d90",
+      "bytes": 28959
+    },
+    "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8907918504174d9094119d0f707886a4~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/072096d78809c21279ad1708.png",
+      "sha256": "072096d78809c21279ad17087b0dc09ba7c4fb478f10ae01698f1f8e87aa7fae",
+      "bytes": 259287
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a78af0e6d7554e04ae35f5e3c5b1d8db~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/5e77d18ee00464fd12ffb52c.png",
+      "sha256": "5e77d18ee00464fd12ffb52ca67a74177572364ea0a8675961fba1b018a254bf",
+      "bytes": 292351
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1f95c125c85e438ba8654d1d9b947228~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/876a2968f003014927e7afae.png",
+      "sha256": "876a2968f003014927e7afaeb7039d67c6797ddbe0aba3d456d34a4d6defe6c3",
+      "bytes": 230632
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c327b38e8ca3410ea7f74d67d8080ccb~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/1eed5c228c243412b92f7d50.png",
+      "sha256": "1eed5c228c243412b92f7d50f2c1d13bea954e1294d826a9d9ef5032af669536",
+      "bytes": 42019
+    },
+    "/images/llm-wiki.webp": {
+      "status": "local",
+      "path": "/media/3466cd22bebeba5e978701a1.webp",
+      "sha256": "3466cd22bebeba5e978701a1618d2ca12b9ca80f200dfeeeb1ed883fc9e64921",
+      "bytes": 130340
+    },
+    "https://cdn.jsdelivr.net/gh/youngjuning/images@main/1678264386252.png": {
+      "status": "local",
+      "path": "/media/634fd4cbac2e959e59e0c65e.png",
+      "sha256": "634fd4cbac2e959e59e0c65ef1aec8a6e5789835801817a3a8e93a857849eb7b",
+      "bytes": 1583739
+    },
+    "/images/llm-wiki-1.webp": {
+      "status": "local",
+      "path": "/media/926b4cc5264009249e8a7605.webp",
+      "sha256": "926b4cc5264009249e8a7605d623eb9656a9c53ac41458f3ba653db4adf33275",
+      "bytes": 98044
+    },
+    "/images/llm-wiki-2.webp": {
+      "status": "local",
+      "path": "/media/530eb142a3d967ae7f69f287.webp",
+      "sha256": "530eb142a3d967ae7f69f287705d1dcd7d2b9bcd31b1d8ff0aad4564e2fa869c",
+      "bytes": 52430
+    },
+    "/images/better-imagegen-capability-map.webp": {
+      "status": "local",
+      "path": "/media/2def77bb90606f17caf38b75.webp",
+      "sha256": "2def77bb90606f17caf38b752fd21d60546d187762e489bc2921cc6d350cd392",
+      "bytes": 82654
+    },
+    "/images/better-imagegen-argos-case.webp": {
+      "status": "local",
+      "path": "/media/f33296ab573243712e10af14.webp",
+      "sha256": "f33296ab573243712e10af14486a5d61088c8e78cefddfd4f81ddaff81e3a098",
+      "bytes": 49976
+    },
+    "/images/better-imagegen-sprite-loop.gif": {
+      "status": "local",
+      "path": "/media/9f88fab5161a01bf02a70144.gif",
+      "sha256": "9f88fab5161a01bf02a7014483fbb4919454a45d6ab5b4ad7c4c9ff3c3056497",
+      "bytes": 582553
+    },
+    "/images/better-imagegen-engineering-practice.webp": {
+      "status": "local",
+      "path": "/media/527469a63459c3e3a1c629a7.webp",
+      "sha256": "527469a63459c3e3a1c629a7ee5f8a8560ed399ca811de4f57e807eb93fcd9a1",
+      "bytes": 50102
+    },
+    "/images/owlet-vibe-coding-workbench.webp": {
+      "status": "local",
+      "path": "/media/71c0f50ca3a1fb3b3a784d6d.webp",
+      "sha256": "71c0f50ca3a1fb3b3a784d6d445403fa7a8700079a16b66d25e036d01938f145",
+      "bytes": 76288
+    },
+    "/images/owlet-lingdong-family.webp": {
+      "status": "local",
+      "path": "/media/40fd8b2d070f107cd793885a.webp",
+      "sha256": "40fd8b2d070f107cd793885ac5ea3d4114796ae9b36aa8938b33caa19ee72e04",
+      "bytes": 80258
+    },
+    "/images/swiftpm-bundle-module-crash.webp": {
+      "status": "local",
+      "path": "/media/6d2839a8e00a543209a97c75.webp",
+      "sha256": "6d2839a8e00a543209a97c753de535356c1cb94932c4e3caa35aefaef6eeb096",
+      "bytes": 44818
+    },
+    "/images/swiftpm-bundle-module-crash-1.webp": {
+      "status": "local",
+      "path": "/media/92d1dea592b43660f0d9fd25.webp",
+      "sha256": "92d1dea592b43660f0d9fd25c947c6b4f5956a56a743ad936ea4cc23e00f36ed",
+      "bytes": 34192
+    },
+    "/images/swiftpm-bundle-module-crash-2.webp": {
+      "status": "local",
+      "path": "/media/9b000341f9b941cb3f4ad78b.webp",
+      "sha256": "9b000341f9b941cb3f4ad78bd8433792d1e56b186ce7340515f39108ea888682",
+      "bytes": 26984
+    },
+    "/images/swiftpm-bundle-module-crash-3.webp": {
+      "status": "local",
+      "path": "/media/b664cf88af6017a6d8e1746c.webp",
+      "sha256": "b664cf88af6017a6d8e1746caecbba9ae5a70338d492c813cc3aa607784e7d4e",
+      "bytes": 79112
+    },
+    "/images/agent-skill-architecture-boundary.webp": {
+      "status": "local",
+      "path": "/media/1e79d6ab430de91142b2eb6b.webp",
+      "sha256": "1e79d6ab430de91142b2eb6bf9d9cae8797d993a9650cf9f1e8fc760fd8c65f8",
+      "bytes": 424780
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/75a15d0bd2cc4096af1a3f76173cbbe1~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/4ee5aa9ab5a469b9d84842a8.png",
+      "sha256": "4ee5aa9ab5a469b9d84842a8c0ceb3caec2a7399d3e9f66d14da67f62c546aee",
+      "bytes": 21261
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bc26d7d429f84564b88b55e9df60fcd7~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/a37897583d09e28e43cd8101.png",
+      "sha256": "a37897583d09e28e43cd81015b68fe0a2862fad4633afffcba52b52eab151044",
+      "bytes": 97261
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c31068ea0bca4d4793e35bdb16d70c0a~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/b2c2a0ec1636d422c9964776.png",
+      "sha256": "b2c2a0ec1636d422c9964776503fed237547da3bc7bba5a8c485d7e1983f2e40",
+      "bytes": 111588
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cf561381232b4690a5d7cd0378c267d7~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/361f02400c112b2991cab891.png",
+      "sha256": "361f02400c112b2991cab891e01de0a37827f7de46b53f6e72a92d47cc5d2345",
+      "bytes": 38968
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/acfe2e957c9545578c7b6990371a3f0b~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/dd6736fef6b45d56890c7f00.png",
+      "sha256": "dd6736fef6b45d56890c7f00c475cb4f2dd98fdceaaf240e50e8bb926b064c4b",
+      "bytes": 35650
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4a9a251834b945c8a882039020f56e4f~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/1dd09b740bd11da1fbc2def1.png",
+      "sha256": "1dd09b740bd11da1fbc2def1406b91212caf45f2d9b7fe1be05970cd65bfba56",
+      "bytes": 35673
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f2c0846bd66747ceab0c09524a209b28~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/b51cceb0f70e9a66f243c7ad.png",
+      "sha256": "b51cceb0f70e9a66f243c7ad09ac066abacddfeacdde4c2b636d54b101dd6be7",
+      "bytes": 18738
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/182c365a0690467cb0bd8b0d1490c175~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/7e0fd53ac3eabb4b64022d07.png",
+      "sha256": "7e0fd53ac3eabb4b64022d07d16148fd63accb77997d2a05fe593d8d2cdf1768",
+      "bytes": 51883
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bb42881e49a94456aeac417f6b5cba71~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/5eeea82610b288af30b99377.png",
+      "sha256": "5eeea82610b288af30b993770191bcc8161f831e015754dbc0b155a689d684e0",
+      "bytes": 54116
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5e796fcf81b64fd7a18d9c3e36fbefdf~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/735deec732e117c530ead500.png",
+      "sha256": "735deec732e117c530ead5006a6c09a93aea2078ba8af8b1207fd784f6993d3f",
+      "bytes": 151886
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/917b7742991640c9a0b03314cef24ce6~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/00d6cf33da6cf0f1a5fb9ff3.png",
+      "sha256": "00d6cf33da6cf0f1a5fb9ff34be0ce1ec72a83f49dd264f3b3a1534dbb10fad4",
+      "bytes": 79652
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4b51c79ee1344b6f92a3f2efaf9ef7aa~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/4af9ccc6f2c8eca3b27f0c8a.png",
+      "sha256": "4af9ccc6f2c8eca3b27f0c8a0888ed0fc47e9f92cc9137a7ca88507936af3290",
+      "bytes": 44932
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ba86286be7fc41f4b8325a3e0be0d2d2~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/fa5c7f6039b44b34c23609b4.png",
+      "sha256": "fa5c7f6039b44b34c23609b4f2ae753112b4370cf7189dc1c63dca97f697f9d5",
+      "bytes": 57879
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d4b3b6f2522643fb9bc574e2f9982775~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/02d62f06e1b27fa3f0c8c7f8.png",
+      "sha256": "02d62f06e1b27fa3f0c8c7f8de1094993dc38c7b42fa1b784eb7a7e49888ae5d",
+      "bytes": 7558
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d85ad985232542f587376e5073feb1a1~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/480d5222d7b4a2e79b18ec20.png",
+      "sha256": "480d5222d7b4a2e79b18ec207874fc0e49301db253e76fcd53ae0a0127f28342",
+      "bytes": 39605
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c32c8b374b534d6fac1cb552287de6ca~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/da525654b2b9c74675b173d6.png",
+      "sha256": "da525654b2b9c74675b173d64f76a36716f2db4eca7e6d1ca07a4f8a5aff6368",
+      "bytes": 51563
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5160d0c76536441b8d1ac3cfcedc0d0e~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/e43f8bbb139336624e9e19a1.gif",
+      "sha256": "e43f8bbb139336624e9e19a1e9bd3b55cb50866b360e6a436a35a379a7f7bd07",
+      "bytes": 1734590
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ac7d2ab498b2469486e8f237fc3b7997~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/73f20dcfa3540389e30188a6.png",
+      "sha256": "73f20dcfa3540389e30188a66d29e74df5ea85decceda75b33a43aaa9a3ce31f",
+      "bytes": 372837
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/91ae0fdbff7043db9513e539640fcc2e~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/831632f1c2d212639d3b23a7.png",
+      "sha256": "831632f1c2d212639d3b23a7ba2b55365de4c884d701853cbca5a57325d9bc50",
+      "bytes": 424466
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0dd7dd37db954d84925ac1c0f60cb965~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/109329ea285a8804f4e1d537.gif",
+      "sha256": "109329ea285a8804f4e1d53745c20606f356a21ef0dc577c12e22da2db3b1ddc",
+      "bytes": 1760702
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/08c060326c954849b3eb2d34f2e6b0e5~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/43a7a4e3fc13084b75936165.png",
+      "sha256": "43a7a4e3fc13084b7593616504486aca56f1e218eb0617b3460a9731b2947b31",
+      "bytes": 59306
+    },
+    "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9b3f6212f0124f4fab8b70dfeeb40c25~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/96ba2898d93218f4ecc913a3.png",
+      "sha256": "96ba2898d93218f4ecc913a3cba38a8a6f3a47789d84ffa2827e85ee411f9c28",
+      "bytes": 76225
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f3856a691a73409c8533fa9dd1966357~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/272e5d097f28feba76b26eaa.png",
+      "sha256": "272e5d097f28feba76b26eaa8e698bc758e6d9544388550276adf030ad4b863d",
+      "bytes": 19785
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/aa80c1603b2e4482883fe39e1b44f62e~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/64fafacf5f7090e44facb87d.png",
+      "sha256": "64fafacf5f7090e44facb87d56ef29300617a9db324ed9cdbe50e10926ff1889",
+      "bytes": 454286
+    },
+    "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3d2828ea83804d3bb53a0563eaf429bd~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/611d00f6f35a5b5c3f14549c.png",
+      "sha256": "611d00f6f35a5b5c3f14549c925c20dbf3f7f55b407cb54be893cea502869f1d",
+      "bytes": 66660
+    },
+    "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ba82260550904406b4224734761c2f5e~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/15a4e231d1c8df9c0826f06a.png",
+      "sha256": "15a4e231d1c8df9c0826f06ac4aa003d48d6fd2d3446277e89d910260c840e63",
+      "bytes": 74146
+    },
+    "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7857ecd166a74331befe791dc677257b~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/23b97814f36a0059778b4076.png",
+      "sha256": "23b97814f36a0059778b40765e3bb35de6c3da0f3941a5e6fc6f8dd33d0e05ec",
+      "bytes": 71263
+    },
+    "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9faf0889b6d64238922bb02c51cf02ff~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/c0b4b833454559071674c24e.png",
+      "sha256": "c0b4b833454559071674c24e9b7eecee24b8d864aade7ffb63168940a78c3957",
+      "bytes": 107516
+    },
+    "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3d8bd23d28b0413b8b3da8119d32dd35~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/468f0d7f69e809ac64235dfd.png",
+      "sha256": "468f0d7f69e809ac64235dfd0a191ea5b25e8bcd42361bff36ad79fc66e1cd28",
+      "bytes": 76814
+    },
+    "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a11e9ce535c54f8bb038599533f0ef9a~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/dfb123c4c5f9a41e93ab258e.png",
+      "sha256": "dfb123c4c5f9a41e93ab258e844e1e3cf305950fe7ee152fc871460ff1c45ac6",
+      "bytes": 350710
+    },
+    "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9e3d3e61ac1c4019ac393b2d1b2c5719~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/95f43bb48bcd8353eb9bf77a.png",
+      "sha256": "95f43bb48bcd8353eb9bf77a32719c069f07a1623268417ebb90b8f18a6d39d9",
+      "bytes": 80462
+    },
+    "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8bed86245d8f485894b0c5e3d9767e9c~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/655b8f4b6d7970927c065f9a.png",
+      "sha256": "655b8f4b6d7970927c065f9aee16cf6e7ba9b0b64a4a1b77f5ea3afd9fd1dc00",
+      "bytes": 216015
+    },
+    "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/193ac9e16cca408383ca7ae2ec503613~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/c344a626d7d248f3751815e8.png",
+      "sha256": "c344a626d7d248f3751815e8267f369e11c26a476b009123e08e750edfb46bde",
+      "bytes": 27496
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1659de97aafd4f87a93993c35ef93195~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/090a096dc85ffefaeca23a50.png",
+      "sha256": "090a096dc85ffefaeca23a5062bed81278efd3bdeed692fa5fc7556e2abd2a09",
+      "bytes": 35968
+    },
+    "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/358737fa32f549f4a9b06a9bcf8903d4~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/ccc7f589c6b9b563c1215179.png",
+      "sha256": "ccc7f589c6b9b563c1215179d94d0f860f1722d61108af19386f9be54332412b",
+      "bytes": 119413
+    },
+    "https://cdn.jsdelivr.net/gh/youngjuning/images/202109211319760.png": {
+      "status": "local",
+      "path": "/media/22a4349b3e57d030b61934fe.webp",
+      "sha256": "22a4349b3e57d030b61934fe34a5d1b152051a0bbca0c79f37849dc57ba5d499",
+      "bytes": 21450
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d66aa3a26a7842d7b2102f3a3ef2b6db~tplv-k3u1fbpfcp-zoom-1.image": {
+      "status": "local",
+      "path": "/media/264aac4e586e367f1d66ef49.png",
+      "sha256": "264aac4e586e367f1d66ef4945a345c01a8fb50a0e03fcf3527aa7f1c49bb05b",
+      "bytes": 29453
+    },
+    "/images/particle-system-confetti-practice.webp": {
+      "status": "local",
+      "path": "/media/dc847e5872ed35c4576aa351.webp",
+      "sha256": "dc847e5872ed35c4576aa35167f9711d885bf82fe267bf7915621a728c7fbdbd",
+      "bytes": 84550
+    },
+    "/images/codex-context-efficiency.webp": {
+      "status": "local",
+      "path": "/media/7bd7f2ec756afff33ffd4e77.webp",
+      "sha256": "7bd7f2ec756afff33ffd4e77631afdd9ea62fb64b1ebb8f5718ccea95ba1e1fb",
+      "bytes": 169130
+    },
+    "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6cc634aefcc5437a86311d1a5ffca3f2~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/4a81297ba96bc053c394eaff.png",
+      "sha256": "4a81297ba96bc053c394eaff76f4b2f024e4d7b557c5abdb71142d2953bc132d",
+      "bytes": 34635
+    },
+    "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/44d93cf3319b4515873197760ac20127~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/65504bea7f137fa6ac86c24d.png",
+      "sha256": "65504bea7f137fa6ac86c24ded248f119e3fd3bce7d0b4f4d97540d9a5ea421d",
+      "bytes": 14295
+    },
+    "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8a04a6009c3d465ca053d2bcc70ede78~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/3480fb40bed6ccd91cac85fe.png",
+      "sha256": "3480fb40bed6ccd91cac85fe16b906024930e28ef5a8f43a4c1165c0bd57bebd",
+      "bytes": 36917
+    },
+    "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/df11db95ab9948ffa796ca1ae0e52a4e~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/da55b8c5ce240e89e721611d.png",
+      "sha256": "da55b8c5ce240e89e721611d79aed910627b728adc620d68b96c3dfa5fecc5b2",
+      "bytes": 52479
+    },
+    "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cb9ebee9c83342449840372366222293~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/35c56e3065668feb0ff95db8.png",
+      "sha256": "35c56e3065668feb0ff95db83b70ee272c5d18123ea740e3d47cafa216d62d9b",
+      "bytes": 52204
+    },
+    "/images/让云雾动起来：聊天界面的分层氛围动画.webp": {
+      "status": "local",
+      "path": "/media/bd1d2421f3e4ce8d88243e41.webp",
+      "sha256": "bd1d2421f3e4ce8d88243e419f14f1b4996860535db5a4e31e4191f0106b0cdd",
+      "bytes": 81258
+    },
+    "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f0033f65290149cf947e41a6735fd914~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/96dfe985da8c95f8a9196737.jpg",
+      "sha256": "96dfe985da8c95f8a9196737fed885140a03d80465ab9b452da4fd07e1913642",
+      "bytes": 109239
+    },
+    "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6bce94fe51be45b68415f42ea977ee78~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/84bb47454127b6d4a4f85aa4.jpg",
+      "sha256": "84bb47454127b6d4a4f85aa4df2c1ecc60b06dc5a22c48b9de408783102525fd",
+      "bytes": 70607
+    },
+    "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7243bd2796204aafb62a75d59d62ee31~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/5363d329db968def3b6dd922.jpg",
+      "sha256": "5363d329db968def3b6dd9226cef3dbb086a8de8dae138110bea835890229132",
+      "bytes": 74080
+    },
+    "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4ce993a4e5634984bc746356585ea242~tplv-k3u1fbpfcp-watermark.image": {
+      "status": "local",
+      "path": "/media/36dae1b5fb67c068079ea1c8.png",
+      "sha256": "36dae1b5fb67c068079ea1c87ec7cc4d9054d81a888d911bf97135cae86fc2a2",
+      "bytes": 207814
+    },
+    "https://i.loli.net/2020/03/29/mUqi9MRt6vT2HIK.png": {
+      "status": "unavailable",
+      "url": "https://i.loli.net/2020/03/29/mUqi9MRt6vT2HIK.png",
+      "reason": "HTTP 404"
+    },
+    "https://i.loli.net/2020/02/21/Sy3OjWBKbMdYgoH.png": {
+      "status": "local",
+      "path": "/media/8b64b96c0fab3dffe8cccacb.png",
+      "sha256": "8b64b96c0fab3dffe8cccacb8a67c01c3c626b811446397b75312e7b7880890d",
+      "bytes": 680810
+    },
+    "https://cdn.jsdelivr.net/gh/youngjuning/images/202111221423159.png": {
+      "status": "local",
+      "path": "/media/d40d97e9799288d5e444795f.png",
+      "sha256": "d40d97e9799288d5e444795f57a4cfcd7d7ca8d99b9966fbbaef605b4ac67182",
+      "bytes": 249742,
+      "downloadUrl": "https://raw.githubusercontent.com/youngjunning/images/main/202111221423159.png"
+    },
+    "https://imgur.com/download/Po1unSh": {
+      "status": "unavailable",
+      "url": "https://imgur.com/download/Po1unSh",
+      "reason": "fetch failed"
+    },
+    "https://user-images.githubusercontent.com/88981/52933895-c0d47600-338f-11e9-9034-11e1ad0c42f1.gif": {
+      "status": "unavailable",
+      "url": "https://user-images.githubusercontent.com/88981/52933895-c0d47600-338f-11e9-9034-11e1ad0c42f1.gif",
+      "reason": "The operation was aborted due to timeout"
+    }
+  }
+}

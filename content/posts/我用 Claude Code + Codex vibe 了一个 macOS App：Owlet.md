@@ -1,12 +1,15 @@
 ---
 id: "f7523c8f3399ed39"
 title: "我用 Claude Code + Codex vibe 了一个 macOS App：Owlet"
-date: "2026-07-10"
 description: "这篇文章记录我用 Claude Code 和 Codex 以 vibe coding 方式做一个 macOS menu-bar 应用的全过程：从最初想“看看我每天烧了多少 token”，到做出 Owlet 这个能实时监控 Claude Code 和 Codex 使用量的小工具。过程中有 AI 双开协作的节奏、把家乡青山湖风景写进配色的执念，也有对 menu-bar app 电量的偏执。"
+date: "2026-07-10"
 topic: "engineering"
 tags: ["Claude Code","Codex","vibe coding","macOS","Swift","Agent","Owlet"]
-cover: "/media/3f68dcdc69b493f676c7.webp"
-source: "https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/%E6%88%91%E7%94%A8%20Claude%20Code%20%2B%20Codex%20vibe%20%E4%BA%86%E4%B8%80%E4%B8%AA%20macOS%20App%EF%BC%9AOwlet.md"
+source: "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E6%88%91%E7%94%A8%20Claude%20Code%20%2B%20Codex%20vibe%20%E4%BA%86%E4%B8%80%E4%B8%AA%20macOS%20App%EF%BC%9AOwlet.md"
+sourceDate: "2026-07-10T02:30:00.000Z"
+cover: "/media/3f68dcdc69b493f676c7aae0.webp"
+assets: {"/images/owlet-vibe-coding-cover.webp":"/media/3f68dcdc69b493f676c7aae0.webp","/images/owlet-vibe-coding-workbench.webp":"/media/71c0f50ca3a1fb3b3a784d6d.webp","/images/owlet-lingdong-family.webp":"/media/40fd8b2d070f107cd793885a.webp","/images/owlet-qingshan-lake-palette.webp":"/media/95b0bcf9974c69d940fe5716.webp"}
+originalBodySha256: "9204eb7c6f8b63d37829a22b3732d752564e354e6ae8290cea33f181f6476fe9"
 ---
 
 过去一个月，我的 Mac 菜单栏里多了一只小猫头鹰。
@@ -17,7 +20,7 @@ source: "https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff
 
 于是就有了 Owlet。
 
-![Owlet 主视觉](/media/3f68dcdc69b493f676c7.webp)
+![Owlet 主视觉](/images/owlet-vibe-coding-cover.webp)
 
 ## 一句话总结
 
@@ -39,7 +42,7 @@ Owlet 的英文意思是“小猫头鹰”。图标是一只像素风猫头鹰�
 
 ## Claude Code 是架构师，Codex 是快枪手
 
-![Claude Code + Codex 双开工作台](/media/71c0f50ca3a1fb3b3a78.webp)
+![Claude Code + Codex 双开工作台](/images/owlet-vibe-coding-workbench.webp)
 
 这个项目里我同时开了两条 AI 线：Claude Code 和 Codex。
 
@@ -64,7 +67,7 @@ Codex 的特点是快，但偶尔会留下一些“看起来能动，但边界�
 
 ## 一个 idea 长出四块屏幕
 
-![Owlet 的灵动家族：灵动岛、灵动卡、灵动栏、灵动板](/media/40fd8b2d070f107cd793.webp)
+![Owlet 的灵动家族：灵动岛、灵动卡、灵动栏、灵动板](/images/owlet-lingdong-family.webp)
 
 Owlet 的 UI 表面不算多，但每一块都有自己的坑：
 
@@ -85,7 +88,7 @@ Owlet 的 UI 表面不算多，但每一块都有自己的坑：
 
 ## 把青山湖写进代码
 
-![Owlet 的青山湖配色体系：蓝雾、湖青、杉绿、雾白、晨光浅金](/media/95b0bcf9974c69d940fe.webp)
+![Owlet 的青山湖配色体系：蓝雾、湖青、杉绿、雾白、晨光浅金](/images/owlet-qingshan-lake-palette.webp)
 
 我是杭州临安人，青山湖就在家门口。Owlet 的视觉方向最后定成了：**像原生 macOS 工具，但从青山湖的湖水、杉林、青山、雾白里取色。**
 

@@ -22,6 +22,12 @@ URL 应为可核验公共原始来源，按移除锚点、utm 参数与尾斜杠
 
 正文只放 `posts/中文标题.md`。frontmatter 包含 id、title、description、date（引号包裹的 YYYY-MM-DD 或 null）、topic、tags，可选 draft: true。topic 为 principles、architecture、engineering、diagnostics、reflections。稳定 ID 用于 `/blog/:id`。草稿排除阅读、搜索、API 知识源与 sitemap；草稿源码仍必须完成脱敏。封面与附件使用公开可访问的资源或本仓库 public 内的资源，不引用内部 CDN。
 
+## 已公开博客的原文迁移
+
+2026-11-01，作者明确要求从 blog.zisheng.pro 筛选有价值的文章，并确认该公开博客无需脱敏。此次 81 篇保留署名、引用、历史日期及原有技术示例；80 篇正文逐字保留，1 篇仅将 GitHub 拦截的一处历史 npm 令牌替换为占位符，并在文章及迁移清单注明。链接、图片和排版在渲染层适配。适用范围由 `blog-migration-2026-11-01.json` 的源提交、文章 ID、原始内容及导入文件的 SHA-256 固定。校验器只对完全匹配的已审阅版本允许历史示例中的路径与 localhost，不将例外扩展到其他文章、记录、收藏或后续改写。凭证检查仍保留。
+
+逐篇取舍见 `docs/博客文章迁移清单-2026-11-01.md` 和 `/blog/migration`。资源来源与内容指纹另存于 `blog-migration-assets-2026-11-01.json`；无法读取的历史图片保留原始链接并在页面标注。原文没有可用封面时补独立标题封面，不把正文配图挪作封面。
+
 ## Skills 清单
 
 `skills.json` 保存经过脱敏审阅的技能用途摘要，格式为 `{ "version": 1, "updatedAt": "YYYY-MM-DD", "skills": [] }`。每项具有稳定 id、公开 name、summary、group（self/adopted）和 sourceUrl（公共来源或 null）。不保存内部原名映射、安装位置、原始指纹、源码和凭证。清单不代表本人使用频率、熟练程度或对引入工具的认可。此数据文件与个人记录、收藏独立维护。

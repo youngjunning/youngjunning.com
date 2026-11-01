@@ -1,12 +1,15 @@
 ---
 id: "659fd45b5fca08f1"
 title: "从高频轮询到按需刷新：本地 Agent 数据面的性能优化"
-date: "2026-07-13"
 description: "Owlet 同时读取 Claude Code JSONL 与 Codex SQLite，并驱动菜单栏、灵动岛、灵动卡和仪表盘。本文复盘最近一轮性能优化：怎样合并高频刷新、拆分不同 UI surface 的 analytics，并避免无变化数据触发 SwiftUI 重绘。"
-topic: "diagnostics"
+date: "2026-07-13"
+topic: "engineering"
 tags: ["Agent","AI Infra","SwiftUI","macOS","Performance","Observability"]
-cover: "/media/6d1730fcdc503ef1838d.webp"
-source: "https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/%E4%BB%8E%E9%AB%98%E9%A2%91%E8%BD%AE%E8%AF%A2%E5%88%B0%E6%8C%89%E9%9C%80%E5%88%B7%E6%96%B0%EF%BC%9A%E6%9C%AC%E5%9C%B0%20Agent%20%E6%95%B0%E6%8D%AE%E9%9D%A2%E7%9A%84%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96.md"
+source: "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%BB%8E%E9%AB%98%E9%A2%91%E8%BD%AE%E8%AF%A2%E5%88%B0%E6%8C%89%E9%9C%80%E5%88%B7%E6%96%B0%EF%BC%9A%E6%9C%AC%E5%9C%B0%20Agent%20%E6%95%B0%E6%8D%AE%E9%9D%A2%E7%9A%84%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96.md"
+sourceDate: "2026-07-13T12:30:00.000Z"
+cover: "/media/6d1730fcdc503ef1838d4b25.webp"
+assets: {"/images/从高频轮询到按需刷新：本地 Agent 数据面的性能优化.webp":"/media/6d1730fcdc503ef1838d4b25.webp"}
+originalBodySha256: "9b7a1b5ce065a71c17cd598c06018627ba6eb43925fc65cdc580cc447a07873b"
 ---
 
 我最近在做 Owlet：一个本地读取 Claude Code 与 Codex 会话记录、展示 Token 和实时活动的 macOS 工具。它的难点不在「能不能把日志读出来」，而在「数据源有任何变化时，怎样既足够快，又不把本地 app 刷成一个持续工作的轮询器」。
