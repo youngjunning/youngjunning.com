@@ -2,6 +2,27 @@
   "version": 1,
   "favorites": [
     {
+      "id": "6a8c3e740f921db5",
+      "kind": "project",
+      "title": "Stagehand：浏览器 AI 自动化 SDK",
+      "url": "https://github.com/browserbase/stagehand",
+      "summary": "浏览器 AI 自动化 SDK；本次核验的 v4 源码提供离散操作、提取和观察，将浏览器生命周期与任务编排交给调用者，并移除原有 agent()。",
+      "reason": "用于比较能力 SDK 与完整任务 Agent 的职责边界，以及浏览器与执行器的组合方式；当前为源码调研，不表示本人已采用或运行验收。",
+      "tags": [
+        "浏览器自动化",
+        "SDK",
+        "架构"
+      ],
+      "savedAt": "2026-11-01",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "官方源码 browserbase/stagehand，commit b7a4b899079f198a0ee78a6dcb62ad02f545cf49；packages/docs/v4/migrations/v3.mdx 与 packages/sdk-ts/package.json，2026-11-01 核对。"
+        }
+      ]
+    },
+    {
       "id": "8838524aac092773",
       "kind": "project",
       "title": "hunch",

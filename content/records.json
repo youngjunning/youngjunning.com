@@ -2,6 +2,28 @@
   "version": 2,
   "records": [
     {
+      "id": "4d1792c6e8b0a35f",
+      "kind": "judgment",
+      "title": "自动化框架架构先独立调研社区方案",
+      "date": "2026-11-01",
+      "recordedAt": "2026-11-01",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "alternatives": [],
+      "outcome": null,
+      "text": "在讨论覆盖浏览器、Android、iPhone 与桌面的 AI 自动化框架时，我要求先尽量全面地调研社区开源的各类 use 方案，再形成架构调研；不要让既有业务 Agent 的实现限定研究出发点。这不代表已经选定某个引擎、语言或分层方案。",
+      "context": "2026-11-01 对跨环境自动化框架研究提出的要求。只记录本人明确的研究范围与依据要求，不将研究过程中形成的建议写成本人已采纳的方案。",
+      "basis": "本人明确要求独立研究社区方案并尽量完整覆盖；未说明更多取舍理由。",
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-01，脱敏公开摘要：要求独立于既有业务实现研究社区开源自动化方案，再形成框架架构调研。"
+        }
+      ]
+    },
+    {
       "id": "b7c93a6d1204e851",
       "kind": "thought",
       "title": "将 Agent 治理纳入三年职业规划",
@@ -203,7 +225,11 @@
       ],
       "label": "客户体验治理 AI Work",
       "role": "具体职责待补充",
-      "tags": ["AI Work", "客户体验治理", "办公"],
+      "tags": [
+        "AI Work",
+        "客户体验治理",
+        "办公"
+      ],
       "status": "unknown",
       "goal": "面向客户体验治理办公场景，建设垂类 AI Work 产品。",
       "outcomes": []
@@ -220,7 +246,12 @@
       "articleId": null,
       "projectId": null,
       "relatedIds": [],
-      "sources": [{"kind": "statement", "label": "本人陈述，2026-10-30，公开摘要。"}],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-10-30，公开摘要。"
+        }
+      ],
       "basis": "本人明确提出引擎因业务而建、自用为本；未进一步说明其他取舍理由。",
       "alternatives": [],
       "outcome": null
@@ -519,7 +550,12 @@
       "articleId": null,
       "projectId": null,
       "relatedIds": [],
-      "sources": [{ "kind": "statement", "label": "俊宁本人陈述，2026-10-30，公开摘要；已移除内部出处。" }],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "俊宁本人陈述，2026-10-30，公开摘要；已移除内部出处。"
+        }
+      ],
       "basis": "本人明确选择；当时未说明其他取舍理由。",
       "alternatives": [],
       "outcome": null
@@ -536,9 +572,16 @@
       "articleId": null,
       "projectId": "c310000000000001",
       "relatedIds": [],
-      "sources": [{ "kind": "statement", "label": "俊宁本人陈述，2026-11-01，公开摘要。" }],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "俊宁本人陈述，2026-11-01，公开摘要。"
+        }
+      ],
       "basis": "Codex 本身已承担会话管理；本人明确选择陪伴工作、学习成长作为 Owlet 的核心，并要求灵动台围绕灵动卡收轻。",
-      "alternatives": ["以 Agent 状态与用量监控为产品核心"],
+      "alternatives": [
+        "以 Agent 状态与用量监控为产品核心"
+      ],
       "outcome": null
     }
   ]
