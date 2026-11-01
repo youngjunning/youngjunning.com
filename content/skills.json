@@ -120,6 +120,258 @@
       "summary": "原生 macOS、SwiftUI 与 Instruments 工作流（含许可改编）",
       "group": "self",
       "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/engineering/macos-app-develop"
+    },
+    {
+      "id": "aab21811ff502661",
+      "name": "ask-matt",
+      "summary": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "4b95a1cba9d0b2fd",
+      "name": "code-review",
+      "summary": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "c6e64460e65639c6",
+      "name": "codebase-design",
+      "summary": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "6bc0f06b1e09fc2b",
+      "name": "diagnosing-bugs",
+      "summary": "Diagnosis loop for hard bugs and performance regressions. Use when the user says \"diagnose\"/\"debug this\", or reports something broken/throwing/failing/slow.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "ab3fa4d2e8159710",
+      "name": "domain-modeling",
+      "summary": "Build and sharpen a project's domain model. Use when discussing codebase terminology, writing or editing a GLOSSARY.md, or recording or editing an ADR.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "67450ff64a987911",
+      "name": "grill-with-docs",
+      "summary": "A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "51fdcdb1866844a5",
+      "name": "implement-spec",
+      "summary": "Implement a specification in code.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "9c8ec5c4298cd301",
+      "name": "implement",
+      "summary": "Implement a piece of work based on a spec or set of tickets.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "a4030dcba17e2614",
+      "name": "improve-codebase-architecture",
+      "summary": "Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "eaa65186f2674477",
+      "name": "prototype",
+      "summary": "Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "5fcb66e273c9c482",
+      "name": "research",
+      "summary": "Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "e78d08b19fe45640",
+      "name": "retro",
+      "summary": "Conduct a retrospective on a coding session.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "bef8a0f6560364d1",
+      "name": "setup-matt-pocock-skills",
+      "summary": "Configure this repo for the engineering skills: set up its issue tracker, triage label vocabulary, and domain doc layout. Run once before first use of the other engineering skills.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "7fadc6caa635ac31",
+      "name": "tdd",
+      "summary": "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "53b31e1844eb44ef",
+      "name": "to-spec",
+      "summary": "Turn the current conversation into a spec and publish it to the project issue tracker: no interview, just synthesis of what you've already discussed.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "a7bfcce46291b2d1",
+      "name": "to-tickets",
+      "summary": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker (edges as text in one file per ticket locally, or native blocking links on a real tracker).",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "f6683ee9b34b6ff2",
+      "name": "triage",
+      "summary": "Move issues and external PRs through a state machine of triage roles, categorise, verify, grill if needed, and write agent-ready briefs.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "933b01c155501793",
+      "name": "wayfinder",
+      "summary": "Plan a huge chunk of work (more than one agent session can hold) as a shared map of decision tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "ddd36e60b52ea3e1",
+      "name": "wizard",
+      "summary": "Generate an interactive bash wizard that walks a human through steps only they can perform. Use when provisioning infrastructure, setting up credentials or CI secrets, walking an unfamiliar third-party dashboard, or running a one-off migration or cutover. Don't invoke this for steps the agent can perform itself.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "da0e4b95a6cfb873",
+      "name": "claude-handoff",
+      "summary": "Hand the current conversation off to a fresh background agent that picks up the work immediately.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "a26f9265b5b8ccd6",
+      "name": "loop-me",
+      "summary": "Grill me about specs for the workflows I want to build, within this workspace.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "b12afc55e68ef0ae",
+      "name": "setup-ts-deep-modules",
+      "summary": "Wire dependency-cruiser into a TypeScript repo so each package is a deep module, with implementation hidden in subfolders and reachable only through its entry-point files. User-invoked.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "3d51b6539ec5a255",
+      "name": "writing-beats",
+      "summary": "Writing, exploit; assemble raw material into a journey of beats, grounding each term before a beat leans on it.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "ded57a84b0559fb7",
+      "name": "writing-fragments",
+      "summary": "Writing, explore: mine raw fragments, no structure yet.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "27b72f7dedafa9cf",
+      "name": "writing-shape",
+      "summary": "Writing, exploit: shape raw material into an article, paragraph by paragraph.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "355d3c657cbf8025",
+      "name": "git-guardrails-claude-code",
+      "summary": "Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execute. Use when user wants to prevent destructive git operations, add git safety hooks, or block git push/reset in Claude Code.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "8ee8f1d48c5edaae",
+      "name": "migrate-to-shoehorn",
+      "summary": "Migrate test files from `as` type assertions to @total-typescript/shoehorn. Use when user mentions shoehorn, wants to replace `as` in tests, or needs partial test data.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "ca7e179eddd86ee8",
+      "name": "scaffold-exercises",
+      "summary": "Create exercise directory structures with sections, problems, solutions, and explainers that pass linting. Use when user wants to scaffold exercises, create exercise stubs, or set up a new course section.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "59b07a90f4921e71",
+      "name": "setup-pre-commit",
+      "summary": "Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests in the current repo. Use when user wants to add pre-commit hooks, set up Husky, configure lint-staged, or add commit-time formatting/typechecking/testing.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "f55c8f3e9c5abe94",
+      "name": "grill-me",
+      "summary": "A relentless interview to sharpen a plan or design.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "67a2abd2be2f11fa",
+      "name": "grilling",
+      "summary": "Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "2bc25297e070a67f",
+      "name": "handoff",
+      "summary": "Compact the current conversation into a handoff document for another agent to pick up.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "564e22d7324f10ca",
+      "name": "teach",
+      "summary": "Teach the user a new skill or concept, within this workspace.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "3806644a5b3db1fd",
+      "name": "to-questionnaire",
+      "summary": "Turn a decision you can't fully answer into a questionnaire for someone else to fill in.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "3d1b6852b2f4f632",
+      "name": "wait-what",
+      "summary": "Stop. That last message did not land: re-pitch it.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
+    },
+    {
+      "id": "da845917d2b914ae",
+      "name": "writing-for-agents",
+      "summary": "Writing documents for agents. Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/mattpocock/skills"
     }
   ]
 }
