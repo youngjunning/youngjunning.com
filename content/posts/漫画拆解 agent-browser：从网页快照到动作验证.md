@@ -1,7 +1,7 @@
 ---
 id: "dff562e8ee3009c3"
 title: "漫画拆解 agent-browser：从网页快照到动作验证"
-description: "通过 snapshot 原理漫画与公开源码，拆解 agent-browser 的语义观察、元素引用、动作执行与结果核验边界。"
+description: "通过 snapshot 原理漫画与公开源码，拆解 agent-browser 的语义观察、页面观察裁剪、元素引用、动作执行与结果核验边界。"
 date: "2026-11-01"
 topic: "principles"
 tags: ["agent-browser","Browser Agent","Accessibility Tree","CDP","漫画"]
@@ -15,9 +15,9 @@ cover: "/media/dff562e8ee3009c3-2349ee6855132176.webp"
 
 给 Agent 一句“查一下《网络基础》有没有库存”，需要完成的是一串具体工作：打开书店，找到搜索框，填入书名，触发查询，再确认结果对应的是这本书。网页上的某次点击成功，只能证明一个动作完成了，距离回答用户的问题还差一次结果核对。
 
-agent-browser 把观察网页和操作浏览器整理成了命令行接口。这篇借小蓝和小南的一次查询，把这些接口串成一个完整任务，再说明工具与 Agent 各自承担什么。漫画中的书店、库存和命令输出均为教学示意，不是实际业务执行记录。
+agent-browser 把观察网页和操作浏览器整理成了命令行接口。这篇借小界和小南的一次查询，把这些接口串成一个完整任务，再说明工具与 Agent 各自承担什么。漫画中的书店、库存和命令输出均为教学示意，不是实际业务执行记录。
 
-![封面：小蓝和小南一起查看浏览器中的书店页面](/media/dff562e8ee3009c3-2349ee6855132176.webp)
+![封面：小界和小南一起查看浏览器中的书店页面](/media/dff562e8ee3009c3-2349ee6855132176.webp)
 
 ## 一句话总结
 
@@ -31,9 +31,9 @@ agent-browser 把观察网页和操作浏览器整理成了命令行接口。这
 
 *（此版本省略该配图。）*
 
-小蓝拿到的是业务目标：“查《网络基础》的库存。”小南需要把这个目标落实到页面控件：哪个输入框接受书名，哪个按钮发起查询，哪里能读到结果。
+小界拿到的是业务目标：“查《网络基础》的库存。”小南需要把这个目标落实到页面控件：哪个输入框接受书名，哪个按钮发起查询，哪里能读到结果。
 
-打开网页之后，`snapshot` 返回一份带引用的紧凑无障碍语义快照。角色和名称帮助 Agent 判断控件用途，引用则用于后续命令。`snapshot -i` 会过滤出交互元素，适合先找输入框、链接和按钮。[快照选项](https://agent-browser.dev/snapshots)
+打开网页之后，`snapshot` 返回一份带引用的紧凑无障碍语义快照。角色和名称帮助 Agent 判断控件用途，引用则用于后续命令。`snapshot -i` 偏向可引用的操作目标，适合先找输入框、链接和按钮；具体保留范围见后文的裁剪说明。[快照选项](https://agent-browser.dev/snapshots)
 
 下面将漫画中的操作写成命令。`book.example` 是示意域名，引用编号也是示例；实际使用时必须换成目标页面，并读取真实快照。
 
@@ -59,7 +59,7 @@ agent-browser click @e2
 
 ![snapshot 原理上篇：CLI 交给后台、浏览器维护语义树、CDP 读取及元素引用表](/media/dff562e8ee3009c3-eff0ee1853818ae1.webp)
 
-浏览器根据 DOM、原生 HTML 语义、ARIA 属性及元素状态维护无障碍语义。工具通过 `Accessibility.getFullAXTree` 取得节点信息，再组织角色、名称、状态和层级。指定 `-s` 时，会结合目标 DOM 子树筛选范围。生成引用时，后台保留引用与节点、frame 和文档的关联；后续文本中出现的 `@e1` 因而能回到浏览器中的具体目标。[固定版本快照源码](https://github.com/vercel-labs/agent-browser/blob/5868f7c05020e047c00e68e4abf9253cce864f41/cli/src/native/snapshot.rs#L428)
+AX 是 Accessibility（无障碍）的常用缩写，AX Tree 即 Accessibility Tree，无障碍树。浏览器根据 DOM、原生 HTML 语义、ARIA 属性及元素状态维护这份语义表示。工具通过 `Accessibility.getFullAXTree` 取得节点信息，再组织角色、名称、状态和层级。指定 `-s` 时，会结合目标 DOM 子树筛选范围。生成引用时，后台保留引用与节点、frame 和文档的关联；后续文本中出现的 `@e1` 因而能回到浏览器中的具体目标。[固定版本快照源码](https://github.com/vercel-labs/agent-browser/blob/5868f7c05020e047c00e68e4abf9253cce864f41/cli/src/native/snapshot.rs#L428)
 
 ![snapshot 原理下篇：过滤输出、click 查表定位、引用失效，以及 Playwright 对照](/media/dff562e8ee3009c3-f7ebdd5f6ec7f599.webp)
 
@@ -68,6 +68,67 @@ agent-browser click @e2
 执行 `click @e2` 时，后台解析此前保存的引用，优先尝试关联的缓存节点，再进入元素定位和可操作性处理。节点替换或文档导航会影响这项关联；角色与名称恢复存在歧义时应停止动作。引用让观察和动作有了对应关系，业务对象与最终结果仍需调用方核对。[固定版本引用解析源码](https://github.com/vercel-labs/agent-browser/blob/5868f7c05020e047c00e68e4abf9253cce864f41/cli/src/native/element.rs#L425)
 
 Playwright 同样提供 `locator.ariaSnapshot()`；当前文档中的 `mode: "ai"` 还支持带引用的 AI 快照。因此，agent-browser 的价值主要在于把观察、引用、动作命令和跨命令会话管理配套提供。两套 API 的快照引用各自属于其工具上下文，不能拿一套工具生成的编号去调用另一套工具。[Playwright 快照 API](https://playwright.dev/docs/api/class-locator#locator-aria-snapshot)
+
+## 所谓“DOM 剪枝”，实际裁剪的是页面观察
+
+面对节点很多的页面，首先要区分三个对象：浏览器正在运行的 DOM、浏览器维护的 AX 语义树，以及最后送给模型的文本快照。本文这条路径更适合称为**页面观察裁剪**，具体包括语义投影、结构压缩和快照输出过滤。这些处理不会把网页里的 DOM 节点删除，也不会改变页面的业务状态。
+
+这里继续以本文固定的 `0.41.1` Chrome 原生实现为依据，补充核验日期为 2026 年 11 月 2 日。漫画中的卡片和书店结果都是教学示意。
+
+![页面观察裁剪上篇：观察副本、AX 简称、包装压平与文本合并](/media/dff562e8ee3009c3-pruning-1-336cd34553e7.webp)
+
+### 先做语义投影，再压缩结构
+
+从 DOM 换到 AX Tree，是把页面表达成角色、名称和状态等语义信息，不是逐字缩短 HTML。随后，工具跳过部分包装节点自身，继续遍历它们的孩子；压平符合条件的单子 `generic` 容器；合并连续 `StaticText`，清除空文本和部分父子重复文本。跳过包装仍须让有效子节点进入观察，不能把整个有用分支一起丢掉。[结构整理与遍历源码](https://github.com/vercel-labs/agent-browser/blob/5868f7c05020e047c00e68e4abf9253cce864f41/cli/src/native/snapshot.rs#L1088)
+
+这些都是工具代码执行的规则。哪些内容对“查库存”有业务意义，需要上层根据任务选择观察范围和读取方式。
+
+### 按范围和用途过滤，保留必要的上下文
+
+| 选项 | 裁剪方式 | 使用时要核对什么 |
+| --- | --- | --- |
+| `-s "#results"` | 组织指定 DOM 子树对应的观察 | 目标、状态和结果是否都在范围内 |
+| `-d 5` | 限制输出展示层级 | 深层的控件或证据是否被截掉 |
+| `-c` | 保留有引用、文本或值等内容的行及其祖先链，去掉空分支 | 紧凑输出是否仍能说明内容属于哪个区域 |
+| `-i` | 按可引用节点过滤输出，偏向操作目标 | 普通结果正文和错误提示是否消失 |
+
+官方文档把 `-i` 概括为交互元素模式。但本文固定源码用的是 `has_ref` 条件，表格单元格及部分具名标题、区域也能获得引用，因此不能将它理解为“严格只剩可点击控件”。普通文字仍可能被过滤；“快照没出现”不能证明“页面没有”。[官方选项](https://agent-browser.dev/snapshots#options)、[引用分配](https://github.com/vercel-labs/agent-browser/blob/5868f7c05020e047c00e68e4abf9253cce864f41/cli/src/native/snapshot.rs#L488)、[输出与紧凑处理](https://github.com/vercel-labs/agent-browser/blob/5868f7c05020e047c00e68e4abf9253cce864f41/cli/src/native/snapshot.rs#L1222)
+
+![页面观察裁剪下篇：范围过滤、库存与对象身份、状态证据和渐进展开](/media/dff562e8ee3009c3-pruning-2-c9ff0c081a7b.webp)
+
+### 哪些信息不能因为“不能点击”就丢掉
+
+假设书店把结果标题暴露为 heading，把库存暴露为普通文本，观察可以简化表示如下。编号和值均为说明风险的例子，不是实测输出：
+
+```text
+- heading "网络基础（精装版）" [ref=e7]
+- StaticText "库存：3 本"
+- button "购买" [ref=e8]
+```
+
+过滤后即使标题和购买按钮都留下了，库存文字仍可能消失。按钮可以定位，只说明存在一个动作目标，不能据此回答“有货”。裁剪策略至少要保住当前任务需要的三类信息：
+
+1. **动作目标与上下文**：输入框、按钮、关联标签及所属区域，避免同名控件之间失去区分。
+2. **业务对象身份**：书名、版本、规格及结果行的对应关系，避免把其他对象的库存接到当前对象上。
+3. **结果与约束证据**：库存、价格、加载状态、禁用或选中状态、错误提示及失败原因。保留哪些字段由任务决定，不要求每次把全部页面都读进来。
+
+DOM 节点引用也不能替代第二类信息：列表可能复用同一个节点展示另一条记录。引用仍可解析时，业务对象仍需重新核对。
+
+### 信息不足就展开，验证后再结束
+
+对于这个示意书店，可以先读操作目标，再读取结果区域。以下假设已经确认结果容器的真实选择器是 `#results`：
+
+```bash
+agent-browser snapshot -i
+# 填写、查询后重新观察；读取结果时不带 -i
+agent-browser snapshot -s "#results" -c
+# 若还缺证据，取消紧凑过滤或扩大范围
+agent-browser snapshot -s "#results"
+```
+
+观察仍不完整时，再读取已确认的结果节点文本，或结合截图检查图标、遮挡与布局。任务相关性选择和扩大观察的决策属于上层执行循环，不能假定 agent-browser 会自动理解库存验收标准。
+
+还要分别衡量采集成本与模型输入成本：本文固定实现读取 `getFullAXTree` 后再组织输出。`-i/-c/-d` 让快照变短，不代表浏览器采集成本同比下降。评价观察裁剪，应同时检查目标控件能否找到、业务证据是否完整、任务是否正确完成，再比较 token 和延迟。
 
 ## `@ref` 绑定页面元素，业务身份仍需核对
 
@@ -90,7 +151,7 @@ Playwright 同样提供 `locator.ariaSnapshot()`；当前文档中的 `mode: "ai
 
 *（此版本省略该配图。）*
 
-查询触发后，下一步通常是读取结果。这里有一个实际影响验收的过滤条件：`snapshot -i` 只保留交互元素，“有货”这样的普通结果文字可能被排除。找动作目标时可以压缩观察，检查业务结果时则需要保留相关正文、状态或表格内容，不能把“交互快照里没出现”理解为“页面没有”。
+查询触发后，下一步通常是读取结果。这里有一个实际影响验收的过滤条件：`snapshot -i` 偏向可引用的操作目标，“有货”这样的普通结果文字可能被排除；某些标题和表格单元格能够留下，也不保证所需字段完整。找动作目标时可以压缩观察，检查业务结果时则需要保留相关正文、状态或表格内容，不能把“交互快照里没出现”理解为“页面没有”。
 
 漫画中重新读取完整快照，假设结果标题（heading）包含“网络基础：有货”，并获得引用 `@e7`，才继续读取它的文本。普通文本并不保证获得独立引用，实际使用时要依据快照中暴露的结果标题、区域或表格单元格定位内容：
 
@@ -167,9 +228,11 @@ agent-browser 适合为已经具备命令调用能力的 Agent 提供统一的�
 
 ## 资料与核验范围
 
-本文是基于官方文档与固定源码版本的机制解析，漫画为原创教学插画。未宣称执行真实书店查询，也未把本文内容视为小蓝项目已经接入该上游版本的证明。
+本文是基于官方文档与固定源码版本的机制解析，漫画为原创教学插画。未宣称执行真实书店查询，也不构成任何具体产品已经接入该上游版本的证明。
 
 - [agent-browser 官方仓库，核验提交 5868f7c](https://github.com/vercel-labs/agent-browser/tree/5868f7c05020e047c00e68e4abf9253cce864f41)
 - [Snapshots：过滤、引用生命周期和标注截图](https://agent-browser.dev/snapshots)
 - [Sessions：状态、隔离和共享浏览器](https://agent-browser.dev/sessions)
 - [Installation：安装与环境准备](https://agent-browser.dev/installation)
+
+> 本文使用 [writting-skill](https://github.com/youngjunning/skills/tree/main/skills/writing/writting-skill) 辅助写作，配图使用 [better-imagegen](https://github.com/youngjunning/skills/tree/main/skills/design/better-imagegen) 生成。项目已开源，欢迎在 GitHub 点个 Star。
