@@ -8,7 +8,7 @@ export default function MigrationPage() {
     <Link className="back-link" href="/blog">← 返回文章</Link>
     <h1>博客迁移清单</h1>
     <p>旧官网知识库的迁移另见 <Link href="/blog/website-migration">官网迁移清单：11 篇笔记、2 份参考资料及 80 份未迁移材料</Link>。</p>
-    <p>2026-11-01 核对 blog.zisheng.pro 的 {migration.counts.reviewed} 篇文章：新增 {migration.counts.migrated} 篇，更新已有 {migration.counts.updated} 篇，未迁移 {migration.counts.excluded} 篇。旧博客保留原样。</p>
+    <p>2026-11-01 核对 blog.zisheng.pro 的 {migration.counts.reviewed} 篇文章：新增 {migration.counts.migrated} 篇，更新已有 {migration.counts.updated} 篇，未迁移 {migration.counts.excluded} 篇。旧博客仓库已归档，原部署已停止；官网与博客统一由 youngjunning.com 承接，归档源码继续保留文章出处。</p>
     <p>保留具体实现、诊断、技术取舍、长期方法与个人复盘。80 篇正文逐字保留，1 篇仅替换一处历史 npm 令牌；原始日期、署名和引用保留；历史版本的操作与结论按当时语境阅读。未迁移不等于没有价值，下面逐篇列出这次的取舍。</p>
     <p><a href="#excluded">查看未迁移清单 ↓</a> · <a href="#included">查看已迁移清单 ↓</a></p>
     <h2 id="excluded">未迁移：{excluded.length} 篇</h2>

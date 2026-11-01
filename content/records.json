@@ -2,6 +2,26 @@
   "version": 2,
   "records": [
     {
+      "id": "67b389c20d1f8a45",
+      "kind": "change",
+      "title": "官网与博客统一由硅基俊宁承接",
+      "text": "我决定由 youngjunning.com 取代原个人官网与博客的维护地位。完成内容筛选迁移后，归档 blog.zisheng.pro 仓库，删除旧博客的 Vercel 项目，并清理本地 Codex 中仍将旧博客作为写作与发布目标的记录。今后的公开文章、简历与个人记录统一在硅基俊宁维护。",
+      "context": "2026-11-01，在旧博客和原官网的有价值内容迁入硅基俊宁后，明确退休旧博客并切换维护入口。历史来源继续由归档仓库与迁移清单保留。",
+      "date": "2026-11-01",
+      "recordedAt": "2026-11-01",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": ["f604bcfbe98aa301"],
+      "subjectId": "f604bcfbe98aa301",
+      "before": "硅基俊宁已建立，旧个人官网与博客仍保留各自的维护定位。",
+      "after": "官网与博客的当前维护入口统一为 youngjunning.com，旧博客转为历史归档。",
+      "reason": "本人明确要求以新站取代旧站地位；未陈述其他取舍理由。",
+      "sources": [
+        {"kind": "statement", "label": "本人陈述，2026-11-01，公开摘要：归档旧博客仓库，删除旧博客的 Vercel 项目，清理相关本地 Codex 记忆，由 youngjunning.com 取代。"}
+      ]
+    },
+    {
       "id": "c7a148d0b5329e64",
       "kind": "judgment",
       "title": "用统一仓库维护可公开的技能体系",

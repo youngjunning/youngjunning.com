@@ -4,9 +4,11 @@
 
 UI 基于 [Magic UI](https://magicui.design/)，使用适配的 BlurFade 与 BentoGrid，保留来源和 MIT 许可。使用 Next.js、React、Tailwind CSS 与 Motion。
 
-首轮从旧博客与个人知识库精选 5 篇完整文章，蒸馏 12 条有依据的个人记录，整理 9 项文章或知识资料收藏；另保留本轮公开站定位记录和 Magic UI 组件来源，共 13 条记录、10 项收藏。筛选范围与出处见 [整理清单](content/curation-2026-10-30.json)。旧项目保持原样。
+首轮从旧博客与个人知识库精选 5 篇完整文章，蒸馏 12 条有依据的个人记录，整理 9 项文章或知识资料收藏；另保留本轮公开站定位记录和 Magic UI 组件来源，共 13 条记录、10 项收藏。首轮筛选范围与出处见 [整理清单](content/curation-2026-10-30.json)，后续迁移见下方清单。
 
 2026-11-01 完成历史博客全量筛选：238 篇中新增 76 篇、更新原有 5 篇，157 篇未迁移。按作者要求保留原文：80 篇逐字一致，1 篇仅将 GitHub 拦截的一处历史 npm 令牌替换为占位符；保留理由、未迁移原因及图片读取结果见 [完整迁移清单](docs/博客文章迁移清单-2026-11-01.md)，站内入口为 `/blog/migration`。原始文件、导入正文和资源均有 SHA-256 校验记录。
+
+2026-11-01，原官网知识库核对 93 份材料，迁入 11 篇学习笔记、整理 2 份参考资料，80 份不迁移；逐项理由见 [官网知识库迁移清单](docs/官网知识库迁移清单-2026-11-01.md)。个人官网与博客的维护入口已统一为 youngjunning.com。旧博客 [youngjunning/blog.zisheng.pro](https://github.com/youngjunning/blog.zisheng.pro) 已归档，原 Vercel 项目已删除；归档仓库与迁移清单继续提供历史来源，当前写作与发布均在本仓库完成。
 
 ## 本地运行
 
@@ -42,7 +44,7 @@ npm run build
 npm start
 ```
 
-构建与运行采用标准 Next.js Node.js 部署。2026-11-01 已部署到 Vercel 项目 `youngjunning-com`，连接本仓库的 GitHub 自动部署，并绑定正式域名 `youngjunning.com`；平台地址为 `youngjunning-com.vercel.app`。阿里云继续管理 DNS，根域名使用 Vercel 推荐的 A 记录。域名解析目标可能调整，后续以项目 Domains 页面为准。
+构建与运行采用标准 Next.js Node.js 部署。2026-11-01 已部署到 Vercel 项目 `youngjunning.com`，连接本仓库的 GitHub 自动部署，并绑定正式域名 `youngjunning.com`；平台地址为 `youngjunning-com.vercel.app`。阿里云继续管理 DNS，根域名使用 Vercel 推荐的 A 记录。域名解析目标可能调整，后续以项目 Domains 页面为准。
 
 生产环境单独配置 `DEEPSEEK_API_KEY`、`DEEPSEEK_BASE_URL` 与 `DEEPSEEK_MODEL`，提供 `/api/chat` 所需的服务端模型配置。本地环境文件不随部署上传；`.vercel` 项目关联文件不提交。文章、封面和内容数据推送到 `main` 后，由 Vercel 构建发布；推送成功仍需核对部署结果和线上页面。回退使用 Vercel 中的上一份可用部署。
 
