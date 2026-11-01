@@ -2,6 +2,28 @@
   "version": 2,
   "records": [
     {
+      "id": "c5be66eacea42998",
+      "kind": "judgment",
+      "title": "公开官网采用本地检索与独立模型服务",
+      "text": "我决定在硅基俊宁移除 GBrain，优化本地轻量检索；公开对话使用独立的 DeepSeek 服务。",
+      "context": "2026-11-02，在讨论普通文档检索的效果、成本和工作方式后，明确公开官网的检索与模型选择。",
+      "date": "2026-11-02",
+      "recordedAt": "2026-11-02",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "basis": "本人先询问 GBrain 与轻量检索的效果、成本和逻辑，随后明确要求公开站移除 GBrain 并使用 DeepSeek；未陈述量化理由。",
+      "alternatives": ["继续使用 GBrain"],
+      "outcome": null,
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-02，公开摘要：公开站移除 GBrain，采用轻量检索并使用 DeepSeek。"
+        }
+      ]
+    },
+    {
       "id": "67b389c20d1f8a45",
       "kind": "change",
       "title": "官网与博客统一由硅基俊宁承接",
