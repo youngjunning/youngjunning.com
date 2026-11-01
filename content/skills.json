@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "skills": [
     {
       "id": "df18c7b59a42e630",
@@ -12,7 +12,7 @@
     {
       "id": "5c6ca4fa2d004a71",
       "name": "writting-skill",
-      "summary": "辅助中英文文章、技术文档与书稿的起草和修订。先明确读者、目的与事实来源，再检查结构、论证、文风和证据边界；按发表场景调整选题，区分技术新意、真实使用问题、实现机制与可验证结果。",
+      "summary": "辅助中英文文章、技术文档与书稿的起草和修订，检查结构、论证、文风和证据边界。漫画文章同时维护正文与分镜，使用 better-imagegen 生成场景，附小界与小南的人设、肖像和全身参考图，保持角色一致并核对技术文字。",
       "group": "self",
       "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/writing/writting-skill"
     },
