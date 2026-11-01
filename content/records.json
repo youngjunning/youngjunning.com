@@ -2,6 +2,167 @@
   "version": 2,
   "records": [
     {
+      "id": "3dbdd5474e1c78f0",
+      "kind": "experience",
+      "title": "转型 AI 应用开发",
+      "date": null,
+      "recordedAt": "2026-11-01",
+      "text": "2025 年转型 AI 应用开发。",
+      "context": "2026-11-01 本人补充的学习与职业阶段。保留原始年份精度，不补充具体月份或未经陈述的成果。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-01，公开摘要。"
+        }
+      ],
+      "period": "2025",
+      "start": "2025",
+      "end": null,
+      "ongoing": false
+    },
+    {
+      "id": "645ffcb8571f09e2",
+      "kind": "experience",
+      "title": "进入互联网公司，从事全栈开发",
+      "date": null,
+      "recordedAt": "2026-11-01",
+      "text": "2023 年进入互联网公司，从事全栈开发。",
+      "context": "2026-11-01 本人补充的学习与职业阶段。保留原始年份精度，不补充具体月份或未经陈述的成果。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-01，公开摘要。"
+        }
+      ],
+      "period": "2023",
+      "start": "2023",
+      "end": null,
+      "ongoing": false
+    },
+    {
+      "id": "d0e32b6cef8c2096",
+      "kind": "experience",
+      "title": "成为跨端开发专家",
+      "date": null,
+      "recordedAt": "2026-11-01",
+      "text": "2020 年成为跨端开发专家。",
+      "context": "2026-11-01 本人补充的学习与职业阶段。保留原始年份精度，不补充具体月份或未经陈述的成果。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-01，公开摘要。"
+        }
+      ],
+      "period": "2020",
+      "start": "2020",
+      "end": null,
+      "ongoing": false
+    },
+    {
+      "id": "6cd67f5e3831e729",
+      "kind": "experience",
+      "title": "开始 React Native 开发",
+      "date": null,
+      "recordedAt": "2026-11-01",
+      "text": "2018 年开始从事 React Native 开发相关工作。",
+      "context": "2026-11-01 本人补充的学习与职业阶段。保留原始年份精度，不补充具体月份或未经陈述的成果。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-01，公开摘要。"
+        }
+      ],
+      "period": "2018",
+      "start": "2018",
+      "end": null,
+      "ongoing": false
+    },
+    {
+      "id": "472350ea696ce720",
+      "kind": "experience",
+      "title": "开始小程序开发",
+      "date": null,
+      "recordedAt": "2026-10-29",
+      "text": "2017 年开始从事小程序开发相关工作。",
+      "context": "2026-11-01 本人补充的学习与职业阶段。保留原始年份精度，不补充具体月份或未经陈述的成果。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-01，公开摘要。"
+        }
+      ],
+      "period": "2017",
+      "start": "2017",
+      "end": null,
+      "ongoing": false
+    },
+    {
+      "id": "2b49382ec57d9d49",
+      "kind": "experience",
+      "title": "网络工程工作与自学前端",
+      "date": null,
+      "recordedAt": "2026-11-01",
+      "text": "2016–2017 年从事网络工程相关工作，并自学前端。",
+      "context": "2026-11-01 本人补充的学习与职业阶段。保留原始年份精度，不补充具体月份或未经陈述的成果。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-01，公开摘要。"
+        }
+      ],
+      "period": "2016–2017",
+      "start": "2016",
+      "end": "2017",
+      "ongoing": false
+    },
+    {
+      "id": "6a3d89dce922153e",
+      "kind": "experience",
+      "title": "网络工程本科",
+      "date": null,
+      "recordedAt": "2026-10-29",
+      "text": "2012–2016 年就读网络工程本科，学习 C++、Java、C#、数据库、数据结构与算法等课程，为后续软件开发奠定基础。",
+      "context": "2026-11-01 本人补充的学习与职业阶段。保留原始年份精度，不补充具体月份或未经陈述的成果。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-01，公开摘要。"
+        }
+      ],
+      "period": "2012–2016",
+      "start": "2012",
+      "end": "2016",
+      "ongoing": false
+    },
+    {
       "id": "5dbcb3463af529c5",
       "kind": "project",
       "title": "客户体验治理办公 AI 产品",
