@@ -8,11 +8,22 @@
       "url": "https://github.com/weaiw/storybook-generator-skill",
       "summary": "面向 Agent 的绘本制作流程，包含角色设定、逐页提示词、文字与画面的对应检查，以及局部返工规则。",
       "reason": "可用于检查绘本生产流程是否遗漏角色连续性、样页验收和可见叙事证据；其固定文字区方案仍需根据具体版式要求调整。会话发现，不代表本人已完成该项目的生成效果验证。",
-      "tags": ["绘本", "Agent Skills", "图像生成"],
+      "tags": [
+        "绘本",
+        "Agent Skills",
+        "图像生成"
+      ],
       "savedAt": "2026-11-01",
       "selection": "discovered",
       "visibility": "shared",
-      "sources": [{"label": "官方仓库角色连续性、提示词与 QA 文档，2026-11-01 核验：https://github.com/weaiw/storybook-generator-skill/tree/72d30ecd51d12986738db6d4f40d79cd7fa6358a"}]
+      "sources": [
+        {
+          "label": "官方仓库角色连续性、提示词与 QA 文档，2026-11-01 核验：https://github.com/weaiw/storybook-generator-skill/tree/72d30ecd51d12986738db6d4f40d79cd7fa6358a"
+        }
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "id": "cf1923de758ab604",
@@ -21,11 +32,22 @@
       "url": "https://github.com/HVision-NKU/StoryDiffusion",
       "summary": "长序列图像与视频生成的研究实现，使用一致性自注意力改善跨图像的角色一致性。",
       "reason": "用于理解跨页身份保持与单页构图是不同问题；其方法需要模型内部支持，不能把普通图像 API 的参考图输入等同于该实现。会话发现，未运行模型或验证复现效果。",
-      "tags": ["图像生成", "角色一致性", "研究实现"],
+      "tags": [
+        "图像生成",
+        "角色一致性",
+        "研究实现"
+      ],
       "savedAt": "2026-11-01",
       "selection": "discovered",
       "visibility": "shared",
-      "sources": [{"label": "官方仓库与论文，2026-11-01 核验：https://github.com/HVision-NKU/StoryDiffusion；https://arxiv.org/abs/2405.01434"}]
+      "sources": [
+        {
+          "label": "官方仓库与论文，2026-11-01 核验：https://github.com/HVision-NKU/StoryDiffusion；https://arxiv.org/abs/2405.01434"
+        }
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "id": "9005d098dc844cdb",
@@ -46,7 +68,10 @@
         {
           "label": "官方仓库或文档，2026-11-01 会话检索核验：https://github.com/Seokwoooo/lucian-uxui"
         }
-      ]
+      ],
+      "priority": "evaluate",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "id": "58ee05520f6e84b5",
@@ -67,7 +92,10 @@
         {
           "label": "官方仓库或文档，2026-11-01 会话检索核验：https://github.com/DavidHDev/react-bits"
         }
-      ]
+      ],
+      "priority": "evaluate",
+      "adoption": "not_selected",
+      "usages": []
     },
     {
       "id": "ce11d50c8c1a996b",
@@ -88,7 +116,10 @@
         {
           "label": "官方仓库或文档，2026-11-01 会话检索核验：https://daisyui.com/docs/editor/windsurf/?lang=en"
         }
-      ]
+      ],
+      "priority": "evaluate",
+      "adoption": "not_selected",
+      "usages": []
     },
     {
       "id": "240f05a3610b5718",
@@ -109,7 +140,10 @@
         {
           "label": "官方仓库或文档，2026-11-01 会话检索核验：https://chakra-ui.com/docs/get-started/ai/mcp-server"
         }
-      ]
+      ],
+      "priority": "evaluate",
+      "adoption": "not_selected",
+      "usages": []
     },
     {
       "id": "3ad86e9295020a3c",
@@ -130,7 +164,10 @@
         {
           "label": "官方仓库或文档，2026-11-01 会话检索核验：https://heroui.com/en/docs/react/getting-started/mcp-server"
         }
-      ]
+      ],
+      "priority": "evaluate",
+      "adoption": "not_selected",
+      "usages": []
     },
     {
       "id": "5e2ea2cdfa8d7fe5",
@@ -151,7 +188,10 @@
         {
           "label": "官方仓库或文档，2026-11-01 会话检索核验：https://github.com/21st-dev/magic-mcp"
         }
-      ]
+      ],
+      "priority": "evaluate",
+      "adoption": "not_selected",
+      "usages": []
     },
     {
       "id": "fe95afe989157b02",
@@ -172,7 +212,10 @@
         {
           "label": "官方仓库或文档，2026-11-01 会话检索核验：https://kokonutui.com/docs/agents"
         }
-      ]
+      ],
+      "priority": "evaluate",
+      "adoption": "not_selected",
+      "usages": []
     },
     {
       "id": "fcbb542c5cf563a3",
@@ -193,7 +236,10 @@
         {
           "label": "官方仓库或文档，2026-11-01 会话检索核验：https://ui.shadcn.com/docs/mcp"
         }
-      ]
+      ],
+      "priority": "evaluate",
+      "adoption": "not_selected",
+      "usages": []
     },
     {
       "id": "e81bc6847d38f902",
@@ -214,7 +260,10 @@
         {
           "label": "原作者仓库，2026-11-01 核验固定版本 88d3f572950a772d268b22afe0bd53c2a2f090ff：https://github.com/garrytan/gbrain/tree/88d3f572950a772d268b22afe0bd53c2a2f090ff"
         }
-      ]
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "id": "91fc906a99431e8a",
@@ -235,7 +284,10 @@
         {
           "label": "Karpathy 原始 gist，2026-04-04；2026-11-01 核验固定版本 ac46de1ad27f92b28ac95459c782c07f6b8c964a：https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f/ac46de1ad27f92b28ac95459c782c07f6b8c964a"
         }
-      ]
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "id": "12f51ecafa480a20",
@@ -256,7 +308,10 @@
         {
           "label": "原作者论文与代码仓库，2026-11-01 核验：https://arxiv.org/abs/2410.10813 与 https://github.com/xiaowu0162/LongMemEval"
         }
-      ]
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "id": "bbc6c2e95fa83d72",
@@ -278,7 +333,10 @@
         {
           "label": "官方仓库 AvdLee/SwiftUI-Agent-Skill，commit 204dba7c67256a8b707ee3fbc5759a824191974f；LICENSE 与 analyze_trace.py 公开 blob，2026-11-01 核验。"
         }
-      ]
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "id": "84d1b9c307ef625a",
@@ -299,7 +357,10 @@
         {
           "label": "官方仓库 mattpocock/skills 的 README、CONTRIBUTING.md 与 scripts/link-skills.sh，2026-11-01 核验。"
         }
-      ]
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "id": "6a8c3e740f921db5",
@@ -320,7 +381,10 @@
         {
           "label": "官方源码 browserbase/stagehand，commit b7a4b899079f198a0ee78a6dcb62ad02f545cf49；packages/docs/v4/migrations/v3.mdx 与 packages/sdk-ts/package.json，2026-11-01 核对。"
         }
-      ]
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "id": "8838524aac092773",
@@ -344,7 +408,10 @@
         {
           "label": "官方项目仓库与 README，2026-10-31 核验：https://github.com/HAR5HA-7663/hunch"
         }
-      ]
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "id": "1b8e35a5a0147eea",
@@ -368,7 +435,10 @@
         {
           "label": "官方项目仓库与 README，2026-10-31 核验：https://github.com/browser-use/jev-ultrafast"
         }
-      ]
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "id": "ef32f6d3f97f6937",
@@ -392,7 +462,10 @@
         {
           "label": "官方项目仓库与 README，2026-10-31 核验：https://github.com/jkudish/jev-browser"
         }
-      ]
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "id": "c450686e5af95c27",
@@ -417,7 +490,10 @@
         {
           "label": "官方项目仓库与 README，2026-10-31 核验：https://github.com/brnyxx/jev-ra"
         }
-      ]
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "id": "84ac495cdb0c1827",
@@ -442,7 +518,10 @@
         {
           "label": "官方项目仓库与 README，2026-10-31 核验：https://github.com/coderexpert123/jev-browser-wingman"
         }
-      ]
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "id": "440e6d3a3f457bb6",
@@ -466,7 +545,10 @@
         {
           "label": "官方项目仓库与 README，2026-10-31 核验：https://github.com/wy-coliney/jev-browser-use"
         }
-      ]
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "kind": "project",
@@ -491,7 +573,10 @@
         {
           "label": "2026-10-30 核验官方来源：https://github.com/trycua/cua"
         }
-      ]
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "kind": "knowledge",
@@ -516,7 +601,10 @@
         {
           "label": "2026-10-30 核验官方来源：https://cua.ai/docs/cua-bench"
         }
-      ]
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "kind": "project",
@@ -541,7 +629,10 @@
         {
           "label": "2026-10-30 核验官方来源：https://github.com/microsoft/UFO"
         }
-      ]
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "kind": "project",
@@ -566,7 +657,10 @@
         {
           "label": "2026-10-30 核验官方来源：https://omarchy.org/"
         }
-      ]
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "kind": "project",
@@ -592,7 +686,10 @@
         {
           "label": "2026-10-30 核验官方来源：https://github.com/mobile-next/mobile-mcp"
         }
-      ]
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "kind": "project",
@@ -617,7 +714,10 @@
         {
           "label": "2026-10-30 核验官方来源：https://github.com/leeguooooo/iphone-use"
         }
-      ]
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "kind": "project",
@@ -642,7 +742,10 @@
         {
           "label": "2026-10-30 核验官方来源：https://warmwind.com/；官方团队介绍：https://huggingface.co/WarmwindOS"
         }
-      ]
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "id": "a8153013aad881ee",
@@ -667,7 +770,10 @@
         {
           "label": "2026-10-30 核验官方来源：https://github.com/remote-android/redroid-doc"
         }
-      ]
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "id": "e310000000000001",
@@ -688,7 +794,10 @@
       ],
       "savedAt": "2026-10-30",
       "selection": "discovered",
-      "visibility": "shared"
+      "visibility": "shared",
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "id": "e310000000000002",
@@ -709,7 +818,10 @@
       ],
       "savedAt": "2026-10-30",
       "selection": "discovered",
-      "visibility": "shared"
+      "visibility": "shared",
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "id": "e310000000000003",
@@ -730,7 +842,10 @@
       ],
       "savedAt": "2026-10-30",
       "selection": "discovered",
-      "visibility": "shared"
+      "visibility": "shared",
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "id": "e310000000000004",
@@ -751,7 +866,10 @@
       ],
       "savedAt": "2026-10-30",
       "selection": "discovered",
-      "visibility": "shared"
+      "visibility": "shared",
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "id": "e310000000000005",
@@ -775,7 +893,18 @@
       ],
       "savedAt": "2026-10-30",
       "selection": "discovered",
-      "visibility": "shared"
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "adopted",
+      "usages": [
+        {
+          "project": "硅基俊宁",
+          "projectUrl": "https://github.com/youngjunning/youngjunning.com",
+          "stage": "adopted",
+          "purpose": "主页 BlurFade 与 BentoGrid 组件适配",
+          "evidence": "https://github.com/youngjunning/youngjunning.com/blob/main/THIRD_PARTY_NOTICES.md"
+        }
+      ]
     },
     {
       "id": "e310000000000006",
@@ -796,7 +925,10 @@
         {
           "label": "本人公开博客的历史技术文章；2026-10-30 按长期参考价值筛选，仅保存来源摘要。"
         }
-      ]
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "id": "e310000000000007",
@@ -817,7 +949,10 @@
         {
           "label": "本人公开博客的历史技术文章；2026-10-30 按长期参考价值筛选，仅保存来源摘要。"
         }
-      ]
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "id": "e310000000000008",
@@ -838,7 +973,10 @@
         {
           "label": "本人公开博客的历史技术文章；2026-10-30 按长期参考价值筛选，仅保存来源摘要。"
         }
-      ]
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "id": "e310000000000009",
@@ -859,7 +997,10 @@
         {
           "label": "本人公开博客的历史技术文章；2026-10-30 按长期参考价值筛选，仅保存来源摘要。"
         }
-      ]
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     },
     {
       "id": "e31000000000000a",
@@ -880,7 +1021,10 @@
         {
           "label": "本人公开博客的历史技术文章；2026-10-30 按长期参考价值筛选，仅保存来源摘要。"
         }
-      ]
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
     }
   ]
 }
