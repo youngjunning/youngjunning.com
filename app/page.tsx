@@ -4,11 +4,12 @@ import { BlurFade } from '@/components/magicui/blur-fade';
 import { BentoCard, BentoGrid } from '@/components/magicui/bento-grid';
 import { getContent } from '@/lib/content';
 import persona from '@/content/persona.json';
+import { GradientText } from '@/components/reactbits/gradient-text';
 export default function Home() {
   const { records, favorites, posts } = getContent();
   return <>
     <section className="hero"><BlurFade><div className="intro-label"><span className="status-dot" /> A DIGITAL SELF <span className="intro-rule" /></div>
-      <h1>人的经历，<br />在硅基世界<span className="serif">生长。</span><span className="hero-asterisk">✳</span></h1>
+      <h1>人的经历，<br />在硅基世界<GradientText>生长。</GradientText><span className="hero-asterisk">✳</span></h1>
       <div className="hero-bottom"><p>我是俊宁，AI 开发者。<br />这里记录我做过的项目、当时的判断，以及后来的变化。</p><Link href="/chat" className="primary-link">认识另一个我 <ArrowUpRight size={18} /></Link></div>
     </BlurFade></section>
     <div className="section-caption"><span>01 / 认识俊宁</span><span>AN OPEN, EVOLVING PORTRAIT</span></div>

@@ -1,0 +1,33 @@
+.style-bar{display:flex;justify-content:flex-end;padding-top:18px}
+.style-switcher{display:flex;gap:4px;padding:4px;border:1px solid var(--line);border-radius:999px;background:var(--paper)}
+.style-switcher button{border:0;background:transparent;color:var(--muted);border-radius:999px;padding:7px 13px;font-size:11px;cursor:pointer}
+.style-switcher button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+.spotlight-card-light{display:none}
+html[data-style=react-bits]{--ink:#242039;--muted:#726c84;--paper:#f8f7fc;--line:#e1ddec;--green:#d9caff;--dark:#282039}
+[data-style=react-bits] body{background:radial-gradient(ellipse at 85% 10%,#e5ddff80,transparent 42%),var(--paper)}
+[data-style=react-bits] .hero{padding-top:50px}
+[data-style=react-bits] .gradient-text{background:linear-gradient(90deg,#6940c5,#b74589,#5049bd,#6940c5);background-size:300% 100%;background-clip:text;-webkit-background-clip:text;color:transparent;animation:bits-gradient 10s ease-in-out infinite alternate}
+[data-style=react-bits] .hero-asterisk{color:#a78bdf;text-shadow:0 0 60px #b896ef60}
+[data-style=react-bits] .status-dot{background:#9065d2;box-shadow:0 0 0 4px #ebe3f7}
+[data-style=react-bits] .brand-dot,[data-style=react-bits] .tiny-dot{color:#8d61c8}
+[data-style=react-bits] .bento-card{background:#f0ecf8;border-color:#dcd4eb;border-radius:24px;isolation:isolate}
+[data-style=react-bits] .bento-card> :not(.spotlight-card-light){position:relative;z-index:1}
+[data-style=react-bits] .spotlight-card-light{display:block;position:absolute;inset:0;pointer-events:none;opacity:0;background:radial-gradient(circle 260px at var(--spotlight-x,50%) var(--spotlight-y,50%),#b18aef55,transparent 80%);transition:opacity .25s}
+[data-style=react-bits] .spotlight-card:hover .spotlight-card-light,[data-style=react-bits] .spotlight-card:focus-visible .spotlight-card-light{opacity:1}
+[data-style=react-bits] .conversation-card{background:#282039;color:#f5efff}
+[data-style=react-bits] .identity-disc{background:radial-gradient(circle at 35% 20%,#fcf9ff,#cbb7e5);color:#795da0;border-color:#c3acdd}
+[data-style=react-bits] .identity-orbit{border-color:#cfc0e3}
+[data-style=react-bits] .art-coordinate{color:#7b6599}
+[data-style=react-bits] .focus-cloud span{background:#faf7ff;color:#75658c;border-color:#ddd2ed}
+[data-style=react-bits] .focus-cloud .focus-big{background:#dcc6ff;color:#4f327a}
+[data-style=react-bits] .chat-visual{color:#d8bbff}
+[data-style=react-bits] .chat-visual div{border-color:#726185;color:#f0e4ff}
+[data-style=react-bits] .chat-visual div:last-child{background:#40324f;border-color:#594669}
+[data-style=react-bits] .library-strip,[data-style=react-bits] .article-card{background:#f0ecf7}
+[data-style=react-bits] .hero-bottom p,[data-style=react-bits] .detail p,[data-style=react-bits] .detail li{color:#6c637a}
+[data-style=react-bits] .detail code,[data-style=react-bits] .detail pre,[data-style=react-bits] .detail blockquote,[data-style=react-bits] .source-box,[data-style=react-bits] .message:not(.user){background:#eee7f7}
+[data-style=react-bits] .detail a,[data-style=react-bits] .source-box a,[data-style=react-bits] nav a:hover,[data-style=react-bits] .record-row:hover h3{color:#7450a5}
+[data-style=react-bits] a:focus-visible,[data-style=react-bits] button:focus-visible{outline-color:#8053bb}
+@keyframes bits-gradient{from{background-position:0% 50%}to{background-position:100% 50%}}
+@media(prefers-reduced-motion:reduce){[data-style=react-bits] .gradient-text{animation:none}[data-style=react-bits] .spotlight-card-light{display:none}}
+@media(max-width:600px){.style-bar{padding-top:12px}[data-style=react-bits] .hero{padding-top:32px}}
