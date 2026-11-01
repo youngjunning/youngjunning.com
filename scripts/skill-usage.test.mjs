@@ -1,10 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import { spawnSync } from 'node:child_process';
 import { projectSkillUsage, validateSkillUsage } from '../lib/skill-usage.mjs';
 
 function fixture() {
   const id = 'git:1234567890abcdef';
-  return { metric: 'verified_skill_read_turns', files: 2, triggerCount: 3, skillCount: 1,
+  return { audience: 'external', metric: 'verified_skill_read_turns', files: 2, triggerCount: 3, skillCount: 1,
     scan: { scanComplete: true, errors: [] },
     skills: [{ name: 'example', triggerCount: 3, firstSeen: '2026-01-01T00:00:00Z', lastSeen: '2026-01-02T00:00:00Z',
       sessionId: 'PRIVATE_SESSION', projects: [{ projectId: id, triggerCount: 3 }] }],
@@ -17,6 +21,28 @@ test('exports only aggregate fields, preserves totals and reuses unchanged snaps
   assert.equal(JSON.stringify(result).includes('PRIVATE_'), false);
   assert.equal(JSON.stringify(result).includes('/private/'), false);
   assert.deepEqual(projectSkillUsage(source, result, '2026-01-04T00:00:00Z'), result);
+});
+test('requires audience partitioning and rejects a snapshot for the other site', () => {
+  const source = fixture();
+  delete source.audience;
+  assert.throws(() => projectSkillUsage(source), /audience-filtered/);
+  const result = projectSkillUsage(fixture());
+  assert.equal(result.audience, 'external');
+  assert.throws(() => validateSkillUsage(result, 'internal'), /project audience/);
+  validateSkillUsage(result, 'external');
+});
+test('public CLI refuses raw scans, internal inputs and unreviewed skill names', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'usage-audience-'));
+  try {
+    for (const audience of [undefined, 'internal', 'external']) {
+      const source = fixture(); source.audience = audience;
+      const file = path.join(dir, 'scan.json'); fs.writeFileSync(file, JSON.stringify(source));
+      const result = spawnSync(process.execPath, ['scripts/export-skill-usage.mjs', '--input', file], { encoding: 'utf8' });
+      assert.notEqual(result.status, 0);
+      assert.match(result.stderr, audience === 'external' ? /reviewed public catalog/ : /Only an external audience-filtered scan/);
+      assert.equal(result.stdout, '');
+    }
+  } finally { fs.rmSync(dir, { recursive: true, force: true }); }
 });
 test('rejects failed scans, inconsistent matrices, path leaks and unexpected fields', () => {
   const source = fixture(); source.scan.errors = ['read failed'];

@@ -1,9 +1,280 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-01T00:00:00Z",
+  "audience": "external",
+  "updatedAt": "2026-11-01T17:56:30.212Z",
   "metric": "verified_skill_read_turns",
-  "totals": { "triggerCount": 0, "skillCount": 0, "projectCount": 0, "directoryGroupCount": 0, "unattributedTriggers": 0, "ambiguousTriggers": 0, "pendingBackfillObservations": 0 },
-  "coverage": { "fileCount": 0, "firstSeen": null, "lastSeen": null },
-  "skills": [],
-  "projects": []
+  "totals": {
+    "triggerCount": 453,
+    "skillCount": 14,
+    "projectCount": 8,
+    "directoryGroupCount": 0,
+    "unattributedTriggers": 0,
+    "ambiguousTriggers": 0,
+    "pendingBackfillObservations": 0
+  },
+  "coverage": {
+    "fileCount": 0,
+    "firstSeen": "2026-07-04T05:20:27.882Z",
+    "lastSeen": "2026-11-01T17:54:27.186Z"
+  },
+  "skills": [
+    {
+      "name": "macos-app-develop",
+      "triggerCount": 157,
+      "projects": [
+        {
+          "projectId": "git:504b91c3cd03c11a",
+          "triggerCount": 156
+        },
+        {
+          "projectId": "git:38c889f3f90409c5",
+          "triggerCount": 1
+        }
+      ]
+    },
+    {
+      "name": "fiction-site-builder",
+      "triggerCount": 75,
+      "projects": [
+        {
+          "projectId": "git:7fded60475070299",
+          "triggerCount": 75
+        }
+      ]
+    },
+    {
+      "name": "report-skill",
+      "triggerCount": 75,
+      "projects": [
+        {
+          "projectId": "git:504b91c3cd03c11a",
+          "triggerCount": 64
+        },
+        {
+          "projectId": "git:b98a39597e403453",
+          "triggerCount": 5
+        },
+        {
+          "projectId": "git:25361c8b154a49b9",
+          "triggerCount": 2
+        },
+        {
+          "projectId": "git:69d08711563f984a",
+          "triggerCount": 1
+        },
+        {
+          "projectId": "git:6276ac4ed50dfc4d",
+          "triggerCount": 3
+        }
+      ]
+    },
+    {
+      "name": "better-imagegen",
+      "triggerCount": 31,
+      "projects": [
+        {
+          "projectId": "git:504b91c3cd03c11a",
+          "triggerCount": 16
+        },
+        {
+          "projectId": "git:7fded60475070299",
+          "triggerCount": 6
+        },
+        {
+          "projectId": "git:b98a39597e403453",
+          "triggerCount": 2
+        },
+        {
+          "projectId": "git:c13c8d2cc6be59dc",
+          "triggerCount": 6
+        },
+        {
+          "projectId": "git:69d08711563f984a",
+          "triggerCount": 1
+        }
+      ]
+    },
+    {
+      "name": "domain-modeling",
+      "triggerCount": 31,
+      "projects": [
+        {
+          "projectId": "git:504b91c3cd03c11a",
+          "triggerCount": 30
+        },
+        {
+          "projectId": "git:69d08711563f984a",
+          "triggerCount": 1
+        }
+      ]
+    },
+    {
+      "name": "writting-skill",
+      "triggerCount": 23,
+      "projects": [
+        {
+          "projectId": "git:504b91c3cd03c11a",
+          "triggerCount": 11
+        },
+        {
+          "projectId": "git:7fded60475070299",
+          "triggerCount": 7
+        },
+        {
+          "projectId": "git:b98a39597e403453",
+          "triggerCount": 4
+        },
+        {
+          "projectId": "git:69d08711563f984a",
+          "triggerCount": 1
+        }
+      ]
+    },
+    {
+      "name": "grilling",
+      "triggerCount": 17,
+      "projects": [
+        {
+          "projectId": "git:504b91c3cd03c11a",
+          "triggerCount": 17
+        }
+      ]
+    },
+    {
+      "name": "grill-with-docs",
+      "triggerCount": 16,
+      "projects": [
+        {
+          "projectId": "git:504b91c3cd03c11a",
+          "triggerCount": 16
+        }
+      ]
+    },
+    {
+      "name": "memory-distill",
+      "triggerCount": 12,
+      "projects": [
+        {
+          "projectId": "git:504b91c3cd03c11a",
+          "triggerCount": 5
+        },
+        {
+          "projectId": "git:b98a39597e403453",
+          "triggerCount": 2
+        },
+        {
+          "projectId": "git:25361c8b154a49b9",
+          "triggerCount": 3
+        },
+        {
+          "projectId": "git:38c889f3f90409c5",
+          "triggerCount": 2
+        }
+      ]
+    },
+    {
+      "name": "codebase-design",
+      "triggerCount": 6,
+      "projects": [
+        {
+          "projectId": "git:504b91c3cd03c11a",
+          "triggerCount": 6
+        }
+      ]
+    },
+    {
+      "name": "tdd",
+      "triggerCount": 6,
+      "projects": [
+        {
+          "projectId": "git:504b91c3cd03c11a",
+          "triggerCount": 6
+        }
+      ]
+    },
+    {
+      "name": "diagnosing-bugs",
+      "triggerCount": 2,
+      "projects": [
+        {
+          "projectId": "git:b98a39597e403453",
+          "triggerCount": 1
+        },
+        {
+          "projectId": "git:25361c8b154a49b9",
+          "triggerCount": 1
+        }
+      ]
+    },
+    {
+      "name": "top-architect",
+      "triggerCount": 1,
+      "projects": [
+        {
+          "projectId": "git:b98a39597e403453",
+          "triggerCount": 1
+        }
+      ]
+    },
+    {
+      "name": "writing-for-agents",
+      "triggerCount": 1,
+      "projects": [
+        {
+          "projectId": "git:25361c8b154a49b9",
+          "triggerCount": 1
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "git:504b91c3cd03c11a",
+      "name": "owlet",
+      "kind": "git",
+      "triggerCount": 327
+    },
+    {
+      "id": "git:7fded60475070299",
+      "name": "fictions",
+      "kind": "git",
+      "triggerCount": 88
+    },
+    {
+      "id": "git:b98a39597e403453",
+      "name": "TaleFrame",
+      "kind": "git",
+      "triggerCount": 15
+    },
+    {
+      "id": "git:25361c8b154a49b9",
+      "name": "youngjunning.com",
+      "kind": "git",
+      "triggerCount": 7
+    },
+    {
+      "id": "git:c13c8d2cc6be59dc",
+      "name": "yang-xudong-growth-book",
+      "kind": "git",
+      "triggerCount": 6
+    },
+    {
+      "id": "git:69d08711563f984a",
+      "name": "design.zisheng.pro",
+      "kind": "git",
+      "triggerCount": 4
+    },
+    {
+      "id": "git:38c889f3f90409c5",
+      "name": "owlet",
+      "kind": "git",
+      "triggerCount": 3
+    },
+    {
+      "id": "git:6276ac4ed50dfc4d",
+      "name": "eat.zisheng.pro",
+      "kind": "git",
+      "triggerCount": 3
+    }
+  ]
 }

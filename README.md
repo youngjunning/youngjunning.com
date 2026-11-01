@@ -36,6 +36,8 @@ npm run dev
 
 ## 验证与部署
 
+Skills 触发统计由 digital-twin-maintenance 在本机独立分流，只统计已确认的外部项目及 `content/skills.json` 中已审阅的技能名称。内部项目、未知归属及其次数不进入本站总数；不复制公司站统计快照。将 external 分流结果传入 `node scripts/export-skill-usage.mjs --input <私有分流结果.json>`，核验后以补丁更新 `content/skill-usage.json`。导出与内容检查均验证受众，原始路径、remote 和会话证据保留本机。覆盖时间仅来自保留项目，覆盖文件数为 0 表示未统计该受众的独立文件数。
+
 ```sh
 npm run content:check
 npm test

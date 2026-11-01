@@ -24,6 +24,10 @@ external 项目只写本目标；internal 项目仅接收已脱敏公开版本�
 
 公开版本经逐项审阅后写入，执行既有内容检查、测试和类型检查，回读核对后按本目标授权提交并推送。无差异不重复写入；公开同步失败必须单独报告，下轮继续核对。数据同步、页面展示与部署分别报告。
 
+## Skills 触发统计受众
+
+本站仅统计 external 项目及已审阅公开清单中的技能名。digital-twin-maintenance 从本机成功扫描结果独立运行 `scope_skill_usage.py --audience external --public-skills <本站content/skills.json>`，再调用本站 `scripts/export-skill-usage.mjs --input <external分流结果.json>`；仅输出聚合快照，通过补丁更新 `content/skill-usage.json`。内部项目、unknown 和未审阅技能的次数不进入任何公开合计，不复制公司快照或历史映射。内站关闭时仅使用本机私有策略中已审阅 external ID，并在扫描与分流时均加 `--no-project-probe`，新归属留本机待审。原始目录、remote、会话和 SQLite 不进入本站。失败保留旧快照，部署单独核验。
+
 ## 收藏分级与项目使用
 
 放宽收藏门槛：与当前任务相关且有潜在复用价值、可追溯原始来源的项目或资料，即可按 URL 去重收录为 discovered；不要求已经试用、选用或形成个人判断。仅列出待选方案不是跳过理由。没有验证的能力明确标为待核验，不把搜索摘要写成已证实结论。
