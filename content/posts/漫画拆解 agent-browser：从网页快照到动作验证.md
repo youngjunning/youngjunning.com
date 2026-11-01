@@ -64,6 +64,42 @@ SDK 包版本与底层浏览器包版本也要分别看。2026 年 11 月 2 日�
 
 还有一个容易误判的线索：**旧版 Playwright 也能通过 `connectOverCDP()` 连接 Chrome**。看到 CDP 地址、Chrome 进程或相同的 CLI 命令，都不足以认定已经使用新版 Rust 原生路径。需要同时检查依赖版本、所选运行模式、后台进程和实际调用链；本文不据此推断两版速度或成功率。[旧版 CDP 连接实现](https://github.com/vercel-labs/agent-browser/blob/e02bc1a10cf8962a2a171d2b515f14e325dc97ab/src/browser.ts#L1769)
 
+## Rust + CDP 的优势与代价，分别来自哪一层
+
+比较仍限定为前面的两条默认路径：`0.19.0` 的 Node.js + Playwright 后台，以及 `0.41.1` 默认 Chrome 的 Rust + CDP 后台。能够确认的收益是控制层运行依赖减少；控制进程是否更省内存、整个任务是否更快，需要分别测量。Chrome 仍然运行页面，上层模型仍然选择动作。
+
+![Rust 路径的收益与代价：运行依赖、CDP 控制权、自动化行为维护，以及同任务性能验证](/media/dff562e8ee3009c3-tradeoffs-d52e9dacf342.webp)
+
+### 部署少一组依赖，已有服务仍要运行
+
+小南把控制器放进设备箱，提醒小界：“这个 Rust 后台不用 Node.js、Playwright。Chrome 还是要准备。”这是对 daemon 运行要求的解释，不是整套 Agent 系统的依赖清单。
+
+独立部署浏览器工具时，少了需要随控制层维护的 Node.js、Playwright 运行依赖。若上层 Agent 本来就在 Node.js / Mastra 服务中运行，这个服务仍然存在；其他功能若继续使用 Playwright，其依赖也不能直接删除。浏览器安装、系统依赖和账号状态同样需要处理。[0.41.1 运行要求](https://github.com/vercel-labs/agent-browser/blob/5868f7c05020e047c00e68e4abf9253cce864f41/README.md#requirements)
+
+### 直接控制 CDP，快照设计与实现语言分开判断
+
+小界整理 AX 卡片时说：“直接读 AX 数据、组织引用与动作。Playwright 也能发 CDP 命令。”原生路径让 agent-browser 自己组织协议调用、节点引用和动作处理，减少对 Playwright API 及其版本的依赖；相应行为也由项目自己负责维护。[原生快照实现](https://github.com/vercel-labs/agent-browser/blob/5868f7c05020e047c00e68e4abf9253cce864f41/cli/src/native/snapshot.rs)、[原生元素处理](https://github.com/vercel-labs/agent-browser/blob/5868f7c05020e047c00e68e4abf9253cce864f41/cli/src/native/element.rs)
+
+直接使用 CDP 属于控制层的实现选择，并非 Rust 独有。Playwright 提供的 `CDPSession.send()` 同样可以发送原始 CDP 命令。原生 AX 数据的读取方式、快照输出的筛选与压缩、控制器使用的语言，需要分别评价：模型 token 的节省主要取决于送入模型的观察内容，不能归因于“换成 Rust”。[Playwright CDPSession](https://playwright.dev/docs/api/class-cdpsession)
+
+### 自动化封装的维护责任转给原生实现
+
+漫画中按钮被弹窗挡住，小南先停下操作：“自动等待、定位和 frame 处理，原生实现也要持续维护。”Playwright 的 `click()` 会检查目标是否唯一、可见、稳定、能接收事件且已启用；这是长期维护的自动化封装，直接发出协议命令不能自动获得相同行为。[Playwright 自动等待](https://playwright.dev/docs/actionability)
+
+agent-browser 原生路径已经实现了引用解析和可操作性处理，不能说它完全没有等待或定位能力。取舍在于这些行为由谁实现、覆盖哪些情况、如何处理浏览器升级：采用原生路径后，需要由 agent-browser 维护对应逻辑，接入方验证任务所需的行为。Playwright 的跨浏览器抽象与调试、测试工具也不能仅凭 Chrome / CDP 路径推定已经等价替代。[Playwright 浏览器支持](https://playwright.dev/docs/browsers)
+
+### 把控制层收益与任务收益分别测出来
+
+小界面对两套相同的查询页面，记录的是待测项目：“控制层可能更省资源。整条任务快多少，要实测。”漫画中的仪表没有数值，不代表已经完成性能对照。
+
+| 要验证的收益 | 比较方法与边界 |
+| --- | --- |
+| 控制层是否更轻、更快 | 分别测冷启动、后台复用后的命令耗时、快照处理耗时和控制进程内存；浏览器进程内存另列 |
+| Agent 任务是否更快 | 固定模型、任务、页面初始状态和完成条件，计入页面等待、模型调用、失败恢复与重试 |
+| 接入是否值得迁移 | 同时检查任务成功率、结果证据和迁移工作量，不能只比较一次成功点击的延迟 |
+
+已有系统若通过 SDK 在 Node.js 进程内调用浏览器管理器，改成通过 CLI 调用 Rust daemon 时，还要把命令进程启动、参数序列化和本地 IPC 纳入比较。不能拿“旧 CLI 后台换成 Rust”的收益，直接替代这类 SDK 接入方式的评估。页面加载和模型推理若占主要耗时，控制层优化对整条任务的收益可能有限；本文没有实测数据，不给出提速或降本比例。
+
 ## 第一幕：把“查库存”变成网页上的动作
 
 *（此版本省略该配图。）*

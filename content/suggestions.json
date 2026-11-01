@@ -1,7 +1,7 @@
 {
   "version": 1,
   "policy": "codex-prepared-suggestions-1",
-  "key": "82821fe88d8283b151f45127245755eb63db42a6a82e542504331c11754187cc",
+  "key": "ebffffdb279ebadd1c59b638fdec0926b97713622b05dc4a0d0f03a72e1b0ba3",
   "generatedAt": "2026-11-01T19:10:17.582Z",
   "suggestions": [
     {
@@ -19,7 +19,11 @@
           "sourceId": "blog-a4d52e70c1968bf3-45",
           "quote": "也可以将正文存成对象文件，数据库只保留索引。但这样需要额外处理上传成功而数据库更新失败、快照引用了不存在的对象、旧对象清理与回退发生冲突等情况。"
         }
-      ]
+      ],
+      "review": {
+        "by": "Codex",
+        "sourceFingerprint": "ebffffdb279ebadd1c59b638fdec0926b97713622b05dc4a0d0f03a72e1b0ba3"
+      }
     },
     {
       "id": "e33b73c336dc26ef",
@@ -36,7 +40,11 @@
           "sourceId": "blog-b7e91c4a20d865f3-132",
           "quote": "发布正文并非全库按哈希去重，唯一键是“章节 ID + 哈希”；不同章节即便正文相同，也不是同一条版本记录。"
         }
-      ]
+      ],
+      "review": {
+        "by": "Codex",
+        "sourceFingerprint": "ebffffdb279ebadd1c59b638fdec0926b97713622b05dc4a0d0f03a72e1b0ba3"
+      }
     },
     {
       "id": "73438c969425d3cd",
@@ -53,7 +61,11 @@
           "sourceId": "blog-a4d52e70c1968bf3-45",
           "quote": "已经到达 CDN 的响应可能在缓存期内继续可用，设备上已有的离线内容也无法靠下架动作远程抹除。当前接口缓存窗口为 60 秒。"
         }
-      ]
+      ],
+      "review": {
+        "by": "Codex",
+        "sourceFingerprint": "ebffffdb279ebadd1c59b638fdec0926b97713622b05dc4a0d0f03a72e1b0ba3"
+      }
     },
     {
       "id": "31c312b5f26ca2fb",
@@ -70,7 +82,11 @@
           "sourceId": "blog-497451432d1eee6a-85",
           "quote": "最后我没有放弃“雾”，也没有为了视觉效果继续赌系统边界，而是改用纯 SwiftUI 绘制柔焦层：保留雾白的视觉职责，换掉高风险实现。"
         }
-      ]
+      ],
+      "review": {
+        "by": "Codex",
+        "sourceFingerprint": "ebffffdb279ebadd1c59b638fdec0926b97713622b05dc4a0d0f03a72e1b0ba3"
+      }
     },
     {
       "id": "28290f4cb11b3d5d",
@@ -87,7 +103,11 @@
           "sourceId": "blog-497451432d1eee6a-85",
           "quote": "这段过程让我确认：设计风格首先是一套删减规则。 如果只告诉 AI“可以用什么”，它会很积极地把所有特征一起用上。输出真正开始稳定，是因为规则同时写清了“最多用多少”“只能用在哪里”“什么情况下不要用”。"
         }
-      ]
+      ],
+      "review": {
+        "by": "Codex",
+        "sourceFingerprint": "ebffffdb279ebadd1c59b638fdec0926b97713622b05dc4a0d0f03a72e1b0ba3"
+      }
     },
     {
       "id": "4a005ec3291e899c",
@@ -104,7 +124,38 @@
           "sourceId": "blog-a4d52e70c1968bf3-106",
           "quote": "因此，它不能被描述成精确、即时、覆盖所有服务的账单硬上限。"
         }
-      ]
+      ],
+      "review": {
+        "by": "Codex",
+        "sourceFingerprint": "ebffffdb279ebadd1c59b638fdec0926b97713622b05dc4a0d0f03a72e1b0ba3"
+      }
+    },
+    {
+      "id": "84626aa7ff3fa124",
+      "question": "agent-browser 的 Rust/CDP 路径减少了哪些运行依赖，为什么不能据此断言整条 Agent 任务更快？",
+      "kind": "blog",
+      "topic": "漫画拆解 agent-browser：从网页快照到动作验证",
+      "angle": "tradeoff",
+      "evidence": [
+        {
+          "sourceId": "blog-dff562e8ee3009c3-63",
+          "quote": "比较仍限定为前面的两条默认路径：0.19.0 的 Node.js + Playwright 后台，以及 0.41.1 默认 Chrome 的 Rust + CDP 后台。能够确认的收益是控制层运行依赖减少；控制进程是否更省内存、整个任务是否更快，需要分别测量。Chrome 仍然运行页面，上层模型仍然选择动作。"
+        }
+      ],
+      "review": {
+        "by": "Codex",
+        "retrieval": "local-source-quote-and-answer-retrieval-review",
+        "sourceFingerprint": "ebffffdb279ebadd1c59b638fdec0926b97713622b05dc4a0d0f03a72e1b0ba3"
+      }
     }
-  ]
+  ],
+  "preparation": {
+    "articleTradeoffsReview": {
+      "articleId": "dff562e8ee3009c3",
+      "reviewedAt": "2026-11-01T20:07:44.813Z",
+      "by": "Codex",
+      "repaired": 0,
+      "retrieved": 1
+    }
+  }
 }
