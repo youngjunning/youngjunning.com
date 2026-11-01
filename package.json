@@ -17,12 +17,11 @@
     "code:review": "node scripts/review-code.mjs",
     "test": "node --test scripts/*.test.mjs",
     "prebuild": "npm run content:check",
-    "postbuild": "node scripts/check-runtime-assets.mjs && node scripts/check-gbrain-runtime.mjs",
+    "postbuild": "node scripts/check-runtime-assets.mjs",
     "suggestions:prepare": "node scripts/prepare-suggestions.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",
-    "gbrain": "https://codeload.github.com/garrytan/gbrain/tar.gz/88d3f572950a772d268b22afe0bd53c2a2f090ff",
     "gray-matter": "^4.0.3",
     "hast-util-from-html": "2.0.3",
     "lucide-react": "^0.468.0",
@@ -39,7 +38,6 @@
     "remark-parse": "11.0.0",
     "remark-rehype": "11.1.2",
     "tailwind-merge": "^3.3.0",
-    "tsx": "4.23.15",
     "unified": "11.0.5"
   },
   "devDependencies": {

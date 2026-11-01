@@ -59,6 +59,6 @@ test('本地文件检索：中文、英文、跨文章、变化关联、历史�
     const found = await retrieveTwinEvidence(withdrawn, ask('AnyUse Redroid'));
     assert.deepEqual(found, []);
     const aborted = new AbortController(); aborted.abort();
-    await assert.rejects(retrieveTwinEvidence(withdrawn, ask('Network'), { signal: aborted.signal }));
+    assert.throws(() => retrieveTwinEvidence(withdrawn, ask('Network'), { signal: aborted.signal }));
   });
 });
