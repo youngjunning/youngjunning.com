@@ -1,7 +1,7 @@
 ---
 id: "dff562e8ee3009c3"
 title: "漫画拆解 agent-browser：从网页快照到动作验证"
-description: "通过 snapshot 原理漫画与公开源码，拆解 agent-browser 的语义观察、页面观察裁剪、元素引用、动作执行与结果核验边界。"
+description: "用小界和小南的场景漫画拆解 agent-browser：CLI 定位、新旧实现、AX Tree、元素引用、动作验证，以及页面观察如何裁剪。对照旧版 Playwright 与 0.41.1 默认 Chrome 的 Rust + CDP 路径，说明哪些业务证据不能丢。"
 date: "2026-11-01"
 topic: "principles"
 tags: ["agent-browser","Browser Agent","Accessibility Tree","CDP","漫画"]
@@ -21,11 +21,48 @@ agent-browser 把观察网页和操作浏览器整理成了命令行接口。这
 
 ## 一句话总结
 
-**agent-browser 为 Agent 提供网页观察、元素引用和浏览器动作；任务怎样拆解、下一步做什么、结果是否满足要求，仍需要上层执行循环组织。**
+**agent-browser 的核心定位是面向 AI Agent 的浏览器自动化 CLI，提供网页观察、元素引用和浏览器动作；基础命令通常由上层 Agent 决策调用。实现需要按版本区分：0.19.0 默认走 Node.js + Playwright，0.41.1 默认 Chrome 路径走 Rust daemon + CDP。**
 
 理解这项分工，才能看清两个容易混淆的问题：`@e1` 为什么能指向一个控件，以及执行了 `click` 为什么还不能直接宣布任务成功。
 
 本文按 2026 年 11 月 1 日核验的上游 `0.41.1` 版本与官方文档解释，默认讨论 Chrome / CDP 路径。已有系统若固定在旧版本，需要分别核对实现，不能把新版原理直接套到旧适配器上。[版本依据](https://github.com/vercel-labs/agent-browser/blob/5868f7c05020e047c00e68e4abf9253cce864f41/package.json)
+
+## 定位是 Agent 工具，实现要按版本区分
+
+“SDK 还是 Agent”混合了两个问题：SDK、CLI 描述怎样接入，Agent 描述谁承担模型决策循环。agent-browser 的核心定位是**面向 AI Agent 的浏览器自动化 CLI**。通常由外部 Agent 理解目标、选择命令并核对结果，工具负责观察、动作和会话。[官方定位](https://github.com/vercel-labs/agent-browser/blob/5868f7c05020e047c00e68e4abf9253cce864f41/README.md)
+
+![定位与版本对照：CLI 工具、旧版 Playwright、新版 Rust CDP，以及两条路径都可能使用 CDP](/media/dff562e8ee3009c3-version-f9a9b87f6f02.webp)
+
+### 核心命令与可选 chat 模式
+
+`snapshot`、`click` 等基础命令不靠 LLM 决定业务下一步。0.41.1 也提供可选的 `agent-browser chat`：配置模型后，将自然语言转成命令并执行。因此，不能把整个项目概括为“完全没有 Agent 能力”；本文的调用链对照主要解释基础工具层，可选 chat 在其上增加模型决策入口。[AI Chat 说明](https://github.com/vercel-labs/agent-browser/blob/5868f7c05020e047c00e68e4abf9253cce864f41/README.md#ai-chat)
+
+### 旧默认路径与新默认 Chrome 路径
+
+| 对照项 | 0.19.0 默认路径 | 0.41.1 默认 Chrome 路径 |
+| --- | --- | --- |
+| CLI | Rust CLI，解析并传递命令 | Rust CLI，解析并传递命令 |
+| 后台运行时 | Node.js daemon，管理 Playwright 浏览器实例 | Rust daemon，直接使用 CDP 驱动 Chrome |
+| 快照来源 | `locator.ariaSnapshot()`，再加工文本与引用 | `Accessibility.getFullAXTree`，再构树、关联引用并过滤输出 |
+| daemon 关键依赖 | Node.js、Playwright | 不需要 Node.js 或 Playwright |
+
+```text
+0.19.0 默认 CLI 路径：
+外部 Agent → Rust CLI → Node.js daemon → Playwright → 浏览器
+
+0.41.1 默认 Chrome 路径：
+外部 Agent → Rust CLI → Rust daemon → CDP → Chrome
+```
+
+这些箭头描述 CLI 入口。若项目通过 SDK 在 Node.js 进程内直接导入 `BrowserManager`，则可能绕过 CLI 和独立 daemon；确认本机 CLI 版本，不能替代确认 SDK 实际解析的依赖版本。
+
+SDK 包版本与底层浏览器包版本也要分别看。2026 年 11 月 2 日核对 npm 发布信息时，`@mastra/agent-browser` 的稳定版为 `0.6.0`，其 `dependencies` 仍固定 `agent-browser: "0.19.0"`。因此，升级这个适配器并不自动切到上游 0.41.1 默认 Chrome 的 Rust 原生路径。[Mastra 适配器 0.6.0 发布元数据](https://registry.npmjs.org/@mastra%2fagent-browser/0.6.0)
+
+关键变化包括**后台运行时和浏览器控制层**，不能简化成“旧版是 Node CLI，新版才有 Rust CLI”：0.19.0 的默认 CLI 就已经是 Rust；该版本还提供实验性、需选择启用的 `--native` Rust daemon。上表比较的是两版指定的默认路径，不代表 0.19.0 只有 Playwright，也不把 0.41.1 的其他引擎都归成 Chrome。[0.19.0 架构与 native 模式](https://github.com/vercel-labs/agent-browser/blob/e02bc1a10cf8962a2a171d2b515f14e325dc97ab/README.md#architecture)、[0.41.1 运行要求](https://github.com/vercel-labs/agent-browser/blob/5868f7c05020e047c00e68e4abf9253cce864f41/README.md#requirements)
+
+两个版本的快照也不能混讲。旧路径的 ARIA snapshot 由 Playwright 生成，再加工引用；本文核验的新 Chrome 路径直接请求浏览器的原生 AX 数据，再进行工具侧整理。后者仍包含 DOM 范围筛选和其他补充处理，不能推成纯 AX-only 系统。[旧版快照源码](https://github.com/vercel-labs/agent-browser/blob/e02bc1a10cf8962a2a171d2b515f14e325dc97ab/src/snapshot.ts#L275)、[新版快照源码](https://github.com/vercel-labs/agent-browser/blob/5868f7c05020e047c00e68e4abf9253cce864f41/cli/src/native/snapshot.rs#L428)
+
+还有一个容易误判的线索：**旧版 Playwright 也能通过 `connectOverCDP()` 连接 Chrome**。看到 CDP 地址、Chrome 进程或相同的 CLI 命令，都不足以认定已经使用新版 Rust 原生路径。需要同时检查依赖版本、所选运行模式、后台进程和实际调用链；本文不据此推断两版速度或成功率。[旧版 CDP 连接实现](https://github.com/vercel-labs/agent-browser/blob/e02bc1a10cf8962a2a171d2b515f14e325dc97ab/src/browser.ts#L1769)
 
 ## 第一幕：把“查库存”变成网页上的动作
 

@@ -389,7 +389,7 @@
     },
     {
       "id": "09b4178493c0c467",
-      "key": "d85bb47acddeca55c27579ef934bafecd3b40227567874c50c5a7fba8c43225d",
+      "key": "4d54994d46621a533bc82238dcad755405dbd9f6da988092c736ad7938792b08",
       "title": "CDP",
       "type": "topic",
       "dependencies": [
@@ -463,46 +463,54 @@
         },
         {
           "id": "blog-dff562e8ee3009c3-1",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
           "id": "blog-dff562e8ee3009c3-119",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
-          "id": "blog-dff562e8ee3009c3-171",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "id": "blog-dff562e8ee3009c3-161",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
-          "id": "blog-dff562e8ee3009c3-204",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "id": "blog-dff562e8ee3009c3-210",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
-          "id": "blog-dff562e8ee3009c3-54",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "id": "blog-dff562e8ee3009c3-243",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
-          "id": "blog-dff562e8ee3009c3-78",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "id": "blog-dff562e8ee3009c3-38",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
+        },
+        {
+          "id": "blog-dff562e8ee3009c3-63",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
+        },
+        {
+          "id": "blog-dff562e8ee3009c3-99",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         }
       ],
       "coverage": {
         "totalSources": 3,
         "sampledSources": 3,
-        "totalEntries": 23,
-        "sampledEntries": 23,
+        "totalEntries": 25,
+        "sampledEntries": 25,
         "complete": true
       },
       "paragraphs": [
         {
-          "id": "8545b7f4156b603b",
+          "id": "c7339b3c43f18295",
           "kind": "comparison",
           "text": "关于引用（@eN）的生命周期，agent-browser 一文给出了较具体的规则：仍然存在的 DOM 元素可在后续快照和同一文档更新中保留引用，页面或 iframe 导航、元素替换会影响有效性，没有对应 DOM 节点的虚拟无障碍节点其引用只适用于当前快照。BrowserOS 一文把同类问题列为 Browser Capability 层应维护的约束之一，包括导航前后元素引用何时失效、Frame 和弹窗如何归属、Screenshot 与 DOM Snapshot 是否来自同一时刻。AX Tree 一文则从观察范围角度补充：getFullAXTree() 的 full 不等于自动解决所有跨进程 iframe，虚拟列表的总行数与行索引不能代表未挂载行的内容。三者都承认引用不是业务身份，agent-browser 明确说引用不是商品 ID、订单号或跨页面永久地址，BrowserOS 则把稳定身份与失效时机作为长期积累的工程问题。",
           "attribution": "model-synthesis",
           "evidence": [
             {
-              "sourceId": "blog-dff562e8ee3009c3-119",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-161",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "当前官方文档的规则是：仍然存在的 DOM 元素可以在后续快照和同一文档更新中保留引用；页面或 iframe 导航、元素替换会影响引用有效性。没有对应 DOM 节点的虚拟无障碍节点，其引用只适用于当前快照。"
             },
             {
@@ -516,21 +524,21 @@
               "quote": "getFullAXTree() 的 full 也不等于自动解决所有跨进程 iframe，跨 frame 支持仍需由具体执行器单独验证。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-119",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-161",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "引用省去了为每一步重新编写 selector 的工作，但它不是商品 ID、订单号，也不是跨页面永久有效的地址。"
             }
           ]
         },
         {
-          "id": "fe935e6a0cf29019",
+          "id": "4f46cbe03282901b",
           "kind": "comparison",
           "text": "三篇材料对“动作成功不等于任务成功”的论证路径不同。agent-browser 一文用查库存任务说明：snapshot -i 偏向可引用的操作目标，“有货”这类普通结果文字可能被排除，因此检查业务结果时需要保留正文、状态或表格内容；并列出搜索后进入结果页、同一页面更新库存、列表重排或复用节点、出现多个同名按钮等变化下执行循环应检查什么。AX Tree 一文把“结果可验证”列为采用前的四个条件之一，不满足时应保留受阻或未验证状态，不以调用成功替代业务结果。BrowserOS 一文则从静态源码的证明力划界：源码能证明组件和调用关系存在，但不能仅凭静态源码证明每个网站、每个模型、每个任务都能可靠完成，任务成功率仍需基于真实任务集、Provider 和环境做运行时评测。",
           "attribution": "model-synthesis",
           "evidence": [
             {
-              "sourceId": "blog-dff562e8ee3009c3-119",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-161",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "snapshot -i 偏向可引用的操作目标，“有货”这样的普通结果文字可能被排除；某些标题和表格单元格能够留下，也不保证所需字段完整。找动作目标时可以压缩观察，检查业务结果时则需要保留相关正文、状态或表格内容，不能把“交互快照里没出现”理解为“页面没有”。"
             },
             {
@@ -544,14 +552,14 @@
               "quote": "这里存在一个重要边界：BrowserOS 源码能证明这些组件和调用关系存在，但不能仅凭静态源码证明每个网站、每个模型、每个任务都能可靠完成。任务成功率仍然需要基于真实任务集、Provider 和环境做运行时评测。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-119",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-161",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "列表重排或复用节点 核对该控件所属的业务记录，不能只看引用是否仍可解析"
             }
           ]
         },
         {
-          "id": "bc5b6855bea63ca2",
+          "id": "ac483b94765a2cdd",
           "kind": "comparison",
           "text": "在“是否 fork Chromium”这一架构取舍上，BrowserOS 一文给出了明确的适用条件划分：若产品主要是总结、翻译、问答、读取当前 Tab、在 Extension 权限内填表和导航、快速验证价值，Extension 加 Local Server 通常成本更低；只有当需要浏览器级私有 API、原生管理 Sidecar Runtime、控制 New Tab、Importer、Profile、进程和产品身份、内置固定关键 Extension、拥有安装包签名与更新渠道时，fork 的收益才足以覆盖维护成本。该文同时指出 fork 的代价是长期维护 Patch Stack、解决上游冲突、承担跨平台编译和安全更新压力。agent-browser 一文从另一侧给出类似的分流建议：若流程长期固定、定位条件清晰、主要目标是回归测试，可以继续使用现有自动化测试工具，不必为了引入 Agent 而改写成熟流程。AX Tree 一文则补充了语义不足时的处理选项：修复页面语义，或明确采用其他观察方式，或保持 AX-only 并报告受阻。",
           "attribution": "model-synthesis",
@@ -567,8 +575,8 @@
               "quote": "代价也很明显：一旦 fork Chromium，就要长期维护 Patch Stack、解决上游冲突、承担跨平台编译和安全更新压力。fork 不是“更高级”的默认答案，它只是用更高的维护成本换取更深的产品控制权。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-204",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-243",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "若流程长期固定、定位条件清晰、主要目标是回归测试，也可以继续使用现有自动化测试工具，不必为了引入 Agent 而改写成熟流程。"
             },
             {
@@ -579,14 +587,14 @@
           ]
         },
         {
-          "id": "a5f7725c93b64dbb",
+          "id": "d25b0e66344494e0",
           "kind": "comparison",
           "text": "三篇材料都强调版本与实现路径的对应关系，反对把一套工具的原理直接套到另一套上。agent-browser 一文明确其核验对象是 2026 年 11 月 1 日的上游 0.41.1 版本与官方文档，默认讨论 Chrome / CDP 路径，并提醒固定在旧版本的系统需分别核对实现；它还区分了本站另一篇 AX Tree 文章核验的 @mastra/agent-browser 0.4.1 与 agent-browser 0.19.0 组合，那条路径通过 Playwright ariaSnapshot() 生成工具快照，而 0.41.1 的 Chrome 原生路径直接读取 CDP AX Tree，工具名和命令相似不能代替对依赖版本及真实调用链的检查。BrowserOS 一文把源码快照固定在 5ddb0f2d0 commit，理由是后续会继续变化，固定 commit 能让目录、代码和发布流程保持可复查。AX Tree 一文则声明讨论通用机制和设计判断，示意不对应任何具体产品的已交付状态，源码阅读坐标沿用原稿，本次整理不构成新的运行时验收。",
           "attribution": "model-synthesis",
           "evidence": [
             {
-              "sourceId": "blog-dff562e8ee3009c3-171",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-210",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "本站只用 Accessibility Tree，浏览器 Agent 能走多远？核验的是 @mastra/agent-browser 0.4.1 与 agent-browser 0.19.0 的组合，那条路径通过 Playwright ariaSnapshot() 生成工具快照。本文核验的上游 0.41.1 Chrome 原生路径直接读取 CDP AX Tree。工具名和命令相似，不能代替对依赖版本及真实调用链的检查。"
             },
             {
@@ -601,13 +609,13 @@
             },
             {
               "sourceId": "blog-dff562e8ee3009c3-1",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "本文按 2026 年 11 月 1 日核验的上游 0.41.1 版本与官方文档解释，默认讨论 Chrome / CDP 路径。已有系统若固定在旧版本，需要分别核对实现，不能把新版原理直接套到旧适配器上。"
             }
           ]
         },
         {
-          "id": "c5f8b0ba520b58d6",
+          "id": "f0fad0243e5eb2f7",
           "kind": "open-question",
           "text": "现有材料留下一个可继续探讨的问题：当语义观察不足以表达目标时，混合观察的边界应如何界定并如实记录。AX Tree 一文提出可以明确转入混合观察，也可以保持 AX-only 并报告受阻，并要求如实记录实验条件；agent-browser 一文提到页面若把搜索按钮暴露成没有名称的图形，单靠语义观察可能无法确定用途，需要补充截图、上下文或其他受控读取，同时说明是否将截图作为模型输入、怎样结合语义结果仍由调用方决定。BrowserOS 一文则把 Screenshot、DOM Snapshot 与当前页面是否来自同一时刻列为 Browser Capability 层应维护的约束。这些材料没有给出统一的判定标准，也未提供混合观察下的对照评测结果。",
           "attribution": "model-synthesis",
@@ -618,13 +626,13 @@
               "quote": "缺少必要语义时，可以明确转入混合观察，也可以保持 AX-only 并报告受阻；两者都需要如实记录实验条件。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-54",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-63",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "若它只是一块没有名称的图形，单靠这份语义观察可能无法确定用途，需要补充截图、上下文或其他受控读取。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-171",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-161",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "截图能帮助判断图标、布局和视觉遮挡；是否将它作为模型输入、怎样结合语义结果，仍由调用方决定。"
             },
             {
@@ -637,7 +645,8 @@
       ],
       "review": "codex-reviewed",
       "reviewDetails": {
-        "observationPruningReviewedAt": "2026-11-01T18:52:37.297Z"
+        "observationPruningReviewedAt": "2026-11-01T18:52:37.297Z",
+        "versionComparisonReviewedAt": "2026-11-01T19:32:38.714Z"
       }
     },
     {
@@ -5621,7 +5630,7 @@
     },
     {
       "id": "38696938e4e6eb69",
-      "key": "993231fa927fe703810723fd391b734a4fdc08d1b14345ebfb71b4216a10439e",
+      "key": "0f275ca41f2a9f5c1e5655a3bfcab1298133446b697da20a5c7ccf651c966e42",
       "title": "漫画",
       "type": "topic",
       "dependencies": [
@@ -5655,27 +5664,35 @@
         },
         {
           "id": "blog-dff562e8ee3009c3-1",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
           "id": "blog-dff562e8ee3009c3-119",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
-          "id": "blog-dff562e8ee3009c3-171",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "id": "blog-dff562e8ee3009c3-161",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
-          "id": "blog-dff562e8ee3009c3-204",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "id": "blog-dff562e8ee3009c3-210",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
-          "id": "blog-dff562e8ee3009c3-54",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "id": "blog-dff562e8ee3009c3-243",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
-          "id": "blog-dff562e8ee3009c3-78",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "id": "blog-dff562e8ee3009c3-38",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
+        },
+        {
+          "id": "blog-dff562e8ee3009c3-63",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
+        },
+        {
+          "id": "blog-dff562e8ee3009c3-99",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
           "id": "blog-eaa9d6fbf7fa29ec-1",
@@ -5693,13 +5710,13 @@
       "coverage": {
         "totalSources": 4,
         "sampledSources": 4,
-        "totalEntries": 16,
-        "sampledEntries": 16,
+        "totalEntries": 18,
+        "sampledEntries": 18,
         "complete": true
       },
       "paragraphs": [
         {
-          "id": "f6ebb5f4aa9b3f81",
+          "id": "4c95cc9b124894de",
           "kind": "comparison",
           "text": "三篇“漫画拆解”类文章都把工具能力限定在可回查的静态证据上，而不把示意当作运行结果。ChatGPT App 一文明确分析对象为 macOS 上的特定版本与 build，检查日期为 2026 年 10 月 31 日，并声明这是一轮安装包静态分析，没有执行真实网页任务；agent-browser 一文按 2026 年 11 月 1 日核验的上游 0.41.1 版本与官方文档解释，并声明漫画中的书店、库存和命令输出均为教学示意；Zed 一文以两张真实截图为界面依据，但没有对截图中的仓库执行暂存、提交或寄存。共同点是区分“机制解释”与“已交付状态或执行记录”，差异在于证据类型：前者是安装包与源码，中者是固定版本源码与官方文档，后者是界面截图加固定版本源码。",
           "attribution": "model-synthesis",
@@ -5711,7 +5728,7 @@
             },
             {
               "sourceId": "blog-dff562e8ee3009c3-1",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "漫画中的书店、库存和命令输出均为教学示意，不是实际业务执行记录。"
             },
             {
@@ -5750,29 +5767,29 @@
           ]
         },
         {
-          "id": "7c2516773d18db59",
+          "id": "3ba4d963381224a7",
           "kind": "synthesis",
           "text": "agent-browser 一文的核心取舍是把“观察”和“动作”做成可分离的两步，并强调动作成功不等于任务完成。snapshot 通过 Accessibility.getFullAXTree 取得节点信息，再组织角色、名称、状态和层级，生成 @e1 这类引用；引用绑定的是页面元素，不是商品 ID 或订单号，页面或 iframe 导航、元素替换会影响其有效性，导航后必须重新读取快照。文章还指出 -i 只保留交互元素，可能排除“有货”这类结果文字，因此检查业务结果时需保留正文或表格内容。架构上当前上游采用 client-daemon：Rust CLI 解析命令并与 Rust daemon 通信，daemon 直接使用 CDP 驱动默认 Chrome 路径，原生 daemon 运行时不需要 Node.js 或 Playwright。",
           "attribution": "model-synthesis",
           "evidence": [
             {
-              "sourceId": "blog-dff562e8ee3009c3-54",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-99",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "工具通过 Accessibility.getFullAXTree 取得节点信息，再组织角色、名称、状态和层级。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-119",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-161",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "引用省去了为每一步重新编写 selector 的工作，但它不是商品 ID、订单号，也不是跨页面永久有效的地址。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-119",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-161",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "snapshot -i 偏向可引用的操作目标，“有货”这样的普通结果文字可能被排除；某些标题和表格单元格能够留下，也不保证所需字段完整。找动作目标时可以压缩观察，检查业务结果时则需要保留相关正文、状态或表格内容，不能把“交互快照里没出现”理解为“页面没有”。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-171",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-210",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "Rust CLI 解析命令并与 Rust daemon 通信，daemon 直接使用 CDP 驱动默认 Chrome 路径。"
             }
           ]
@@ -5834,7 +5851,7 @@
           ]
         },
         {
-          "id": "5134a0300472ec37",
+          "id": "da08b9e3016a57dd",
           "kind": "open-question",
           "text": "现有资料留下几处可继续探讨但尚不能回答的问题。ChatGPT App 一文承认 Owl 定制接口的底层补丁范围、对应上游 Electron 版本与迁移限制仍不能从静态检查确定，且未运行真实任务，因此前后台表现是否一致、是否所有浏览器工具都走这条后端仍待验证。agent-browser 一文指出会话仍在运行、浏览器关闭后能恢复状态、两个账号完全隔离是三个不同要求，多个会话通过 --cdp 连接同一 Chrome 时不能仅靠会话名推断 Cookie 隔离；文章也未做速度、token 或费用的性能对照。Zed 一文截图未显示安装版本号，具体菜单以当前版本为准。",
           "attribution": "model-synthesis",
@@ -5845,13 +5862,13 @@
               "quote": "具体修改了哪些 Chromium/Electron 源码、对应哪个上游 Electron 版本、迁移时有哪些限制，仍不能从这次检查中确定。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-204",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-210",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "会话仍在运行、浏览器关闭后能恢复状态、两个账号完全隔离，是三个不同要求。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-204",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-243",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "本文没有进行这样的性能对照，不据此给出降本或提速比例。"
             },
             {
@@ -5864,7 +5881,8 @@
       ],
       "review": "codex-reviewed",
       "reviewDetails": {
-        "observationPruningReviewedAt": "2026-11-01T18:52:37.297Z"
+        "observationPruningReviewedAt": "2026-11-01T18:52:37.297Z",
+        "versionComparisonReviewedAt": "2026-11-01T19:32:38.715Z"
       }
     },
     {
@@ -10314,7 +10332,7 @@
     },
     {
       "id": "87f60f6330b70a06",
-      "key": "55fe7be285fe9e50f410a8d58939d2a6b6a033913e7ab08ff763902f83f4a9f1",
+      "key": "9f4dd05b607e9ab7d2f08ad0e37421bcd798e90e97e9ba52a47bd0f769117890",
       "title": "Accessibility Tree",
       "type": "topic",
       "dependencies": [
@@ -10344,39 +10362,47 @@
         },
         {
           "id": "blog-dff562e8ee3009c3-1",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
           "id": "blog-dff562e8ee3009c3-119",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
-          "id": "blog-dff562e8ee3009c3-171",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "id": "blog-dff562e8ee3009c3-161",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
-          "id": "blog-dff562e8ee3009c3-204",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "id": "blog-dff562e8ee3009c3-210",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
-          "id": "blog-dff562e8ee3009c3-54",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "id": "blog-dff562e8ee3009c3-243",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
-          "id": "blog-dff562e8ee3009c3-78",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "id": "blog-dff562e8ee3009c3-38",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
+        },
+        {
+          "id": "blog-dff562e8ee3009c3-63",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
+        },
+        {
+          "id": "blog-dff562e8ee3009c3-99",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         }
       ],
       "coverage": {
         "totalSources": 2,
         "sampledSources": 2,
-        "totalEntries": 12,
-        "sampledEntries": 12,
+        "totalEntries": 14,
+        "sampledEntries": 14,
         "complete": true
       },
       "paragraphs": [
         {
-          "id": "bb72688a2c1f2741",
+          "id": "fa4153def06f1b0b",
           "kind": "synthesis",
           "text": "两篇材料都把“观察”与“执行”拆成不同层次：AX Tree 提供角色、名称、状态与层级，但动作执行仍需执行器另行完成。前一篇明确指出 CDP 的 Accessibility 域主要提供查询和事件，没有通用 click、fill 接口，因此不能因为调用 getFullAXTree() 就假定动作已解决；后一篇则说明 agent-browser 在取得 AX 节点后，由工具代码组织引用，执行 click 时再解析引用、定位元素并处理可操作性。两者共同点是语义观察不等于可操作，差异在于前者讨论 AX-only 实验的边界，后者描述具体工具如何把观察接到动作命令上。",
           "attribution": "model-synthesis",
@@ -10387,14 +10413,14 @@
               "quote": "Chromium 的原生 Accessibility 系统支持辅助技术发起默认动作、聚焦、改变值与滚动。CDP 的 Accessibility 域则主要提供查询和事件，并没有通用的 click、fill 接口。不能因为使用了 Accessibility.getFullAXTree()，就假定动作执行也已经解决。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-54",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-99",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "执行 click @e2 时，后台解析此前保存的引用，优先尝试关联的缓存节点，再进入元素定位和可操作性处理。节点替换或文档导航会影响这项关联；角色与名称恢复存在歧义时应停止动作。"
             }
           ]
         },
         {
-          "id": "3c93c4c568c2f107",
+          "id": "a406f4f61487bd94",
           "kind": "comparison",
           "text": "关于“只使用 Accessibility Tree”这一约束，两篇材料的界定方式不同。前一篇把“不用截图”“只给模型语义快照”“完全通过原生 Accessibility API 操作”列为三种不同实验，并指出模型没有观察 DOM 不代表系统内部完全不接触 DOM；后一篇则说明 agent-browser 当前实现还包含 DOM 范围解析、可点击线索补充等处理，不能把漫画理解为纯 AX-only 约束。两者都强调要区分模型收到的表示与执行器内部使用的信息，但前一篇是在方法论上拆解约束层次，后一篇是在具体工具上澄清实现范围。",
           "attribution": "model-synthesis",
@@ -10410,26 +10436,26 @@
               "quote": "这个区分决定了实验结论的范围：模型没有观察 DOM，不代表系统内部完全不接触 DOM。本文允许后者，但不允许执行器把额外读到的页面内容悄悄补给模型。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-54",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-99",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "读取 AX Tree 也不代表整套工具只使用 AX 信息：当前实现还包含 DOM 范围解析、可点击线索补充等处理，不能把这张漫画理解为纯 AX-only 约束。"
             }
           ]
         },
         {
-          "id": "a75af74404b742d9",
+          "id": "6b0d8f33835e7227",
           "kind": "synthesis",
           "text": "引用机制是两篇材料交汇的具体约束。后一篇说明 @e1 这类引用在后台保留与节点、frame 和文档的关联，但页面或 iframe 导航、元素替换会影响引用有效性，没有对应 DOM 节点的虚拟无障碍节点其引用只适用于当前快照；前一篇则从观察范围角度指出，虚拟列表的总行数、行索引不能代表未挂载行的内容，滚动、翻页或筛选后仍要重新观察。两者共同指向一个条件：引用可解析不等于业务对象未变，列表复用同一 DOM 容器展示另一条记录时，仍需核对书名、商品规格等任务条件。",
           "attribution": "model-synthesis",
           "evidence": [
             {
-              "sourceId": "blog-dff562e8ee3009c3-119",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-161",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "当前官方文档的规则是：仍然存在的 DOM 元素可以在后续快照和同一文档更新中保留引用；页面或 iframe 导航、元素替换会影响引用有效性。没有对应 DOM 节点的虚拟无障碍节点，其引用只适用于当前快照。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-119",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-161",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "因此，稳定的节点引用也不能独立证明业务对象没变。列表可能复用同一个 DOM 容器展示另一条记录；“购买”按钮可能仍然存在，但页面当前商品已经不同。"
             },
             {
@@ -10440,7 +10466,7 @@
           ]
         },
         {
-          "id": "43392a31d9258caa",
+          "id": "1efec6f51d9bfc50",
           "kind": "comparison",
           "text": "两篇材料对“结果可验证”的处理方式有共同点也有差异。前一篇提出采用前检查四个条件：目标可观察、目标可区分、动作受支持、结果可验证，不满足时应修复语义、扩展定位、补齐执行器支持或保留受阻状态；后一篇则用具体命令说明 snapshot -i 偏向可引用的操作目标，“有货”这样的普通结果文字可能被排除，检查业务结果时需要保留相关正文、状态或表格内容。两者都反对把动作成功当成任务成功，但前一篇给出的是通用验收条件，后一篇给出的是快照过滤选项带来的具体观察缺口。",
           "attribution": "model-synthesis",
@@ -10451,14 +10477,14 @@
               "quote": "目标可观察 必要控件和字段是否出现在语义表示中？ 修复页面语义，或明确采用其他观察方式 目标可区分 重名元素能否由行、区域、业务对象关联？ 扩展带范围的定位；当前不能消歧则停止 动作受支持 执行器是否能把 AX 目标转换成正确操作？ 补齐角色、动作和 frame 支持，再归因于页面 结果可验证 参数与业务结果能否通过 AX 再次确认？ 保留受阻或未验证状态，不以调用成功替代业务结果"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-119",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-161",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "snapshot -i 偏向可引用的操作目标，“有货”这样的普通结果文字可能被排除；某些标题和表格单元格能够留下，也不保证所需字段完整。找动作目标时可以压缩观察，检查业务结果时则需要保留相关正文、状态或表格内容，不能把“交互快照里没出现”理解为“页面没有”。"
             }
           ]
         },
         {
-          "id": "85010fd0bf99fd1b",
+          "id": "6a2f7d47f6ac3dd5",
           "kind": "synthesis",
           "text": "两篇材料都提醒不要把语义声明等同于实际行为。前一篇用示例说明 role=\"button\" 不会自动添加 Enter/Space 激活、事件处理或禁用逻辑，单独 aria-disabled 只传达不可用状态而不自动阻止事件，aria-hidden=\"true\" 本身不让像素消失也不自动移除焦点资格；后一篇则指出页面若把搜索按钮暴露成有明确名称的 button，Agent 就有直接证据，若只是一块没有名称的图形，单靠语义观察可能无法确定用途。共同结论是：AX 中的角色和状态是观察证据，页面实现与声明是否一致仍需核对，语义缺失时应补充其他受控读取或报告受阻。",
           "attribution": "model-synthesis",
@@ -10474,14 +10500,14 @@
               "quote": "原生 disabled 在支持它的控件上具有实际禁用行为，通常也使其退出 Tab 顺序；单独 aria-disabled 只传达不可用状态，不自动阻止事件。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-54",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-63",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "页面若把搜索按钮暴露成一个有明确名称的 button，Agent 就有直接证据。若它只是一块没有名称的图形，单靠这份语义观察可能无法确定用途，需要补充截图、上下文或其他受控读取。"
             }
           ]
         },
         {
-          "id": "1cd6230f654c2461",
+          "id": "f85e1ce3f37351e6",
           "kind": "open-question",
           "text": "现有材料留下一个可继续探讨的问题：在跨 frame 和虚拟列表场景下，AX-only 观察的覆盖范围应如何界定。前一篇提到 getFullAXTree() 的 full 不等于自动解决所有跨进程 iframe，跨 frame 支持仍需由具体执行器单独验证；后一篇说明引用与 frame 和文档关联，导航会影响引用有效性。两篇都未给出跨 frame 观察与引用恢复的统一方案，也未说明虚拟列表未挂载行在何种条件下可被可靠观察，这可以作为后续核验的具体方向。",
           "attribution": "model-synthesis",
@@ -10492,34 +10518,53 @@
               "quote": "getFullAXTree() 的 full 也不等于自动解决所有跨进程 iframe，跨 frame 支持仍需由具体执行器单独验证。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-54",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-99",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "生成引用时，后台保留引用与节点、frame 和文档的关联；后续文本中出现的 @e1 因而能回到浏览器中的具体目标。"
             }
           ]
         },
         {
-          "id": "6f4c77de56c82116",
+          "id": "167d260df55910e1",
           "kind": "synthesis",
           "text": "AX 是 Accessibility 的常用缩写。本文的页面观察裁剪涉及 DOM 到 AX 的语义投影、结构压缩和快照输出过滤，网页本身的 DOM 与业务状态仍然保留；不能把输出变短理解为删除网页节点。",
           "attribution": "model-synthesis",
           "evidence": [
             {
-              "sourceId": "blog-dff562e8ee3009c3-54",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-99",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "AX 是 Accessibility（无障碍）的常用缩写，AX Tree 即 Accessibility Tree，无障碍树。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-54",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-99",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "本文这条路径更适合称为页面观察裁剪，具体包括语义投影、结构压缩和快照输出过滤。这些处理不会把网页里的 DOM 节点删除，也不会改变页面的业务状态。"
+            }
+          ]
+        },
+        {
+          "id": "dd5c8e8da8b76d35",
+          "kind": "synthesis",
+          "text": "0.19.0 默认 CLI 已经是 Rust，该版本也提供实验性 --native Rust daemon；不能把新旧路径概括为 CLI 从 Node.js 换成 Rust。Playwright 本身也能通过 CDP 连接 Chrome，判断实际路径应核对依赖、运行模式与调用链，不能只看协议地址。",
+          "attribution": "model-synthesis",
+          "evidence": [
+            {
+              "sourceId": "blog-dff562e8ee3009c3-38",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
+              "quote": "关键变化包括后台运行时和浏览器控制层，不能简化成“旧版是 Node CLI，新版才有 Rust CLI”：0.19.0 的默认 CLI 就已经是 Rust；该版本还提供实验性、需选择启用的 --native Rust daemon。"
+            },
+            {
+              "sourceId": "blog-dff562e8ee3009c3-63",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
+              "quote": "旧版 Playwright 也能通过 connectOverCDP() 连接 Chrome"
             }
           ]
         }
       ],
       "review": "codex-reviewed",
       "reviewDetails": {
-        "observationPruningReviewedAt": "2026-11-01T18:52:37.297Z"
+        "observationPruningReviewedAt": "2026-11-01T18:52:37.297Z",
+        "versionComparisonReviewedAt": "2026-11-01T19:32:38.715Z"
       }
     },
     {
@@ -14824,7 +14869,7 @@
     },
     {
       "id": "de99c3b1be0ce9c1",
-      "key": "b8f41f42220228dcd83d90ab413a98fd819853474a014388a85cca6cd31fda5f",
+      "key": "f8c56ce91458937f40c41ebe2fd11b84dceed412e97ba8fcbf4e5bd24c9dffc0",
       "title": "agent-browser",
       "type": "topic",
       "dependencies": [
@@ -14854,39 +14899,47 @@
         },
         {
           "id": "blog-dff562e8ee3009c3-1",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
           "id": "blog-dff562e8ee3009c3-119",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
-          "id": "blog-dff562e8ee3009c3-171",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "id": "blog-dff562e8ee3009c3-161",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
-          "id": "blog-dff562e8ee3009c3-204",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "id": "blog-dff562e8ee3009c3-210",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
-          "id": "blog-dff562e8ee3009c3-54",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "id": "blog-dff562e8ee3009c3-243",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
-          "id": "blog-dff562e8ee3009c3-78",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "id": "blog-dff562e8ee3009c3-38",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
+        },
+        {
+          "id": "blog-dff562e8ee3009c3-63",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
+        },
+        {
+          "id": "blog-dff562e8ee3009c3-99",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         }
       ],
       "coverage": {
         "totalSources": 2,
         "sampledSources": 2,
-        "totalEntries": 12,
-        "sampledEntries": 12,
+        "totalEntries": 14,
+        "sampledEntries": 14,
         "complete": true
       },
       "paragraphs": [
         {
-          "id": "05580485d35f1175",
+          "id": "cb71b621be118f4d",
           "kind": "comparison",
           "text": "两篇材料都把“观察”与“动作/结果核验”分开：AX 文章强调 Accessibility Tree 是带损失的信息投影，能提供角色、名称、状态等语义，但不保证对象在视口内、未被遮挡，也不保证声明与实现一致；agent-browser 文章则把 snapshot 视为观察接口，把 click 等视为动作接口，并指出动作成功不等于业务结果完成。两者共同点是语义观察可支撑受控任务，但都需要额外的完成条件与重新观察。",
           "attribution": "model-synthesis",
@@ -14903,53 +14956,53 @@
             },
             {
               "sourceId": "blog-dff562e8ee3009c3-1",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "网页上的某次点击成功，只能证明一个动作完成了，距离回答用户的问题还差一次结果核对。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-119",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-161",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "重新观察的目的包括获取可用引用，也包括更新决策证据。即使 @e1 仍然有效，页面条件也可能已经不允许继续执行原计划。"
             }
           ]
         },
         {
-          "id": "7d3a32b10d2c6490",
+          "id": "c66fe4eda1834dc4",
           "kind": "synthesis",
           "text": "agent-browser 的引用机制把观察与动作对应起来，但引用不是业务身份。该快照文档声明，引用与节点、frame 和文档关联，后续命令可据此定位；同时页面或 iframe 导航、元素替换会影响引用有效性，虚拟无障碍节点的引用只适用于当前快照。因此执行涉及具体对象的动作前，仍需核对书名、商品规格、订单号等任务条件，不能仅凭引用仍可解析就认定业务对象未变。",
           "attribution": "model-synthesis",
           "evidence": [
             {
-              "sourceId": "blog-dff562e8ee3009c3-54",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-99",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "生成引用时，后台保留引用与节点、frame 和文档的关联；后续文本中出现的 @e1 因而能回到浏览器中的具体目标。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-119",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-161",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "页面或 iframe 导航、元素替换会影响引用有效性。没有对应 DOM 节点的虚拟无障碍节点，其引用只适用于当前快照。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-119",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-161",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "稳定的节点引用也不能独立证明业务对象没变。列表可能复用同一个 DOM 容器展示另一条记录；“购买”按钮可能仍然存在，但页面当前商品已经不同。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-119",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-161",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "引用省去了为每一步重新编写 selector 的工作，但它不是商品 ID、订单号，也不是跨页面永久有效的地址。"
             }
           ]
         },
         {
-          "id": "acec55eebdd912af",
+          "id": "f57028ca90d72d90",
           "kind": "synthesis",
           "text": "观察范围的选择会直接影响任务验收。agent-browser 文章指出 snapshot -i 偏向可引用的操作目标，适合找输入框、链接和按钮，但“有货”这类普通结果文字可能被排除；检查业务结果时需要保留相关正文、状态或表格内容，不能把交互快照里没出现理解为页面没有。AX 文章也提醒虚拟列表的总行数、行索引不能代表未挂载行的内容，滚动、翻页或筛选后仍要重新观察。",
           "attribution": "model-synthesis",
           "evidence": [
             {
-              "sourceId": "blog-dff562e8ee3009c3-119",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-161",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "snapshot -i 偏向可引用的操作目标，“有货”这样的普通结果文字可能被排除；某些标题和表格单元格能够留下，也不保证所需字段完整。找动作目标时可以压缩观察，检查业务结果时则需要保留相关正文、状态或表格内容，不能把“交互快照里没出现”理解为“页面没有”。"
             },
             {
@@ -14958,26 +15011,26 @@
               "quote": "虚拟列表还需要额外关注观察范围。总行数、行索引不能代表未挂载行的内容；滚动、翻页或筛选后仍要重新观察。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-1",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-63",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "snapshot -i 偏向可引用的操作目标，适合先找输入框、链接和按钮；具体保留范围见后文的裁剪说明。"
             }
           ]
         },
         {
-          "id": "e90a2324c42eef80",
+          "id": "06acdfc268b28334",
           "kind": "comparison",
           "text": "两篇文章对版本与实现路径都作了限定。agent-browser 文章区分了本站 AX 文章核验的 @mastra/agent-browser 0.4.1 与 agent-browser 0.19.0 组合（通过 Playwright ariaSnapshot() 生成工具快照），以及该文核验的上游 0.41.1 Chrome 原生路径（直接读取 CDP AX Tree），并提醒工具名和命令相似不能代替对依赖版本及真实调用链的检查。AX 文章同样把“原生 AX-only 观察”与“ARIA snapshot-only 观察”列为不同实验，并说明其 Demo 采用原生 AX 观察与动作，但未实现平台 AX 的默认动作。",
           "attribution": "model-synthesis",
           "evidence": [
             {
-              "sourceId": "blog-dff562e8ee3009c3-171",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-210",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "本站只用 Accessibility Tree，浏览器 Agent 能走多远？核验的是 @mastra/agent-browser 0.4.1 与 agent-browser 0.19.0 的组合，那条路径通过 Playwright ariaSnapshot() 生成工具快照。本文核验的上游 0.41.1 Chrome 原生路径直接读取 CDP AX Tree。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-171",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-210",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "工具名和命令相似，不能代替对依赖版本及真实调用链的检查。"
             },
             {
@@ -14993,7 +15046,7 @@
           ]
         },
         {
-          "id": "e10a88abc4ebc0e6",
+          "id": "9c37ad8515a6ec16",
           "kind": "open-question",
           "text": "现有材料留下一个可继续探讨的问题：在第三方站点缺少必要语义、或同名控件无法消歧时，是应修复页面语义、扩展带范围的定位，还是明确转入混合观察并报告受阻？AX 文章提出采用前检查目标可观察、可区分、动作受支持、结果可验证四个条件，并建议不满足时如实记录实验条件；agent-browser 文章也建议无法确认时停止操作。但两篇材料均未给出跨站点、跨版本的统一判定阈值或已完成对照结果。",
           "attribution": "model-synthesis",
@@ -15004,39 +15057,68 @@
               "quote": "面对第三方站点，应先检查真实任务中的关键控件，再决定是否坚持这条路线。缺少必要语义时，可以明确转入混合观察，也可以保持 AX-only 并报告受阻；两者都需要如实记录实验条件。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-119",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-161",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "出现多个同名按钮 补充行、区域或业务字段以消歧；无法确认时停止操作"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-204",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-243",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "评估接入价值时，我会先看三项条件：页面语义是否足够表达目标，引用与页面状态能否持续对应，以及结果是否有可检查的完成标准。"
             }
           ]
         },
         {
-          "id": "ccdf14eca549e2a7",
+          "id": "d6bedae1ae4bdc66",
           "kind": "synthesis",
           "text": "按任务缩小观察时，需要同时保留动作目标与上下文、业务对象身份、结果与约束证据。不能点击的库存、规格和错误文字仍可能决定验收；证据不足时扩大范围或取消过滤，不能从按钮出现推断任务完成。",
           "attribution": "model-synthesis",
           "evidence": [
             {
-              "sourceId": "blog-dff562e8ee3009c3-78",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-119",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "过滤后即使标题和购买按钮都留下了，库存文字仍可能消失。按钮可以定位，只说明存在一个动作目标，不能据此回答“有货”。裁剪策略至少要保住当前任务需要的三类信息："
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-78",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
-              "quote": "1. 动作目标与上下文：输入框、按钮、关联标签及所属区域，避免同名控件之间失去区分。 2. 业务对象身份：书名、版本、规格及结果行的对应关系，避免把其他对象的库存接到当前对象上。 3. 结果与约束证据：库存、价格、加载状态、禁用或选中状态、错误提示及失败原因。"
+              "sourceId": "blog-dff562e8ee3009c3-119",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
+              "quote": "1. 动作目标与上下文：输入框、按钮、关联标签及所属区域，避免同名控件之间失去区分。"
+            },
+            {
+              "sourceId": "blog-dff562e8ee3009c3-119",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
+              "quote": "2. 业务对象身份：书名、版本、规格及结果行的对应关系，避免把其他对象的库存接到当前对象上。"
+            },
+            {
+              "sourceId": "blog-dff562e8ee3009c3-119",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
+              "quote": "3. 结果与约束证据：库存、价格、加载状态、禁用或选中状态、错误提示及失败原因。"
+            }
+          ]
+        },
+        {
+          "id": "4aa3dcded1a4c64d",
+          "kind": "synthesis",
+          "text": "agent-browser 的核心定位是面向 AI Agent 的浏览器自动化 CLI，基础命令通常由上层决策调用。0.41.1 另有可选 chat 模式，配置模型后将自然语言转成命令；CLI/SDK 的接入形式与 Agent 的决策职责应分别判断。",
+          "attribution": "model-synthesis",
+          "evidence": [
+            {
+              "sourceId": "blog-dff562e8ee3009c3-1",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
+              "quote": "agent-browser 的核心定位是面向 AI Agent 的浏览器自动化 CLI"
+            },
+            {
+              "sourceId": "blog-dff562e8ee3009c3-38",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
+              "quote": "0.41.1 也提供可选的 agent-browser chat：配置模型后，将自然语言转成命令并执行。"
             }
           ]
         }
       ],
       "review": "codex-reviewed",
       "reviewDetails": {
-        "observationPruningReviewedAt": "2026-11-01T18:52:37.297Z"
+        "observationPruningReviewedAt": "2026-11-01T18:52:37.297Z",
+        "versionComparisonReviewedAt": "2026-11-01T19:32:38.716Z"
       }
     },
     {
@@ -15640,7 +15722,7 @@
     },
     {
       "id": "f5cd5d365c1c0896",
-      "key": "eb258d3560747c77ce5732fda32429436f78549c617d8735712ce68653d9ff73",
+      "key": "92f074bafab8ace999ac85ba69cf2ce11ab4a54692529f02a1ef95c36197f0d1",
       "title": "Browser Agent",
       "type": "topic",
       "dependencies": [
@@ -15670,51 +15752,59 @@
         },
         {
           "id": "blog-dff562e8ee3009c3-1",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
           "id": "blog-dff562e8ee3009c3-119",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
-          "id": "blog-dff562e8ee3009c3-171",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "id": "blog-dff562e8ee3009c3-161",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
-          "id": "blog-dff562e8ee3009c3-204",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "id": "blog-dff562e8ee3009c3-210",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
-          "id": "blog-dff562e8ee3009c3-54",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "id": "blog-dff562e8ee3009c3-243",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         },
         {
-          "id": "blog-dff562e8ee3009c3-78",
-          "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860"
+          "id": "blog-dff562e8ee3009c3-38",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
+        },
+        {
+          "id": "blog-dff562e8ee3009c3-63",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
+        },
+        {
+          "id": "blog-dff562e8ee3009c3-99",
+          "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572"
         }
       ],
       "coverage": {
         "totalSources": 2,
         "sampledSources": 2,
-        "totalEntries": 12,
-        "sampledEntries": 12,
+        "totalEntries": 14,
+        "sampledEntries": 14,
         "complete": true
       },
       "paragraphs": [
         {
-          "id": "77a7f2a4c178b856",
+          "id": "e1f9b429937e1e52",
           "kind": "comparison",
           "text": "两篇都区分“动作成功”与“任务成功”，但给出的检查路径不同。第二篇以查库存为例，指出 snapshot -i 偏向可引用的操作目标，普通结果文字可能被排除，检查业务结果时需要保留正文、状态或表格内容；动作失败或超时未知时，应先检查页面是否已变化，尤其提交、支付、删除不能仅凭未收到成功响应就重复执行。第一篇则提出采用前检查四个条件：目标可观察、目标可区分、动作受支持、结果可验证，不满足时应修复语义、扩展定位、补齐执行器支持或保留受阻状态。两者共同反对把调用成功当作业务结果，差异在于前者偏任务执行循环的验收，后者偏 AX-only 路线的适用条件。",
           "attribution": "model-synthesis",
           "evidence": [
             {
-              "sourceId": "blog-dff562e8ee3009c3-119",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-161",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "snapshot -i 偏向可引用的操作目标，“有货”这样的普通结果文字可能被排除；某些标题和表格单元格能够留下，也不保证所需字段完整。找动作目标时可以压缩观察，检查业务结果时则需要保留相关正文、状态或表格内容，不能把“交互快照里没出现”理解为“页面没有”。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-171",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-210",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "若请求超时而动作效果未知，应先检查页面是否已经发生变化。尤其是提交、支付、删除等操作，不能仅凭未收到成功响应就重复执行。"
             },
             {
@@ -15730,7 +15820,7 @@
           ]
         },
         {
-          "id": "92047df0ce1d039f",
+          "id": "ce69d83c50be6b34",
           "kind": "comparison",
           "text": "两篇都提醒不要把语义属性当成行为本身。第一篇用原生 button 与 role=\"button\" 对比，指出后者不会自动添加 Enter/Space 激活、事件处理或禁用逻辑；disabled、aria-disabled、readonly、aria-hidden 各自改变不同东西，aria-expanded 与 aria-invalid 也必须随真实界面更新。第二篇则从工具实现角度说明，snapshot 内部还包含 DOM 范围解析、可点击线索补充等处理，不能把漫画理解为纯 AX-only 约束。共同点是“声明”与“实现”之间存在缺口；差异在于前者关注页面语义质量对 Agent 观察的影响，后者关注工具在 AX 之外还做了哪些工程处理。",
           "attribution": "model-synthesis",
@@ -15746,8 +15836,8 @@
               "quote": "原生 disabled 在支持它的控件上具有实际禁用行为，通常也使其退出 Tab 顺序；单独 aria-disabled 只传达不可用状态，不自动阻止事件。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-54",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-99",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "读取 AX Tree 也不代表整套工具只使用 AX 信息：当前实现还包含 DOM 范围解析、可点击线索补充等处理，不能把这张漫画理解为纯 AX-only 约束。"
             },
             {
@@ -15758,19 +15848,19 @@
           ]
         },
         {
-          "id": "cfb3b32ef3e9aaa2",
+          "id": "e6ab3c28ae0883c3",
           "kind": "comparison",
           "text": "两篇都涉及版本与实现边界，但结论范围不同。第二篇明确其核验的是 2026 年 11 月 1 日的上游 0.41.1 版本与 Chrome/CDP 默认路径，并指出另一篇文章核验的是 @mastra/agent-browser 0.4.1 与 agent-browser 0.19.0 的组合，那条路径通过 Playwright ariaSnapshot() 生成工具快照；工具名和命令相似不能代替对依赖版本及真实调用链的检查。第一篇则把“ARIA snapshot-only 观察”与“原生 AX-only 观察”列为不同实验，并说明前者由工具生成角色、名称、状态和引用，后者由 CDP 返回语义数据。共同点是都要求说明实际收到哪种表示；差异在于第二篇给出了具体版本坐标，第一篇更侧重实验类型划分。",
           "attribution": "model-synthesis",
           "evidence": [
             {
-              "sourceId": "blog-dff562e8ee3009c3-171",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-210",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "本站只用 Accessibility Tree，浏览器 Agent 能走多远？核验的是 @mastra/agent-browser 0.4.1 与 agent-browser 0.19.0 的组合，那条路径通过 Playwright ariaSnapshot() 生成工具快照。本文核验的上游 0.41.1 Chrome 原生路径直接读取 CDP AX Tree。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-171",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-210",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "工具名和命令相似，不能代替对依赖版本及真实调用链的检查。"
             },
             {
@@ -15786,7 +15876,7 @@
           ]
         },
         {
-          "id": "bcd4a17f75e35d5c",
+          "id": "cfafdcf8f9f1fd37",
           "kind": "open-question",
           "text": "现有资料下仍可继续探讨：在受控后台表单这类语义较完整的场景中，AX-only 观察作为可测量基线时，失败应如何归因到观察、候选构造、目标绑定还是结果验收；以及当页面缺少必要语义时，是转入混合观察还是保持 AX-only 并报告受阻，两种选择各自需要记录哪些实验条件。第二篇提出的四类变化检查——同名按钮、结果区域替换、弹窗遮挡、点击后仍在加载——可作为设计验收的起点，但资料未给出实际测试结果或性能对照，因此不宜据此推断降本或提速比例。",
           "attribution": "model-synthesis",
@@ -15802,13 +15892,13 @@
               "quote": "缺少必要语义时，可以明确转入混合观察，也可以保持 AX-only 并报告受阻；两者都需要如实记录实验条件。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-204",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-243",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "这是建议的验收方法，不是本次已经完成的测试结果。"
             },
             {
-              "sourceId": "blog-dff562e8ee3009c3-204",
-              "sha256": "3cc7332e68d8406494afae8870642c0824ac1183878336569e6dc04dca2ef860",
+              "sourceId": "blog-dff562e8ee3009c3-243",
+              "sha256": "df5df72172976b6d716be9c046b147a88075461d76ba90616a5322f4cba36572",
               "quote": "后续若比较速度、token 或费用，还需要固定任务、页面状态和完成条件，并将失败与恢复过程计入；本文没有进行这样的性能对照，不据此给出降本或提速比例。"
             }
           ]
@@ -15816,7 +15906,8 @@
       ],
       "review": "codex-reviewed",
       "reviewDetails": {
-        "observationPruningReviewedAt": "2026-11-01T18:52:37.297Z"
+        "observationPruningReviewedAt": "2026-11-01T18:52:37.297Z",
+        "versionComparisonReviewedAt": "2026-11-01T19:32:38.716Z"
       }
     },
     {
@@ -16599,6 +16690,10 @@
     "observationPruningReview": {
       "pages": 5,
       "updatedAt": "2026-11-01T18:52:37.297Z"
+    },
+    "versionComparisonReview": {
+      "pages": 5,
+      "updatedAt": "2026-11-01T19:32:38.717Z"
     }
   }
 }
