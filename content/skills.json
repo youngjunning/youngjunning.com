@@ -19,7 +19,7 @@
     {
       "id": "faad36c651afcb0d",
       "name": "memory-distill",
-      "summary": "按用户授权和目标配置蒸馏有依据的个人记录、收藏与技能清单；私有主机策略由使用者提供，内部来源保留在私有目标，公开版本经脱敏后同步。",
+      "summary": "按用户授权和目标配置整理有依据的个人记录、收藏与技能清单，支持 Codex 技能触发统计；私有来源保留在私有目标，公开版本经脱敏后同步，统计证据仅留本机。",
       "group": "self",
       "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/productivity/memory-distill"
     },
