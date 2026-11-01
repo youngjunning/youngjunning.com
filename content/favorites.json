@@ -2,6 +2,38 @@
   "version": 1,
   "favorites": [
     {
+      "id": "e62d7a098bf134c5",
+      "kind": "knowledge",
+      "title": "Google WebView API for Ads：Android 网页广告接入",
+      "url": "https://developers.google.com/admob/android/next-gen/browser/webview/api-for-ads",
+      "summary": "Google 官方的 Android WebView 广告接入说明：通过 GMA Next-Gen SDK 注册 WebView，使网页广告标签获得 App 信号；网页上下文的隐私同意不会从 App 自动传入。",
+      "reason": "用于回查 App 内展示完整网页与 AdSense 的接入边界、官方测试页和网页隐私同意要求；文档核验不表示已完成 SDK 接入或商业投放。",
+      "tags": ["Android", "WebView", "AdSense"],
+      "savedAt": "2026-11-02",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [{ "label": "Google for Developers，Integrate the WebView API for Ads，2026-11-02 核验官方接入说明。" }],
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": []
+    },
+    {
+      "id": "9d230a7fc8e61b45",
+      "kind": "knowledge",
+      "title": "AdSense：向第三方合作方分配收益的限制",
+      "url": "https://support.google.com/adsense/answer/1348725",
+      "summary": "AdSense 官方帮助说明，发布商向第三方分配账号收益原则上须事先取得 Google 书面许可，示例包含按流量、广告展示或服务分配收入。普通双方协议不能替代适用的 Google 许可。",
+      "reason": "用于评估网页广告合作的结算资格，区分技术上能加载广告、Google 允许的分配机制与双方商业约定；不据此推断任何具体合作已获许可。",
+      "tags": ["AdSense", "广告变现", "收益分配"],
+      "savedAt": "2026-11-02",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [{ "label": "Google AdSense Help，Distributing earnings from AdSense ads with third party partners，2026-11-02 核验。" }],
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": []
+    },
+    {
       "id": "5ae070dbca4b8e19",
       "kind": "knowledge",
       "title": "JavaScript.info：现代 JavaScript 教程",
