@@ -120,6 +120,20 @@
       "summary": "可移植 HTML 报告、语义设计与可探索图表",
       "group": "self",
       "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/design/lake-report-design"
+    },
+    {
+      "id": "99b4a0c73d861b50",
+      "name": "macos-app-develop",
+      "summary": "原生 macOS、SwiftUI 与 Instruments 工作流（含许可改编）",
+      "group": "self",
+      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/engineering/macos-app-develop"
+    },
+    {
+      "id": "aac5b1d84e972c61",
+      "name": "localize",
+      "summary": "保留结构和占位符的多语言增量更新",
+      "group": "self",
+      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/engineering/localize"
     }
   ]
 }
