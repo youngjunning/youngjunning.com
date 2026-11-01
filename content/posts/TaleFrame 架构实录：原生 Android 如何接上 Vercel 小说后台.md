@@ -48,6 +48,24 @@ Neon 是独立的数据库服务。即使通过 Vercel 的集成入口创建或�
 
 后台部署成功，不意味着数据库内容被写入部署包。服务端通过环境变量取得连接信息，在处理请求时访问 Neon；数据库凭证和 Blob 写入凭证不会下发给 Android。
 
+## Neon 的账号、资源和费用由谁管理
+
+TaleFrame 当前使用的是 **Vercel-managed Neon 原生 Marketplace 集成**。2026 年 11 月 1 日核查安装记录和资源连接时，确认 `taleframe-db` 归属当前 Vercel 团队，并连接到 `taleframe-server`。因此，数据库由 Neon 提供，资源的团队归属、成员权限和订阅管理则通过 Vercel 维护。
+
+这次接入复用了已有集成：安装记录的创建日期为 **2025 年 1 月 17 日（北京时间）**，早于本次 TaleFrame 开发。这个日期证明的是集成已存在，不能据此推断 TaleFrame 数据库也创建于当天，更不能说本次开发重新注册了一个 Neon 账号。
+
+| 管理事项 | TaleFrame 当前的管理入口 |
+| --- | --- |
+| 数据库资源与项目连接 | Vercel 的 Storage，选择 `taleframe-db` |
+| 团队成员与协作权限 | Vercel 团队的 Members |
+| Neon 套餐、资源配置与费用 | Vercel；该集成的计费由 Vercel 统一处理 |
+| 数据表、SQL 与数据库操作 | 从 Storage 中点击 Open in Neon，进入 Neon Console |
+| 小说列表与章节更新 | TaleFrame Studio；编辑完成后 Publish |
+
+这里还需要区分“已有集成”和“已有登录账号”。Neon 官方说明，这种集成既可能为新用户创建账号，也可能在已有用户的账号下增加 Vercel 管理的组织。本次核查没有还原最初的注册流程，因此无法确认当年是自动创建了登录身份，还是使用了原有 Neon 身份；可以确认的是当前资源采用 Vercel 管理模式。[Neon 原生集成与计费说明](https://neon.com/docs/guides/vercel-managed-integration#managing--billing)
+
+核查时，集成返回的套餐为 **Free（`free_v3`），作用范围是集成安装**。但同一响应中的费用数据属于 2025 年 5 月，不能用它判断当前账期是否产生费用。实际支出应查看 Vercel 当前账期的用量和账单；Neon 的 Free 套餐也不代表 Vercel 函数、Blob 和流量等整套服务都永久免费。
+
 ## 小说列表、正文、封面与进度的存储归属
 
 当前系统有三类持久化位置：Neon 数据库、Blob 对象存储、Android 应用私有存储。每一类都承担明确职责。
