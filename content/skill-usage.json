@@ -1,7 +1,7 @@
 {
   "version": 1,
   "audience": "external",
-  "updatedAt": "2026-11-01T19:02:25.873Z",
+  "updatedAt": "2026-11-01T20:56:48.787Z",
   "metric": "verified_skill_read_turns",
   "totals": {
     "triggerCount": 462,
@@ -15,7 +15,7 @@
   "coverage": {
     "fileCount": 0,
     "firstSeen": "2026-07-04T05:20:27.882Z",
-    "lastSeen": "2026-11-01T19:01:18.925Z"
+    "lastSeen": "2026-11-01T20:16:13.580Z"
   },
   "skills": [
     {
