@@ -40,7 +40,7 @@ cover: "/media/taleframe-architecture.webp"
 
 | 入口 | 管理对象 | 什么时候使用 |
 | --- | --- | --- |
-| [TaleFrame Studio](https://taleframe-server.vercel.app) | 书目、章节草稿、发布版本 | 新增小说、更新章节、发布或回退 |
+| [TaleFrame Studio](https://taleframe.digiorbt.dev/admin) | 书目、章节草稿、发布版本 | 新增小说、更新章节、发布或回退 |
 | [Neon Console](https://console.neon.tech/) | Postgres 数据库与 SQL | 查看表、排查数据问题、检查数据库使用情况 |
 | [Vercel Dashboard](https://vercel.com/dashboard) | Next.js 部署、运行日志、环境变量、Blob | 发布服务端代码、排查请求、管理封面存储 |
 
@@ -50,7 +50,7 @@ Neon 是独立的数据库服务。即使通过 Vercel 的集成入口创建或�
 
 ## Neon 的账号、资源和费用由谁管理
 
-TaleFrame 当前使用的是 **Vercel-managed Neon 原生 Marketplace 集成**。2026 年 11 月 1 日核查安装记录和资源连接时，确认 `taleframe-db` 归属当前 Vercel 团队，并连接到 `taleframe-server`。因此，数据库由 Neon 提供，资源的团队归属、成员权限和订阅管理则通过 Vercel 维护。
+TaleFrame 当前使用的是 **Vercel-managed Neon 原生 Marketplace 集成**。2026 年 11 月 1 日核查安装记录和资源连接时，确认 `taleframe-db` 归属当前 Vercel 团队，并连接到同一 Vercel 项目（当时名为 `taleframe-server`，现名 `taleframe`）。因此，数据库由 Neon 提供，资源的团队归属、成员权限和订阅管理则通过 Vercel 维护。
 
 这次接入复用了已有集成：安装记录的创建日期为 **2025 年 1 月 17 日（北京时间）**，早于本次 TaleFrame 开发。这个日期证明的是集成已存在，不能据此推断 TaleFrame 数据库也创建于当天，更不能说本次开发重新注册了一个 Neon 账号。
 
