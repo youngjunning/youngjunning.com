@@ -2,9 +2,9 @@
 
 根目录为本文件上一层目录（..）。主体为俊宁，站名硅基俊宁，正式域名 youngjunning.com。先读取本站 AGENTS.md、content/README.md 与 lib/model.mjs。
 
-本文件仅定义通用 memory-distill 的公开目标字段与校验。自动收尾由 digital-twin-maintenance 编排；本站独立维护，仅接收硅基紫升到本站的单向同步，公开增改删除均不回灌公司。当前模型、字段、schema 和校验均以本站文件为准，不读取公司仓库确认。公司分支停用时，不读取公司目标、历史同步账本、内部 ID 映射，也不运行跨站 schema 对比、内部清单扫描或统计展示导出；只维护本站及已授权本机统计。本文的公司来源说明只在公司分支启用且有获准同步项时适用，先读本站 `content/sync.README.md`。个人敏感内容与精确出处只留获准的私有位置，不因公开可读或项目归属进入公司。
+本文件仅定义通用 memory-distill 的公开目标字段与校验。自动收尾已停用，按需调用时显式指定本文件；本站独立维护，仅接收硅基紫升到本站的单向同步，公开增改删除均不回灌公司。当前模型、字段、schema 和校验均以本站文件为准，不读取公司仓库确认。公司分支停用时，不读取公司目标、历史同步账本、内部 ID 映射，也不运行跨站 schema 对比、内部清单扫描或统计展示导出；只维护本站及已授权本机统计。本文的公司来源说明只在公司分支启用且有获准同步项时适用，先读本站 `content/sync.README.md`。个人敏感内容与精确出处只留获准的私有位置，不因公开可读或项目归属进入公司。
 
-文章是独立增量同步分支：定制流程每轮检查公司来源本轮新写、实质修订、撤回的文章与已知公开待同步项；本站自有稿直接维护，保留稳定 ID，针对接收方审查正文、元数据、来源、封面、附件和引用后才写入。内部 CDN 和原始内部证据不进入本站；无法保真脱敏时跳过并说明。完整操作沿用 digital-twin-maintenance 的 `references/audience-sync.md`，不整库复制历史稿，不声称有后台自动同步服务。模块缺失应报告待实现，数据可因受众限制不同或为空。
+文章是独立增量同步分支：按需同步时检查公司来源本轮新写、实质修订、撤回的文章与已知公开待同步项；本站自有稿直接维护，保留稳定 ID，针对接收方审查正文、元数据、来源、封面、附件和引用后才写入。内部 CDN 和原始内部证据不进入本站；无法保真脱敏时跳过并说明。完整操作沿用本站 `content/sync.README.md`，不整库复制历史稿，不声称有后台自动同步服务。模块缺失应报告待实现，数据可因受众限制不同或为空。
 
 传入 memory-distill 时显式指定本接入文件，不依赖默认双站配置。个人记录写入 content/records.json，version: 2；字段和类型以本站 lib/model.mjs 为准。正文/标题/背景映射 text/title/context，类型 experience/project/judgment/change/thought。id 为 16 位小写十六进制稳定 ID，跨目标同步保留原 ID。date 是发生日期，未知为 null，recordedAt 是录入日期。sources.kind 为 statement/archive/article，label 仅保存可公开来源。未知理由写明，未知备选为空数组、结果为 null。修复保留 ID，真实变化新增关联 change。
 
@@ -18,7 +18,7 @@ external 项目只写本目标；internal 项目仅接收已脱敏公开版本�
 
 ## Skills 公开同步
 
-由 digital-twin-maintenance 每轮核对个人记录、收藏以及 Skills 的合格增量和已知公开待同步项；内站停用后不读取或扫描公司目录。memory-distill 不运行清单同步。Skills 独立存入 `content/skills.json`，格式为 `{ "version": 1, "updatedAt": "YYYY-MM-DD", "skills": [] }`。条目字段为 id（16 位小写十六进制稳定 ID）、name（可公开名称或泛化标题）、summary（独立可读的用途）、group（self/adopted）、sourceUrl（已核验的公共来源或 null）。这些数据说明维护或引入的工具，不作为本人经历、熟练程度或认可的证据。
+按需维护时核对个人记录、收藏以及 Skills 的合格增量和已知公开待同步项；内站停用后不读取或扫描公司目录。memory-distill 不运行清单同步。Skills 独立存入 `content/skills.json`，格式为 `{ "version": 1, "updatedAt": "YYYY-MM-DD", "skills": [] }`。条目字段为 id（16 位小写十六进制稳定 ID）、name（可公开名称或泛化标题）、summary（独立可读的用途）、group（self/adopted）、sourceUrl（已核验的公共来源或 null）。这些数据说明维护或引入的工具，不作为本人经历、熟练程度或认可的证据。
 
 本站可独立维护已经核验的公共技能名称、用途和正式来源，不需要内部映射。公司来源的名称与 ID 映射只在公司分支启用且有获准同步项时读取获准位置；本目标不存内部名称、安装路径、主机、原始指纹、会话标识、凭证或源码。公司分支停用时不读取这些映射、不按内部删除状态改写本站条目。保留本站独立内容，不能保真脱敏则跳过，不编造公共来源。
 
@@ -26,7 +26,7 @@ external 项目只写本目标；internal 项目仅接收已脱敏公开版本�
 
 ## Skills 触发统计受众
 
-本站仅统计 external 项目及已审阅公开清单中的技能名。digital-twin-maintenance 从本机成功扫描结果独立运行 `scope_skill_usage.py --audience external --public-skills <本站content/skills.json>`，再调用本站 `scripts/export-skill-usage.mjs --input <external分流结果.json>`；仅输出聚合快照，通过补丁更新 `content/skill-usage.json`。内部项目、unknown 和未审阅技能的次数不进入任何公开合计，不复制公司快照或历史映射。内站关闭时仅使用本机私有策略中已审阅 external ID，并在扫描与分流时均加 `--no-project-probe`，新归属留本机待审。原始目录、remote、会话和 SQLite 不进入本站。失败保留旧快照，部署单独核验。
+Skills 触发统计自动采集已停用，`content/skill-usage.json` 保留历史快照及原覆盖时间。后续只有在明确的统计更新任务中，取得按受众审核的完整聚合数据后，才可使用本站 `scripts/export-skill-usage.mjs` 导出并通过补丁更新；本站仅接收已确认的外部项目。原始目录、remote、会话与私有状态库不进入展示快照。无有效新数据时保留旧快照。
 
 ## 收藏分级与项目使用
 

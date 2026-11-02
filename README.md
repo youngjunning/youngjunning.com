@@ -28,7 +28,7 @@ npm run dev
 - `content/records.json`：version 2 个人记录，支持经历、项目、判断、变化与想法。
 - `content/favorites.json`：version 1 收藏，区分本人主动收藏与会话发现，知识卡片独立保存。
 - `content/posts/`：精选 Markdown 文章，稳定 ID 对应 `/blog/:id`。
-- `.codex/memory-distill.md`：通用 memory-distill 的公开目标接入约定；每轮自动收尾由 digital-twin-maintenance 编排，只接收公司来源的单向同步，本站独立维护。
+- `.codex/memory-distill.md`：通用 memory-distill 的公开目标接入约定；按需调用时显式指定本文件，只接收公司来源的单向同步，本站独立维护。
 
 协议沿用硅基紫升的字段语义、来源、时间精度、去重和变化关系。外部项目中的合格内容直接记录；内部项目只同步已脱敏公开版本，原始证据与精确出处保留内部。不会自动复制内部仓库历史、文章、环境配置或附件。低价值文档、模板、重复内容、缺乏上下文的任务流水与来源不明结论不收录。完整说明见 [内容协议](content/README.md)，访客入口为 `/protocol`。
 
@@ -36,7 +36,7 @@ npm run dev
 
 ## 验证与部署
 
-Skills 触发统计由 digital-twin-maintenance 在本机独立分流，只统计已确认的外部项目及 `content/skills.json` 中已审阅的技能名称。内部项目、未知归属及其次数不进入本站总数；不复制公司站统计快照。将 external 分流结果传入 `node scripts/export-skill-usage.mjs --input <私有分流结果.json>`，核验后以补丁更新 `content/skill-usage.json`。导出与内容检查均验证受众，原始路径、remote 和会话证据保留本机。覆盖时间仅来自保留项目，覆盖文件数为 0 表示未统计该受众的独立文件数。
+Skills 触发统计自动采集已停用，`content/skill-usage.json` 保留历史快照及原覆盖时间。后续只有在明确的统计更新任务中，取得按受众审核的完整聚合数据后，才可使用本站 `scripts/export-skill-usage.mjs` 导出并通过补丁更新；本站仅接收已确认的外部项目。原始目录、remote、会话与私有状态库不进入展示快照。无有效新数据时保留旧快照。
 
 ```sh
 npm run content:check
