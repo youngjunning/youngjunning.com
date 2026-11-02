@@ -53,10 +53,10 @@
     },
     {
       "id": "e4a372d910bf6c85",
-      "name": "qingshan-design",
-      "summary": "青山湖跨平台设计系统",
+      "name": "joyally-design",
+      "summary": "统一的青山湖视觉语言，覆盖 macOS、iOS、Android、React Native、Web、HTML 报告与 Archify 图表",
       "group": "self",
-      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/design/qingshan-design"
+      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/design/joyally-design"
     },
     {
       "id": "f2be9a1548d06c73",
@@ -106,13 +106,6 @@
       "summary": "多运行时服务的构建、监督与部署诊断",
       "group": "self",
       "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/engineering/polyglot-service-deploy"
-    },
-    {
-      "id": "88a3efb62c750a49",
-      "name": "lake-report-design",
-      "summary": "可移植 HTML 报告、语义设计与可探索图表",
-      "group": "self",
-      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/design/lake-report-design"
     },
     {
       "id": "99b4a0c73d861b50",
