@@ -2,24 +2,6 @@
   "version": 1,
   "favorites": [
     {
-      "id": "0c2e744214fefa5e",
-      "kind": "project",
-      "title": "VibePortrait：对话画像与 MBTI 维度整理技能",
-      "url": "https://github.com/dadwadw233/VibePortrait",
-      "summary": "开源技能按 E/I、S/N、T/F、J/P 整理对话线索并输出四字母类型；其方法适合用作技能设计参考，结果的有效性仍需独立核验。",
-      "reason": "回看对话版 MBTI 的技能设计思路，并对照其推断步骤与证据边界。",
-      "tags": ["MBTI", "Agent Skill", "对话画像"],
-      "savedAt": "2026-11-02",
-      "selection": "discovered",
-      "visibility": "shared",
-      "priority": "reference",
-      "adoption": "unknown",
-      "usages": [],
-      "sources": [
-        { "label": "项目原始仓库，2026-11-02 核验：https://github.com/dadwadw233/VibePortrait" }
-      ]
-    },
-    {
       "id": "9728118894d125bb",
       "kind": "card",
       "title": "VoiceOver 是什么？",
