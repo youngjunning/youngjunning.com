@@ -30,6 +30,18 @@ test('favorites deduplicate tracking noise but preserve semantic query parameter
   assert.throws(() => validateFavorites({version:1,favorites:[favorite,{...favorite,id:'0000000000000002',url:'https://example.com/tool/?utm_source=mail'}]}));
 });
 
+test('favorites preserve Shanghai minute precision and the order of date-only entries', () => {
+  const base = { kind:'knowledge', title:'资料', summary:'资料摘要。', reason:'回查来源。', tags:[], selection:'explicit', visibility:'shared', sources:[{label:'官方资料'}] };
+  const oldA = { ...base, id:'0000000000000003', url:'https://example.com/old-a', savedAt:'2026-11-02' };
+  const morning = { ...base, id:'0000000000000001', url:'https://example.com/morning', savedAt:'2026-11-02T09:12+08:00' };
+  const oldB = { ...base, id:'0000000000000002', url:'https://example.com/old-b', savedAt:'2026-11-02' };
+  const evening = { ...base, id:'0000000000000004', url:'https://example.com/evening', savedAt:'2026-11-02T18:34+08:00' };
+  assert.deepEqual(validateFavorites({version:1,favorites:[oldA,morning,oldB,evening]}).map(item=>item.id), [evening.id,morning.id,oldA.id,oldB.id]);
+  for (const savedAt of ['2026-02-30T12:00+08:00','2026-11-02T24:00+08:00','2026-11-02T10:60+08:00','2026-11-02T10:00+00:00']) {
+    assert.throws(() => validateFavorites({version:1,favorites:[{...oldA,savedAt}]}), /Invalid favorite date/);
+  }
+});
+
 test('shared schemas retain private filtering while public policy rejects source persistence', async () => {
   const { prepareRecords } = await import('../lib/record-model.mjs');
   const hidden = { ...record, visibility: 'private' };

@@ -10,9 +10,9 @@
 
 传入 memory-distill 时显式指定本接入文件，不依赖默认双站配置。个人记录写入 content/records.json，version: 2；字段和类型以本站 lib/model.mjs 为准。正文/标题/背景映射 text/title/context，类型 experience/project/judgment/change/thought。id 为 16 位小写十六进制稳定 ID，跨目标同步保留原 ID。date 是发生日期，未知为 null，recordedAt 是录入日期。sources.kind 为 statement/archive/article，label 仅保存可公开来源。未知理由写明，未知备选为空数组、结果为 null。修复保留 ID，真实变化新增关联 change。
 
-收藏独立写 content/favorites.json，version: 1。kind 为 project/knowledge/card，explicit 仅表示本人明确收藏，Agent 发现使用 discovered。按原始 URL 去重；card 的 url 为 null，并映射 date、recordedAt、context、understanding、example、distinction。收藏不作为本人参与、认可或掌握的证据。
+收藏独立写 content/favorites.json，version: 1。kind 为 project/knowledge/card，explicit 仅表示本人明确收藏，Agent 发现使用 discovered。新条目的 savedAt 使用上海时间到分钟，旧日期不补造时间。按原始 URL 去重；card 的 url 可为 null 或已核验的公开来源，并映射 date、recordedAt、context、understanding、example、distinction。收藏不作为本人参与、认可或掌握的证据。
 
-参考资料和概念笔记独立于个人记忆判断，合格会话发现内容可按既有授权自动保存。通用概念笔记不要求本人已掌握，在 context、sources 中标明资料整理或 AI 辅助解释，understanding 承载概念要点；声称本人理解、判断或实践时才要求本人证据。仅出现术语或重复资料摘要时不新增笔记，同概念补全纠错保留 ID。未配置一种类型只限制该类型，不跳过其他分支。
+参考资料和概念笔记独立于个人记忆判断。本人明确要求收藏时，核对真实公共来源、受众和重复后收录，不要求与当前任务直接相关或先证明使用价值；会话发现的内容有回看线索即可先标为待评估。用户追问过或会话形成有回看价值的概念解释时，可核对依据并整理为 card，不要求原对话已写成完整笔记。通用概念笔记不要求本人已掌握，在 context、sources 中标明资料整理或 AI 辅助解释，understanding 承载概念要点；Agent 补充的假设示例与边界须标明，声称本人理解、判断或实践时才要求本人证据。仅出现术语或重复资料摘要时不新增笔记，同概念补全纠错保留 ID。未配置一种类型只限制该类型，不跳过其他分支。
 
 external 项目只写本目标；internal 项目仅接收已脱敏公开版本，原始证据、摘录、会话位置和跨目标映射仅留获准接收的位置，个人私密出处不进入公司。unknown 只输出候选。原始来源不适合公开时用“本人陈述，日期，公开摘要”，不要把不可访问内网链接改写成虚构公共链接。不在本仓库创建原始证据 archive。仅使用 shared，拒绝 private；所有源文件均公开。
 

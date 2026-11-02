@@ -18,7 +18,9 @@ experience 增加 period、start、end、ongoing，start/end 支持年、月、�
 
 `favorites.json` 顶层为 `{ "version": 1, "favorites": [] }`。每项包含 id、kind（project/knowledge/card）、title、url、summary、reason、tags、savedAt、selection、visibility、sources。selection: explicit 仅用于本人明确收藏，Agent 发现使用 discovered；sources 为非空的 `{ "label": "公开出处" }` 数组。
 
-URL 应为可核验公共原始来源，按移除锚点、utm 参数与尾斜杠后的地址去重，保留有语义查询参数。概念笔记 kind: card，url 可为 null 或可核验的公共来源链接，另含 card: {date, recordedAt, context, understanding, example, distinction}，示例区分假设与真实经历。通用笔记可自动保存有来源的完整概念解释、示例和适用边界，context、sources 注明资料整理或 AI 辅助解释，understanding 承载概念要点；仅声称本人理解、判断或实践时要求本人证据。没有个人事实不影响资料或笔记的收藏判断；已授权的合格内容按 discovered 保存，不要求本轮再次明确收藏。按概念、范围和来源去重，补全纠错保留 ID，不为单纯术语提及或重复外链摘要制造笔记。
+新收藏的 `savedAt` 使用上海时间 `YYYY-MM-DDTHH:mm+08:00`；只有日期的旧条目保留原精度，不补造分钟。列表按 `savedAt` 倒序，同一天只有日期的旧条目保留原有相对顺序。
+
+URL 应为可核验公共原始来源，按移除锚点、utm 参数与尾斜杠后的地址去重，保留有语义查询参数。本人明确要求收藏时，核对原始来源、受众和重复后即可收录，不要求与当前任务直接相关；会话发现的资料有回看线索或潜在用途时可先标为待评估，能力未核验则写明未知。概念笔记 kind: card，url 可为 null 或可核验的公共来源链接，另含 card: {date, recordedAt, context, understanding, example, distinction}，示例区分假设与真实经历。用户追问过或会话形成有独立价值的概念解释时，可核对依据后整理成笔记，不要求原对话已写出完整卡片；Agent 补充的假设示例和边界须标明。context、sources 注明资料整理或 AI 辅助解释，understanding 承载概念要点；仅声称本人理解、判断或实践时要求本人证据。没有个人事实不影响资料或笔记的收藏判断；已授权的合格内容按 discovered 保存，不要求本轮再次明确收藏。按概念、范围和来源去重，补全纠错保留 ID，不为单纯术语提及或重复外链摘要制造笔记。
 
 ## 文章
 
