@@ -1,7 +1,6 @@
 import { readPublicContent } from './content-store.mjs';
 import type { PersonalRecord } from './record-types';
 import type { Favorite } from './favorite-types';
-import type { ResearchItem, ExcerptItem } from './curation-types';
 export type { PersonalRecord as RecordItem } from './record-types';
 export type { Favorite } from './favorite-types';
 export type Post = {
@@ -11,4 +10,4 @@ export type Post = {
   cover?: string; source?: string; updated?: string; migrationNote?: string; migrationReport?: string;
   assets?: Record<string, string>; unavailableAssets?: string[];
 };
-export function getContent(): { records: PersonalRecord[]; favorites: Favorite[]; research: ResearchItem[]; excerpts: ExcerptItem[]; posts: Post[] } { return readPublicContent(); }
+export function getContent(): { records: PersonalRecord[]; favorites: Favorite[]; posts: Post[] } { return readPublicContent(); }

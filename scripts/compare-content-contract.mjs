@@ -6,10 +6,8 @@ import { fileURLToPath } from 'node:url';
 export const files = [
   'lib/record-model.mjs',
   'lib/favorite-model.mjs',
-  'lib/curation-model.mjs',
   'lib/record-types.ts',
   'lib/favorite-types.ts',
-  'lib/curation-types.ts',
   'lib/favorite-tracking.mjs',
   'lib/article-resources.mjs',
   'lib/article-model.mjs',
@@ -39,7 +37,6 @@ export const files = [
   'scripts/article-sync.mjs',
   'scripts/prepare-wiki.mjs',
   'scripts/review-code.mjs',
-  'content/sync.README.md',
 ];
 
 // Explicit peer only: builds and hosted requests never read another repository.
