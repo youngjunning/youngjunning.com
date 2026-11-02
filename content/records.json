@@ -304,6 +304,29 @@
       "ongoing": false
     },
     {
+      "id": "93c381133f5e2b3c",
+      "kind": "experience",
+      "title": "开始研究 AI Browser",
+      "date": null,
+      "recordedAt": "2026-11-02",
+      "text": "2026 年开始研究 AI Browser。",
+      "context": "本人补充的人生履历节点。只记录明确的起始年份，不推断具体月份、研究成果或项目归属。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-02，公开摘要：2026 年开始研究 AI Browser。"
+        }
+      ],
+      "period": "2026",
+      "start": "2026",
+      "end": null,
+      "ongoing": false
+    },
+    {
       "id": "645ffcb8571f09e2",
       "kind": "experience",
       "title": "进入互联网公司，从事全栈开发",
