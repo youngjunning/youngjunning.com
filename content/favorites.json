@@ -2,6 +2,72 @@
   "version": 1,
   "favorites": [
     {
+      "id": "4e03a576a9129a47",
+      "kind": "card",
+      "title": "OWL 为什么叫 runtime，而不只叫 SDK？",
+      "url": null,
+      "summary": "OWL 有供上层调用的 Client API，也有承载 Chromium 浏览器进程的 Host；runtime 强调运行中的执行部分，SDK 只强调开发接口。",
+      "reason": "帮助区分 OWL 架构、调用接口、ChatGPT 桌面内置浏览器和已弃用的 Atlas 产品。",
+      "tags": ["OWL", "runtime", "SDK", "Chromium"],
+      "savedAt": "2026-11-02",
+      "selection": "discovered",
+      "visibility": "shared",
+      "card": {
+        "date": "2026-11-02",
+        "recordedAt": "2026-11-02",
+        "context": "AI 辅助解释；依据 OpenAI 的 Atlas OWL 工程文章与 ChatGPT 桌面内置浏览器官方说明，不声称俊宁开发、采用或完整验证了 OWL。",
+        "understanding": "SDK 通常指应用开发时调用的接口和库。OpenAI 公开的 Atlas OWL 还包含独立运行的 Chromium Host 进程；Client API 与 Host 共同完成浏览器集成。因此描述整套执行能力时称 runtime 更完整。",
+        "example": "以 OpenAI 公开的 Atlas 架构为例：上层 OWL Client 请求创建 WebView，OWL Host 承载 Chromium 浏览器进程；前者体现 SDK 风格的接口，后者提供运行时执行能力。",
+        "distinction": "runtime 与 SDK 不互斥。Atlas 的公开架构不能直接证明 ChatGPT 桌面版使用完全相同的客户端和进程实现；两者是不同产品。"
+      },
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        { "label": "OpenAI OWL 工程文章，2026-11-02 核验：https://openai.com/index/building-chatgpt-atlas/" },
+        { "label": "OpenAI ChatGPT 桌面内置浏览器说明：https://help.openai.com/en/articles/20001277-using-the-built-in-browser-in-the-chatgpt-desktop-app" }
+      ]
+    },
+    {
+      "id": "92ac22e4955a6891",
+      "kind": "project",
+      "title": "ChatGPT 桌面版内置浏览器",
+      "url": "https://help.openai.com/en/articles/20001277-using-the-built-in-browser-in-the-chatgpt-desktop-app",
+      "summary": "OpenAI 桌面客户端提供的内置浏览器，具有独立浏览状态，可在应用内管理标签页、下载和扩展程序。",
+      "reason": "对照桌面客户端的浏览器能力，并与独立的 Atlas 产品区分；收藏不表示俊宁参与开发或验证全部功能。",
+      "tags": ["ChatGPT", "内置浏览器", "扩展程序"],
+      "savedAt": "2026-11-02",
+      "selection": "explicit",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        { "label": "本人陈述，2026-11-02，公开摘要：明确要求收藏本轮讨论的 ChatGPT 浏览器相关项目与工具。" },
+        { "label": "OpenAI 官方使用说明，2026-11-02 核验：https://help.openai.com/en/articles/20001277-using-the-built-in-browser-in-the-chatgpt-desktop-app" }
+      ]
+    },
+    {
+      "id": "d1059120ceab8e14",
+      "kind": "project",
+      "title": "ChatGPT Atlas：OpenAI 独立浏览器（已弃用）",
+      "url": "https://openai.com/index/introducing-chatgpt-atlas/",
+      "summary": "OpenAI 于 2025 年推出的独立 ChatGPT 浏览器；OWL 工程文章介绍其 Chromium 集成架构。官方产品页面现标注 Atlas 已弃用。",
+      "reason": "回看 AI 浏览器产品与 OWL 架构的历史案例，并与 ChatGPT 桌面版内置浏览器区分。",
+      "tags": ["ChatGPT Atlas", "OWL", "Chromium", "AI 浏览器"],
+      "savedAt": "2026-11-02",
+      "selection": "explicit",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        { "label": "本人陈述，2026-11-02，公开摘要：明确要求收藏本轮讨论的 ChatGPT Atlas。" },
+        { "label": "OpenAI 产品公告，2026-11-02 核验弃用标识：https://openai.com/index/introducing-chatgpt-atlas/" },
+        { "label": "OpenAI OWL 工程文章：https://openai.com/index/building-chatgpt-atlas/" }
+      ]
+    },
+    {
       "id": "78240e8176afe1cf",
       "kind": "knowledge",
       "title": "Electron 上游补丁开发指南",
