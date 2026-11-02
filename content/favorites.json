@@ -2,6 +2,42 @@
   "version": 1,
   "favorites": [
     {
+      "id": "78240e8176afe1cf",
+      "kind": "knowledge",
+      "title": "Electron 上游补丁开发指南",
+      "url": "https://www.electronjs.org/docs/latest/development/patches",
+      "summary": "Electron 官方文档说明 Chromium、Node.js 等上游依赖补丁的保留理由、patches 目录组织方式，以及导入、导出、修改和冲突处理流程。",
+      "reason": "回看 Electron 如何控制上游补丁的维护成本，并参考其补丁理由、顺序管理和上游合并策略。",
+      "tags": ["Electron", "Chromium", "补丁管理", "上游维护"],
+      "savedAt": "2026-11-02",
+      "selection": "explicit",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        { "label": "Electron 官方开发文档，2026-11-02 核验：https://www.electronjs.org/docs/latest/development/patches" }
+      ]
+    },
+    {
+      "id": "f77247c57bae1942",
+      "kind": "knowledge",
+      "title": "我们如何构建 OWL：ChatGPT Atlas 的浏览器架构",
+      "url": "https://openai.com/zh-Hans-CN/index/building-chatgpt-atlas/",
+      "summary": "OpenAI 介绍 ChatGPT Atlas 的 OWL 架构：将 Chromium 浏览器进程与原生应用分离，通过 Mojo 通信，并说明渲染、输入转发及 Agent 会话隔离的实现。",
+      "reason": "回看 AI 浏览器如何结合 Chromium 与原生界面，以及进程边界对性能、开发迭代和 Agent 安全隔离的影响。",
+      "tags": ["ChatGPT Atlas", "OWL", "Chromium", "AI 浏览器"],
+      "savedAt": "2026-11-02",
+      "selection": "explicit",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        { "label": "OpenAI 官方工程文章，2025-10-30 发布，2026-11-02 核验：https://openai.com/zh-Hans-CN/index/building-chatgpt-atlas/" }
+      ]
+    },
+    {
       "id": "9728118894d125bb",
       "kind": "card",
       "title": "VoiceOver 是什么？",
