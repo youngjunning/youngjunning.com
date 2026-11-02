@@ -2,6 +2,26 @@
   "version": 2,
   "records": [
     {
+      "id": "ab0561b5870b86ce",
+      "kind": "judgment",
+      "title": "公开文章栏目称为手记",
+      "text": "我要求硅基俊宁的文章栏目在界面上叫“手记”。这是本站的栏目命名选择。",
+      "context": "2026-11-02，查看公开站文章页后，明确指定栏目称呼；未说明更名理由。",
+      "basis": "本人明确指定公开站文章栏目的名称，未说明进一步理由。",
+      "alternatives": [],
+      "outcome": null,
+      "date": "2026-11-02",
+      "recordedAt": "2026-11-02",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [{
+        "kind": "statement",
+        "label": "本人陈述，2026-11-02，公开摘要：硅基俊宁的文章栏目统一称为“手记”。"
+      }]
+    },
+    {
       "id": "8f965cb4136b7f8a",
       "kind": "judgment",
       "title": "公开文章统一采用简体中文版权声明",
