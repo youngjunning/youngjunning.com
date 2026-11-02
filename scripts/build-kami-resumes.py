@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render the two public resume sources with Kami's unmodified resume stylesheet."""
+"""Render one public resume body with two role titles using Kami's resume template."""
 
 from __future__ import annotations
 
@@ -47,30 +47,23 @@ def project(item: dict) -> str:
     )
 
 
-def render(data: dict, head: str) -> str:
+def render(data: dict, head: str, title: str) -> str:
     content = data["content"]
-    metrics = "".join(
-        '<div class="metric">'
-        f'<span class="metric-value serif">{esc(item["value"])}</span>'
-        f'<span class="metric-label">{esc(item["label"])}</span></div>'
-        for item in content["metrics"]
-    )
-    timeline = "".join(
-        '<div class="tl-step"><div class="tl-top">'
-        f'<div class="tl-year serif">{esc(item["period"])}</div></div>'
-        f'<div class="tl-body">{esc(item["milestone"])}</div></div>'
-        for item in content["timeline"]
-    )
-    jobs = json.loads((ROOT / "content/resume.json").read_text())["experience"]
+    jobs = content["experience"]
     employment = "".join(
-        '<div class="proj-row"><div class="proj-text">'
-        f'{esc(job["company"])} · {esc(job["role"])} · {esc(job["period"].replace("—", "–"))}'
-        '</div></div>'
+        '<div class="project"><div class="proj-head">'
+        f'<span class="proj-name serif">{esc(job["company"])}</span>'
+        f'<span class="proj-kind">· {esc(job["period"].replace("—", "–"))}</span></div>'
+        '<div class="proj-lines">'
+        f'<div class="proj-row"><div class="proj-label">岗位</div><div class="proj-text">{esc(job["role"])}</div></div>'
+        + "".join(
+            f'<div class="proj-row"><div class="proj-label">职责</div><div class="proj-text">{esc(detail)}</div></div>'
+            for detail in job["details"]
+        )
+        + '</div></div>'
         for job in jobs
     )
-    split = (len(content["projects"]) + 1) // 2
-    first = "".join(project(item) for item in content["projects"][:split])
-    second = "".join(project(item) for item in content["projects"][split:])
+    projects = "".join(project(item) for item in content["projects"])
     work = "".join(
         f'<div class="os-highlight">{esc(item)}</div>'
         for item in content.get("public_work", [])
@@ -80,6 +73,12 @@ def render(data: dict, head: str) -> str:
         f'<div class="skill-label">{index:02d} ·</div>'
         f'<div class="skill-body">{esc(item)}</div></div>'
         for index, item in enumerate(content["skills"], 1)
+    )
+    technical = "".join(
+        '<div class="skill-row">'
+        f'<div class="skill-label">{index:02d} ·</div>'
+        f'<div class="skill-body">{esc(item)}</div></div>'
+        for index, item in enumerate(content["technical"], 1)
     )
     education = "".join(
         '<div class="edu-row"><div>'
@@ -92,21 +91,19 @@ def render(data: dict, head: str) -> str:
         '<div class="header"><div class="name serif">'
         f'{esc(content["name"])}</div>'
         '<div class="contact"><span class="role">'
-        f'{esc(content["title"])}</span><br>{esc(content["contact"])}</div></div>'
-        f'<div class="metrics">{metrics}</div>'
+        f'{esc(title)}</span><br>{esc(content["contact"])}</div></div>'
         + section("个人简介", f'<div class="summary">{esc(content["summary"])}</div>')
-        + section("工作经历", f'<div class="proj-lines">{employment}</div>')
-        + section("发展路径", f'<div class="timeline">{timeline}</div>')
-        + section("代表项目", first)
-        + section("工程项目与能力" if content["title"].startswith("AI 应用") else "Agent 与工程化", second, page_break=True)
-        + section("开源贡献", work)
         + section("核心能力", skills)
+        + section("工作经历", f'<div class="proj-lines">{employment}</div>')
+        + section("技术实现", technical)
+        + section("项目经历 · 近两年重点", projects, page_break=True)
+        + section("开源贡献", work)
         + section("教育背景", education)
     )
     html_head = (
         head.replace("{{姓名}}", esc(content["name"]))
         .replace("{{摘要}}", esc(content["summary"][:100]))
-        .replace("{{关键词}}", esc(content["title"] + "，Agent，软件工程"))
+        .replace("{{关键词}}", esc(title + "，Agent，软件工程"))
     )
     return html_head + "<body>\n" + body + "\n</body>\n</html>\n"
 
@@ -114,13 +111,13 @@ def render(data: dict, head: str) -> str:
 def main() -> None:
     template = KAMI_TEMPLATE.read_text(encoding="utf-8")
     head = template[: template.rfind("<body>")]
+    data = json.loads((SOURCE / "role-resume.source.json").read_text(encoding="utf-8"))
     targets = {
-        "ai-application": "junning-ai-application.html",
-        "ai-browser": "junning-ai-browser.html",
+        "AI 应用开发工程师": "junning-ai-application.html",
+        "AI Browser 开发工程师": "junning-ai-browser.html",
     }
-    for name, filename in targets.items():
-        data = json.loads((SOURCE / f"{name}.content.json").read_text(encoding="utf-8"))
-        (OUT / filename).write_text(render(data, head), encoding="utf-8")
+    for title, filename in targets.items():
+        (OUT / filename).write_text(render(data, head, title), encoding="utf-8")
         print(OUT / filename)
 
 
