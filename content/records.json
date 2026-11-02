@@ -745,6 +745,28 @@
         "以 Agent 状态与用量监控为产品核心"
       ],
       "outcome": null
+    },
+    {
+      "id": "abc55152c790642e",
+      "kind": "judgment",
+      "title": "Owlet 移除宠物功能",
+      "text": "我决定从 Owlet 中移除宠物。此前应用保留了宠物收藏、解锁、预览和安装入口；这次选择取消这些入口。段位、徽章与学习功能仍按各自用途保留。",
+      "context": "2026 年 11 月 2 日，在 Owlet 产品开发中明确要求删除宠物；具体取舍理由未说明。这是产品范围选择，不表示新版本已发布或完成安装客户端验收。",
+      "date": "2026-11-02",
+      "recordedAt": "2026-11-02",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": "c310000000000001",
+      "relatedIds": ["0c6e6c5d7f91b4a3"],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "俊宁本人陈述，2026-11-02，公开摘要。"
+        }
+      ],
+      "basis": "本人明确要求从 Owlet 删除宠物；未说明具体理由。",
+      "alternatives": [],
+      "outcome": null
     }
   ]
 }
