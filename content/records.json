@@ -2,6 +2,28 @@
   "version": 2,
   "records": [
     {
+      "id": "8d63c1a9f240be75",
+      "kind": "judgment",
+      "date": "2026-11-02",
+      "recordedAt": "2026-11-02",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "basis": "本人以已有 Skill scripts 能力为依据提出这一判断；未陈述量化成本、效果或其他理由。",
+      "alternatives": [],
+      "outcome": null,
+      "title": "有了 Skill scripts，CLI 不需要了",
+      "text": "我认为有了 Skill scripts 能力，CLI 不需要了。",
+      "context": "2026-11-02，在讨论 Skill 内置脚本与独立 CLI 的关系时提出的技术判断。记录当时的观点，未将其表述为已经验证的普遍技术结论。",
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-02，公开摘要：我认为有了 skill scripts 能力，cli 不需要了。"
+        }
+      ]
+    },
+    {
       "id": "c5be66eacea42998",
       "kind": "judgment",
       "title": "公开官网采用本地检索与独立模型服务",
