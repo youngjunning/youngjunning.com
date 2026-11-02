@@ -935,6 +935,28 @@
           "label": "俊宁本人陈述，2026-11-02，公开摘要。"
         }
       ]
+    },
+    {
+      "id": "6c8f21d4a0b9e735",
+      "kind": "judgment",
+      "title": "Owlet 选中文字可直接问 Codex",
+      "text": "我希望 Owlet 的选中文字操作条增加“问一问”，作为向 Codex 发起新会话的入口，并把选中的文字带入这次提问。",
+      "context": "2026 年 11 月 2 日，针对 Owlet 选中文字后出现的翻译操作条提出的产品选择；不表示新版本已发布或安装客户端已验收。",
+      "date": "2026-11-02",
+      "recordedAt": "2026-11-02",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": "c310000000000001",
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "俊宁本人陈述，2026-11-02，公开摘要。"
+        }
+      ],
+      "basis": "本人明确提出按钮名为“问一问”，并指定它向 Codex 发起新会话；具体取舍理由未说明。",
+      "alternatives": [],
+      "outcome": null
     }
   ]
 }
