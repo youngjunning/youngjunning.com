@@ -2,6 +2,49 @@
   "version": 2,
   "records": [
     {
+      "date": "2026-11-02",
+      "recordedAt": "2026-11-02",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "id": "8b52a1e76d934fc0",
+      "kind": "thought",
+      "title": "自动化框架需要管理多种运行环境",
+      "text": "我希望自动化框架除了操作界面，还能管理 iPhone、Android 和 Linux 的虚拟运行环境。iPhone 的具体运行形态、管理操作范围以及首版交付顺序尚未明确。",
+      "context": "在整体架构讨论中提出的产品范围要求；不表示已实现虚拟化，也不表示所有平台具备相同能力。",
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-02，公开摘要：希望自动化框架也能管理 iPhone、Android 和 Linux 的虚拟运行环境。"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "recordedAt": "2026-11-02",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "id": "a5e713bc902d64f8",
+      "kind": "judgment",
+      "title": "跨平台语义执行共用骨架，保留平台策略",
+      "text": "在跨平台界面自动化 SDK 的设计中，我选择共用有界的语义执行骨架，分别实现 Browser 与 Android 的观察处理、定位和动作策略，不提前统一成一种跨平台元素树。后续以两端查询和提交流程检验这一边界。",
+      "context": "对共用执行骨架与各端独立实现完整语义流程两种方向作出的设计选择；实现与运行验收尚未完成。",
+      "basis": "本人明确接受共用骨架并保留平台策略的建议；未另述选择理由。",
+      "alternatives": [
+        "Browser 与 Android 分别实现完整语义执行流程，仅共享基础工具。"
+      ],
+      "outcome": null,
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-02，公开摘要：确认共用语义执行骨架，保留独立的平台观察、定位和动作策略。"
+        }
+      ]
+    },
+    {
       "id": "8d63c1a9f240be75",
       "kind": "judgment",
       "date": "2026-11-02",
@@ -36,7 +79,9 @@
       "projectId": null,
       "relatedIds": [],
       "basis": "本人先询问 GBrain 与轻量检索的效果、成本和逻辑，随后明确要求公开站移除 GBrain 并使用 DeepSeek；未陈述量化理由。",
-      "alternatives": ["继续使用 GBrain"],
+      "alternatives": [
+        "继续使用 GBrain"
+      ],
       "outcome": null,
       "sources": [
         {
@@ -56,13 +101,18 @@
       "visibility": "shared",
       "articleId": null,
       "projectId": null,
-      "relatedIds": ["f604bcfbe98aa301"],
+      "relatedIds": [
+        "f604bcfbe98aa301"
+      ],
       "subjectId": "f604bcfbe98aa301",
       "before": "硅基俊宁已建立，旧个人官网与博客仍保留各自的维护定位。",
       "after": "官网与博客的当前维护入口统一为 youngjunning.com，旧博客转为历史归档。",
       "reason": "本人明确要求以新站取代旧站地位；未陈述其他取舍理由。",
       "sources": [
-        {"kind": "statement", "label": "本人陈述，2026-11-01，公开摘要：归档旧博客仓库，删除旧博客的 Vercel 项目，清理相关本地 Codex 记忆，由 youngjunning.com 取代。"}
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-01，公开摘要：归档旧博客仓库，删除旧博客的 Vercel 项目，清理相关本地 Codex 记忆，由 youngjunning.com 取代。"
+        }
       ]
     },
     {

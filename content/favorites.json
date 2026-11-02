@@ -2,17 +2,73 @@
   "version": 1,
   "favorites": [
     {
+      "id": "6cd831f49b2e70a5",
+      "title": "Apple Simulator：应用安装与真机边界",
+      "url": "https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/iOS_Simulator_Guide/InteractingwiththeiOSSimulator/InteractingwiththeiOSSimulator.html",
+      "summary": "Apple 归档 Simulator 指南说明：模拟环境用于运行面向 Simulator 构建的 App，不能从 App Store 安装应用。该页已归档，具体版本能力需结合当前 Xcode 文档和实际环境核验。",
+      "reason": "用于区分开发测试模拟器与运行现成第三方 iPhone App 的需求，避免将两者承诺为同一种虚拟机能力。",
+      "tags": [
+        "iOS",
+        "Simulator",
+        "虚拟环境"
+      ],
+      "kind": "knowledge",
+      "savedAt": "2026-11-02",
+      "selection": "discovered",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        {
+          "label": "官方原始文档，2026-11-02 核验：https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/iOS_Simulator_Guide/InteractingwiththeiOSSimulator/InteractingwiththeiOSSimulator.html"
+        }
+      ]
+    },
+    {
+      "id": "32f8a9d61e70bc45",
+      "title": "Multipass：虚拟机实例管理官方指南",
+      "url": "https://canonical.com/multipass/docs/latest/how-to-guides/manage-instances/",
+      "summary": "Canonical 的实例管理指南覆盖创建、修改、使用、删除虚拟机实例及网络配置，可作为对接已有虚拟机管理工具的能力参考。",
+      "reason": "用于研究自动化框架如何复用现有环境管理工具；仅为会话发现的候选资料，尚未选型或运行验证。",
+      "tags": [
+        "Linux",
+        "虚拟机",
+        "环境管理"
+      ],
+      "kind": "knowledge",
+      "savedAt": "2026-11-02",
+      "selection": "discovered",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        {
+          "label": "官方原始文档，2026-11-02 核验：https://canonical.com/multipass/docs/latest/how-to-guides/manage-instances/"
+        }
+      ]
+    },
+    {
       "id": "ce63a109bf24d857",
       "kind": "knowledge",
       "title": "Google WebView API for Ads：iOS 网页广告接入",
       "url": "https://developers.google.com/admob/ios/browser/webview/api-for-ads",
       "summary": "Google 官方的 iOS WKWebView 广告接入说明：在主线程向 Mobile Ads SDK 注册 WebView，网页专用集成使用 GADIntegrationManager=webview。网页的隐私同意不会从 App 自动传入。",
       "reason": "用于核对 iOS 网页广告注册、Info.plist 配置和官方连接测试，避免把 SDK 接通当作真实广告填充或收益验证。",
-      "tags": ["iOS", "WKWebView", "AdSense"],
+      "tags": [
+        "iOS",
+        "WKWebView",
+        "AdSense"
+      ],
       "savedAt": "2026-11-02",
       "selection": "discovered",
       "visibility": "shared",
-      "sources": [{ "label": "Google for Developers，Integrate the WebView API for Ads，2026-11-02 核验 iOS 官方说明及连接测试页。" }],
+      "sources": [
+        {
+          "label": "Google for Developers，Integrate the WebView API for Ads，2026-11-02 核验 iOS 官方说明及连接测试页。"
+        }
+      ],
       "priority": "reference",
       "adoption": "unknown",
       "usages": []
@@ -24,11 +80,19 @@
       "url": "https://developers.google.com/admob/android/next-gen/browser/webview/api-for-ads",
       "summary": "Google 官方的 Android WebView 广告接入说明：通过 GMA Next-Gen SDK 注册 WebView，使网页广告标签获得 App 信号；网页上下文的隐私同意不会从 App 自动传入。",
       "reason": "用于回查 App 内展示完整网页与 AdSense 的接入边界、官方测试页和网页隐私同意要求；文档核验不表示已完成 SDK 接入或商业投放。",
-      "tags": ["Android", "WebView", "AdSense"],
+      "tags": [
+        "Android",
+        "WebView",
+        "AdSense"
+      ],
       "savedAt": "2026-11-02",
       "selection": "discovered",
       "visibility": "shared",
-      "sources": [{ "label": "Google for Developers，Integrate the WebView API for Ads，2026-11-02 核验官方接入说明。" }],
+      "sources": [
+        {
+          "label": "Google for Developers，Integrate the WebView API for Ads，2026-11-02 核验官方接入说明。"
+        }
+      ],
       "priority": "reference",
       "adoption": "unknown",
       "usages": []
@@ -40,11 +104,19 @@
       "url": "https://support.google.com/adsense/answer/1348725",
       "summary": "AdSense 官方帮助说明，发布商向第三方分配账号收益原则上须事先取得 Google 书面许可，示例包含按流量、广告展示或服务分配收入。普通双方协议不能替代适用的 Google 许可。",
       "reason": "用于评估网页广告合作的结算资格，区分技术上能加载广告、Google 允许的分配机制与双方商业约定；不据此推断任何具体合作已获许可。",
-      "tags": ["AdSense", "广告变现", "收益分配"],
+      "tags": [
+        "AdSense",
+        "广告变现",
+        "收益分配"
+      ],
       "savedAt": "2026-11-02",
       "selection": "discovered",
       "visibility": "shared",
-      "sources": [{ "label": "Google AdSense Help，Distributing earnings from AdSense ads with third party partners，2026-11-02 核验。" }],
+      "sources": [
+        {
+          "label": "Google AdSense Help，Distributing earnings from AdSense ads with third party partners，2026-11-02 核验。"
+        }
+      ],
       "priority": "reference",
       "adoption": "unknown",
       "usages": []
@@ -56,11 +128,18 @@
       "url": "https://javascript.info/",
       "summary": "按语言基础、对象、函数、异步编程和浏览器主题组织的教程，配有示例与练习。",
       "reason": "旧官网学习资源整理时保留的原始入口，可用于回查闭包、作用域与异步任务笔记；未据此认定本人完成了课程。",
-      "tags": ["JavaScript", "学习资料"],
+      "tags": [
+        "JavaScript",
+        "学习资料"
+      ],
       "savedAt": "2026-11-01",
       "selection": "discovered",
       "visibility": "shared",
-      "sources": [{ "label": "JavaScript.info 官方教程目录，原官网学习资源整理时核对原始入口。" }],
+      "sources": [
+        {
+          "label": "JavaScript.info 官方教程目录，原官网学习资源整理时核对原始入口。"
+        }
+      ],
       "priority": "reference",
       "adoption": "unknown",
       "usages": []
@@ -72,11 +151,19 @@
       "url": "https://github.com/microsoft/generative-ai-with-javascript",
       "summary": "微软维护的 JavaScript 生成式 AI 学习仓库，提供课程资料与代码示例。",
       "reason": "将旧官网中的课程介绍整理为原始仓库入口，用于后续查阅和练习，不把课程内容当作本人项目经验。",
-      "tags": ["AI", "JavaScript", "课程"],
+      "tags": [
+        "AI",
+        "JavaScript",
+        "课程"
+      ],
       "savedAt": "2026-11-01",
       "selection": "discovered",
       "visibility": "shared",
-      "sources": [{ "label": "Microsoft 官方 GitHub 仓库 microsoft/generative-ai-with-javascript 的 README 和课程目录。" }],
+      "sources": [
+        {
+          "label": "Microsoft 官方 GitHub 仓库 microsoft/generative-ai-with-javascript 的 README 和课程目录。"
+        }
+      ],
       "priority": "reference",
       "adoption": "unknown",
       "usages": []
@@ -88,14 +175,30 @@
       "url": "https://github.com/remarkjs/react-markdown",
       "summary": "React 的 Markdown 渲染组件，通过 remark 与 rehype 扩展语法。官方文档区分原生 HTML 解析与安全过滤；引入 HTML 插件时仍需检查链接转换和允许的元素。",
       "reason": "迁移历史博客时用于保留表格、原生 HTML 图片和代码块，官方的 HTML 与安全章节可供后续维护查证。",
-      "tags": ["Markdown", "React", "内容迁移"],
+      "tags": [
+        "Markdown",
+        "React",
+        "内容迁移"
+      ],
       "savedAt": "2026-11-01",
       "selection": "discovered",
       "visibility": "shared",
-      "sources": [{ "label": "react-markdown 官方 README 的 HTML、组件扩展与 Security 章节；硅基俊宁公开源码的依赖和文章渲染实现。" }],
+      "sources": [
+        {
+          "label": "react-markdown 官方 README 的 HTML、组件扩展与 Security 章节；硅基俊宁公开源码的依赖和文章渲染实现。"
+        }
+      ],
       "priority": "reference",
       "adoption": "adopted",
-      "usages": [{ "project": "硅基俊宁", "projectUrl": "https://github.com/youngjunning/youngjunning.com", "stage": "adopted", "purpose": "渲染历史博客，配合 rehype-raw、rehype-sanitize 与资源映射保留内容并过滤不安全 HTML。", "evidence": "package.json 已声明依赖，app/blog/[id]/page.tsx 已接入；本地构建与阅读页面检查通过，不表示域名已部署。" }]
+      "usages": [
+        {
+          "project": "硅基俊宁",
+          "projectUrl": "https://github.com/youngjunning/youngjunning.com",
+          "stage": "adopted",
+          "purpose": "渲染历史博客，配合 rehype-raw、rehype-sanitize 与资源映射保留内容并过滤不安全 HTML。",
+          "evidence": "package.json 已声明依赖，app/blog/[id]/page.tsx 已接入；本地构建与阅读页面检查通过，不表示域名已部署。"
+        }
+      ]
     },
     {
       "id": "f43c1a9e7b625d08",
@@ -191,13 +294,22 @@
       "url": "https://github.com/EvanNotFound/vercount",
       "summary": "提供网站访问量（PV）和访客数（UV）统计，兼容不蒜子标签；Go 与 Redis 负责计数，提供免费公益服务并支持自托管。",
       "reason": "主动收藏，用于回查网站访客统计的接入方式、计数口径与自托管方案。",
-      "tags": ["网站统计", "PV/UV", "不蒜子", "开源工具"],
+      "tags": [
+        "网站统计",
+        "PV/UV",
+        "不蒜子",
+        "开源工具"
+      ],
       "savedAt": "2026-11-01",
       "selection": "explicit",
       "visibility": "shared",
       "sources": [
-        { "label": "本人陈述，2026-11-01，公开摘要：明确要求收藏 Vercount。" },
-        { "label": "2026-11-01 核验官方仓库与 README：https://github.com/EvanNotFound/vercount" }
+        {
+          "label": "本人陈述，2026-11-01，公开摘要：明确要求收藏 Vercount。"
+        },
+        {
+          "label": "2026-11-01 核验官方仓库与 README：https://github.com/EvanNotFound/vercount"
+        }
       ],
       "priority": "reference",
       "adoption": "unknown",
@@ -927,6 +1039,34 @@
         },
         {
           "label": "2026-10-30 核验官方来源：https://github.com/mobile-next/mobile-mcp"
+        }
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
+    },
+    {
+      "id": "57d75ed8b14df479",
+      "kind": "project",
+      "title": "phone-harness：手机 Agent 操作工具",
+      "url": "https://github.com/ShawnPana/phone-harness",
+      "summary": "提供统一的手机操作接口：本地 iPhone 通过 macOS iPhone Mirroring 和屏幕 OCR 操作，本地 Android 通过 adb 与无障碍树操作；仓库也提供云端设备接入。",
+      "reason": "收藏以便回看 iPhone 与 Android 的设备连接、读屏和动作实现；功能描述来自项目仓库，尚未在本人设备上验证。",
+      "tags": [
+        "Agent",
+        "iOS",
+        "Android",
+        "手机自动化"
+      ],
+      "savedAt": "2026-11-02",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "本人陈述，2026-11-02，公开摘要：明确要求收藏 phone-harness 和 iphone-use。"
+        },
+        {
+          "label": "2026-11-02 核验项目仓库：https://github.com/ShawnPana/phone-harness"
         }
       ],
       "priority": "lead",
