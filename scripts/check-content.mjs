@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import matter from 'gray-matter';
 import { createHash } from 'node:crypto';
-import { assertPublicText, validateRecords, validateFavorites } from '../lib/model.mjs';
+import { assertPublicText, validateRecords, validateFavorites, validateResearch, validateExcerpts } from '../lib/model.mjs';
 import { assertArticleText } from '../lib/article-validation.mjs';
 import { loadArticles } from '../lib/article-model.mjs';
 import { preparePublicContent } from '../lib/content-store.mjs';
@@ -33,6 +33,8 @@ for (const post of loadArticles(process.cwd(), { includeDrafts: true })) {
 }
 const records = validateRecords(JSON.parse(fs.readFileSync(path.join(directory,'records.json'),'utf8')),visibleIds);
 const favorites = validateFavorites(JSON.parse(fs.readFileSync(path.join(directory,'favorites.json'),'utf8')));
+const research = validateResearch(JSON.parse(fs.readFileSync(path.join(directory,'research.json'),'utf8')), new Set(favorites.map(item => item.id)));
+const excerpts = validateExcerpts(JSON.parse(fs.readFileSync(path.join(directory,'excerpts.json'),'utf8')));
 if (migration.entries.length !== migration.counts.reviewed || new Set(migration.entries.map(item => item.sourceFile)).size !== migration.entries.length) throw new Error('Incomplete migration inventory');
 for (const entry of migration.entries) {
   if (!entry.reason?.trim()) throw new Error('Missing migration reason');
@@ -63,5 +65,5 @@ for (const asset of [websiteAssets.cover, ...Object.values(websiteAssets.resourc
   const bytes = fs.readFileSync(path.resolve('public', asset.path.slice(1)));
   if (bytes.length !== asset.bytes || createHash('sha256').update(bytes).digest('hex') !== asset.sha256) throw new Error('Website asset changed: ' + asset.path);
 }
-console.log(`Public content valid: ${records.length} records, ${favorites.length} favorites, ${articles} articles.`);
+console.log(`Public content valid: ${records.length} records, ${favorites.length} favorites, ${research.length} research items, ${excerpts.length} excerpts, ${articles} articles.`);
 preparePublicContent();

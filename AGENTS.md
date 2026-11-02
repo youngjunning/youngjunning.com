@@ -17,3 +17,13 @@
 模型使用本站独立的 DeepSeek 服务端环境变量。检索只读取本站已审核的公开文件快照，通过本地片段评分、显式关系与 Wiki 来源召回原文，不建立数据库索引。公司 Code Brain、原始资料、密钥和部署配置保持隔离；代码来源仍须经过本站的公开范围审核。
 
 Wiki 和推荐问题由 Codex 在维护阶段根据本目标原文预先整理并提交；构建和推荐接口只校验、打包，不调用模型生成。仅复用经过公开审查的通用检索代码，运行时只读取本站内容快照。
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+## This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->

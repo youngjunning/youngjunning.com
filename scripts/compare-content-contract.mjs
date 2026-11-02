@@ -6,8 +6,10 @@ import { fileURLToPath } from 'node:url';
 export const files = [
   'lib/record-model.mjs',
   'lib/favorite-model.mjs',
+  'lib/curation-model.mjs',
   'lib/record-types.ts',
   'lib/favorite-types.ts',
+  'lib/curation-types.ts',
   'lib/favorite-tracking.mjs',
   'lib/article-resources.mjs',
   'lib/article-model.mjs',
