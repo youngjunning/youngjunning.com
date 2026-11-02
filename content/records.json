@@ -2,6 +2,28 @@
   "version": 2,
   "records": [
     {
+      "id": "dcb505427b2acbb6",
+      "kind": "judgment",
+      "title": "官网、设计图鉴与 Mastra 文档独立维护",
+      "text": "我决定将 youngjunning.com 官网、design.youngjunning.com 设计图鉴和 mastra.youngjunning.com 文档镜像分别作为独立项目维护，并在三个站点之间设置外链。设计站和 Mastra 站的 GitHub 仓库名与 Vercel 项目名也统一改为新域名。",
+      "context": "2026-11-02，讨论个人站点应分项目还是放在官网二级目录后，明确选择独立维护和统一 youngjunning.com 域名后缀。",
+      "basis": "本人明确选择分开维护、改域名后缀并互相外链；未另述取舍理由。",
+      "alternatives": ["把设计站与 Mastra 文档作为官网二级目录并在一个项目中维护。"],
+      "outcome": null,
+      "date": "2026-11-02",
+      "recordedAt": "2026-11-02",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-02，公开摘要：官网、设计图鉴与 Mastra 文档分开维护，统一 youngjunning.com 域名后缀、互相外链，并改名两个历史 GitHub 仓库及 Vercel 项目。"
+        }
+      ]
+    },
+    {
       "id": "a9dd960172bb99dc",
       "kind": "judgment",
       "title": "官网部署保留 Vercel 项目设置的 Node.js 版本",
