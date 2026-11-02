@@ -767,6 +767,28 @@
       "basis": "本人明确要求从 Owlet 删除宠物；未说明具体理由。",
       "alternatives": [],
       "outcome": null
+    },
+    {
+      "id": "f20b9a4d7e1c6361",
+      "kind": "judgment",
+      "title": "Owlet 翻译提示尊重复制场景",
+      "text": "我认为从普通输入框复制文字，通常不是为了翻译，因此 Owlet 不应自动显示翻译提示；在 IDE 的编辑区复制则可能有翻译意图，可以区别对待。我也要求 Owlet 不做预翻译，只有主动触发翻译时才向模型发起请求。",
+      "context": "2026 年 11 月 2 日，针对 Owlet 的选中文本翻译入口和翻译会话记录提出的产品取舍；不表示修改已发布或完成安装客户端验收。",
+      "date": "2026-11-02",
+      "recordedAt": "2026-11-02",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": "c310000000000001",
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "俊宁本人陈述，2026-11-02，公开摘要。"
+        }
+      ],
+      "basis": "本人指出普通输入框复制与 IDE 编辑区复制的意图不同，并明确要求不要预翻译。",
+      "alternatives": [],
+      "outcome": null
     }
   ]
 }
