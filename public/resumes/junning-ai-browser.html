@@ -1,8 +1,515 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>俊宁｜AI Browser 开发工程师简历</title><link rel="stylesheet" href="resume.css"></head><body>
-<header class="header"><div><h1>俊宁</h1><p class="title">AI Browser 开发工程师</p><p class="summary">阿里高级工程师、AI 开发者，拥有 10 年研发经验。聚焦 Chromium 定制、Browser Tools、Agent Runtime 和跨平台发行，关注浏览器能力边界、任务执行稳定性与真实安装验收。</p></div><div class="contact">杭州<br><a href="mailto:luozhu2021@gmail.com">luozhu2021@gmail.com</a><br><a href="https://github.com/youngjunning">github.com/youngjunning</a><br><a href="https://youngjunning.com">youngjunning.com</a></div></header>
-<section><h2>核心能力</h2><p><strong>浏览器工程：</strong>Chromium 基线与 C++ / GN 补丁、构建重放、浏览器稳定性、跨平台交付。</p><p><strong>Agent 能力：</strong>Browser Tools / CDP、快照与页面操作、Profile / Tab 授权、capability 边界。</p><p><strong>运行与验证：</strong>本地 Agent Runtime、云端浏览器、任务恢复、升级链路与真实安装验收。</p></section>
-<section><h2>工作经历</h2><div class="row"><strong>飞猪网络技术有限公司｜资深前端开发 / Agent 开发</strong><span>2023.06 — 至今</span></div><ul><li>设计 AI 浏览器开发框架，负责 Browser Agent 架构与核心开发，连接浏览器能力、任务执行与结果验证。</li><li>担任客服平台技术负责人，统筹工作台技术设计、核心开发与跨系统联调，为浏览器化业务场景提供工程基础。</li><li>治理工作台内存泄漏与重复渲染，推进埋点、录屏与长时间作业相关的稳定性工作。</li></ul><div class="row"><strong>杭州涂鸦科技有限公司｜前端架构组 · 前端开发</strong><span>2020.09 — 2023.06</span></div><ul><li>负责开发者社区、tuya-panel-sdk 与跨端组件库，开发 VS Code、ESLint 和 Babel 插件。</li><li>主导框架适配和性能优化，通过 AST 按需提取 useSelector 依赖，减少冗余订阅与无效渲染。</li><li>负责前端资产平台 Web 架构、跨平台权限与组件预览。</li></ul><div class="row"><strong>浩鲸云计算科技｜高级前端开发</strong><span>2020.05 — 2020.09</span></div><p>独立负责智慧环保城市项目及两个中台项目的前端搭建与联调。</p><div class="row"><strong>河南省私塾世纪｜跨端开发团队负责人</strong><span>2018.03 — 2020.05</span></div><p>负责跨端开发团队与工程规范建设，交付基于 React Native 的教务 App。</p></section>
-<section class="page-break"><h2>代表项目</h2><div class="project"><div class="row"><strong>AI 浏览器开发框架</strong><span>框架设计 · 2026</span></div><p class="sub">覆盖 Chromium Kernel、Browser Tools、Agent Runtime 与构建交付。</p><ul><li>管理 Chromium 基线与 C++ / GN 补丁，明确干净检出后的重放和构建输入。</li><li>通过 Browser Tools / CDP 提供快照、导航、输入与标签页操作，按 Profile / Tab 与 capability 授权。</li><li>将浏览器、内置扩展与 Agent Runtime 分开交付，固定版本、配置和依赖。</li></ul></div><div class="project"><div class="row"><strong>面向客服场景的 AI 浏览器</strong><span>稳定性、Runtime 接入与发行交付 · 2026</span></div><ul><li>为工作台设置独立 Renderer 与限次恢复，处理语言资源与长时间多系统作业的稳定性问题。</li><li>按浏览器、扩展和 Agent Runtime 的版本边界推进构建、升级与真实安装验收。</li></ul></div><div class="project"><div class="row"><strong>Browser Agent 自动化平台</strong><span>架构与核心开发 · 2026</span></div><ul><li>建设云端浏览器执行环境，结合 DOM、Accessibility Tree 与截图完成定位、动作执行和效果校验。</li><li>定义任务计划、失败出口与人工接管，以终态、URL、截图和报告验证执行结果。</li></ul></div></section>
-<section><h2>开源贡献</h2><p><a href="https://github.com/browser-use/browser-use/pull/1414">browser-use PR #1414</a>、<a href="https://github.com/bytedance/UI-TARS-desktop/pull/500">UI-TARS Desktop PR #500</a>：页面高亮层背景修复；<a href="https://github.com/microsoft/vscode-vsce/pull/614">vscode-vsce PR #614</a>：补充打包忽略项。</p></section>
-<section><h2>教育背景</h2><p>中原工学院信息商务学院｜本科 · 网络工程｜2012 — 2016<br>英语 CET-4 · 中级网络工程师</p></section><p class="footer">公开简历 · 2026-11-02 · 详细经历见 youngjunning.com/resume</p>
-</body></html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>俊宁 · 简历</title>
+<meta name="author" content="俊宁">
+<meta name="description" content="阿里高级工程师、AI 开发者，拥有 10 年研发经验。近两年负责浏览器 Agent 架构与核心开发，设计覆盖 Chromium、Browser Tools、Agent Runtime 和构建交付的浏览">
+<meta name="keywords" content="AI Browser 开发工程师，Agent，软件工程">
+<meta name="generator" content="Kami">
+<style>
+  /* W04 / regular face for body text */
+  @font-face {
+    font-family: "TsangerJinKai02";
+    src: url("../fonts/TsangerJinKai02-W04.ttf") format("truetype"),
+       url("https://cdn.jsdelivr.net/gh/tw93/Kami@main/assets/fonts/TsangerJinKai02-W04.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* W05 / medium face for headings (no synthetic bold) */
+  @font-face {
+    font-family: "TsangerJinKai02";
+    src: url("../fonts/TsangerJinKai02-W05.ttf") format("truetype"),
+       url("https://cdn.jsdelivr.net/gh/tw93/Kami@main/assets/fonts/TsangerJinKai02-W05.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+  }
+
+@page {
+    size: A4;
+    margin: 11mm 13mm 11mm 13mm;
+    background: #f5f4ed;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --parchment: #f5f4ed;
+    --ivory:     #faf9f5;
+    --border:    #e8e6dc;
+    --border-soft: #e5e3d8;
+    --near-black: #141413;
+    --dark-warm: #3d3d3a;
+    --olive:     #504e49;
+    --stone:     #6b6a64;
+    --brand:     #1B365D;
+    --brand-tint: #EEF2F7;          /* solid equivalent of rgba(1B365D, 0.08), avoids tag double-rectangle bug */
+    --serif: "TsangerJinKai02", "Source Han Serif SC", "Source Han Serif CN", "Noto Serif CJK SC", "Noto Serif SC", "Songti SC", "STSong", "SimSun", Georgia, serif;
+    --sans: var(--serif);
+  }
+
+  html, body { background: var(--parchment); }
+
+  @media screen {
+    body { max-width: 210mm; margin: 0 auto; padding: 11mm 13mm; }
+  }
+
+  body {
+    color: var(--near-black);
+    font-family: var(--serif);
+    font-size: 9.2pt;
+    line-height: 1.42;
+    letter-spacing: 0.3pt;
+    widows: 3;
+    orphans: 3;
+  }
+
+  .serif {
+    font-family: var(--serif);
+  }
+
+  a { color: var(--brand); text-decoration: none; }
+
+  /* HEADER */
+  .header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 4.2mm;
+    padding-bottom: 2.3mm;
+    border-bottom: 0.6pt solid var(--border);
+  }
+  .header > div:first-child { flex-shrink: 0; }
+  .name {
+    font-family: var(--serif);
+    font-size: 26.5pt;
+    font-weight: 500;
+    letter-spacing: 0.5pt;
+    color: var(--near-black);
+    line-height: 1;
+    margin-bottom: 0;
+    display: flex;
+    align-items: baseline;
+    gap: 2.2mm;
+    white-space: nowrap;
+  }
+  .alias {
+    font-size: 12.5pt;
+    font-weight: 400;
+    color: var(--stone);
+    letter-spacing: 0.2pt;
+  }
+  .alias::before {
+    content: "";
+  }
+  .tagline { font-size: 9.5pt; color: var(--olive); line-height: 1.3; }
+  .tagline .accent { color: var(--brand); font-weight: 500; }
+
+  .contact {
+    text-align: right;
+    font-size: 9pt;
+    color: var(--stone);
+    line-height: 1.5;
+    margin-bottom: -0.5mm;
+  }
+  .contact a { color: var(--dark-warm); }
+  .contact .loc { color: var(--olive); font-weight: 500; }
+  .contact .role { color: var(--brand); font-size: 10.5pt; font-weight: 500; }
+  .contact .sep { color: var(--border); margin: 0 0.4em; }
+
+  /* METRICS */
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 6mm;
+    margin-bottom: 3mm;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .metric {
+    background: transparent;
+    padding: 1mm 0 1.2mm;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7mm;
+    min-width: 0;
+    break-inside: avoid;
+  }
+  .metric-value {
+    font-family: var(--serif);
+    font-size: 13pt;
+    font-weight: 500;
+    color: var(--brand);
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .metric-label {
+    font-size: 9pt;
+    color: var(--olive);
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+
+  .metric-value .unit {
+    font-size: 10.5pt;
+    margin-left: 0.3mm;
+    font-weight: 500;
+    color: var(--brand);
+  }
+
+  .metrics--stack .metric {
+    gap: 0.5mm;
+    padding-bottom: 2mm;
+    border-bottom: 0.3pt dotted var(--border);
+  }
+
+  /* SECTION */
+  .section-title {
+    font-family: var(--serif);
+    font-size: 12.5pt;
+    font-weight: 500;
+    color: var(--near-black);
+    border-bottom: 0.5pt solid var(--border);
+    padding: 0 0 1mm 0;
+    margin: 5.8mm 0 1.7mm 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 2mm;
+  }
+  .section-title .sub {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 9pt;
+    color: var(--stone);
+    letter-spacing: 0.3pt;
+  }
+
+  section:first-of-type .section-title { margin-top: 0; }
+  .page-break > .section-title { margin-top: 0; }
+
+  /* Unify gap from section-title bottom border to first content's first line = 3mm
+     (section-title margin-bottom 1.8mm + first-child top spacing 1.2mm) */
+  .section-title + .skill-row { padding-top: 1.2mm; }
+  .section-title + .edu-row { padding-top: 1.2mm; }
+
+  /* SUMMARY */
+  .summary { font-size: 9.2pt; line-height: 1.42; color: var(--near-black); }
+  .summary .em-brand { color: var(--brand); }
+  .summary .hl { color: var(--brand); }
+
+  /* TIMELINE */
+  .timeline { display: flex; gap: 6mm; margin-bottom: 2mm; margin-left: 0; margin-right: 0; }
+  .tl-step {
+    flex: 1; background: transparent;
+    padding: 0.8mm 0;
+    break-inside: avoid;
+  }
+  .tl-top {
+    display: flex; align-items: baseline; gap: 1.5mm;
+    margin-bottom: 0.5mm;
+  }
+  .tl-year {
+    font-family: var(--serif);
+    font-size: 11pt; font-weight: 500;
+    color: var(--brand); line-height: 1;
+  }
+  .tl-head {
+    font-size: 11pt; font-weight: 500;
+    color: var(--near-black);
+  }
+  .tl-body { font-size: 9pt; color: var(--olive); line-height: 1.4; letter-spacing: 0.3pt; }
+
+  /* PROJECTS */
+  .project {
+    padding: 2.6mm 0;
+    break-inside: avoid;
+  }
+  .project:first-of-type { padding-top: 1.2mm; }
+  .proj-head {
+    display: block; margin-bottom: 0.75mm;
+  }
+  .proj-name {
+    font-family: var(--serif);
+    font-size: 11pt; font-weight: 500; color: var(--near-black);
+  }
+  .proj-kind { font-size: 11pt; color: var(--olive); margin-left: 1.5mm; }
+  .proj-role {
+    font-size: 9pt; color: var(--brand); font-weight: 500;
+    float: right; background: #EEF2F7;
+    padding: 0.4mm 1.2mm; border-radius: 2pt; letter-spacing: 0.05pt;
+    white-space: nowrap;
+  }
+  .proj-lines { display: table; width: 100%; }
+  .proj-row { display: table-row; }
+  .proj-label {
+    display: table-cell; width: 11mm;
+    font-size: 9pt; color: var(--brand);
+    font-weight: 500; letter-spacing: 0.2pt;
+    padding: 0.2mm 0 0.4mm 0; vertical-align: top;
+  }
+  .proj-text {
+    display: table-cell; font-size: 9pt;
+    color: var(--near-black); line-height: 1.4; letter-spacing: 0.3pt;
+    padding: 0 0 0.4mm 0.5mm;
+  }
+  .proj-text .hl { color: var(--brand); }
+
+  .team-culture {
+    margin-top: 2mm; padding: 1.5mm 2.5mm;
+    background: var(--ivory);
+    border-radius: 2pt;
+    font-size: 9pt; color: var(--olive); line-height: 1.4;
+    break-inside: avoid;
+  }
+  .team-culture .hl { color: var(--brand); }
+
+  /* PAGE 2 FORCE BREAK */
+  .page-break { break-before: page; }
+
+  /* OPEN SOURCE - NEW ENHANCED LAYOUT */
+  .os-intro {
+    font-size: 9.2pt; line-height: 1.4; letter-spacing: 0.3pt;
+    color: var(--near-black);
+    padding: 0; margin: 1.2mm 0 2mm 0;
+    background: transparent;
+    break-inside: avoid;
+  }
+  .os-intro .hl { color: var(--brand); }
+  .os-intro .strong { color: var(--near-black); }
+
+  .os-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8mm; row-gap: 1mm;
+  }
+  .os-item {
+    display: flex; align-items: baseline;
+    gap: 2mm; padding: 1mm 0 1mm 0;
+    border-bottom: 0.3pt dotted var(--border);
+    break-inside: avoid;
+  }
+  .os-item:last-child,
+  .os-item:nth-last-child(2):nth-child(odd) { border-bottom: none; }
+  /* A lone project spans the row so its star count meets the right edge like every date. */
+  .os-item:only-child { grid-column: span 2; }
+  .os-name {
+    font-family: var(--serif);
+    font-size: 10pt; font-weight: 500;
+    flex-shrink: 0; min-width: 14mm;
+  }
+  .os-name a { color: var(--brand); }
+  .os-desc { font-size: 9pt; color: var(--olive); line-height: 1.4; flex: 1; }
+  .os-star {
+    font-size: 9pt; color: var(--dark-warm);
+    font-weight: 500; white-space: nowrap; flex-shrink: 0; min-width: 7.5mm; text-align: right;
+  }
+  .os-star.big { color: var(--brand); font-size: 9.2pt; }
+
+  .os-highlight {
+    margin-top: 2.5mm;
+    padding: 1.8mm 2.8mm;
+    background: var(--ivory);
+    border-radius: 2pt;
+    font-size: 9pt; line-height: 1.4;
+    color: var(--near-black);
+    letter-spacing: 0.3pt;
+    break-inside: avoid;
+  }
+  .os-highlight .hl { color: var(--brand); }
+  .os-highlight .tag {
+    display: inline-block;
+    background: transparent; color: var(--brand);
+    font-size: 9pt; font-weight: 500;
+    padding: 0; border-radius: 0;
+    margin-right: 1.2mm; letter-spacing: 0.3pt;
+    transform: none;
+  }
+
+  /* AI CONVICTION - NEW SECTION */
+  .convictions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.5mm;
+    margin-top: 1.2mm;
+  }
+  .conv-card {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0 2mm 0 0;
+    break-inside: avoid;
+  }
+  .conv-head, .ai-card-head {
+    font-family: var(--serif);
+    font-size: 9.8pt; font-weight: 500;
+    color: var(--near-black); margin-bottom: 0.9mm;
+    display: flex; align-items: baseline; gap: 1.5mm;
+  }
+  .conv-head .year, .ai-card-head .year {
+    color: var(--brand); font-weight: 500;
+    font-size: 9pt;
+  }
+  .conv-body, .ai-card-body {
+    font-size: 9pt; color: var(--olive);
+    line-height: 1.4; letter-spacing: 0.3pt;
+  }
+  .conv-body .hl, .ai-card-body .hl { color: var(--brand); }
+  .conv-body .em-brand, .ai-card-body .em-brand { color: var(--brand); }
+
+  /* INFLUENCE */
+  .handle-strip {
+    background: transparent;
+    padding: 0; margin: 1.2mm 0 2mm 0;
+    display: flex; align-items: baseline; gap: 3mm;
+    break-inside: avoid;
+  }
+  .handle-strip .handle {
+    font-family: var(--serif);
+    font-size: 9.8pt; font-weight: 500; color: var(--brand);
+    flex-shrink: 0;
+  }
+  .handle-strip .follower { font-size: 9pt; color: var(--stone); flex-shrink: 0; }
+  .handle-strip .desc { font-size: 9pt; color: var(--olive); line-height: 1.4; letter-spacing: 0.3pt; flex: 1; }
+
+  .impact-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 5.5mm; }
+  .inf-block-title {
+    margin-top: 2.5mm;
+    font-family: var(--serif);
+    font-size: 9.8pt; font-weight: 500;
+    color: var(--near-black);
+    margin-bottom: 1.5mm; padding-bottom: 0.5mm;
+    border-bottom: 0.3pt dotted var(--border);
+    display: flex; align-items: baseline; gap: 2mm;
+  }
+  .inf-block-title .small {
+    font-family: var(--serif);
+    font-size: 9pt; color: var(--stone);
+    font-weight: 400; margin-left: 0; letter-spacing: 0.2pt;
+  }
+  .art-row {
+    padding: 1.6mm 0;
+    border-bottom: 0.3pt dotted var(--border-soft);
+  }
+  .talk-row {
+    display: flex; justify-content: space-between;
+    align-items: flex-start;
+    gap: 2mm; padding: 1.6mm 0;
+    border-bottom: 0.3pt dotted var(--border-soft);
+  }
+  .art-row:last-of-type, .talk-row:last-of-type { border-bottom: none; }
+  .art-header {
+    display: flex; align-items: baseline;
+    justify-content: space-between;
+    gap: 2mm; padding-right: 3mm;
+  }
+  .art-title, .talk-title {
+    font-size: 9pt; color: var(--near-black);
+    font-weight: 500; line-height: 1.4;
+    flex: 1 1 auto; min-width: 0;
+  }
+  .art-stats, .talk-venue {
+    font-size: 9pt; color: var(--stone);
+    line-height: 1.4; margin-top: 0.5mm; padding-left: 0; letter-spacing: 0.3pt;
+    white-space: nowrap;
+  }
+  .art-stats .em-brand {
+    color: var(--brand);
+  }
+  .art-date {
+    font-size: 9pt; color: var(--stone);
+    font-variant-numeric: tabular-nums;
+    font-weight: 400;
+  }
+  .art-stats .lang-cn, .art-stats .lang-en {
+    display: inline-block;
+    font-size: 9pt; font-weight: 500;
+    margin-right: 0.5mm;
+    letter-spacing: 0.2pt;
+    color: var(--stone);
+  }
+  .talk-date {
+    font-size: 9pt; color: var(--stone); font-weight: 500;
+    white-space: nowrap; font-variant-numeric: tabular-nums;
+    padding-top: 0.3mm;
+  }
+
+  /* SKILLS */
+  .skill-row {
+    display: flex; gap: 2.5mm; padding: 1.7mm 0;
+    border-bottom: 0.3pt dotted var(--border);
+    align-items: baseline;
+  }
+  .skill-row:last-of-type { border-bottom: none; }
+  .skill-label {
+    font-size: 9pt; font-weight: 500;
+    color: var(--brand); letter-spacing: 0.3pt;
+    width: 22mm; flex-shrink: 0;
+    line-height: 1.36;
+  }
+  .skill-body { font-size: 9pt; color: var(--near-black); line-height: 1.4; letter-spacing: 0.3pt; flex: 1; }
+  .skill-body .em-brand { color: var(--brand); }
+
+  .no-break { break-inside: avoid; }
+
+  /* EDUCATION */
+  .edu-row {
+    display: flex; justify-content: space-between;
+    align-items: baseline; font-size: 9.5pt; padding: 1.7mm 0;
+  }
+  .edu-row .school {
+    font-family: var(--serif);
+    font-weight: 500; font-size: 10.7pt;
+  }
+  .edu-row .major { color: var(--olive); font-size: 9.5pt; }
+  .edu-row .date { color: var(--stone); font-variant-numeric: tabular-nums; font-size: 9pt; }
+
+  /* TABLE (kami-table) */
+  table, .kami-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9pt;
+    margin: 6pt 0;
+    break-inside: avoid;
+  }
+  table th, .kami-table th {
+    text-align: left;
+    font-weight: 500;
+    color: var(--dark-warm);
+    padding: 5pt 6pt;
+    border-bottom: 0.6pt solid var(--border);
+    background: transparent;
+  }
+  table td, .kami-table td {
+    padding: 4pt 6pt;
+    border-bottom: 0.25pt solid var(--border);
+    vertical-align: top;
+  }
+  table.compact th, .kami-table.compact th { padding: 3pt 4pt; font-size: 8pt; }
+  table.compact td, .kami-table.compact td { padding: 2.5pt 4pt; font-size: 8pt; line-height: 1.4; }
+  table.financial td:not(:first-child), .kami-table.financial td:not(:first-child) {
+    text-align: right; font-variant-numeric: tabular-nums;
+  }
+  table.financial th:not(:first-child), .kami-table.financial th:not(:first-child) { text-align: right; }
+  table.striped tbody tr:nth-child(even) td, .kami-table.striped tbody tr:nth-child(even) td {
+    background: var(--ivory);
+  }
+  table .total td, .kami-table .total td {
+    font-weight: 500; border-top: 0.6pt solid var(--border); border-bottom: none; color: var(--near-black);
+  }
+
+  /* DENSE VARIANT: add class="resume--dense" to <body> when 5+ projects overflow */
+  body.resume--dense { font-size: 9pt; }
+  body.resume--dense .proj-text { line-height: 1.38; }
+  body.resume--dense .tl-body { font-size: 8.5pt; }
+  body.resume--dense .project { padding: 1.6mm 0; }
+  body.resume--dense .section-title { margin-top: 4.2mm; margin-bottom: 1.2mm; }
+</style>
+</head>
+<body>
+<div class="header"><div class="name serif">俊宁</div><div class="contact"><span class="role">AI Browser 开发工程师</span><br>184-5710-6173 · luozhu2021@gmail.com · github.com/youngjunning · 杭州</div></div><div class="metrics"><div class="metric"><span class="metric-value serif">10 年</span><span class="metric-label">研发经验</span></div><div class="metric"><span class="metric-value serif">2 个</span><span class="metric-label">浏览器产品复用</span></div><div class="metric"><span class="metric-value serif">2 项</span><span class="metric-label">开源 Agent 项目贡献</span></div><div class="metric"><span class="metric-value serif">90%+</span><span class="metric-label">组件库单测覆盖率</span></div></div><section><div class="section-title">个人简介</div><div class="summary">阿里高级工程师、AI 开发者，拥有 10 年研发经验。近两年负责浏览器 Agent 架构与核心开发，设计覆盖 Chromium、Browser Tools、Agent Runtime 和构建交付的浏览器框架，并参与客服浏览器的稳定性与发行。</div></section><section><div class="section-title">工作经历</div><div class="proj-lines"><div class="proj-row"><div class="proj-text">飞猪网络技术有限公司 · 资深前端开发 / Agent 开发 · 2023.06 – 至今</div></div><div class="proj-row"><div class="proj-text">杭州涂鸦科技有限公司 · 前端架构组 · 前端开发 · 2020.09 – 2023.06</div></div><div class="proj-row"><div class="proj-text">浩鲸云计算科技 · 高级前端开发 · 2020.05 – 2020.09</div></div><div class="proj-row"><div class="proj-text">河南省私塾世纪 · 跨端开发团队负责人 · 2018.03 – 2020.05</div></div></div></section><section><div class="section-title">发展路径</div><div class="timeline"><div class="tl-step"><div class="tl-top"><div class="tl-year serif">2018–2020</div></div><div class="tl-body">从 React Native 跨端交付建立应用与平台适配经验。</div></div><div class="tl-step"><div class="tl-top"><div class="tl-year serif">2020–2023</div></div><div class="tl-body">在涂鸦负责组件库、插件与性能优化，积累框架和工具链工程经验。</div></div><div class="tl-step"><div class="tl-top"><div class="tl-year serif">2023–至今</div></div><div class="tl-body">在飞猪负责浏览器 Agent 与 AI 浏览器框架，覆盖内核、工具、Runtime 和发行。</div></div></div></section><section><div class="section-title">代表项目</div><div class="project"><div class="proj-head"><span class="proj-name serif">AI 浏览器开发框架</span><span class="proj-kind">· 2026</span></div><div class="proj-lines"><div class="proj-row"><div class="proj-label">角色</div><div class="proj-text">框架设计，覆盖 Chromium Kernel、Browser Tools、Agent Runtime 和构建交付。</div></div><div class="proj-row"><div class="proj-label">动作</div><div class="proj-text">固定 Chromium 基线与 C++ / GN 补丁，使干净检出可重放并构建。</div></div><div class="proj-row"><div class="proj-label">动作</div><div class="proj-text">以 Browser Tools / CDP 提供快照、导航、输入和标签页操作，按 Profile / Tab 与 capability 授权。</div></div><div class="proj-row"><div class="proj-label">动作</div><div class="proj-text">把浏览器、内置扩展和 Agent Runtime 分为独立交付对象，固定各自版本与依赖。</div></div><div class="proj-row"><div class="proj-label">结果</div><div class="proj-text">框架供两个浏览器产品复用；浏览器、内置扩展与 Agent Runtime 有独立的版本和交付边界。</div></div></div></div><div class="project"><div class="proj-head"><span class="proj-name serif">面向客服场景的 AI 浏览器</span><span class="proj-kind">· 2026</span></div><div class="proj-lines"><div class="proj-row"><div class="proj-label">角色</div><div class="proj-text">参与稳定性治理、本地 Agent Runtime 接入和跨平台发行。</div></div><div class="proj-row"><div class="proj-label">动作</div><div class="proj-text">为工作台设置独立 Renderer 与限次恢复，处理长时间多系统作业的稳定性。</div></div><div class="proj-row"><div class="proj-label">动作</div><div class="proj-text">处理语言资源与本地 Agent Runtime 接入。</div></div><div class="proj-row"><div class="proj-label">动作</div><div class="proj-text">按浏览器、扩展和 Agent Runtime 的版本边界推进构建、升级与真实安装验收。</div></div><div class="proj-row"><div class="proj-label">结果</div><div class="proj-text">公共浏览器能力进入客服产品；发行验收覆盖安装后的版本和运行状态。</div></div></div></div><div class="project"><div class="proj-head"><span class="proj-name serif">浏览器 Agent 自动化平台</span><span class="proj-kind">· 2026</span></div><div class="proj-lines"><div class="proj-row"><div class="proj-label">角色</div><div class="proj-text">负责自动化架构与核心开发，将业务目标转为可验证的浏览器任务。</div></div><div class="proj-row"><div class="proj-label">动作</div><div class="proj-text">用 Workflow / Skill 承接稳定步骤，用 Agent 处理页面变化，并定义失败出口与人工接管。</div></div><div class="proj-row"><div class="proj-label">动作</div><div class="proj-text">建设云端浏览器环境，结合 DOM、Accessibility Tree 和截图完成定位、操作与效果校验。</div></div><div class="proj-row"><div class="proj-label">动作</div><div class="proj-text">将自然语言目标整理为走查方案，关联会话与提案，人工确认后再启动执行。</div></div><div class="proj-row"><div class="proj-label">结果</div><div class="proj-text">以终态、URL、截图和报告核对任务结果，执行日志经回归验证与人工审核后形成候选 Skill。</div></div></div></div></section><section class="page-break"><div class="section-title">Agent 与工程化</div><div class="project"><div class="proj-head"><span class="proj-name serif">涂鸦 Studio 框架适配</span><span class="proj-kind">· 2020–2023</span></div><div class="proj-lines"><div class="proj-row"><div class="proj-label">角色</div><div class="proj-text">前端架构组开发，负责 Ray 适配与性能优化。</div></div><div class="proj-row"><div class="proj-label">动作</div><div class="proj-text">适配框架并开发基础组件和自定义事件模块。</div></div><div class="proj-row"><div class="proj-label">动作</div><div class="proj-text">通过 AST 按需提取 useSelector 依赖，减少冗余订阅与无效渲染。</div></div><div class="proj-row"><div class="proj-label">结果</div><div class="proj-text">支撑新框架接入；同期建设的跨端组件库单测覆盖率达到 90%+。</div></div></div></div><div class="project"><div class="proj-head"><span class="proj-name serif">客服工作台融合与稳定性治理</span><span class="proj-kind">· 2023–至今</span></div><div class="proj-lines"><div class="proj-row"><div class="proj-label">角色</div><div class="proj-text">客服平台技术负责人，带领 4 人团队负责多系统工作台。</div></div><div class="proj-row"><div class="proj-label">动作</div><div class="proj-text">统筹在线、热线、工单和订单工作台的技术设计与核心开发。</div></div><div class="proj-row"><div class="proj-label">动作</div><div class="proj-text">推进工作台融合，建立埋点与录屏关联，治理内存泄漏和重复渲染。</div></div><div class="proj-row"><div class="proj-label">结果</div><div class="proj-text">为长时间浏览器作业提供稳定的工作台入口，问题定位可回看操作和埋点证据。</div></div></div></div></section><section><div class="section-title">开源贡献</div><div class="os-highlight">browser-use PR 1414、UI-TARS Desktop PR 500：页面高亮层背景修复。</div><div class="os-highlight">DefinitelyTyped PR 49429、49919：tuya-panel-kit 类型定义与维护。</div><div class="os-highlight">vscode-vsce PR 614、React Navigation PR 9173：工具打包与转场预设。</div></section><section><div class="section-title">核心能力</div><div class="skill-row"><div class="skill-label">01 ·</div><div class="skill-body">Chromium 工程：基线、C++ / GN 补丁、构建重放与跨平台交付。</div></div><div class="skill-row"><div class="skill-label">02 ·</div><div class="skill-body">Browser Tools：CDP、快照、导航、输入与标签页操作。</div></div><div class="skill-row"><div class="skill-label">03 ·</div><div class="skill-body">权限边界：Profile / Tab 隔离与 capability 授权。</div></div><div class="skill-row"><div class="skill-label">04 ·</div><div class="skill-body">Agent Runtime：云端浏览器执行、本地接入、失败恢复和结果验证。</div></div><div class="skill-row"><div class="skill-label">05 ·</div><div class="skill-body">应用工程：TypeScript、React、Node.js、跨端组件与性能治理。</div></div></section><section><div class="section-title">教育背景</div><div class="edu-row"><div><span class="school serif">中原工学院信息商务学院</span><span class="major"> · 本科 · 网络工程；英语 CET-4 · 中级网络工程师</span></div><div class="date">2012–2016</div></div></section>
+</body>
+</html>

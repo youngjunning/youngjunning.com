@@ -32,12 +32,12 @@ export default function ResumePage() {
           <div className={styles.downloadCard}>
             <strong>AI 应用开发工程师</strong>
             <p>侧重 Agent 应用、业务系统、全栈交付与结果验证。</p>
-            <div><a href="/resumes/junning-ai-application.pdf" download><ArrowDownToLine size={15} aria-hidden="true" />下载 PDF</a><a href="/resumes/junning-ai-application.docx" download>下载 Word 原文件</a></div>
+            <div><a href="/resumes/junning-ai-application.pdf" download><ArrowDownToLine size={15} aria-hidden="true" />下载 PDF</a><a href="/resumes/junning-ai-application.docx" download>可编辑 Word</a><a href="/resumes/junning-ai-application.html" download>Kami 原稿</a></div>
           </div>
           <div className={styles.downloadCard}>
             <strong>AI Browser 开发工程师</strong>
             <p>侧重 Chromium、Browser Tools、Agent Runtime 与发行交付。</p>
-            <div><a href="/resumes/junning-ai-browser.pdf" download><ArrowDownToLine size={15} aria-hidden="true" />下载 PDF</a><a href="/resumes/junning-ai-browser.docx" download>下载 Word 原文件</a></div>
+            <div><a href="/resumes/junning-ai-browser.pdf" download><ArrowDownToLine size={15} aria-hidden="true" />下载 PDF</a><a href="/resumes/junning-ai-browser.docx" download>可编辑 Word</a><a href="/resumes/junning-ai-browser.html" download>Kami 原稿</a></div>
           </div>
         </div>
       </header>
