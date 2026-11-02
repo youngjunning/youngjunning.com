@@ -33,7 +33,7 @@ test('does not reject parsed emphasis, code, escapes, HTML attributes or link de
 });
 
 test('the career article renders each repaired bold span with punctuation outside', () => {
-  const filename = 'content/posts/从 AI 工程到产品技术专家：我的三年职业发展规划.md';
+  const filename = 'content/posts/AI 工程与产品实践：我的职业发展思考.md';
   const { content } = matter(fs.readFileSync(filename, 'utf8'));
   assert.deepEqual(markdownEmphasisIssues(content), []);
   const strong = [];

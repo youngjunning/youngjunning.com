@@ -1,6 +1,6 @@
 ---
 id: "873215a5db96ccec"
-title: "从 AI 工程到产品技术专家：我的三年职业发展规划"
+title: "AI 工程与产品实践：我的职业发展思考"
 description: "面向 2026.11.01—2029.11.01，以 AI Systems & Product Engineering 为主线，将执行提案审核、授权边界、风险分级审批与评估回放纳入职业能力建设。保留系统深度与产品判断，分阶段验证真实任务和用户价值，并用季度复盘调整假设。"
 date: "2026-10-25"
 topic: "reflections"
@@ -8,10 +8,10 @@ tags: ["AI Engineering","Product Engineering","Agentic Computing","Agent Runtime
 source: "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%BB%8E%20AI%20%E5%B7%A5%E7%A8%8B%E5%88%B0%E4%BA%A7%E5%93%81%E6%8A%80%E6%9C%AF%E4%B8%93%E5%AE%B6%EF%BC%9A%E6%88%91%E7%9A%84%E4%B8%89%E5%B9%B4%E8%81%8C%E4%B8%9A%E5%8F%91%E5%B1%95%E8%A7%84%E5%88%92.md"
 sourceDate: "2026-10-25T21:30:00.000Z"
 updated: "2026-11-02"
-cover: "/media/9daa6f0329ff330726d9eb0d.png"
+cover: "/media/career-development-2026-11-02.webp"
 assets: {"/images/ai-career-identity-2027-2029.png":"/media/9daa6f0329ff330726d9eb0d.png","/images/agentic-computing-technology-thesis-2027-2029.png":"/media/e429ce37d58424e32602c1a6.png"}
 originalBodySha256: "f44235c6739e41ecf086a880c463d4508f0115237f18ce18e1682d07a8999ed1"
-migrationNote: "2026-11-02 修正加粗标记边界；按作者要求修订为 V2.1，以长期能力和研究问题组织规划，明确具体产品仅作阶段实践载体。保留原始指纹与规划周期。"
+migrationNote: "2026-11-02 修正加粗标记边界；按作者要求修订为 V2.1，以长期能力和研究问题组织规划，明确具体产品仅作阶段实践载体；统一内外标题并重绘封面。保留原始指纹与规划周期。"
 ---
 
 ## 修订记录
