@@ -2,6 +2,23 @@
   "version": 2,
   "records": [
     {
+      "id": "c6cecaefc3f5635a",
+      "kind": "judgment",
+      "title": "文章署名与转载说明交给站点统一展示",
+      "text": "我不希望在文章正文末尾反复注明使用了哪些写作或配图 Skill，也不再附带 GitHub Star 邀请。文章作者、原文链接和转载说明应由阅读页底部的固定模块展示；复制 Markdown 时应把声明一起复制。",
+      "context": "2026-11-02，调整公开个人网站的文章阅读体验时明确的内容呈现选择。",
+      "basis": "本人说原有 Star 邀请放了很久仍没有获得 Star，并明确选择将声明移出正文。",
+      "alternatives": ["继续在每篇文章正文末尾放置 Skill 使用说明与 Star 邀请。", "把作者与转载声明继续写在每篇 Markdown 正文中。"],
+      "outcome": null,
+      "date": "2026-11-02",
+      "recordedAt": "2026-11-02",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [{ "kind": "statement", "label": "本人陈述，2026-11-02，公开摘要：取消文末 Skill 使用说明和 Star 邀请，改由阅读页底部统一展示作者、原文链接与转载说明，复制 Markdown 时附带声明。" }]
+    },
+    {
       "id": "dcb505427b2acbb6",
       "kind": "judgment",
       "title": "官网、设计图鉴与 Mastra 文档独立维护",
