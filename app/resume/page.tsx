@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { ArrowUpRight, Mail, MapPin } from 'lucide-react';
+import { ArrowDownToLine, ArrowUpRight, Mail, MapPin } from 'lucide-react';
 import resume from '@/content/resume.json';
 import { BlurFade } from '@/components/magicui/blur-fade';
 import styles from './resume.module.css';
@@ -27,6 +27,18 @@ export default function ResumePage() {
           <span><MapPin size={15} aria-hidden="true" />{resume.location}</span>
           <a href={'mailto:' + resume.email}><Mail size={15} aria-hidden="true" />{resume.email}</a>
           <a href={resume.github} target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={15} aria-hidden="true" /></a>
+        </div>
+        <div className={styles.downloads} aria-label="下载岗位简历">
+          <div className={styles.downloadCard}>
+            <strong>AI 应用开发工程师</strong>
+            <p>侧重 Agent 应用、业务系统、全栈交付与结果验证。</p>
+            <div><a href="/resumes/junning-ai-application.pdf" download><ArrowDownToLine size={15} aria-hidden="true" />下载 PDF</a><a href="/resumes/junning-ai-application.docx" download>下载 Word 原文件</a></div>
+          </div>
+          <div className={styles.downloadCard}>
+            <strong>AI Browser 开发工程师</strong>
+            <p>侧重 Chromium、Browser Tools、Agent Runtime 与发行交付。</p>
+            <div><a href="/resumes/junning-ai-browser.pdf" download><ArrowDownToLine size={15} aria-hidden="true" />下载 PDF</a><a href="/resumes/junning-ai-browser.docx" download>下载 Word 原文件</a></div>
+          </div>
         </div>
       </header>
     </BlurFade>
