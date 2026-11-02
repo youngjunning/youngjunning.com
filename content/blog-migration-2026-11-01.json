@@ -1443,13 +1443,13 @@
       "sourceFile": "从 AI 工程到产品技术专家：我的三年职业发展规划.md",
       "title": "从 AI 工程到产品技术专家：我的三年职业发展规划",
       "status": "migrated",
-      "reason": "保留本人职业方向与最新三年规划，明确目标不等于已取得成果。2026-11-02 仅修正加粗边界，将句末标点移出加粗范围，保留正文措辞与原文指纹。",
+      "reason": "保留本人职业方向与最新三年规划，明确目标不等于已取得成果。2026-11-02 修正加粗边界；按作者要求修订为 V2.1，以长期能力和研究问题组织规划，明确具体产品仅作阶段实践载体。保留原文指纹与规划周期。",
       "id": "873215a5db96ccec",
       "file": "从 AI 工程到产品技术专家：我的三年职业发展规划.md",
       "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%BB%8E%20AI%20%E5%B7%A5%E7%A8%8B%E5%88%B0%E4%BA%A7%E5%93%81%E6%8A%80%E6%9C%AF%E4%B8%93%E5%AE%B6%EF%BC%9A%E6%88%91%E7%9A%84%E4%B8%89%E5%B9%B4%E8%81%8C%E4%B8%9A%E5%8F%91%E5%B1%95%E8%A7%84%E5%88%92.md",
       "sourceSha256": "e19bae19aaf990f886848247b8432fa328034c71229e67afbb643486f1ac57d0",
-      "bodySha256": "a191860990d9125f77c89e1978cf1772476769662c689c4da7c2d1f1cc4a3827",
-      "importedSha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf"
+      "bodySha256": "3ccc506f8f7d06dc71a8ed1bebd917fc04df047098dc92b19c8ab93389732cc9",
+      "importedSha256": "350b8a699e02ca3f8f384fee0eb3cae0ca6a94959c428a5c22d426381defb673"
     },
     {
       "sourceFile": "从 rcedit 到 resedit：给 Bun 单文件 EXE 修改 VERSIONINFO 的兼容层设计.md",
