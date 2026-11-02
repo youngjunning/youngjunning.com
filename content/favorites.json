@@ -2,6 +2,60 @@
   "version": 1,
   "favorites": [
     {
+      "id": "9728118894d125bb",
+      "kind": "card",
+      "title": "VoiceOver 是什么？",
+      "url": null,
+      "summary": "VoiceOver 是 macOS 内置的屏幕阅读器，可朗读界面元素，并通过键盘命令帮助用户导航和操作。",
+      "reason": "回查 macOS 应用无障碍验收时，明确屏幕阅读器能读到什么、能否完成操作。",
+      "tags": ["VoiceOver", "macOS", "无障碍"],
+      "savedAt": "2026-11-02",
+      "selection": "discovered",
+      "visibility": "shared",
+      "card": {
+        "date": "2026-11-01",
+        "recordedAt": "2026-11-02",
+        "context": "AI 辅助解释，整理自 macOS 应用无障碍验收时的概念提问；不表示俊宁已掌握 VoiceOver 或完成全面验收。",
+        "understanding": "VoiceOver 使用应用提供的无障碍信息呈现控件名称、角色和状态。验收时还要核对焦点顺序、状态变化和实际操作路径。",
+        "example": "假设应用有“学习”标签，VoiceOver 应能读出标签名称和选中状态，用户也应能通过 VoiceOver 导航并激活它；这是验收示例，不代表所有页面已通过。",
+        "distinction": "自动检查无障碍属性只能发现一部分问题；属性存在不等于真实 VoiceOver 用户能顺利导航和操作。"
+      },
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        { "label": "Apple 官方 VoiceOver 使用指南，2026-11-02 核验：https://support.apple.com/guide/voiceover/welcome/mac" },
+        { "label": "Apple Developer，VoiceOver evaluation criteria，2026-11-02 核验：https://developer.apple.com/help/app-store-connect/manage-app-accessibility/voiceover-evaluation-criteria" }
+      ]
+    },
+    {
+      "id": "bae903ae1bc19576",
+      "kind": "card",
+      "title": "页面观察裁剪是什么？",
+      "url": null,
+      "summary": "浏览器 Agent 为控制输入体积，对页面语义观察和文本快照做范围过滤与结构压缩，同时保留完成任务所需的证据。",
+      "reason": "回查网页快照如何缩短，以及为什么不能把不可点击的业务信息一起过滤。",
+      "tags": ["Browser Agent", "Accessibility Tree", "页面观察"],
+      "savedAt": "2026-11-02",
+      "selection": "discovered",
+      "visibility": "shared",
+      "card": {
+        "date": "2026-11-01",
+        "recordedAt": "2026-11-02",
+        "context": "AI 辅助解释，整理自《漫画拆解 agent-browser：从网页快照到动作验证》。示例为教学假设，源码机制限定于文中核验的版本。",
+        "understanding": "先把页面投影为角色、名称和状态等语义，再压平无信息的包装、合并重复文本，并按任务范围或输出选项裁剪快照。裁剪的是模型看到的观察，不是删除浏览器正在运行的 DOM 节点。",
+        "example": "假设书店结果同时有书名、库存文字和购买按钮：只保留可操作元素可能留下按钮却丢掉库存。回答“有没有货”前还须读取库存，并核对它属于哪本书。",
+        "distinction": "“DOM 剪枝”容易误解为修改网页结构；“页面观察裁剪”更准确。快照没有出现某条文字，也不能证明页面上没有该信息；元素引用仍有效，也不能代替业务对象身份核对。"
+      },
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        { "label": "本站公开文章《漫画拆解 agent-browser：从网页快照到动作验证》，稳定 ID dff562e8ee3009c3，2026-11-02 核验源稿中“所谓 DOM 剪枝，实际裁剪的是页面观察”一节。" },
+        { "label": "agent-browser 官方快照选项，2026-11-02 核验：https://agent-browser.dev/snapshots#options" }
+      ]
+    },
+    {
       "id": "9d004abd4465f770",
       "kind": "knowledge",
       "title": "Vercel Node.js 26 LTS 上线说明",
