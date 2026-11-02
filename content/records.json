@@ -2,6 +2,28 @@
   "version": 2,
   "records": [
     {
+      "id": "9b8569ce4568c02c",
+      "kind": "judgment",
+      "title": "Joyally Design 不局限于青山湖视觉语言",
+      "text": "我认为 Joyally Design 不应局限于青山湖视觉语言，应有更宽的产品设计适用范围。青山湖可以是其中一种视觉方向，但不是 Joyally Design 的整体边界。",
+      "context": "在维护公开 Joyally Design Skill 时提出的设计定位判断；具体适用的品牌类型和视觉体系尚未逐一界定。",
+      "basis": "本人明确要求扩大 Joyally Design 的定位；未另述具体理由。",
+      "alternatives": [],
+      "outcome": null,
+      "date": "2026-11-02",
+      "recordedAt": "2026-11-02",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-02，公开摘要：Joyally Design 不应该局限青山湖视觉语言，应有更宽的定位。"
+        }
+      ]
+    },
+    {
       "date": "2026-11-02",
       "recordedAt": "2026-11-02",
       "visibility": "shared",

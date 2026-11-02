@@ -2,6 +2,54 @@
   "version": 1,
   "favorites": [
     {
+      "id": "0e8ee3263e315d2a",
+      "kind": "project",
+      "title": "Archify：可探索的软件工程图表",
+      "url": "https://github.com/tt-a1i/archify",
+      "summary": "Archify 提供架构、工作流、时序、数据流等图表的 JSON IR、校验器、渲染器和自包含 HTML 查看器。2026-11-02 核验的上游提交为 a4065941f12be7967436261d9934784e381d423c，版本 3.2.0，当前许可为 Apache-2.0。",
+      "reason": "用于追踪 Joyally Design 内置图表运行时的上游变化、许可和兼容性。",
+      "tags": ["设计系统", "图表", "Archify"],
+      "savedAt": "2026-11-02",
+      "selection": "discovered",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "adopted",
+      "usages": [
+        {
+          "project": "Joyally Design",
+          "projectUrl": "https://github.com/youngjunning/skills",
+          "stage": "adopted",
+          "purpose": "作为可探索图表的内置运行时，通过本地 wrapper 调用。",
+          "evidence": "https://github.com/youngjunning/skills/blob/53dc7a4/skills/design/joyally-design/vendor/archify/UPSTREAM.json"
+        }
+      ],
+      "sources": [{ "label": "Archify 官方 GitHub 仓库；2026-11-02 核验上游提交与公开源码。" }]
+    },
+    {
+      "id": "f7ab9f83499a05f8",
+      "kind": "project",
+      "title": "Pakco HTML：可移植 HTML 页面基础",
+      "url": "https://github.com/pakco77/pakco-html",
+      "summary": "Pakco HTML 提供基础样式、页面布局和可选的 deck 动画运行时。2026-11-02 核验的上游 HEAD 仍为 8cefc6b6b68d85a1484e066c47ae571b75d0d4e1；Joyally Design 使用其本地文件子集。",
+      "reason": "用于核对 Joyally Design 生成的 HTML 报告与演示文稿所依赖的上游资源。",
+      "tags": ["HTML", "报告", "Pakco"],
+      "savedAt": "2026-11-02",
+      "selection": "discovered",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "adopted",
+      "usages": [
+        {
+          "project": "Joyally Design",
+          "projectUrl": "https://github.com/youngjunning/skills",
+          "stage": "adopted",
+          "purpose": "为本地 HTML 报告和可选 deck 提供基础样式与运行时文件。",
+          "evidence": "https://github.com/youngjunning/skills/tree/53dc7a4/skills/design/joyally-design/vendor/pakco-html"
+        }
+      ],
+      "sources": [{ "label": "Pakco HTML 官方 GitHub 仓库；2026-11-02 核验上游 HEAD 与打包文件。" }]
+    },
+    {
       "id": "a6d982c3f17e40b5",
       "kind": "knowledge",
       "title": "Apple UserNotifications：本地提醒的调度与取消",
