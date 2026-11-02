@@ -2,6 +2,26 @@
   "version": 1,
   "favorites": [
     {
+      "id": "9d004abd4465f770",
+      "kind": "knowledge",
+      "title": "Vercel Node.js 26 LTS 上线说明",
+      "url": "https://vercel.com/changelog/node-js-26-lts-is-now-generally-available-on-vercel",
+      "summary": "Vercel 官方说明 Node.js 26 LTS 已可用于构建和 Functions；既有项目的自动升级与手动升级取决于 engines.node 配置，构建和运行时版本需在实际部署中核对。",
+      "reason": "用于回查 Vercel 升级 Node.js 26 的条件与部署版本行为。",
+      "tags": ["Vercel", "Node.js", "部署"],
+      "savedAt": "2026-11-02",
+      "selection": "discovered",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        {
+          "label": "Vercel 官方更新日志，Node.js 26 LTS is now Generally Available on Vercel，2026-11-02 核验。"
+        }
+      ]
+    },
+    {
       "id": "0e8ee3263e315d2a",
       "kind": "project",
       "title": "Archify：可探索的软件工程图表",

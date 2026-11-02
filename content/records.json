@@ -2,6 +2,28 @@
   "version": 2,
   "records": [
     {
+      "id": "a9dd960172bb99dc",
+      "kind": "judgment",
+      "title": "官网部署保留 Vercel 项目设置的 Node.js 版本",
+      "text": "在 youngjunning.com 的 Vercel 部署中，我要求保留项目设置的 Node.js 26.x，不让仓库中原有的 engines.node 22.x 覆盖它。这个选择仅针对本站的部署配置。",
+      "context": "2026-11-02，针对构建日志中的版本覆盖提示，指出项目设置的 26.x 不应被仓库配置覆盖；未陈述适用于其他项目的通用规则。",
+      "basis": "本人在部署设置截图中标出 Node.js 26.x 并要求不要覆盖；具体取舍理由未另述。",
+      "alternatives": ["继续由仓库的 engines.node 22.x 覆盖 Vercel 项目设置。"],
+      "outcome": null,
+      "date": "2026-11-02",
+      "recordedAt": "2026-11-02",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-02，公开摘要：youngjunning.com 的 Vercel 部署不要用仓库 Node.js 22.x 配置覆盖项目设置的 26.x。"
+        }
+      ]
+    },
+    {
       "id": "9b8569ce4568c02c",
       "kind": "judgment",
       "title": "Joyally Design 不局限于青山湖视觉语言",
