@@ -1032,12 +1032,13 @@
       "title": "Taste Is All You Need",
       "status": "updated",
       "reason": "已有文章；保留作者对判断力、取舍和 AI 协作的系统复盘。",
+      "migrationNote": "2026-11-02：Design Language Atlas 迁至 design.youngjunning.com，更新文内 4 处链接；原文指纹保持不变。",
       "id": "497451432d1eee6a",
       "file": "Taste Is All You Need.md",
       "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Taste%20Is%20All%20You%20Need.md",
       "sourceSha256": "427eea398d75fab7bed7c5e74c9d30cf2170feb3560be46987b9d99564499931",
-      "bodySha256": "f3ded38ab89c98c012f95dbd94348c3a2202b3e3c545e37d6c941fe7a9fef10a",
-      "importedSha256": "92f7c66ff529483c5b479f622bb33ea8d55d2e709860a0e4737c35f0ae8bb9b8"
+      "bodySha256": "c011c799ce09fdf353a6a2cca63dae55d686c73f70760d3736d5819b48432a3b",
+      "importedSha256": "973d7e09ca3908c55f6dec93c41e2d68638ee194abbcd5c180ed0c1be9b51ab0"
     },
     {
       "sourceFile": "TypeScript 中 type 和 interface 的区别.md",

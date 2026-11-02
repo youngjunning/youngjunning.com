@@ -1,7 +1,7 @@
 {
   "version": 1,
   "policy": "codex-prepared-suggestions-1",
-  "key": "ad316de2d8eca7ade371e114d6cbb4ef645c07fc5d4737b0b5283be10f3ce5bc",
+  "key": "f8446ae65717d69acd059a7e65c3f3f32d4a115c8e9faf598a126b4a06021e9e",
   "generatedAt": "2026-11-01T19:10:17.582Z",
   "suggestions": [
     {
@@ -79,7 +79,7 @@
           "quote": "最后采用的是纯 SwiftUI 内部绘制： - 大面积雾白柔焦带； - 左上角雾白 soft blur； - 右下角很淡的湖水青 blur； - 所有效果裁剪在卡片内部； - 不使用 NSVisualEffectView； - 不使用 .behindWindow 或 .underWindowBackground。"
         },
         {
-          "sourceId": "blog-497451432d1eee6a-85",
+          "sourceId": "blog-497451432d1eee6a-86",
           "quote": "最后我没有放弃“雾”，也没有为了视觉效果继续赌系统边界，而是改用纯 SwiftUI 绘制柔焦层：保留雾白的视觉职责，换掉高风险实现。"
         }
       ],
@@ -100,7 +100,7 @@
           "quote": "如果一套风格只告诉 Agent“可以用什么”，它很快就会把所有特征同时用上。真正能提高输出稳定性的，是同时写清楚“最多用多少”“只能用在哪里”“什么情况下不要用”。"
         },
         {
-          "sourceId": "blog-497451432d1eee6a-85",
+          "sourceId": "blog-497451432d1eee6a-86",
           "quote": "这段过程让我确认：设计风格首先是一套删减规则。 如果只告诉 AI“可以用什么”，它会很积极地把所有特征一起用上。输出真正开始稳定，是因为规则同时写清了“最多用多少”“只能用在哪里”“什么情况下不要用”。"
         }
       ],

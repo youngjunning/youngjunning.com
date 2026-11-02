@@ -10,6 +10,7 @@ sourceDate: "2026-08-10T00:18:00.000Z"
 cover: "/media/a8f03f6982b09a00562e7edd.webp"
 assets: {"/images/taste-is-all-you-need-options.webp":"/media/c70e0ce7db2539e2260ae319.webp","/images/owlet-vibe-coding-cover.webp":"/media/3f68dcdc69b493f676c7aae0.webp","/images/owlet-qingshan-lake-palette.webp":"/media/95b0bcf9974c69d940fe5716.webp","/images/qingshan-lake-design-birth.webp":"/media/59c9c3e0c1a4abbed0c50a64.webp","/images/taste-is-all-you-need-skill.webp":"/media/ff3fb0ed418065084e86cabd.webp","/images/taste-is-all-you-need-loop.svg":"/media/2d9807dfccbe8212fb4be017.svg","/images/taste-is-all-you-need.webp":"/media/a8f03f6982b09a00562e7edd.webp"}
 originalBodySha256: "f3ded38ab89c98c012f95dbd94348c3a2202b3e3c545e37d6c941fe7a9fef10a"
+migrationNote: "2026-11-02：Design Language Atlas 迁至 design.youngjunning.com，更新文内 4 处链接；保留原文指纹。"
 ---
 
 > 当 AI 把实现速度拉到过去难以想象的水平，作品之间的差距就不再只取决于“能不能做出来”，还取决于你选择做什么、删掉什么，以及用什么标准宣布完成。
@@ -121,7 +122,7 @@ Agent 很容易把“自然感”理解成多放几种自然色，把“现代�
 
 如果只告诉 AI“可以用什么”，它会很积极地把所有特征一起用上。输出真正开始稳定，是因为规则同时写清了“最多用多少”“只能用在哪里”“什么情况下不要用”。
 
-青山湖于是从一句审美偏好，变成一套可执行约束：颜色有 semantic roles，圆角有范围，间距有节奏，动效有性能与可访问性边界，组件有 anti-pattern。它被写进 `DESIGN.md`，又被收录进 [Design Language Atlas](https://design.zisheng.pro/)。
+青山湖于是从一句审美偏好，变成一套可执行约束：颜色有 semantic roles，圆角有范围，间距有节奏，动效有性能与可访问性边界，组件有 anti-pattern。它被写进 `DESIGN.md`，又被收录进 [Design Language Atlas](https://design.youngjunning.com/)。
 
 ```text
 “我喜欢这个感觉”
@@ -185,7 +186,7 @@ Qingshan Lake Design Skill 里除了 token，还有布局顺序、材质策略�
 
 | 环节 | 项目 | 解决的问题 |
 | --- | --- | --- |
-| Reference | [Design Language Atlas](https://design.zisheng.pro/) | 建立可搜索、可比较的设计语言与真实界面参考，回答“有哪些可能，为什么这个方向适合当前产品” |
+| Reference | [Design Language Atlas](https://design.youngjunning.com/) | 建立可搜索、可比较的设计语言与真实界面参考，回答“有哪些可能，为什么这个方向适合当前产品” |
 | Constraint | [Qingshan Lake Design Skill](https://github.com/youngjunning/qingshan-lake-design) | 把景观母题蒸馏成 semantic tokens、组件规则、跨端适配和 anti-pattern，回答“怎样持续做对” |
 | Production | [better-imagegen](https://github.com/youngjunning/better-imagegen) | 按资产类型选择模型与工作流，完成 prompt 约束、模型级联、后处理、metadata 和 QA，回答“怎样稳定交付可用资产” |
 
@@ -211,7 +212,7 @@ AI 对 Taste 最有价值的地方，是降低探索和对照成本。过去做�
 
 Taste 不会从空白 Prompt 里凭空出现。产品、建筑、电影、自然景观和真实生活，共同构成判断的坐标系。
 
-我做 [Design Language Atlas](https://design.zisheng.pro/)，目的不是让 Agent 随机套一套皮肤，而是建立比较能力：同一个 dashboard 为什么适合青山湖、不适合 Cyberpunk；同样是 glass，原生系统 material 和业务后台的半透明 surface 分别承担什么职责；哪些产品需要情绪，哪些产品更需要秩序。
+我做 [Design Language Atlas](https://design.youngjunning.com/)，目的不是让 Agent 随机套一套皮肤，而是建立比较能力：同一个 dashboard 为什么适合青山湖、不适合 Cyberpunk；同样是 glass，原生系统 material 和业务后台的半透明 surface 分别承担什么职责；哪些产品需要情绪，哪些产品更需要秩序。
 
 ### Diverge：让 AI 打开有意义的可能性
 
@@ -286,4 +287,4 @@ AI 会让更多人拥有更强的执行力，却不会自动替任何人承担�
 - [我用 Claude Code + Codex vibe 了一个 macOS App：Owlet](https://blog.zisheng.pro/posts/8a33f17a26ad/)
 - [青山湖设计风格的诞生记](https://blog.zisheng.pro/posts/8b52f4a0fd65/)
 - [让云雾动起来：聊天界面的分层氛围动画](https://blog.zisheng.pro/posts/5633e84c7f72/)
-- [Design Language Atlas](https://design.zisheng.pro/)
+- [Design Language Atlas](https://design.youngjunning.com/)
