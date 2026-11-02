@@ -5,7 +5,7 @@
       "id": "9728118894d125bb",
       "kind": "card",
       "title": "VoiceOver 是什么？",
-      "url": null,
+      "url": "https://support.apple.com/guide/voiceover/welcome/mac",
       "summary": "VoiceOver 是 macOS 内置的屏幕阅读器，可朗读界面元素，并通过键盘命令帮助用户导航和操作。",
       "reason": "回查 macOS 应用无障碍验收时，明确屏幕阅读器能读到什么、能否完成操作。",
       "tags": ["VoiceOver", "macOS", "无障碍"],
@@ -32,7 +32,7 @@
       "id": "bae903ae1bc19576",
       "kind": "card",
       "title": "页面观察裁剪是什么？",
-      "url": null,
+      "url": "https://agent-browser.dev/snapshots#options",
       "summary": "浏览器 Agent 为控制输入体积，对页面语义观察和文本快照做范围过滤与结构压缩，同时保留完成任务所需的证据。",
       "reason": "回查网页快照如何缩短，以及为什么不能把不可点击的业务信息一起过滤。",
       "tags": ["Browser Agent", "Accessibility Tree", "页面观察"],
@@ -1671,6 +1671,24 @@
         }
       ],
       "priority": "reference",
+      "adoption": "unknown",
+      "usages": []
+    },
+    {
+      "id": "f937b85a0cb491d2",
+      "kind": "project",
+      "title": "RuiC Card Skill",
+      "url": "https://github.com/HRuiCcc/RuiC-card-skill",
+      "summary": "Agent Skill：根据描述或参考图制作分层全息镭射卡，交付可交互的 Three.js 网页及可编辑的 Blender 工程。",
+      "reason": "本轮寻找镭射卡片 Skill 时发现，可用于后续制作和评估交互式闪卡；尚未安装或试用。",
+      "tags": ["Agent Skill", "镭射卡", "Three.js", "Blender"],
+      "savedAt": "2026-11-02",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        { "label": "项目公开仓库 README 与 SKILL.md，2026-11-02 核验。" }
+      ],
+      "priority": "evaluate",
       "adoption": "unknown",
       "usages": []
     }
