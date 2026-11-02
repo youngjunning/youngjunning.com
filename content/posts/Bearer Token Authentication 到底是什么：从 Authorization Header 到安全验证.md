@@ -10,8 +10,8 @@ sourceDate: "2026-09-17T15:43:17.000Z"
 cover: "/media/19197cfaaf6af81bbb9d4b16.webp"
 assets: {"/images/bearer-token-authentication.webp":"/media/19197cfaaf6af81bbb9d4b16.webp"}
 originalBodySha256: "94224a4bc4da0aa3c6b7b0f36b354838cab648aa4d9e0b67593668768fb8096d"
+migrationNote: "2026-11-02：移除文末工具使用注释；作者、原文链接和转载说明改由阅读页提供。保留原文指纹。"
 ---
-
 最近在给桌面 Agent 接入 API 时，我遇到一个很基础、也很容易混淆的问题：请求头里写的 `Bearer` 到底叫什么，它是在证明用户身份，还是只是在携带一段 Token？
 
 标准写法是：
@@ -363,5 +363,3 @@ Token 一旦泄露就可能造成重大损失，或 API 跨越不可信终端和
 2. [RFC 9700：Best Current Practice for OAuth 2.0 Security](https://www.rfc-editor.org/rfc/rfc9700.html)
 3. [RFC 9068：JSON Web Token Profile for OAuth 2.0 Access Tokens](https://www.rfc-editor.org/rfc/rfc9068.html)
 4. [`jose`：JWT Verification 与 Remote JWKS](https://github.com/panva/jose/blob/main/docs/jwks/remote/functions/createRemoteJWKSet.md)
-
-> 本文使用 [writting-skill](https://github.com/zisheng-ai/writting-skill) 辅助写作。项目已开源，欢迎在 GitHub 点个 Star。

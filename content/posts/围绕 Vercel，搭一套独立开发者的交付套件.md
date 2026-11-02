@@ -7,7 +7,6 @@ topic: "engineering"
 tags: ["独立开发", "Vercel", "Next.js", "Android", "PostgreSQL", "成本控制"]
 cover: "/media/vercel-indie-toolkit.webp"
 ---
-
 做 TaleFrame 时，最早的需求是一款英文小说与漫剧 App。客户端明确采用原生 Android，先做小说，漫剧保留入口并显示 Coming Soon。很快，问题从页面转到了运营：没有专门维护的服务器，小说列表由谁管理？更新一章，是否还要重新打包 App？内容多起来，存储费用会不会失控？
 
 现在，管理员可以在网页后台编辑小说和章节，保存草稿，再单独发布。App 启动或手动刷新时检查目录版本，阅读时下载相应章节；已经缓存的正文可以离线继续读。这条链路已经接通，后台部署在 Vercel，客户端仍是 Kotlin 与 Jetpack Compose。
@@ -168,5 +167,3 @@ TaleFrame 所在的团队还承载其他项目，这次没有为了一个新 App
 ---
 
 封面为 AI 生成的场景插画，并非 TaleFrame 的界面截图。
-
-> 本文使用 [writting-skill](https://github.com/youngjunning/skills/tree/main/skills/writing/writting-skill) 辅助写作，配图使用 [better-imagegen](https://github.com/youngjunning/skills/tree/main/skills/design/better-imagegen) 生成。项目已开源，欢迎在 GitHub 点个 Star。

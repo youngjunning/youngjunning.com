@@ -8,7 +8,6 @@ tags: ["ChatGPT","Electron","Chromium","Agent","漫画"]
 collection: "docs"
 cover: "/media/08de6927bb8b9143-a9c339c97eba9342.webp"
 ---
-
 沿用原稿记录的特定 macOS 应用版本，解释 Electron 宿主、内嵌 Chromium 与任务控制层的关系，不推导未经验证的运行时能力。
 
 > 本文讨论通用机制和设计判断；示意不对应任何具体产品的已交付状态。源码阅读坐标沿用原稿，本次整理不构成新的运行时验收。
@@ -131,5 +130,3 @@ ls '/Applications/ChatGPT.app/Contents/Frameworks/Codex Framework.framework/Vers
 | `webview/assets/page-ce7ec66128b2.js` | 页面宿主、窗口转移准备与接管调用 |
 
 这次检查的价值，是把“内置浏览器”拆成可回查的四层：**随应用分发的 Chromium，承载网页的 `<webview>`，管理生命周期的主进程，以及连接 Agent 的 CDP 通道。** Owl 的定制接口位于这条链路中，但底层补丁范围仍需源码或更多运行证据才能回答。
-
-> 本文使用 [writting-skill](https://github.com/zisheng-ai/writting-skill) 辅助写作，配图使用 [better-imagegen](https://github.com/zisheng-ai/better-imagegen) 生成。项目已开源，欢迎在 GitHub 点个 Star。

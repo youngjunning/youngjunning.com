@@ -205,11 +205,12 @@
       "status": "migrated",
       "reason": "保留鉴权概念区分、验证代码与错误场景，便于服务端工程复用。",
       "id": "6d9782a77ae81401",
+      "migrationNote": "2026-11-02：移除文末工具使用注释；作者、原文链接和转载说明改由阅读页提供。保留原文指纹。",
       "file": "Bearer Token Authentication 到底是什么：从 Authorization Header 到安全验证.md",
       "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Bearer%20Token%20Authentication%20%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9A%E4%BB%8E%20Authorization%20Header%20%E5%88%B0%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81.md",
       "sourceSha256": "16048379c289084a5e86769c5eae5336dc29838b93c9ec8983f640f922d0731b",
-      "bodySha256": "94224a4bc4da0aa3c6b7b0f36b354838cab648aa4d9e0b67593668768fb8096d",
-      "importedSha256": "0782e7d80a2fa7373516aa09de272851a1943025ffdd2d1b69618475e29cf74f"
+      "bodySha256": "4c31f0e34f1c2565d642de42b48935d128143cdcdc84de90d24c4d8bbddfffc0",
+      "importedSha256": "38863d740b9b11abcfb438110a6f71b0f9f0527ef87b8f199b60b078cdcfbf70"
     },
     {
       "sourceFile": "CSS 中的居中操作.md",
@@ -569,11 +570,12 @@
       "status": "migrated",
       "reason": "保留可寻址时间线、确定性渲染和媒体生命周期的机制分析。",
       "id": "d5ef8aec0f020b70",
+      "migrationNote": "2026-11-02：移除文末工具使用注释；作者、原文链接和转载说明改由阅读页提供。保留原文指纹。",
       "file": "HyperFrames 的原理：让 HTML 成为可寻址的视频时间线.md",
       "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/HyperFrames%20%E7%9A%84%E5%8E%9F%E7%90%86%EF%BC%9A%E8%AE%A9%20HTML%20%E6%88%90%E4%B8%BA%E5%8F%AF%E5%AF%BB%E5%9D%80%E7%9A%84%E8%A7%86%E9%A2%91%E6%97%B6%E9%97%B4%E7%BA%BF.md",
       "sourceSha256": "6dd06241f9224036af67fcddc963fedeb378ca253c2af1244b42522f9090d7b9",
-      "bodySha256": "c7f83f1ff289e0c8ac4c4b60f0c8260df75393ffca3e9e1bb2a106b8f9fa70d2",
-      "importedSha256": "2159595933f46b26b0f035574ab4d5697ad062fe3b425a4f7342338cbb79f440"
+      "bodySha256": "4eb3196bd1a8f4aac9da4e1e91a67dc9dc5ee3c9687ccc573e1c82caa15876f2",
+      "importedSha256": "00b69922912fcf69263286e4d09bb65f9bcbc5aa995c78b2b1207ed25db620ef"
     },
     {
       "sourceFile": "JavaScript apply、call、bind 三兄弟.md",
@@ -717,11 +719,12 @@
       "status": "migrated",
       "reason": "保留更新客户端、协议、服务端、签名及安装制品的边界。",
       "id": "9bc84c83cdd82bb9",
+      "migrationNote": "2026-11-02：移除文末工具使用注释；作者、原文链接和转载说明改由阅读页提供。保留原文指纹。",
       "file": "Omaha 到底是什么：一篇讲清 Chromium 自动更新的客户端、协议与服务端.md",
       "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Omaha%20%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9A%E4%B8%80%E7%AF%87%E8%AE%B2%E6%B8%85%20Chromium%20%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0%E7%9A%84%E5%AE%A2%E6%88%B7%E7%AB%AF%E3%80%81%E5%8D%8F%E8%AE%AE%E4%B8%8E%E6%9C%8D%E5%8A%A1%E7%AB%AF.md",
       "sourceSha256": "687a9dd40e85ef9661e8db74cf56322c95715b6f9d0e6c6d4805267b1f9b9e35",
-      "bodySha256": "b444717ce333a077c38c20d3f8761ba3a703e75e92cfd735dff9e4b3bc2966b6",
-      "importedSha256": "415282a37854baab32fcb5c7223af1f3d20e7c2cf99d19acf60cb0cfde0121a8"
+      "bodySha256": "6d12f5be81e484e54b6946257d5e9a5f6ff44ecb13da21437569dec9e5ec170b",
+      "importedSha256": "a4abf56a805449e82f22764c5e7325aa8b0f126f3fec715106f96a0c3f89b7e7"
     },
     {
       "sourceFile": "Parsing-error-The-keyword-enum-is-reserved.md",
@@ -737,11 +740,12 @@
       "status": "migrated",
       "reason": "保留术语在用户资料、构建及发行语境中的区分，避免设计混淆。",
       "id": "e9bdf2152ef8e1d3",
+      "migrationNote": "2026-11-02：移除文末工具使用注释；作者、原文链接和转载说明改由阅读页提供。保留原文指纹。",
       "file": "Profile 到底是什么意思：先分清用户资料、构建方案与交付策略.md",
       "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Profile%20%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D%EF%BC%9A%E5%85%88%E5%88%86%E6%B8%85%E7%94%A8%E6%88%B7%E8%B5%84%E6%96%99%E3%80%81%E6%9E%84%E5%BB%BA%E6%96%B9%E6%A1%88%E4%B8%8E%E4%BA%A4%E4%BB%98%E7%AD%96%E7%95%A5.md",
       "sourceSha256": "134f3dc142938f641dbe7cd1f65b57f310359dc29aa0ff3971c78a3f1cfce429",
-      "bodySha256": "e158105171328efbca58996a1e3837e1b0153606c7b6fdb3f8942fad535de9bc",
-      "importedSha256": "337e4c9be251b797f9550acfc42c779511a576a1b025ec4af31f5aba78065f77"
+      "bodySha256": "e328f25b9654b353ce0d009f03f12445a70b14cb59a19de6c09c19769ecc7a9e",
+      "importedSha256": "114df80f180edfaac96eca34428f42c1bead351628de04e438725459b0a9f7ac"
     },
     {
       "sourceFile": "Provider Pattern：在 Agent Ops App 中统一 Codex、Qoder 与未来执行引擎.md",
@@ -833,11 +837,12 @@
       "status": "migrated",
       "reason": "保留 RSS 与 Physical Footprint 的口径、采样与比较方法。",
       "id": "96b0b4568452fc13",
+      "migrationNote": "2026-11-02：移除文末工具使用注释；作者、原文链接和转载说明改由阅读页提供。保留原文指纹。",
       "file": "RSS 到底是什么：为什么 FlyOS 性能评测不能只看一个内存数字.md",
       "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/RSS%20%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20FlyOS%20%E6%80%A7%E8%83%BD%E8%AF%84%E6%B5%8B%E4%B8%8D%E8%83%BD%E5%8F%AA%E7%9C%8B%E4%B8%80%E4%B8%AA%E5%86%85%E5%AD%98%E6%95%B0%E5%AD%97.md",
       "sourceSha256": "f52ec939e6787102205930c01aad5b49cb9a700db0da6f178e7324cbb1107a48",
-      "bodySha256": "5d9e21e554ce2c50b59eaae54ba9a62e7c4ec62e34b72808dd9daffcc1236019",
-      "importedSha256": "42c0bb2807841a04430fb48ee36b5177f3b4ec5c62a5522e47858d5734fffa4e"
+      "bodySha256": "d50631f593f28f2f8e124e16f2ba0b7bbbc2fde981f627bb4252a1140b6793dd",
+      "importedSha256": "29efb7207ed8d95af7c964d7ddc8ac3fb9cfaa9f08d7ac4c0d0341219e9883fd"
     },
     {
       "sourceFile": "Raw Knowledge 如何变成可信知识资产：以及中文 FTS 为什么不是改个配置.md",
@@ -1032,13 +1037,13 @@
       "title": "Taste Is All You Need",
       "status": "updated",
       "reason": "已有文章；保留作者对判断力、取舍和 AI 协作的系统复盘。",
-      "migrationNote": "2026-11-02：Design Language Atlas 迁至 design.youngjunning.com，更新文内 4 处链接；原文指纹保持不变。",
+      "migrationNote": "2026-11-02：Design Language Atlas 迁至 design.youngjunning.com，更新文内 4 处链接；保留原文指纹；移除文末工具使用注释，来源与转载说明由阅读页提供。",
       "id": "497451432d1eee6a",
       "file": "Taste Is All You Need.md",
       "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Taste%20Is%20All%20You%20Need.md",
       "sourceSha256": "427eea398d75fab7bed7c5e74c9d30cf2170feb3560be46987b9d99564499931",
-      "bodySha256": "c011c799ce09fdf353a6a2cca63dae55d686c73f70760d3736d5819b48432a3b",
-      "importedSha256": "973d7e09ca3908c55f6dec93c41e2d68638ee194abbcd5c180ed0c1be9b51ab0"
+      "bodySha256": "20bd5533e1f8c0f00b4bb41443e3f3c870833df0372ed67836e0d4a99903480d",
+      "importedSha256": "e6949ed66f33056d382c5875b4f99b94970ebf92d2569940b40fb3dc147f54b9"
     },
     {
       "sourceFile": "TypeScript 中 type 和 interface 的区别.md",
@@ -1118,11 +1123,12 @@
       "status": "migrated",
       "reason": "保留生产入口与诊断参数分离，以及 Windows 安装包验收方法。",
       "id": "a8f7d048a31f1839",
+      "migrationNote": "2026-11-02：移除文末工具使用注释；作者、原文链接和转载说明改由阅读页提供。保留原文指纹。",
       "file": "Windows 下 AI 浏览器的最佳启动参数配置.md",
       "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/Windows%20%E4%B8%8B%20AI%20%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E5%90%AF%E5%8A%A8%E5%8F%82%E6%95%B0%E9%85%8D%E7%BD%AE.md",
       "sourceSha256": "d0700e2801e467a35e18078a29d8607e5b4bfc4ced667fed3da3a3faf8dc45a8",
-      "bodySha256": "cbec58f95da7b377995db45a5e0134bc8f1a3a6f895c366370072ef159b8f4b3",
-      "importedSha256": "81c46da1c7c7eb460456f73fa40cd7aeb62c701d3bb8d06e87b683ab4d170a09"
+      "bodySha256": "1acbd5a9948a018fd97157e60471de1e622c0f01e94d6411263b2edaa49cde17",
+      "importedSha256": "472d29fab0db2fe45454550197fb9c3a88cb8fcf63091be66e44a567d8518c58"
     },
     {
       "sourceFile": "antd 开发技巧.md",
@@ -1166,11 +1172,12 @@
       "status": "migrated",
       "reason": "保留 OS、CPU、ABI 与发行物命名的体系化解释。",
       "id": "5100d513ff66efc7",
+      "migrationNote": "2026-11-02：移除文末工具使用注释；作者、原文链接和转载说明改由阅读页提供。保留原文指纹。",
       "file": "darwin-arm64、win32-x64、linux-x64 到底是什么：一篇讲清安装包命名.md",
       "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/darwin-arm64%E3%80%81win32-x64%E3%80%81linux-x64%20%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9A%E4%B8%80%E7%AF%87%E8%AE%B2%E6%B8%85%E5%AE%89%E8%A3%85%E5%8C%85%E5%91%BD%E5%90%8D.md",
       "sourceSha256": "ef5030ecd8dfa0e88579ee6ede000cf5a4d5fdccdb0f8114e542bca96d026e60",
-      "bodySha256": "429336f6ddaebc4127229a3a7486ef28ca32027e64bcdbb253b9a350815cc7bd",
-      "importedSha256": "6a6e37e805b16b69961b0767f8535ec71212f14dfc94ac38c7882fcf9e758432"
+      "bodySha256": "60dca8bd8bb8452a7f7624558fb39b1493387cd249a8cc645098f018f95be0ae",
+      "importedSha256": "66a834e7e09cb67783264ce96e57bbccf5af0b244e0fdacff6f838e8657066df"
     },
     {
       "sourceFile": "eaddrinuse-address-already-in-use.md",
@@ -1458,11 +1465,12 @@
       "status": "migrated",
       "reason": "保留 PE 资源编辑、Bun 单文件制品兼容性与工具归属的完整取舍。",
       "id": "3b707d058f08cd95",
+      "migrationNote": "2026-11-02：移除文末工具使用注释；作者、原文链接和转载说明改由阅读页提供。保留原文指纹。",
       "file": "从 rcedit 到 resedit：给 Bun 单文件 EXE 修改 VERSIONINFO 的兼容层设计.md",
       "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%BB%8E%20rcedit%20%E5%88%B0%20resedit%EF%BC%9A%E7%BB%99%20Bun%20%E5%8D%95%E6%96%87%E4%BB%B6%20EXE%20%E4%BF%AE%E6%94%B9%20VERSIONINFO%20%E7%9A%84%E5%85%BC%E5%AE%B9%E5%B1%82%E8%AE%BE%E8%AE%A1.md",
       "sourceSha256": "09e61c555c1c5cf0406d3d5a26a2870e172e7057262b79c1a131a291b252f396",
-      "bodySha256": "74986c2b21b91b4e4af9516354f5d7790782f603c6d14af95220dfa5573381ee",
-      "importedSha256": "d1a691511b864734ae6c3b9d3485742454fb1630a4c0233041175803f9adade2"
+      "bodySha256": "e6f8a42c42bac61e0c7a438f1144377fdc16b25a75ec36b9953cc7517106dda4",
+      "importedSha256": "e17246b24303bbf4709056830663231c212f5bd9c86af9f794f986a026110de0"
     },
     {
       "sourceFile": "从-FTS-BM25-到-LLM-Wiki：把-RAG-知识检索讲明白.md",
@@ -1506,11 +1514,12 @@
       "status": "migrated",
       "reason": "保留 Skill 与持续演进知识库之间的职责、审核和版本边界。",
       "id": "d23833d5e4117ca4",
+      "migrationNote": "2026-11-02：移除文末工具使用注释；作者、原文链接和转载说明改由阅读页提供。保留原文指纹。",
       "file": "从静态 Reference 到 LLM Wiki：让 Agent Skill 拥有可持续演进的知识底座.md",
       "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E4%BB%8E%E9%9D%99%E6%80%81%20Reference%20%E5%88%B0%20LLM%20Wiki%EF%BC%9A%E8%AE%A9%20Agent%20Skill%20%E6%8B%A5%E6%9C%89%E5%8F%AF%E6%8C%81%E7%BB%AD%E6%BC%94%E8%BF%9B%E7%9A%84%E7%9F%A5%E8%AF%86%E5%BA%95%E5%BA%A7.md",
       "sourceSha256": "1f1ec213d0e0ced48026a4c23cebbb9f2a22d531ea6ba1d0554a02950b38f842",
-      "bodySha256": "45a01fcfafa53b8e176a6e9ab289708d90d3852caa5048764fbce268b9db3170",
-      "importedSha256": "3b733eb483004f3e0ba5ea239e92710520450a61e3bc86f50b5148ec7c03c6b0"
+      "bodySha256": "e5db24732197cdfbaf9fdd72c462061f182a379848108ef22acb6efd8e58cb35",
+      "importedSha256": "a2b7c542f32c26d7b45f6d21f541b9c4b59bf0b557c906225e7737d42d28b124"
     },
     {
       "sourceFile": "从高频轮询到按需刷新：本地 Agent 数据面的性能优化.md",
@@ -2042,11 +2051,12 @@
       "status": "migrated",
       "reason": "保留通过 Skill 划定平台和发行版职责与依赖方向的判断。",
       "id": "21ab3945545c8b76",
+      "migrationNote": "2026-11-02：移除文末工具使用注释；作者、原文链接和转载说明改由阅读页提供。保留原文指纹。",
       "file": "把 Agent Skill 当作架构边界：平台开发与发行版开发为什么要拆开.md",
       "source": "https://github.com/youngjunning/blog.zisheng.pro/blob/3edd776416630100b4a100bc90b84dd1d66b3596/source/_posts/%E6%8A%8A%20Agent%20Skill%20%E5%BD%93%E4%BD%9C%E6%9E%B6%E6%9E%84%E8%BE%B9%E7%95%8C%EF%BC%9A%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91%E4%B8%8E%E5%8F%91%E8%A1%8C%E7%89%88%E5%BC%80%E5%8F%91%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%8B%86%E5%BC%80.md",
       "sourceSha256": "cb2d1609442f4abe3579cbb80c7db2e96ab0fbc460e98b4e42fb07b55ac4b2f6",
-      "bodySha256": "fb1815588590cbffebd2976c67fa85e40fd33dba3abce70441e670e44d88076f",
-      "importedSha256": "153c3a29145fbe63c08ed94af13a821894becbe2d781bf320afd496966b10da3"
+      "bodySha256": "4ed4d9c390ef7de93b5fc9849418640270936a852dd6713380f5baa81dc096c9",
+      "importedSha256": "d4f41f9196acc63005233ee30cd8aa27d37a11a8e1ed0a29e745cec6b73fe501"
     },
     {
       "sourceFile": "掘金一下-从零开发一款基于-webview-的-vscode-扩展.md",

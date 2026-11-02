@@ -10,8 +10,8 @@ sourceDate: "2026-08-25T10:56:36.000Z"
 cover: "/media/3d62953b2d2dbd0678317007.webp"
 assets: {"/images/omaha-update-protocol.webp":"/media/3d62953b2d2dbd0678317007.webp"}
 originalBodySha256: "b444717ce333a077c38c20d3f8761ba3a703e75e92cfd735dff9e4b3bc2966b6"
+migrationNote: "2026-11-02：移除文末工具使用注释；作者、原文链接和转载说明改由阅读页提供。保留原文指纹。"
 ---
-
 ![Omaha 自动更新的检查、下载与回报](/images/omaha-update-protocol.webp)
 
 最近在梳理 Chromium 桌面应用的更新链路时，我频繁遇到一个词：`Omaha`。
@@ -200,5 +200,3 @@ Chromium Updater 是可定制的，但它不会自动让一个 Chromium fork 拥
 - [Client Update Protocol（CUP）](https://chromium.googlesource.com/chromium/src/+/main/docs/updater/cup.md)
 - [Chromium Updater Functional Specification](https://chromium.googlesource.com/chromium/src/+/main/docs/updater/functional_spec.md)
 - [Chromium Updater Developer's Manual](https://chromium.googlesource.com/chromium/src/+/main/docs/updater/dev_manual.md)
-
-> 本文使用 [writting-skill](https://github.com/zisheng-ai/writting-skill) 辅助写作。项目已开源，欢迎在 GitHub 点个 Star。

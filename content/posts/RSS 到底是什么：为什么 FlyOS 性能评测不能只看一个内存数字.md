@@ -10,8 +10,8 @@ sourceDate: "2026-08-24T20:47:17.000Z"
 cover: "/media/54799ca639ef831e9f041e1b.webp"
 assets: {"/images/rss-resident-set-size.webp":"/media/54799ca639ef831e9f041e1b.webp"}
 originalBodySha256: "5d9e21e554ce2c50b59eaae54ba9a62e7c4ec62e34b72808dd9daffcc1236019"
+migrationNote: "2026-11-02：移除文末工具使用注释；作者、原文链接和转载说明改由阅读页提供。保留原文指纹。"
 ---
-
 最近在整理 FlyOS 的性能 baseline 时，我碰到一组很容易被误读的数据：同一轮空闲采样中，完整进程树的 RSS 均值是 `949.4 MiB`，macOS Physical Footprint 均值却只有 `355.5 MiB`。
 
 两个数字相差约 2.7 倍。是采集脚本错了，还是浏览器真的吃掉了近 1 GB 物理内存？都不是。真正的问题在于：我们把两个统计口径不同的指标，当成了同一个“内存占用”。这也是我想单独写清 RSS 的原因。
@@ -141,5 +141,3 @@ RSS 值得看，但要放在正确的位置上。
 我的核心原则只有一句：先问指标在回答什么问题，再看数字大小。
 
 RSS 不是“假数据”，Physical Footprint 也不是 RSS 的修正版。它们是从不同层面观察内存的两把尺子。FlyOS 性能治理真正需要的，不是寻找一个万能数字，而是把进程结构、系统压力、运行时分配和用户体验连成一条证据链。
-
-> 本文使用 [writting-skill](https://github.com/zisheng-ai/writting-skill) 辅助写作，配图使用 [better-imagegen](https://github.com/zisheng-ai/better-imagegen) 生成。项目已开源，欢迎在 GitHub 点个 Star。

@@ -10,8 +10,8 @@ sourceDate: "2026-08-24T22:27:09.000Z"
 cover: "/media/a7d2d26b3f8eea4c18b2106a.webp"
 assets: {"/images/platform-architecture-package-naming.webp":"/media/a7d2d26b3f8eea4c18b2106a.webp"}
 originalBodySha256: "429336f6ddaebc4127229a3a7486ef28ca32027e64bcdbb253b9a350815cc7bd"
+migrationNote: "2026-11-02：移除文末工具使用注释；作者、原文链接和转载说明改由阅读页提供。保留原文指纹。"
 ---
-
 ![安装包命名里的 OS、CPU 与 ABI 坐标](/images/platform-architecture-package-naming.webp)
 
 最近整理多平台发行物时，我又遇到了一排很像“暗号”的文件名：
@@ -361,5 +361,3 @@ app-3.2.0-linux-arm64-musl-beta.tar.gz
 - [Microsoft Learn：Windows on Arm FAQ](https://learn.microsoft.com/en-us/windows/arm/faq)
 - [LLVM：Target Triple](https://llvm.org/docs/LangRef.html#target-triple)
 - [Rust：Platform Support](https://doc.rust-lang.org/rustc/platform-support.html)
-
-> 本文使用 [writting-skill](https://github.com/zisheng-ai/writting-skill) 辅助写作。项目已开源，欢迎在 GitHub 点个 Star。

@@ -10,8 +10,8 @@ sourceDate: "2026-08-21T11:22:19.000Z"
 cover: "/media/f355303ac994a88b043b5845.webp"
 assets: {"/images/agent-skill-llm-wiki-knowledge-loop.webp":"/media/f355303ac994a88b043b5845.webp"}
 originalBodySha256: "45a01fcfafa53b8e176a6e9ab289708d90d3852caa5048764fbce268b9db3170"
+migrationNote: "2026-11-02：移除文末工具使用注释；作者、原文链接和转载说明改由阅读页提供。保留原文指纹。"
 ---
-
 ![Agent Skill 从静态 Reference 到 LLM Wiki 的知识架构](/images/agent-skill-llm-wiki-knowledge-loop.webp)
 
 最近我读到一篇数据研发实践文章。它讨论了一个很具体的问题：团队已经把需求调研、模型设计、代码生成和任务发布封装成 Agent Skill，但模型口径、数据资产和业务知识仍在持续变化，静态写进 `Reference` 的内容很快就会落后。
@@ -254,5 +254,3 @@ AI 生成了多少代码，只能说明工具参与度。知识底座更应该�
 ## 参考资料
 
 - [Andrej Karpathy：LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
-
-> 本文使用 [writting-skill](https://github.com/youngjunning/writting-skill) 辅助写作，配图使用 [better-imagegen](https://github.com/youngjunning/better-imagegen) 生成。项目已开源，欢迎在 GitHub 点个 Star。

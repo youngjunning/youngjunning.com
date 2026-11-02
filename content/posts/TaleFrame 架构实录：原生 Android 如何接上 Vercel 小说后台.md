@@ -7,7 +7,6 @@ topic: "architecture"
 tags: ["TaleFrame", "Android", "Kotlin", "Vercel", "Neon", "PostgreSQL", "独立开发"]
 cover: "/media/taleframe-architecture.webp"
 ---
-
 做 TaleFrame 时，我明确了两个要求：客户端用原生 Android；小说更新不能依赖重新打包 App。前期只交付小说阅读，漫剧保留 Coming Soon。随之需要回答的，是一组很具体的工程问题：小说列表由谁维护，正文存在哪里，后台保存后读者何时能看到，以及内容增加后费用从哪里产生。
 
 现在，读者可以在 App 中浏览书库、打开章节、保存书架与阅读进度；管理员可以在网页后台维护书籍和章节，再单独发布。本文按当前实现拆开这条链路，说明每份数据的归属，以及现有方案的适用边界。
@@ -183,5 +182,3 @@ Vercel 对 `s-maxage` 的处理属于 CDN 缓存语义；代码中写了缓存�
 本文依据 TaleFrame 当前实现与 2026 年 11 月 1 日的只读核验整理。相关实现入口包括服务端 `schema.sql`、`lib/content.ts`、公开与管理路由，以及客户端 `Catalog.kt`、`ContentNetwork.kt`、`ReadingStore.kt`。源码尚未公开，本文不提供不可访问的仓库链接；代码机制、线上读接口核验和发行状态已分别说明。
 
 封面为 AI 生成的阅读场景插画，不是 App 界面截图。
-
-> 本文使用 [writting-skill](https://github.com/youngjunning/skills/tree/main/skills/writing/writting-skill) 辅助写作，配图使用 [better-imagegen](https://github.com/youngjunning/skills/tree/main/skills/design/better-imagegen) 生成。项目已开源，欢迎在 GitHub 点个 Star。

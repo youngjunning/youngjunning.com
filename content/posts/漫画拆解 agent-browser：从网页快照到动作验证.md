@@ -8,7 +8,6 @@ tags: ["agent-browser","Browser Agent","Accessibility Tree","CDP","漫画"]
 collection: "docs"
 cover: "/media/dff562e8ee3009c3-2349ee6855132176.webp"
 ---
-
 通过 snapshot 原理漫画与公开源码，拆解 agent-browser 的语义观察、元素引用、动作执行与结果核验边界。
 
 > 本文讨论通用机制和设计判断；示意不对应任何具体产品的已交付状态。源码阅读坐标沿用原稿，本次整理不构成新的运行时验收。
@@ -307,5 +306,3 @@ agent-browser 适合为已经具备命令调用能力的 Agent 提供统一的�
 - [Snapshots：过滤、引用生命周期和标注截图](https://agent-browser.dev/snapshots)
 - [Sessions：状态、隔离和共享浏览器](https://agent-browser.dev/sessions)
 - [Installation：安装与环境准备](https://agent-browser.dev/installation)
-
-> 本文使用 [writting-skill](https://github.com/youngjunning/skills/tree/main/skills/writing/writting-skill) 辅助写作，配图使用 [better-imagegen](https://github.com/youngjunning/skills/tree/main/skills/design/better-imagegen) 生成。项目已开源，欢迎在 GitHub 点个 Star。

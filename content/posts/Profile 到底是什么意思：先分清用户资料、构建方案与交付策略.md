@@ -10,8 +10,8 @@ sourceDate: "2026-08-17T20:00:00.000Z"
 cover: "/media/bb0152e57b3654446b0c0a9a.webp"
 assets: {"/images/profile-meaning-contexts.webp":"/media/bb0152e57b3654446b0c0a9a.webp"}
 originalBodySha256: "e158105171328efbca58996a1e3837e1b0153606c7b6fdb3f8942fad535de9bc"
+migrationNote: "2026-11-02：移除文末工具使用注释；作者、原文链接和转载说明改由阅读页提供。保留原文指纹。"
 ---
-
 ![Profile 在三种技术语境中的含义](/images/profile-meaning-contexts.webp)
 
 *先看 `Profile` 描述的是谁，再决定它该翻译成什么。*
@@ -163,5 +163,3 @@ Browser User Profile
 如果一段技术文档只写 `Profile`，而上下文里又同时存在用户资料、构建方案和发行配置，最好的优化不是再补一句抽象定义，而是把完整术语写出来。
 
 所以，截图里的答案可以压缩成一句话：**那里的 `Profile` 是 `Distribution Profile`，指产品发行配置；`Profile` 这个词本身没有固定等于“交付策略”。**
-
-> 本文使用 [writting-skill](https://github.com/zisheng-ai/writting-skill) 辅助写作，配图使用 [better-imagegen](https://github.com/zisheng-ai/better-imagegen) 生成。项目已开源，欢迎在 GitHub 点个 Star。

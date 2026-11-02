@@ -10,8 +10,8 @@ sourceDate: "2026-09-18T16:15:00.000Z"
 cover: "/media/a1e062ea5be3ff4eac2759f3.webp"
 assets: {"/images/hyperframes-principles.webp":"/media/a1e062ea5be3ff4eac2759f3.webp"}
 originalBodySha256: "c7f83f1ff289e0c8ac4c4b60f0c8260df75393ffca3e9e1bb2a106b8f9fa70d2"
+migrationNote: "2026-11-02：移除文末工具使用注释；作者、原文链接和转载说明改由阅读页提供。保留原文指纹。"
 ---
-
 最近用 HyperFrames 做视频时，我发现最容易误解它的方式，是把它看成“带时间轴的网页截图器”。这个比喻能解释结果，却解释不了关键约束：为什么媒体播放不应该交给 GSAP，为什么 `data-duration` 和动画 timeline 不是一回事，为什么同样一段 HTML 在预览里看起来正常，渲染时却可能从错误的帧开始。
 
 HyperFrames 真正解决的问题，是把视频重新表达成一种可寻址的网页状态：HTML 声明画面由哪些 clip 组成、每个 clip 在什么时候出现、位于哪一层；动画 Runtime 根据当前时间计算 DOM 状态；框架负责把媒体 seek 到对应位置，再捕获确定的 frame。这个边界一旦清楚，很多“玄学”都会变成可以检查的 contract。
@@ -248,5 +248,3 @@ HyperFrames 最值得借鉴的地方，也许不是某个 CLI 命令，而是这
 - [HyperFrames Core Documentation](https://github.com/heygen-com/hyperframes/blob/main/packages/core/docs/core.md)
 - [HyperFrames Core Skill](https://github.com/heygen-com/hyperframes/blob/main/skills/hyperframes-core/SKILL.md)
 - [Data Attributes Reference](https://github.com/heygen-com/hyperframes/blob/main/skills/hyperframes-core/references/data-attributes.md)
-
-> 本文使用 [writting-skill](https://github.com/zisheng-ai/writting-skill) 辅助写作。项目已开源，欢迎在 GitHub 点个 Star。

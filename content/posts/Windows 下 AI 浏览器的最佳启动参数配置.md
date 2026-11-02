@@ -10,8 +10,8 @@ sourceDate: "2026-08-26T08:05:15.000Z"
 cover: "/media/7fe2c2d4737b1932daa399ce.webp"
 assets: {"/images/windows-ai-browser-launch-parameters.webp":"/media/7fe2c2d4737b1932daa399ce.webp"}
 originalBodySha256: "cbec58f95da7b377995db45a5e0134bc8f1a3a6f895c366370072ef159b8f4b3"
+migrationNote: "2026-11-02：移除文末工具使用注释；作者、原文链接和转载说明改由阅读页提供。保留原文指纹。"
 ---
-
 ![Windows 下 AI 浏览器的生产启动与诊断工具](/images/windows-ai-browser-launch-parameters.webp)
 
 最近在检查一套 Chromium-based AI 浏览器的 Windows 安装包时，我遇到了一个很典型的现象：浏览器能打开，但窗口顶部常驻着“不受支持的命令行标记”警告。继续检查桌面快捷方式，才发现安装器把调试期参数一起写进了正式入口。
@@ -286,5 +286,3 @@ if ($violations) {
 - [Microsoft WER LocalDumps](https://learn.microsoft.com/en-us/windows/win32/wer/collecting-user-mode-dumps)
 - [Microsoft Sysinternals ProcDump](https://learn.microsoft.com/en-us/sysinternals/downloads/procdump)
 - [V8 Flag Definitions](https://chromium.googlesource.com/v8/v8/+/main/src/flags/flag-definitions.h)
-
-> 本文使用 [writting-skill](https://github.com/zisheng-ai/writting-skill) 辅助写作，配图使用 [better-imagegen](https://github.com/zisheng-ai/better-imagegen) 生成。项目已开源，欢迎在 GitHub 点个 Star。

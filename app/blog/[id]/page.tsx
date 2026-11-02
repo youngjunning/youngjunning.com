@@ -9,6 +9,8 @@ import { getContent } from '@/lib/content';
 import legacyLinks from '@/content/blog-legacy-links.json';
 import { articleOutline } from '@/lib/article-outline.mjs';
 import { articleReferences } from '@/lib/article-model.mjs';
+import ArticleNotice from '@/components/article-notice';
+import CopyMarkdown from '@/components/copy-markdown';
 export function generateStaticParams() { return getContent().posts.map(item => ({ id: item.id })); }
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) { const { id } = await params; const post = getContent().posts.find(item => item.id === id); return { title: post?.title || '文章', description: post?.description }; }
 export default async function PostDetail({ params }: { params: Promise<{ id: string }> }) {
@@ -62,5 +64,7 @@ export default async function PostDetail({ params }: { params: Promise<{ id: str
         table({ children }) { return <div className="article-table" role="region" aria-label="文章表格" tabIndex={0}><table>{children}</table></div>; },
       }}>{post.body}</ReactMarkdown>}
     {related.length > 0 && <section className="reader-related"><h2>相关引用</h2><div>{related.map(item => <Link key={item.id} href={'/blog/' + item.id}><span className="eyebrow">{item.date || '日期未详'}</span><strong>{item.title}</strong><p>{item.description}</p></Link>)}</div></section>}
+    <ArticleNotice id={post.id} />
+    {post.kind === 'markdown' && <CopyMarkdown title={post.title} body={post.body} id={post.id} />}
     </article>;
 }

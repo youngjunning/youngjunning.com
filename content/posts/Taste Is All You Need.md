@@ -10,7 +10,7 @@ sourceDate: "2026-08-10T00:18:00.000Z"
 cover: "/media/a8f03f6982b09a00562e7edd.webp"
 assets: {"/images/taste-is-all-you-need-options.webp":"/media/c70e0ce7db2539e2260ae319.webp","/images/owlet-vibe-coding-cover.webp":"/media/3f68dcdc69b493f676c7aae0.webp","/images/owlet-qingshan-lake-palette.webp":"/media/95b0bcf9974c69d940fe5716.webp","/images/qingshan-lake-design-birth.webp":"/media/59c9c3e0c1a4abbed0c50a64.webp","/images/taste-is-all-you-need-skill.webp":"/media/ff3fb0ed418065084e86cabd.webp","/images/taste-is-all-you-need-loop.svg":"/media/2d9807dfccbe8212fb4be017.svg","/images/taste-is-all-you-need.webp":"/media/a8f03f6982b09a00562e7edd.webp"}
 originalBodySha256: "f3ded38ab89c98c012f95dbd94348c3a2202b3e3c545e37d6c941fe7a9fef10a"
-migrationNote: "2026-11-02：Design Language Atlas 迁至 design.youngjunning.com，更新文内 4 处链接；保留原文指纹。"
+migrationNote: "2026-11-02：Design Language Atlas 迁至 design.youngjunning.com，更新文内 4 处链接；保留原文指纹；移除文末工具使用注释，来源与转载说明由阅读页提供。"
 ---
 
 > 当 AI 把实现速度拉到过去难以想象的水平，作品之间的差距就不再只取决于“能不能做出来”，还取决于你选择做什么、删掉什么，以及用什么标准宣布完成。
@@ -276,7 +276,6 @@ AI 会让更多人拥有更强的执行力，却不会自动替任何人承担�
 
 当“做出来”不再是唯一瓶颈，**选择做什么、删掉什么、坚持什么，就是作品本身。**
 
-> 本文由 [writting-skill](https://github.com/youngjunning/writting-skill) 辅助生成，文章观点、项目事实与最终判断由作者确认。
 
 ---
 

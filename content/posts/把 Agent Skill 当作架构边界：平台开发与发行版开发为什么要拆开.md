@@ -10,8 +10,8 @@ sourceDate: "2026-08-23T01:05:00.000Z"
 cover: "/media/1e79d6ab430de91142b2eb6b.webp"
 assets: {"/images/agent-skill-architecture-boundary.webp":"/media/1e79d6ab430de91142b2eb6b.webp"}
 originalBodySha256: "fb1815588590cbffebd2976c67fa85e40fd33dba3abce70441e670e44d88076f"
+migrationNote: "2026-11-02：移除文末工具使用注释；作者、原文链接和转载说明改由阅读页提供。保留原文指纹。"
 ---
-
 ![平台开发通过已发布制品连接到发行版开发](/images/agent-skill-architecture-boundary.webp)
 
 我最近整理一个浏览器平台工程时，发现最容易让 Agent 做错的，不是命令太多，而是把两类工作塞进了同一个 Skill：一边维护平台源码、协议和构建能力，另一边又让它操作具体产品的 Profile、签名、发布和验收。
@@ -81,5 +81,3 @@ skills/
 如果一个 Skill 既能修改共享平台，又能替多个产品发布，值得拆。先按所有权拆，再用明确的 package、Profile 和验收证据连接。
 
 如果工作只发生在一个产品仓库，且没有跨仓发布或受控凭据边界，暂时不必为了形式拆 Skill。真正需要关注的是：Agent 是否会因为错误的上下文和依赖方向，做出无法被交付证据支撑的结论。
-
-> 本文使用 [writting-skill](https://github.com/youngjunning/writting-skill) 辅助写作。项目已开源，欢迎在 GitHub 点个 Star。

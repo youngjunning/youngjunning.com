@@ -10,8 +10,8 @@ sourceDate: "2026-09-01T18:44:35.000Z"
 cover: "/media/762ba0307caba7a7e443be18.webp"
 assets: {"/images/from-rcedit-to-resedit-bun-pe.webp":"/media/762ba0307caba7a7e443be18.webp","/images/windows-pe-section-layout.webp":"/media/35bf0a31a6af87dc642e88e6.webp","/images/resedit-safe-build-pipeline.webp":"/media/45ce2168cff8f3053ec15a89.webp"}
 originalBodySha256: "74986c2b21b91b4e4af9516354f5d7790782f603c6d14af95220dfa5573381ee"
+migrationNote: "2026-11-02：移除文末工具使用注释；作者、原文链接和转载说明改由阅读页提供。保留原文指纹。"
 ---
-
 最近在精简一个 Windows 发行版时，我看到源码目录里放着一个 `rcedit-x64.exe`。它不属于产品业务，也不会在应用运行时被调用，却跟着发行版源码保存了很多年。
 
 最初的问题只是“这个文件能不能删”。继续追下去，问题变成了三个：谁负责修改 Windows 可执行文件的图标和版本信息？这类工具应该留在发行版，还是归构建框架管理？如果迁移到官方建议的 `resedit`，它能不能安全处理 Bun 生成的单文件 EXE？
@@ -228,5 +228,3 @@ Windows 文件属性页能证明目标字段可见，却不能证明其他 secti
 4. [Bun：Single-file executable](https://bun.sh/docs/bundler/executables)
 
 > 出品人：俊宁，阿里高级工程师、AI 开发者，拥有 10 年研发经验，现专注 AI 应用、Agent、AI Infra 与软件工程，FlyOS 作者。
-
-> 本文使用 [writting-skill](https://github.com/zisheng-ai/writting-skill) 辅助写作，配图使用 [better-imagegen](https://github.com/zisheng-ai/better-imagegen) 生成。项目已开源，欢迎在 GitHub 点个 Star。
