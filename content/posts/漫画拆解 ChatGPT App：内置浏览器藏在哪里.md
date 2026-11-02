@@ -14,6 +14,8 @@ cover: "/media/08de6927bb8b9143-a9c339c97eba9342.webp"
 
 在桌面应用里打开一张网页，看起来只是多了一块浏览区域。它背后却可能是系统 WebView，也可能是一套随应用分发的浏览器内核。为了弄清这台 Mac 上的 ChatGPT 属于哪一种，这次从 `ChatGPT.app/Contents` 入手，检查了应用元数据、Framework 和 `app.asar` 中的代码。
 
+`app.asar` 是 Electron 应用常用的资源归档文件，里面打包了应用代码和前端资源。本文通过它查看应用如何创建、管理网页；浏览器内核本身不在这个文件里，而是随应用放在 `Frameworks` 目录。
+
 ![封面：小狐和小机打开应用箱，发现里面装着完整的浏览器引擎](/media/08de6927bb8b9143-a9c339c97eba9342.webp)
 
 **结论是：这个安装版本直接携带 Chromium，应用使用 Electron 和 React；内置浏览器通过 `<webview>` 挂载，主进程管理页面，Agent 通过 CDP 接入。**
