@@ -14,6 +14,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     </header>
     <div className="style-bar shell" style={{ gap: 16, alignItems: 'center', flexWrap: 'wrap' }}><nav aria-label="资料导航"><Link href="/research">探索清单</Link><Link href="/excerpts">对话精选</Link><Link href="/skills">Skills</Link><Link href="/graph">图谱</Link><Link href="/wiki">Wiki</Link><Link href="/engineering">工程资料</Link><Link href="/okr">目标</Link><Link href="/manage">写作</Link></nav><StyleSwitcher /></div>
     <main id="main" className="shell">{children}</main>
-    <footer className="footer shell"><span>© 2026 俊宁<span className="footer-note"> · 记录思考，也记录变化</span></span><div><Link href="/protocol">蒸馏协议</Link><a href={persona.github} target="_blank" rel="noreferrer">GitHub ↗</a><a href="/api/records">开放数据 ↗</a></div></footer>
+    <footer className="footer shell"><span>© 2026 俊宁<span className="footer-note"> · 记录思考，也记录变化</span></span><div><a href="https://design.youngjunning.com/">设计图鉴 ↗</a><a href="https://mastra.youngjunning.com/">Mastra 文档 ↗</a><Link href="/protocol">蒸馏协议</Link><a href={persona.github} target="_blank" rel="noreferrer">GitHub ↗</a><a href="/api/records">开放数据 ↗</a></div></footer>
   </body></html>;
 }
