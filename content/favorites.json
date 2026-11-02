@@ -2,6 +2,26 @@
   "version": 1,
   "favorites": [
     {
+      "id": "a6d982c3f17e40b5",
+      "kind": "knowledge",
+      "title": "Apple UserNotifications：本地提醒的调度与取消",
+      "url": "https://developer.apple.com/documentation/usernotifications/scheduling-a-notification-locally-from-your-app",
+      "summary": "Apple 官方说明如何组合通知内容、触发条件与请求来调度本地通知。系统负责后台或应用未运行时的投递，前台由应用处理；任务完成或条件变化时，可按请求标识取消尚未触发的通知。",
+      "reason": "用于回查本地提醒的系统调度、前后台处理边界与取消 API；文档核验不等于某个应用已完成真实通知展示验收。",
+      "tags": ["macOS", "UserNotifications", "系统通知"],
+      "savedAt": "2026-11-02",
+      "selection": "discovered",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        {
+          "label": "Apple Developer Documentation，Scheduling a notification locally from your app，2026-11-02 核验官方 Markdown 正文。"
+        }
+      ]
+    },
+    {
       "id": "6cd831f49b2e70a5",
       "title": "Apple Simulator：应用安装与真机边界",
       "url": "https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/iOS_Simulator_Guide/InteractingwiththeiOSSimulator/InteractingwiththeiOSSimulator.html",
