@@ -9,11 +9,11 @@ import styles from './resume.module.css';
 const roles = {
   browser: {
     label: 'AI Browser 开发工程师',
-    file: 'junning-ai-browser',
+    file: '杨俊宁_Agent Browser 开发工程师_简历',
   },
   application: {
     label: 'AI 应用开发工程师',
-    file: 'junning-ai-application',
+    file: '杨俊宁_AI 应用开发工程师_简历',
   },
 } as const;
 

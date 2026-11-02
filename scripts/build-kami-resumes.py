@@ -113,8 +113,8 @@ def main() -> None:
     head = template[: template.rfind("<body>")]
     data = json.loads((SOURCE / "role-resume.source.json").read_text(encoding="utf-8"))
     targets = {
-        "AI 应用开发工程师": "junning-ai-application.html",
-        "AI Browser 开发工程师": "junning-ai-browser.html",
+        "AI 应用开发工程师": "杨俊宁_AI 应用开发工程师_简历.html",
+        "AI Browser 开发工程师": "杨俊宁_Agent Browser 开发工程师_简历.html",
     }
     for title, filename in targets.items():
         (OUT / filename).write_text(render(data, head, title), encoding="utf-8")
