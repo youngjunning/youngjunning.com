@@ -2,6 +2,84 @@
   "version": 1,
   "favorites": [
     {
+      "id": "baad0631679522e9",
+      "url": null,
+      "kind": "card",
+      "savedAt": "2026-11-02",
+      "selection": "discovered",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "title": "SDK 与 Runtime：接入和执行是两种职责",
+      "summary": "SDK 提供开发时接入所需的库、类型和工具；Runtime 在程序运行时承担代码执行、状态与资源管理。一个产品可兼有两种职责。",
+      "reason": "回看技术栈命名、集成边界和排障时，分别找到调用入口与实际执行主体。",
+      "tags": [
+        "SDK",
+        "Runtime",
+        "API",
+        "架构"
+      ],
+      "card": {
+        "date": "2026-11-02",
+        "recordedAt": "2026-11-02",
+        "context": "AI 辅助解释；源于 2026-11-02 对概念的学习提问，依据所列官方资料整理，不表示本人已掌握或实践。",
+        "understanding": "API 是交互约定，SDK 通常把 API、类型、示例和开发工具交给调用方；Runtime 是运行时承载执行、生命周期和状态的组件或环境。二者按职责区分，不按是否打包在同一个安装包区分。",
+        "example": "假设一个浏览器自动化包提供 renderPage()：它可以只发送请求到远端浏览器 Runtime，也可以随包启动本地浏览器进程。单看方法名无法判断执行位置。",
+        "distinction": "SDK 不一定只是薄网络客户端，Runtime 不一定是独立进程；要检查实际分发、进程、状态与失败路径。"
+      },
+      "sources": [
+        {
+          "label": "Node.js 官方运行时介绍：https://nodejs.org/learn/getting-started/introduction-to-nodejs"
+        },
+        {
+          "label": "Electron 官方框架说明：https://www.electronjs.org/docs/latest/"
+        },
+        {
+          "label": "OpenAI OWL 工程文章：https://openai.com/index/building-chatgpt-atlas/"
+        }
+      ]
+    },
+    {
+      "id": "ef59db6898dfa7eb",
+      "url": null,
+      "kind": "card",
+      "savedAt": "2026-11-02",
+      "selection": "discovered",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "title": "Electron 的 WebContents、BrowserWindow 与 webview",
+      "summary": "BrowserWindow 是桌面窗口；WebContents 是主进程中加载和控制一份网页内容的对象；webview 将另一份网页嵌入应用界面。",
+      "reason": "看懂 Electron 内置浏览器和安全配置时，先定位窗口、应用页面和被嵌入网页各自的对象。",
+      "tags": [
+        "Electron",
+        "WebContents",
+        "BrowserWindow",
+        "webview"
+      ],
+      "card": {
+        "date": "2026-11-02",
+        "recordedAt": "2026-11-02",
+        "context": "AI 辅助解释；源于 2026-11-02 对概念的学习提问，依据所列官方资料整理，不表示本人已掌握或实践。",
+        "understanding": "BrowserWindow 拥有应用页面的 webContents。若应用页面放置 <webview>，嵌入的 guest 网页也有自己的 WebContents。WebContents 可加载 URL、接收导航事件、与页面通信，但不是网页 DOM 或 Chromium 内核。",
+        "example": "假设聊天应用窗口的主页面含 <webview> 打开新闻站：win.webContents 控制聊天主页面，guest WebContents 控制新闻页。两者是不同网页内容。",
+        "distinction": "“窗口 → 应用 WebContents → webview → guest WebContents”只表示界面承载关系，不是固定进程树，也不是每个 Electron 应用必用 webview。"
+      },
+      "sources": [
+        {
+          "label": "Electron webContents API：https://www.electronjs.org/docs/latest/api/web-contents"
+        },
+        {
+          "label": "Electron BrowserWindow API：https://www.electronjs.org/docs/latest/api/browser-window"
+        },
+        {
+          "label": "Electron webview tag API：https://www.electronjs.org/docs/latest/api/webview-tag"
+        }
+      ]
+    },
+    {
       "id": "4e03a576a9129a47",
       "kind": "card",
       "title": "OWL 为什么叫 runtime，而不只叫 SDK？",
