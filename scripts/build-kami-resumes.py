@@ -69,14 +69,14 @@ def render(data: dict, head: str, title: str) -> str:
         for item in content.get("public_work", [])
     )
     skills = "".join(
-        '<div class="skill-row">'
-        f'<div class="skill-label">{index:02d} ·</div>'
+        '<div class="skill-row" style="gap:1mm">'
+        f'<div class="skill-label" style="width:9mm">{index:02d} ·</div>'
         f'<div class="skill-body">{esc(item)}</div></div>'
         for index, item in enumerate(content["skills"], 1)
     )
     technical = "".join(
-        '<div class="skill-row">'
-        f'<div class="skill-label">{index:02d} ·</div>'
+        '<div class="skill-row" style="gap:1mm">'
+        f'<div class="skill-label" style="width:9mm">{index:02d} ·</div>'
         f'<div class="skill-body">{esc(item)}</div></div>'
         for index, item in enumerate(content["technical"], 1)
     )

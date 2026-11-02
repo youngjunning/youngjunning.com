@@ -11,11 +11,11 @@
     "required_facts": ["Browser Agent", "AI 浏览器开发框架", "客服浏览器", "公开开源贡献"],
     "required_assets": [],
     "acceptance_checks": ["两页 A4", "两份正文一致，仅岗位标题不同", "不加入旧简历中的传统项目", "内部项目名与内部指标不进入公开仓库"],
-    "preserve": ["俊宁的公开姓名", "较新 PDF 的三项重点项目与先后顺序"],
+    "preserve": ["简历署名杨俊宁", "较新 PDF 的三项重点项目与先后顺序"],
     "explicit_deviations": ["公开版将内部项目名概括为业务场景；原稿中的内部性能指标未在公开版复用"]
   },
   "content": {
-    "name": "俊宁",
+    "name": "杨俊宁",
     "contact": "184-5710-6173 · luozhu2021@gmail.com · github.com/youngjunning · 杭州",
     "summary": "阿里高级工程师、AI 开发者，拥有 10 年研发经验。近两年负责 Browser Agent 架构与核心开发，设计 AI 浏览器开发框架，支撑客服浏览器与办公场景。",
     "skills": [
