@@ -1074,6 +1074,35 @@
       "usages": []
     },
     {
+      "id": "3f1a4389e4e55fa7",
+      "kind": "project",
+      "title": "XPhoneUse CLI：真实手机操作脚本",
+      "url": "https://xphoneuse.com/en/skill",
+      "summary": "XPhoneUse 官方 Skill 包含 xphoneuse-cli.py，可通过本机桌面应用连接 iPhone 或 Android，执行读屏、点击、输入、滑动与截图等操作；Android 另支持 UI tree。",
+      "reason": "用于回看真实手机的 CLI 接入方式，并与 phone-harness、iphone-use 比较；本轮将用户所说的 xphone-cli 暂按官方脚本 xphoneuse-cli.py 对应，尚未验证实际设备表现。",
+      "tags": [
+        "Agent",
+        "iOS",
+        "Android",
+        "手机自动化",
+        "CLI"
+      ],
+      "savedAt": "2026-11-02",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "本人陈述，2026-11-02，公开摘要：明确要求收藏 xphone-cli；与 XPhoneUse CLI 的名称对应尚待确认。"
+        },
+        {
+          "label": "2026-11-02 核验 XPhoneUse 官方 Skill 与 CLI 说明：https://xphoneuse.com/en/skill"
+        }
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
+    },
+    {
       "kind": "project",
       "title": "iphone-use：真实 iPhone 的 Agent 操作工具",
       "url": "https://github.com/leeguooooo/iphone-use",
