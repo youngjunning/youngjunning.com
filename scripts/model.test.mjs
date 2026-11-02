@@ -42,6 +42,9 @@ test('shared schemas retain private filtering while public policy rejects source
 test('public favorites apply audience checks after shared card validation', () => {
   const favorite = { id: '0000000000000001', kind: 'card', title: '概念笔记', url: null, summary: '资料整理。', reason: '便于回查。', tags: [], savedAt: '2026-11-01', selection: 'discovered', visibility: 'shared', sources: [{ label: '公开资料整理。' }], card: { date: null, recordedAt: '2026-11-01', context: '假设示例。', understanding: '概念要点。', example: '假设场景。', distinction: '适用边界。' } };
   assert.equal(validateFavorites({ version: 1, favorites: [favorite] })[0].card.date, null);
+  const linked = { ...favorite, url: 'https://example.com/guide' };
+  assert.equal(validateFavorites({ version: 1, favorites: [linked] })[0].url, linked.url);
+  assert.throws(() => validateFavorites({ version: 1, favorites: [linked, { ...favorite, id: '0000000000000002', url: 'https://example.com/guide/?utm_source=mail' }] }));
   for (const changes of [{ visibility: 'private' }, { card: { ...favorite.card, recordedAt: null } }, { sources: [{ label: '/Users/example/private' }] }]) assert.throws(() => validateFavorites({ version: 1, favorites: [{ ...favorite, ...changes }] }));
   assert.equal(canonicalUrl('https://example.com/tool///'), canonicalUrl('https://example.com/tool'));
 });
