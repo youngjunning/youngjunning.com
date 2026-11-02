@@ -855,6 +855,29 @@
       "basis": "本人明确指定两小时一次；未另述取舍理由。",
       "alternatives": [],
       "outcome": null
+    },
+    {
+      "id": "e7a9d48653f21b0c",
+      "kind": "change",
+      "title": "Owlet 学习卡片提醒改为每小时一次",
+      "text": "我将 Owlet 学习卡片的自动提醒节奏从每两小时一次改为每小时一次，并要求验证提醒效果。",
+      "context": "2026 年 11 月 2 日，在此前确定两小时节奏后进一步调整；这是产品设置变化，不表示新版本已发布或安装客户端已验收。",
+      "date": "2026-11-02",
+      "recordedAt": "2026-11-02",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": "c310000000000001",
+      "relatedIds": ["b712e86f2d340c59"],
+      "subjectId": "b712e86f2d340c59",
+      "before": "学习卡片自动提醒最短间隔为两小时。",
+      "after": "学习卡片自动提醒最短间隔为一小时。",
+      "reason": "本人明确要求调整为一小时；具体取舍理由未说明。",
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "俊宁本人陈述，2026-11-02，公开摘要。"
+        }
+      ]
     }
   ]
 }
