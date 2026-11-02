@@ -96,7 +96,7 @@
         "context": "AI 辅助解释；依据 OpenAI 的 Atlas OWL 工程文章与 ChatGPT 桌面内置浏览器官方说明，不声称俊宁开发、采用或完整验证了 OWL。",
         "understanding": "SDK 通常指应用开发时调用的接口和库。OpenAI 公开的 Atlas OWL 还包含独立运行的 Chromium Host 进程；Client API 与 Host 共同完成浏览器集成。因此描述整套执行能力时称 runtime 更完整。",
         "example": "以 OpenAI 公开的 Atlas 架构为例：上层 OWL Client 请求创建 WebView，OWL Host 承载 Chromium 浏览器进程；前者体现 SDK 风格的接口，后者提供运行时执行能力。",
-        "distinction": "runtime 与 SDK 不互斥。Atlas 的公开架构不能直接证明 ChatGPT 桌面版使用完全相同的客户端和进程实现；两者是不同产品。"
+        "distinction": "runtime 与 SDK 不互斥。Atlas 的公开架构不能直接证明 ChatGPT 桌面版使用完全相同的客户端和进程实现；两者是不同产品。OpenAI 公开了架构并称 OWL 在内部按预编译二进制交付；截至 2026-11-02 未查到官方源码仓库和许可证，不能把架构公开等同于开源。"
       },
       "priority": "reference",
       "adoption": "unknown",
