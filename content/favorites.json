@@ -1691,6 +1691,24 @@
       "priority": "evaluate",
       "adoption": "unknown",
       "usages": []
+    },
+    {
+      "id": "e50a71b2968c4d3f",
+      "kind": "project",
+      "title": "Holo Card Studio",
+      "url": "https://github.com/EverettFish/holo-card-studio",
+      "summary": "Codex Skill：可制作分层全息镭射卡与双图随视角切换的光栅卡，交付可编辑 Blender 工程、渲染图和 Three.js 网页。",
+      "reason": "本轮比较镭射卡片 Skill 时发现；普通闪卡和双形态光栅卡都可用它评估，尚未安装或试用。",
+      "tags": ["Codex Skill", "镭射卡", "光栅卡", "Three.js", "Blender"],
+      "savedAt": "2026-11-02",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        { "label": "项目公开仓库 README、SKILL.md 与 LICENSE，2026-11-02 核验。" }
+      ],
+      "priority": "evaluate",
+      "adoption": "unknown",
+      "usages": []
     }
   ]
 }
