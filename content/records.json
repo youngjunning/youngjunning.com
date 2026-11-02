@@ -2,6 +2,23 @@
   "version": 2,
   "records": [
     {
+      "id": "8f965cb4136b7f8a",
+      "kind": "judgment",
+      "title": "公开文章统一采用简体中文版权声明",
+      "text": "我要求公开文章的统一声明按“文章作者、文章链接、版权声明”三项展示，使用简体中文；除特别声明外，博客文章采用 CC BY-NC-SA 4.0 授权协议，转载时注明出处。复制 Markdown 时也应附带同一声明。",
+      "context": "2026-11-02，为硅基俊宁公开文章指定版权声明样式与授权措辞；已有文章中的特别转载限制继续作为例外。",
+      "basis": "本人明确指定参考图片和简体中文，未另述选择该授权协议的理由。",
+      "alternatives": [],
+      "outcome": null,
+      "date": "2026-11-02",
+      "recordedAt": "2026-11-02",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": ["c6cecaefc3f5635a"],
+      "sources": [{ "kind": "statement", "label": "本人陈述，2026-11-02，公开摘要：公开文章声明采用简体中文的作者、链接、版权三项结构；默认使用 CC BY-NC-SA 4.0，特别声明除外，转载注明出处。" }]
+    },
+    {
       "id": "c6cecaefc3f5635a",
       "kind": "judgment",
       "title": "文章署名与转载说明交给站点统一展示",

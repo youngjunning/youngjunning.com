@@ -18,5 +18,5 @@ export default function CopyMarkdown({ title, body, id }: { title: string; body:
     }
     timer.current = setTimeout(() => setStatus('idle'), 2500);
   }
-  return <div className="article-copy"><button type="button" onClick={copy}>复制 Markdown</button><span role="status">{status === 'copied' ? '已复制，含转载说明' : status === 'failed' ? '复制失败，请检查浏览器权限' : ''}</span></div>;
+  return <div className="article-copy"><button type="button" onClick={copy}>复制 Markdown</button><span role="status">{status === 'copied' ? '已复制，含版权声明' : status === 'failed' ? '复制失败，请检查浏览器权限' : ''}</span></div>;
 }
