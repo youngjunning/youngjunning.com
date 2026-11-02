@@ -38,7 +38,7 @@ usages 每项包含 project、projectUrl、stage（trial/adopted/retired）、pu
 
 ## 探索清单与对话精选
 
-本轮明确表达后续研究意图、且内容可公开时，按 `content/curation.README.md` 和 `lib/curation-model.mjs` 写入 `content/research.json`；按问题与范围去重。没有可公开的背景或来源时保留候选，不凭项目在公开仓库就自动公开内容。仅实际研究结果可使状态变为已完成。
+本人提出值得继续追的目标或问题，本轮结束时仍有影响后续选择的未解部分，且内容可公开时，按 `content/curation.README.md` 和 `lib/curation-model.mjs` 写入 `content/research.json`；不要求固定的“以后研究”措辞。核对后续结果和撤回指令，按问题与范围去重；Agent 单独建议不构成本人待办。没有可公开的背景或来源时保留候选，不凭项目在公开仓库就自动公开内容。仅实际研究结果可使状态变为已完成。
 
 本人明确挑选的对话片段，只有内容及可回看来源均已公开时才写入 `content/excerpts.json`。私人会话的精确定位和原话不能进入本站；没有公共来源只保留候选。当前未授权自动公开发现的精彩片段。原话与摘要、用户与 AI 分开标注。
 

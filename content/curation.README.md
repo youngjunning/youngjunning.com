@@ -6,7 +6,7 @@
 
 `research.json` 顶层为 `{ "version": 1, "items": [] }`；页面 `/research`，接口 `/api/research`。条目字段：`id`、`title`、`question`、`context`、`reason`、`nextStep`、`nextStepSource`、`status`、`blocker`、`result`、`relatedFavoriteIds`、`createdAt`、`updatedAt`、`visibility`、`sources`。
 
-`id` 为 16 位小写十六进制稳定 ID，按问题与研究范围去重。`nextStepSource` 为 `user` 或 `suggested`，AI 整理的下一步标为后者。状态为 `todo`、`in_progress`、`paused`、`completed`、`dropped`；暂缓需要 `blocker`，完成需要实际 `result`。`relatedFavoriteIds` 仅关联本站收藏；未知时为空数组。日期为 YYYY-MM-DD。`sources` 至少一项，包含可公开的 `label` 和可选公共 `url`。`visibility` 只能是 `shared`。不得从收藏或计划推断完成。
+`id` 为 16 位小写十六进制稳定 ID，按问题与研究范围去重。本人提出值得继续追的目标或问题、且本轮结束时仍有关键未解部分时可以收录；先核对是否已经解决或撤回，不依赖“以后研究”等固定措辞。`nextStepSource` 为 `user` 或 `suggested`，AI 整理的下一步标为后者。状态为 `todo`、`in_progress`、`paused`、`completed`、`dropped`；暂缓需要 `blocker`，完成需要实际 `result`。`relatedFavoriteIds` 仅关联本站收藏；未知时为空数组。日期为 YYYY-MM-DD。`sources` 至少一项，包含可公开的 `label` 和可选公共 `url`。`visibility` 只能是 `shared`。不得从收藏或计划推断完成。
 
 ## 对话精选
 
