@@ -3,6 +3,7 @@ id: "08de6927bb8b9143"
 title: "漫画拆解 ChatGPT App：内置浏览器藏在哪里"
 description: "沿用原稿记录的特定 macOS 应用版本，解释 Electron 宿主、内嵌 Chromium 与任务控制层的关系，不推导未经验证的运行时能力。"
 date: "2026-10-31"
+updatedAt: "2026-11-03T17:38+08:00"
 topic: "principles"
 tags: ["ChatGPT","Electron","Chromium","Agent","漫画"]
 collection: "docs"
@@ -42,6 +43,8 @@ cover: "/media/08de6927bb8b9143-a9c339c97eba9342.webp"
 | `Sparkle.framework` 和更新源配置 | 包含 Sparkle 更新组件 |
 
 依赖存在能证明组件被打包，不能单独证明每项功能都已启用或在当前账号可用。
+
+表中的 `ipcMain` 是 Electron 主进程接收渲染进程消息的接口。界面代码可通过对应的 `ipcRenderer` 发送消息；主进程用 `ipcMain.on` 监听消息，或用 `ipcMain.handle` 处理需要返回结果的调用。它负责应用内部的跨进程通信，不负责渲染网页，也不是下文 Agent 控制页面所用的 CDP。这里查到 `ipcMain` 调用，只能作为应用使用 Electron 接口的证据；具体消息处理什么业务，仍要看对应的 channel 和处理代码。[Electron 的 `ipcMain` 文档](https://www.electronjs.org/docs/latest/api/ipc-main)列出了这两种接收方式。
 
 ## 第三幕与第四幕：把网页装进窗口，把权限留给管理层
 

@@ -2,6 +2,137 @@
   "version": 1,
   "favorites": [
     {
+      "id": "be9cc1222ed79c60",
+      "kind": "card",
+      "title": "Electron ipcMain：主进程如何接收界面消息",
+      "url": null,
+      "summary": "ipcMain 是 Electron 主进程接收渲染进程消息的接口；on 监听消息，handle 处理需要返回结果的调用。",
+      "reason": "阅读 Electron 应用代码时，区分界面与主进程的通信、网页渲染，以及 Agent 使用的 CDP 控制通道。",
+      "tags": [
+        "Electron",
+        "ipcMain",
+        "IPC"
+      ],
+      "savedAt": "2026-11-03T17:38+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        {
+          "label": "AI 辅助资料整理；用户 2026-11-03 要求解释 ipcMain。Electron 官方 API：https://www.electronjs.org/docs/latest/api/ipc-main"
+        }
+      ],
+      "card": {
+        "date": "2026-11-03",
+        "recordedAt": "2026-11-03",
+        "context": "AI 辅助解释；结合《漫画拆解 ChatGPT App：内置浏览器藏在哪里》的术语说明，依据 Electron 官方文档，不表示本人已掌握或实践。",
+        "understanding": "渲染进程可通过 ipcRenderer 向主进程发送消息。主进程用 ipcMain.on 接收单向消息，或用 ipcMain.handle 处理 ipcRenderer.invoke 发起、需要异步返回结果的调用。",
+        "example": "假设界面需要读取应用设置，可调用 ipcRenderer.invoke('settings:read')；主进程用 ipcMain.handle('settings:read', ...) 返回结果。此例仅说明机制，不代表 ChatGPT 应用实际使用这个 channel。",
+        "distinction": "ipcMain 是 Electron 应用内部的进程通信接口，不负责网页渲染，也不等同于通过 CDP 调试或控制 Chromium 页面；看到调用不能推断具体业务消息或权限实现。"
+      }
+    },
+    {
+      "id": "d53795ec40da8732",
+      "kind": "card",
+      "title": "Lima：管理 Linux 虚拟机的工具",
+      "url": null,
+      "summary": "Lima 管理虚拟机的生命周期与配置；具体虚拟化由 VZ、QEMU 等后端承担。",
+      "reason": "用户明确要求介绍 Lima 与 rootfs 并提供知识卡片，供分层理解和排障回看。",
+      "tags": [
+        "Lima",
+        "Linux",
+        "Android",
+        "容器"
+      ],
+      "savedAt": "2026-11-03T11:52+08:00",
+      "selection": "explicit",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        {
+          "label": "AI 辅助资料整理；用户本轮要求“Lima 和 rootfs 是啥，写一篇文章介绍下，并给知识卡片”。官方资料：https://lima-vm.io/docs/"
+        }
+      ],
+      "card": {
+        "date": "2026-11-03",
+        "recordedAt": "2026-11-03",
+        "context": "AI 辅助解释，结合 Android 插件 macOS/WSL 资源准备场景；不代表本人已掌握或完成各平台验收。",
+        "understanding": "Lima 管理虚拟机的生命周期与配置；具体虚拟化由 VZ、QEMU 等后端承担。",
+        "example": "假设在 macOS 上运行 Android 容器，可先由 Lima 管理 Linux VM，再在 guest 内使用容器运行时。",
+        "distinction": "limactl 可执行、VM 可启动、Android 可运行是三个不同的验证结果。"
+      }
+    },
+    {
+      "id": "d61534bc8b9c5b8a",
+      "kind": "card",
+      "title": "rootfs：根目录树与系统用户态",
+      "url": null,
+      "summary": "发行版交付语境下，rootfs 提供根目录树、程序、库和配置。tar 是封装格式，不等于完整可启动磁盘或运行内核。",
+      "reason": "用户明确要求介绍 Lima 与 rootfs 并提供知识卡片，供分层理解和排障回看。",
+      "tags": [
+        "Lima",
+        "Linux",
+        "Android",
+        "容器"
+      ],
+      "savedAt": "2026-11-03T11:52+08:00",
+      "selection": "explicit",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        {
+          "label": "AI 辅助资料整理；用户本轮要求“Lima 和 rootfs 是啥，写一篇文章介绍下，并给知识卡片”。官方资料：https://learn.microsoft.com/en-us/windows/wsl/use-custom-distro"
+        }
+      ],
+      "card": {
+        "date": "2026-11-03",
+        "recordedAt": "2026-11-03",
+        "context": "AI 辅助解释，结合 Android 插件 macOS/WSL 资源准备场景；不代表本人已掌握或完成各平台验收。",
+        "understanding": "发行版交付语境下，rootfs 提供根目录树、程序、库和配置。tar 是封装格式，不等于完整可启动磁盘或运行内核。",
+        "example": "假设向 WSL 导入 Ubuntu rootfs tar，用户态来自该 tar，运行内核仍由 WSL2 环境提供。",
+        "distinction": "根目录 / 不等于用户家目录 /root；工程中的 rootfs 镜像也应与内核内部 rootfs 对象区分。"
+      }
+    },
+    {
+      "id": "0a940ff96caf609f",
+      "kind": "card",
+      "title": "Binder：rootfs 无法代替的内核能力",
+      "url": null,
+      "summary": "Android Binder IPC 依赖内核驱动。Redroid 容器共享承载它的 Linux 内核，替换用户态镜像不会自动补齐内核能力。",
+      "reason": "用户明确要求介绍 Lima 与 rootfs 并提供知识卡片，供分层理解和排障回看。",
+      "tags": [
+        "Lima",
+        "Linux",
+        "Android",
+        "容器"
+      ],
+      "savedAt": "2026-11-03T11:52+08:00",
+      "selection": "explicit",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        {
+          "label": "AI 辅助资料整理；用户本轮要求“Lima 和 rootfs 是啥，写一篇文章介绍下，并给知识卡片”。官方资料：https://source.android.com/docs/core/architecture/ipc/binder-overview"
+        }
+      ],
+      "card": {
+        "date": "2026-11-03",
+        "recordedAt": "2026-11-03",
+        "context": "AI 辅助解释，结合 Android 插件 macOS/WSL 资源准备场景；不代表本人已掌握或完成各平台验收。",
+        "understanding": "Android Binder IPC 依赖内核驱动。Redroid 容器共享承载它的 Linux 内核，替换用户态镜像不会自动补齐内核能力。",
+        "example": "假设 nerdctl 和 Android 镜像均已准备，但当前内核未启用 Binder，仍需处理内核配置或匹配模块，而不是反复更换 rootfs。",
+        "distinction": "Binder 与 binderfs 不同；检查到 binder 文件系统也不等于设备权限、Android 启动和业务任务已验收。"
+      }
+    },
+    {
       "id": "a043fdc0643c0a59",
       "kind": "knowledge",
       "title": "TypeSafe Jev 图像输入与 Box 官方文档",

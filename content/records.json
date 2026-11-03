@@ -2,6 +2,50 @@
   "version": 2,
   "records": [
     {
+      "id": "54c95d6293298bf1",
+      "kind": "judgment",
+      "title": "非个人敏感文章先在内网发布",
+      "date": "2026-11-03",
+      "recordedAt": "2026-11-03",
+      "text": "我要求面向读者的文章除个人敏感内容外，都先在内网发布。个人敏感内容不因这条首发顺序进入公司站。",
+      "context": "2026 年 11 月 3 日，在讨论文章写作与发布位置时明确调整新文章的首发顺序；只规定内网优先及个人敏感例外，未要求自动跨站发布或迁移已有文章。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-03，公开摘要。"
+        }
+      ],
+      "basis": "本人明确指定文章的首发顺序与个人敏感例外；未说明进一步理由。",
+      "alternatives": [],
+      "outcome": null
+    },
+    {
+      "id": "20efe88fba786f36",
+      "kind": "judgment",
+      "title": "跨站同步技能归硅基紫升维护",
+      "date": "2026-11-02",
+      "recordedAt": "2026-11-02",
+      "text": "我指定硅基紫升与硅基俊宁之间的跨站同步技能由硅基紫升项目维护。这是该技能的维护归属选择。",
+      "context": "核对蒸馏规则后，明确指定跨站同步技能的维护归属；未说明进一步理由。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-02，公开摘要。"
+        }
+      ],
+      "basis": "本人明确指定技能维护位置，未说明进一步理由。",
+      "alternatives": [],
+      "outcome": null
+    },
+    {
       "id": "ab0561b5870b86ce",
       "kind": "judgment",
       "title": "公开文章栏目称为手记",
