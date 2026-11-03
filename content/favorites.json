@@ -2,6 +2,38 @@
   "version": 1,
   "favorites": [
     {
+      "id": "a764e990132fb651",
+      "kind": "project",
+      "title": "腾讯 Lemon Cleaner",
+      "url": "https://github.com/tencent/lemon-cleaner",
+      "summary": "macOS 清理工具，覆盖应用垃圾扫描、大文件与重复文件、空间分析、应用卸载和设备状态监控。",
+      "reason": "俊宁明确将其作为 Owlet 电脑管家的对标产品；具体功能采纳范围尚未确定。",
+      "tags": ["macOS", "电脑清理", "Owlet"],
+      "savedAt": "2026-11-04T02:09+08:00",
+      "selection": "explicit",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [{"label": "本人 2026-11-04 陈述；项目原始来源：https://github.com/tencent/lemon-cleaner"}]
+    },
+    {
+      "id": "bd601b5319e7a421",
+      "kind": "project",
+      "title": "Mole",
+      "url": "https://github.com/tw93/Mole",
+      "summary": "清理与系统维护工具，包含清理、应用卸载、磁盘分析、系统状态等功能；项目仓库提供 CLI，原生 Mac 应用单独提供。",
+      "reason": "俊宁明确将其作为 Owlet 电脑管家的对标产品，并展示了原生应用的扫描界面；具体功能与视觉采纳范围尚未确定。",
+      "tags": ["macOS", "电脑清理", "Owlet"],
+      "savedAt": "2026-11-04T02:09+08:00",
+      "selection": "explicit",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [{"label": "本人 2026-11-04 陈述；项目原始来源：https://github.com/tw93/Mole"}]
+    },
+    {
       "id": "be9cc1222ed79c60",
       "kind": "card",
       "title": "Electron ipcMain：主进程如何接收界面消息",
