@@ -2,6 +2,26 @@
   "version": 1,
   "favorites": [
     {
+      "id": "a043fdc0643c0a59",
+      "kind": "knowledge",
+      "title": "TypeSafe Jev 图像输入与 Box 官方文档",
+      "url": "https://docs.typesafe.ai/images",
+      "summary": "Jev 可通过 assets 引用图像；1.14 的 Box 问题返回归一化坐标框。图像与 Box 当前是需显式启用的实验能力，不能仅凭模型版本推断接入链路可用。",
+      "reason": "回看视觉定位的请求格式、能力限制与上线前验证条件。",
+      "tags": ["Jev", "视觉定位", "Box", "TypeSafe"],
+      "savedAt": "2026-11-03T15:50+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        { "label": "TypeSafe 官方图像文档，2026-11-03 核对：https://docs.typesafe.ai/images" },
+        { "label": "TypeSafe 官方 Box 文档，2026-11-03 核对：https://docs.typesafe.ai/primitives/box" },
+        { "label": "TypeSafe 官方模型列表，2026-11-03 核对：https://docs.typesafe.ai/models" }
+      ],
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": []
+    },
+    {
       "id": "baad0631679522e9",
       "url": null,
       "kind": "card",
