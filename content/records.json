@@ -1021,6 +1021,28 @@
       "basis": "本人明确指出追问能防止一知半解，也需要时间限制；将入口名称改为“追问”，要求问题与引用一起进入 Codex 新会话，并调整墨翎定位。",
       "alternatives": [],
       "outcome": null
+    },
+    {
+      "id": "514882ebd1ccd180",
+      "kind": "judgment",
+      "title": "Owlet 学习模块应减少会话操作",
+      "text": "我希望 Owlet 的学习模块更纯粹，尽量少让用户操作。学习会话应由应用自动选择，不要求用户在会话列表中挑选，也不要求手动触发读取。",
+      "context": "2026 年 11 月 4 日，针对学习页会话选择过于麻烦的反馈；我明确纠正了增加搜索面板的方案，要求直接去掉会话选择。",
+      "date": "2026-11-04",
+      "recordedAt": "2026-11-04",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": "c310000000000001",
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "俊宁本人陈述，2026-11-04，公开摘要。"
+        }
+      ],
+      "basis": "本人明确指出选会话太麻烦，并要求学习模块更纯粹、减少用户操作；其他取舍理由未说明。",
+      "alternatives": [],
+      "outcome": null
     }
   ]
 }
