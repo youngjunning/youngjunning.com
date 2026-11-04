@@ -9,6 +9,12 @@ collection: docs
 cover: "/media/visual-grounding-box-cover.webp"
 ---
 
+## 修订记录
+
+| 版本 | 修订时间 | 修订内容 |
+| --- | --- | --- |
+| 第 1 次修订 | 2026.11.04 | 删除与正文无关的写作、配图技能推广署名。 |
+
 一个手机 Agent 收到“点击查询”后，需要先在当前截图中找到那个按钮。模型返回一组坐标，看似已经完成定位；但按钮可能根本不在屏幕上，截图也可能在点击前过期。我在接入 Jev 图像能力时，发现“视觉 Grounding”“Box”“目标边界框”很容易被当作同一件事。把它们放回一次真实的动作流程，边界就清楚了。
 
 ## 一句话总结
@@ -86,5 +92,3 @@ Accessibility Tree 能提供控件文本、角色、状态和 bounds；信息完
 - **重点关注**：目标缺失时的误框、多个相似目标、缩放与视口偏移、截图过期，以及真实页面上的成功率和耗时。单次 Box 命中只能算定位探针通过。
 
 我会把 Box 作为“按描述找区域”的能力来评估，把目标边界框当作待验证的坐标证据。只有存在性、坐标系和点击后的效果都闭合，视觉 Grounding 才真正参与了可靠的自动化。
-
-> 本文使用 [writting-skill](https://github.com/youngjunning/skills/tree/main/skills/writing/writting-skill) 辅助写作，配图使用 [better-imagegen](https://github.com/youngjunning/skills/tree/main/skills/design/better-imagegen) 生成。项目已开源，欢迎在 GitHub 点个 Star。
