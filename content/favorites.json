@@ -2,6 +2,30 @@
   "version": 1,
   "favorites": [
     {
+      "id": "efc8d86fbe37e287",
+      "kind": "knowledge",
+      "title": "Google Play Target API 官方要求",
+      "url": "https://support.google.com/googleplay/android-developer/answer/11926878",
+      "summary": "Google Play 官方维护新应用、更新及已有应用可见性的 Target API 门槛与延期安排；提交规则与继续可见规则需分别核对。具体版本和日期会变动，应在每次发行前复查。",
+      "reason": "国际 Android 发行研究中发现的原始政策入口，供后续核对，不代表个人法律判断或已通过商店审核。",
+      "tags": [
+        "Android",
+        "Google Play",
+        "应用发行"
+      ],
+      "savedAt": "2026-11-04T22:08+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        {
+          "label": "Google Play Console Help 官方政策原文：https://support.google.com/googleplay/android-developer/answer/11926878"
+        }
+      ]
+    },
+    {
       "id": "d1e8b9f045a72c63",
       "kind": "project",
       "title": "agent-desktop",
