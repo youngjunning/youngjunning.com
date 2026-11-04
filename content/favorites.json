@@ -2,6 +2,22 @@
   "version": 1,
   "favorites": [
     {
+      "id": "d1e8b9f045a72c63",
+      "kind": "project",
+      "title": "agent-desktop",
+      "url": "https://github.com/vercel-labs/agent-desktop",
+      "summary": "Vercel Labs 的 Computer Use CLI，通过操作系统的 accessibility tree 让 AI Agent 读取和操作桌面应用。官方 README 提供 macOS、Windows、Linux 的使用说明，支持 CLI 与 MCP 接入。",
+      "reason": "俊宁明确要求收藏此项目，供后续查阅桌面自动化与 Agent 工具接入；尚无试用或采用记录。",
+      "tags": ["AI Agent", "Computer Use", "桌面自动化", "CLI", "MCP"],
+      "savedAt": "2026-11-04T18:10+08:00",
+      "selection": "explicit",
+      "visibility": "shared",
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [{"label": "本人 2026-11-04 明确收藏；项目官方 README：https://github.com/vercel-labs/agent-desktop"}]
+    },
+    {
       "id": "a764e990132fb651",
       "kind": "project",
       "title": "腾讯 Lemon Cleaner",
