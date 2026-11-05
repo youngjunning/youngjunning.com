@@ -2,6 +2,22 @@
   "version": 1,
   "favorites": [
     {
+      "id": "e5f96a83d7b14c20",
+      "kind": "knowledge",
+      "title": "Agent Skills 开放格式与能力打包说明",
+      "url": "https://agentskills.io/home",
+      "summary": "Agent Skills 官方说明：通过 SKILL.md 中的元数据与指令组织可按需加载的任务能力，并可附带脚本、参考资料、模板和其他资源；跨客户端支持与具体格式应按当前规范核对。",
+      "reason": "在补充架构技能的 AI 工程与交付流程时核验，作为区分 Skill 打包、Agent 执行及业务权限的规范入口；收藏不表示已采用某一客户端或完成互操作验收。",
+      "tags": ["AI Agent", "Skill", "开放格式", "能力复用"],
+      "savedAt": "2026-11-05T13:41+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [{"label": "Agent Skills 官方 Overview，2026-11-05 核验：https://agentskills.io/home"}]
+    },
+    {
       "id": "efc8d86fbe37e287",
       "kind": "knowledge",
       "title": "Google Play Target API 官方要求",
