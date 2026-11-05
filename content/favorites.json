@@ -2,6 +2,30 @@
   "version": 1,
   "favorites": [
     {
+      "id": "6b91e4c2a73f508d",
+      "kind": "card",
+      "title": "界面控件的 bounds：位置与尺寸",
+      "url": null,
+      "summary": "Bounds 是界面元素的边界矩形，描述它在某个坐标系中的位置和大小，常表示为 x、y、width、height 或 left、top、right、bottom。",
+      "reason": "用户追问 Accessibility Tree 语境中的 bounds，便于回看控件位置、边界框与点击坐标的区别。",
+      "tags": ["Accessibility Tree", "bounds", "界面自动化"],
+      "savedAt": "2026-11-05T19:54+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [{"label": "AI 辅助概念解释；公开文章《视觉 Grounding、Box 与目标边界框：从截图定位到可靠点击》，2026-11-03：https://youngjunning.com/blog/e196ba9ba7b3b8ed"}],
+      "card": {
+        "date": "2026-11-05",
+        "recordedAt": "2026-11-05",
+        "context": "AI 辅助解释界面自动化中的通用术语；具体坐标系由平台或接口决定，不代表本人已掌握或实践。",
+        "understanding": "Bounds 表示元素占据的矩形区域，可用于判断大致位置与尺寸。常见写法是左上角坐标加宽高，或矩形的四条边。",
+        "example": "假设按钮的 bounds 为 x=100、y=200、width=80、height=40，则矩形从 (100, 200) 延伸到 (180, 240)；坐标系和单位取决于具体接口。",
+        "distinction": "Bounds 只是位置与尺寸信息；不能单凭它断定控件当前可见、未被遮挡、可以点击或点击已生效。"
+      }
+    },
+    {
       "id": "e5f96a83d7b14c20",
       "kind": "knowledge",
       "title": "Agent Skills 开放格式与能力打包说明",
