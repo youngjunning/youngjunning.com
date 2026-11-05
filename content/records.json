@@ -2,6 +2,25 @@
   "version": 2,
   "records": [
     {
+      "id": "b64972f0e13a8c5d",
+      "kind": "thought",
+      "title": "将 Cua 虚拟机与 agent-desktop 组合用于不受信任任务",
+      "date": "2026-11-05",
+      "recordedAt": "2026-11-05",
+      "text": "我考虑把两层能力叠起来：用 Cua 启动隔离 VM，在 VM 内安装 agent-desktop，通过 accessibility 接口操作应用。我的预期是兼顾沙箱边界、ref 定位和较低的 token 消耗，并避免争抢宿主机的真实光标。我认为这种组合更适合来源复杂、不受信任的 Agent 任务；日常单机高频操作则直接使用 agent-desktop 更顺手。",
+      "context": "这是组合方案的探索性判断，尚无集成实测。本人预期增加虚拟化会带来延迟与资源开销；具体开销、token 节省和 ref 可靠性未测量。原表达称其为“嵌套一层虚拟化”，该术语是否适用需由实际部署拓扑判断。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-05，公开摘要：提出将 Cua 隔离 VM 与 VM 内的 agent-desktop 组合，并按任务来源和操作频率权衡使用方式。"
+        }
+      ]
+    },
+    {
       "id": "c7f8b4782cc53815",
       "kind": "judgment",
       "title": "所有文章修订保留读者可见的修订记录",
