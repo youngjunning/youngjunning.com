@@ -2,6 +2,28 @@
   "version": 2,
   "records": [
     {
+      "id": "474415fdb4520361",
+      "kind": "judgment",
+      "title": "文章概念卡片由记忆蒸馏流程维护",
+      "date": "2026-11-05",
+      "recordedAt": "2026-11-05",
+      "text": "我希望写文章时，把具有独立解释价值的术语或概念自动沉淀为百宝箱卡片；概念识别、核对和入库流程应写在记忆蒸馏技能中。",
+      "context": "在讨论文章术语解释与百宝箱联动时提出的写作流程要求，随后明确了流程的维护位置。这不表示每次提及术语都要生成新卡片，也不表示已经批量处理历史文章。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-05，公开摘要：写文章时有价值的术语和概念应沉淀为百宝箱卡片，流程归记忆蒸馏技能维护。"
+        }
+      ],
+      "basis": "本人先提出文章写作中的自动沉淀需求，随后明确指定流程的维护位置；未说明进一步理由。",
+      "alternatives": [],
+      "outcome": null
+    },
+    {
       "id": "09715bd1405fd784",
       "kind": "judgment",
       "title": "TaleFrame 面向16岁及以上读者",
