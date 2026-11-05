@@ -2,6 +2,30 @@
   "version": 2,
   "records": [
     {
+      "id": "e7b42d9c106fa835",
+      "kind": "judgment",
+      "title": "以行业生意理解与稳定交付建立竞争力",
+      "date": "2026-11-05",
+      "recordedAt": "2026-11-05",
+      "text": "我认为，单靠写代码这条路正在贬值，懂业务并且能把事情落地才是出路。竞争力应建立在更懂某个行业的生意，并且交付得比别人更稳。",
+      "context": "这是本人对研发能力价值与竞争方向的判断，强调行业生意理解和稳定交付；未指定具体行业，也未声称已经完成转型或取得商业成果。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-05，公开摘要：认为写代码这条路正在贬值，强调懂行业生意、能落地并稳定交付。"
+        }
+      ],
+      "basis": "本人明确对比单靠写代码与业务理解加稳定交付的价值；未提供市场数据或进一步论证。",
+      "alternatives": [
+        "以写代码作为主要竞争力"
+      ],
+      "outcome": null
+    },
+    {
       "id": "b64972f0e13a8c5d",
       "kind": "thought",
       "title": "将 Cua 虚拟机与 agent-desktop 组合用于不受信任任务",
