@@ -42,7 +42,7 @@ test('the career article renders each repaired bold span with punctuation outsid
     node.children?.forEach(visit);
   }
   visit(unified().use(remarkParse).use(remarkGfm).parse(content));
-  for (const label of ['第一，解决复杂系统问题', '第二，交付真实价值', '第三，承担模糊问题', '第四，放大个人影响', '技术深度决定能实现什么，产品判断决定什么值得实现']) {
+  for (const label of ['第一，解决复杂系统问题', '第二，理解价值如何产生', '第三，承担模糊问题并稳定交付', '第四，放大个人影响', '能够设计、实现和持续改进生产级 AI 系统']) {
     assert.ok(strong.includes(label), label);
   }
   assert.ok(strong.every(text => !/[。！？：]$/u.test(text)));

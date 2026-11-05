@@ -2970,33 +2970,37 @@
     },
     {
       "id": "222917606402aa12",
-      "key": "5bdf75e9b59a58fe26eaabc0607735f1e28812a1e3c4fa87e882a9b6497dc567",
+      "key": "8fe3958387bd23bdc48ac15433f40477591f38fa898dd002595c4b7807d97b54",
       "title": "职业规划",
       "type": "topic",
       "dependencies": [
         {
           "id": "blog-873215a5db96ccec-1",
-          "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf"
+          "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4"
         },
         {
-          "id": "blog-873215a5db96ccec-111",
-          "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf"
+          "id": "blog-873215a5db96ccec-112",
+          "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4"
         },
         {
-          "id": "blog-873215a5db96ccec-157",
-          "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf"
+          "id": "blog-873215a5db96ccec-150",
+          "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4"
         },
         {
-          "id": "blog-873215a5db96ccec-194",
-          "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf"
+          "id": "blog-873215a5db96ccec-193",
+          "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4"
         },
         {
-          "id": "blog-873215a5db96ccec-33",
-          "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf"
+          "id": "blog-873215a5db96ccec-224",
+          "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4"
         },
         {
-          "id": "blog-873215a5db96ccec-73",
-          "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf"
+          "id": "blog-873215a5db96ccec-29",
+          "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4"
+        },
+        {
+          "id": "blog-873215a5db96ccec-72",
+          "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4"
         },
         {
           "id": "blog-d822d522839c3354-1",
@@ -3042,153 +3046,72 @@
       "coverage": {
         "totalSources": 2,
         "sampledSources": 2,
-        "totalEntries": 16,
-        "sampledEntries": 16,
+        "totalEntries": 17,
+        "sampledEntries": 17,
         "complete": true
       },
       "paragraphs": [
         {
-          "id": "1bf14b472b2552fa",
-          "kind": "comparison",
-          "text": "两篇规划都把“执行之后如何被约束和验证”放在核心位置，但组织方式不同。三年规划把授权边界、风险分级审批、评估回放列为独立能力线，并强调模型可调整执行策略、权限与审计须由独立于模型决策的治理机制约束；成长路线图则在 L3 列安全与约束、L4 列 Sandbox 与可观测性、L5 列 Human-in-the-loop、L6 列 Eval 与轨迹记录，把治理分散到各层能力点中。共同点是都要求权限、隔离、评测与轨迹记录进入工程基础设施，而非上线前附加检查。",
+          "id": "10c28f4413a9de79",
+          "kind": "synthesis",
+          "text": "公开职业规划 V2.2 仍以 AI Systems & Product Engineering 的 IC 专家路径为能力方向，将理解行业生意、产品取舍、工程深度和稳定交付结合。Staff 表示希望逐步承担的问题范围，并非现任头衔或三年后的职级承诺；Agentic Computing 属于待验证的研究判断，不能替代实际成果。",
           "attribution": "model-synthesis",
           "evidence": [
             {
-              "sourceId": "blog-873215a5db96ccec-73",
-              "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf",
-              "quote": "我准备明确区分两类职责：执行策略可以由模型调整；权限、预算、审批和审计由独立于模型决策的治理机制约束。“独立”首先是信任与职责边界，可以先在现有运行时里实现，不意味着新建一套控制平台。"
+              "sourceId": "blog-873215a5db96ccec-29",
+              "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4",
+              "quote": "Staff 是未来希望承担的问题范围，而不是今天已经拥有的头衔。我更倾向于 Individual Contributor（IC）的专家路径：可以影响技术战略、协调复杂工作，却不以正式带团队和人员管理作为身份的必要条件。"
             },
             {
-              "sourceId": "blog-873215a5db96ccec-111",
-              "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf",
-              "quote": "把 E2E Eval、Trace、Replay、故障恢复和权限治理作为工程基础设施，而不是上线前的附加检查。一个任务即使完成了，如果过程中执行了未经授权的敏感操作，也不应被评价为成功。"
-            },
-            {
-              "sourceId": "blog-d822d522839c3354-81",
-              "sha256": "e4033f11382e285e5ff1b4094dfa69c872a27bffb024e99e7bb4d79f0b64f453",
-              "quote": "- 安全与约束：输入过滤、输出审查、权限控制、沙箱隔离。Agent 的自主性越高，安全风险越大。"
-            },
-            {
-              "sourceId": "blog-d822d522839c3354-130",
-              "sha256": "e4033f11382e285e5ff1b4094dfa69c872a27bffb024e99e7bb4d79f0b64f453",
-              "quote": "- 可靠性：Agent 的自主性意味着错误可能被放大，需要有完善的熔断、降级机制。"
+              "sourceId": "blog-873215a5db96ccec-224",
+              "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4",
+              "quote": "职业身份上，继续沿 AI Systems & Product Engineering 的 IC 专家路径成长，朝 Staff AI Engineer 的问题范围努力；研究上，以 Agentic Computing 检验自主执行与受控授权的边界。 Staff 仍是能力目标，不是当前头衔，也不承诺在周期终点获得某个职级。"
             }
           ]
         },
         {
-          "id": "8ad30de5f23aedb3",
-          "kind": "comparison",
-          "text": "两份材料对“从原型到生产”的路径有相近的层次划分，但验收口径不同。成长路线图按 L1 到 L7 逐层给出学习主题与行动项，例如 L4 关注 Runtime、状态机、Sandbox、Checkpoint 与可观测性，L5 关注 Browser Agent、Grounding、RAG、多 Agent 与 Human-in-the-loop，产出物是原型、生产级系统和可自进化系统。三年规划则按三个年度阶段推进，第一阶段要求结构化执行提案、动作前授权检查、预算与终止条件、可回放轨迹，并明确“一个端通过不代表跨端能力完成”。前者偏能力地图与学习节奏，后者偏可核验的交付证据与风险边界。",
+          "id": "dd715a1a42332eeb",
+          "kind": "synthesis",
+          "text": "三年周期从 2026 年 11 月 1 日开始，在 2029 年 11 月 1 日收口；年度阶段用于调整投入重点，业务、工程、产品与复用始终并行。首季度约 90 天，先确认场景与基线，再交付完整任务，最后观察重复使用、成本和支持负担并评审。它是行动计划，不是已有交付记录；没有基线时不预先承诺百分比收益。",
           "attribution": "model-synthesis",
           "evidence": [
             {
-              "sourceId": "blog-d822d522839c3354-81",
-              "sha256": "e4033f11382e285e5ff1b4094dfa69c872a27bffb024e99e7bb4d79f0b64f453",
-              "quote": "- Agent Runtime：Agent 的执行引擎。需要了解 LangChain、Mastra、AutoGen 等框架的 Runtime 设计。"
+              "sourceId": "blog-873215a5db96ccec-150",
+              "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4",
+              "quote": "规划自 2026 年 11 月 1 日开始，至 2029 年 11 月 1 日复盘收口。三个年度阶段按周年划分，不再使用自然年的“2027、2028、2029”代替执行周期。系统工程、产品实践与经验复用始终并行，阶段只是投入重点；以下均为计划交付，不是已经取得的成果。"
             },
             {
-              "sourceId": "blog-d822d522839c3354-81",
-              "sha256": "e4033f11382e285e5ff1b4094dfa69c872a27bffb024e99e7bb4d79f0b64f453",
-              "quote": "- Checkpoint / Durable Execution：执行状态持久化，支持故障恢复。Temporal、Durable Objects 等技术。"
-            },
-            {
-              "sourceId": "blog-873215a5db96ccec-157",
-              "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf",
-              "quote": "从一类有代表性的任务开始，沿用现有工具、运行时和存储，补齐四项能力：结构化执行提案、动作发生前的授权检查、预算与终止条件、可供回放和评估的执行轨迹。"
-            },
-            {
-              "sourceId": "blog-873215a5db96ccec-111",
-              "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf",
-              "quote": "浏览器或某一移动端可以先落地，但不能把单端成功等同于跨环境完成。"
+              "sourceId": "blog-873215a5db96ccec-193",
+              "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4",
+              "quote": "首季度（约 90 天）的起步动作：2026.11.01—2027.01.31。前 30 天选定场景，梳理业务流程、使用者与责任人，确认替代方式、权限、基线和验收口径；第 31—60 天交付一个完整任务，验证授权、结果检查和异常恢复；第 61—90 天观察重复使用、完整成本与支持负担，完成方案对照、失败回放和首次评审，决定扩大、修正或停止，季度结束前整理评审材料。没有基线时不预先承诺百分比收益。"
             }
           ]
         },
         {
-          "id": "6785166c5dc58e56",
-          "kind": "comparison",
-          "text": "关于“模型自主规划”与“确定性流程”的取舍，两份材料都主张按结果比较而非预先站队。三年规划明确 Planner、Executor 或多 Agent 图只是可比较的实现选项，规则明确、重复性高或需严格保证顺序的任务仍适合确定性 Workflow，选择依据是成功率、风险、延迟和成本；若动态规划没有收益就保留固定流程。成长路线图在 L3 把 Planning、ReAct、任务分解列为重点突破层，在 L4 又要求用状态机或 DAG 编排执行流程，体现“认知层交给模型、运行层用确定性结构承载”的分工。",
+          "id": "4d5eee175ab88681",
+          "kind": "synthesis",
+          "text": "后续阶段以持续采用、反馈迭代、运行支持和他人复用检验成长。没有生产授权时只能报告隔离试点的范围；没有真实规则变更需求时演练回退能力即可。公开作品还需要独立授权或采用独立实现、合成场景，不能把内部实践材料自动转成公开案例。",
           "attribution": "model-synthesis",
           "evidence": [
             {
-              "sourceId": "blog-873215a5db96ccec-73",
-              "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf",
-              "quote": "对于规则明确、重复性高或需要严格保证顺序的任务，确定性 Workflow 仍然有价值；选择依据应当是成功率、风险、延迟和成本的对照结果。"
+              "sourceId": "blog-873215a5db96ccec-193",
+              "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4",
+              "quote": "有实际规则变更需求时，保留对应的评审、测试、批准、灰度与回退材料；没有变更需求时，在隔离环境演练回退能力并注明范围。若拿不到真实生产授权，就用隔离试点验证，并明确它不能证明生产验收；没有持续采用证据时，也不宣称已经证明产品价值。"
             },
             {
-              "sourceId": "blog-873215a5db96ccec-194",
-              "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf",
-              "quote": "如果动态规划没有带来收益，就保留固定流程；如果新增治理机制只增加确认次数而没有改善控制效果，就缩小范围、修正规则。"
-            },
-            {
-              "sourceId": "blog-d822d522839c3354-81",
-              "sha256": "e4033f11382e285e5ff1b4094dfa69c872a27bffb024e99e7bb4d79f0b64f453",
-              "quote": "- 工作流 / 状态机：用状态机或 DAG 编排 Agent 的执行流程。如 LangGraph、Temporal 等。"
-            },
-            {
-              "sourceId": "blog-d822d522839c3354-39",
-              "sha256": "e4033f11382e285e5ff1b4094dfa69c872a27bffb024e99e7bb4d79f0b64f453",
-              "quote": "- Planning：Agent 如何拆解任务、制定计划。关键概念包括 Task Decomposition（任务分解）、Hierarchical Planning（层次规划）、ReAct（推理+行动循环）。"
-            }
-          ]
-        },
-        {
-          "id": "c407da9e621e9cb7",
-          "kind": "comparison",
-          "text": "两份规划都强调产品判断与真实用户价值，但落点不同。三年规划把职业身份定为 AI Systems & Product Engineering，主张先识别问题再选择技术，补强 Product Discovery、用户研究、Human-AI Interaction 与端到端交付，并以任务完成率、重复使用、审批等待、无必要打断和风险漏拦评估体验。成长路线图把产品理解、领域建模、沟通表达、文档写作、业务落地列为横向业务素养，并在 L7 提出结合业务场景推动 Agent 落地。共同点是技术深度与产品判断需并行，差异在于前者把产品责任写成阶段验收材料，后者把业务素养写成贯穿各层的横向维度。",
-          "attribution": "model-synthesis",
-          "evidence": [
-            {
-              "sourceId": "blog-873215a5db96ccec-33",
-              "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf",
-              "quote": "技术深度决定能实现什么，产品判断决定什么值得实现。它们结合起来，才构成我想长期积累的职业壁垒。"
-            },
-            {
-              "sourceId": "blog-873215a5db96ccec-157",
-              "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf",
-              "quote": "以任务完成率、重复使用、审批等待、无必要打断和风险漏拦评估体验。"
-            },
-            {
-              "sourceId": "blog-d822d522839c3354-130",
-              "sha256": "e4033f11382e285e5ff1b4094dfa69c872a27bffb024e99e7bb4d79f0b64f453",
-              "quote": "- 产品理解：理解 Agent 产品的用户场景和价值主张。"
-            },
-            {
-              "sourceId": "blog-d822d522839c3354-130",
-              "sha256": "e4033f11382e285e5ff1b4094dfa69c872a27bffb024e99e7bb4d79f0b64f453",
-              "quote": "- 业务落地：从 POC 到生产环境，推动 Agent 在真实业务中产生价值。"
-            }
-          ]
-        },
-        {
-          "id": "9c923029bb295f0b",
-          "kind": "open-question",
-          "text": "两份材料都提出用评测、轨迹和回放检验 Agent 行为，但尚未给出可比较的量化基线。三年规划明确在没有统计基线前不承诺具体耗时收益，并要求越权用例必须阻断、有限测试零漏拦不等于实际环境绝对安全；成长路线图则把 Eval 数据集、轨迹记录和 Skill Library 列为 L6 行动项。可继续探讨的是：在跨 Browser、Android、iPhone、Computer 四类环境时，如何用同一套任务集与风险指标比较固定流程、模型动态规划和混合方案，以及公开材料在脱敏与合成数据条件下能支持多大范围的结论。",
-          "attribution": "model-synthesis",
-          "evidence": [
-            {
-              "sourceId": "blog-873215a5db96ccec-194",
-              "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf",
-              "quote": "固定流程、模型动态规划和混合方案使用同一任务与口径比较。没有统计基线之前，不承诺“耗时从 90 秒降到 40 秒”之类的结果；有数据后才设阶段目标，并同时注明样本、环境和风险指标。"
-            },
-            {
-              "sourceId": "blog-873215a5db96ccec-194",
-              "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf",
-              "quote": "评测中的越权用例必须阻断；有限测试零漏拦不等于实际环境绝对安全。"
-            },
-            {
-              "sourceId": "blog-d822d522839c3354-368",
-              "sha256": "e4033f11382e285e5ff1b4094dfa69c872a27bffb024e99e7bb4d79f0b64f453",
-              "quote": "10 学习 Eval 体系：成功率、任务完成率、轨迹质量 为自己的 Agent 设计 10-20 个测试用例，建立自动化评估 Eval 数据集 + 评估脚本"
-            },
-            {
-              "sourceId": "blog-873215a5db96ccec-111",
-              "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf",
+              "sourceId": "blog-873215a5db96ccec-150",
+              "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4",
               "quote": "工作中的经验可以帮助形成判断，但内部代码、运行数据和客户案例不能自动变成公开作品；无法获得公开授权的部分，用独立实现与合成场景表达，并注明验证范围。"
+            },
+            {
+              "sourceId": "blog-873215a5db96ccec-193",
+              "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4",
+              "quote": "选择已经在真实使用中有效的方法，扩展到第二个任务场景或由另一位工程师独立使用，检验业务判断是否仍成立、接入与维护成本是否可承受。"
             }
           ]
         }
       ],
-      "review": "model-reviewed"
+      "review": "codex-reviewed"
     },
     {
       "id": "22681b04c89e311f",
@@ -4220,138 +4143,111 @@
     },
     {
       "id": "2d6973dcc1d3656e",
-      "key": "1e920e447ec062069804576f376ee6e5ccb70ec3927d5eea8616c71058bddab2",
+      "key": "f0a2d35a7a347e577530c28486c1f4ac6d33d8180fb6ee9493d4aa17d66bc042",
       "title": "Product Engineering",
       "type": "topic",
       "dependencies": [
         {
           "id": "blog-873215a5db96ccec-1",
-          "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf"
+          "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4"
         },
         {
-          "id": "blog-873215a5db96ccec-111",
-          "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf"
+          "id": "blog-873215a5db96ccec-112",
+          "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4"
         },
         {
-          "id": "blog-873215a5db96ccec-157",
-          "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf"
+          "id": "blog-873215a5db96ccec-150",
+          "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4"
         },
         {
-          "id": "blog-873215a5db96ccec-194",
-          "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf"
+          "id": "blog-873215a5db96ccec-193",
+          "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4"
         },
         {
-          "id": "blog-873215a5db96ccec-33",
-          "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf"
+          "id": "blog-873215a5db96ccec-224",
+          "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4"
         },
         {
-          "id": "blog-873215a5db96ccec-73",
-          "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf"
+          "id": "blog-873215a5db96ccec-29",
+          "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4"
+        },
+        {
+          "id": "blog-873215a5db96ccec-72",
+          "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4"
         },
         {
           "id": "blog-e9bdf2152ef8e1d3-1",
-          "sha256": "337e4c9be251b797f9550acfc42c779511a576a1b025ec4af31f5aba78065f77"
+          "sha256": "114df80f180edfaac96eca34428f42c1bead351628de04e438725459b0a9f7ac"
         },
         {
           "id": "blog-e9bdf2152ef8e1d3-165",
-          "sha256": "337e4c9be251b797f9550acfc42c779511a576a1b025ec4af31f5aba78065f77"
+          "sha256": "114df80f180edfaac96eca34428f42c1bead351628de04e438725459b0a9f7ac"
         },
         {
-          "id": "blog-e9bdf2152ef8e1d3-41",
-          "sha256": "337e4c9be251b797f9550acfc42c779511a576a1b025ec4af31f5aba78065f77"
+          "id": "blog-e9bdf2152ef8e1d3-40",
+          "sha256": "114df80f180edfaac96eca34428f42c1bead351628de04e438725459b0a9f7ac"
         },
         {
           "id": "blog-e9bdf2152ef8e1d3-99",
-          "sha256": "337e4c9be251b797f9550acfc42c779511a576a1b025ec4af31f5aba78065f77"
+          "sha256": "114df80f180edfaac96eca34428f42c1bead351628de04e438725459b0a9f7ac"
         }
       ],
       "coverage": {
         "totalSources": 2,
         "sampledSources": 2,
-        "totalEntries": 10,
-        "sampledEntries": 10,
+        "totalEntries": 11,
+        "sampledEntries": 11,
         "complete": true
       },
       "paragraphs": [
         {
-          "id": "2f4be28754960e72",
+          "id": "358b5bf47598be33",
           "kind": "synthesis",
-          "text": "职业规划文章把职业身份、技术判断与实践成果明确拆成三件事：身份是“想成为谁”，技术判断是“选择研究什么”，实践成果是“用什么证明判断与能力”，并强调三者相关但不能互相替代。其身份定位为 AI Systems & Product Engineering 的 IC 专家路径，Staff 被表述为希望承担的问题范围而非当前头衔。",
+          "text": "公开规划把产品工程建立在业务流程与采用证据上：理解使用、付费、审批与履约角色，比较现有办法及不处理的代价，再为一类用户选择完整任务。必要功能应由问题代价、证据、运营成本和机会成本决定；功能数量、模型调用量与演示效果不足以证明持续价值。这些是作者准备补强的能力与判断标准。",
           "attribution": "model-synthesis",
           "evidence": [
             {
-              "sourceId": "blog-873215a5db96ccec-33",
-              "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf",
-              "quote": "这篇文章是一次阶段性自我校准。我会明确区分三个容易混淆的东西：职业身份是我想成为谁，技术判断是我选择研究什么，实践成果是我用什么证明判断与能力。三者相关，但不能互相替代。"
+              "sourceId": "blog-873215a5db96ccec-29",
+              "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4",
+              "quote": "需要沿一笔交易或一次服务，理解谁使用、谁付费、谁审批、谁履约，收入从哪里来，成本消耗在哪里，哪些错误会产生赔付、客户流失或合规风险。用户提出的功能，也要与现有人工处理、已有工具和暂不处理的代价比较。"
             },
             {
-              "sourceId": "blog-873215a5db96ccec-33",
-              "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf",
-              "quote": "Staff 是未来希望承担的问题范围，而不是今天已经拥有的头衔。我更倾向于 Individual Contributor（IC）的专家路径：可以影响技术战略、协调复杂工作，却不以正式带团队和人员管理作为身份的必要条件。"
+              "sourceId": "blog-873215a5db96ccec-72",
+              "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4",
+              "quote": "先选一类用户和一个完整任务，明确触发时机、现有替代方式、首次获得价值的路径和失败后的恢复，再决定必要功能。优先级应依据问题代价、证据、实现与运营成本，以及占用资源后放弃了什么。"
+            },
+            {
+              "sourceId": "blog-873215a5db96ccec-72",
+              "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4",
+              "quote": "产品价值要通过实际采用检验：用户是否完成任务、是否愿意再次使用，结果能否接入原有流程，付费者或内部发起者是否认为值得持续投入。模型调用量、演示效果和功能数量只能解释部分过程。"
             }
           ]
         },
         {
-          "id": "1f3e99e0ebad3568",
+          "id": "e8122b2928495184",
           "kind": "synthesis",
-          "text": "在技术研究上，文章把 Agentic Computing 定位为待验证的 Technology Thesis，而非已证实的行业结论。其核心架构取舍是：任务分解、工具选择与协作方式可由模型按任务生成，但权限、预算、审批与审计须由独立于模型决策的治理机制约束；模型不能修改自身权限，也不能在被拒后换工具、拆金额或委派其他 Agent 绕过同一限制。",
+          "text": "稳定交付在该规划中包括范围、依赖、工期、验收、异常恢复和上线支持。完整成本以被验收结果为单位，保留失败、重试、审核、接管和返工；节省时间先体现为处理能力，能否形成费用下降或新增收入另需证据。第一阶段先比较当前办法、流程简化和确定性程序，模型确有必要时才进行策略对照。",
           "attribution": "model-synthesis",
           "evidence": [
             {
-              "sourceId": "blog-873215a5db96ccec-73",
-              "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf",
-              "quote": "这不是已经被证实的行业结论，而是值得持续验证的 Technology Thesis（技术战略判断）。"
+              "sourceId": "blog-873215a5db96ccec-72",
+              "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4",
+              "quote": "承诺前讲清范围、依赖、工期与验收；实施中暴露进度和风险；上线前验证正常流程与异常恢复；上线后有人支持、观察使用并修正问题。"
             },
             {
-              "sourceId": "blog-873215a5db96ccec-73",
-              "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf",
-              "quote": "我准备明确区分两类职责：执行策略可以由模型调整；权限、预算、审批和审计由独立于模型决策的治理机制约束。“独立”首先是信任与职责边界，可以先在现有运行时里实现，不意味着新建一套控制平台。"
+              "sourceId": "blog-873215a5db96ccec-72",
+              "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4",
+              "quote": "一次被验收的任务，需要计入失败尝试、重试、模型与工具调用、人工审核、接管、返工和后续支持。节省工时首先意味着释放处理能力，是否进一步形成成本减少或收入增加，还需要业务证据。"
             },
             {
-              "sourceId": "blog-873215a5db96ccec-73",
-              "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf",
-              "quote": "模型不能修改自己的权限，也不能在调用被拒后换工具、拆金额或委派给另一个 Agent 绕过同一限制。"
-            }
-          ]
-        },
-        {
-          "id": "71edd13d96f3298d",
-          "kind": "synthesis",
-          "text": "审批机制按风险与授权范围触发，而非机械插入每一步：已有权限内、非敏感的只读分析可自动进行；写生产、动钱、对外发送和访问敏感数据则依影响范围、可逆性、数据等级与既有授权判断是否升级，且只读查询也可能导出敏感信息，不能直接等同低风险。文中“超过 500 元退款须人工审批”的示例被明确标注为说明边界的假设，不是已实施的业务机制。",
-          "attribution": "model-synthesis",
-          "evidence": [
-            {
-              "sourceId": "blog-873215a5db96ccec-73",
-              "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf",
-              "quote": "审批不应机械地插入每一步。已有权限范围内、非敏感的只读分析可以自动进行；写生产、动钱、对外发送和访问敏感数据，应根据影响范围、可逆性、数据等级与既有授权判断是否升级。只读查询也可能导出敏感信息，不能直接等同于低风险。"
-            },
-            {
-              "sourceId": "blog-873215a5db96ccec-73",
-              "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf",
-              "quote": "这是说明边界的假设示例，不是本人已经实施的业务机制。"
-            }
-          ]
-        },
-        {
-          "id": "cf4985f3b2589bdc",
-          "kind": "open-question",
-          "text": "现有资料下可继续探讨：职业规划中的三阶段验收依赖真实用户反馈与生产授权，但文章同时说明拿不到真实生产授权时可用隔离试点替代并明确其不能证明生产验收；隔离试点与生产验收之间的证据差距应如何界定，以及跨端能力“一个端通过不代表跨端完成”的判定标准如何量化，均未在材料中给出具体口径。",
-          "attribution": "model-synthesis",
-          "evidence": [
-            {
-              "sourceId": "blog-873215a5db96ccec-157",
-              "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf",
-              "quote": "若拿不到真实生产授权，就用隔离试点验证，并明确它不能证明生产验收。"
-            },
-            {
-              "sourceId": "blog-873215a5db96ccec-157",
-              "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf",
-              "quote": "能力覆盖 Browser、Android、iPhone、Computer 四类环境的边界设计，实测从当前有设备与授权的一端开始；一个端通过不代表跨端能力完成。"
+              "sourceId": "blog-873215a5db96ccec-193",
+              "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4",
+              "quote": "先比较当前处理方式、流程简化、确定性程序以及模型或混合方案，以被验收结果、P50/P95 耗时、完整成本和人工介入判断取舍。有必要采用模型时，再开展固定流程与模型生成策略的对照。"
             }
           ]
         }
       ],
-      "review": "model-reviewed"
+      "review": "codex-reviewed"
     },
     {
       "id": "2e448920548f2fdb",
@@ -11220,33 +11116,37 @@
     },
     {
       "id": "8fda24e0c32ffa22",
-      "key": "5cfce01103e17ab7dd6f0137e3bd6420552eff2357c733c63697811b274f14e1",
+      "key": "c7a11822da1faaa5cd54646e6db4814ac59ce4ef31d5bac16460ed685adcf89e",
       "title": "Agent Runtime",
       "type": "topic",
       "dependencies": [
         {
           "id": "blog-873215a5db96ccec-1",
-          "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf"
+          "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4"
         },
         {
-          "id": "blog-873215a5db96ccec-111",
-          "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf"
+          "id": "blog-873215a5db96ccec-112",
+          "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4"
         },
         {
-          "id": "blog-873215a5db96ccec-157",
-          "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf"
+          "id": "blog-873215a5db96ccec-150",
+          "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4"
         },
         {
-          "id": "blog-873215a5db96ccec-194",
-          "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf"
+          "id": "blog-873215a5db96ccec-193",
+          "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4"
         },
         {
-          "id": "blog-873215a5db96ccec-33",
-          "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf"
+          "id": "blog-873215a5db96ccec-224",
+          "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4"
         },
         {
-          "id": "blog-873215a5db96ccec-73",
-          "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf"
+          "id": "blog-873215a5db96ccec-29",
+          "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4"
+        },
+        {
+          "id": "blog-873215a5db96ccec-72",
+          "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4"
         },
         {
           "id": "blog-bdd2819886ea40ab-1",
@@ -11288,92 +11188,87 @@
       "coverage": {
         "totalSources": 2,
         "sampledSources": 2,
-        "totalEntries": 15,
-        "sampledEntries": 15,
+        "totalEntries": 16,
+        "sampledEntries": 16,
         "complete": true
       },
       "paragraphs": [
         {
-          "id": "c387335dd8d349e3",
-          "kind": "synthesis",
-          "text": "在架构取舍上，Runtime/Harness 文章主张先固定领域对象和稳定协议，而不是先选框架或做图编辑器：内部 runId 作为事实主键，Provider Session ID 只作外部引用；Tool 调用必须绑定 runId、stepId、权限、幂等键和调用前后状态；Run State 属于系统而非进程。其最小落地路径是先做薄 Harness，再按“可定位、控副作用、进程级恢复、证据验收、评测驱动”五阶段推进，并明确 React Flow 只在用户确实需要编辑确定性流程时引入。",
+          "id": "9fbd658032b1604d",
+          "kind": "comparison",
+          "text": "职业规划与 Runtime 方案都要求把模型可调整的执行策略同受控动作分开。规划强调权限、预算、审批和审计的独立职责，以及拒绝后不能换路径绕过；Runtime 文章则将操作收口为带权限、幂等键、状态快照及恢复策略的 Tool 契约。前者是能力建设计划，后者是参考方案，二者都不能直接证明生产控制已通过验收。",
           "attribution": "model-synthesis",
           "evidence": [
             {
-              "sourceId": "blog-bdd2819886ea40ab-104",
-              "sha256": "c089f12a54dbe88861fcbce300609f1656734f7058b22bef4025af5ea997d8d5",
-              "quote": "内部 runId 是事实主键，Provider Session ID 只是 ExternalRunRef。"
+              "sourceId": "blog-873215a5db96ccec-112",
+              "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4",
+              "quote": "我准备明确区分两类职责：执行策略可以由模型调整；权限、预算、审批和审计由独立于模型决策的治理机制约束。"
+            },
+            {
+              "sourceId": "blog-873215a5db96ccec-112",
+              "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4",
+              "quote": "模型不能修改自己的权限，也不能在调用被拒后换工具、拆金额或委派给另一个 Agent 绕过同一限制。"
             },
             {
               "sourceId": "blog-bdd2819886ea40ab-159",
               "sha256": "c089f12a54dbe88861fcbce300609f1656734f7058b22bef4025af5ea997d8d5",
-              "quote": "重试只能作用于已声明幂等的边界。否则“失败后自动重试”可能变成重复扣款、重复发信或重复发布。"
-            },
-            {
-              "sourceId": "blog-bdd2819886ea40ab-365",
-              "sha256": "c089f12a54dbe88861fcbce300609f1656734f7058b22bef4025af5ea997d8d5",
-              "quote": "自有 Thin Harness + 一个 Agent Runtime / SDK + 持久化数据库 + 统一 Tool Gateway + OpenTelemetry / Provider Trace + 任务级 Eval Suite"
-            },
-            {
-              "sourceId": "blog-bdd2819886ea40ab-40",
-              "sha256": "c089f12a54dbe88861fcbce300609f1656734f7058b22bef4025af5ea997d8d5",
-              "quote": "如果当前目标是让 Agent 可靠执行，先做 React Flow 往往会把注意力带到节点拖拽、连线和表单配置上，最难的恢复与验收仍然没有答案。"
+              "quote": "每次调用至少要绑定： - runId 和 stepId； - 调用者与 Workspace； - 输入 Schema 和输出 Schema； - 风险级别与所需 Permission； - idempotencyKey； - 超时、重试和补偿策略； - 调用前后的权威状态快照； - 产生的 Artifact 与 Evidence。"
             }
           ]
         },
         {
-          "id": "796d9e970f006ff3",
+          "id": "d0ecb32c23844b69",
           "kind": "comparison",
-          "text": "两篇材料对“完成”与“证据”的处理可以互相印证：Runtime/Harness 文章把 Agent 自述“已完成”降为 Claim，要求回到权威系统重新读取状态，并用 Claim Verifier 生成最小 Evidence Bundle；职业规划文章则把“模型自述‘已经完成’只能是待核验证据”写入阶段验收，并要求越权用例必须阻断。差异在于前者给出 Trace、Evidence、Eval 的区分和四层评测指标，后者把同一原则转化为季度复盘与阶段交付的检查维度。",
+          "text": "两份文章也区分完成声明与业务结果。Runtime 方案要求退款证据回到支付系统状态和交易号，恢复时先检查副作用是否已经生效，再决定复用结果或幂等重试；规划要求受控代码执行验收与授权检查，单端成功不能证明跨端能力。验证、恢复和跨环境覆盖应分别记录，不能以模型自述替代。",
           "attribution": "model-synthesis",
           "evidence": [
             {
-              "sourceId": "blog-bdd2819886ea40ab-159",
-              "sha256": "c089f12a54dbe88861fcbce300609f1656734f7058b22bef4025af5ea997d8d5",
-              "quote": "“任务已完成”只是一条 Claim，不是事实。 真正的验证应该回到权威系统重新读取状态。"
-            },
-            {
-              "sourceId": "blog-bdd2819886ea40ab-237",
-              "sha256": "c089f12a54dbe88861fcbce300609f1656734f7058b22bef4025af5ea997d8d5",
-              "quote": "Evidence 是从 Trace、Artifact 和权威状态中挑出的、足以支撑 Claim 的最小集合。"
-            },
-            {
-              "sourceId": "blog-873215a5db96ccec-157",
-              "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf",
+              "sourceId": "blog-873215a5db96ccec-193",
+              "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4",
               "quote": "验收器和工具授权由受控代码执行，模型自述“已经完成”只能是待核验证据。"
             },
             {
-              "sourceId": "blog-873215a5db96ccec-194",
-              "sha256": "d30aa4ba744af199d10f0b2f14abee4fd1a7fa9c90dee5123046eaa101a155cf",
-              "quote": "评测中的越权用例必须阻断；有限测试零漏拦不等于实际环境绝对安全。"
+              "sourceId": "blog-873215a5db96ccec-193",
+              "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4",
+              "quote": "能力覆盖 Browser、Android、iPhone、Computer 四类环境的边界设计，实测从当前有设备与授权的一端开始；一个端通过不代表跨端能力完成。"
+            },
+            {
+              "sourceId": "blog-bdd2819886ea40ab-159",
+              "sha256": "c089f12a54dbe88861fcbce300609f1656734f7058b22bef4025af5ea997d8d5",
+              "quote": "如果是退款 Agent，Evidence 应来自支付系统的退款状态与交易号；如果是发布 Agent，Evidence 应来自构建产物、Deployment ID 和线上健康检查，而不是 Tool 返回的“请求已提交”。"
+            },
+            {
+              "sourceId": "blog-bdd2819886ea40ab-237",
+              "sha256": "c089f12a54dbe88861fcbce300609f1656734f7058b22bef4025af5ea997d8d5",
+              "quote": "读取 Checkpoint ↓ 校验 Contract Version 与 Workspace Revision ↓ 检查上一个 Side Effect 是否已经生效 ↓ 用 Idempotency Key 决定复用结果还是重试 ↓ 恢复 Agent / Provider State ↓ 继续下一步并写入新 Checkpoint"
             }
           ]
         },
         {
-          "id": "e492ea92de00264b",
+          "id": "d9688cd2e61873c6",
           "kind": "synthesis",
-          "text": "恢复能力被 Runtime/Harness 文章明确分为 L0 到 L4，并建议多数生产系统先做到 L3，即 Checkpoint、幂等 Tool 与 Workspace Snapshot 的组合，而不必一开始追求跨 Runtime/Provider 迁移。文章同时区分 Memory、State、Trace、Evidence 与 Eval，指出聊天记录不是完整 State，Trace 不自动构成 Evidence；长周期跨服务场景可把 Agent Framework 与 Temporal 组合，由后者承担 Durable Execution。",
+          "text": "V2.2 将 Runtime 研究放回产品取舍中：先比较当前流程与更简单的实现，仅在有必要时引入模型；成本计算包含失败、重试和人工支持。规则变更按真实需求发生，无需求时用隔离演练检查回退；没有持续采用证据时不宣称已经证明产品价值。由此不能把规划理解成必须新增平台、上线模型或制造生产变更的要求。",
           "attribution": "model-synthesis",
           "evidence": [
             {
-              "sourceId": "blog-bdd2819886ea40ab-237",
-              "sha256": "c089f12a54dbe88861fcbce300609f1656734f7058b22bef4025af5ea997d8d5",
-              "quote": "大多数生产系统应该先做到 L3，不必一开始追求 L4。"
+              "sourceId": "blog-873215a5db96ccec-193",
+              "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4",
+              "quote": "有必要采用模型时，再开展固定流程与模型生成策略的对照。费用分母采用被验收结果，分子保留失败、重试、审核、返工及支持的实际消耗。"
             },
             {
-              "sourceId": "blog-bdd2819886ea40ab-104",
-              "sha256": "c089f12a54dbe88861fcbce300609f1656734f7058b22bef4025af5ea997d8d5",
-              "quote": "聊天记录可以参与恢复，但它不是完整 State；Trace 可以帮助调查，但它不自动构成 Evidence；Evidence 能证明一次交付，却不能替代跨版本的 Eval。"
+              "sourceId": "blog-873215a5db96ccec-193",
+              "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4",
+              "quote": "有实际规则变更需求时，保留对应的评审、测试、批准、灰度与回退材料；没有变更需求时，在隔离环境演练回退能力并注明范围。"
             },
             {
-              "sourceId": "blog-bdd2819886ea40ab-237",
-              "sha256": "c089f12a54dbe88861fcbce300609f1656734f7058b22bef4025af5ea997d8d5",
-              "quote": "Agent Framework 负责模型循环和 Tool 选择，Temporal 负责 Durable Execution、Timer、Retry 与跨服务状态。"
+              "sourceId": "blog-873215a5db96ccec-193",
+              "sha256": "438803e91ce80f500d32f48df5cabf4c81a2dc469ba85aaeca4ea33dd52538f4",
+              "quote": "若拿不到真实生产授权，就用隔离试点验证，并明确它不能证明生产验收；没有持续采用证据时，也不宣称已经证明产品价值。"
             }
           ]
         }
       ],
-      "review": "model-reviewed"
+      "review": "codex-reviewed"
     },
     {
       "id": "9787ac6463d27f54",
@@ -16802,6 +16697,17 @@
         "agent-browser",
         "Browser Agent"
       ]
+    },
+    "careerV22Review": {
+      "articleId": "873215a5db96ccec",
+      "reviewedAt": "2026-11-05T05:22:39.750Z",
+      "by": "Codex",
+      "pages": [
+        "职业规划",
+        "Product Engineering",
+        "Agent Runtime"
+      ],
+      "note": "Rewrote the affected pages from this site’s current original passages; preserved all unrelated pages and suggestion questions. Plan dependencies, keys and exact quotes were validated locally; no model API was called."
     }
   }
 }
