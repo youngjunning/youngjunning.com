@@ -2,6 +2,28 @@
   "version": 2,
   "records": [
     {
+      "id": "09715bd1405fd784",
+      "kind": "judgment",
+      "title": "TaleFrame 面向16岁及以上读者",
+      "date": "2026-11-05",
+      "recordedAt": "2026-11-05",
+      "text": "我将 TaleFrame 的目标读者设为16岁及以上，包含16—17岁读者。",
+      "context": "在确定 TaleFrame 国际发行受众时作出的产品范围选择；不代表已取得官方内容分级或完成各市场的未成年人保护验收。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人2026-11-05陈述的公开摘要：TaleFrame目标年龄为16岁及以上。"
+        }
+      ],
+      "basis": "本人明确指定年龄范围，未说明进一步理由。",
+      "alternatives": [],
+      "outcome": null
+    },
+    {
       "id": "e7b42d9c106fa835",
       "kind": "judgment",
       "title": "以行业生意理解与稳定交付建立竞争力",
