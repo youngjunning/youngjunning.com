@@ -2,6 +2,33 @@
   "version": 1,
   "favorites": [
     {
+      "id": "6346c52b801999ed",
+      "kind": "card",
+      "title": "Qwen3-VL-Plus 视觉定位框的千分坐标",
+      "url": null,
+      "summary": "Qwen3-VL 系列的二维定位框采用归一化到 [0, 999] 的相对坐标；绘制到原图时，横纵坐标分别除以 1000，再乘图像宽高。",
+      "reason": "回看 Qwen3-VL-Plus 与采用 0–1 比例坐标的其他视觉定位接口之间的坐标尺度差异，避免点击点换算错误。",
+      "tags": ["Qwen3-VL-Plus", "视觉 Grounding", "边界框", "坐标映射"],
+      "savedAt": "2026-11-05T19:58+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        { "label": "AI 辅助资料整理；阿里云百炼 qwen3-vl-plus 模型信息，2026-11-05 核对：https://help.aliyun.com/zh/model-studio/qwen3-vl-plus" },
+        { "label": "阿里云百炼视觉理解文档‘模型输出物体定位的结果后，如何将检测框绘制到原图上？’，2026-11-05 核对：https://help.aliyun.com/zh/model-studio/vision" }
+      ],
+      "card": {
+        "date": "2026-11-05",
+        "recordedAt": "2026-11-05",
+        "context": "AI 辅助资料整理；源于对 Qwen3-VL-Plus 视觉 Grounding 框是否为 0–1 坐标的追问，不表示本人已测试该模型的实际定位精度。",
+        "understanding": "阿里云将 qwen3-vl-plus 列为 Qwen3 系列视觉模型；其视觉理解文档说明 Qwen3-VL 系列定位结果是归一化到 [0, 999] 的相对坐标。若结果为 [x1, y1, x2, y2]，绘制到原图时横坐标按 x/1000×图像宽度、纵坐标按 y/1000×图像高度换算。",
+        "example": "假设图像为 400×400 像素，模型返回 [200, 400, 800, 600]，按千分坐标换算为像素框 (80, 160) 到 (320, 240)。这是算术示例，不代表模型曾返回该框。",
+        "distinction": "这是千分尺度的相对坐标，不是直接位于 0–1 的小数，也不是原图像素坐标。模型输出是文本，具体响应仍应校验字段、坐标范围与顺序；若提示词另行规定输出尺度，应以实际约定和响应为准。"
+      }
+    },
+    {
       "id": "6b91e4c2a73f508d",
       "kind": "card",
       "title": "界面控件的 bounds：位置与尺寸",
