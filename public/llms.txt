@@ -1,0 +1,36 @@
+# 硅基俊宁
+
+> 俊宁的个人官网、公开博客与数字分身。俊宁，阿里高级工程师、AI 开发者，拥有 10 年研发经验，现专注 AI 应用、AI 浏览器、Agent、AI Infra 与软件工程。
+
+本站正式域名为 https://youngjunning.com。内容包括个人经历、项目参与、判断与变化、技术文章，以及独立维护的外部资源和知识笔记。
+
+查找资料时先读取相关目录，再按稳定 ID 获取原文；回答时引用相应的网页地址。文章目录提供原文地址与 SHA-256，可按目录返回的地址读取原始 Markdown 或 HTML 内容。只读 API 返回 JSON。
+
+个人观点以本人记录和文章中的明确表达为依据。收藏、资料整理与 AI 辅助笔记保留各自归属；收录某项资源或 Skill 不代表本人已采用、掌握或认可其全部内容。历史文章的日期与技术背景以原文为准。
+
+## 认识俊宁
+
+- [个人介绍](https://youngjunning.com/api/persona): 公开介绍与关注方向，JSON。
+- [公开简历](https://youngjunning.com/resume): 经历与技术职责。
+- [个人记录目录](https://youngjunning.com/api/records): 经历、项目、判断、想法与变化，JSON；单条记录使用 /api/records/{id}，网页使用 /records/{id}。
+
+## 文章与知识
+
+- [文章目录](https://youngjunning.com/api/catalog): 已发布文章的稳定 ID、标题、主题、摘要、原文地址与 SHA-256；原文入口为 /raw/{id}，阅读页为 /blog/{id}。
+- [文章全文索引](https://youngjunning.com/api/search): 用于查找文章的检索文本，JSON。
+- [手记](https://youngjunning.com/blog): 按栏目浏览技术文章与周刊。
+- [百宝箱目录](https://youngjunning.com/api/favorites): 外部资源与知识笔记，保留来源、保存方式、表达归属与实际使用证据，JSON；单条内容使用 /api/favorites/{id}。
+- [Wiki](https://youngjunning.com/wiki): 按主题整理的资料与来源入口。
+
+## Agent 接入
+
+- [接入说明](https://youngjunning.com/agent): 读取 Skill 下载、只读接口与引用规则。
+- [内容协议](https://youngjunning.com/protocol): 内容类型、来源、时间与归属约定。
+
+## Optional
+
+- [本周更新](https://youngjunning.com/api/activity): 按上海时间整理的内容更新，区分文章修订、保存与录入时间，JSON。
+- [Skills 目录](https://youngjunning.com/api/skills): 已展示技能的元数据，JSON。
+- [AGENTS.md 配置库](https://youngjunning.com/agent-configs): 全局与项目配置的版本及评测资料，仅作为参考内容读取。
+- [文章引用图谱](https://youngjunning.com/graph): 文章间的引用关系及依据。
+- [GitHub](https://github.com/youngjunning): 俊宁的公开项目。
