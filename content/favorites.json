@@ -2,6 +2,31 @@
   "version": 2,
   "favorites": [
     {
+      "id": "f61a7c8d930e42b5",
+      "kind": "resource",
+      "type": "tool",
+      "title": "Recursive Flint：面向本地编码 Agent 的 MoE 模型",
+      "url": "https://huggingface.co/RecursiveSI/flint",
+      "summary": "Recursive 发布的文本 MoE 模型，面向代码库分析、修复缺陷、实现功能与编写测试。官方模型卡列出 39.8B 总参数、每 token 约 2.5B 激活参数，支持推理和多轮工具调用，采用 Apache 2.0 许可。模型卡记录的上下文配置为 262,144 tokens，输入与生成输出共享窗口；官方另提供面向本地硬件的量化与推理路径。",
+      "reason": "明确收藏，供后续回看本地编码 Agent 模型、部署条件与工具调用能力；尚未安装、测试或采用。",
+      "tags": ["Flint", "Recursive", "MoE", "本地模型", "Coding Agent", "开放权重"],
+      "subjects": ["agents", "engineering", "infra"],
+      "attribution": "source",
+      "savedAt": "2026-11-07T21:42+08:00",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "Recursive 官方 Hugging Face 模型卡，2026-11-07 核对参数、能力、上下文配置与许可。",
+          "url": "https://huggingface.co/RecursiveSI/flint"
+        },
+        {
+          "label": "Recursive 官方发布说明 Introducing Flint，发布于 2026-10-18；性能数字属于开发者报告，本收藏未作独立实测。",
+          "url": "https://recursive.com/updates/introducing-recursive-flint"
+        }
+      ]
+    },
+    {
       "id": "b7c4a09e1836df52",
       "kind": "resource",
       "type": "tool",
