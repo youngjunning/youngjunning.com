@@ -2,6 +2,25 @@
   "version": 1,
   "favorites": [
     {
+      "id": "a9e4f61d7c2038b5",
+      "kind": "project",
+      "title": "statechart-art：奶茶店业务的手绘状态图",
+      "url": "https://github.com/kevintngo/statechart-art",
+      "summary": "以奶茶店业务为主题的四幅手绘风格状态图。项目 README 展示了从 TLA+ 模型、TLC 检查、Mermaid 状态图到 pele 布局和代码绘图的流程，涵盖分支与循环、父状态、并行区域及违反规则的路径。",
+      "reason": "本人明确要求收藏，留作状态图表达与形式化模型可视化的回看资料；尚未验证本地运行效果。",
+      "tags": ["状态图", "TLA+", "形式化验证", "可视化", "Mermaid"],
+      "savedAt": "2026-11-07T09:05+08:00",
+      "selection": "explicit",
+      "visibility": "shared",
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        { "label": "项目官方 README，2026-11-07 核验：https://github.com/kevintngo/statechart-art/blob/main/README.md" },
+        { "label": "本人明确收藏，2026-11-07，公开摘要。" }
+      ]
+    },
+    {
       "id": "6346c52b801999ed",
       "kind": "card",
       "title": "Qwen3-VL-Plus 视觉定位框的千分坐标",
