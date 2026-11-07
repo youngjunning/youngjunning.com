@@ -4,20 +4,20 @@
     {
       "id": "43be17a9c60d825f",
       "kind": "change",
-      "title": "Joyally Design 移除青山湖属性并统一图表配色",
+      "title": "Joyally Design 移除景区专名，保留湖色与景观要求",
       "date": "2026-11-07",
       "recordedAt": "2026-11-07",
-      "text": "在 Joyally Design 的维护中，我进一步要求移除青山湖属性，并让内置 Archify 的各种配色适配 Joyally Design 的体系风格。此前我强调 Joyally Design 不应局限于青山湖；这次明确了技能本身应移除这项属性。",
-      "context": "这是对 Joyally Design Skill 及其图表层的设计定位要求，不表示所有历史产品、文章或已复制的主题都要同时迁移。",
+      "text": "在 Joyally Design 的维护中，我要求让内置 Archify 的各种配色适配体系风格，并移除“青山湖”这个名字。我随后明确澄清：只移除名字，湖色命名和景观要求都应保留。",
+      "context": "这是对同一设计要求的范围澄清。此前记录把移除名字扩大为移除视觉属性，现予以纠正；不是本人撤回湖色或景观方向。",
       "visibility": "shared",
       "articleId": null,
       "projectId": null,
       "relatedIds": ["9b8569ce4568c02c"],
       "subjectId": "9b8569ce4568c02c",
       "before": "Joyally Design 不应局限于青山湖，青山湖仍可作为一种视觉方向。",
-      "after": "移除 Joyally Design 的青山湖属性，Archify 配色适配统一体系风格。",
-      "reason": "本人明确提出此次调整，未进一步说明原因。",
-      "sources": [{"kind": "statement", "label": "本人陈述，2026-11-07，公开摘要：Joyally Design 内置 Archify 的各种配色应适配体系风格，并去掉青山湖属性。"}]
+      "after": "移除“青山湖”专名，保留湖色命名和景观要求；Archify 配色适配体系风格。",
+      "reason": "本人明确澄清只移除名字，未进一步说明原因。",
+      "sources": [{"kind": "statement", "label": "本人陈述及澄清，2026-11-07，公开摘要：Archify 配色适配体系风格；只是移除青山湖名字，不是移除湖色命名和景观要求。"}]
     },
     {
       "id": "b29ac8375e4106fd",
