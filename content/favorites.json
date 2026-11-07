@@ -26,10 +26,10 @@
       "title": "Impeccable：面向编码 Agent 的设计指导",
       "url": "https://github.com/pbakaus/impeccable",
       "summary": "提供设计评审、技术审计、界面精修、排版与响应式适配等指导。上游还包含 CLI、检测器和工具集成；可按需参考其设计方法。",
-      "reason": "本轮作为 Joyally Design 设计质量工作流的参考来源，便于回看原始方法及后续变化；具体融合方式由 Agent 决定。",
+      "reason": "本人明确要求双站收藏，便于回看设计评审、精修与适配方法；Joyally Design 已参考其中的设计指导。",
       "tags": ["设计系统", "Agent Skills", "界面设计"],
       "savedAt": "2026-11-07T15:45+08:00",
-      "selection": "discovered",
+      "selection": "explicit",
       "visibility": "shared",
       "priority": "reference",
       "adoption": "adopted",
@@ -40,7 +40,7 @@
         "purpose": "将选定设计方法融入现有工作流，保留跨平台与品牌约束。",
         "evidence": "本轮源码已加入改编指导和来源记录；仅采用指导文本，未接入上游 CLI、hooks 或检测器，尚未验证真实界面任务效果。"
       }],
-      "sources": [{"label": "上游官方仓库及 skill/reference 指导，固定提交 687bc381bc9091bf252c0a05303640561014a425：https://github.com/pbakaus/impeccable/tree/687bc381bc9091bf252c0a05303640561014a425"}]
+      "sources": [{"label": "上游官方仓库及 skill/reference 指导，固定提交 687bc381bc9091bf252c0a05303640561014a425：https://github.com/pbakaus/impeccable/tree/687bc381bc9091bf252c0a05303640561014a425"}, {"label": "本人明确要求双站收藏，2026-11-07，公开摘要。"}]
     },
     {
       "id": "a9e4f61d7c2038b5",
