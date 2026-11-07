@@ -1,0 +1,13 @@
+/* Lucian UX/UI Prompt #292 · MIT License (c) 2026 Seokwoooo · https://lucianlabs.dev/uxui-prompt/#292 */
+.u292{position:relative;display:flex;flex-direction:column;background:var(--ux-surface);box-shadow:0 0 0 1px var(--ux-line)}
+.u292-f{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:32px;padding:0 12px;border:0;border-radius:999px;background:var(--ux-surface-2);font-size:12.5px;font-weight:750;color:var(--ux-ink-2);text-decoration:none;transition:background-color .25s,color .25s;max-width:100%;overflow-wrap:anywhere}
+.u292-f:hover{background:color-mix(in srgb,var(--ux-ink) 10%,var(--ux-surface-2));color:var(--ux-ink)}
+.u292-f:focus-visible{outline:2px solid var(--ux-accent);outline-offset:3px}
+.article-tags{width:100%;height:auto;flex-direction:row;flex-wrap:wrap;gap:5px;background:transparent;box-shadow:none;margin-top:12px}
+.article-tags .u292-f{font-size:11px;min-height:26px;padding:3px 9px;font-weight:600}
+.document-card>.article-tags{z-index:2}
+.reader>.article-tags{margin:0 0 28px}
+.reader>.article-tags .u292-f{font-size:12.5px;min-height:32px;padding:0 12px}
+.unified-document-filters .article-filter-status{display:flex;align-items:center;gap:12px;flex-wrap:wrap;min-height:24px}
+@media(max-width:600px){.unified-document-filters .article-filter-status{max-width:none;text-align:left}}
+@media(prefers-reduced-motion:reduce){.u292-f{transition:none}}

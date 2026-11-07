@@ -1,0 +1,60 @@
+/* Lucian #271 filter and timeline adapted for short personal records. */
+.personal-record-feed.u271{width:100%;height:auto;min-height:0;overflow:visible;border-radius:16px;background:var(--style-surface);color:var(--style-ink);box-shadow:0 0 0 1px var(--style-line),0 28px 65px -48px var(--ux-shadow-strong)}
+.personal-record-feed .u271-hd{position:relative;left:auto;right:auto;top:auto;padding:26px 30px 15px;background:transparent}
+.personal-record-feed .record-feed-heading{display:flex;justify-content:space-between;align-items:start;gap:20px}
+.personal-record-feed .u271-hd h3{font-family:"Songti SC",serif;font-size:28px;font-weight:600;color:var(--style-ink)}
+.personal-record-feed .u271-hd p{font-size:12px;color:var(--style-muted)}
+.personal-record-feed .record-feed-heading a{font-size:12px;color:var(--style-secondary);white-space:nowrap;text-decoration:none}
+.personal-record-feed .u271-cs{max-width:520px;margin-top:21px;background:var(--style-page);box-shadow:inset 0 0 0 1px var(--style-line)}
+.personal-record-feed .u271-pl{width:calc((100% - 12px) / 4);background:var(--style-surface);box-shadow:0 3px 10px -5px var(--ux-shadow-strong),0 0 0 1px var(--style-line)}
+.personal-record-feed .u271-ch{height:35px;color:var(--style-muted);font-size:12px}
+.personal-record-feed .u271-ch.is-on{color:var(--style-ink)}
+.personal-record-feed .u271-sc{position:relative;inset:auto;height:auto;min-height:0;padding:0 30px 26px;overflow:visible;scrollbar-width:auto}
+.personal-record-feed .u271-tl::before{left:10px;background:var(--style-line)}
+.personal-record-feed .u271-en{border-bottom:1px solid var(--style-line)}
+.personal-record-feed .u271-en:last-child{border:0}
+.personal-record-feed .u271-in{padding:20px 15px 22px 36px}
+.personal-record-feed .u271-dt{left:5px;top:23px}
+.personal-record-feed .u271-mt{font-size:12px;gap:12px}
+.personal-record-feed .u271-mt b{font-size:11px;color:var(--style-muted)}
+.personal-record-feed .u271-tg{font-size:10px}
+.personal-record-feed .record-feed-text{font-family:"Songti SC",serif;font-size:clamp(20px,2.1vw,29px);line-height:1.55;font-weight:550;color:var(--style-ink);margin:14px 0 7px;max-width:950px}
+.personal-record-feed .record-feed-context{font-size:12px;color:var(--style-muted);margin:0}
+.personal-record-feed .record-feed-source{display:inline-block;margin-top:13px;font-size:11px;font-weight:700;color:var(--style-secondary)}
+.personal-record-feed .record-feed-empty{padding:30px 0;color:var(--style-muted);font-size:13px;text-align:center}
+.record-page-content{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,310px);gap:34px;padding:50px clamp(30px,6vw,105px) 90px;background:var(--style-page)}
+.record-page-aside{align-self:start;position:sticky;top:95px;padding:26px;background:var(--style-perspective);border:1px solid var(--style-line);border-radius:14px}
+.record-page-aside .eyebrow{font-size:10px;color:var(--style-accent);letter-spacing:.2em}
+.record-page-aside h2{font-family:"Songti SC",serif;font-size:23px;font-weight:600;color:var(--style-ink);margin:17px 0}
+.record-page-aside p{font-size:12px;line-height:1.85;color:var(--style-muted)}
+.record-page-aside code{font-size:11px;color:var(--style-secondary)}
+.personal-record-feed.is-compact .u271-hd{padding-bottom:4px}
+.personal-record-feed.is-compact .u271-in{padding-top:14px;padding-bottom:16px}
+.personal-record-feed.is-compact .record-feed-text{font-size:clamp(18px,1.8vw,24px)}
+@media(max-width:900px){.record-page-content{grid-template-columns:1fr}.record-page-aside{position:static}}
+@media(max-width:650px){.record-page-content{padding:25px 22px 60px}.personal-record-feed .u271-hd{padding:22px 18px 12px}.personal-record-feed .u271-sc{padding:0 18px 20px}.personal-record-feed .u271-hd h3{font-size:24px}.personal-record-feed .u271-ch{font-size:11px}.personal-record-feed .u271-ch i{display:none}.personal-record-feed .record-feed-text{font-size:20px}.personal-record-feed .record-feed-heading a{font-size:10px}}
+/* Keep the complete pulse inside the animated entry's clipping wrapper. */
+.personal-record-feed .u271-tl::before{left:22px}
+.personal-record-feed .u271-dt{left:17px}
+.personal-record-feed .u271-in{padding-left:48px}
+.personal-record-feed .u271-pl{width:calc((100% - 12px) / 4)}
+
+.personal-record-feed .u271-in h4{font-family:"Songti SC",serif;font-size:24px;line-height:1.4;color:var(--style-ink);margin-top:14px}
+.personal-record-feed .u271-in:has(h4) p:not(.record-feed-context){font-size:14px;line-height:1.85;color:var(--style-ink-2,var(--style-ink));font-weight:400;margin:10px 0}
+
+.memory-feed{min-width:0}
+.memory-feed .record-filter-scroll{overflow-x:auto;max-width:100%;padding:2px 1px 8px;scrollbar-width:thin}
+.memory-feed .u271-cs{min-width:510px;max-width:none}
+.memory-feed .u271-mt{flex-wrap:wrap}
+.memory-feed .u271-in h4{font-size:19px;line-height:1.5;margin:10px 0}
+.memory-feed .u271-in h4 a:hover{text-decoration:underline;text-underline-offset:4px}
+.memory-feed .u271-in p.record-feed-text{font-family:inherit;font-size:14px;line-height:1.85;font-weight:400}
+.memory-feed .record-change{border-left:2px solid var(--style-line);padding-left:14px;margin:14px 0}
+.memory-feed .record-relations{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:12px}
+.memory-feed .record-relations a,.memory-feed .record-provenance a{font-size:12px;color:var(--style-secondary)}
+.memory-feed .record-provenance{border-top:1px solid var(--style-line);margin-top:18px;padding-top:10px}
+.memory-feed .u271-in .record-provenance p{font-size:11px;color:var(--style-muted)}
+.memory-record-detail{padding:32px clamp(22px,5vw,80px) 70px}
+.memory-record-detail .reader-layout{align-items:start}
+.memory-record-detail .reader-aside{min-width:0}
+@media(max-width:650px){.memory-feed .u271-in{padding-left:38px;padding-right:0}.memory-feed .u271-in h4{font-size:18px}.memory-feed .record-filter-scroll{margin-right:-4px}.memory-feed .u271-in p{overflow-wrap:anywhere}.memory-feed .record-relations{gap:8px}.memory-record-detail .reader-layout{display:block}}

@@ -1,6 +1,9 @@
-import { getContent } from '@/lib/content';
+import { getCatalog, getDocument } from '@/lib/content';
+import { renderHtmlArticle } from '@/lib/html-article';
+export const dynamic = 'force-static';
+export function generateStaticParams() { return getCatalog().documents.filter((doc) => doc.kind === 'html').map(({ id }) => ({ id })); }
 export async function GET(_request: Request, { params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params, post = getContent().posts.find(item => item.id === id && item.kind === 'html');
-  if (!post) return new Response('Not found', { status: 404 });
-  return new Response(post.body, { headers: { 'Content-Type': 'text/html; charset=utf-8', 'Content-Security-Policy': "sandbox allow-scripts; default-src 'none'; img-src https: data:; style-src 'unsafe-inline' https:; script-src 'unsafe-inline' https:; font-src https: data:", 'X-Content-Type-Options': 'nosniff', 'Referrer-Policy': 'no-referrer' } });
+  const doc = getDocument((await params).id);
+  if (!doc || doc.kind !== 'html') return new Response('Document not found', { status: 404 });
+  return new Response(renderHtmlArticle(doc.html || '', doc.title, doc.id), { headers: { 'Content-Type': 'text/html; charset=utf-8', 'Content-Security-Policy': "sandbox allow-scripts; script-src 'unsafe-inline' https:; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'", 'X-Content-Type-Options': 'nosniff' } });
 }

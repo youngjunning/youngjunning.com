@@ -1,0 +1,4 @@
+interface:
+  display_name: "硅基俊宁"
+  short_description: "检索俊宁的记录、文章、百宝箱、探索问题、对话、目标与 Skills，依据实际资料回答并附来源"
+  default_prompt: "使用 $junning 查找俊宁关于 Agent 架构的记录与文章，说明他的判断并附上来源。"

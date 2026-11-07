@@ -1,0 +1,56 @@
+/* Lucian UX/UI Prompt #373 · MIT License (c) 2026 Seokwoooo · https://lucianlabs.dev/uxui-prompt/#373 */
+/* Port #373's dot-stretch underline to article headings. Butterfly-inspired
+   prefix links share the existing heading IDs and the site's palette. */
+.article-layout .reader>h1{position:relative;padding-bottom:24px;margin-bottom:25px;font-family:inherit;font-size:clamp(30px,2.7vw,38px);line-height:1.5;font-weight:800;letter-spacing:-.025em;color:var(--style-ink)}
+.article-layout .reader>h1::after{content:"";position:absolute;left:0;bottom:0;width:72px;height:5px;border-radius:3px;background:var(--ux-grad)}
+.article-layout .prose{font-size:18px;line-height:1.95;color:color-mix(in srgb,var(--style-ink) 88%,var(--style-muted));letter-spacing:.015em}
+.article-layout .prose p{margin:0 0 1.4em}
+.article-layout .prose li{margin-bottom:.55em}
+.article-layout .prose li::marker{color:var(--style-secondary);font-weight:700}
+.article-layout .prose strong{color:var(--style-ink);font-weight:750}
+.article-layout .prose :is(h1,h2,h3,h4,h5,h6){position:relative;padding:0 0 0 1.35em;border:0;font-family:inherit;font-weight:750;line-height:1.6;letter-spacing:-.015em;color:var(--style-ink);text-wrap:pretty}
+.article-layout .prose :is(h1,h2){font-size:28px;margin:2em 0 .9em;padding-bottom:.35em}
+.article-layout .prose h3{font-size:23px;margin:1.8em 0 .85em}
+.article-layout .prose h4{font-size:20px;margin:1.6em 0 .8em}
+.article-layout .prose h5{font-size:18px;margin:1.5em 0 .75em}
+.article-layout .prose h6{font-size:17px;margin:1.5em 0 .75em}
+.article-layout .prose>:is(h1,h2,h3,h4,h5,h6):first-child{margin-top:1em}
+.article-layout .prose .heading-anchor{position:absolute;left:0;top:.3em;display:grid;place-items:center;width:1em;height:1em;margin:0;font-size:1em;color:var(--style-secondary);opacity:.8;transition:color .2s ease-out,transform .2s ease-out}
+.article-layout .prose .heading-anchor svg{width:.78em;height:.78em}
+.article-layout .prose :is(h1,h2)>.heading-anchor{color:var(--style-accent);opacity:1}
+.article-layout .prose :is(h1,h2,h3,h4,h5,h6):is(:hover,:focus-within)>.heading-anchor{color:var(--style-secondary);transform:rotate(-15deg)}
+.article-layout .prose .heading-anchor:focus-visible{outline:2px solid var(--style-secondary);outline-offset:4px;border-radius:3px;opacity:1}
+.article-layout .prose .article-heading-text{--c:var(--style-accent);position:relative;display:inline-block;max-width:100%;padding:0 0 .12em;font:inherit;color:inherit;letter-spacing:inherit}
+.article-layout .article-heading-text::after{content:"";position:absolute;left:0;bottom:0;width:6px;height:4px;border-radius:3px;background:var(--c);pointer-events:none;transition:width .5s cubic-bezier(.3,1.6,.5,1)}
+.article-layout .prose :is(h1,h2)>.article-heading-text::after{width:min(40px,100%);background:var(--ux-grad)}
+.article-layout .prose :is(h1,h2,h3,h4,h5,h6):is(:hover,:focus-within)>.article-heading-text::after{width:100%}
+.article-layout .prose table{font-size:16px;line-height:1.85;margin:1.7em 0}
+.article-layout .prose :is(th,td){padding:13px 16px;border-color:var(--style-line)}
+.article-layout .prose th{font-weight:700;color:var(--style-ink);background:var(--style-perspective)}
+.article-layout .prose blockquote{border-color:var(--style-accent);background:color-mix(in srgb,var(--style-tint) 45%,var(--style-surface));color:var(--style-ink)}
+.article-layout .prose code{font-size:.86em;background:color-mix(in srgb,var(--style-tint) 55%,var(--style-surface));color:var(--style-secondary)}
+.article-layout .prose pre{font-size:15px;line-height:1.85;border-color:var(--style-line);background:var(--style-surface)}
+.article-layout .prose pre code{font-size:inherit;line-height:inherit;background:none;color:var(--style-ink)}
+@media(max-width:800px){
+  .article-layout .reader>h1{font-size:29px;line-height:1.5;padding-bottom:20px}
+  .article-layout .prose{font-size:17px;line-height:1.95}
+  .article-layout .prose :is(h1,h2){font-size:25px}
+  .article-layout .prose h3{font-size:21px}
+  .article-layout .prose h4{font-size:19px}
+  .article-layout .prose h5{font-size:18px}
+  .article-layout .prose h6{font-size:17px}
+  .article-layout .prose table{font-size:15px}
+  .article-layout .prose :is(th,td){padding:11px 13px}
+  .article-layout .prose pre{font-size:14px;padding:16px}
+}
+@media(prefers-reduced-motion:reduce){.article-layout .prose .heading-anchor,.article-layout .article-heading-text::after{transition:none;transform:none}}
+@media print{
+  .article-layout .prose :is(h1,h2,h3,h4,h5,h6){padding-left:0;break-after:avoid}
+  .article-layout .prose .heading-anchor,.article-layout .article-heading-text::after,.article-layout .reader>h1::after{display:none}
+}
+.article-notice{margin-top:48px;padding:24px 28px;border:1px solid var(--style-line);border-radius:14px;background:var(--style-surface);font-size:14px;line-height:1.8;color:var(--style-ink)}
+.article-notice p{display:grid;grid-template-columns:88px minmax(0,1fr);gap:12px;margin:0;overflow-wrap:anywhere}
+.article-notice p+p{margin-top:10px}
+.article-notice strong{color:var(--style-secondary)}
+.article-notice a{color:var(--style-secondary);text-decoration:underline;text-underline-offset:3px}
+@media(max-width:600px){.article-notice{padding:20px}.article-notice p{grid-template-columns:1fr;gap:0}}

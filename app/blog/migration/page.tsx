@@ -1,10 +1,11 @@
+import AuxiliaryShell from '@/components/auxiliary-shell';
 import Link from 'next/link';
 import migration from '@/content/blog-migration-2026-11-01.json';
 export const metadata = { title: '博客迁移清单', description: '238 篇历史博客的迁移结果，以及未迁移文章的逐篇原因。' };
 export default function MigrationPage() {
   const included = migration.entries.filter(item => item.status !== 'excluded');
   const excluded = migration.entries.filter(item => item.status === 'excluded');
-  return <article className="detail prose migration-report">
+  return <AuxiliaryShell title="博客迁移清单" active="library"><article className="detail prose migration-report">
     <Link className="back-link" href="/blog">← 返回文章</Link>
     <h1>博客迁移清单</h1>
     <p>旧官网知识库的迁移另见 <Link href="/blog/website-migration">官网迁移清单：11 篇笔记、2 份参考资料及 80 份未迁移材料</Link>。</p>
@@ -15,5 +16,5 @@ export default function MigrationPage() {
     <table><thead><tr><th>文章</th><th>原因</th></tr></thead><tbody>{excluded.map(item => <tr key={item.sourceFile}><td><a href={item.source} target="_blank" rel="noreferrer">{item.title}</a></td><td>{item.reason}</td></tr>)}</tbody></table>
     <h2 id="included">已迁移与更新：{included.length} 篇</h2>
     <table><thead><tr><th>文章</th><th>保留理由</th></tr></thead><tbody>{included.map(item => <tr key={item.sourceFile}><td><Link href={'/blog/' + item.id}>{item.title}</Link></td><td>{item.reason}</td></tr>)}</tbody></table>
-  </article>;
+  </article></AuxiliaryShell>;
 }

@@ -1,0 +1,21 @@
+/* Lucian #271 timeline, adapted to an open, compact career list. */
+.career-timeline.u271{--c:var(--style-secondary);width:100%;height:auto;overflow:visible;border-radius:0;background:transparent;box-shadow:none;color:var(--style-ink)}
+.career-timeline .u271-tl{margin:0;padding:0;list-style:none}
+.career-timeline .u271-tl::before{left:160px;top:23px;bottom:23px;background:var(--style-line)}
+.career-timeline .u271-in{display:grid;grid-template-columns:140px minmax(0,1fr);gap:42px;padding:14px 0}
+.career-timeline .u271-dt{left:155px;top:19px;background:var(--style-surface)}
+.career-timeline .u271-dt.is-new{background:var(--c)}
+.career-timeline .u271-dt.is-new::after{animation:none;border:0}
+.career-timeline .u271-mt{align-self:start;min-height:22px}
+.career-timeline .u271-mt b{font-size:11px;font-weight:650;line-height:2;color:var(--style-secondary);white-space:nowrap}
+.career-timeline .career-copy{min-width:0;padding-bottom:14px;border-bottom:1px solid var(--style-line)}
+.career-timeline .u271-en:last-child .career-copy{padding-bottom:0;border-bottom:0}
+.career-timeline h3{margin:0;font-size:16px;font-weight:650;line-height:1.5;letter-spacing:-.02em}
+.career-timeline h3 a{color:inherit;text-decoration:none;border-radius:3px}
+.career-timeline h3 a:hover{color:var(--style-secondary)}
+.career-timeline h3 a:focus-visible{outline:2px solid var(--style-secondary);outline-offset:4px}
+.career-timeline .career-arrow{display:inline-block;margin-left:8px;font-size:13px;color:var(--style-muted);transition:transform .25s}
+.career-timeline h3 a:hover .career-arrow{transform:translate(2px,-2px)}
+.career-timeline .u271-in p{margin:5px 0 0;max-width:850px;font-size:13px;font-weight:450;line-height:1.75;color:var(--style-muted)}
+@media(max-width:760px){.career-timeline .u271-tl::before{left:5px;top:21px;bottom:23px}.career-timeline .u271-in{grid-template-columns:1fr;gap:4px;padding:12px 0 12px 26px}.career-timeline .u271-dt{left:0;top:17px}.career-timeline .u271-mt b{font-size:11px}.career-timeline h3{font-size:15px}.career-timeline .u271-in p{font-size:12px;line-height:1.75}.career-timeline .career-copy{padding-bottom:12px}}
+@media(prefers-reduced-motion:reduce){.career-timeline .career-arrow{transition:none}.career-timeline h3 a:hover .career-arrow{transform:none}}

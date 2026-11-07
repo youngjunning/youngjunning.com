@@ -1,12 +1,22 @@
+import { getSiteTheme } from '@/lib/site-theme';
+import { StatechartRecord } from '@/components/statechart/pages';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getContent } from '@/lib/content';
-import { SourceLabel } from '@/components/source-label';
-export function generateStaticParams() { return getContent().records.map(item => ({ id: item.id })); }
-export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) { const { id } = await params; return { title: getContent().records.find(item => item.id === id)?.title || '记录' }; }
-export default async function RecordDetail({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
-  const item = getContent().records.find(item => item.id === id);
-  if (!item) notFound();
-  return <article className="detail"><Link className="back-link" href="/records">← 返回个人记录</Link><h1>{item.title}</h1><span className="eyebrow">发生：{item.date || (item.kind === 'experience' ? item.period : null) || '未详'} · 录入：{item.recordedAt}</span><p>{item.text}</p><h2>当时的背景</h2><p>{item.context}</p>{item.kind === 'judgment' && <><h2>判断依据</h2><p>{item.basis}</p><p>结果：{item.outcome || '尚无已核验结果。'}</p></>}{item.kind === 'project' && <><h2>参与范围</h2><p>{item.role}</p><p>{item.goal}</p>{item.outcomes.map(text => <p key={text}>{text}</p>)}</>}{item.kind === 'change' && <><h2>变化</h2><p>此前：{item.before}</p><p>此后：{item.after}</p><p>{item.reason}</p><Link href={'/records/' + item.subjectId}>查看原记录</Link></>}<div className="source-box">来源<br />{item.sources.map((source,i) => <div key={i}><SourceLabel label={source.label} /></div>)}</div></article>;
+import Shell from '@/components/shell';
+import PersonalRecordFeed from '@/components/lucian/personal-record-feed';
+import { getRecord, getRecords } from '@/lib/records';
+
+export function generateStaticParams() { return getRecords().map(({ id }) => ({ id })); }
+export const dynamicParams = true;
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+  return { title: getRecord((await params).id)?.title || '记录未找到' };
+}
+export default async function RecordPage({ params }: { params: Promise<{ id: string }> }) {
+  const theme = await getSiteTheme();
+  const record = getRecord((await params).id);
+  if (!record) notFound();
+  if (theme === 'statechart') return <StatechartRecord record={record} />;
+  const records = getRecords();
+  const related = records.filter((item) => item.id !== record.id && (item.projectId === record.id || (item.kind === 'change' && item.subjectId === record.id) || item.relatedIds.includes(record.id)));
+  return <Shell active="records"><section className="memory-record-detail"><div className="reader-top"><Link className="back-link" href="/records">← 返回个人记录</Link><a href={`/api/records/${record.id}`}>结构化记录 ↗</a></div><h1>{record.title}</h1><div className="reader-layout"><PersonalRecordFeed records={[record]} allRecords={records} detail /><aside className="reader-aside"><div className="eyebrow">CONNECTED RECORDS</div><h3>后续与关联</h3>{related.length ? related.map((item) => <Link href={`/records/${item.id}`} key={item.id}>{item.title}<span>↗</span></Link>) : <p className="muted">暂未记录后续变化或关联事项。</p>}</aside></div></section></Shell>;
 }

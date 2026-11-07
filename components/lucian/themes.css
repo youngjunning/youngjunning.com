@@ -1,0 +1,67 @@
+/* Theme controls adapt Lucian #020's five swatches to the site's three palettes. */
+:root,html[data-style="paper"]{--style-page:#f6f1e9;--style-surface:#fffdf9;--style-ink:#263455;--style-muted:#6c7080;--style-line:#ddd5cb;--style-accent:#e97857;--style-accent-ink:#fff;--style-secondary:#4859ae;--style-sidebar:#faf6ee;--style-hero:#fbf7f0;--style-memory:#f4e9e0;--style-project:#f7f3ec;--style-perspective:#e9ecfa;--style-cover:#e3e7f4;--style-tint:#f5e1d8;--style-card:#fffaf5}
+html[data-style="mint"]{--style-page:#eff5ee;--style-surface:#fcfffb;--style-ink:#23443f;--style-muted:#59756c;--style-line:#cfdfd4;--style-accent:#3f9b77;--style-accent-ink:#fff;--style-secondary:#448b86;--style-sidebar:#e9f2e9;--style-hero:#f6fbf5;--style-memory:#e4f2e6;--style-project:#f0f7ee;--style-perspective:#deeee6;--style-cover:#d7ece0;--style-tint:#d5ebdb;--style-card:#fbfffb}
+html[data-style="violet"]{--style-page:#f3f0fa;--style-surface:#fdfbff;--style-ink:#322e58;--style-muted:#77708d;--style-line:#d8d0e9;--style-accent:#8664d9;--style-accent-ink:#fff;--style-secondary:#685ab8;--style-sidebar:#eee9f8;--style-hero:#faf7ff;--style-memory:#ebe6f8;--style-project:#f7f4fd;--style-perspective:#e6e1fa;--style-cover:#dcd8f5;--style-tint:#e3daf7;--style-card:#fdfbff}
+html[data-style]{--canvas:var(--style-page);--surface:var(--style-surface);--ink:var(--style-ink);--muted:var(--style-muted);--line:var(--style-line);--teal:var(--style-secondary);--soft:var(--style-perspective);--sidebar:var(--style-sidebar);--ux-ink-2:var(--style-muted);--ux-ink-3:var(--style-muted);--ux-accent:var(--style-secondary);--ux-accent-2:var(--style-accent);--ux-accent-soft:var(--style-tint);--ux-grad:linear-gradient(135deg,var(--style-accent),var(--style-secondary))}
+html[data-style] body,html[data-style] .workspace{background:var(--style-page);color:var(--style-ink)}
+html[data-style] .app-shell.ux.u040 .sidebar.u040-rail,html[data-style] .app-shell.ux.u040 .topbar,html[data-style] .app-shell.ux.u040 .page-footer{background:var(--style-sidebar);border-color:var(--style-line);color:var(--style-ink)}
+html[data-style] .app-shell.ux.u040 .u040-logo,html[data-style] .app-shell.ux.u040 .u040-me i{background:var(--style-accent);color:var(--style-accent-ink)}
+html[data-style] .app-shell.ux.u040 .u040-name,html[data-style] .app-shell.ux.u040 .u040-it,html[data-style] .app-shell.ux.u040 .u040-it span,html[data-style] .app-shell.ux.u040 .u040-me{color:var(--style-ink)}
+html[data-style] .app-shell.ux.u040 .u040-hl,html[data-style] .app-shell.ux.u040 .u040-it:hover{background:var(--style-tint)}
+html[data-style] .app-shell.ux.u040 .u040-hl::before,html[data-style] .persona-hero::before{background:var(--style-accent)}
+html[data-style] .app-shell.ux.u040 .u040-it[aria-current=page],html[data-style] .app-shell.ux.u040 .u040-it[aria-current=page] span{color:var(--style-secondary)}
+html[data-style] .app-shell.ux.u040 .u040-me{background:var(--style-tint)}
+html[data-style] .persona-hero,html[data-style] .page-intro{background:var(--style-hero);border-color:var(--style-line)}
+html[data-style] .persona-hero h1,html[data-style] .persona-section-heading h2,html[data-style] .page-intro h1,html[data-style] .persona-cover-foot h2{color:var(--style-ink)}
+html[data-style] .persona-hero h1 span,html[data-style] .page-intro h1 span{color:var(--style-secondary)}
+html[data-style] .persona-hero .eyebrow,html[data-style] .persona-section .eyebrow,html[data-style] .page-intro .eyebrow{color:var(--style-accent)}
+html[data-style] .persona-cover{background:var(--style-cover);border-color:var(--style-line);box-shadow:12px 15px 0 var(--style-tint),0 20px 45px -32px var(--ux-shadow-strong)}
+html[data-style] .persona-cover::before{background:color-mix(in srgb,var(--style-accent) 65%,var(--style-cover))}
+html[data-style] .persona-cover-symbol{color:var(--style-ink)}
+html[data-style] .persona-cover-foot a,html[data-style] .quiet-link,html[data-style] .text-link{color:var(--style-secondary)}
+html[data-style] .primary-button,html[data-style] .persona-actions .primary-button{background:var(--style-secondary);color:#fff}
+html[data-style] .secondary-button{border-color:var(--style-line);color:var(--style-secondary);background:var(--style-surface)}
+html[data-style] .persona-focus>span{background:var(--style-tint);border-color:var(--style-line);color:var(--style-ink)}
+html[data-style] .persona-memory{background:var(--style-memory);border-color:var(--style-line)}
+html[data-style] .record-areas .u228-c{background:var(--style-line)}
+html[data-style] .record-areas .u228-in,html[data-style] .record-areas .u228-c:nth-child(n) .u228-in{background:var(--style-card)}
+html[data-style] .record-areas .u228-c:nth-child(even) .u228-in{background:color-mix(in srgb,var(--style-perspective) 65%,var(--style-card))}
+html[data-style] .record-areas .u228-ic,html[data-style] .record-areas .u228-c:nth-child(n) .u228-ic{background:var(--style-accent)}
+html[data-style] .record-areas .u228-c:nth-child(even) .u228-ic{background:var(--style-secondary)}
+html[data-style] .record-areas .u228-in b,html[data-style] .journey-notes h3,html[data-style] .project-work-list .u276-a,html[data-style] .topic-card h3,html[data-style] .document-card h3{color:var(--style-ink)}
+html[data-style] .record-areas .u228-in>a,html[data-style] .memory-essay-link{color:var(--style-secondary)}
+html[data-style] .journey-section,html[data-style] .persona-reading{background:var(--style-surface);border-color:var(--style-line)}
+html[data-style] .life-timeline.u370,html[data-style] .life-timeline .u370-cd{background:var(--style-surface);color:var(--style-ink)}
+html[data-style] .life-timeline .u370-cd{background:var(--style-perspective)}
+html[data-style] .persona-section#projects{background:var(--style-project)}
+html[data-style] .project-work-list .u276-it,html[data-style] .project-work-list .u276-ls{border-color:var(--style-line)}
+html[data-style] .project-work-list .u276-it:hover,html[data-style] .project-work-list .u276-it:focus-within{background:var(--style-tint)}
+html[data-style] .project-work-list .u276-hd,html[data-style] .project-work-list .u276-a .project-work-number{color:var(--style-accent)}
+html[data-style] .persona-perspectives{background:var(--style-perspective);border-color:var(--style-line)}
+html[data-style] .persona-ata{background:var(--style-memory);border-color:var(--style-line)}
+html[data-style] .persona-knowledge,html[data-style] .agent-callout{background:var(--style-perspective);border-color:var(--style-line);color:var(--style-ink)}
+html[data-style] .persona-knowledge h2,html[data-style] .persona-ata h2{color:var(--style-ink)}
+html[data-style] .topic-card,html[data-style] .document-card{background:var(--style-surface);border-color:var(--style-line)}
+html[data-style] .topic-card.selected,html[data-style] .topic-card:hover{background:var(--style-perspective);border-color:var(--style-secondary)}
+html[data-style] .reader,html[data-style] .reader-aside,html[data-style] .graph-layout{border-color:var(--style-line)}
+.theme-picker.u020{width:auto;height:auto;min-width:0;display:flex;flex-direction:row;gap:9px;align-items:center;color:var(--style-ink)}
+.theme-picker .theme-picker-caption{font-size:11px;color:var(--style-muted)}
+.theme-picker .u020-row{margin:0;padding:3px;gap:6px;flex-wrap:nowrap}
+.theme-picker .u020-sw{width:18px;height:18px;flex:none}
+.theme-picker .u020-ring{width:24px;height:24px;left:0;top:0;box-shadow:0 0 0 2px var(--style-ink);transform:translateX(calc(var(--idx) * 24px))}
+.theme-picker .theme-picker-name{font-size:11px;min-width:2.5em;color:var(--style-muted)}
+html[data-style] body,html[data-style] .sidebar,html[data-style] .topbar,html[data-style] .persona-hero,html[data-style] .persona-memory,html[data-style] .journey-section,html[data-style] .persona-section#projects,html[data-style] .persona-perspectives,html[data-style] .persona-reading,html[data-style] .persona-ata,html[data-style] .page-intro,html[data-style] .topic-card,html[data-style] .document-card{transition:background-color .55s var(--ux-ease),border-color .55s var(--ux-ease),color .55s var(--ux-ease)}
+@media(max-width:650px){.theme-picker .theme-picker-caption,.theme-picker .theme-picker-name{display:none}}
+@media(prefers-reduced-motion:reduce){html[data-style] body,html[data-style] .sidebar,html[data-style] .topbar,html[data-style] .persona-hero,html[data-style] .persona-memory,html[data-style] .journey-section,html[data-style] .persona-section#projects,html[data-style] .persona-perspectives,html[data-style] .persona-reading,html[data-style] .persona-ata,html[data-style] .page-intro,html[data-style] .topic-card,html[data-style] .document-card{transition:none}}
+
+/* Each palette has its own surface, typography and geometry. */
+html[data-style="mint"] .site-header.u212-hd,html[data-style="mint"] .site-shell .persona-cover{border-radius:32px}
+html[data-style="mint"] .site-shell .persona-hero::after{background-image:radial-gradient(#4b93764d 1px,transparent 1px);background-size:24px 24px;opacity:.4}
+html[data-style="mint"] .site-shell .persona-cover{border-radius:110px 32px 32px;background:linear-gradient(145deg,#f6fff0,#d2e9da)}
+html[data-style="mint"] .site-shell .persona-cover::after{border-radius:44% 56% 62% 38%}
+html[data-style="violet"] .site-header.u212-hd{border-radius:8px;border-color:#c5b8e5;box-shadow:0 0 26px -12px #8f6de9}
+html[data-style="violet"] .site-shell .persona-hero{background:radial-gradient(ellipse at 80% 40%,#ded5fc 0,transparent 55%),#faf8ff}
+html[data-style="violet"] .site-shell .persona-hero::after{background-size:36px 36px;opacity:.9}
+html[data-style="violet"] .site-shell .persona-hero h1 .u216-w>span{font-family:Inter,-apple-system,"PingFang SC",sans-serif;font-weight:750;letter-spacing:-.06em}
+html[data-style="violet"] .site-shell .persona-cover{border-radius:8px;border-color:#bca9e8;box-shadow:0 0 0 4px #a48ddd0d,0 28px 70px -40px #7655c0}
+html[data-style="violet"] .site-shell .persona-cover::after{border-style:dashed}

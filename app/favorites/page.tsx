@@ -1,4 +1,10 @@
-import { getContent } from '@/lib/content';
-import { FavoriteList } from '@/components/collection';
-export const metadata = { title: '收藏夹' };
-export default function Favorites() { return <><header className="page-head"><span className="eyebrow">WORTH COMING BACK TO</span><h1>值得再看一次。</h1><p>收藏项目、工具和知识资料，标清用途与出处。会话发现单独标注；收藏本身不代表本人参与、使用或掌握。</p></header><section className="page-body"><FavoriteList favorites={getContent().favorites} /></section></>; }
+import { getSiteTheme } from '@/lib/site-theme';
+import { StatechartFavorites } from '@/components/statechart/pages';
+import Shell from '@/components/shell';
+import FavoriteCollection from '@/components/lucian/favorite-collection';
+import { getFavoriteStore } from '@/lib/favorites';
+export const metadata = { title: '百宝箱' };
+export default async function FavoritesPage() {
+  if (await getSiteTheme() === 'statechart') return <StatechartFavorites />;
+  return <Shell active="favorites"><section className="page-intro"><div className="eyebrow">WORTH RETURNING TO</div><h1>百宝箱<span> / 资源与知识笔记</span></h1><p>按关注的问题找资料、工具、概念和方法。每条内容保留来源与表达归属，真实使用记录连接具体项目。</p></section><FavoriteCollection favorites={getFavoriteStore().favorites}/></Shell>;
+}

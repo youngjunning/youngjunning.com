@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "term": "Lima",
+      "favoriteId": "d53795ec40da8732",
+      "articleId": "b0ed7324c16a9f85"
+    },
+    {
+      "term": "rootfs",
+      "favoriteId": "d61534bc8b9c5b8a",
+      "articleId": "b0ed7324c16a9f85"
+    },
+    {
+      "term": "Binder",
+      "favoriteId": "0a940ff96caf609f",
+      "articleId": "b0ed7324c16a9f85"
+    },
+    {
+      "term": "SDK",
+      "favoriteId": "baad0631679522e9",
+      "articleId": "88cddc5b581be236"
+    },
+    {
+      "term": "Runtime",
+      "favoriteId": "baad0631679522e9",
+      "articleId": "88cddc5b581be236"
+    }
+  ]
+}

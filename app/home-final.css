@@ -1,0 +1,33 @@
+.site-shell .persona-hero{min-height:min(780px,calc(100svh - 96px));grid-template-columns:minmax(0,1fr) minmax(280px,400px);gap:clamp(30px,5vw,100px);padding:76px clamp(38px,6vw,110px) 86px;background:radial-gradient(ellipse at 80% 45%,color-mix(in srgb,var(--style-cover) 55%,transparent),transparent 48%),var(--style-hero);overflow:hidden;isolation:isolate}
+.site-shell .persona-hero::before{left:clamp(38px,6vw,110px)}
+.site-shell .persona-hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(color-mix(in srgb,var(--style-secondary) 9%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--style-secondary) 9%,transparent) 1px,transparent 1px);background-size:54px 54px;mask-image:linear-gradient(90deg,transparent 5%,#000 100%);opacity:.55;animation:hero-grid-drift 18s linear infinite}
+@keyframes hero-grid-drift{to{background-position:54px 54px}}
+.site-shell .persona-hero .eyebrow{font-size:11px;letter-spacing:.3em}
+.site-shell .persona-hero h1{margin:26px 0 31px;max-width:none;line-height:1.12}
+.site-shell .persona-hero h1 .u216-ln{display:block;color:var(--style-ink);line-height:1.12}
+.site-shell .persona-hero h1 .u216-ln .u216-w{display:inline-block;font-size:inherit;line-height:inherit;margin:0;color:inherit}
+.site-shell .persona-hero h1 .u216-ln .u216-w>span{display:inline-block;font-family:"Songti SC","Noto Serif SC",serif;line-height:inherit;letter-spacing:-.06em;margin:0;font-weight:650}
+.site-shell .persona-hero h1 .u216-ln:first-child .u216-w>span{font-size:clamp(60px,6.1vw,104px);color:var(--style-ink)}
+.site-shell .persona-hero h1 .u216-ln:last-child .u216-w>span{font-size:clamp(35px,3.2vw,54px);color:var(--style-secondary)}
+.site-shell .persona-bio{font-size:15px;color:var(--style-muted);margin:0;letter-spacing:.01em}
+.site-shell .persona-actions{margin-top:38px;gap:15px}
+.site-shell .persona-actions a{min-height:44px;display:inline-flex;align-items:center;gap:28px;font-size:13px}
+.site-shell .persona-cover{min-height:520px;background:radial-gradient(circle at 70% 30%,color-mix(in srgb,var(--style-accent) 27%,var(--style-cover)),transparent 48%),var(--style-cover);border:1px solid var(--style-line);border-radius:18px;box-shadow:0 30px 70px -42px var(--ux-shadow-strong);overflow:hidden}
+.site-shell .persona-cover::before{width:320px;height:320px;top:58px;right:-55px;border-radius:50%;background:radial-gradient(circle at 35% 35%,color-mix(in srgb,var(--style-accent) 45%,#fff),color-mix(in srgb,var(--style-secondary) 65%,var(--style-cover)) 63%,transparent 73%);opacity:.8;filter:blur(3px);animation:profile-orbit 8s ease-in-out infinite alternate}
+.site-shell .persona-cover::after{width:300px;height:300px;top:67px;right:-27px;border:1px solid color-mix(in srgb,var(--style-ink) 30%,transparent);box-shadow:0 0 0 35px color-mix(in srgb,var(--style-secondary) 4%,transparent),0 0 0 70px color-mix(in srgb,var(--style-accent) 3%,transparent)}
+@keyframes profile-orbit{to{transform:translate(-18px,15px) scale(1.06)}}
+.site-shell .persona-cover-symbol{top:175px;left:28px;font-size:clamp(100px,10vw,150px);color:var(--style-ink);text-shadow:0 4px 18px color-mix(in srgb,var(--style-surface) 80%,transparent)}
+.site-shell .persona-cover-foot{max-width:none}
+.site-shell .persona-cover-foot h2{font-size:22px;margin:12px 0 26px;color:var(--style-ink)}
+.site-shell .persona-cover-foot a{width:100%;border-color:color-mix(in srgb,var(--style-ink) 28%,transparent)}
+.site-shell .persona-records{padding:60px clamp(38px,6vw,110px) 64px;background:var(--style-memory);border-bottom:1px solid var(--style-line)}
+.site-shell .persona-records .persona-section-heading{margin-bottom:24px}
+.site-shell .persona-records .persona-section-heading h2{font-size:30px}
+@media(max-width:1000px){.site-shell .persona-hero{grid-template-columns:1fr;min-height:0}.site-shell .persona-cover{width:min(100%,560px);min-height:360px;justify-self:start}.site-shell .persona-cover-symbol{top:85px;font-size:115px}.site-shell .persona-cover::before{top:-20px}.site-shell .persona-cover::after{top:-10px}}
+@media(max-width:650px){.site-shell .persona-hero{padding:54px 22px 55px;gap:35px}.site-shell .persona-hero::before{left:22px}.site-shell .persona-hero h1 .u216-ln:first-child .u216-w>span{font-size:clamp(47px,11.6vw,68px)}.site-shell .persona-hero h1 .u216-ln:last-child .u216-w>span{font-size:clamp(26px,6.4vw,38px)}.site-shell .persona-bio{font-size:12px}.site-shell .persona-actions{margin-top:26px}.site-shell .persona-cover{min-height:310px;width:100%}.site-shell .persona-cover-symbol{top:83px;font-size:93px}.site-shell .persona-cover-foot h2{font-size:18px;margin:8px 0 15px}.site-shell .persona-records{padding:44px 22px 48px}.site-shell .persona-records .persona-section-heading h2{font-size:25px}}
+@media(prefers-reduced-motion:reduce){.site-shell .persona-hero::after,.site-shell .persona-cover::before{animation:none}}
+.site-shell .persona-hero h1 .hero-greeting,.site-shell .persona-hero h1 .hero-name{display:inline;font-size:inherit;font-family:inherit;color:inherit;letter-spacing:inherit;font-weight:inherit;line-height:inherit}
+.journey-notes article{grid-template-columns:145px minmax(0,1fr)}
+.journey-notes article>span{font-size:17px;line-height:1.6;overflow-wrap:normal}
+@media(max-width:700px){.journey-notes article{grid-template-columns:1fr;gap:7px}}
+@media(max-width:650px){.site-shell .persona-hero h1 .hero-greeting{display:block;font-size:29px;margin-bottom:8px}.site-shell .persona-hero h1 .hero-name{display:block;font-size:52px;white-space:nowrap}}

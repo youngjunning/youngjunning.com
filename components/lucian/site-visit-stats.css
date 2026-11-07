@@ -1,0 +1,8 @@
+/* Lucian UX/UI Prompt #058 · MIT License (c) 2026 Seokwoooo · https://lucianlabs.dev/uxui-prompt/#058 */
+.page-footer .site-footer-meta{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:8px 18px;font-size:10px;letter-spacing:0}
+.page-footer .site-visit-stats,.page-footer .site-visit-stats span{font-size:11px;letter-spacing:0;color:var(--style-muted)}
+.page-footer .site-visit-stats{display:inline-flex}
+.page-footer .site-visit-stats span{display:inline}
+.site-visit-stats b{font-weight:600;color:var(--style-ink)}
+.site-workspace>.page-footer{flex-wrap:wrap;align-items:center;color:var(--style-muted)}
+@media(max-width:700px){.page-footer .site-footer-meta{justify-content:flex-start}.page-footer .site-footer-label{display:none}}

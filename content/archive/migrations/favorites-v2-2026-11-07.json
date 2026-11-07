@@ -1,0 +1,3908 @@
+{
+  "version": 1,
+  "date": "2026-11-07",
+  "source": {
+    "version": 1,
+    "favorites": [
+      {
+        "id": "33226492457fb09f",
+        "kind": "knowledge",
+        "title": "GitHub Copilot 每周更新：Agent 会话进入更多开发入口",
+        "url": "https://github.blog/changelog/2026-11-06-github-copilot-weekly-releases-november-2/",
+        "summary": "GitHub 2026 年 11 月 6 日的更新汇集 Copilot app、CLI、JetBrains Air、Xcode 和 VS Code 的变化；Xcode 内置编码助手的 Copilot 集成仍为公开预览。",
+        "reason": "回看 Agent 会话在多个开发入口中的产品形态，以及相关能力的发布阶段；未核验各入口的实际体验。",
+        "tags": [
+          "GitHub Copilot",
+          "Agent",
+          "开发工具"
+        ],
+        "savedAt": "2026-11-07T17:38+08:00",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "GitHub 官方 Changelog，发布于 2026-11-06，2026-11-07 核对原文。"
+          }
+        ]
+      },
+      {
+        "id": "77faf23e6615fd4d",
+        "kind": "knowledge",
+        "title": "Copilot 代码评审指标：评论处理率与统计边界",
+        "url": "https://github.blog/changelog/2026-11-05-usage-metrics-api-adds-code-review-details-and-addressed-rate/",
+        "summary": "GitHub 2026 年 11 月 5 日为组织与企业的仓库用量日报加入评审评论 evaluated、addressed 等字段。addressed 包含开发者回复稍后修复，不能直接视为缺陷已修复。",
+        "reason": "作为观察 AI 代码评审结果与统计口径的原始资料，回查字段含义和适用范围。",
+        "tags": [
+          "GitHub Copilot",
+          "代码评审",
+          "度量"
+        ],
+        "savedAt": "2026-11-07T17:38+08:00",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "GitHub 官方 Changelog，发布于 2026-11-05，2026-11-07 核对原文。"
+          }
+        ]
+      },
+      {
+        "id": "f9ab77505f692970",
+        "kind": "knowledge",
+        "title": "Gemini Omni 1.2 Flash：15 秒视频与多轮编辑",
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+        "summary": "Google 2026 年 11 月 5 日介绍 Gemini Omni 1.2 Flash 的 15 秒视频生成、多轮对话编辑与参考素材遵循能力；Gemini API 和 Google Cloud 已提供，其他产品入口逐步推出。",
+        "reason": "回看多模态生成进入可编辑创作流程的官方产品信息；具体项目效果与成本仍需独立验证。",
+        "tags": [
+          "Gemini",
+          "多模态",
+          "视频生成"
+        ],
+        "savedAt": "2026-11-07T17:38+08:00",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "Google 官方博客，发布于 2026-11-05，2026-11-07 核对原文。"
+          }
+        ]
+      },
+      {
+        "id": "2093f60cae7cf54d",
+        "kind": "card",
+        "title": "视觉 Grounding：按描述在图像中找位置",
+        "url": null,
+        "summary": "视觉 Grounding 根据图像和目标描述定位对应区域；得到一个矩形框，并不能单独证明位置来自视觉 Grounding，也不能证明点击成功。",
+        "reason": "回看截图定位与无障碍节点 bounds、整页理解和动作验证各自解决的问题。",
+        "tags": [
+          "视觉 Grounding",
+          "Agent",
+          "图像定位",
+          "Accessibility Tree"
+        ],
+        "savedAt": "2026-11-05T19:37+08:00",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "AI 辅助资料整理；公开文章《视觉 Grounding、Box 与目标边界框：从截图定位到可靠点击》对应概念章节：https://youngjunning.com/blog/e196ba9ba7b3b8ed"
+          },
+          {
+            "label": "TypeSafe 官方 Box 文档，2026-11-05 核对：https://docs.typesafe.ai/primitives/box"
+          }
+        ],
+        "card": {
+          "date": "2026-11-05",
+          "recordedAt": "2026-11-05",
+          "context": "AI 辅助资料整理；源于 Jev 视觉目标定位文章的概念说明，不表示本人已在真实手机页面验证定位成功率。",
+          "understanding": "视觉 Grounding 是依据图像和目标描述，寻找描述所指对象在图中的位置。Box 是 Jev 回答这类位置问题的接口，边界框是可能返回的位置数据。页面结构理解和点击后业务结果验证仍是另外的任务。",
+          "example": "假设截图中有一个没有稳定无障碍节点的‘查询’按钮，系统可用图像和‘查询按钮’描述请求定位；返回区域后仍需检查目标是否存在并验证点击结果。此例是流程说明，不代表实机测试。",
+          "distinction": "目标检测、OCR 和 Accessibility Tree 也可能提供矩形区域；是否属于视觉 Grounding，取决于位置是否由图像与目标描述匹配得到。"
+        }
+      },
+      {
+        "id": "ff6d24c1cfcdceec",
+        "kind": "card",
+        "title": "Jev Noul 与 Box：存在性判断和位置定位",
+        "url": null,
+        "summary": "Noul 回答目标是否存在，Box 回答目标在哪里；同一请求可同时提问，动作系统先判断是否采纳位置结果。Box 没有‘未找到’答案。",
+        "reason": "避免把 Box 返回的任意框或单次 confidence 当作目标真实存在的证据。",
+        "tags": [
+          "Jev",
+          "Noul",
+          "Box",
+          "视觉 Grounding",
+          "Agent"
+        ],
+        "savedAt": "2026-11-05T19:37+08:00",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "AI 辅助资料整理；公开文章《视觉 Grounding、Box 与目标边界框：从截图定位到可靠点击》对应概念章节：https://youngjunning.com/blog/e196ba9ba7b3b8ed"
+          },
+          {
+            "label": "TypeSafe 官方 Noul 文档，2026-11-05 核对：https://docs.typesafe.ai/primitives/noul"
+          },
+          {
+            "label": "TypeSafe 官方 Box 文档，2026-11-05 核对：https://docs.typesafe.ai/primitives/box"
+          }
+        ],
+        "card": {
+          "date": "2026-11-05",
+          "recordedAt": "2026-11-05",
+          "context": "AI 辅助资料整理；这是 Jev 两种问题类型的接口解释，不表示已建立适用于所有手机页面的判断阈值。",
+          "understanding": "Noul 是是/否问题，返回答案为‘是’的概率；Box 是图像位置问题，返回目标矩形的四条归一化边和位置答案的 confidence。两种问题可在同一请求中针对同一张图作答。动作系统应先评估目标存在性，再决定是否采用 Box；这是使用结果的顺序，不要求分两次调用模型。",
+          "example": "假设要点截图里的‘查询’按钮：同次请求问 Noul‘按钮是否存在’和 Box‘按钮在哪里’；若存在性证据不足，忽略 Box 并重新观察。此例只说明判定流程，不代表真实页面已验证。",
+          "distinction": "Box 即使目标缺失也会返回一个框，因此框和 confidence 都不能单独当作存在性证明；Noul 的概率不是位置，也不是 Box 的 confidence。同次提问省去第二次 API 往返，但官方文档未承诺内部并行或整体耗时；先问 Noul 再按需问 Box 可能减少目标缺失时的计算。阈值、延迟和成本需按实际页面评测。"
+        }
+      },
+      {
+        "id": "758f3da9f36fd98f",
+        "kind": "card",
+        "title": "归一化边界框到设备点击坐标",
+        "url": null,
+        "summary": "Box 的四条边是相对图像宽高的 0 到 1 比例；换算成图像像素后，还须映射到实际点击坐标系并确认截图未过期。",
+        "reason": "回看为什么模型给出正确的框，动作仍可能因缩放、裁剪、旋转或页面变化而点错。",
+        "tags": [
+          "边界框",
+          "坐标映射",
+          "Jev",
+          "Box",
+          "云手机"
+        ],
+        "savedAt": "2026-11-05T19:37+08:00",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "AI 辅助资料整理；公开文章《视觉 Grounding、Box 与目标边界框：从截图定位到可靠点击》对应概念章节：https://youngjunning.com/blog/e196ba9ba7b3b8ed"
+          },
+          {
+            "label": "TypeSafe 官方 Box 文档，2026-11-05 核对：https://docs.typesafe.ai/primitives/box"
+          }
+        ],
+        "card": {
+          "date": "2026-11-05",
+          "recordedAt": "2026-11-05",
+          "context": "AI 辅助资料整理；图像比例转像素来自 TypeSafe 文档，设备坐标复核与动作验证来自文章中的工程流程。",
+          "understanding": "边界框的 left/right 相对图像宽度，top/bottom 相对图像高度。以中心点点击时，可分别取两条水平边和两条垂直边的均值，再乘图像宽高得到图像像素。实际点击还要按设备的缩放、裁剪、旋转、状态栏和视口偏移映射，并确认观察与动作使用同一画面状态。",
+          "example": "假设图像为 400×400 像素，框为 left=0.20、top=0.40、right=0.80、bottom=0.60，则图像中心点为 (200, 200)。这个点仍须映射到实际设备坐标；示例不代表任何真实页面已点击成功。",
+          "distinction": "Box 只返回相对输入图片宽高的边界框和位置答案的 confidence；图像像素换算、设备坐标映射、截图有效性复核及点击后验证都由接入 Jev 的动作系统负责。归一化图像坐标、截图像素坐标和设备执行坐标是不同坐标系；点位落在框内不等于动作命中，更不等于业务结果成功。"
+        }
+      },
+      {
+        "id": "38c6d9646e0e792d",
+        "kind": "card",
+        "title": "从运营实际场景寻找合作切入点",
+        "url": null,
+        "summary": "我学到，寻找业务合作机会要先走进运营的实际工作：主动看流程和痛点，兼顾 PC 与手机 App 场景，再把发现的问题逐项转成可讨论的机会点。",
+        "reason": "提醒我从真实场景出发理解业务需求，把合作讨论落到具体问题和可执行的切入点。",
+        "tags": [
+          "运营",
+          "业务调研",
+          "场景分析",
+          "合作"
+        ],
+        "savedAt": "2026-11-05T14:44+08:00",
+        "selection": "explicit",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "本人陈述，2026-11-05，公开摘要：将运营场景、跨端流程与合作机会的整理记录为学习收获。"
+          }
+        ],
+        "card": {
+          "date": "2026-11-05",
+          "recordedAt": "2026-11-05",
+          "context": "2026 年 11 月 5 日整理的一条业务调研与合作方法收获；尚未关联具体项目或实施结果。",
+          "understanding": "我学到，合作前可以先主动观察运营人员怎样完成工作，找出复杂的流程和实际痛点；还要把 PC 与手机 App 等场景连起来看，识别跨端衔接中的机会，再逐项讨论哪些问题值得做、怎样做。",
+          "example": "假设某运营流程需要在 PC 后台处理配置、在手机 App 核对结果，可以分别观察两个端上的操作与交接，再列出待验证的痛点和机会点。这只是方法示例。",
+          "distinction": "这是我对业务调研与合作切入方式的学习收获，不表示我已完成某个跨端调研、作出合作承诺，或解决了所有痛点。"
+        }
+      },
+      {
+        "id": "2f43458f49eef200",
+        "kind": "card",
+        "title": "tabindex、Tab 焦点与 AX Tree 的关系",
+        "url": null,
+        "summary": "tabindex 控制元素是否进入顺序键盘导航及其顺序；AX Tree 描述元素的角色、名称、状态等语义。能否按 Tab 到达，与能否被语义观察读取是不同问题。",
+        "reason": "回看标题、普通容器和结果提示为什么可以有不同的 Tab 行为，同时仍有各自的无障碍语义。",
+        "tags": [
+          "Accessibility Tree",
+          "tabindex",
+          "键盘焦点",
+          "Browser Agent"
+        ],
+        "savedAt": "2026-11-05T13:11+08:00",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "AI 辅助资料整理；公开文章《只用 Accessibility Tree，浏览器 Agent 能走多远？》的 tabindex 解释：https://youngjunning.com/blog/98c0567121f59475"
+          },
+          {
+            "label": "MDN tabindex 参考文档，2026-11-05 核对：https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/tabindex"
+          }
+        ],
+        "card": {
+          "date": "2026-11-05",
+          "recordedAt": "2026-11-05",
+          "context": "AI 辅助资料整理；源于本人对 AX Tree 文章中 tabindex 解释的追问，不表示本人已经掌握或实践相关实现。",
+          "understanding": "Tab 是键盘焦点依次移动的路径，AX Tree 是浏览器提供的页面语义表示。普通标题通常不在 Tab 路径上，仍可作为标题被读取；div 加 tabindex=0 通常可被 Tab 到达，但不会自动变成按钮；标题加 tabindex=-1 通常被 Tab 跳过，程序仍可调用 focus() 将焦点移过去。",
+          "example": "假设查询结果加载后，程序对 <h2 tabindex=\"-1\">查询结果</h2> 调用 focus()：焦点可以移到结果标题，便于听到更新；用户平时按 Tab 则通常不会停在这个标题上。此例解释机制，不代表实际页面已这样实现。",
+          "distinction": "tabindex 决定焦点导航资格或顺序，不赋予按钮语义，也不负责自动移动焦点；role、名称等语义要依据元素和页面状态判断。"
+        }
+      },
+      {
+        "id": "e0327ad10d9b4db3",
+        "kind": "project",
+        "title": "browser-use",
+        "url": "https://github.com/browser-use/browser-use",
+        "summary": "开源浏览器 Agent 项目；当前 DOM 服务结合 CDP DOM、DOMSnapshot 与 AX 信息构建页面观察，serializer 进一步筛选可见内容和交互目标。",
+        "reason": "回查页面感知中多源采集、可见性判断、交互识别和简化树的具体实现；本轮文章已按源码分析。",
+        "tags": [
+          "Browser Agent",
+          "DOM 剪枝",
+          "Accessibility Tree"
+        ],
+        "savedAt": "2026-11-05T13:08+08:00",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "本人在本轮文章请求中提名为参考对象；官方仓库和 DOM 服务源码，2026-11-05 核对：https://github.com/browser-use/browser-use/blob/main/browser_use/dom/service.py"
+          }
+        ]
+      },
+      {
+        "id": "b7080a49fa02da51",
+        "kind": "project",
+        "title": "agent-browser",
+        "url": "https://github.com/vercel-labs/agent-browser",
+        "summary": "面向 Agent 的浏览器 CLI；当前 Chrome 原生 snapshot 路径读取 AX Tree 并提供交互项、紧凑、深度与区域范围等观察选项。",
+        "reason": "回查 AX 快照裁剪、元素 ref 生命周期与动作验证的官方实现；本轮文章已按源码和文档分析。",
+        "tags": [
+          "Browser Agent",
+          "Accessibility Tree",
+          "页面观察"
+        ],
+        "savedAt": "2026-11-05T13:08+08:00",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "本人在本轮文章请求中提名为参考对象；官方仓库与快照文档，2026-11-05 核对：https://agent-browser.dev/snapshots"
+          }
+        ]
+      },
+      {
+        "id": "22e1134e4b38d4c7",
+        "kind": "card",
+        "title": "Chromium 浏览器的两种接入边界：直接 fork 与独立 Host",
+        "url": null,
+        "summary": "BrowserOS 以 Chromium fork 和补丁构建浏览器；Atlas 公开的 OWL 架构把自建原生 UI 与进程外 Chromium Host 分开。两者都使用 Chromium，差异在浏览器 UI 与进程的所有权，不足以推断 Atlas 大量删减了 Chromium 源码。",
+        "reason": "比较 Chromium fork 与独立浏览器 Host 的职责和集成成本，区分架构公开与源码实现证据。",
+        "tags": [
+          "Chromium",
+          "浏览器架构",
+          "Atlas",
+          "BrowserOS"
+        ],
+        "savedAt": "2026-11-04T02:56+08:00",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "OpenAI 官方 OWL 工程文章：https://openai.com/index/building-chatgpt-atlas/"
+          },
+          {
+            "label": "BrowserOS 官方 Chromium fork 构建说明：https://github.com/browseros-ai/BrowserOS/blob/main/packages/browseros/README.md"
+          }
+        ],
+        "card": {
+          "date": "2026-11-04",
+          "recordedAt": "2026-11-04",
+          "context": "AI 辅助资料整理；比较 Atlas 与 BrowserOS 的 Chromium 接入方式，不表示本人已验证 Atlas 的私有源码。",
+          "understanding": "BrowserOS 官方仓库将浏览器称为 Chromium fork，使用补丁修改 Chromium UI 和功能。OpenAI 公开文章说明 Atlas 的应用 UI 主要用 SwiftUI/AppKit 重建，Chromium 浏览器进程作为独立 Host，通过 Mojo 与 Client 通信，并尽量保持 Chromium 补丁定向而小。",
+          "example": "假设开发一个没有 AI 功能、UI 由 AppKit 实现的浏览器：可让 UI 进程管理窗口和标签，让独立 Chromium Host 提供网页渲染和状态；但要成为日常浏览器仍需图层嵌入、完整输入、弹窗、下载与持久化 Profile。此例是目标架构示意，不代表任何具体产品已实现。",
+          "distinction": "重新实现浏览器应用 UI、把 Chromium 进程移到 Host、以及大量删减 Chromium 源码是三件不同的事；公开 OWL 文章支持前两项和定向补丁，未披露足以证明第三项的删减清单。"
+        }
+      },
+      {
+        "id": "ed2d400461c87b68",
+        "kind": "card",
+        "title": "Jev 图片定位与截图文字提取的边界",
+        "url": null,
+        "summary": "Jev 的图片输入可用于判断目标和返回 Box 坐标；当前 System One 文档列出的答案类型不包含任意文字转写。读取页面里的动态文字需要另一个文本来源。",
+        "reason": "区分云手机 Agent 的目标定位与航班状态、机场、时间等结果字段提取，避免把 Box 坐标误当 OCR 结果。",
+        "tags": [
+          "Jev",
+          "Box",
+          "视觉 Grounding",
+          "OCR",
+          "云手机"
+        ],
+        "savedAt": "2026-11-04T02:40+08:00",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "AI 辅助资料整理；TypeSafe System One 官方文档：https://docs.typesafe.ai/api/system-one；图片输入：https://docs.typesafe.ai/images；Box：https://docs.typesafe.ai/primitives/box。无任意文字答案类型为依据当前文档的推断。"
+          }
+        ],
+        "card": {
+          "date": "2026-11-04",
+          "recordedAt": "2026-11-04",
+          "context": "AI 辅助解释；源于本轮对 Jev 云手机页面读取和最终结果提取的追问，不表示本人已掌握或采用某种 OCR 实现。",
+          "understanding": "给 Jev 传截图后，Noul 可判断一个条件是否成立，Choice 可从给定选项中选择，Box 可返回目标所在矩形。Box 的四个坐标能支持点击定位，却不是截图文字。依据当前 System One 文档列出的答案类型，不能要求它直接转写任意机场名或时间。",
+          "example": "假设截图里有“航班查询”按钮与“06:25”的起飞时间：可用 Box 找到按钮区域；若要把 06:25 写入结果，还需由截图视觉文字模型、OCR 或可靠的页面文本来源读出。此例说明能力边界，不代表实机验证。",
+          "distinction": "模型能接收图片，不等于其 API 能输出任意文字；位置核对、已知值验证和自由文本提取是不同输出任务。"
+        }
+      },
+      {
+        "id": "845736bf57c284ad",
+        "kind": "knowledge",
+        "title": "W3C APG：可访问名称与描述的编写规则",
+        "url": "https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/",
+        "summary": "解释 accessible name 和 description 的用途、来源与命名规则，覆盖原生标签、aria-label、aria-labelledby 和 aria-describedby。",
+        "reason": "用于检查表单字段、图标按钮与浏览器 Agent 语义观察中的名称是否准确，避免把表单 name 属性或仅有 placeholder 当作良好的标签设计。",
+        "tags": [
+          "Accessibility",
+          "ARIA",
+          "HTML",
+          "Browser Agent"
+        ],
+        "savedAt": "2026-10-30",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "2026-10-30 Accessibility 漫画与属性示例研究中核验的 W3C 官方指南；文章 98c0567121f59475。会话发现，不代表本人推荐或已经掌握。"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "733d0260b41fe65a",
+        "kind": "knowledge",
+        "title": "CDP Accessibility：Chromium 原生 AX 查询接口",
+        "url": "https://chromedevtools.github.io/devtools-protocol/tot/Accessibility/",
+        "summary": "Chrome DevTools Protocol 的 Accessibility 域，定义原生 AX 树查询、节点字段与更新事件；该域不提供通用 click/fill 动作。",
+        "reason": "用于实现和排查 AX-only 浏览器观察，核对 ignored、frameId、AXNodeId 与 backendDOMNodeId，避免把工具 ARIA snapshot 误当作浏览器原生 AX Tree。",
+        "tags": [
+          "Accessibility Tree",
+          "CDP",
+          "Browser Agent"
+        ],
+        "savedAt": "2026-10-30",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "2026-10-30 原生 AX-only 浏览器自动化研究中核验的官方 CDP Accessibility 文档；对应文章 98c0567121f59475。会话发现，不代表本人推荐或已经掌握。"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "98e5f8fb7a31b40d",
+        "title": "PoC 是啥？",
+        "visibility": "shared",
+        "kind": "card",
+        "url": null,
+        "summary": "PoC（Proof of Concept，概念验证）是用最小投入，验证一个想法或技术方案是否可行。",
+        "reason": "保留概念解释、理解和使用场景；按本人要求从个人记录迁入收藏夹。",
+        "tags": [
+          "PoC",
+          "概念验证"
+        ],
+        "savedAt": "2026-10-30",
+        "selection": "explicit",
+        "sources": [
+          {
+            "label": "迁移前已有的个人短记录，保留原文与日期"
+          }
+        ],
+        "card": {
+          "date": "2026-10-28",
+          "recordedAt": "2026-10-28",
+          "context": "知识卡片首例：保留概念解释、理解和使用场景。浏览器 Agent 场景是假设示例，不代表已经完成的项目实践。",
+          "understanding": "先验证最不确定的那个点，再决定是否继续投入。开始前明确要验证的问题、通过标准和投入上限。",
+          "example": "假设要做浏览器 Agent，可以先选一项真实业务操作，在明确条件下验证任务能否完成，并记录成功率和失败原因。账号体系、管理后台等能力可在验证后再投入。",
+          "distinction": "PoC 重点验证可行性；Demo 重点展示效果；MVP（Minimum Viable Product，最小可行产品）重点用可用的最小产品验证用户价值。三者可以重叠，一次成功的演示也不等于已验证稳定性。"
+        },
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "d89f4c7a120e6b53",
+        "kind": "project",
+        "title": "Plasma UI：React 液态玻璃组件库",
+        "url": "https://github.com/CruxGarden/plasma-ui",
+        "summary": "CruxGarden 开源的 React 液态玻璃组件库，仓库使用 TypeScript，采用 MIT 许可证，并提供在线演示入口。",
+        "reason": "本人明确要求收藏，留作界面组件资料；尚未核验实际运行效果或项目适配情况。",
+        "tags": [
+          "React",
+          "UI 组件",
+          "液态玻璃",
+          "TypeScript"
+        ],
+        "savedAt": "2026-11-07T16:53+08:00",
+        "selection": "explicit",
+        "visibility": "shared",
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "官方 GitHub 仓库，2026-11-07 核验：https://github.com/CruxGarden/plasma-ui"
+          },
+          {
+            "label": "本人明确收藏，2026-11-07，公开摘要。"
+          }
+        ]
+      },
+      {
+        "id": "7de12a9cb68f4305",
+        "kind": "project",
+        "title": "Impeccable：面向编码 Agent 的设计指导",
+        "url": "https://github.com/pbakaus/impeccable",
+        "summary": "提供设计评审、技术审计、界面精修、排版与响应式适配等指导。上游还包含 CLI、检测器和工具集成；可按需参考其设计方法。",
+        "reason": "本人明确要求双站收藏，便于回看设计评审、精修与适配方法；Joyally Design 已参考其中的设计指导。",
+        "tags": [
+          "设计系统",
+          "Agent Skills",
+          "界面设计"
+        ],
+        "savedAt": "2026-11-07T15:45+08:00",
+        "selection": "explicit",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "adopted",
+        "usages": [
+          {
+            "project": "Joyally Design",
+            "projectUrl": "https://github.com/youngjunning/skills",
+            "stage": "adopted",
+            "purpose": "将选定设计方法融入现有工作流，保留跨平台与品牌约束。",
+            "evidence": "本轮源码已加入改编指导和来源记录；仅采用指导文本，未接入上游 CLI、hooks 或检测器，尚未验证真实界面任务效果。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "上游官方仓库及 skill/reference 指导，固定提交 687bc381bc9091bf252c0a05303640561014a425：https://github.com/pbakaus/impeccable/tree/687bc381bc9091bf252c0a05303640561014a425"
+          },
+          {
+            "label": "本人明确要求双站收藏，2026-11-07，公开摘要。"
+          }
+        ]
+      },
+      {
+        "id": "a9e4f61d7c2038b5",
+        "kind": "project",
+        "title": "statechart-art：奶茶店业务的手绘状态图",
+        "url": "https://github.com/kevintngo/statechart-art",
+        "summary": "以奶茶店业务为主题的四幅手绘风格状态图。项目 README 展示了从 TLA+ 模型、TLC 检查、Mermaid 状态图到 pele 布局和代码绘图的流程，涵盖分支与循环、父状态、并行区域及违反规则的路径。",
+        "reason": "本人明确要求收藏，留作状态图表达与形式化模型可视化的回看资料；尚未验证本地运行效果。",
+        "tags": [
+          "状态图",
+          "TLA+",
+          "形式化验证",
+          "可视化",
+          "Mermaid"
+        ],
+        "savedAt": "2026-11-07T09:05+08:00",
+        "selection": "explicit",
+        "visibility": "shared",
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "项目官方 README，2026-11-07 核验：https://github.com/kevintngo/statechart-art/blob/main/README.md"
+          },
+          {
+            "label": "本人明确收藏，2026-11-07，公开摘要。"
+          }
+        ]
+      },
+      {
+        "id": "6346c52b801999ed",
+        "kind": "card",
+        "title": "Qwen3-VL-Plus 视觉定位框的千分坐标",
+        "url": null,
+        "summary": "Qwen3-VL 系列的二维定位框采用归一化到 [0, 999] 的相对坐标；绘制到原图时，横纵坐标分别除以 1000，再乘图像宽高。",
+        "reason": "回看 Qwen3-VL-Plus 与采用 0–1 比例坐标的其他视觉定位接口之间的坐标尺度差异，避免点击点换算错误。",
+        "tags": [
+          "Qwen3-VL-Plus",
+          "视觉 Grounding",
+          "边界框",
+          "坐标映射"
+        ],
+        "savedAt": "2026-11-05T19:58+08:00",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "AI 辅助资料整理；阿里云百炼 qwen3-vl-plus 模型信息，2026-11-05 核对：https://help.aliyun.com/zh/model-studio/qwen3-vl-plus"
+          },
+          {
+            "label": "阿里云百炼视觉理解文档‘模型输出物体定位的结果后，如何将检测框绘制到原图上？’，2026-11-05 核对：https://help.aliyun.com/zh/model-studio/vision"
+          }
+        ],
+        "card": {
+          "date": "2026-11-05",
+          "recordedAt": "2026-11-05",
+          "context": "AI 辅助资料整理；源于对 Qwen3-VL-Plus 视觉 Grounding 框是否为 0–1 坐标的追问，不表示本人已测试该模型的实际定位精度。",
+          "understanding": "阿里云将 qwen3-vl-plus 列为 Qwen3 系列视觉模型；其视觉理解文档说明 Qwen3-VL 系列定位结果是归一化到 [0, 999] 的相对坐标。若结果为 [x1, y1, x2, y2]，绘制到原图时横坐标按 x/1000×图像宽度、纵坐标按 y/1000×图像高度换算。",
+          "example": "假设图像为 400×400 像素，模型返回 [200, 400, 800, 600]，按千分坐标换算为像素框 (80, 160) 到 (320, 240)。这是算术示例，不代表模型曾返回该框。",
+          "distinction": "这是千分尺度的相对坐标，不是直接位于 0–1 的小数，也不是原图像素坐标。模型输出是文本，具体响应仍应校验字段、坐标范围与顺序；若提示词另行规定输出尺度，应以实际约定和响应为准。"
+        }
+      },
+      {
+        "id": "6b91e4c2a73f508d",
+        "kind": "card",
+        "title": "界面控件的 bounds：位置与尺寸",
+        "url": null,
+        "summary": "Bounds 是界面元素的边界矩形，描述它在某个坐标系中的位置和大小，常表示为 x、y、width、height 或 left、top、right、bottom。",
+        "reason": "用户追问 Accessibility Tree 语境中的 bounds，便于回看控件位置、边界框与点击坐标的区别。",
+        "tags": [
+          "Accessibility Tree",
+          "bounds",
+          "界面自动化"
+        ],
+        "savedAt": "2026-11-05T19:54+08:00",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "AI 辅助概念解释；公开文章《视觉 Grounding、Box 与目标边界框：从截图定位到可靠点击》，2026-11-03：https://youngjunning.com/blog/e196ba9ba7b3b8ed"
+          }
+        ],
+        "card": {
+          "date": "2026-11-05",
+          "recordedAt": "2026-11-05",
+          "context": "AI 辅助解释界面自动化中的通用术语；具体坐标系由平台或接口决定，不代表本人已掌握或实践。",
+          "understanding": "Bounds 表示元素占据的矩形区域，可用于判断大致位置与尺寸。常见写法是左上角坐标加宽高，或矩形的四条边。",
+          "example": "假设按钮的 bounds 为 x=100、y=200、width=80、height=40，则矩形从 (100, 200) 延伸到 (180, 240)；坐标系和单位取决于具体接口。",
+          "distinction": "Bounds 只是位置与尺寸信息；不能单凭它断定控件当前可见、未被遮挡、可以点击或点击已生效。"
+        }
+      },
+      {
+        "id": "e5f96a83d7b14c20",
+        "kind": "knowledge",
+        "title": "Agent Skills 开放格式与能力打包说明",
+        "url": "https://agentskills.io/home",
+        "summary": "Agent Skills 官方说明：通过 SKILL.md 中的元数据与指令组织可按需加载的任务能力，并可附带脚本、参考资料、模板和其他资源；跨客户端支持与具体格式应按当前规范核对。",
+        "reason": "在补充架构技能的 AI 工程与交付流程时核验，作为区分 Skill 打包、Agent 执行及业务权限的规范入口；收藏不表示已采用某一客户端或完成互操作验收。",
+        "tags": [
+          "AI Agent",
+          "Skill",
+          "开放格式",
+          "能力复用"
+        ],
+        "savedAt": "2026-11-05T13:41+08:00",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "Agent Skills 官方 Overview，2026-11-05 核验：https://agentskills.io/home"
+          }
+        ]
+      },
+      {
+        "id": "efc8d86fbe37e287",
+        "kind": "knowledge",
+        "title": "Google Play Target API 官方要求",
+        "url": "https://support.google.com/googleplay/android-developer/answer/11926878",
+        "summary": "Google Play 官方维护新应用、更新及已有应用可见性的 Target API 门槛与延期安排；提交规则与继续可见规则需分别核对。具体版本和日期会变动，应在每次发行前复查。",
+        "reason": "国际 Android 发行研究中发现的原始政策入口，供后续核对，不代表个人法律判断或已通过商店审核。",
+        "tags": [
+          "Android",
+          "Google Play",
+          "应用发行"
+        ],
+        "savedAt": "2026-11-04T22:08+08:00",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "Google Play Console Help 官方政策原文：https://support.google.com/googleplay/android-developer/answer/11926878"
+          }
+        ]
+      },
+      {
+        "id": "d1e8b9f045a72c63",
+        "kind": "project",
+        "title": "agent-desktop",
+        "url": "https://github.com/vercel-labs/agent-desktop",
+        "summary": "Vercel Labs 的 Computer Use CLI，通过操作系统的 accessibility tree 让 AI Agent 读取和操作桌面应用。官方 README 提供 macOS、Windows、Linux 的使用说明，支持 CLI 与 MCP 接入。",
+        "reason": "俊宁明确要求收藏此项目，供后续查阅桌面自动化与 Agent 工具接入；尚无试用或采用记录。",
+        "tags": [
+          "AI Agent",
+          "Computer Use",
+          "桌面自动化",
+          "CLI",
+          "MCP"
+        ],
+        "savedAt": "2026-11-04T18:10+08:00",
+        "selection": "explicit",
+        "visibility": "shared",
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "本人 2026-11-04 明确收藏；项目官方 README：https://github.com/vercel-labs/agent-desktop"
+          }
+        ]
+      },
+      {
+        "id": "a764e990132fb651",
+        "kind": "project",
+        "title": "腾讯 Lemon Cleaner",
+        "url": "https://github.com/tencent/lemon-cleaner",
+        "summary": "macOS 清理工具，覆盖应用垃圾扫描、大文件与重复文件、空间分析、应用卸载和设备状态监控。",
+        "reason": "俊宁将其作为 Owlet 电脑管家的功能与安全机制参考；软件管理和系统优化已进入 Owlet 产品要求，但不表示采用 Lemon Cleaner 源码或相关能力已完成验收。",
+        "tags": [
+          "macOS",
+          "电脑清理",
+          "Owlet"
+        ],
+        "savedAt": "2026-11-04T02:09+08:00",
+        "selection": "explicit",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "本人 2026-11-04 陈述；项目原始来源：https://github.com/tencent/lemon-cleaner"
+          }
+        ]
+      },
+      {
+        "id": "bd601b5319e7a421",
+        "kind": "project",
+        "title": "Mole",
+        "url": "https://github.com/tw93/Mole",
+        "summary": "清理与系统维护工具，包含清理、应用卸载、磁盘分析、系统状态等功能；项目仓库提供 CLI，原生 Mac 应用单独提供。",
+        "reason": "俊宁将其作为 Owlet 电脑管家的功能与安全机制参考，并展示了原生应用的扫描界面；软件管理和系统优化已进入 Owlet 产品要求，但不表示采用 Mole 源码或相关能力已完成验收。",
+        "tags": [
+          "macOS",
+          "电脑清理",
+          "Owlet"
+        ],
+        "savedAt": "2026-11-04T02:09+08:00",
+        "selection": "explicit",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "本人 2026-11-04 陈述；项目原始来源：https://github.com/tw93/Mole"
+          }
+        ]
+      },
+      {
+        "id": "be9cc1222ed79c60",
+        "kind": "card",
+        "title": "Electron ipcMain：主进程如何接收界面消息",
+        "url": null,
+        "summary": "ipcMain 是 Electron 主进程接收渲染进程消息的接口；on 监听消息，handle 处理需要返回结果的调用。",
+        "reason": "阅读 Electron 应用代码时，区分界面与主进程的通信、网页渲染，以及 Agent 使用的 CDP 控制通道。",
+        "tags": [
+          "Electron",
+          "ipcMain",
+          "IPC"
+        ],
+        "savedAt": "2026-11-03T17:38+08:00",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "AI 辅助资料整理；用户 2026-11-03 要求解释 ipcMain。Electron 官方 API：https://www.electronjs.org/docs/latest/api/ipc-main"
+          }
+        ],
+        "card": {
+          "date": "2026-11-03",
+          "recordedAt": "2026-11-03",
+          "context": "AI 辅助解释；结合《漫画拆解 ChatGPT App：内置浏览器藏在哪里》的术语说明，依据 Electron 官方文档，不表示本人已掌握或实践。",
+          "understanding": "渲染进程可通过 ipcRenderer 向主进程发送消息。主进程用 ipcMain.on 接收单向消息，或用 ipcMain.handle 处理 ipcRenderer.invoke 发起、需要异步返回结果的调用。",
+          "example": "假设界面需要读取应用设置，可调用 ipcRenderer.invoke('settings:read')；主进程用 ipcMain.handle('settings:read', ...) 返回结果。此例仅说明机制，不代表 ChatGPT 应用实际使用这个 channel。",
+          "distinction": "ipcMain 是 Electron 应用内部的进程通信接口，不负责网页渲染，也不等同于通过 CDP 调试或控制 Chromium 页面；看到调用不能推断具体业务消息或权限实现。"
+        }
+      },
+      {
+        "id": "d53795ec40da8732",
+        "kind": "card",
+        "title": "Lima：管理 Linux 虚拟机的工具",
+        "url": null,
+        "summary": "Lima 管理虚拟机的生命周期与配置；具体虚拟化由 VZ、QEMU 等后端承担。",
+        "reason": "用户明确要求介绍 Lima 与 rootfs 并提供知识卡片，供分层理解和排障回看。",
+        "tags": [
+          "Lima",
+          "Linux",
+          "Android",
+          "容器"
+        ],
+        "savedAt": "2026-11-03T11:52+08:00",
+        "selection": "explicit",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "AI 辅助资料整理；用户本轮要求“Lima 和 rootfs 是啥，写一篇文章介绍下，并给知识卡片”。官方资料：https://lima-vm.io/docs/"
+          }
+        ],
+        "card": {
+          "date": "2026-11-03",
+          "recordedAt": "2026-11-03",
+          "context": "AI 辅助解释，结合 Android 插件 macOS/WSL 资源准备场景；不代表本人已掌握或完成各平台验收。",
+          "understanding": "Lima 管理虚拟机的生命周期与配置；具体虚拟化由 VZ、QEMU 等后端承担。",
+          "example": "假设在 macOS 上运行 Android 容器，可先由 Lima 管理 Linux VM，再在 guest 内使用容器运行时。",
+          "distinction": "limactl 可执行、VM 可启动、Android 可运行是三个不同的验证结果。"
+        }
+      },
+      {
+        "id": "d61534bc8b9c5b8a",
+        "kind": "card",
+        "title": "rootfs：根目录树与系统用户态",
+        "url": null,
+        "summary": "发行版交付语境下，rootfs 提供根目录树、程序、库和配置。tar 是封装格式，不等于完整可启动磁盘或运行内核。",
+        "reason": "用户明确要求介绍 Lima 与 rootfs 并提供知识卡片，供分层理解和排障回看。",
+        "tags": [
+          "Lima",
+          "Linux",
+          "Android",
+          "容器"
+        ],
+        "savedAt": "2026-11-03T11:52+08:00",
+        "selection": "explicit",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "AI 辅助资料整理；用户本轮要求“Lima 和 rootfs 是啥，写一篇文章介绍下，并给知识卡片”。官方资料：https://learn.microsoft.com/en-us/windows/wsl/use-custom-distro"
+          }
+        ],
+        "card": {
+          "date": "2026-11-03",
+          "recordedAt": "2026-11-03",
+          "context": "AI 辅助解释，结合 Android 插件 macOS/WSL 资源准备场景；不代表本人已掌握或完成各平台验收。",
+          "understanding": "发行版交付语境下，rootfs 提供根目录树、程序、库和配置。tar 是封装格式，不等于完整可启动磁盘或运行内核。",
+          "example": "假设向 WSL 导入 Ubuntu rootfs tar，用户态来自该 tar，运行内核仍由 WSL2 环境提供。",
+          "distinction": "根目录 / 不等于用户家目录 /root；工程中的 rootfs 镜像也应与内核内部 rootfs 对象区分。"
+        }
+      },
+      {
+        "id": "0a940ff96caf609f",
+        "kind": "card",
+        "title": "Binder：rootfs 无法代替的内核能力",
+        "url": null,
+        "summary": "Android Binder IPC 依赖内核驱动。Redroid 容器共享承载它的 Linux 内核，替换用户态镜像不会自动补齐内核能力。",
+        "reason": "用户明确要求介绍 Lima 与 rootfs 并提供知识卡片，供分层理解和排障回看。",
+        "tags": [
+          "Lima",
+          "Linux",
+          "Android",
+          "容器"
+        ],
+        "savedAt": "2026-11-03T11:52+08:00",
+        "selection": "explicit",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "AI 辅助资料整理；用户本轮要求“Lima 和 rootfs 是啥，写一篇文章介绍下，并给知识卡片”。官方资料：https://source.android.com/docs/core/architecture/ipc/binder-overview"
+          }
+        ],
+        "card": {
+          "date": "2026-11-03",
+          "recordedAt": "2026-11-03",
+          "context": "AI 辅助解释，结合 Android 插件 macOS/WSL 资源准备场景；不代表本人已掌握或完成各平台验收。",
+          "understanding": "Android Binder IPC 依赖内核驱动。Redroid 容器共享承载它的 Linux 内核，替换用户态镜像不会自动补齐内核能力。",
+          "example": "假设 nerdctl 和 Android 镜像均已准备，但当前内核未启用 Binder，仍需处理内核配置或匹配模块，而不是反复更换 rootfs。",
+          "distinction": "Binder 与 binderfs 不同；检查到 binder 文件系统也不等于设备权限、Android 启动和业务任务已验收。"
+        }
+      },
+      {
+        "id": "a043fdc0643c0a59",
+        "kind": "knowledge",
+        "title": "TypeSafe Jev 图像输入与 Box 官方文档",
+        "url": "https://docs.typesafe.ai/images",
+        "summary": "Jev 可通过 assets 引用图像；1.14 的 Box 问题返回归一化坐标框。图像与 Box 当前是需显式启用的实验能力，不能仅凭模型版本推断接入链路可用。",
+        "reason": "回看视觉定位的请求格式、能力限制与上线前验证条件。",
+        "tags": [
+          "Jev",
+          "视觉定位",
+          "Box",
+          "TypeSafe"
+        ],
+        "savedAt": "2026-11-03T15:50+08:00",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "TypeSafe 官方图像文档，2026-11-03 核对：https://docs.typesafe.ai/images"
+          },
+          {
+            "label": "TypeSafe 官方 Box 文档，2026-11-03 核对：https://docs.typesafe.ai/primitives/box"
+          },
+          {
+            "label": "TypeSafe 官方模型列表，2026-11-03 核对：https://docs.typesafe.ai/models"
+          }
+        ],
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "baad0631679522e9",
+        "url": null,
+        "kind": "card",
+        "savedAt": "2026-11-02",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "title": "SDK 与 Runtime：接入和执行是两种职责",
+        "summary": "SDK 提供开发时接入所需的库、类型和工具；Runtime 在程序运行时承担代码执行、状态与资源管理。一个产品可兼有两种职责。",
+        "reason": "回看技术栈命名、集成边界和排障时，分别找到调用入口与实际执行主体。",
+        "tags": [
+          "SDK",
+          "Runtime",
+          "API",
+          "架构"
+        ],
+        "card": {
+          "date": "2026-11-02",
+          "recordedAt": "2026-11-02",
+          "context": "AI 辅助解释；源于 2026-11-02 对概念的学习提问，依据所列官方资料整理，不表示本人已掌握或实践。",
+          "understanding": "API 是交互约定，SDK 通常把 API、类型、示例和开发工具交给调用方；Runtime 是运行时承载执行、生命周期和状态的组件或环境。二者按职责区分，不按是否打包在同一个安装包区分。",
+          "example": "假设一个浏览器自动化包提供 renderPage()：它可以只发送请求到远端浏览器 Runtime，也可以随包启动本地浏览器进程。单看方法名无法判断执行位置。",
+          "distinction": "SDK 不一定只是薄网络客户端，Runtime 不一定是独立进程；要检查实际分发、进程、状态与失败路径。"
+        },
+        "sources": [
+          {
+            "label": "Node.js 官方运行时介绍：https://nodejs.org/learn/getting-started/introduction-to-nodejs"
+          },
+          {
+            "label": "Electron 官方框架说明：https://www.electronjs.org/docs/latest/"
+          },
+          {
+            "label": "OpenAI OWL 工程文章：https://openai.com/index/building-chatgpt-atlas/"
+          }
+        ]
+      },
+      {
+        "id": "ef59db6898dfa7eb",
+        "url": null,
+        "kind": "card",
+        "savedAt": "2026-11-02",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "title": "Electron 的 WebContents、BrowserWindow 与 webview",
+        "summary": "BrowserWindow 是桌面窗口；WebContents 是主进程中加载和控制一份网页内容的对象；webview 将另一份网页嵌入应用界面。",
+        "reason": "看懂 Electron 内置浏览器和安全配置时，先定位窗口、应用页面和被嵌入网页各自的对象。",
+        "tags": [
+          "Electron",
+          "WebContents",
+          "BrowserWindow",
+          "webview"
+        ],
+        "card": {
+          "date": "2026-11-02",
+          "recordedAt": "2026-11-02",
+          "context": "AI 辅助解释；源于 2026-11-02 对概念的学习提问，依据所列官方资料整理，不表示本人已掌握或实践。",
+          "understanding": "BrowserWindow 拥有应用页面的 webContents。若应用页面放置 <webview>，嵌入的 guest 网页也有自己的 WebContents。WebContents 可加载 URL、接收导航事件、与页面通信，但不是网页 DOM 或 Chromium 内核。",
+          "example": "假设聊天应用窗口的主页面含 <webview> 打开新闻站：win.webContents 控制聊天主页面，guest WebContents 控制新闻页。两者是不同网页内容。",
+          "distinction": "“窗口 → 应用 WebContents → webview → guest WebContents”只表示界面承载关系，不是固定进程树，也不是每个 Electron 应用必用 webview。"
+        },
+        "sources": [
+          {
+            "label": "Electron webContents API：https://www.electronjs.org/docs/latest/api/web-contents"
+          },
+          {
+            "label": "Electron BrowserWindow API：https://www.electronjs.org/docs/latest/api/browser-window"
+          },
+          {
+            "label": "Electron webview tag API：https://www.electronjs.org/docs/latest/api/webview-tag"
+          }
+        ]
+      },
+      {
+        "id": "4e03a576a9129a47",
+        "kind": "card",
+        "title": "OWL 为什么叫 runtime，而不只叫 SDK？",
+        "url": null,
+        "summary": "OWL 有供上层调用的 Client API，也有承载 Chromium 浏览器进程的 Host；runtime 强调运行中的执行部分，SDK 只强调开发接口。",
+        "reason": "帮助区分 OWL 架构、调用接口、ChatGPT 桌面内置浏览器和已弃用的 Atlas 产品。",
+        "tags": [
+          "OWL",
+          "runtime",
+          "SDK",
+          "Chromium"
+        ],
+        "savedAt": "2026-11-02",
+        "selection": "discovered",
+        "visibility": "shared",
+        "card": {
+          "date": "2026-11-02",
+          "recordedAt": "2026-11-02",
+          "context": "AI 辅助解释；依据 OpenAI 的 Atlas OWL 工程文章与 ChatGPT 桌面内置浏览器官方说明，不声称俊宁开发、采用或完整验证了 OWL。",
+          "understanding": "SDK 通常指应用开发时调用的接口和库。OpenAI 公开的 Atlas OWL 还包含独立运行的 Chromium Host 进程；Client API 与 Host 共同完成浏览器集成。因此描述整套执行能力时称 runtime 更完整。",
+          "example": "以 OpenAI 公开的 Atlas 架构为例：上层 OWL Client 请求创建 WebView，OWL Host 承载 Chromium 浏览器进程；前者体现 SDK 风格的接口，后者提供运行时执行能力。",
+          "distinction": "runtime 与 SDK 不互斥。Atlas 的公开架构不能直接证明 ChatGPT 桌面版使用完全相同的客户端和进程实现；两者是不同产品。OpenAI 公开了架构并称 OWL 在内部按预编译二进制交付；截至 2026-11-02 未查到官方源码仓库和许可证，不能把架构公开等同于开源。"
+        },
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "OpenAI OWL 工程文章，2026-11-02 核验：https://openai.com/index/building-chatgpt-atlas/"
+          },
+          {
+            "label": "OpenAI ChatGPT 桌面内置浏览器说明：https://help.openai.com/en/articles/20001277-using-the-built-in-browser-in-the-chatgpt-desktop-app"
+          }
+        ]
+      },
+      {
+        "id": "92ac22e4955a6891",
+        "kind": "project",
+        "title": "ChatGPT 桌面版内置浏览器",
+        "url": "https://help.openai.com/en/articles/20001277-using-the-built-in-browser-in-the-chatgpt-desktop-app",
+        "summary": "OpenAI 桌面客户端提供的内置浏览器，具有独立浏览状态，可在应用内管理标签页、下载和扩展程序。",
+        "reason": "对照桌面客户端的浏览器能力，并与独立的 Atlas 产品区分；收藏不表示俊宁参与开发或验证全部功能。",
+        "tags": [
+          "ChatGPT",
+          "内置浏览器",
+          "扩展程序"
+        ],
+        "savedAt": "2026-11-02",
+        "selection": "explicit",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "本人陈述，2026-11-02，公开摘要：明确要求收藏本轮讨论的 ChatGPT 浏览器相关项目与工具。"
+          },
+          {
+            "label": "OpenAI 官方使用说明，2026-11-02 核验：https://help.openai.com/en/articles/20001277-using-the-built-in-browser-in-the-chatgpt-desktop-app"
+          }
+        ]
+      },
+      {
+        "id": "d1059120ceab8e14",
+        "kind": "project",
+        "title": "ChatGPT Atlas：OpenAI 独立浏览器（已弃用）",
+        "url": "https://openai.com/index/introducing-chatgpt-atlas/",
+        "summary": "OpenAI 于 2025 年推出的独立 ChatGPT 浏览器；OWL 工程文章介绍其 Chromium 集成架构。官方产品页面现标注 Atlas 已弃用。",
+        "reason": "回看 AI 浏览器产品与 OWL 架构的历史案例，并与 ChatGPT 桌面版内置浏览器区分。",
+        "tags": [
+          "ChatGPT Atlas",
+          "OWL",
+          "Chromium",
+          "AI 浏览器"
+        ],
+        "savedAt": "2026-11-02",
+        "selection": "explicit",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "本人陈述，2026-11-02，公开摘要：明确要求收藏本轮讨论的 ChatGPT Atlas。"
+          },
+          {
+            "label": "OpenAI 产品公告，2026-11-02 核验弃用标识：https://openai.com/index/introducing-chatgpt-atlas/"
+          },
+          {
+            "label": "OpenAI OWL 工程文章：https://openai.com/index/building-chatgpt-atlas/"
+          }
+        ]
+      },
+      {
+        "id": "78240e8176afe1cf",
+        "kind": "knowledge",
+        "title": "Electron 上游补丁开发指南",
+        "url": "https://www.electronjs.org/docs/latest/development/patches",
+        "summary": "Electron 官方文档说明 Chromium、Node.js 等上游依赖补丁的保留理由、patches 目录组织方式，以及导入、导出、修改和冲突处理流程。",
+        "reason": "回看 Electron 如何控制上游补丁的维护成本，并参考其补丁理由、顺序管理和上游合并策略。",
+        "tags": [
+          "Electron",
+          "Chromium",
+          "补丁管理",
+          "上游维护"
+        ],
+        "savedAt": "2026-11-02",
+        "selection": "explicit",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "Electron 官方开发文档，2026-11-02 核验：https://www.electronjs.org/docs/latest/development/patches"
+          }
+        ]
+      },
+      {
+        "id": "f77247c57bae1942",
+        "kind": "knowledge",
+        "title": "我们如何构建 OWL：ChatGPT Atlas 的浏览器架构",
+        "url": "https://openai.com/zh-Hans-CN/index/building-chatgpt-atlas/",
+        "summary": "OpenAI 介绍 ChatGPT Atlas 的 OWL 架构：将 Chromium 浏览器进程与原生应用分离，通过 Mojo 通信，并说明渲染、输入转发及 Agent 会话隔离的实现。",
+        "reason": "回看 AI 浏览器如何结合 Chromium 与原生界面，以及进程边界对性能、开发迭代和 Agent 安全隔离的影响。",
+        "tags": [
+          "ChatGPT Atlas",
+          "OWL",
+          "Chromium",
+          "AI 浏览器"
+        ],
+        "savedAt": "2026-11-02",
+        "selection": "explicit",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "OpenAI 官方工程文章，2025-10-30 发布，2026-11-02 核验：https://openai.com/zh-Hans-CN/index/building-chatgpt-atlas/"
+          }
+        ]
+      },
+      {
+        "id": "9728118894d125bb",
+        "kind": "card",
+        "title": "VoiceOver 是什么？",
+        "url": "https://support.apple.com/guide/voiceover/welcome/mac",
+        "summary": "VoiceOver 是 macOS 内置的屏幕阅读器，可朗读界面元素，并通过键盘命令帮助用户导航和操作。",
+        "reason": "回查 macOS 应用无障碍验收时，明确屏幕阅读器能读到什么、能否完成操作。",
+        "tags": [
+          "VoiceOver",
+          "macOS",
+          "无障碍"
+        ],
+        "savedAt": "2026-11-02",
+        "selection": "discovered",
+        "visibility": "shared",
+        "card": {
+          "date": "2026-11-01",
+          "recordedAt": "2026-11-02",
+          "context": "AI 辅助解释，整理自 macOS 应用无障碍验收时的概念提问；不表示俊宁已掌握 VoiceOver 或完成全面验收。",
+          "understanding": "VoiceOver 使用应用提供的无障碍信息呈现控件名称、角色和状态。验收时还要核对焦点顺序、状态变化和实际操作路径。",
+          "example": "假设应用有“学习”标签，VoiceOver 应能读出标签名称和选中状态，用户也应能通过 VoiceOver 导航并激活它；这是验收示例，不代表所有页面已通过。",
+          "distinction": "自动检查无障碍属性只能发现一部分问题；属性存在不等于真实 VoiceOver 用户能顺利导航和操作。"
+        },
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "Apple 官方 VoiceOver 使用指南，2026-11-02 核验：https://support.apple.com/guide/voiceover/welcome/mac"
+          },
+          {
+            "label": "Apple Developer，VoiceOver evaluation criteria，2026-11-02 核验：https://developer.apple.com/help/app-store-connect/manage-app-accessibility/voiceover-evaluation-criteria"
+          }
+        ]
+      },
+      {
+        "id": "bae903ae1bc19576",
+        "kind": "card",
+        "title": "页面观察裁剪是什么？",
+        "url": "https://agent-browser.dev/snapshots#options",
+        "summary": "浏览器 Agent 为控制输入体积，对页面语义观察和文本快照做范围过滤与结构压缩，同时保留完成任务所需的证据。",
+        "reason": "回查网页快照如何缩短，以及为什么不能把不可点击的业务信息一起过滤。",
+        "tags": [
+          "Browser Agent",
+          "Accessibility Tree",
+          "页面观察"
+        ],
+        "savedAt": "2026-11-02",
+        "selection": "discovered",
+        "visibility": "shared",
+        "card": {
+          "date": "2026-11-01",
+          "recordedAt": "2026-11-02",
+          "context": "AI 辅助解释，整理自《漫画拆解 agent-browser：从网页快照到动作验证》。示例为教学假设，源码机制限定于文中核验的版本。",
+          "understanding": "先把页面投影为角色、名称和状态等语义，再压平无信息的包装、合并重复文本，并按任务范围或输出选项裁剪快照。裁剪的是模型看到的观察，不是删除浏览器正在运行的 DOM 节点。",
+          "example": "假设书店结果同时有书名、库存文字和购买按钮：只保留可操作元素可能留下按钮却丢掉库存。回答“有没有货”前还须读取库存，并核对它属于哪本书。",
+          "distinction": "“DOM 剪枝”容易误解为修改网页结构；“页面观察裁剪”更准确。快照没有出现某条文字，也不能证明页面上没有该信息；元素引用仍有效，也不能代替业务对象身份核对。"
+        },
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "本站公开文章《漫画拆解 agent-browser：从网页快照到动作验证》，稳定 ID dff562e8ee3009c3，2026-11-02 核验源稿中“所谓 DOM 剪枝，实际裁剪的是页面观察”一节。"
+          },
+          {
+            "label": "agent-browser 官方快照选项，2026-11-02 核验：https://agent-browser.dev/snapshots#options"
+          }
+        ]
+      },
+      {
+        "id": "9d004abd4465f770",
+        "kind": "knowledge",
+        "title": "Vercel Node.js 26 LTS 上线说明",
+        "url": "https://vercel.com/changelog/node-js-26-lts-is-now-generally-available-on-vercel",
+        "summary": "Vercel 官方说明 Node.js 26 LTS 已可用于构建和 Functions；既有项目的自动升级与手动升级取决于 engines.node 配置，构建和运行时版本需在实际部署中核对。",
+        "reason": "用于回查 Vercel 升级 Node.js 26 的条件与部署版本行为。",
+        "tags": [
+          "Vercel",
+          "Node.js",
+          "部署"
+        ],
+        "savedAt": "2026-11-02",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "Vercel 官方更新日志，Node.js 26 LTS is now Generally Available on Vercel，2026-11-02 核验。"
+          }
+        ]
+      },
+      {
+        "id": "0e8ee3263e315d2a",
+        "kind": "project",
+        "title": "Archify：可探索的软件工程图表",
+        "url": "https://github.com/tt-a1i/archify",
+        "summary": "Archify 提供架构、工作流、时序、数据流等图表的 JSON IR、校验器、渲染器和自包含 HTML 查看器。2026-11-02 核验的上游提交为 a4065941f12be7967436261d9934784e381d423c，版本 3.2.0，当前许可为 Apache-2.0。",
+        "reason": "用于追踪 Joyally Design 内置图表运行时的上游变化、许可和兼容性。",
+        "tags": [
+          "设计系统",
+          "图表",
+          "Archify"
+        ],
+        "savedAt": "2026-11-02",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "adopted",
+        "usages": [
+          {
+            "project": "Joyally Design",
+            "projectUrl": "https://github.com/youngjunning/skills",
+            "stage": "adopted",
+            "purpose": "作为可探索图表的内置运行时，通过本地 wrapper 调用。",
+            "evidence": "https://github.com/youngjunning/skills/blob/53dc7a4/skills/design/joyally-design/vendor/archify/UPSTREAM.json"
+          }
+        ],
+        "sources": [
+          {
+            "label": "Archify 官方 GitHub 仓库；2026-11-02 核验上游提交与公开源码。"
+          }
+        ]
+      },
+      {
+        "id": "f7ab9f83499a05f8",
+        "kind": "project",
+        "title": "Pakco HTML：可移植 HTML 页面基础",
+        "url": "https://github.com/pakco77/pakco-html",
+        "summary": "Pakco HTML 提供基础样式、页面布局和可选的 deck 动画运行时。2026-11-02 核验的上游 HEAD 仍为 8cefc6b6b68d85a1484e066c47ae571b75d0d4e1；Joyally Design 使用其本地文件子集。",
+        "reason": "用于核对 Joyally Design 生成的 HTML 报告与演示文稿所依赖的上游资源。",
+        "tags": [
+          "HTML",
+          "报告",
+          "Pakco"
+        ],
+        "savedAt": "2026-11-02",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "adopted",
+        "usages": [
+          {
+            "project": "Joyally Design",
+            "projectUrl": "https://github.com/youngjunning/skills",
+            "stage": "adopted",
+            "purpose": "为本地 HTML 报告和可选 deck 提供基础样式与运行时文件。",
+            "evidence": "https://github.com/youngjunning/skills/tree/53dc7a4/skills/design/joyally-design/vendor/pakco-html"
+          }
+        ],
+        "sources": [
+          {
+            "label": "Pakco HTML 官方 GitHub 仓库；2026-11-02 核验上游 HEAD 与打包文件。"
+          }
+        ]
+      },
+      {
+        "id": "a6d982c3f17e40b5",
+        "kind": "knowledge",
+        "title": "Apple UserNotifications：本地提醒的调度与取消",
+        "url": "https://developer.apple.com/documentation/usernotifications/scheduling-a-notification-locally-from-your-app",
+        "summary": "Apple 官方说明如何组合通知内容、触发条件与请求来调度本地通知。系统负责后台或应用未运行时的投递，前台由应用处理；任务完成或条件变化时，可按请求标识取消尚未触发的通知。",
+        "reason": "用于回查本地提醒的系统调度、前后台处理边界与取消 API；文档核验不等于某个应用已完成真实通知展示验收。",
+        "tags": [
+          "macOS",
+          "UserNotifications",
+          "系统通知"
+        ],
+        "savedAt": "2026-11-02",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "Apple Developer Documentation，Scheduling a notification locally from your app，2026-11-02 核验官方 Markdown 正文。"
+          }
+        ]
+      },
+      {
+        "id": "6cd831f49b2e70a5",
+        "title": "Apple Simulator：应用安装与真机边界",
+        "url": "https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/iOS_Simulator_Guide/InteractingwiththeiOSSimulator/InteractingwiththeiOSSimulator.html",
+        "summary": "Apple 归档 Simulator 指南说明：模拟环境用于运行面向 Simulator 构建的 App，不能从 App Store 安装应用。该页已归档，具体版本能力需结合当前 Xcode 文档和实际环境核验。",
+        "reason": "用于区分开发测试模拟器与运行现成第三方 iPhone App 的需求，避免将两者承诺为同一种虚拟机能力。",
+        "tags": [
+          "iOS",
+          "Simulator",
+          "虚拟环境"
+        ],
+        "kind": "knowledge",
+        "savedAt": "2026-11-02",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "官方原始文档，2026-11-02 核验：https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/iOS_Simulator_Guide/InteractingwiththeiOSSimulator/InteractingwiththeiOSSimulator.html"
+          }
+        ]
+      },
+      {
+        "id": "32f8a9d61e70bc45",
+        "title": "Multipass：虚拟机实例管理官方指南",
+        "url": "https://canonical.com/multipass/docs/latest/how-to-guides/manage-instances/",
+        "summary": "Canonical 的实例管理指南覆盖创建、修改、使用、删除虚拟机实例及网络配置，可作为对接已有虚拟机管理工具的能力参考。",
+        "reason": "用于研究自动化框架如何复用现有环境管理工具；仅为会话发现的候选资料，尚未选型或运行验证。",
+        "tags": [
+          "Linux",
+          "虚拟机",
+          "环境管理"
+        ],
+        "kind": "knowledge",
+        "savedAt": "2026-11-02",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": [],
+        "sources": [
+          {
+            "label": "官方原始文档，2026-11-02 核验：https://canonical.com/multipass/docs/latest/how-to-guides/manage-instances/"
+          }
+        ]
+      },
+      {
+        "id": "ce63a109bf24d857",
+        "kind": "knowledge",
+        "title": "Google WebView API for Ads：iOS 网页广告接入",
+        "url": "https://developers.google.com/admob/ios/browser/webview/api-for-ads",
+        "summary": "Google 官方的 iOS WKWebView 广告接入说明：在主线程向 Mobile Ads SDK 注册 WebView，网页专用集成使用 GADIntegrationManager=webview。网页的隐私同意不会从 App 自动传入。",
+        "reason": "用于核对 iOS 网页广告注册、Info.plist 配置和官方连接测试，避免把 SDK 接通当作真实广告填充或收益验证。",
+        "tags": [
+          "iOS",
+          "WKWebView",
+          "AdSense"
+        ],
+        "savedAt": "2026-11-02",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "Google for Developers，Integrate the WebView API for Ads，2026-11-02 核验 iOS 官方说明及连接测试页。"
+          }
+        ],
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "e62d7a098bf134c5",
+        "kind": "knowledge",
+        "title": "Google WebView API for Ads：Android 网页广告接入",
+        "url": "https://developers.google.com/admob/android/next-gen/browser/webview/api-for-ads",
+        "summary": "Google 官方的 Android WebView 广告接入说明：通过 GMA Next-Gen SDK 注册 WebView，使网页广告标签获得 App 信号；网页上下文的隐私同意不会从 App 自动传入。",
+        "reason": "用于回查 App 内展示完整网页与 AdSense 的接入边界、官方测试页和网页隐私同意要求；文档核验不表示已完成 SDK 接入或商业投放。",
+        "tags": [
+          "Android",
+          "WebView",
+          "AdSense"
+        ],
+        "savedAt": "2026-11-02",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "Google for Developers，Integrate the WebView API for Ads，2026-11-02 核验官方接入说明。"
+          }
+        ],
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "9d230a7fc8e61b45",
+        "kind": "knowledge",
+        "title": "AdSense：向第三方合作方分配收益的限制",
+        "url": "https://support.google.com/adsense/answer/1348725",
+        "summary": "AdSense 官方帮助说明，发布商向第三方分配账号收益原则上须事先取得 Google 书面许可，示例包含按流量、广告展示或服务分配收入。普通双方协议不能替代适用的 Google 许可。",
+        "reason": "用于评估网页广告合作的结算资格，区分技术上能加载广告、Google 允许的分配机制与双方商业约定；不据此推断任何具体合作已获许可。",
+        "tags": [
+          "AdSense",
+          "广告变现",
+          "收益分配"
+        ],
+        "savedAt": "2026-11-02",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "Google AdSense Help，Distributing earnings from AdSense ads with third party partners，2026-11-02 核验。"
+          }
+        ],
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "5ae070dbca4b8e19",
+        "kind": "knowledge",
+        "title": "JavaScript.info：现代 JavaScript 教程",
+        "url": "https://javascript.info/",
+        "summary": "按语言基础、对象、函数、异步编程和浏览器主题组织的教程，配有示例与练习。",
+        "reason": "旧官网学习资源整理时保留的原始入口，可用于回查闭包、作用域与异步任务笔记；未据此认定本人完成了课程。",
+        "tags": [
+          "JavaScript",
+          "学习资料"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "JavaScript.info 官方教程目录，原官网学习资源整理时核对原始入口。"
+          }
+        ],
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "b9f6c02ae3187d54",
+        "kind": "project",
+        "title": "微软生成式 AI 入门：JavaScript 课程",
+        "url": "https://github.com/microsoft/generative-ai-with-javascript",
+        "summary": "微软维护的 JavaScript 生成式 AI 学习仓库，提供课程资料与代码示例。",
+        "reason": "将旧官网中的课程介绍整理为原始仓库入口，用于后续查阅和练习，不把课程内容当作本人项目经验。",
+        "tags": [
+          "AI",
+          "JavaScript",
+          "课程"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "Microsoft 官方 GitHub 仓库 microsoft/generative-ai-with-javascript 的 README 和课程目录。"
+          }
+        ],
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "1f84a6c02bbd5709",
+        "kind": "project",
+        "title": "react-markdown：Markdown 渲染与 HTML 安全边界",
+        "url": "https://github.com/remarkjs/react-markdown",
+        "summary": "React 的 Markdown 渲染组件，通过 remark 与 rehype 扩展语法。官方文档区分原生 HTML 解析与安全过滤；引入 HTML 插件时仍需检查链接转换和允许的元素。",
+        "reason": "迁移历史博客时用于保留表格、原生 HTML 图片和代码块，官方的 HTML 与安全章节可供后续维护查证。",
+        "tags": [
+          "Markdown",
+          "React",
+          "内容迁移"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "react-markdown 官方 README 的 HTML、组件扩展与 Security 章节；硅基俊宁公开源码的依赖和文章渲染实现。"
+          }
+        ],
+        "priority": "reference",
+        "adoption": "adopted",
+        "usages": [
+          {
+            "project": "硅基俊宁",
+            "projectUrl": "https://github.com/youngjunning/youngjunning.com",
+            "stage": "adopted",
+            "purpose": "渲染历史博客，配合 rehype-raw、rehype-sanitize 与资源映射保留内容并过滤不安全 HTML。",
+            "evidence": "package.json 已声明依赖，app/blog/[id]/page.tsx 已接入；本地构建与阅读页面检查通过，不表示域名已部署。"
+          }
+        ]
+      },
+      {
+        "id": "f43c1a9e7b625d08",
+        "kind": "knowledge",
+        "title": "Active Memory：Muse Wonder 官方能力说明",
+        "url": "https://research.meta.ai/blog/muse-wonder",
+        "summary": "已公开：Active Memory 跨对话保留重要背景，并主动检索当前任务相关的细节；配套访谈强调模型与记忆系统共同设计，模型参与信息利用和上下文压缩。尚未披露：本文与访谈未给出可复现的训练配方、记忆写入策略、检索索引和压缩算法；不能据此认定用户记忆写入模型权重，也不能将能力发布视为所有 Muse 用户均已启用。",
+        "reason": "主动收藏，用于研究模型如何与外部记忆系统配合，并区分官方能力描述、实现细节和实际效果；资料核验不代表已采用或完成实测。",
+        "tags": [
+          "Agent Memory",
+          "Active Memory",
+          "Muse Wonder",
+          "模型与系统协同"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "本人陈述，2026-11-01，公开摘要：明确要求收藏 Active Memory 与 Muse 官方记忆方案资料，并注明已公开机制和尚未披露的部分。"
+          },
+          {
+            "label": "Meta AI Research，2026-10-12，《Muse Wonder: A Frontier Model For Personal & Professional AI Agents》，Active Memory 与发布范围段落；2026-11-01 核验：https://research.meta.ai/blog/muse-wonder"
+          },
+          {
+            "label": "Cheeky Pint 原始访谈，2026-10-12，约 18–20 分钟 Alexandr Wang、Mark Zuckerberg 讨论 Active Memory、模型与系统共同设计及 compaction；2026-11-01 核验：https://cheekypint.transistor.fm/35/transcript"
+          }
+        ],
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "3d6f08b2c194a7e5",
+        "kind": "knowledge",
+        "title": "Muse 官方系统说明：记忆存储与安全边界",
+        "url": "https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse",
+        "summary": "已公开：每位用户拥有独立云端 VM；记忆相关文件可查看、编辑和下载，持久应用状态存于与 Agent 运行容器、凭证存储隔离的 Postgres。尚未披露：本文未说明记忆文件与数据库的映射、向量索引或检索排序、冲突更新与遗忘算法；不能由 Postgres 的使用推断完整记忆架构。文中的 Confidential VM 是当时计划后续推出的能力，本文不证明其现已上线。",
+        "reason": "主动收藏，用于回查个人 Agent 的持久数据、记忆可控性及隔离边界。安全架构说明不等于记忆算法公开，也不能据此认定普通 VM 模式下服务提供方无法访问数据。",
+        "tags": [
+          "Agent Memory",
+          "Muse",
+          "持久存储",
+          "安全边界"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "本人陈述，2026-11-01，公开摘要：明确要求收藏 Active Memory 与 Muse 官方记忆方案资料，并注明已公开机制和尚未披露的部分。"
+          },
+          {
+            "label": "Tarek Sheasha，Meta AI Research，2026-09-08，《How We Built Safety Into Muse》，Your computer, your data、Muse Secure VM、Coming Soon: Muse Confidential VM 与 Our Policy Around Data；2026-11-01 核验：https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse"
+          }
+        ],
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "b8d52e7190ca63f4",
+        "kind": "knowledge",
+        "title": "Muse 官方产品设计：跨对话记忆与用户控制",
+        "url": "https://introducing.muse.ai/",
+        "summary": "已公开：Muse 围绕长期主对话设计，并提供 side chats；记忆跨对话持续保留，用户可直接读取、编辑 Memory files。长期目标可按计划或相关事件继续推进，后台结果在有实质新信息或需要用户输入时通知。尚未披露：本文未定义主对话与 side chats 的记忆隔离和共享规则，也未说明记忆抽取、检索、冲突处理或删除传播的具体实现。",
+        "reason": "主动收藏，用于比较长期主对话、侧对话、可编辑记忆与后台目标的产品边界；不将可见交互说明当成完整后端架构或效果验证。",
+        "tags": [
+          "Agent Memory",
+          "Muse",
+          "产品设计",
+          "跨对话记忆"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "本人陈述，2026-11-01，公开摘要：明确要求收藏 Active Memory 与 Muse 官方记忆方案资料，并注明已公开机制和尚未披露的部分。"
+          },
+          {
+            "label": "Mona Sarantakos、Christine Awad，2026-09，《How We Designed Muse》，Evolving From an Assistant to an Agent 与 Getting Things Done With Muse；2026-11-01 核验：https://introducing.muse.ai/"
+          }
+        ],
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "6f597c80ab124de9",
+        "kind": "project",
+        "title": "Vercount：兼容不蒜子的免费访客计数器",
+        "url": "https://github.com/EvanNotFound/vercount",
+        "summary": "提供网站访问量（PV）和访客数（UV）统计，兼容不蒜子标签；Go 与 Redis 负责计数，提供免费公益服务并支持自托管。",
+        "reason": "主动收藏，用于回查网站访客统计的接入方式、计数口径与自托管方案。",
+        "tags": [
+          "网站统计",
+          "PV/UV",
+          "不蒜子",
+          "开源工具"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "本人陈述，2026-11-01，公开摘要：明确要求收藏 Vercount。"
+          },
+          {
+            "label": "2026-11-01 核验官方仓库与 README：https://github.com/EvanNotFound/vercount"
+          }
+        ],
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "a832d4fb6130e725",
+        "kind": "project",
+        "title": "Storybook Generator Skill：绘本分镜与图文验收",
+        "url": "https://github.com/weaiw/storybook-generator-skill",
+        "summary": "面向 Agent 的绘本制作流程，包含角色设定、逐页提示词、文字与画面的对应检查，以及局部返工规则。",
+        "reason": "可用于检查绘本生产流程是否遗漏角色连续性、样页验收和可见叙事证据；其固定文字区方案仍需根据具体版式要求调整。会话发现，不代表本人已完成该项目的生成效果验证。",
+        "tags": [
+          "绘本",
+          "Agent Skills",
+          "图像生成"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "官方仓库角色连续性、提示词与 QA 文档，2026-11-01 核验：https://github.com/weaiw/storybook-generator-skill/tree/72d30ecd51d12986738db6d4f40d79cd7fa6358a"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "cf1923de758ab604",
+        "kind": "project",
+        "title": "StoryDiffusion：连续图像中的角色一致性",
+        "url": "https://github.com/HVision-NKU/StoryDiffusion",
+        "summary": "长序列图像与视频生成的研究实现，使用一致性自注意力改善跨图像的角色一致性。",
+        "reason": "用于理解跨页身份保持与单页构图是不同问题；其方法需要模型内部支持，不能把普通图像 API 的参考图输入等同于该实现。会话发现，未运行模型或验证复现效果。",
+        "tags": [
+          "图像生成",
+          "角色一致性",
+          "研究实现"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "官方仓库与论文，2026-11-01 核验：https://github.com/HVision-NKU/StoryDiffusion；https://arxiv.org/abs/2405.01434"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "9005d098dc844cdb",
+        "kind": "project",
+        "title": "Lucian UXUI：交互元素检索与适配 Skill",
+        "url": "https://github.com/Seokwoooo/lucian-uxui",
+        "summary": "面向编码 Agent 的 Skill，支持检索 Lucian UX/UI Prompt 的交互元素，并将原生 HTML、CSS、JavaScript 示例适配到目标项目。",
+        "reason": "用于比较 Skill 驱动的组件发现与移植流程；保留其与 React 原生组件 Registry 的区别。",
+        "tags": [
+          "AI 辅助开发",
+          "组件库",
+          "Agent Skills"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "官方仓库或文档，2026-11-01 会话检索核验：https://github.com/Seokwoooo/lucian-uxui"
+          },
+          {
+            "label": "本人陈述，2026-11-01，公开摘要：明确要求收藏本次讨论的全部 AI 友好组件库及组件检索工具；使用状态另按项目证据记录。"
+          }
+        ],
+        "priority": "evaluate",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "58ee05520f6e84b5",
+        "kind": "project",
+        "title": "React Bits：可供 Agent 检索的动效组件",
+        "url": "https://github.com/DavidHDev/react-bits",
+        "summary": "React 动效与交互组件集合，提供 JavaScript、TypeScript 及 CSS、Tailwind 版本，并支持通过 shadcn MCP 查找和添加组件。",
+        "reason": "用于在 AI 生成页面时获取真实动效组件源码，按项目技术栈选择变体并核对依赖。",
+        "tags": [
+          "AI 辅助开发",
+          "组件库",
+          "MCP"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "官方仓库或文档，2026-11-01 会话检索核验：https://github.com/DavidHDev/react-bits"
+          },
+          {
+            "label": "本人陈述，2026-11-01，公开摘要：明确要求收藏本次讨论的全部 AI 友好组件库及组件检索工具；使用状态另按项目证据记录。"
+          }
+        ],
+        "priority": "reference",
+        "adoption": "adopted",
+        "usages": [
+          {
+            "project": "youngjunning.com",
+            "projectUrl": "https://github.com/youngjunning/youngjunning.com",
+            "stage": "adopted",
+            "purpose": "首页渐变文字及 React Bits 风格组件",
+            "evidence": "2026-11-01 源码核验：https://github.com/youngjunning/youngjunning.com/blob/5a28f230f92d53ba73078bc448504d272ba11577/app/page.tsx；https://github.com/youngjunning/youngjunning.com/blob/5a28f230f92d53ba73078bc448504d272ba11577/THIRD_PARTY_NOTICES.md；仅证明代码接入。"
+          }
+        ]
+      },
+      {
+        "id": "ce11d50c8c1a996b",
+        "kind": "project",
+        "title": "daisyUI：机器可读文档与 Blueprint MCP",
+        "url": "https://github.com/saadeghi/daisyui",
+        "summary": "Tailwind CSS 组件库，提供精简的 llms.txt 和 AI 编辑器接入指南；官方 Blueprint MCP 需要许可证。",
+        "reason": "用于轻量、多框架页面的 AI 辅助开发，并区分免费文档上下文与需授权的 MCP 服务。",
+        "tags": [
+          "AI 辅助开发",
+          "组件库",
+          "MCP"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "官方仓库或文档，2026-11-01 会话检索核验：https://daisyui.com/docs/editor/windsurf/?lang=en"
+          },
+          {
+            "label": "本人陈述，2026-11-01，公开摘要：明确要求收藏本次讨论的全部 AI 友好组件库及组件检索工具；使用状态另按项目证据记录。"
+          }
+        ],
+        "priority": "evaluate",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "240f05a3610b5718",
+        "kind": "project",
+        "title": "Chakra UI：组件与设计 Tokens MCP",
+        "url": "https://github.com/chakra-ui/chakra-ui",
+        "summary": "官方 MCP 提供组件列表、Props、示例、设计 Tokens 和版本迁移指导；Pro 模板工具需要相应许可证。",
+        "reason": "用于比较 AI 对完整设计系统的接入能力，重点核查组件用法、主题约束与迁移信息。",
+        "tags": [
+          "AI 辅助开发",
+          "组件库",
+          "MCP"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "官方仓库或文档，2026-11-01 会话检索核验：https://chakra-ui.com/docs/get-started/ai/mcp-server"
+          },
+          {
+            "label": "本人陈述，2026-11-01，公开摘要：明确要求收藏本次讨论的全部 AI 友好组件库及组件检索工具；使用状态另按项目证据记录。"
+          }
+        ],
+        "priority": "evaluate",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "3ad86e9295020a3c",
+        "kind": "project",
+        "title": "HeroUI：组件文档与源码 MCP",
+        "url": "https://github.com/heroui-inc/heroui",
+        "summary": "官方 React MCP 面向 HeroUI v3，提供组件文档、TSX 源码、CSS 样式及主题变量查询。",
+        "reason": "用于让 AI 根据当前组件 API 和主题变量实现应用界面，减少凭旧版本知识生成代码。",
+        "tags": [
+          "AI 辅助开发",
+          "组件库",
+          "MCP"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "官方仓库或文档，2026-11-01 会话检索核验：https://heroui.com/en/docs/react/getting-started/mcp-server"
+          },
+          {
+            "label": "本人陈述，2026-11-01，公开摘要：明确要求收藏本次讨论的全部 AI 友好组件库及组件检索工具；使用状态另按项目证据记录。"
+          }
+        ],
+        "priority": "evaluate",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "5e2ea2cdfa8d7fe5",
+        "kind": "project",
+        "title": "21st MCP：UI 组件搜索与生成",
+        "url": "https://github.com/21st-dev/magic-mcp",
+        "summary": "面向 AI 编辑器的组件搜索与 UI 生成入口。官方仓库说明 Magic MCP 已更名为 21st MCP，旧包用于兼容既有配置。",
+        "reason": "用于比较组件聚合平台与单一组件库的检索方式，接入前核对当前服务配置和账户要求。",
+        "tags": [
+          "AI 辅助开发",
+          "组件库",
+          "MCP"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "官方仓库或文档，2026-11-01 会话检索核验：https://github.com/21st-dev/magic-mcp"
+          },
+          {
+            "label": "本人陈述，2026-11-01，公开摘要：明确要求收藏本次讨论的全部 AI 友好组件库及组件检索工具；使用状态另按项目证据记录。"
+          }
+        ],
+        "priority": "evaluate",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "fe95afe989157b02",
+        "kind": "project",
+        "title": "Kokonut UI：面向 Agent 的交互组件",
+        "url": "https://github.com/kokonut-labs/kokonutui",
+        "summary": "基于 React、Tailwind CSS、Motion 和 shadcn/ui 的组件集合，提供 Agents 指南、shadcn MCP 接入、规则文件与 Markdown 文档。",
+        "reason": "用于查找 AI 可直接读取和集成的交互组件，比较组件发现、依赖安装与主题适配流程。",
+        "tags": [
+          "AI 辅助开发",
+          "组件库",
+          "MCP"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "官方仓库或文档，2026-11-01 会话检索核验：https://kokonutui.com/docs/agents"
+          },
+          {
+            "label": "本人陈述，2026-11-01，公开摘要：明确要求收藏本次讨论的全部 AI 友好组件库及组件检索工具；使用状态另按项目证据记录。"
+          }
+        ],
+        "priority": "evaluate",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "fcbb542c5cf563a3",
+        "kind": "project",
+        "title": "shadcn/ui：组件 Registry 与 AI 接入",
+        "url": "https://github.com/shadcn-ui/ui",
+        "summary": "官方 MCP 支持浏览、搜索组件 Registry，并获取组件安装命令；Registry 提供组件源码及依赖描述。",
+        "reason": "为 AI 编程工具建立统一的组件检索与安装入口，可连接项目配置中的第三方 Registry。",
+        "tags": [
+          "AI 辅助开发",
+          "组件库",
+          "MCP"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "官方仓库或文档，2026-11-01 会话检索核验：https://ui.shadcn.com/docs/mcp"
+          },
+          {
+            "label": "本人陈述，2026-11-01，公开摘要：明确要求收藏本次讨论的全部 AI 友好组件库及组件检索工具；使用状态另按项目证据记录。"
+          }
+        ],
+        "priority": "evaluate",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "e81bc6847d38f902",
+        "kind": "project",
+        "title": "GBrain：Agent 知识库实现",
+        "url": "https://github.com/garrytan/gbrain",
+        "summary": "以 Bun 为主要运行时的 Agent 知识库，提供 PGLite/PostgreSQL 存储、文本检索、页面链接与时间线等实现，代码采用 MIT 许可证。",
+        "reason": "用于核查来源索引、图谱遍历、版本一致性和嵌入式存储的实现边界；会话发现，不代表已验证全部功能或整体效果。",
+        "tags": [
+          "Agent Memory",
+          "知识管理",
+          "GBrain"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "原作者仓库，2026-11-01 核验固定版本 88d3f572950a772d268b22afe0bd53c2a2f090ff：https://github.com/garrytan/gbrain/tree/88d3f572950a772d268b22afe0bd53c2a2f090ff"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "91fc906a99431e8a",
+        "kind": "knowledge",
+        "title": "LLM Wiki：原作者设计提案",
+        "url": "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
+        "summary": "个人知识库的维护模式：保留原始资料，由 LLM 维护带来源链接的主题综合页面；原提案没有提供可直接接入的完整系统。",
+        "reason": "用于比较资料检索与持久化跨文综合的职责，并检查来源引用、冲突和维护规则；会话发现，不表示本人已采用或验证效果。",
+        "tags": [
+          "LLM Wiki",
+          "知识管理",
+          "来源追溯"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "Karpathy 原始 gist，2026-04-04；2026-11-01 核验固定版本 ac46de1ad27f92b28ac95459c782c07f6b8c964a：https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f/ac46de1ad27f92b28ac95459c782c07f6b8c964a"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "12f51ecafa480a20",
+        "kind": "knowledge",
+        "title": "LongMemEval：长时交互记忆评测",
+        "url": "https://github.com/xiaowu0162/LongMemEval",
+        "summary": "长时对话记忆评测资料，覆盖信息提取、跨会话推理、时间推理、知识更新与拒答，并提供必要证据和回答评测的研究入口。",
+        "reason": "为个人记忆系统设计测试类别和必要来源标注提供参考；公开基准结果不能直接视为某个具体系统的表现，收藏不代表本人已运行该基准。",
+        "tags": [
+          "Agent Memory",
+          "评测",
+          "时间推理"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "原作者论文与代码仓库，2026-11-01 核验：https://arxiv.org/abs/2410.10813 与 https://github.com/xiaowu0162/LongMemEval"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "bbc6c2e95fa83d72",
+        "kind": "project",
+        "title": "SwiftUI Agent Skill",
+        "url": "https://github.com/AvdLee/SwiftUI-Agent-Skill",
+        "summary": "提供 SwiftUI 开发参考与 Instruments trace 录制、解析脚本，采用 MIT 许可；本轮核对了公开源代码和许可，并为维护改编补齐归属。",
+        "reason": "用于回查维护改编的上游来源，后续更新 SwiftUI 参考或 Instruments 工具时核对原始实现与许可。作为会话发现保存，不表示本人采纳全部指导或完成目标应用的性能验收。",
+        "tags": [
+          "SwiftUI",
+          "macOS",
+          "Instruments",
+          "Agent Skills"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "官方仓库 AvdLee/SwiftUI-Agent-Skill，commit 204dba7c67256a8b707ee3fbc5759a824191974f；LICENSE 与 analyze_trace.py 公开 blob，2026-11-01 核验。"
+          }
+        ],
+        "priority": "reference",
+        "adoption": "adopted",
+        "usages": [
+          {
+            "project": "skills",
+            "projectUrl": "https://github.com/youngjunning/skills",
+            "stage": "adopted",
+            "purpose": "macos-app-develop 参考和脚本的许可改编",
+            "evidence": "2026-11-01 源码核验：https://github.com/youngjunning/skills/blob/705d1c58e60abf402d09dea61cf4e539a1ce027e/skills/engineering/macos-app-develop/NOTICE；https://github.com/youngjunning/skills/blob/705d1c58e60abf402d09dea61cf4e539a1ce027e/THIRD_PARTY.md；仅证明代码接入。"
+          }
+        ]
+      },
+      {
+        "id": "84d1b9c307ef625a",
+        "kind": "project",
+        "title": "Matt Pocock 的 Agent Skills",
+        "url": "https://github.com/mattpocock/skills",
+        "summary": "按工程与生产力分类维护 Agent Skills，提供统一安装入口、贡献规则与本地软链接脚本。",
+        "reason": "用于参考多技能仓库的目录、安装与维护方式。本条为会话发现，不表示已采用其全部技能或流程。",
+        "tags": [
+          "Agent Skills",
+          "工程工作流",
+          "仓库管理"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "官方仓库 mattpocock/skills 的 README、CONTRIBUTING.md 与 scripts/link-skills.sh，2026-11-01 核验。"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "6a8c3e740f921db5",
+        "kind": "project",
+        "title": "Stagehand：浏览器 AI 自动化 SDK",
+        "url": "https://github.com/browserbase/stagehand",
+        "summary": "浏览器 AI 自动化 SDK；本次核验的 v4 源码提供离散操作、提取和观察，将浏览器生命周期与任务编排交给调用者，并移除原有 agent()。",
+        "reason": "用于比较能力 SDK 与完整任务 Agent 的职责边界，以及浏览器与执行器的组合方式；当前为源码调研，不表示本人已采用或运行验收。",
+        "tags": [
+          "浏览器自动化",
+          "SDK",
+          "架构"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "官方源码 browserbase/stagehand，commit b7a4b899079f198a0ee78a6dcb62ad02f545cf49；packages/docs/v4/migrations/v3.mdx 与 packages/sdk-ts/package.json，2026-11-01 核对。"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "8838524aac092773",
+        "kind": "project",
+        "title": "hunch",
+        "url": "https://github.com/HAR5HA-7663/hunch",
+        "summary": "基于 Jev 与 agent-browser 的浏览器执行循环：从页面快照选择动作和目标，由代码执行并检查结果。",
+        "reason": "回看快照引用、单次请求决策、低置信交接与结果校验的组合方式。",
+        "tags": [
+          "Jev",
+          "Browser Agent",
+          "agent-browser"
+        ],
+        "savedAt": "2026-10-31",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "本人陈述，2026-10-31，公开摘要：明确要求收藏这六个 Jev 浏览器自动化项目；收藏不表示已采用、实测或参与开发。"
+          },
+          {
+            "label": "官方项目仓库与 README，2026-10-31 核验：https://github.com/HAR5HA-7663/hunch"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "1b8e35a5a0147eea",
+        "kind": "project",
+        "title": "jev-ultrafast",
+        "url": "https://github.com/browser-use/jev-ultrafast",
+        "summary": "将页面控件组织为动态索引动作空间，由 Jev 在一次请求中选择操作与目标，需要输入文本时可交给独立文本模型。",
+        "reason": "研究批量观察、减少浏览器协议往返、目标有效性校验及决策与文本生成的职责划分。",
+        "tags": [
+          "Jev",
+          "Browser Agent",
+          "性能优化"
+        ],
+        "savedAt": "2026-10-31",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "本人陈述，2026-10-31，公开摘要：明确要求收藏这六个 Jev 浏览器自动化项目；收藏不表示已采用、实测或参与开发。"
+          },
+          {
+            "label": "官方项目仓库与 README，2026-10-31 核验：https://github.com/browser-use/jev-ultrafast"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "ef32f6d3f97f6937",
+        "kind": "project",
+        "title": "jev-browser",
+        "url": "https://github.com/jkudish/jev-browser",
+        "summary": "提供 MCP、CLI 和 library 入口，由 Jev 选择页面动作，代码管理预算、恢复、停止条件和执行轨迹。",
+        "reason": "比较浏览器 Agent 的接口设计、完成证据、置信信息与逐步执行记录。",
+        "tags": [
+          "Jev",
+          "Browser Agent",
+          "MCP"
+        ],
+        "savedAt": "2026-10-31",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "本人陈述，2026-10-31，公开摘要：明确要求收藏这六个 Jev 浏览器自动化项目；收藏不表示已采用、实测或参与开发。"
+          },
+          {
+            "label": "官方项目仓库与 README，2026-10-31 核验：https://github.com/jkudish/jev-browser"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "c450686e5af95c27",
+        "kind": "project",
+        "title": "jev-ra",
+        "url": "https://github.com/brnyxx/jev-ra",
+        "summary": "面向编码 Agent 的浏览器 MCP 服务与 CLI，由 Jev 决定局部动作，通过浏览器执行并核验结果。",
+        "reason": "研究 CDP 执行、独立结果断言、有限预算以及失败后的结构化交接。",
+        "tags": [
+          "Jev",
+          "Browser Agent",
+          "CDP",
+          "MCP"
+        ],
+        "savedAt": "2026-10-31",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "本人陈述，2026-10-31，公开摘要：明确要求收藏这六个 Jev 浏览器自动化项目；收藏不表示已采用、实测或参与开发。"
+          },
+          {
+            "label": "官方项目仓库与 README，2026-10-31 核验：https://github.com/brnyxx/jev-ra"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "84ac495cdb0c1827",
+        "kind": "project",
+        "title": "jev-browser-wingman",
+        "url": "https://github.com/coderexpert123/jev-browser-wingman",
+        "summary": "在已有浏览器与 Playwright MCP 工具前接入 Jev 局部决策，执行动作、检查效果，并将无法处理的步骤交回上层 Agent。",
+        "reason": "回看局部执行能力与现有 Agent 的交接方式，分析额外接入对端到端耗时的影响。",
+        "tags": [
+          "Jev",
+          "Browser Agent",
+          "Playwright",
+          "MCP"
+        ],
+        "savedAt": "2026-10-31",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "本人陈述，2026-10-31，公开摘要：明确要求收藏这六个 Jev 浏览器自动化项目；收藏不表示已采用、实测或参与开发。"
+          },
+          {
+            "label": "官方项目仓库与 README，2026-10-31 核验：https://github.com/coderexpert123/jev-browser-wingman"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "440e6d3a3f457bb6",
+        "kind": "project",
+        "title": "jev-browser-use",
+        "url": "https://github.com/wy-coliney/jev-browser-use",
+        "summary": "面向 Codex 的浏览器 Skill：Jev 处理导航、点击和滚动，上层 Agent 保留文本输入、视觉判断与最终校验。",
+        "reason": "比较持久浏览器连接下的职责分配与调用次数优化，不将作者的操作提速直接视为完整任务收益。",
+        "tags": [
+          "Jev",
+          "Browser Agent",
+          "Skill"
+        ],
+        "savedAt": "2026-10-31",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "本人陈述，2026-10-31，公开摘要：明确要求收藏这六个 Jev 浏览器自动化项目；收藏不表示已采用、实测或参与开发。"
+          },
+          {
+            "label": "官方项目仓库与 README，2026-10-31 核验：https://github.com/wy-coliney/jev-browser-use"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "kind": "project",
+        "title": "Cua：Computer Use 执行环境与工具链",
+        "url": "https://github.com/trycua/cua",
+        "summary": "提供桌面执行环境、Cua Driver、Lume、决策模型与评测工具。官方区分各组件许可，Cua Spaces 采用 FSL-1.1-MIT，不能将整个产品一概视为 MIT。",
+        "reason": "作为 Agent 执行环境、登录态迁移与人机共用桌面的研究入口，比较隔离、授权和接管设计；收藏不代表已采用或完成实测。",
+        "tags": [
+          "Agent",
+          "Computer Use",
+          "执行环境",
+          "人机协作"
+        ],
+        "id": "93863398f0fa2a2c",
+        "savedAt": "2026-10-30",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "本人陈述，2026-10-30，公开摘要：主动收藏该资源，用于研究 Agent 执行环境与移动自动化；收藏不表示已采用或完成实测。"
+          },
+          {
+            "label": "2026-10-30 核验官方来源：https://github.com/trycua/cua"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cua Bench：Computer Use 任务与评测框架",
+        "url": "https://cua.ai/docs/cua-bench",
+        "summary": "提供可验证的 Computer Use 任务、任务变体、执行器、Agent 适配与评分接口，支持编写自定义任务并评估最终状态。",
+        "reason": "为走查任务集、评分器和代码变更后的回归评测提供参考；需要另行构建业务任务与基线，不能将收藏资料等同于已有评测能力。",
+        "tags": [
+          "Agent",
+          "Computer Use",
+          "评测",
+          "回归测试"
+        ],
+        "id": "30b88c96fd2ad602",
+        "savedAt": "2026-10-30",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "本人陈述，2026-10-30，公开摘要：主动收藏该资源，用于研究 Agent 执行环境与移动自动化；收藏不表示已采用或完成实测。"
+          },
+          {
+            "label": "2026-10-30 核验官方来源：https://cua.ai/docs/cua-bench"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "kind": "project",
+        "title": "UFO³：多设备 Agent 编排框架",
+        "url": "https://github.com/microsoft/UFO",
+        "summary": "微软的 UFO³ Galaxy 用 DAG 表达任务依赖，支持结果驱动的任务图调整、设备能力匹配和异步协同；UFO² 可独立使用或作为 Windows 设备 Agent。",
+        "reason": "用于研究跨设备任务拆分、调度、并发安全与渐进迁移，区分执行环境供应和上层任务编排的职责。",
+        "tags": [
+          "Agent",
+          "多设备",
+          "任务编排",
+          "DAG"
+        ],
+        "id": "78cc71039f781c38",
+        "savedAt": "2026-10-30",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "本人陈述，2026-10-30，公开摘要：主动收藏该资源，用于研究 Agent 执行环境与移动自动化；收藏不表示已采用或完成实测。"
+          },
+          {
+            "label": "2026-10-30 核验官方来源：https://github.com/microsoft/UFO"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "kind": "project",
+        "title": "Omarchy：面向 Agent 的 Linux 发行版",
+        "url": "https://omarchy.org/",
+        "summary": "DHH 发起的 Linux 发行版，将默认 Agent 配置、崩溃排查和应用、插件、主题定制纳入系统体验。",
+        "reason": "观察 Agent 如何进入操作系统日常工作流，研究系统集成、故障处理和社区扩展方式；未在本轮安装或验收。",
+        "tags": [
+          "Agent",
+          "Linux",
+          "操作系统",
+          "开发环境"
+        ],
+        "id": "5bb4e2a5478752f8",
+        "savedAt": "2026-10-30",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "本人陈述，2026-10-30，公开摘要：主动收藏该资源，用于研究 Agent 执行环境与移动自动化；收藏不表示已采用或完成实测。"
+          },
+          {
+            "label": "2026-10-30 核验官方来源：https://omarchy.org/"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "kind": "project",
+        "title": "mobile-mcp：跨 iOS 与 Android 的自动化接口",
+        "url": "https://github.com/mobile-next/mobile-mcp",
+        "summary": "为 MCP 客户端提供 iOS、Android 模拟器及真机操作，支持结构化无障碍快照和截图坐标交互；具体目标需满足平台与设备配置条件。",
+        "reason": "作为移动端走查的驱动层候选，与 Android 实例环境分开评估。与 Redroid 的组合仍需 PoC 验证，不能推定已兼容。",
+        "tags": [
+          "MCP",
+          "移动自动化",
+          "Android",
+          "iOS",
+          "体验走查"
+        ],
+        "id": "dc3f9f14d62dc2d9",
+        "savedAt": "2026-10-30",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "本人陈述，2026-10-30，公开摘要：主动收藏该资源，用于研究 Agent 执行环境与移动自动化；收藏不表示已采用或完成实测。"
+          },
+          {
+            "label": "2026-10-30 核验官方来源：https://github.com/mobile-next/mobile-mcp"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "57d75ed8b14df479",
+        "kind": "project",
+        "title": "phone-harness：手机 Agent 操作工具",
+        "url": "https://github.com/ShawnPana/phone-harness",
+        "summary": "提供统一的手机操作接口：本地 iPhone 通过 macOS iPhone Mirroring 和屏幕 OCR 操作，本地 Android 通过 adb 与无障碍树操作；仓库也提供云端设备接入。",
+        "reason": "收藏以便回看 iPhone 与 Android 的设备连接、读屏和动作实现；功能描述来自项目仓库，尚未在本人设备上验证。",
+        "tags": [
+          "Agent",
+          "iOS",
+          "Android",
+          "手机自动化"
+        ],
+        "savedAt": "2026-11-02",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "本人陈述，2026-11-02，公开摘要：明确要求收藏 phone-harness 和 iphone-use。"
+          },
+          {
+            "label": "2026-11-02 核验项目仓库：https://github.com/ShawnPana/phone-harness"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "3f1a4389e4e55fa7",
+        "kind": "project",
+        "title": "XPhoneUse CLI：真实手机操作脚本",
+        "url": "https://xphoneuse.com/en/skill",
+        "summary": "XPhoneUse 官方 Skill 包含 xphoneuse-cli.py，可通过本机桌面应用连接 iPhone 或 Android，执行读屏、点击、输入、滑动与截图等操作；Android 另支持 UI tree。",
+        "reason": "用于回看真实手机的 CLI 接入方式，并与 phone-harness、iphone-use 比较；本轮将用户所说的 xphone-cli 暂按官方脚本 xphoneuse-cli.py 对应，尚未验证实际设备表现。",
+        "tags": [
+          "Agent",
+          "iOS",
+          "Android",
+          "手机自动化",
+          "CLI"
+        ],
+        "savedAt": "2026-11-02",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "本人陈述，2026-11-02，公开摘要：明确要求收藏 xphone-cli；与 XPhoneUse CLI 的名称对应尚待确认。"
+          },
+          {
+            "label": "2026-11-02 核验 XPhoneUse 官方 Skill 与 CLI 说明：https://xphoneuse.com/en/skill"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "kind": "project",
+        "title": "iphone-use：真实 iPhone 的 Agent 操作工具",
+        "url": "https://github.com/leeguooooo/iphone-use",
+        "summary": "通过 macOS 上的自有 XCTest runner 操作真实 iPhone，提供读屏、点击、输入、滑动与可回放流程。仓库标明 PolyForm Shield 1.0.0，并限制竞争性产品或服务用途。",
+        "reason": "用于比较真机执行、动作结果与流程回放设计；复用代码前需核对适用许可与使用范围，不按宽松开源依赖处理。",
+        "tags": [
+          "Agent",
+          "iOS",
+          "真机自动化",
+          "许可边界"
+        ],
+        "id": "349ec51efde62bcb",
+        "savedAt": "2026-10-30",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "本人陈述，2026-10-30，公开摘要：主动收藏该资源，用于研究 Agent 执行环境与移动自动化；收藏不表示已采用或完成实测。"
+          },
+          {
+            "label": "2026-10-30 核验官方来源：https://github.com/leeguooooo/iphone-use"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "kind": "project",
+        "title": "warmwind：托管云端数字员工",
+        "url": "https://warmwind.com/",
+        "summary": "提供在独立云端桌面中操作应用的 AI worker，强调以视觉交互执行工作流。该描述来自官方产品介绍，本轮未登录或验证实际任务表现。",
+        "reason": "比较托管云端 Agent 的产品形态、环境交付、人机接管与数据边界，作为自建执行环境之外的参考。",
+        "tags": [
+          "Agent",
+          "云端桌面",
+          "数字员工",
+          "托管服务"
+        ],
+        "id": "f9fe5b8db76f3c70",
+        "savedAt": "2026-10-30",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "本人陈述，2026-10-30，公开摘要：主动收藏该资源，用于研究 Agent 执行环境与移动自动化；收藏不表示已采用或完成实测。"
+          },
+          {
+            "label": "2026-10-30 核验官方来源：https://warmwind.com/；官方团队介绍：https://huggingface.co/WarmwindOS"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "a8153013aad881ee",
+        "kind": "project",
+        "title": "Redroid：Android 容器运行环境",
+        "url": "https://github.com/remote-android/redroid-doc",
+        "summary": "在 Linux 主机上通过容器运行多个 Android 实例，提供 arm64 和 amd64 镜像。官方文档包含部署、显示参数与 Native Bridge 说明。",
+        "reason": "用于比较移动自动化的实例环境、主机要求和跨架构兼容选项。与 mobile-mcp 的组合仍需 PoC 验证，不代表目标 App 已通过兼容性验收。",
+        "tags": [
+          "Android",
+          "执行环境",
+          "容器",
+          "移动自动化"
+        ],
+        "savedAt": "2026-10-30",
+        "selection": "explicit",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "本人陈述，2026-10-30，公开摘要：主动收藏该资源，用于研究 Agent 执行环境与移动自动化；收藏不表示已采用或完成实测。"
+          },
+          {
+            "label": "2026-10-30 核验官方来源：https://github.com/remote-android/redroid-doc"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "e310000000000001",
+        "kind": "knowledge",
+        "title": "ReAct：推理、行动与环境反馈",
+        "url": "https://react-lm.github.io/",
+        "summary": "通过原论文项目页回看推理与行动交错、工具反馈和失败案例。",
+        "reason": "从旧知识库的 ReAct 论文笔记和概念译文合并保留原始来源，避免重复保存译文或沿用未经核验的概念对比。",
+        "tags": [
+          "Agent",
+          "ReAct",
+          "论文"
+        ],
+        "sources": [
+          {
+            "label": "原个人知识库中的两篇 ReAct 资料整理；2026-10-30 核验原论文项目页。发生日期未详，不代表本人已经实践或掌握。"
+          }
+        ],
+        "savedAt": "2026-10-30",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "e310000000000002",
+        "kind": "knowledge",
+        "title": "Patterns.dev：Web 设计、渲染与性能模式",
+        "url": "https://www.patterns.dev/",
+        "summary": "按 JavaScript、React 与性能主题检索 Web 模式及其取舍。",
+        "reason": "从旧官网的技术英语资料入口保留，适合带着具体工程问题查阅英文解释；不搬运大批词汇与通用教程。",
+        "tags": [
+          "软件工程",
+          "性能",
+          "技术英语"
+        ],
+        "sources": [
+          {
+            "label": "原个人知识库的英文技术资料目录；2026-10-30 核验官方站点。"
+          }
+        ],
+        "savedAt": "2026-10-30",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "e310000000000003",
+        "kind": "knowledge",
+        "title": "React 官方学习文档",
+        "url": "https://react.dev/learn",
+        "summary": "查阅组件、状态、事件与数据共享的官方说明。",
+        "reason": "旧官网多篇 React 译文与语句分析可回到同一权威入口；保留来源以便查证，不重复收录零散转述。",
+        "tags": [
+          "React",
+          "官方文档",
+          "技术英语"
+        ],
+        "sources": [
+          {
+            "label": "原个人知识库的英文文档与阅读笔记；2026-10-30 核验官方学习页。"
+          }
+        ],
+        "savedAt": "2026-10-30",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "e310000000000004",
+        "kind": "knowledge",
+        "title": "LLM wiki 的规则、技能与文章分层",
+        "url": "https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/%E6%88%91%E5%9C%A8%E7%BB%99%E8%87%AA%E5%B7%B1%E5%BB%BA%E4%B8%80%E4%B8%AA%20LLM%20wiki.md",
+        "summary": "把稳定约束、可执行流程与判断依据分别组织，关注触发条件和真实结果校验。",
+        "reason": "保留可复用的内容分层方法。原文部分叙述存在人和 AI 第一人称混用，因此不将其中执行事件提取为本人经历。",
+        "tags": [
+          "知识管理",
+          "Agent Skill",
+          "上下文"
+        ],
+        "sources": [
+          {
+            "label": "本人公开博客的 LLM wiki 文章；只保存方法参考，不认领未能明确归属的执行事件。"
+          }
+        ],
+        "savedAt": "2026-10-30",
+        "selection": "discovered",
+        "visibility": "shared",
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "e310000000000005",
+        "kind": "project",
+        "title": "Magic UI",
+        "url": "https://github.com/magicuidesign/magicui",
+        "summary": "React 动效组件库，提供官方 MCP，使 AI 编程工具能够获取组件上下文与源码。",
+        "reason": "本轮建站需要可回查组件实现和许可，保留官方仓库用于后续维护。 用于回查官方 MCP 接入方式，让 Agent 获取真实组件信息后再集成页面。",
+        "tags": [
+          "UI",
+          "React",
+          "组件"
+        ],
+        "sources": [
+          {
+            "label": "2026-10-30 建站过程核验 Magic UI 官方源码与 MIT 许可；会话发现。"
+          },
+          {
+            "label": "官方 MCP 文档，2026-11-01 会话检索核验：https://magicui.design/docs/mcp"
+          },
+          {
+            "label": "本人陈述，2026-11-01，公开摘要：明确要求收藏本次讨论的全部 AI 友好组件库及组件检索工具；使用状态另按项目证据记录。"
+          }
+        ],
+        "savedAt": "2026-10-30",
+        "selection": "explicit",
+        "visibility": "shared",
+        "priority": "reference",
+        "adoption": "adopted",
+        "usages": [
+          {
+            "project": "youngjunning.com",
+            "projectUrl": "https://github.com/youngjunning/youngjunning.com",
+            "stage": "adopted",
+            "purpose": "首页 BlurFade 与 BentoGrid",
+            "evidence": "2026-11-01 源码核验：https://github.com/youngjunning/youngjunning.com/blob/5a28f230f92d53ba73078bc448504d272ba11577/app/page.tsx；https://github.com/youngjunning/youngjunning.com/blob/5a28f230f92d53ba73078bc448504d272ba11577/THIRD_PARTY_NOTICES.md；仅证明代码接入。"
+          }
+        ]
+      },
+      {
+        "id": "e310000000000006",
+        "kind": "knowledge",
+        "title": "AI Native 知识库的内容与证据分层",
+        "url": "https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/AI%20Native%20%E7%9F%A5%E8%AF%86%E5%BA%93%EF%BC%9A%E7%BB%99%E4%BA%BA%E7%BB%B4%E6%8A%A4%EF%BC%8C%E7%BB%99%20Agent%20%E8%B0%83%E7%94%A8%EF%BC%8C%E7%BB%99%E5%8F%8C%E6%96%B9%E8%BF%BD%E6%BA%AF.md",
+        "summary": "讨论事实源、检索、Agent 消费与可追溯引用的关系。",
+        "reason": "作为知识库设计的深度参考保留；与本站记录、引用和对话边界直接相关，不把文章内容当作本人的全部实践成果。",
+        "tags": [
+          "AI Infra",
+          "知识库",
+          "检索"
+        ],
+        "savedAt": "2026-10-30",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "本人公开博客的历史技术文章；2026-10-30 按长期参考价值筛选，仅保存来源摘要。"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "e310000000000007",
+        "kind": "knowledge",
+        "title": "Agent Runtime 与 Harness 的可靠性边界",
+        "url": "https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/%E5%A6%82%E4%BD%95%E6%9E%84%E5%BB%BA%E5%8F%AF%E9%AA%8C%E8%AF%81%E3%80%81%E5%8F%AF%E6%81%A2%E5%A4%8D%E3%80%81%E5%8F%AF%E8%AF%84%E6%B5%8B%E7%9A%84%20Agent%20Runtime%20%E4%B8%8E%20Harness.md",
+        "summary": "从执行状态、恢复、验证与评测角度组织 Agent 运行时问题。",
+        "reason": "保留系统级设计的参考入口；关注可验证完成与故障恢复，替代零散框架使用教程。",
+        "tags": [
+          "Agent Runtime",
+          "评测",
+          "可靠性"
+        ],
+        "savedAt": "2026-10-30",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "本人公开博客的历史技术文章；2026-10-30 按长期参考价值筛选，仅保存来源摘要。"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "e310000000000008",
+        "kind": "knowledge",
+        "title": "Evidence：把任务结果与可核验证据连接",
+        "url": "https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/Evidence%20%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9AAgent%20%E7%B3%BB%E7%BB%9F%E5%A6%82%E4%BD%95%E8%AF%81%E6%98%8E%E8%87%AA%E5%B7%B1%E7%9C%9F%E7%9A%84%E5%AE%8C%E6%88%90%E4%BA%86%E4%BB%BB%E5%8A%A1.md",
+        "summary": "梳理 Claim、证据与日志、知识、引用之间的区别。",
+        "reason": "对评审 Agent 是否完成任务有长期参考价值；记录概念来源，不推定本人已经实现全部机制。",
+        "tags": [
+          "Evidence",
+          "验证",
+          "Agent"
+        ],
+        "savedAt": "2026-10-30",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "本人公开博客的历史技术文章；2026-10-30 按长期参考价值筛选，仅保存来源摘要。"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "e310000000000009",
+        "kind": "knowledge",
+        "title": "从 BrowserOS 看 AI 浏览器的系统边界",
+        "url": "https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/AI%20%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8D%E6%98%AF%20Chrome%20%E5%8A%A0%E4%B8%AA%E8%81%8A%E5%A4%A9%E6%A1%86%EF%BC%9A%E4%BB%8E%20BrowserOS%20%E6%8B%86%E8%A7%A3%E4%B8%83%E5%B1%82%E6%9E%B6%E6%9E%84.md",
+        "summary": "以公开源码为线索讨论内核、原生集成、Runtime、工具、模型与交付。",
+        "reason": "保留跨层架构分析，帮助区分演示、平台与产品交付；源码与依赖状态应回到当前项目重新核验。",
+        "tags": [
+          "AI 浏览器",
+          "架构",
+          "BrowserOS"
+        ],
+        "savedAt": "2026-10-30",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "本人公开博客的历史技术文章；2026-10-30 按长期参考价值筛选，仅保存来源摘要。"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "e31000000000000a",
+        "kind": "knowledge",
+        "title": "Chromium 自动更新的客户端、协议与服务端",
+        "url": "https://github.com/youngjunning/blog.zisheng.pro/blob/ace4b4dd473501dff47eab5ae47afd10dad28319/source/_posts/Omaha%20%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9A%E4%B8%80%E7%AF%87%E8%AE%B2%E6%B8%85%20Chromium%20%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0%E7%9A%84%E5%AE%A2%E6%88%B7%E7%AB%AF%E3%80%81%E5%8D%8F%E8%AE%AE%E4%B8%8E%E6%9C%8D%E5%8A%A1%E7%AB%AF.md",
+        "summary": "区分更新客户端、Omaha 协议、服务端及签名相关概念。",
+        "reason": "更新链路涉及多种独立交付证据，保留这一系统说明比单条发布命令更便于后续查证。",
+        "tags": [
+          "Chromium",
+          "自动更新",
+          "软件交付"
+        ],
+        "savedAt": "2026-10-30",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "本人公开博客的历史技术文章；2026-10-30 按长期参考价值筛选，仅保存来源摘要。"
+          }
+        ],
+        "priority": "lead",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "a4d52e70c1968c01",
+        "kind": "knowledge",
+        "title": "Vercel Pro 计划与计费",
+        "url": "https://vercel.com/docs/plans/pro-plan",
+        "summary": "核对平台费、部署席位和使用额度，区分固定订阅费用与额外用量。",
+        "reason": "围绕 Vercel 的独立开发方案写作时核对的官方资料，可用于后续容量规划和成本复查；规则可能变化，以官方当前页面为准。",
+        "tags": [
+          "独立开发",
+          "成本控制"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "2026-11-01 写作时核对的官方产品文档及价格页面。"
+          }
+        ],
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "a4d52e70c1968c02",
+        "kind": "knowledge",
+        "title": "Vercel Spend Management 的暂停边界",
+        "url": "https://vercel.com/docs/spend-management",
+        "summary": "核对预算通知、全团队生产暂停、检查延迟和暂停后仍产生的存储费用。",
+        "reason": "围绕 Vercel 的独立开发方案写作时核对的官方资料，可用于后续容量规划和成本复查；规则可能变化，以官方当前页面为准。",
+        "tags": [
+          "独立开发",
+          "成本控制"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "2026-11-01 写作时核对的官方产品文档及价格页面。"
+          }
+        ],
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "a4d52e70c1968c03",
+        "kind": "knowledge",
+        "title": "Neon 数据库价格与免费额度",
+        "url": "https://neon.com/pricing",
+        "summary": "核对托管 Postgres 的存储与计算额度，避免只按数据库大小估算费用。",
+        "reason": "围绕 Vercel 的独立开发方案写作时核对的官方资料，可用于后续容量规划和成本复查；规则可能变化，以官方当前页面为准。",
+        "tags": [
+          "独立开发",
+          "成本控制"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "2026-11-01 写作时核对的官方产品文档及价格页面。"
+          }
+        ],
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "a4d52e70c1968c04",
+        "kind": "knowledge",
+        "title": "Vercel Blob 的存储、操作与传输计费",
+        "url": "https://vercel.com/docs/vercel-blob/usage-and-pricing",
+        "summary": "核对对象存储各计费项，区分资源压缩、缓存命中与实际账单变化。",
+        "reason": "围绕 Vercel 的独立开发方案写作时核对的官方资料，可用于后续容量规划和成本复查；规则可能变化，以官方当前页面为准。",
+        "tags": [
+          "独立开发",
+          "成本控制"
+        ],
+        "savedAt": "2026-11-01",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "2026-11-01 写作时核对的官方产品文档及价格页面。"
+          }
+        ],
+        "priority": "reference",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "f937b85a0cb491d2",
+        "kind": "project",
+        "title": "RuiC Card Skill",
+        "url": "https://github.com/HRuiCcc/RuiC-card-skill",
+        "summary": "Agent Skill：根据描述或参考图制作分层全息镭射卡，交付可交互的 Three.js 网页及可编辑的 Blender 工程。",
+        "reason": "本轮寻找镭射卡片 Skill 时发现，可用于后续制作和评估交互式闪卡；尚未安装或试用。",
+        "tags": [
+          "Agent Skill",
+          "镭射卡",
+          "Three.js",
+          "Blender"
+        ],
+        "savedAt": "2026-11-02",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "项目公开仓库 README 与 SKILL.md，2026-11-02 核验。"
+          }
+        ],
+        "priority": "evaluate",
+        "adoption": "unknown",
+        "usages": []
+      },
+      {
+        "id": "e50a71b2968c4d3f",
+        "kind": "project",
+        "title": "Holo Card Studio",
+        "url": "https://github.com/EverettFish/holo-card-studio",
+        "summary": "Codex Skill：可制作分层全息镭射卡与双图随视角切换的光栅卡，交付可编辑 Blender 工程、渲染图和 Three.js 网页。",
+        "reason": "本轮比较镭射卡片 Skill 时发现；普通闪卡和双形态光栅卡都可用它评估，尚未安装或试用。",
+        "tags": [
+          "Codex Skill",
+          "镭射卡",
+          "光栅卡",
+          "Three.js",
+          "Blender"
+        ],
+        "savedAt": "2026-11-02",
+        "selection": "discovered",
+        "visibility": "shared",
+        "sources": [
+          {
+            "label": "项目公开仓库 README、SKILL.md 与 LICENSE，2026-11-02 核验。"
+          }
+        ],
+        "priority": "evaluate",
+        "adoption": "unknown",
+        "usages": []
+      }
+    ]
+  },
+  "decisions": [
+    {
+      "id": "33226492457fb09f",
+      "type": "reference",
+      "subjects": [
+        "engineering",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "77faf23e6615fd4d",
+      "type": "reference",
+      "subjects": [
+        "engineering"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "f9ab77505f692970",
+      "type": "reference",
+      "subjects": [
+        "design"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "2093f60cae7cf54d",
+      "type": "concept",
+      "subjects": [
+        "grounding",
+        "agents"
+      ],
+      "attribution": "ai",
+      "reason": "保留本站原卡片解释和原始日期；概念与处理方法分开，AI 说明不归为本人实践，业务学习收获与补充示例分别归属。"
+    },
+    {
+      "id": "ff6d24c1cfcdceec",
+      "type": "concept",
+      "subjects": [
+        "grounding",
+        "agents"
+      ],
+      "attribution": "ai",
+      "reason": "保留本站原卡片解释和原始日期；概念与处理方法分开，AI 说明不归为本人实践，业务学习收获与补充示例分别归属。"
+    },
+    {
+      "id": "758f3da9f36fd98f",
+      "type": "method",
+      "subjects": [
+        "grounding",
+        "infra"
+      ],
+      "attribution": "ai",
+      "reason": "保留本站原卡片解释和原始日期；概念与处理方法分开，AI 说明不归为本人实践，业务学习收获与补充示例分别归属。"
+    },
+    {
+      "id": "38c6d9646e0e792d",
+      "type": "method",
+      "subjects": [
+        "business"
+      ],
+      "attribution": "mixed",
+      "reason": "保留本站原卡片解释和原始日期；概念与处理方法分开，AI 说明不归为本人实践，业务学习收获与补充示例分别归属。"
+    },
+    {
+      "id": "2f43458f49eef200",
+      "type": "concept",
+      "subjects": [
+        "browser"
+      ],
+      "attribution": "ai",
+      "reason": "保留本站原卡片解释和原始日期；概念与处理方法分开，AI 说明不归为本人实践，业务学习收获与补充示例分别归属。"
+    },
+    {
+      "id": "e0327ad10d9b4db3",
+      "type": "tool",
+      "subjects": [
+        "browser",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "b7080a49fa02da51",
+      "type": "tool",
+      "subjects": [
+        "browser",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "22e1134e4b38d4c7",
+      "type": "concept",
+      "subjects": [
+        "browser",
+        "engineering"
+      ],
+      "attribution": "ai",
+      "reason": "保留本站原卡片解释和原始日期；概念与处理方法分开，AI 说明不归为本人实践，业务学习收获与补充示例分别归属。"
+    },
+    {
+      "id": "ed2d400461c87b68",
+      "type": "concept",
+      "subjects": [
+        "grounding",
+        "agents"
+      ],
+      "attribution": "ai",
+      "reason": "保留本站原卡片解释和原始日期；概念与处理方法分开，AI 说明不归为本人实践，业务学习收获与补充示例分别归属。"
+    },
+    {
+      "id": "845736bf57c284ad",
+      "type": "reference",
+      "subjects": [
+        "browser",
+        "design"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "733d0260b41fe65a",
+      "type": "reference",
+      "subjects": [
+        "browser",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "98e5f8fb7a31b40d",
+      "type": "concept",
+      "subjects": [
+        "engineering"
+      ],
+      "attribution": "source",
+      "reason": "保留本站原卡片解释和原始日期；概念与处理方法分开，AI 说明不归为本人实践，业务学习收获与补充示例分别归属。"
+    },
+    {
+      "id": "d89f4c7a120e6b53",
+      "type": "tool",
+      "subjects": [
+        "design"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "7de12a9cb68f4305",
+      "type": "tool",
+      "subjects": [
+        "design",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "a9e4f61d7c2038b5",
+      "type": "tool",
+      "subjects": [
+        "design"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "6346c52b801999ed",
+      "type": "concept",
+      "subjects": [
+        "grounding"
+      ],
+      "attribution": "ai",
+      "reason": "保留本站原卡片解释和原始日期；概念与处理方法分开，AI 说明不归为本人实践，业务学习收获与补充示例分别归属。"
+    },
+    {
+      "id": "6b91e4c2a73f508d",
+      "type": "concept",
+      "subjects": [
+        "browser",
+        "agents"
+      ],
+      "attribution": "ai",
+      "reason": "保留本站原卡片解释和原始日期；概念与处理方法分开，AI 说明不归为本人实践，业务学习收获与补充示例分别归属。"
+    },
+    {
+      "id": "e5f96a83d7b14c20",
+      "type": "reference",
+      "subjects": [
+        "engineering",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "efc8d86fbe37e287",
+      "type": "reference",
+      "subjects": [
+        "infra"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "d1e8b9f045a72c63",
+      "type": "tool",
+      "subjects": [
+        "browser",
+        "infra",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "a764e990132fb651",
+      "type": "tool",
+      "subjects": [
+        "infra"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "bd601b5319e7a421",
+      "type": "tool",
+      "subjects": [
+        "infra"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "be9cc1222ed79c60",
+      "type": "concept",
+      "subjects": [
+        "browser",
+        "engineering"
+      ],
+      "attribution": "ai",
+      "reason": "保留本站原卡片解释和原始日期；概念与处理方法分开，AI 说明不归为本人实践，业务学习收获与补充示例分别归属。"
+    },
+    {
+      "id": "d53795ec40da8732",
+      "type": "concept",
+      "subjects": [
+        "infra"
+      ],
+      "attribution": "ai",
+      "reason": "保留本站原卡片解释和原始日期；概念与处理方法分开，AI 说明不归为本人实践，业务学习收获与补充示例分别归属。"
+    },
+    {
+      "id": "d61534bc8b9c5b8a",
+      "type": "concept",
+      "subjects": [
+        "infra"
+      ],
+      "attribution": "ai",
+      "reason": "保留本站原卡片解释和原始日期；概念与处理方法分开，AI 说明不归为本人实践，业务学习收获与补充示例分别归属。"
+    },
+    {
+      "id": "0a940ff96caf609f",
+      "type": "concept",
+      "subjects": [
+        "infra",
+        "engineering"
+      ],
+      "attribution": "ai",
+      "reason": "保留本站原卡片解释和原始日期；概念与处理方法分开，AI 说明不归为本人实践，业务学习收获与补充示例分别归属。"
+    },
+    {
+      "id": "a043fdc0643c0a59",
+      "type": "reference",
+      "subjects": [
+        "grounding",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "baad0631679522e9",
+      "type": "concept",
+      "subjects": [
+        "engineering"
+      ],
+      "attribution": "ai",
+      "reason": "保留本站原卡片解释和原始日期；概念与处理方法分开，AI 说明不归为本人实践，业务学习收获与补充示例分别归属。"
+    },
+    {
+      "id": "ef59db6898dfa7eb",
+      "type": "concept",
+      "subjects": [
+        "browser"
+      ],
+      "attribution": "ai",
+      "reason": "保留本站原卡片解释和原始日期；概念与处理方法分开，AI 说明不归为本人实践，业务学习收获与补充示例分别归属。"
+    },
+    {
+      "id": "4e03a576a9129a47",
+      "type": "concept",
+      "subjects": [
+        "browser",
+        "engineering"
+      ],
+      "attribution": "ai",
+      "reason": "保留本站原卡片解释和原始日期；概念与处理方法分开，AI 说明不归为本人实践，业务学习收获与补充示例分别归属。"
+    },
+    {
+      "id": "92ac22e4955a6891",
+      "type": "tool",
+      "subjects": [
+        "browser"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "d1059120ceab8e14",
+      "type": "tool",
+      "subjects": [
+        "browser",
+        "engineering"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "78240e8176afe1cf",
+      "type": "reference",
+      "subjects": [
+        "browser",
+        "engineering"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "f77247c57bae1942",
+      "type": "reference",
+      "subjects": [
+        "browser",
+        "engineering",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "9728118894d125bb",
+      "type": "concept",
+      "subjects": [
+        "browser"
+      ],
+      "attribution": "ai",
+      "reason": "保留本站原卡片解释和原始日期；概念与处理方法分开，AI 说明不归为本人实践，业务学习收获与补充示例分别归属。"
+    },
+    {
+      "id": "bae903ae1bc19576",
+      "type": "concept",
+      "subjects": [
+        "browser",
+        "agents"
+      ],
+      "attribution": "ai",
+      "reason": "保留本站原卡片解释和原始日期；概念与处理方法分开，AI 说明不归为本人实践，业务学习收获与补充示例分别归属。"
+    },
+    {
+      "id": "9d004abd4465f770",
+      "type": "reference",
+      "subjects": [
+        "infra",
+        "engineering"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "0e8ee3263e315d2a",
+      "type": "tool",
+      "subjects": [
+        "engineering",
+        "design"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "f7ab9f83499a05f8",
+      "type": "tool",
+      "subjects": [
+        "design"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "a6d982c3f17e40b5",
+      "type": "reference",
+      "subjects": [
+        "engineering"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "6cd831f49b2e70a5",
+      "type": "reference",
+      "subjects": [
+        "infra"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "32f8a9d61e70bc45",
+      "type": "reference",
+      "subjects": [
+        "infra",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "ce63a109bf24d857",
+      "type": "reference",
+      "subjects": [
+        "browser",
+        "engineering",
+        "infra"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "e62d7a098bf134c5",
+      "type": "reference",
+      "subjects": [
+        "browser",
+        "engineering",
+        "infra"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "9d230a7fc8e61b45",
+      "type": "reference",
+      "subjects": [
+        "business"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "5ae070dbca4b8e19",
+      "type": "reference",
+      "subjects": [
+        "browser"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "b9f6c02ae3187d54",
+      "type": "tool",
+      "subjects": [
+        "agents",
+        "engineering"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "1f84a6c02bbd5709",
+      "type": "tool",
+      "subjects": [
+        "engineering"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "f43c1a9e7b625d08",
+      "type": "reference",
+      "subjects": [
+        "memory",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "3d6f08b2c194a7e5",
+      "type": "reference",
+      "subjects": [
+        "memory",
+        "engineering"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "b8d52e7190ca63f4",
+      "type": "reference",
+      "subjects": [
+        "memory",
+        "business"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "6f597c80ab124de9",
+      "type": "tool",
+      "subjects": [
+        "business"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "a832d4fb6130e725",
+      "type": "tool",
+      "subjects": [
+        "design",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "cf1923de758ab604",
+      "type": "tool",
+      "subjects": [
+        "design"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "9005d098dc844cdb",
+      "type": "tool",
+      "subjects": [
+        "design",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "58ee05520f6e84b5",
+      "type": "tool",
+      "subjects": [
+        "design",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "ce11d50c8c1a996b",
+      "type": "tool",
+      "subjects": [
+        "design",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "240f05a3610b5718",
+      "type": "tool",
+      "subjects": [
+        "design",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "3ad86e9295020a3c",
+      "type": "tool",
+      "subjects": [
+        "design",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "5e2ea2cdfa8d7fe5",
+      "type": "tool",
+      "subjects": [
+        "design",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "fe95afe989157b02",
+      "type": "tool",
+      "subjects": [
+        "design",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "fcbb542c5cf563a3",
+      "type": "tool",
+      "subjects": [
+        "design",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "e81bc6847d38f902",
+      "type": "tool",
+      "subjects": [
+        "memory",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "91fc906a99431e8a",
+      "type": "reference",
+      "subjects": [
+        "memory"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "12f51ecafa480a20",
+      "type": "reference",
+      "subjects": [
+        "memory",
+        "engineering"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "bbc6c2e95fa83d72",
+      "type": "tool",
+      "subjects": [
+        "design",
+        "engineering"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "84d1b9c307ef625a",
+      "type": "tool",
+      "subjects": [
+        "engineering",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "6a8c3e740f921db5",
+      "type": "tool",
+      "subjects": [
+        "browser",
+        "engineering",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "8838524aac092773",
+      "type": "tool",
+      "subjects": [
+        "grounding",
+        "browser",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "1b8e35a5a0147eea",
+      "type": "tool",
+      "subjects": [
+        "grounding",
+        "browser",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "ef32f6d3f97f6937",
+      "type": "tool",
+      "subjects": [
+        "grounding",
+        "browser",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "c450686e5af95c27",
+      "type": "tool",
+      "subjects": [
+        "grounding",
+        "browser",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "84ac495cdb0c1827",
+      "type": "tool",
+      "subjects": [
+        "grounding",
+        "browser",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "440e6d3a3f457bb6",
+      "type": "tool",
+      "subjects": [
+        "grounding",
+        "browser",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "93863398f0fa2a2c",
+      "type": "tool",
+      "subjects": [
+        "agents",
+        "infra"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "30b88c96fd2ad602",
+      "type": "reference",
+      "subjects": [
+        "engineering",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "78cc71039f781c38",
+      "type": "tool",
+      "subjects": [
+        "infra",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "5bb4e2a5478752f8",
+      "type": "tool",
+      "subjects": [
+        "infra",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "dc3f9f14d62dc2d9",
+      "type": "tool",
+      "subjects": [
+        "engineering",
+        "infra",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "57d75ed8b14df479",
+      "type": "tool",
+      "subjects": [
+        "infra",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "3f1a4389e4e55fa7",
+      "type": "tool",
+      "subjects": [
+        "infra",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "349ec51efde62bcb",
+      "type": "tool",
+      "subjects": [
+        "infra",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "f9fe5b8db76f3c70",
+      "type": "tool",
+      "subjects": [
+        "business",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "a8153013aad881ee",
+      "type": "tool",
+      "subjects": [
+        "engineering",
+        "infra",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "e310000000000001",
+      "type": "reference",
+      "subjects": [
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "e310000000000002",
+      "type": "reference",
+      "subjects": [
+        "engineering",
+        "design"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "e310000000000003",
+      "type": "reference",
+      "subjects": [
+        "design"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "e310000000000004",
+      "type": "reference",
+      "subjects": [
+        "memory",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "e310000000000005",
+      "type": "tool",
+      "subjects": [
+        "design",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "e310000000000006",
+      "type": "reference",
+      "subjects": [
+        "memory",
+        "engineering"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "e310000000000007",
+      "type": "reference",
+      "subjects": [
+        "agents",
+        "engineering"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "e310000000000008",
+      "type": "reference",
+      "subjects": [
+        "agents",
+        "engineering"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "e310000000000009",
+      "type": "reference",
+      "subjects": [
+        "browser",
+        "engineering",
+        "infra"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "e31000000000000a",
+      "type": "reference",
+      "subjects": [
+        "browser"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "a4d52e70c1968c01",
+      "type": "reference",
+      "subjects": [
+        "infra",
+        "business"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "a4d52e70c1968c02",
+      "type": "reference",
+      "subjects": [
+        "infra",
+        "business"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "a4d52e70c1968c03",
+      "type": "reference",
+      "subjects": [
+        "infra",
+        "business"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "a4d52e70c1968c04",
+      "type": "reference",
+      "subjects": [
+        "infra",
+        "business"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "f937b85a0cb491d2",
+      "type": "tool",
+      "subjects": [
+        "design",
+        "agents"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    },
+    {
+      "id": "e50a71b2968c4d3f",
+      "type": "tool",
+      "subjects": [
+        "design"
+      ],
+      "attribution": "source",
+      "reason": "按本站原资源实际用途分类，主题仅作阅读导航，不改变保存方式与项目使用证据。"
+    }
+  ]
+}

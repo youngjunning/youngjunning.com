@@ -1,2 +1,3 @@
-import { getContent } from '@/lib/content';
-export function GET() { return Response.json({ version: 1, favorites: getContent().favorites }); }
+import { getFavoriteStore } from '@/lib/favorites';
+export const dynamic = 'force-static';
+export function GET() { return Response.json(getFavoriteStore()); }

@@ -1,3 +1,4 @@
+import AuxiliaryShell from '@/components/auxiliary-shell';
 import type { Metadata } from 'next';
 import resume from '@/content/resume.json';
 import ResumeSwitcher from './resume-switcher';
@@ -9,5 +10,5 @@ export const metadata: Metadata = {
 };
 
 export default function ResumePage() {
-  return <ResumeSwitcher />;
+  return <AuxiliaryShell title="简历" active="home" prose={false}><ResumeSwitcher /></AuxiliaryShell>;
 }

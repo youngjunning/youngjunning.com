@@ -1,0 +1,33 @@
+/* Lucian UX/UI Prompt #028 · MIT License (c) 2026 Seokwoooo · https://lucianlabs.dev/uxui-prompt/#028 */
+.u028{position:relative;width:350px;height:300px;display:flex;flex-direction:column;justify-content:center}
+.u028-thread{display:flex;gap:10px;margin-bottom:14px}
+.u028-av{width:34px;height:34px;flex:none;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FFD3A8,#FF7A93 60%,#8B6CFF)}
+.u028-bub{margin:0;padding:10px 14px;border-radius:4px 16px 16px 16px;background:var(--ux-surface);box-shadow:0 0 0 1px var(--ux-line);font-size:14px;line-height:1.5;color:var(--ux-ink-2)}
+.u028-bub b{display:block;font-size:12.5px;color:var(--ux-ink);margin-bottom:2px}
+.u028-box{position:relative;padding:14px 14px 12px 16px;border-radius:22px;background:var(--ux-surface);box-shadow:0 0 0 1.5px var(--ux-line-2),0 20px 40px -28px var(--ux-shadow-strong);transition:box-shadow .3s var(--ux-ease)}
+.u028-box:focus-within{box-shadow:0 0 0 2px var(--ux-accent),0 0 0 6px var(--ux-accent-soft),0 20px 40px -28px var(--ux-shadow-strong)}
+.u028-ta{display:block;width:100%;height:24px;min-height:24px;max-height:144px;padding:0;border:0;outline:0;resize:none;background:none;font:inherit;font-size:15.5px;line-height:24px;color:var(--ux-ink);overflow:hidden;transition:height .25s var(--ux-ease)}
+.u028-ta::placeholder{color:var(--ux-ink-3)}
+.u028-foot{display:flex;align-items:center;gap:10px;margin-top:12px}
+.u028-tool{width:34px;height:34px;border:0;padding:0;border-radius:10px;background:none;color:var(--ux-ink-3);display:grid;place-items:center;transition:background-color .2s,color .2s}
+.u028-tool:hover{background:var(--ux-surface-2);color:var(--ux-ink)}
+.u028-tool:focus-visible{outline:2px solid var(--ux-accent);outline-offset:1px}
+.u028-tool svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.u028-ring{position:relative;width:30px;height:30px;margin-left:auto;transition:transform .45s var(--ux-spring)}
+.u028-ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.u028-ring circle{fill:none;stroke-width:3}
+.u028-ring .bg{stroke:var(--ux-surface-3)}
+.u028-ring .fg{stroke:var(--ux-accent);stroke-linecap:round;stroke-dasharray:75.4;stroke-dashoffset:calc(75.4 * (1 - var(--p,0)));transition:stroke-dashoffset .3s var(--ux-ease),stroke .3s var(--ux-ease)}
+.u028-left{position:absolute;inset:0;display:grid;place-items:center;font-size:10.5px;font-weight:800;font-variant-numeric:tabular-nums;opacity:0;transition:opacity .2s}
+.u028.is-near .u028-ring{transform:scale(1.25)}
+.u028.is-near .u028-ring .fg{stroke:var(--ux-warn)}
+.u028.is-near .u028-left{opacity:1;color:var(--ux-warn)}
+.u028.is-over .u028-ring .fg{stroke:var(--ux-danger)}
+.u028.is-over .u028-left{color:var(--ux-danger)}
+.u028-send{height:38px;padding:0 16px;border:0;border-radius:12px;background:var(--ux-ink);color:var(--ux-page);font-size:14px;font-weight:700;transition:opacity .25s var(--ux-ease),transform .4s var(--ux-spring)}
+.u028-send:active{transform:scale(.94)}
+.u028-send:focus-visible{outline:2px solid var(--ux-accent);outline-offset:2px}
+.u028-send[aria-disabled="true"]{opacity:.3;cursor:not-allowed}
+.u028-sep{width:1px;height:20px;background:var(--ux-line-2)}
+.u028-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.u028-ta:focus-visible{outline:none}

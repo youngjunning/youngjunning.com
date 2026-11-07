@@ -1,9 +1,8 @@
-import fs from 'node:fs';
-import path from 'node:path';
-import { getContent } from '@/lib/content';
+import { getCatalog, getDocument } from '@/lib/content';
+export const dynamic = 'force-static';
+export function generateStaticParams() { return getCatalog().documents.map(({ id }) => ({ id })); }
 export async function GET(_request: Request, { params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
-  const article = getContent().posts.find(item => item.id === id);
-  if (!article) return new Response('Not found', { status: 404 });
-  return new Response(fs.readFileSync(path.join(process.cwd(), 'content/posts', article.file), 'utf8'), { headers: { 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff' } });
+  const doc = getDocument((await params).id);
+  if (!doc) return new Response('Document not found', { status: 404 });
+  return new Response(doc.rawContent, { headers: { 'Content-Type': doc.kind === 'markdown' ? 'text/markdown; charset=utf-8' : 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff' } });
 }

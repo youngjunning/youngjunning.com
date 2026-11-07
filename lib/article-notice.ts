@@ -4,3 +4,5 @@ export const articleLicenseUrl = 'https://creativecommons.org/licenses/by-nc-sa/
 export function articleNoticeMarkdown(author: string, url: string) {
   return `> **文章作者**：${author}\n> **文章链接**：${url}\n> **版权声明**：除特别声明外，本博客所有文章均采用 [${articleLicenseName}](${articleLicenseUrl}) 授权协议。转载请注明出处：[硅基俊宁](https://youngjunning.com)。`;
 }
+
+export const articleNoticePolicy = { label: '版权声明', text: '除特别声明外，本站手记均采用以下授权协议。转载请注明作者与原文；第三方内容仍按各自授权使用。', licenseName: articleLicenseName, licenseUrl: articleLicenseUrl };

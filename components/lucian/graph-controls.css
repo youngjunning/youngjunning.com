@@ -1,0 +1,10 @@
+.graph-toolbar .graph-search.u025{display:block;flex:none;width:260px;height:50px;padding:0;gap:0}
+.graph-search .u025-f{width:325px;transform:scale(.8);transform-origin:left top}
+.graph-search .u025-f.is-up .u025-line .g{width:60px}
+.graph-search .u025-in{padding-right:18px}
+.graph-toolbar .graph-link-switch.u013{--on:var(--ux-grad);width:auto;height:30px;display:flex;flex-direction:row;gap:10px;margin-left:auto;padding:0;flex:none}
+.graph-link-switch .u013-slot{position:relative;width:51px;height:28px;display:block}
+.graph-link-switch .u013-sw{position:absolute;left:0;top:0;transform:scale(.36);transform-origin:left top}
+.graph-link-switch .graph-link-caption{font-size:11px;color:var(--style-muted)}
+@media(max-width:650px){.graph-toolbar .graph-search.u025{width:min(260px,100%)}.graph-toolbar .graph-link-switch.u013{margin-left:0}}
+@media(prefers-reduced-motion:reduce){.graph-search *,.graph-link-switch *{transition:none!important;animation:none!important}}

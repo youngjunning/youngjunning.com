@@ -1,0 +1,35 @@
+/* Lucian #212 header and #039 sliding pill adapted to site navigation. */
+.site-shell.u212{width:100%;height:auto;min-height:100vh;display:block;overflow:visible;border-radius:0;background:var(--style-page);box-shadow:none}
+.site-header.u212-hd{position:fixed;top:16px;left:22px;right:22px;width:auto;max-width:1760px;margin:auto;height:64px;padding:0 16px;gap:22px;border:1px solid var(--style-line);border-radius:18px;background:color-mix(in srgb,var(--style-surface) 88%,transparent);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 16px 40px -28px var(--ux-shadow-strong);z-index:50}
+.site-shell.is-solid .site-header.u212-hd{height:58px;border-color:var(--style-line);background:color-mix(in srgb,var(--style-surface) 84%,transparent);box-shadow:0 16px 36px -25px var(--ux-shadow-strong)}
+.site-shell.is-hide .site-header.u212-hd{transform:translateY(calc(-100% - 24px))}
+.site-identity{display:flex;align-items:center;gap:10px;min-width:155px;white-space:nowrap;text-decoration:none;color:var(--style-ink)}
+.site-identity-mark{width:36px;height:36px;display:grid;place-items:center;border-radius:10px;background:var(--style-accent);color:var(--style-accent-ink);font:700 20px "Songti SC",serif}
+.site-identity>span:last-child{font-size:17px;font-weight:800;line-height:1}
+.site-identity small{display:block;margin-top:4px;font-size:9px;font-weight:650;color:var(--style-muted);letter-spacing:.12em}
+.site-nav.u039-tabs{min-width:0;width:max-content;height:42px;margin:auto;padding:4px;border-radius:999px;background:var(--style-page);border:1px solid var(--style-line);box-shadow:none}
+.site-nav-highlight{position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none}
+.site-nav .u039-pill{top:4px;bottom:4px;background:var(--style-ink);box-shadow:0 8px 16px -10px var(--ux-shadow-strong)}
+.site-nav .u039-tab{display:flex;align-items:center;justify-content:center;gap:6px;flex:none;height:32px;padding:0 12px;color:var(--style-muted);font-size:12px;font-weight:700;text-decoration:none;z-index:1}
+.site-nav-icon{flex:none}
+.site-nav .u039-tab[data-nav-active=true]{color:var(--style-surface)}
+.site-nav .u039-tab:hover:not([data-nav-active=true]){color:var(--style-ink)}
+.site-nav-more.u037{width:auto;height:auto;flex:none;display:flex;z-index:3}
+.site-nav .site-more-trigger{gap:4px;width:100%}
+.site-more-trigger .u037-car{width:12px;height:12px;margin:0;stroke:currentColor;flex:none}
+.site-more-trigger[aria-expanded=true]:not([data-nav-active=true]){background:var(--ux-surface-2)}
+.site-nav-more .u037-menu{top:calc(100% + 12px);bottom:auto;left:auto;right:-5px;width:310px;max-width:calc(100vw - 40px);padding:12px;transform-origin:calc(100% - 30px) 0}
+.site-nav-more .u037-ws{background:linear-gradient(140deg,var(--style-accent),var(--style-secondary))}
+.site-nav-more .u037-it b{display:block;font-size:14px;font-weight:750}
+.site-nav-more .u037-sec{margin:5px 10px 10px;color:var(--style-accent);font-size:10px;letter-spacing:.16em}
+.site-nav-more .u037-it{height:58px;padding:0 12px;gap:13px}
+.site-nav-more .u037-it small{font-size:11px;line-height:1.5}
+.site-nav-more .u037-ws{width:36px;height:36px;border-radius:11px}
+.site-nav-more .u037-list li:nth-child(3){padding-bottom:7px;margin-bottom:7px;border-bottom:1px solid var(--ux-line)}
+.site-header-actions{display:flex;align-items:center;justify-content:flex-end;min-width:155px;gap:12px}
+.site-header .u212-pg{left:18px;bottom:-1px;width:calc(var(--p,0) * (100% - 36px));opacity:1;border-radius:2px;background:var(--style-accent)}
+.site-workspace.workspace{width:100%;margin:0;max-width:none;min-height:100vh;padding-top:96px;background:var(--style-page)}
+.site-workspace>.page-footer{background:var(--style-page);border-color:var(--style-line)}
+@media(max-width:1100px){.site-header.u212-hd{left:12px;right:12px;gap:8px}.site-identity{min-width:110px}.site-identity>span:last-child{font-size:14px}.site-nav .u039-tab{padding:0 8px;gap:4px}.site-header-actions{min-width:118px}.site-header-actions .theme-picker-caption,.site-header-actions .theme-picker-name{display:none}}
+@media(max-width:760px){.site-header.u212-hd,.site-shell.is-solid .site-header.u212-hd{height:100px;top:8px;left:8px;right:8px;padding:8px 11px 7px;display:grid;grid-template-columns:1fr auto;grid-template-rows:37px 38px;gap:7px 5px;border-radius:14px}.site-identity{min-width:0}.site-identity-mark{width:32px;height:32px;font-size:18px}.site-identity small{font-size:8px}.site-header-actions{min-width:0;grid-column:2;grid-row:1}.site-nav.u039-tabs{grid-column:1/3;grid-row:2;width:100%;justify-content:space-between;height:38px;margin:0;overflow:visible}.site-nav .u039-tab{height:28px;min-width:0;padding:0 2px;gap:2px;font-size:9px;flex:1}.site-nav .site-nav-icon{width:10px;height:10px}.site-nav-more.u037{min-width:0;flex:1}.site-more-trigger .u037-car{width:9px;height:9px}.site-nav .site-more-trigger{gap:1px}.site-workspace.workspace{padding-top:116px}.site-header .u212-pg{left:12px;width:calc(var(--p,0) * (100% - 24px))}}
+@media(prefers-reduced-motion:reduce){.site-header.u212-hd,.site-nav .u039-pill,.site-nav-more *{transition:none!important}}

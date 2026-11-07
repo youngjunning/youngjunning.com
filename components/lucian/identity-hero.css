@@ -1,0 +1,32 @@
+.identity-hero{position:relative;isolation:isolate;min-height:0;padding:32px clamp(24px,6vw,110px) 70px;background:radial-gradient(ellipse at 50% 38%,color-mix(in srgb,var(--style-accent) 10%,transparent),transparent 58%),var(--style-hero);overflow:hidden;border-bottom:1px solid var(--style-line)}
+.identity-overline{display:flex;justify-content:space-between;gap:20px;color:var(--style-muted);font:650 10px/1.5 ui-monospace,SFMono-Regular,monospace;letter-spacing:.16em}
+.identity-overline>span:first-child{color:var(--style-secondary)}
+.identity-skill{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:22px;padding:18px 22px;border:1px solid color-mix(in srgb,var(--style-secondary) 35%,var(--style-line));border-radius:14px;background:color-mix(in srgb,var(--style-cover) 38%,var(--style-hero))}
+.identity-skill h2{font-size:21px;line-height:1.4;margin:5px 0;color:var(--style-ink)}
+.identity-skill p{font-size:12px;line-height:1.7;margin:0;color:var(--style-muted)}
+.identity-skill .identity-actions{flex:none;align-items:center;gap:14px}
+.identity-skill .identity-actions>.text-link{padding:0;gap:0;font-size:12px;white-space:nowrap}
+@media(max-width:1100px){.identity-skill{align-items:flex-start;flex-direction:column;gap:12px}}
+@media(max-width:760px){.identity-skill{padding:14px;margin-top:16px}.identity-skill h2{font-size:19px}.identity-skill .identity-actions{width:100%;gap:8px 14px}.identity-skill .identity-actions .u009-btn{padding-left:12px;gap:10px}.identity-skill .identity-actions>.text-link{min-height:28px}}
+.identity-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;margin:0}
+.identity-stage{position:relative;margin:-6px -6vw -20px}
+.particle-name.u378{width:100%;height:clamp(300px,32vw,460px);border-radius:0;background:transparent;box-shadow:none;overflow:visible}
+.particle-name .u378-cv{touch-action:pan-y;outline-offset:-7px}
+.particle-name .u378-cv:focus-visible{outline:2px solid var(--style-secondary);border-radius:16px}
+.identity-footer{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(300px,.8fr);align-items:start;gap:clamp(30px,8vw,150px);padding-top:20px;border-top:1px solid var(--style-line)}
+.identity-decoder.u245{width:100%;height:auto;min-height:130px;border-radius:0;box-shadow:none;background:transparent;padding:0;overflow:visible}
+.identity-decoder.u245::before{display:none}
+.identity-decoder .u245-k{margin:0;font-size:10px;letter-spacing:.2em;color:var(--style-muted)}
+.identity-decoder .u245-h{min-height:72px;margin:16px 0 20px;font-size:clamp(25px,2.7vw,41px);line-height:1.5;letter-spacing:-.06em;color:var(--style-ink);outline-offset:4px}
+.identity-decoder .u245-ps,.identity-decoder .u245-sps{background:color-mix(in srgb,var(--style-cover) 45%,transparent);padding:3px;border-radius:10px}
+.identity-decoder .u245-p{width:30px;height:26px;font-size:10px}
+.identity-decoder .u245-sp{height:26px;font-size:10px;padding:0 7px}
+.identity-decoder .u245-ft{justify-content:flex-start;gap:12px;margin-top:0}
+.identity-intro>p{font-size:12px;font-weight:450;line-height:1.85;color:var(--style-muted);margin:0 0 20px}
+.identity-intro strong{font-size:17px;font-weight:600;color:var(--style-ink)}
+.identity-actions{display:flex;gap:12px;flex-wrap:wrap}
+.identity-actions a{display:flex;align-items:center;gap:35px;min-height:42px;padding:0 18px;font-size:12px}
+.identity-count{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px 20px;font:500 10px/1.7 ui-monospace,SFMono-Regular,monospace;color:var(--style-muted)}
+.identity-count a{color:var(--style-secondary)}
+@media(min-width:1800px){.identity-hero{padding-top:45px}.particle-name.u378{height:500px}}
+@media(max-width:760px){.identity-hero{padding:28px 22px 66px;min-height:0}.identity-overline{font-size:8px;letter-spacing:.08em}.identity-overline>span:last-child{text-align:right;max-width:120px}.identity-stage{margin:5px -12px -10px}.particle-name.u378{height:300px}.identity-footer{grid-template-columns:1fr;gap:28px;padding-top:28px}.identity-decoder.u245{height:auto}.identity-decoder .u245-h{font-size:25px;min-height:75px;margin-bottom:10px}.identity-intro{border-top:1px solid var(--style-line);padding-top:24px}.identity-intro>p{font-size:11px}.identity-intro strong{font-size:16px}.identity-count{font-size:9px;gap:10px 15px}}

@@ -1,0 +1,20 @@
+/* Lucian UX/UI Prompt #399 · MIT License (c) 2026 Seokwoooo · https://lucianlabs.dev/uxui-prompt/#399 */
+.u399{position:relative;width:340px;height:340px;border-radius:30px;overflow:hidden;background:var(--ux-surface);color:var(--ux-ink);box-shadow:0 0 0 1px var(--ux-line),0 30px 60px -36px var(--ux-shadow-strong)}
+.u399-hd{position:absolute;left:20px;right:16px;top:16px;display:flex;justify-content:space-between;align-items:center;z-index:2}
+.u399-hd b{font-size:13.5px;font-weight:900}
+.u399-sg{display:flex;padding:3px;border-radius:999px;background:var(--ux-surface-2);box-shadow:inset 0 0 0 1px var(--ux-line)}
+.u399-mo{border:0;padding:4px 11px;border-radius:999px;background:none;color:var(--ux-ink-2);font:inherit;font-size:11px;font-weight:800;cursor:pointer;transition:background .2s,color .2s}
+.u399-mo.is-on{background:var(--ux-ink);color:var(--ux-surface)}
+.u399-mo:focus-visible{outline:2px solid var(--ux-accent);outline-offset:2px}
+.u399-w{position:absolute;left:0;top:0;border:0;padding:0;background:none;font:inherit;font-size:34px;font-weight:850;line-height:1.15;letter-spacing:-.02em;white-space:nowrap;color:var(--c);cursor:default;transform-origin:0 0;transition:transform .75s cubic-bezier(.3,1.15,.4,1),opacity .4s;will-change:transform}
+.u399-w.is-out{opacity:0;pointer-events:none}
+.u399-w:focus-visible{outline:2px solid var(--ux-accent);outline-offset:2px;border-radius:4px}
+.u399.is-f .u399-w{opacity:.14}
+.u399.is-f .u399-w.is-hl{opacity:1}
+.u399.is-f .u399-w.is-out{opacity:0}
+.u399-ft{position:absolute;left:14px;right:14px;bottom:12px;display:flex;flex-direction:column;align-items:center;gap:6px;z-index:2}
+.u399-in{font-size:10.5px;font-weight:800;color:var(--ux-ink-2);font-variant-numeric:tabular-nums;white-space:nowrap}
+.u399-lg{display:flex;gap:2px}
+.u399-lg button{border:0;padding:3px 7px;border-radius:8px;background:none;color:var(--ux-ink-2);font:inherit;font-size:10px;font-weight:750;cursor:default}
+.u399-lg button:hover,.u399-lg button.g-hov,.u399-lg button:focus-visible{background:var(--ux-surface-2);outline:none}
+.u399-lg i{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:4px}

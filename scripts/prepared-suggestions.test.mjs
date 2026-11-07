@@ -26,8 +26,8 @@ test('无关资料变化保留题组，引用来源变化仍需重新审核',()=
  data.entries[0]={...source,sha256:'changed'};
  assert.equal(projectPreparedSuggestions(data,artifact),null);
 });
-test('无关资料挤掉引文的检索结果时题组失效',()=>{
+test('访问时不因无关资料竞争重算题组，实际问答检索由构建再次验收',()=>{
  const data=index(),artifact=prepared(data);
  for(let number=0;number<8;number++)data.entries.push({...source,id:`record-competitor-${number}`,url:`/records/competitor-${number}`,sha256:`competitor-${number}`});
- assert.equal(projectPreparedSuggestions(data,artifact),null);
+ assert.equal(projectPreparedSuggestions(data,artifact)?.length,1);
 });

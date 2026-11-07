@@ -1,0 +1,17 @@
+/* Lucian UX/UI Prompt #037 · MIT License (c) 2026 Seokwoooo · https://lucianlabs.dev/uxui-prompt/#037 */
+.u037{position:relative;width:320px;height:440px}
+.u037-menu{position:absolute;left:0;right:0;bottom:84px;padding:8px;border-radius:22px;background:var(--ux-surface);box-shadow:0 0 0 1px var(--ux-line),0 34px 64px -30px var(--ux-shadow-strong);transform-origin:30px 100%;opacity:0;transform:translateY(10px) scale(.9);visibility:hidden;transition:opacity .2s var(--ux-ease),transform .45s var(--ux-spring),visibility 0s .45s}
+.u037.is-open .u037-menu{opacity:1;transform:none;visibility:visible;transition:opacity .2s var(--ux-ease),transform .5s var(--ux-spring)}
+.u037-sec{margin:6px 10px 6px;font-size:11.5px;font-weight:750;letter-spacing:.06em;color:var(--ux-ink-3)}
+.u037-list{position:relative;margin:0;padding:0;list-style:none}
+.u037-hl{position:absolute;left:0;right:0;top:0;height:var(--h,52px);border-radius:14px;background:var(--ux-surface-2);transform:translateY(var(--y,0));opacity:0;transition:transform .3s var(--ux-spring),height .3s var(--ux-spring),opacity .2s;pointer-events:none}
+.u037-list.is-hl .u037-hl{opacity:1}
+.u037-it{position:relative;display:flex;align-items:center;gap:12px;width:100%;height:52px;padding:0 10px;border:0;border-radius:14px;background:none;color:var(--ux-ink);font-size:14.5px;font-weight:630;text-align:left;opacity:0;transform:translateY(8px);transition:opacity .25s var(--ux-ease),transform .45s var(--ux-spring)}
+.u037.is-open .u037-it{opacity:1;transform:none;transition-delay:calc(var(--i) * 32ms)}
+.u037-it:focus-visible{outline:2px solid var(--ux-accent);outline-offset:-2px}
+.u037-ws{width:32px;height:32px;flex:none;border-radius:10px;display:grid;place-items:center;font-size:13px;font-weight:800;color:#fff;background:var(--c)}
+.u037-it small{display:block;font-size:12px;font-weight:500;color:var(--ux-ink-3)}
+.u037-ck{margin-left:auto;width:18px;height:18px;fill:none;stroke:var(--ux-accent);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;opacity:0;transform:scale(.4);transition:opacity .2s,transform .4s var(--ux-spring)}
+.u037-it[aria-current="page"] .u037-ck{opacity:1;transform:none}
+.u037-car{margin-left:auto;width:20px;height:20px;fill:none;stroke:var(--ux-ink-3);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .45s var(--ux-spring)}
+.u037.is-open .u037-car{transform:rotate(180deg)}

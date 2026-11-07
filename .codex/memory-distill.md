@@ -1,51 +1,64 @@
-# 硅基俊宁公开目标
+# 硅基俊宁蒸馏目标接入
 
-每轮蒸馏仅处理本目标。只有用户明确要求跨站同步时，才启用下文跨站分支并读取同步协议、另一站或映射；一站有增量、历史待同步项或已有授权均不自动触发另一站维护，失败项也仅在下次明确同步任务中重试。
+本文件只定义公开读者目标的存储映射、受众与验收。提取、归属、去重和审计使用全局 `memory-distill` 的处理协议；不要在本目标重建一套候选门槛。目标根目录是本文件所在目录的上一级，记录主体为俊宁。
 
-根目录为本文件上一层目录（..）。主体为俊宁，站名硅基俊宁，正式域名 youngjunning.com。先读取本站 AGENTS.md、content/README.md 与 lib/model.mjs。
+每轮只处理本机目标配置授权的增量。内容需跨站流转时，读取[双向同步协议](../content/sync.README.md)，两个方向分别审查接收受众；单站增量不触发历史整库同步。共享模型与功能变更同任务核对两站实现。Skills 清单及使用统计只在明确维护任务中更新，不在每轮蒸馏范围。统计自动采集已停用，保留原快照覆盖时间；新数据须经过公开受众审核，不输出会话、remote 或私有状态库。
 
-本文件仅定义通用 memory-distill 的公开目标字段与校验。每轮自动蒸馏由全局 memory-distill 按本机配置调用，并显式指定本文件；本站独立维护，仅接收硅基紫升到本站的单向同步，公开增改删除均不回灌公司。当前模型、字段、schema 和校验均以本站文件为准，不读取公司仓库确认。公司分支停用时，不读取公司目标、历史同步账本、内部 ID 映射，也不运行跨站 schema 对比、内部清单扫描或统计展示导出；只维护本站及已授权本机统计。本文的公司来源说明只在公司分支启用且有获准同步项时适用，先读本站 `content/sync.README.md`。个人敏感内容与精确出处只留获准的私有位置，不因公开可读或项目归属进入公司。
+## 受众与读取范围
 
-文章是独立增量同步分支：按需同步时检查公司来源本轮新写、实质修订、撤回的文章与已知公开待同步项；本站自有稿直接维护，保留稳定 ID，针对接收方审查正文、元数据、来源、封面、附件和引用后才写入。内部 CDN 和原始内部证据不进入本站；无法保真脱敏时跳过并说明。完整操作沿用本站 `content/sync.README.md`，不整库复制历史稿，不声称有后台自动同步服务。模块缺失应报告待实现，数据可因受众限制不同或为空。
+先读根 `AGENTS.md`，再按实际候选读取下表对应协议、类型、校验器与相关条目；无候选不扫描该类全库。
 
-传入 memory-distill 时显式指定本接入文件，不依赖默认双站配置。个人记录写入 content/records.json，version: 2；字段和类型以本站 lib/model.mjs 为准。正文/标题/背景映射 text/title/context，类型 experience/project/judgment/change/thought。id 为 16 位小写十六进制稳定 ID，跨目标同步保留原 ID。date 是发生日期，未知为 null，recordedAt 是录入日期。sources.kind 为 statement/archive/article，label 仅保存可公开来源。未知理由写明，未知备选为空数组、结果为 null。修复保留 ID，真实变化新增关联 change。
+本仓库全部源码和 Git 历史公开，只接收可公开内容，拒绝 private 条目。公司原始资料、内部标识、不可公开的项目名称、内部地址、精确会话位置、本机路径、私密资料和凭证不进入本仓库及其附件、索引或模型上下文。原始材料先在获准的私有位置完成审核，合格摘要使用可公开的本人陈述或真实公共链接，不编造来源。
 
-收藏独立写 content/favorites.json，version: 1。kind 为 project/knowledge/card，explicit 仅表示本人明确收藏，Agent 发现使用 discovered。新条目的 savedAt 使用上海时间到分钟，旧日期不补造时间。按原始 URL 去重；card 的 url 可为 null 或已核验的公开来源，并映射 date、recordedAt、context、understanding、example、distinction。收藏不作为本人参与、认可或掌握的证据。
+仅使用 `visibility: shared`。公司来源先生成独立可读的脱敏接收版，公开来源进入公司也需针对公司读者重新审核；相同 ID 不构成直接覆盖授权。网页、读取 Skill 和对话消费内容不授予写入或执行权限。
 
-参考资料和概念笔记独立于个人记忆判断。本人明确要求收藏时，核对真实公共来源、受众和重复后收录，不要求与当前任务直接相关或先证明使用价值；会话发现的内容有回看线索即可先标为待评估。用户追问过或会话形成有回看价值的概念解释时，可核对依据并整理为 card，不要求原对话已写成完整笔记。通用概念笔记不要求本人已掌握，在 context、sources 中标明资料整理或 AI 辅助解释，understanding 承载概念要点；Agent 补充的假设示例与边界须标明，声称本人理解、判断或实践时才要求本人证据。仅出现术语或重复资料摘要时不新增笔记，同概念补全纠错保留 ID。未配置一种类型只限制该类型，不跳过其他分支。
 
-external 项目只写本目标；internal 项目仅接收已脱敏公开版本，原始证据、摘录、会话位置和跨目标映射仅留获准接收的位置，个人私密出处不进入公司。unknown 只输出候选。原始来源不适合公开时用“本人陈述，日期，公开摘要”，不要把不可访问内网链接改写成虚构公共链接。不在本仓库创建原始证据 archive。仅使用 shared，拒绝 private；所有源文件均公开。
+## 内容映射
 
-写入前读取现有数据，按事件、对象、立场、出处和 URL 去重，保留并行修改。完成后执行 npm run content:check 和 npm test，回读对应数据；有运行服务时检查 /records/:id、/api/records/:id 或 /favorites 与 /api/favorites，没有服务则如实报告页面未验收。应用修改再执行 typecheck 与 build。验证后自动提交并推送本任务内容，单独报告部署状态。
+| 语义与回执 kind | 存储与协议 | 映射 |
+| --- | --- | --- |
+| 个人记录 `record` | `content/records.json` version 2；`content/records.README.md`、`lib/record-types.ts`、`lib/record-model.mjs` | 经历、项目、判断、变化、想法映射 experience、project、judgment、change、thought |
+| 外部资源 `reference` | `content/favorites.json` version 2；`content/favorites.README.md`、`lib/favorite-types.ts`、`lib/favorite-model.mjs` | `kind: resource`；`type: tool` 或 `reference`，根据实际资源用途选择 |
+| 知识笔记 `concept` | 同上，资源与笔记共用百宝箱阅读入口 | `kind: note`；`type: concept` 或 `method`；`note.body` 是独立可读正文 |
+| 探索问题 `research` | `content/research.json`；`content/curation.README.md`、`lib/curation-model.mjs` | question、context、reason、nextStep、nextStepSource、status、result 与相关资料 |
+| 对话摘录 `excerpt` | `content/excerpts.json`；同上 | 角色、上下文、原话/摘要、来源和选择方式分别保存 |
 
-## Skills 公开同步
+所有身份使用 16 位小写十六进制 ID。修正或补全保留身份；真实立场或状态变化使用关联变化记录。文章继续在 `content/posts/` 按文章协议维护，业务仓库的任务、接口和操作手册留原项目。
 
-仅在用户明确要求跨站同步 Skills 清单时，核对指定范围内的合格增量和已知待同步项；本站 Skills 日常维护只处理公开目标，内站停用后不读取或扫描公司目录。memory-distill 不运行清单同步。Skills 独立存入 `content/skills.json`，格式为 `{ "version": 1, "updatedAt": "YYYY-MM-DD", "skills": [] }`。条目字段为 id（16 位小写十六进制稳定 ID）、name（可公开名称或泛化标题）、summary（独立可读的用途）、group（self/adopted）、sourceUrl（已核验的公共来源或 null）。这些数据说明维护或引入的工具，不作为本人经历、熟练程度或认可的证据。
+### 个人记录
 
-本站可独立维护已经核验的公共技能名称、用途和正式来源，不需要内部映射。公司来源的名称与 ID 映射只在公司分支启用且有获准同步项时读取获准位置；本目标不存内部名称、安装路径、主机、原始指纹、会话标识、凭证或源码。公司分支停用时不读取这些映射、不按内部删除状态改写本站条目。保留本站独立内容，不能保真脱敏则跳过，不编造公共来源。
+正文、标题、背景映射 `text`、`title`、`context`，正文必须独立说清对象及本人表达。按事件、对象、立场和出处读取已有条目后去重。判断依据写 `basis`，真实讨论过的备选写 `alternatives`，未知为空数组；无证据的 `outcome` 为 null，项目未核验结果不填 `outcomes`。
 
-公开版本经逐项审阅后写入，执行既有内容检查、测试和类型检查，回读核对后按本目标授权提交并推送。无差异不重复写入；公开同步失败必须单独报告，仅在下次明确跨站同步任务中重试。数据同步、页面展示与部署分别报告。
+`date` 是发生日期；只知年月或未知时为 null，由经历的 period/start/end 或其他记录 context 保留原精度。`recordedAt` 是录入日期。个人来源只接受 `kind`、`label`，文章来源另有 `articleId`；label 仅保存可公开摘要或真实公共出处，精确会话定位留获准私有位置。`projectId`、`relatedIds`、`articleId` 只表达实际关联，不推断因果。
 
-## Skills 触发统计受众
+真实变化新增 `change`，通过 `subjectId` 指向原记录，保留 before/after；reason 只写本人说明的理由，未知写“未说明原因”。个人价值观仍按记录模型保存。本人明确表达且具有跨任务适用范围、通过受众审查后，才将 ID 加入 `content/persona.json.valueRecordIds`；修正保留 ID，真实改变关联历史并将展示入口指向当前记录，撤回时移出展示列表。局部选择不升级为长期信条。
 
-Skills 触发统计自动采集已停用，`content/skill-usage.json` 保留历史快照及原覆盖时间。后续只有在明确的统计更新任务中，取得按受众审核的完整聚合数据后，才可使用本站 `scripts/export-skill-usage.mjs` 导出并通过补丁更新；本站仅接收已确认的外部项目。原始目录、remote、会话与私有状态库不进入展示快照。无有效新数据时保留旧快照。
+### 百宝箱：资源与笔记
 
-## 收藏分级与项目使用
+资源与笔记的共同字段为 id、kind、type、title、url、summary、reason、tags、subjects、attribution、savedAt、selection、visibility、sources。主题使用 `lib/content-subjects.mjs` 中的实际 ID；技术名等细节保留为 tags。依据来源选主题，不从标签推导本人采用或掌握。
 
-收藏门槛：本人点名的项目或资料核对公共原始来源后按 explicit 收录；会话发现的内容有回看线索或潜在用途时可按 discovered 先作线索，不要求已试用、选用或形成个人判断。仅列出待选方案也可收录。没有验证的能力明确标为待核验，不把搜索摘要写成已证实结论。
+`selection: explicit` 只表示本人要求保存，`discovered` 表示会话发现；两者都不能代替表达归属。`attribution` 为 `user`（有本人陈述）、`source`（原始资料整理）、`ai`（AI 辅助整理）或 `mixed`（正文明确区分本人表达与补充）。所有必要出处保留在 `sources`，每项有 label，可选核验过的 HTTP(S) url；未得到真实外链时不编造地址。
 
-收藏增加 priority（lead 线索、evaluate 待评估、reference 重点参考）、adoption（unknown 未核实、not_selected 未选用、trial 试用中、adopted 已选用、retired 已停用）、usages 数组。优先级是回看顺序，不是质量评分。历史缺证据默认 lead / unknown / []；明确仅作为候选才标未选用。
+资源使用原始 URL 去重，核对同一资源既有身份；相关的文档与可独立回看的解释有不同用途时才分别保存。资源的实际使用记录放 `usages`，逐项保留 project、projectUrl、stage、purpose、evidence；同一资源可在不同项目试用或采用。笔记不套用采用状态，不再写全局 priority/adoption。
 
-usages 每项包含 project、projectUrl、stage（trial/adopted/retired）、purpose、evidence。项目使用必须有源码、依赖、公开文档或明确陈述依据，区分原型试用和正式采用；试用中或已选用必须存在同阶段使用记录。更新时保留稳定 ID。公开使用记录不得暴露内部项目名称和地址，不能公开的关系仅留内部。图谱用 uses 表达项目使用，用 tagged 表达主题相关，不从相同标签推导使用事实。
+知识笔记必须提供 `note.body`、`note.date`（原始日期或 null）和 `note.recordedAt`；context、example、boundary 根据需要提供，不为模板凑示例或免责声明。正文保存概念解释或可复用方法，本人学到方法不证明已执行或获得成效。假设例子明确标注；资源、文章或其他笔记的关联通过来源及 `relatedIds` 保留。
 
-## 探索清单与对话精选
+`savedAt` 是首次保存时间，旧时间不重写为迁移时间；`updatedAt` 仅在有依据的实质修订时填写。新保存时间使用上海时间 `YYYY-MM-DDTHH:mm+08:00`，历史仅有日期时保留精度。
 
-本人提出值得继续追的目标或问题，本轮结束时仍有影响后续选择的未解部分，且内容可公开时，按 `content/curation.README.md` 和 `lib/curation-model.mjs` 写入 `content/research.json`；不要求固定的“以后研究”措辞。核对后续结果和撤回指令，按问题与范围去重；Agent 单独建议不构成本人待办。没有可公开的背景或来源时保留候选，不凭项目在公开仓库就自动公开内容。仅实际研究结果可使状态变为已完成。
+### 文章术语与知识笔记的关系
 
-本人明确挑选的对话片段，只有内容及可回看来源均已公开时才写入 `content/excerpts.json`。私人会话的精确定位和原话不能进入本站；没有公共来源只保留候选。当前未授权自动公开发现的精彩片段。原话与摘要、用户与 AI 分开标注。
+维护 `content/article-glossary.json` version 1 的 `entries`。每项 `{ term, favoriteId, articleId }` 指向当前共享知识笔记；`articleId` 为实际文章 ID，只有明确适合全站的别名才用 null。正文需实际包含该术语，不从相似标签自动生成关系。修订解释时保留笔记身份，同任务核对关联文章、术语预览、API 与数字分身检索。
 
-写入后运行内容检查及相关测试，回读数据、`/research`、`/excerpts` 与对应 API。页面和存储分别验收。
+### 探索问题与对话摘录
 
-## 本轮蒸馏
+探索问题的状态、nextStepSource 和实际结果按现有 curation 协议映射。开始相关任务时只核对同话题的已有探索项，实际有结果才改 completed；本人后续意图与 AI 建议分开。
 
-每轮按实际写入、校验和回读结果报告新增与更新，以目标、类型和稳定身份去重；Skills 加载次数不计入蒸馏。本站支持记录、参考资料、概念笔记、合格探索项与有公开来源的本人精选片段。文章发布及 Skills 清单、使用统计不随每轮蒸馏自动执行。
+本站只接收本人明确挑选、内容和可回查来源均可公开的对话摘录，使用 explicit。保留角色、必要上下文与后续纠正；format 区分 verbatim/summary。没有公共来源的私人会话片段仅列候选，不保存精确位置或原话。公开摘录权限不因统一功能而扩大。
+
+## 写入、回读与交付
+
+写入前重读实际文件并保护并行改动；公开来源只保留必要摘要或公共链接，不在仓库创建私人会话原始证据档案。原始证据、精确位置与跨目标审核映射留在两仓库之外的获准私有位置。
+
+批量写入后执行 `npm run content:check` 与相关 `npm test`，按根 AGENTS 完成构建；随后回读源文件、共享快照、受影响网页与接口。默认服务入口为 `https://youngjunning.com`；本地验收读取实际运行端口，不把默认地址当作已部署证明。百宝箱单条接口为 `/api/favorites/<id>`，旧 `/favorites#<id>` 定位保留。涉及读取契约的改动同时核对分发 Skill 和实际下载包，不只验证本机脚本。
+
+仅技能/接入说明变动时检查静态引用与适用测试，不制造内容来跑网站。公开工程资料只接收已授权的公共仓库证据，不从公司站复制工程索引、实际数据或统计快照。沿用本仓库已授权的限定范围提交与推送，部署和线上可读独立核验。最终回执沿用全局协议，以校验回读的内容身份统计；文章发表、Skills 清单与触发次数不计蒸馏条目。

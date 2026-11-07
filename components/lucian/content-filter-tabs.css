@@ -1,0 +1,3 @@
+.content-filter-scroll{max-width:100%;overflow-x:auto;padding:3px;scrollbar-width:thin}.content-filter-tabs{width:max-content;min-width:100%;isolation:isolate}.content-filter-tabs .u039-tab{flex:1 0 auto;padding:0 17px;height:38px;font-size:13px}.content-filter-tabs .u039-tab[aria-pressed=true]{color:var(--ux-page)}
+@media(max-width:480px){.content-filter-tabs .u039-tab{padding:0 13px;font-size:12px}}
+@media(prefers-reduced-motion:reduce){.content-filter-tabs *{transition:none!important}}

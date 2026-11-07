@@ -1,0 +1,4 @@
+import data from '@/content/skill-usage.json';
+export default function PaperSkillUsage() {
+  return <section className="sc-section"><header><span className="sc-kicker">ARCHIVED ACTIVITY</span><h2>历史使用快照</h2></header><p className="sc-result">统计更新 {data.updatedAt} · 覆盖 {data.coverage.firstSeen} 至 {data.coverage.lastSeen}。已停用自动采集，以下不代表当前使用频率。</p><details><summary>{data.totals.triggerCount} 次已核验触发 · {data.totals.skillCount} 个技能 · 查看技能与项目分布</summary><table><thead><tr><th>技能</th><th>次数</th><th>项目分布</th></tr></thead><tbody>{data.skills.map(skill => <tr key={skill.name}><td>{skill.name}</td><td>{skill.triggerCount}</td><td>{skill.projects.map(project => `${data.projects.find(item => item.id === project.projectId)?.name || '未识别归属'}：${project.triggerCount}`).join('；')}</td></tr>)}</tbody></table></details></section>;
+}

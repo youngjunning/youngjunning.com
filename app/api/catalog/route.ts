@@ -1,2 +1,3 @@
-import { buildPublicSnapshot } from '@/lib/content-store.mjs';
-export function GET() { return Response.json(buildPublicSnapshot().catalog); }
+import { getCatalog } from '@/lib/content';
+export const dynamic = 'force-static';
+export function GET() { return Response.json(getCatalog()); }

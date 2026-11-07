@@ -1,34 +1,58 @@
+import { getSiteTheme } from '@/lib/site-theme';
+import { StatechartHome } from '@/components/statechart/pages';
+import { getCatalog } from '@/lib/content';
 import Link from 'next/link';
-import { ArrowRight, ArrowUpRight, AudioLines, Bot, Code2, Command, Fingerprint, Globe2, MessageCircle, Orbit, Sparkles } from 'lucide-react';
-import { BlurFade } from '@/components/magicui/blur-fade';
-import { BentoCard, BentoGrid } from '@/components/magicui/bento-grid';
-import { getContent } from '@/lib/content';
-import persona from '@/content/persona.json';
+import Shell from '@/components/shell';
+import { getGraph } from '@/lib/content';
+import persona from '@/lib/persona';
+import EditorialCard from '@/components/lucian/editorial-card';
+import LifeTimeline from '@/components/lucian/life-timeline';
+import ProjectWorkList from '@/components/lucian/project-work-list';
+import RecordStories from '@/components/lucian/record-stories';
+import MotionSection from '@/components/lucian/motion-section';
+import PerspectiveCards from '@/components/lucian/perspective-cards';
+import KnowledgePortal from '@/components/lucian/knowledge-portal';
+import IdentityHero from '@/components/lucian/identity-hero';
+import { getJourneyRecords, getRecords } from '@/lib/records';
+import type { ProjectRecord } from '@/lib/record-types';
+import WordCloud from '@/components/lucian/word-cloud';
+import { buildSiteCloud } from '@/lib/word-cloud.mjs';
+import { getConversationKnowledge } from '@/lib/twin-server';
+import './home-final.css';
+import { readingMinutes } from '@/lib/article-reading.mjs';
+import { getFavoriteStore } from '@/lib/favorites';
+import { getResearch, getExcerpts } from '@/lib/curation';
+import { buildSiteActivity } from '@/lib/site-activity.mjs';
+import SiteActivity from '@/components/lucian/site-activity';
 
-export default function Home() {
-  const { records, favorites, posts } = getContent();
-  return <>
-    <section className="stage-hero" aria-labelledby="stage-title"><div className="stage-grid" aria-hidden="true" /><div className="stage-aura stage-aura-one" aria-hidden="true" /><div className="stage-aura stage-aura-two" aria-hidden="true" />
-      <BlurFade className="stage-hero-content"><div className="stage-kicker"><span className="stage-live" /> 俊宁的数字分身 <span> / DIGITAL SELF</span></div>
-        <h1 id="stage-title">让经历成为<span className="stage-headline-glow">下一次创造</span>的起点<span className="stage-period">.</span></h1>
-        <p className="stage-lead">我是俊宁，阿里高级工程师、AI 开发者。<br />在这里，记录真实的实践、判断和持续变化。</p>
-        <div className="stage-actions"><Link href="/chat" className="stage-button stage-button-primary"><MessageCircle size={17} />和我聊聊<ArrowUpRight size={17} /></Link><Link href="/records" className="stage-button stage-button-ghost">探索我的经历<ArrowRight size={17} /></Link></div>
-        <div className="stage-meta"><span>AI APPLICATIONS</span><span>AI BROWSER</span><span>AGENT</span><span>AI INFRA</span></div>
-      </BlurFade>
-      <div className="stage-orbit" aria-hidden="true"><div className="stage-orbit-ring stage-orbit-ring-outer" /><div className="stage-orbit-ring stage-orbit-ring-inner" /><div className="stage-orbit-core"><Fingerprint size={75} strokeWidth={1} /><span>JUNNING / 01</span></div><span className="stage-orbit-node stage-orbit-node-one"><Bot size={20} /></span><span className="stage-orbit-node stage-orbit-node-two"><Code2 size={20} /></span><span className="stage-orbit-node stage-orbit-node-three"><Globe2 size={20} /></span><span className="stage-orbit-label">HUMAN × MACHINE<br />IN CONTINUOUS MOTION</span></div>
-    </section>
+export default async function Home() {
+  if (await getSiteTheme() === 'statechart') return <StatechartHome />;
+  const catalog = getCatalog();
+  const records = getRecords();
+  const cloud = buildSiteCloud(getConversationKnowledge().entries.filter(entry => entry.kind === 'record' || entry.kind === 'blog'), catalog.documents.flatMap((doc) => doc.tags));
+  const experiences = getJourneyRecords(records);
+  const projects = persona.featuredProjectIds.flatMap((id) => records.filter((record): record is ProjectRecord => record.kind === 'project' && record.id === id));
+  const documents = new Map(catalog.documents.map((doc) => [doc.id, doc]));
+  const featured = persona.featuredArticleIds.length ? persona.featuredArticleIds.flatMap(id => documents.has(id) ? [documents.get(id)!] : []) : catalog.documents.slice(0, 3);
+  const referenceCount = getGraph().edges.filter((edge) => edge.type === 'references').length;
+  const activity = buildSiteActivity({ documents: catalog.documents, records, favorites: getFavoriteStore().favorites, research: getResearch(), excerpts: getExcerpts() });
+  return <Shell active="home">
+    <IdentityHero articleCount={catalog.documents.length} recordCount={records.length} projectCount={projects.length} />
 
-    <div className="section-caption stage-caption"><span>01 / 认识俊宁</span><span>BUILT FROM EXPERIENCE</span></div>
-    <BentoGrid className="stage-bento">
-      <BentoCard label="IDENTITY / 关于" title="从工程实践出发" description="10 年研发经验，现专注 AI 应用、AI 浏览器、Agent、AI Infra 与软件工程。" href="/resume" className="about-card"><div className="stage-card-visual stage-identity-visual" aria-hidden="true"><div className="stage-identity-ring"><Fingerprint size={70} strokeWidth={1} /></div><span className="stage-visual-code">01 // ALWAYS BUILDING</span></div></BentoCard>
-      <BentoCard label="FOCUS / 正在关注" title="把想法做成真实产品" description="从业务问题和架构判断出发，用 AI 放大执行力。" href="/records" className="focus-card"><div className="stage-card-visual stage-focus-visual" aria-hidden="true"><span><Bot size={16} /> Agent</span><span><Globe2 size={16} /> Browser</span><strong><Command size={23} /> BUILD WITH AI</strong><span><Code2 size={16} /> Engineering</span></div></BentoCard>
-      <BentoCard label="CONVERSATION / 数字分身" title="从有来源的内容开始对话" description="根据公开记录和文章寻找线索，继续一次有依据的交流。" href="/chat" className="conversation-card"><div className="stage-card-visual stage-conversation-visual" aria-hidden="true"><div className="stage-signal"><AudioLines size={46} strokeWidth={1.2} /><span className="stage-signal-pulse" /></div><span className="stage-visual-code">SIGNAL CONNECTED <Sparkles size={12} /></span></div></BentoCard>
-    </BentoGrid>
+    <MotionSection id="this-week" eyebrow="THIS WEEK" title="本周在生长" description="这一周新写、修订或收进来的内容。"><SiteActivity activity={activity} /></MotionSection>
 
-    <section className="recent"><div className="section-heading"><div><span className="eyebrow">02 / IN THE MOMENT</span><h2>最近的判断与记录<span className="tiny-dot">●</span></h2></div><Link href="/records">全部记录 <ArrowRight size={16} /></Link></div>
-      {records.slice(0, 3).map((record) => <Link className="record-row" href={'/records/' + record.id} key={record.id}><div className="record-date">{record.date || '时间未详'}<span>{record.kind === 'judgment' ? '判断' : '记录'}</span></div><div><h3>{record.title}</h3><p>{record.text}</p></div><ArrowUpRight size={22} /></Link>)}
-    </section>
-    <section className="library-strip"><div><span className="eyebrow">A LIVING ARCHIVE</span><h2>每次积累，都能找到来处。</h2><p>记录保留上下文，文章展开思考，收藏留住值得再看的资料。</p></div><div className="stats"><Link href="/records"><strong>{String(records.length).padStart(2, '0')}</strong><span>个人记录 ↗</span></Link><Link href="/blog"><strong>{String(posts.length).padStart(2, '0')}</strong><span>精选文章 ↗</span></Link><Link href="/favorites"><strong>{String(favorites.length).padStart(2, '0')}</strong><span>值得收藏 ↗</span></Link></div></section>
-    <div className="closing-line"><span><Orbit size={15} /> 保持好奇，持续构建。</span><a href={persona.github} target="_blank" rel="noreferrer">FIND ME ON GITHUB <ArrowUpRight size={16} /></a></div>
-  </>;
+    <MotionSection id="word-cloud" className="site-wordcloud-section" eyebrow="THE SHAPE OF A MIND" title="全站词云 · 关注的事" description="从个人记录与手记正文中，看看哪些词持续出现。"><WordCloud title="全站词云" description="从共享个人记录与手记正文提取高频词，按正文出现次数展示；点击词语查看对应记录和文章。" words={cloud} scopes={['全站', '个人记录', '手记']} groups={[{id:'both',label:'共同主题',color:'var(--style-secondary)'},{id:'record',label:'个人记录',color:'var(--style-accent)'},{id:'blog',label:'手记',color:'var(--style-muted)'}]} unit="次出现" /></MotionSection>
+
+    <MotionSection className="persona-records" eyebrow="IN THE MOMENT" title="最近的判断与想法" action={<Link className="text-link" href="/records">全部个人记录 ↗</Link>}><RecordStories records={records.filter((record) => record.kind === 'judgment' || record.kind === 'thought')} /></MotionSection>
+
+    <MotionSection id="journey" className="journey-section" eyebrow="LIFE, IN CONTEXT" title="人生履历" description="从网络工程，到 AI 应用开发。"><LifeTimeline events={experiences.map((record) => ({ id: record.id, period: record.period, title: record.title, detail: record.text, ongoing: record.ongoing }))} /></MotionSection>
+
+    <MotionSection id="projects" eyebrow="WORK THROUGH PRACTICE" title="经历中的代表项目" description="从业务问题出发，在真实交付中形成判断。"><ProjectWorkList projects={projects.map((record) => ({ name: record.title, label: record.label, description: record.text, role: record.role, tags: record.tags, href: `/records/${record.id}` }))} /></MotionSection>
+
+    <MotionSection id="thinking" className="persona-perspectives" eyebrow="HOW I THINK" title="价值观与判断原则" description="从本人记录与文章中，看到我重视什么、如何做取舍。"><div id="decisions"><PerspectiveCards views={[...persona.valueRecordIds.flatMap((id) => records.filter((record) => record.id === id).map((record) => ({ title: record.title, description: record.kind === 'change' ? record.after : record.text, href: `/records/${record.id}` }))), ...persona.perspectives.flatMap((view) => documents.has(view.articleId) ? [{ ...view, href: documents.get(view.articleId)!.url }] : [])]} /></div><p className="perspective-basis">价值观来自本人明确表达的记录；其余观点根据站内文章归纳，点击可查看依据与适用条件。</p></MotionSection>
+
+    <MotionSection className="persona-reading" eyebrow="THE WRITTEN RECORD" title="手记 · 实践与思考" action={<Link className="text-link" href="/blog">进入手记 ↗</Link>}><div className="persona-featured lucian-featured">{featured.map((doc, index) => { const id = doc.id; return <div className="motion-reveal reading-reveal" key={id}><EditorialCard href={doc.url} title={doc.title} summary={doc.summary} category={catalog.topics.find((topic) => topic.id === doc.topic)?.label || '文章'} minutes={readingMinutes(doc.words)} tone={index} /></div>; })}</div></MotionSection>
+
+    <KnowledgePortal articles={catalog.documents.length} topics={catalog.topics.length} references={referenceCount} />
+  </Shell>;
 }

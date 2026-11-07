@@ -1,0 +1,32 @@
+/* Lucian UX/UI Prompt #061 · MIT License (c) 2026 Seokwoooo · https://lucianlabs.dev/uxui-prompt/#061 */
+/* The gallery's viewer fills the browser; source images keep their reading layout. */
+img[data-image-preview]{cursor:zoom-in}
+img[data-image-preview]:focus-visible{outline:2px solid var(--ux-accent);outline-offset:3px}
+.u061{position:fixed;inset:0;width:100%;height:100%;max-width:none;max-height:none;margin:0;padding:0;border:0;background:transparent;overflow:hidden;isolation:isolate;color:#fff}
+.u061::backdrop{background:transparent}
+.u061-scrim{position:absolute;inset:0;z-index:5;background:#07070c;opacity:0;pointer-events:none;transition:opacity .45s}
+.u061.is-open .u061-scrim{opacity:var(--so,1);pointer-events:auto}
+.u061-view{position:absolute;z-index:6;left:0;top:0;width:100%;height:100%;overflow:hidden;visibility:hidden;touch-action:none}
+.u061.is-open .u061-view{visibility:visible}
+.u061-img{position:absolute;inset:0;transform-origin:0 0;transition:transform .45s var(--ux-ease);display:flex;align-items:center;justify-content:center;padding:76px 64px 100px;pointer-events:none}
+.u061-img.now{transition:none}
+.u061-photo{display:block;width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;pointer-events:auto;user-select:none;cursor:zoom-in}
+.u061.is-zoom .u061-photo{cursor:grab}
+.u061.is-zoom .u061-photo:active{cursor:grabbing}
+.u061-ui{position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .3s}
+.u061.is-open.is-ready .u061-ui{opacity:1}
+.u061-x{position:absolute;right:14px;top:max(14px,env(safe-area-inset-top));width:42px;height:42px;border:0;padding:0;border-radius:50%;display:grid;place-items:center;background:rgba(0,0,0,.4);color:#fff;pointer-events:auto;transition:transform .3s var(--ux-spring)}
+.u061-x:active{transform:scale(.88)}
+.u061-x:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.u061-x svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.u061 .u061-toggle{right:66px}
+.u061 .u061-prev{left:14px;right:auto;top:calc(50% - 21px)}
+.u061 .u061-next{right:14px;top:calc(50% - 21px)}
+.u061-cap{position:absolute;left:18px;right:18px;bottom:max(18px,env(safe-area-inset-bottom));display:flex;gap:18px;align-items:flex-end;justify-content:space-between;color:#fff;text-shadow:0 1px 12px rgba(0,0,0,.4)}
+.u061-cap>span{min-width:0}
+.u061-cap b{display:block;font-size:19px;font-weight:800;letter-spacing:-.035em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.u061-cap small{font-size:12.5px;font-weight:650;opacity:.85}
+.u061-cap em{flex:none;font-style:normal;font-size:12.5px;font-weight:800;font-variant-numeric:tabular-nums;padding:5px 9px;border-radius:999px;background:rgba(0,0,0,.35)}
+.u061-zoom{position:absolute;left:50%;top:max(16px,env(safe-area-inset-top));transform:translateX(-50%);height:28px;padding:0 10px;border-radius:999px;display:inline-flex;align-items:center;background:rgba(0,0,0,.4);color:#fff;font-size:12px;font-weight:800;opacity:0;transition:opacity .3s}
+.u061.is-zoom .u061-zoom{opacity:1}
+@media(max-width:600px){.u061-img{padding:76px 14px 112px}.u061-cap small{font-size:11px}.u061-cap b{font-size:16px}.u061 .u061-prev{left:8px}.u061 .u061-next{right:8px}}

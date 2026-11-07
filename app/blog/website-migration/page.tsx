@@ -1,3 +1,4 @@
+import AuxiliaryShell from '@/components/auxiliary-shell';
 import Link from 'next/link';
 import migration from '@/content/website-migration-2026-11-01.json';
 import assets from '@/content/website-migration-assets-2026-11-01.json';
@@ -8,7 +9,7 @@ export default function WebsiteMigrationPage() {
   const references = migration.entries.filter(item => item.status === 'reference');
   const excluded = migration.entries.filter(item => item.status === 'excluded');
   const resources = Object.values(assets.resources);
-  return <article className="detail prose migration-report">
+  return <AuxiliaryShell title="官网知识库迁移清单" active="library"><article className="detail prose migration-report">
     <Link className="back-link" href="/blog/migration">← 返回迁移清单</Link>
     <h1>官网知识库迁移清单</h1>
     <p>{migration.date} 核对原官网的 {migration.counts.reviewed} 份页面源稿与学习草稿：迁入 {included.length} 篇，{references.length} 份整理为参考资料，{excluded.length} 份不迁移。</p>
@@ -25,5 +26,5 @@ export default function WebsiteMigrationPage() {
     <h2>图片与校验范围</h2>
     <p>正文共 {resources.length} 个图片地址，已保存 {resources.filter(item => item.status === 'local').length} 个；其余 {resources.filter(item => item.status !== 'local').length} 个保留原链接并显示缺图说明。各篇使用独立生成的阅读笔记系列封面，正文配图保留原位置。</p>
     <p>正文与图片有内容指纹校验；外部嵌入改为原始链接。迁移验收不表示重新验证了全部历史译文和技术结论。</p>
-  </article>;
+  </article></AuxiliaryShell>;
 }

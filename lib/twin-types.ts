@@ -1,7 +1,9 @@
 export type ConversationMessage = { role: 'user' | 'assistant'; content: string };
 export type ConversationSource = {
   id: string;
-  kind: 'record' | 'blog' | 'code';
+  kind: 'record' | 'blog' | 'code' | 'resource' | 'note' | 'research' | 'excerpt';
+  attribution?: 'user' | 'source' | 'ai' | 'mixed';
+  contentType?: string;
   title: string;
   url: string;
   rawUrl: string;
@@ -19,7 +21,7 @@ export type WikiParagraph = { id: string; kind: 'synthesis' | 'comparison' | 'do
 export type WikiPage = { id: string; key: string; title: string; type: string; coverage: { totalSources: number; sampledSources: number; totalEntries: number; sampledEntries: number; complete: boolean }; paragraphs: WikiParagraph[] };
 export type ConversationKnowledge = { version: 1; generatedAt: string; revision: string; entries: KnowledgeEntry[]; relationships?: { from: string; to: string; type: string }[]; engineeringPages?: WikiPage[]; wiki?: { version: number; pages: WikiPage[] } };
 export type ConversationReply = {
-  paragraphs: { text: string; sourceIds: string[]; claimType?: 'engineering' }[];
+  paragraphs: { text: string; sourceIds: string[]; claimType?: 'engineering' | 'reference' }[];
   sources: ConversationSource[];
   insufficient: boolean;
   snapshot: { generatedAt: string; revision: string };

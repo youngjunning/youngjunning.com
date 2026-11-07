@@ -67,3 +67,54 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+# Lucian UX/UI Prompt
+
+The shared classic theme reuses the existing Lucian UX/UI implementations in
+`components/lucian/`, `components/shell.tsx`, the Markdown reader and related
+styles. Their original numbered source and license comments remain in each
+component. The components were adapted for React/Next.js, the site palette,
+reviewed content, Chinese text, keyboard behavior and reduced motion.
+
+Sources include:
+
+- https://lucianlabs.dev/uxui-prompt/#212 — hide-on-scroll header
+- https://lucianlabs.dev/uxui-prompt/#039 — sliding pill tabs
+- https://lucianlabs.dev/uxui-prompt/#037 — menu
+- https://lucianlabs.dev/uxui-prompt/#228 — glowing resource cards
+- https://lucianlabs.dev/uxui-prompt/#049 — editorial article cards
+
+MIT License
+
+Copyright (c) 2026 Seokwoooo
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+# statechart-art
+
+The independent paper theme in `components/statechart/` adapts Kevin T. Ngo's
+[statechart-art](https://github.com/kevintngo/statechart-art), pinned to commit
+`09c959c79e25767cc34a5beddf3df234b085636e`.
+
+The paper/ink palette, locally packaged Kevin fonts, and deterministic paper and
+ticket assets derive from the upstream style and drawing tools. The original
+MIT license is retained in `public/themes/statechart/LICENSE.txt`. Chinese text
+uses local system font fallbacks. The theme uses the site's own reviewed data,
+reader, filters and APIs; diagrams in source articles remain unchanged.

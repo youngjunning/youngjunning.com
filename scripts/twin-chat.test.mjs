@@ -46,7 +46,7 @@ test('公开仓库拒绝持久化私有记录，博客草稿不进入公开读�
     const root = path.join(temp, 'content');
     fs.mkdirSync(path.join(root, 'posts'), { recursive: true });
     fs.writeFileSync(path.join(root, 'records.json'), JSON.stringify({ version: 2, records: [record({ visibility: 'private', text: 'PRIVATE_RECORD_ONLY' })] }));
-    fs.writeFileSync(path.join(root, 'favorites.json'), JSON.stringify({ version: 1, favorites: [] }));
+    fs.writeFileSync(path.join(root, 'favorites.json'), JSON.stringify({ version: 2, favorites: [] }));
     fs.writeFileSync(path.join(root, 'posts/hidden.md'), '---\nid: aaaaaaaaaaaaaaaa\ntitle: 草稿\ndescription: 尚未发布的草稿。\ndate: null\ntopic: engineering\ntags: []\ndraft: true\n---\nPRIVATE_BLOG_ONLY');
     assert.throws(() => readPublicContent(temp), /private/);
     fs.writeFileSync(path.join(root, 'records.json'), JSON.stringify({ version: 2, records: [] }));

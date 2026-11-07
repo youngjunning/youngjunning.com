@@ -1,2 +1,6 @@
-import { getContent } from '@/lib/content';
-export function GET() { return Response.json({ version: 2, records: getContent().records }); }
+import { getRecordStore } from '@/lib/records';
+
+export const dynamic = 'force-static';
+export function GET() {
+  return Response.json(getRecordStore());
+}

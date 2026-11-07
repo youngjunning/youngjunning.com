@@ -1,0 +1,19 @@
+/* Lucian UX/UI Prompt #076 · MIT License (c) 2026 Seokwoooo · https://lucianlabs.dev/uxui-prompt/#076 */
+.term-preview.u076{display:inline;width:auto;height:auto;border-radius:0;background:none;box-shadow:none}
+.term-preview .u076-b{display:inline;width:auto;height:auto;padding:0 2px;border-radius:3px;font:inherit;color:var(--ux-accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:4px;vertical-align:baseline}
+.term-preview .u076-b:hover,.term-preview .u076-b:focus-visible{background:var(--ux-accent-soft);color:var(--ux-accent)}
+.term-preview-tip.u076-tip{position:fixed;z-index:100;width:min(380px,calc(100vw - 24px));pointer-events:auto;transform:translateY(0) scale(1);opacity:1;transition:opacity .16s,transform .16s}
+.term-preview-tip.above{transform:translateY(-100%)}
+.term-preview-tip .u076-box{display:block;height:auto;max-height:min(470px,75vh);overflow:auto;padding:17px 19px;border-radius:13px;background:var(--ux-ink);color:var(--ux-page);white-space:normal;font-size:13px;line-height:1.65;box-shadow:0 15px 35px -12px var(--ux-shadow-strong)}
+.term-preview-tip strong{display:block;margin-bottom:7px;font-size:15px;line-height:1.4}
+.term-preview-tip p{margin:0;color:var(--ux-page);opacity:.9}
+.term-preview-tip .u076-arr{background:var(--ux-ink)}
+.term-preview-tip .u076-arr{position:absolute;width:10px;height:10px;left:var(--ax,24px);margin-left:-5px;transform:rotate(45deg);border-radius:2px}
+.term-preview-tip.below .u076-arr{top:-4px}
+.term-preview-tip.above .u076-arr{bottom:-4px}
+.term-preview-related{display:grid;gap:6px;margin-top:14px;padding-top:12px;border-top:1px solid color-mix(in srgb,var(--ux-page) 22%,transparent)}
+.term-preview-related span{font-size:11px;opacity:.7}
+.term-preview-tip a{display:block;color:var(--ux-page);text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.term-preview-favorite{margin-top:14px;padding-top:10px;border-top:1px solid color-mix(in srgb,var(--ux-page) 22%,transparent);font-weight:700}
+.term-preview-tip a:focus-visible{outline:2px solid var(--ux-page);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.term-preview-tip.u076-tip,.term-preview .u076-b{transition:none}}

@@ -14,13 +14,9 @@ experience 增加 period、start、end、ongoing，start/end 支持年、月、�
 
 按同一事件、对象、立场和出处去重。补全上下文与错字修正保留 ID；真实变化新增 change。跨内部与公开目标的同一记录保留 ID，不把未完成事项写成既有结果。
 
-## 收藏
+## 百宝箱
 
-`favorites.json` 顶层为 `{ "version": 1, "favorites": [] }`。每项包含 id、kind（project/knowledge/card）、title、url、summary、reason、tags、savedAt、selection、visibility、sources。selection: explicit 仅用于本人明确收藏，Agent 发现使用 discovered；sources 为非空的 `{ "label": "公开出处" }` 数组。
-
-新收藏的 `savedAt` 使用上海时间 `YYYY-MM-DDTHH:mm+08:00`；只有日期的旧条目保留原精度，不补造分钟。列表按 `savedAt` 倒序，同一天只有日期的旧条目保留原有相对顺序。
-
-URL 应为可核验公共原始来源，按移除锚点、utm 参数与尾斜杠后的地址去重，保留有语义查询参数。本人明确要求收藏时，核对原始来源、受众和重复后即可收录，不要求与当前任务直接相关；会话发现的资料有回看线索或潜在用途时可先标为待评估，能力未核验则写明未知。概念笔记 kind: card，url 可为 null 或可核验的公共来源链接，另含 card: {date, recordedAt, context, understanding, example, distinction}，示例区分假设与真实经历。用户追问过或会话形成有独立价值的概念解释时，可核对依据后整理成笔记，不要求原对话已写出完整卡片；Agent 补充的假设示例和边界须标明。context、sources 注明资料整理或 AI 辅助解释，understanding 承载概念要点；仅声称本人理解、判断或实践时要求本人证据。没有个人事实不影响资料或笔记的收藏判断；已授权的合格内容按 discovered 保存，不要求本轮再次明确收藏。按概念、范围和来源去重，补全纠错保留 ID，不为单纯术语提及或重复外链摘要制造笔记。
+`favorites.json` version 2 区分外部资源（tool/reference）与知识笔记（concept/method），共同按主题浏览；保存方式、表达归属和实际项目使用分别记录。完整字段、来源、去重、最小笔记、文章术语关系和迁移验收见 [favorites.README.md](favorites.README.md)。所有内容先通过公开受众审查，旧 ID、保存日期和定位锚点保留。
 
 ## 文章
 
@@ -61,13 +57,9 @@ Markdown 正文的加粗优先只包含文字，将句末标点放在结束标�
 
 `npm run content:check` 检查 schema、关系、日期、URL 去重与部分敏感标记。自动检查覆盖有限，仍需逐条阅读正文、元数据、文件名、附件与链接，不能把检查通过当作脱敏完整证明。新增敏感内容后再删除无法清除公开 Git 历史，因此必须在首次提交前检查。
 
-## 收藏分级与项目使用
+## 探索清单与对话摘录
 
-收藏门槛：本人点名的项目或资料核对公共原始来源后按 explicit 收录；会话发现的内容有回看线索或潜在用途时可按 discovered 先作线索，不要求已试用、选用或形成个人判断。仅列出待选方案也可收录。没有验证的能力明确标为待核验，不把搜索摘要写成已证实结论。
-
-收藏增加 priority（lead 线索、evaluate 待评估、reference 重点参考）、adoption（unknown 未核实、not_selected 未选用、trial 试用中、adopted 已选用、retired 已停用）、usages 数组。优先级是回看顺序，不是质量评分。历史缺证据默认 lead / unknown / []；明确仅作为候选才标未选用。
-
-usages 每项包含 project、projectUrl、stage（trial/adopted/retired）、purpose、evidence。项目使用必须有源码、依赖、公开文档或明确陈述依据，区分原型试用和正式采用；试用中或已选用必须存在同阶段使用记录。更新时保留稳定 ID。公开使用记录不得暴露内部项目名称和地址，不能公开的关系仅留内部。图谱用 uses 表达项目使用，用 tagged 表达主题相关，不从相同标签推导使用事实。
+两类使用与内站相同的内容模型和页面/API 能力，但分别审核内容。公开摘录仍需本人明确选择及公共来源，不能因统一产品而公开私人会话。字段与验收见 [curation.README.md](curation.README.md)。
 
 ## 硅基俊宁专属内容
 
