@@ -2,6 +2,458 @@
   "version": 1,
   "favorites": [
     {
+      "id": "33226492457fb09f",
+      "kind": "knowledge",
+      "title": "GitHub Copilot 每周更新：Agent 会话进入更多开发入口",
+      "url": "https://github.blog/changelog/2026-11-06-github-copilot-weekly-releases-november-2/",
+      "summary": "GitHub 2026 年 11 月 6 日的更新汇集 Copilot app、CLI、JetBrains Air、Xcode 和 VS Code 的变化；Xcode 内置编码助手的 Copilot 集成仍为公开预览。",
+      "reason": "回看 Agent 会话在多个开发入口中的产品形态，以及相关能力的发布阶段；未核验各入口的实际体验。",
+      "tags": [
+        "GitHub Copilot",
+        "Agent",
+        "开发工具"
+      ],
+      "savedAt": "2026-11-07T17:38+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        {
+          "label": "GitHub 官方 Changelog，发布于 2026-11-06，2026-11-07 核对原文。"
+        }
+      ]
+    },
+    {
+      "id": "77faf23e6615fd4d",
+      "kind": "knowledge",
+      "title": "Copilot 代码评审指标：评论处理率与统计边界",
+      "url": "https://github.blog/changelog/2026-11-05-usage-metrics-api-adds-code-review-details-and-addressed-rate/",
+      "summary": "GitHub 2026 年 11 月 5 日为组织与企业的仓库用量日报加入评审评论 evaluated、addressed 等字段。addressed 包含开发者回复稍后修复，不能直接视为缺陷已修复。",
+      "reason": "作为观察 AI 代码评审结果与统计口径的原始资料，回查字段含义和适用范围。",
+      "tags": [
+        "GitHub Copilot",
+        "代码评审",
+        "度量"
+      ],
+      "savedAt": "2026-11-07T17:38+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        {
+          "label": "GitHub 官方 Changelog，发布于 2026-11-05，2026-11-07 核对原文。"
+        }
+      ]
+    },
+    {
+      "id": "f9ab77505f692970",
+      "kind": "knowledge",
+      "title": "Gemini Omni 1.2 Flash：15 秒视频与多轮编辑",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "summary": "Google 2026 年 11 月 5 日介绍 Gemini Omni 1.2 Flash 的 15 秒视频生成、多轮对话编辑与参考素材遵循能力；Gemini API 和 Google Cloud 已提供，其他产品入口逐步推出。",
+      "reason": "回看多模态生成进入可编辑创作流程的官方产品信息；具体项目效果与成本仍需独立验证。",
+      "tags": [
+        "Gemini",
+        "多模态",
+        "视频生成"
+      ],
+      "savedAt": "2026-11-07T17:38+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        {
+          "label": "Google 官方博客，发布于 2026-11-05，2026-11-07 核对原文。"
+        }
+      ]
+    },
+    {
+      "id": "2093f60cae7cf54d",
+      "kind": "card",
+      "title": "视觉 Grounding：按描述在图像中找位置",
+      "url": null,
+      "summary": "视觉 Grounding 根据图像和目标描述定位对应区域；得到一个矩形框，并不能单独证明位置来自视觉 Grounding，也不能证明点击成功。",
+      "reason": "回看截图定位与无障碍节点 bounds、整页理解和动作验证各自解决的问题。",
+      "tags": [
+        "视觉 Grounding",
+        "Agent",
+        "图像定位",
+        "Accessibility Tree"
+      ],
+      "savedAt": "2026-11-05T19:37+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        {
+          "label": "AI 辅助资料整理；公开文章《视觉 Grounding、Box 与目标边界框：从截图定位到可靠点击》对应概念章节：https://youngjunning.com/blog/e196ba9ba7b3b8ed"
+        },
+        {
+          "label": "TypeSafe 官方 Box 文档，2026-11-05 核对：https://docs.typesafe.ai/primitives/box"
+        }
+      ],
+      "card": {
+        "date": "2026-11-05",
+        "recordedAt": "2026-11-05",
+        "context": "AI 辅助资料整理；源于 Jev 视觉目标定位文章的概念说明，不表示本人已在真实手机页面验证定位成功率。",
+        "understanding": "视觉 Grounding 是依据图像和目标描述，寻找描述所指对象在图中的位置。Box 是 Jev 回答这类位置问题的接口，边界框是可能返回的位置数据。页面结构理解和点击后业务结果验证仍是另外的任务。",
+        "example": "假设截图中有一个没有稳定无障碍节点的‘查询’按钮，系统可用图像和‘查询按钮’描述请求定位；返回区域后仍需检查目标是否存在并验证点击结果。此例是流程说明，不代表实机测试。",
+        "distinction": "目标检测、OCR 和 Accessibility Tree 也可能提供矩形区域；是否属于视觉 Grounding，取决于位置是否由图像与目标描述匹配得到。"
+      }
+    },
+    {
+      "id": "ff6d24c1cfcdceec",
+      "kind": "card",
+      "title": "Jev Noul 与 Box：存在性判断和位置定位",
+      "url": null,
+      "summary": "Noul 回答目标是否存在，Box 回答目标在哪里；同一请求可同时提问，动作系统先判断是否采纳位置结果。Box 没有‘未找到’答案。",
+      "reason": "避免把 Box 返回的任意框或单次 confidence 当作目标真实存在的证据。",
+      "tags": [
+        "Jev",
+        "Noul",
+        "Box",
+        "视觉 Grounding",
+        "Agent"
+      ],
+      "savedAt": "2026-11-05T19:37+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        {
+          "label": "AI 辅助资料整理；公开文章《视觉 Grounding、Box 与目标边界框：从截图定位到可靠点击》对应概念章节：https://youngjunning.com/blog/e196ba9ba7b3b8ed"
+        },
+        {
+          "label": "TypeSafe 官方 Noul 文档，2026-11-05 核对：https://docs.typesafe.ai/primitives/noul"
+        },
+        {
+          "label": "TypeSafe 官方 Box 文档，2026-11-05 核对：https://docs.typesafe.ai/primitives/box"
+        }
+      ],
+      "card": {
+        "date": "2026-11-05",
+        "recordedAt": "2026-11-05",
+        "context": "AI 辅助资料整理；这是 Jev 两种问题类型的接口解释，不表示已建立适用于所有手机页面的判断阈值。",
+        "understanding": "Noul 是是/否问题，返回答案为‘是’的概率；Box 是图像位置问题，返回目标矩形的四条归一化边和位置答案的 confidence。两种问题可在同一请求中针对同一张图作答。动作系统应先评估目标存在性，再决定是否采用 Box；这是使用结果的顺序，不要求分两次调用模型。",
+        "example": "假设要点截图里的‘查询’按钮：同次请求问 Noul‘按钮是否存在’和 Box‘按钮在哪里’；若存在性证据不足，忽略 Box 并重新观察。此例只说明判定流程，不代表真实页面已验证。",
+        "distinction": "Box 即使目标缺失也会返回一个框，因此框和 confidence 都不能单独当作存在性证明；Noul 的概率不是位置，也不是 Box 的 confidence。同次提问省去第二次 API 往返，但官方文档未承诺内部并行或整体耗时；先问 Noul 再按需问 Box 可能减少目标缺失时的计算。阈值、延迟和成本需按实际页面评测。"
+      }
+    },
+    {
+      "id": "758f3da9f36fd98f",
+      "kind": "card",
+      "title": "归一化边界框到设备点击坐标",
+      "url": null,
+      "summary": "Box 的四条边是相对图像宽高的 0 到 1 比例；换算成图像像素后，还须映射到实际点击坐标系并确认截图未过期。",
+      "reason": "回看为什么模型给出正确的框，动作仍可能因缩放、裁剪、旋转或页面变化而点错。",
+      "tags": [
+        "边界框",
+        "坐标映射",
+        "Jev",
+        "Box",
+        "云手机"
+      ],
+      "savedAt": "2026-11-05T19:37+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        {
+          "label": "AI 辅助资料整理；公开文章《视觉 Grounding、Box 与目标边界框：从截图定位到可靠点击》对应概念章节：https://youngjunning.com/blog/e196ba9ba7b3b8ed"
+        },
+        {
+          "label": "TypeSafe 官方 Box 文档，2026-11-05 核对：https://docs.typesafe.ai/primitives/box"
+        }
+      ],
+      "card": {
+        "date": "2026-11-05",
+        "recordedAt": "2026-11-05",
+        "context": "AI 辅助资料整理；图像比例转像素来自 TypeSafe 文档，设备坐标复核与动作验证来自文章中的工程流程。",
+        "understanding": "边界框的 left/right 相对图像宽度，top/bottom 相对图像高度。以中心点点击时，可分别取两条水平边和两条垂直边的均值，再乘图像宽高得到图像像素。实际点击还要按设备的缩放、裁剪、旋转、状态栏和视口偏移映射，并确认观察与动作使用同一画面状态。",
+        "example": "假设图像为 400×400 像素，框为 left=0.20、top=0.40、right=0.80、bottom=0.60，则图像中心点为 (200, 200)。这个点仍须映射到实际设备坐标；示例不代表任何真实页面已点击成功。",
+        "distinction": "Box 只返回相对输入图片宽高的边界框和位置答案的 confidence；图像像素换算、设备坐标映射、截图有效性复核及点击后验证都由接入 Jev 的动作系统负责。归一化图像坐标、截图像素坐标和设备执行坐标是不同坐标系；点位落在框内不等于动作命中，更不等于业务结果成功。"
+      }
+    },
+    {
+      "id": "38c6d9646e0e792d",
+      "kind": "card",
+      "title": "从运营实际场景寻找合作切入点",
+      "url": null,
+      "summary": "我学到，寻找业务合作机会要先走进运营的实际工作：主动看流程和痛点，兼顾 PC 与手机 App 场景，再把发现的问题逐项转成可讨论的机会点。",
+      "reason": "提醒我从真实场景出发理解业务需求，把合作讨论落到具体问题和可执行的切入点。",
+      "tags": [
+        "运营",
+        "业务调研",
+        "场景分析",
+        "合作"
+      ],
+      "savedAt": "2026-11-05T14:44+08:00",
+      "selection": "explicit",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        {
+          "label": "本人陈述，2026-11-05，公开摘要：将运营场景、跨端流程与合作机会的整理记录为学习收获。"
+        }
+      ],
+      "card": {
+        "date": "2026-11-05",
+        "recordedAt": "2026-11-05",
+        "context": "2026 年 11 月 5 日整理的一条业务调研与合作方法收获；尚未关联具体项目或实施结果。",
+        "understanding": "我学到，合作前可以先主动观察运营人员怎样完成工作，找出复杂的流程和实际痛点；还要把 PC 与手机 App 等场景连起来看，识别跨端衔接中的机会，再逐项讨论哪些问题值得做、怎样做。",
+        "example": "假设某运营流程需要在 PC 后台处理配置、在手机 App 核对结果，可以分别观察两个端上的操作与交接，再列出待验证的痛点和机会点。这只是方法示例。",
+        "distinction": "这是我对业务调研与合作切入方式的学习收获，不表示我已完成某个跨端调研、作出合作承诺，或解决了所有痛点。"
+      }
+    },
+    {
+      "id": "2f43458f49eef200",
+      "kind": "card",
+      "title": "tabindex、Tab 焦点与 AX Tree 的关系",
+      "url": null,
+      "summary": "tabindex 控制元素是否进入顺序键盘导航及其顺序；AX Tree 描述元素的角色、名称、状态等语义。能否按 Tab 到达，与能否被语义观察读取是不同问题。",
+      "reason": "回看标题、普通容器和结果提示为什么可以有不同的 Tab 行为，同时仍有各自的无障碍语义。",
+      "tags": [
+        "Accessibility Tree",
+        "tabindex",
+        "键盘焦点",
+        "Browser Agent"
+      ],
+      "savedAt": "2026-11-05T13:11+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        {
+          "label": "AI 辅助资料整理；公开文章《只用 Accessibility Tree，浏览器 Agent 能走多远？》的 tabindex 解释：https://youngjunning.com/blog/98c0567121f59475"
+        },
+        {
+          "label": "MDN tabindex 参考文档，2026-11-05 核对：https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/tabindex"
+        }
+      ],
+      "card": {
+        "date": "2026-11-05",
+        "recordedAt": "2026-11-05",
+        "context": "AI 辅助资料整理；源于本人对 AX Tree 文章中 tabindex 解释的追问，不表示本人已经掌握或实践相关实现。",
+        "understanding": "Tab 是键盘焦点依次移动的路径，AX Tree 是浏览器提供的页面语义表示。普通标题通常不在 Tab 路径上，仍可作为标题被读取；div 加 tabindex=0 通常可被 Tab 到达，但不会自动变成按钮；标题加 tabindex=-1 通常被 Tab 跳过，程序仍可调用 focus() 将焦点移过去。",
+        "example": "假设查询结果加载后，程序对 <h2 tabindex=\"-1\">查询结果</h2> 调用 focus()：焦点可以移到结果标题，便于听到更新；用户平时按 Tab 则通常不会停在这个标题上。此例解释机制，不代表实际页面已这样实现。",
+        "distinction": "tabindex 决定焦点导航资格或顺序，不赋予按钮语义，也不负责自动移动焦点；role、名称等语义要依据元素和页面状态判断。"
+      }
+    },
+    {
+      "id": "e0327ad10d9b4db3",
+      "kind": "project",
+      "title": "browser-use",
+      "url": "https://github.com/browser-use/browser-use",
+      "summary": "开源浏览器 Agent 项目；当前 DOM 服务结合 CDP DOM、DOMSnapshot 与 AX 信息构建页面观察，serializer 进一步筛选可见内容和交互目标。",
+      "reason": "回查页面感知中多源采集、可见性判断、交互识别和简化树的具体实现；本轮文章已按源码分析。",
+      "tags": [
+        "Browser Agent",
+        "DOM 剪枝",
+        "Accessibility Tree"
+      ],
+      "savedAt": "2026-11-05T13:08+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        {
+          "label": "本人在本轮文章请求中提名为参考对象；官方仓库和 DOM 服务源码，2026-11-05 核对：https://github.com/browser-use/browser-use/blob/main/browser_use/dom/service.py"
+        }
+      ]
+    },
+    {
+      "id": "b7080a49fa02da51",
+      "kind": "project",
+      "title": "agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "summary": "面向 Agent 的浏览器 CLI；当前 Chrome 原生 snapshot 路径读取 AX Tree 并提供交互项、紧凑、深度与区域范围等观察选项。",
+      "reason": "回查 AX 快照裁剪、元素 ref 生命周期与动作验证的官方实现；本轮文章已按源码和文档分析。",
+      "tags": [
+        "Browser Agent",
+        "Accessibility Tree",
+        "页面观察"
+      ],
+      "savedAt": "2026-11-05T13:08+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        {
+          "label": "本人在本轮文章请求中提名为参考对象；官方仓库与快照文档，2026-11-05 核对：https://agent-browser.dev/snapshots"
+        }
+      ]
+    },
+    {
+      "id": "22e1134e4b38d4c7",
+      "kind": "card",
+      "title": "Chromium 浏览器的两种接入边界：直接 fork 与独立 Host",
+      "url": null,
+      "summary": "BrowserOS 以 Chromium fork 和补丁构建浏览器；Atlas 公开的 OWL 架构把自建原生 UI 与进程外 Chromium Host 分开。两者都使用 Chromium，差异在浏览器 UI 与进程的所有权，不足以推断 Atlas 大量删减了 Chromium 源码。",
+      "reason": "比较 Chromium fork 与独立浏览器 Host 的职责和集成成本，区分架构公开与源码实现证据。",
+      "tags": [
+        "Chromium",
+        "浏览器架构",
+        "Atlas",
+        "BrowserOS"
+      ],
+      "savedAt": "2026-11-04T02:56+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        {
+          "label": "OpenAI 官方 OWL 工程文章：https://openai.com/index/building-chatgpt-atlas/"
+        },
+        {
+          "label": "BrowserOS 官方 Chromium fork 构建说明：https://github.com/browseros-ai/BrowserOS/blob/main/packages/browseros/README.md"
+        }
+      ],
+      "card": {
+        "date": "2026-11-04",
+        "recordedAt": "2026-11-04",
+        "context": "AI 辅助资料整理；比较 Atlas 与 BrowserOS 的 Chromium 接入方式，不表示本人已验证 Atlas 的私有源码。",
+        "understanding": "BrowserOS 官方仓库将浏览器称为 Chromium fork，使用补丁修改 Chromium UI 和功能。OpenAI 公开文章说明 Atlas 的应用 UI 主要用 SwiftUI/AppKit 重建，Chromium 浏览器进程作为独立 Host，通过 Mojo 与 Client 通信，并尽量保持 Chromium 补丁定向而小。",
+        "example": "假设开发一个没有 AI 功能、UI 由 AppKit 实现的浏览器：可让 UI 进程管理窗口和标签，让独立 Chromium Host 提供网页渲染和状态；但要成为日常浏览器仍需图层嵌入、完整输入、弹窗、下载与持久化 Profile。此例是目标架构示意，不代表任何具体产品已实现。",
+        "distinction": "重新实现浏览器应用 UI、把 Chromium 进程移到 Host、以及大量删减 Chromium 源码是三件不同的事；公开 OWL 文章支持前两项和定向补丁，未披露足以证明第三项的删减清单。"
+      }
+    },
+    {
+      "id": "ed2d400461c87b68",
+      "kind": "card",
+      "title": "Jev 图片定位与截图文字提取的边界",
+      "url": null,
+      "summary": "Jev 的图片输入可用于判断目标和返回 Box 坐标；当前 System One 文档列出的答案类型不包含任意文字转写。读取页面里的动态文字需要另一个文本来源。",
+      "reason": "区分云手机 Agent 的目标定位与航班状态、机场、时间等结果字段提取，避免把 Box 坐标误当 OCR 结果。",
+      "tags": [
+        "Jev",
+        "Box",
+        "视觉 Grounding",
+        "OCR",
+        "云手机"
+      ],
+      "savedAt": "2026-11-04T02:40+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "priority": "reference",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        {
+          "label": "AI 辅助资料整理；TypeSafe System One 官方文档：https://docs.typesafe.ai/api/system-one；图片输入：https://docs.typesafe.ai/images；Box：https://docs.typesafe.ai/primitives/box。无任意文字答案类型为依据当前文档的推断。"
+        }
+      ],
+      "card": {
+        "date": "2026-11-04",
+        "recordedAt": "2026-11-04",
+        "context": "AI 辅助解释；源于本轮对 Jev 云手机页面读取和最终结果提取的追问，不表示本人已掌握或采用某种 OCR 实现。",
+        "understanding": "给 Jev 传截图后，Noul 可判断一个条件是否成立，Choice 可从给定选项中选择，Box 可返回目标所在矩形。Box 的四个坐标能支持点击定位，却不是截图文字。依据当前 System One 文档列出的答案类型，不能要求它直接转写任意机场名或时间。",
+        "example": "假设截图里有“航班查询”按钮与“06:25”的起飞时间：可用 Box 找到按钮区域；若要把 06:25 写入结果，还需由截图视觉文字模型、OCR 或可靠的页面文本来源读出。此例说明能力边界，不代表实机验证。",
+        "distinction": "模型能接收图片，不等于其 API 能输出任意文字；位置核对、已知值验证和自由文本提取是不同输出任务。"
+      }
+    },
+    {
+      "id": "845736bf57c284ad",
+      "kind": "knowledge",
+      "title": "W3C APG：可访问名称与描述的编写规则",
+      "url": "https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/",
+      "summary": "解释 accessible name 和 description 的用途、来源与命名规则，覆盖原生标签、aria-label、aria-labelledby 和 aria-describedby。",
+      "reason": "用于检查表单字段、图标按钮与浏览器 Agent 语义观察中的名称是否准确，避免把表单 name 属性或仅有 placeholder 当作良好的标签设计。",
+      "tags": [
+        "Accessibility",
+        "ARIA",
+        "HTML",
+        "Browser Agent"
+      ],
+      "savedAt": "2026-10-30",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "2026-10-30 Accessibility 漫画与属性示例研究中核验的 W3C 官方指南；文章 98c0567121f59475。会话发现，不代表本人推荐或已经掌握。"
+        }
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
+    },
+    {
+      "id": "733d0260b41fe65a",
+      "kind": "knowledge",
+      "title": "CDP Accessibility：Chromium 原生 AX 查询接口",
+      "url": "https://chromedevtools.github.io/devtools-protocol/tot/Accessibility/",
+      "summary": "Chrome DevTools Protocol 的 Accessibility 域，定义原生 AX 树查询、节点字段与更新事件；该域不提供通用 click/fill 动作。",
+      "reason": "用于实现和排查 AX-only 浏览器观察，核对 ignored、frameId、AXNodeId 与 backendDOMNodeId，避免把工具 ARIA snapshot 误当作浏览器原生 AX Tree。",
+      "tags": [
+        "Accessibility Tree",
+        "CDP",
+        "Browser Agent"
+      ],
+      "savedAt": "2026-10-30",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "2026-10-30 原生 AX-only 浏览器自动化研究中核验的官方 CDP Accessibility 文档；对应文章 98c0567121f59475。会话发现，不代表本人推荐或已经掌握。"
+        }
+      ],
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
+    },
+    {
+      "id": "98e5f8fb7a31b40d",
+      "title": "PoC 是啥？",
+      "visibility": "shared",
+      "kind": "card",
+      "url": null,
+      "summary": "PoC（Proof of Concept，概念验证）是用最小投入，验证一个想法或技术方案是否可行。",
+      "reason": "保留概念解释、理解和使用场景；按本人要求从个人记录迁入收藏夹。",
+      "tags": [
+        "PoC",
+        "概念验证"
+      ],
+      "savedAt": "2026-10-30",
+      "selection": "explicit",
+      "sources": [
+        {
+          "label": "迁移前已有的个人短记录，保留原文与日期"
+        }
+      ],
+      "card": {
+        "date": "2026-10-28",
+        "recordedAt": "2026-10-28",
+        "context": "知识卡片首例：保留概念解释、理解和使用场景。浏览器 Agent 场景是假设示例，不代表已经完成的项目实践。",
+        "understanding": "先验证最不确定的那个点，再决定是否继续投入。开始前明确要验证的问题、通过标准和投入上限。",
+        "example": "假设要做浏览器 Agent，可以先选一项真实业务操作，在明确条件下验证任务能否完成，并记录成功率和失败原因。账号体系、管理后台等能力可在验证后再投入。",
+        "distinction": "PoC 重点验证可行性；Demo 重点展示效果；MVP（Minimum Viable Product，最小可行产品）重点用可用的最小产品验证用户价值。三者可以重叠，一次成功的演示也不等于已验证稳定性。"
+      },
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": []
+    },
+    {
       "id": "d89f4c7a120e6b53",
       "kind": "project",
       "title": "Plasma UI：React 液态玻璃组件库",

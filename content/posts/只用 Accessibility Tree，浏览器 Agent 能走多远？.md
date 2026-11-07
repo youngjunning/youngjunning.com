@@ -1,13 +1,26 @@
 ---
-id: "98c0567121f59475"
-title: "只用 Accessibility Tree，浏览器 Agent 能走多远？"
-description: "从焦点、角色、名称、状态和观察范围入手，判断 Accessibility Tree 何时足以支撑受控的浏览器自动化。"
-date: "2026-10-30"
-topic: "architecture"
-tags: ["Browser Agent","Accessibility Tree","Mastra","agent-browser","Playwright","CDP"]
-collection: "docs"
-cover: "/media/98c0567121f59475-8382d1de4c6b2ca4.webp"
+id: 98c0567121f59475
+title: 只用 Accessibility Tree，浏览器 Agent 能走多远？
+description: 从焦点、角色、名称、状态和观察范围入手，判断 Accessibility Tree 何时足以支撑受控的浏览器自动化。
+date: '2026-10-30'
+topic: architecture
+tags:
+  - Browser Agent
+  - Accessibility Tree
+  - Mastra
+  - agent-browser
+  - Playwright
+  - CDP
+collection: docs
+cover: /media/98c0567121f59475-8382d1de4c6b2ca4.webp
+updatedAt: '2026-11-07'
 ---
+## 修订记录
+
+| 版本 | 修订时间 | 修订内容 |
+| --- | --- | --- |
+| 第 1 次修订 | 2026.11.07 | 同步 Tab 焦点导航与 AX 语义的对照说明。 |
+
 
 从焦点、角色、名称、状态和观察范围入手，判断 Accessibility Tree 何时足以支撑受控的浏览器自动化。
 
@@ -74,20 +87,26 @@ cover: "/media/98c0567121f59475-8382d1de4c6b2ca4.webp"
 
 ### Tab 能不能到达，不是 AX Tree 的收录标准
 
-普通标题和段落通常不需要成为 Tab 停靠点，但它们仍可暴露标题、层级和文本。屏幕阅读器可以通过自己的标题导航等方式读取；浏览器 Agent 也可以从 AX 观察中读取。反过来，一个 `tabindex="0"` 的普通容器虽然通常能被 Tab 到达，也不因此自动拥有按钮的语义与行为。
+这里其实在说两件事：按 Tab 时，键盘焦点会不会停在一个元素上；浏览器的 AX Tree 会怎样描述这个元素。**能被 Tab 选中，不等于它是按钮；不能被 Tab 选中，也不等于 Agent 读不到它。**
 
 ```html
 <h2>工具与运行底座</h2>
 <p>这段文字供用户阅读，不需要每次按 Tab 都停在这里。</p>
 
-<!-- 通常可由 Tab 到达，但仍只是一个容器 -->
+<!-- 可由 Tab 到达，但仍只是普通容器 -->
 <div tabindex="0">普通容器</div>
 
-<!-- 通常不进入 Tab 顺序，但可由程序 focus() 聚焦 -->
+<!-- Tab 通常会跳过；程序可以在显示结果后让它获得焦点 -->
 <h2 id="result" tabindex="-1">查询结果</h2>
 ```
 
-`tabindex="0"` 通常让元素参与顺序焦点导航；`-1` 通常把它排除在 Tab 顺序之外，同时允许程序聚焦。不要用正数 tabindex 编排一套与文档顺序脱节的跳转路线。操作系统、浏览器和用户偏好也会影响实际 Tab 路径，macOS 上尤其不能假定所有配置完全一致。[WHATWG 焦点与 tabindex](https://html.spec.whatwg.org/multipage/interaction.html#the-tabindex-attribute)
+| 上面的元素 | 按 Tab 时 | AX Tree 能提供什么 |
+| --- | --- | --- |
+| `<h2>工具与运行底座</h2>` 和段落 | 通常跳过，因为它们是供阅读的内容，不是要操作的控件 | 标题、标题层级和段落文字仍可被读取 |
+| `<div tabindex="0">普通容器</div>` | 通常会停在这里；`0` 表示加入正常的 Tab 顺序 | 仍是普通容器，不会仅凭 `tabindex` 变成按钮，也不会自动响应 Enter |
+| `<h2 tabindex="-1">查询结果</h2>` | 通常跳过；`-1` 表示不加入正常的 Tab 顺序 | 仍是标题。程序可以在结果出现后调用 `focus()`，把焦点移到这里，方便用户听到新结果 |
+
+所以，`tabindex` 主要管理**焦点怎么走**；元素本身的 HTML 语义和 ARIA 等信息决定**它是什么、叫什么**。`tabindex="-1"` 也不会自行移动焦点，必须由程序主动调用 `focus()`。正数 `tabindex` 会人为改变 Tab 顺序，通常不建议使用。实际按键路径可能受浏览器和系统设置影响，但不改变这里对焦点导航与元素语义的区分。[MDN tabindex 示例与说明](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/tabindex)、[WHATWG 焦点与 tabindex](https://html.spec.whatwg.org/multipage/interaction.html#the-tabindex-attribute)
 
 ## 一、先明确“只使用”约束了哪一层
 

@@ -11,7 +11,8 @@ test('only reviewed versions produce patches, and resources, source changes and 
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'article-sync-')), sourceRoot = path.join(root, 'source'), targetRoot = path.join(root, 'target');
   for (const dir of [sourceRoot, targetRoot]) fs.mkdirSync(path.join(dir, 'content/posts'), { recursive: true });
   const source = path.join(sourceRoot, 'content/posts/同步测试.md'), target = path.join(targetRoot, 'content/posts/同步测试.md');
-  fs.writeFileSync(source, article('原始技术内容。'));
+  // Company articles preserve Shanghai minute precision; public editions may use a day.
+  fs.writeFileSync(source, article('原始技术内容。').replace('date: null', 'date: "2026-11-05T13:05+08:00"'));
   const ledger = { version: 1, reviews: [] }, options = { sourceRoot, targetRoot, ledger, audience: 'public' };
   try {
     const initial = articleSyncPlan(options)[0]; assert.equal(initial.state, 'review-required');

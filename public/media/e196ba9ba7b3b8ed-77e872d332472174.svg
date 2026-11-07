@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="title description">
+  <title id="title">目标矩形与模型边界框</title>
+  <desc id="description">400乘400像素示意图。黑色矩形是实际目标，青绿色虚线是模型返回的边界框，十字标出中心点。</desc>
+  <rect width="960" height="560" rx="20" fill="#F4F6F1"/>
+  <rect x="80" y="80" width="400" height="400" rx="8" fill="#FBFCFA" stroke="#C5D5D0" stroke-width="2"/>
+  <text x="80" y="56" fill="#183B40" font-family="sans-serif" font-size="18" font-weight="600">400 × 400 图像</text>
+  <rect x="160" y="240" width="240" height="80" fill="#183B40"/>
+  <rect x="164" y="228" width="228" height="108" fill="none" stroke="#2E948A" stroke-width="5" stroke-dasharray="11 8"/>
+  <line x1="266" y1="282" x2="290" y2="282" stroke="#D6A352" stroke-width="4"/>
+  <line x1="278" y1="270" x2="278" y2="294" stroke="#D6A352" stroke-width="4"/>
+  <circle cx="278" cy="282" r="5" fill="#D6A352"/>
+  <rect x="548" y="126" width="20" height="20" fill="#183B40"/>
+  <text x="586" y="144" fill="#183B40" font-family="sans-serif" font-size="20">实际目标：80,160 → 320,240</text>
+  <rect x="548" y="204" width="20" height="20" fill="none" stroke="#2E948A" stroke-width="4" stroke-dasharray="5 3"/>
+  <text x="586" y="222" fill="#183B40" font-family="sans-serif" font-size="20">Box：0.21,0.37 → 0.78,0.64</text>
+  <circle cx="558" cy="292" r="6" fill="#D6A352"/>
+  <text x="586" y="300" fill="#183B40" font-family="sans-serif" font-size="20">Box 中心：约 278,282</text>
+  <text x="548" y="388" fill="#4D676B" font-family="sans-serif" font-size="18">框的位置是观察结果，点击仍需验证。</text>
+</svg>

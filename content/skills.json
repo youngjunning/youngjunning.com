@@ -3,6 +3,601 @@
   "updatedAt": "2026-11-02",
   "skills": [
     {
+      "id": "ce21dd330ae7a94c",
+      "name": "ai-ui-patterns",
+      "summary": "Teaches design patterns for building AI-powered React interfaces. Use when creating chatbots, intelligent assistants, streaming UIs, or any AI-driven user experience in React.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "bee3901f0c949d7f",
+      "name": "async-components",
+      "summary": "Teaches async component loading in Vue for performance optimization. Use when you have heavy components that aren't needed on initial render and can be loaded on demand.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "12f52b321b8e75ee",
+      "name": "auth-wechat-miniprogram",
+      "summary": "CloudBase WeChat Mini Program native authentication guide. This skill should be used when users need mini program identity handling, OPENID/UNIONID access, or `wx.cloud` auth behavior in projects where login is native and automatic.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/tencentcloudbase/cloudbase-mcp"
+    },
+    {
+      "id": "d6d9ba24a664a13f",
+      "name": "bundle-splitting",
+      "summary": "Teaches bundle splitting techniques for web performance. Use when your application has a large JavaScript bundle that affects load times or when you need to reduce FCP/LCP.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "14f11acb026b4a90",
+      "name": "client-side-rendering",
+      "summary": "Teaches client-side rendering (CSR) for React applications. Use when building highly interactive apps where SEO is not a priority and the UI is driven by user actions.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "3ed4420f4909c549",
+      "name": "command-pattern",
+      "summary": "Teaches the command pattern for decoupling task execution from invocation. Use when you need undo/redo functionality, queued operations, or want to decouple the object that invokes an operation from the one that performs it.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "53d6770b94d86197",
+      "name": "components",
+      "summary": "Teaches Vue component fundamentals including markup, logic, and styles. Use when building or structuring Vue single-file components as the foundational building blocks of your application.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "cb21c9c163fb8a2d",
+      "name": "composables",
+      "summary": "Teaches Vue composables for reusable stateful logic with the Composition API. Use when extracting shared reactive state, side effects, or computed logic that multiple components need.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "795f7c4e014a142c",
+      "name": "compound-pattern",
+      "summary": "Teaches the compound component pattern for shared implicit state. Use when building related components like tabs, accordions, or dropdowns that need to coordinate without explicit prop passing.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "456d909d7bba636a",
+      "name": "compression",
+      "summary": "Teaches JavaScript compression techniques including Gzip and Brotli. Use when optimizing network transfer times or configuring server-side compression for production builds.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "9dc946a384937e7f",
+      "name": "container-presentational",
+      "summary": "Teaches the container/presentational pattern for Vue components. Use when you want to separate data fetching and business logic from presentation for better testability and reuse.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "062b588d02d05f10",
+      "name": "data-provider",
+      "summary": "Teaches the data provider pattern using renderless components and scoped slots. Use when you need to abstract data fetching or state management logic and expose it to child components via slots.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "fb28d064f7930e04",
+      "name": "dynamic-components",
+      "summary": "Teaches dynamic component switching with Vue's <component> element. Use when you need to render different components conditionally based on runtime state using the is attribute.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "b6197fe74e8af3a9",
+      "name": "dynamic-import",
+      "summary": "Teaches dynamic import() for on-demand code loading. Use when you need to reduce initial bundle size by lazily loading modules that aren't required at startup.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "6bb5fad8cbee209d",
+      "name": "embedded-captions",
+      "summary": "Add captions or subtitles to an existing single-subject talking-head video without editing the footage. Use for plain verbatim captions, cinematic captions embedded behind the subject, VFX captions, “炸/特效/酷炫字幕,” or a named identity from the 35-style catalog. Route by visual identity, not by backend engine. The quiet `anchor` rail is the default; embed every word only when the user explicitly wants a fully cinematic treatment. The workflow runs locally end to end, including transcription and subject matting; split multi-shot footage before applying it.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/heygen-com/hyperframes"
+    },
+    {
+      "id": "aa4437303458be11",
+      "name": "faceless-explainer",
+      "summary": "Turn arbitrary text — an article, notes, a topic, a brief — into a faceless explainer video: there is no site or footage to capture, so the visuals are invented per scene (typography, abstract graphics, diagrams, data-viz). Use for topic explainers, concept breakdowns, how-tos, listicles. Not a video built from a website (/product-launch-video — promo or tour). Unclear → /hyperframes.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/heygen-com/hyperframes"
+    },
+    {
+      "id": "b6c5bbae2767b399",
+      "name": "factory-pattern",
+      "summary": "Teaches the factory pattern for flexible object creation. Use when you need to create objects dynamically without using the new keyword or when object creation logic should be centralized.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "fdf8fe4ca8dd4d1c",
+      "name": "figma",
+      "summary": "Bring Figma into a HyperFrames video - rendered assets, brand tokens, components, storyboard frames as reconstructed motion (frames read as states, not slides), shaders and connector-assisted motion. Use when the person pastes a figma.com link or asks to use a Figma design, frame, logo or brand.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/heygen-com/hyperframes"
+    },
+    {
+      "id": "6463aa826b093597",
+      "name": "find-skills",
+      "summary": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/vercel-labs/skills"
+    },
+    {
+      "id": "d6f34190ff4dd2cf",
+      "name": "flyweight-pattern",
+      "summary": "Teaches the flyweight pattern for memory optimization. Use when your application creates large numbers of similar objects and memory consumption is a concern.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "76ecdc4ecb4b4fd1",
+      "name": "general-video",
+      "summary": "Author or edit a custom HyperFrames composition when no specialized workflow fits, or when BRIEF.md sets flow: companion. Use for longer or multi-scene pieces, brand and sizzle reels, montages, static loops, static title cards, footage remixes, and freeform builds. Use motion-graphics instead for a short unnarrated motion-first unit, including an animated title. Route fresh creation through hyperframes before using this skill.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/heygen-com/hyperframes"
+    },
+    {
+      "id": "852786df1ec2ec3d",
+      "name": "hoc-pattern",
+      "summary": "Teaches the Higher-Order Component (HOC) pattern for logic reuse. Use when you need to share cross-cutting concerns like authentication, logging, or data fetching across multiple components.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "e0228ee21d5d8240",
+      "name": "hooks-pattern",
+      "summary": "Teaches React Hooks for reusing stateful logic across components. Use when extracting shared behavior like form handling, subscriptions, or side effects into reusable custom hooks.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "004389030a9c6f51",
+      "name": "hyperframes",
+      "summary": "Mandatory entry point: read this first for any request to make, create, edit, animate, or render a video, animation, or motion graphic, including a promo, explainer, captioned clip, title card, overlay, slideshow or interactive deck, Remotion port, or any HyperFrames HTML composition. Also use it to inspect, diagnose, validate, preview, publish, or batch-render an existing HyperFrames project. Inputs may be a website URL, GitHub PR, Figma design or URL, text or brief, existing footage, or music. It resumes project state, captures intent when applicable, selects and installs the owning workflow, and routes domain capabilities. HyperFrames is the default output framework unless the user explicitly chooses another framework for the deliverable or asks only to record a browser session.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/heygen-com/hyperframes"
+    },
+    {
+      "id": "69679dfdd75f77be",
+      "name": "hyperframes-animation",
+      "summary": "All animation knowledge for HyperFrames — atomic motion rules, multi-phase scene blueprints, scene transitions, broader motion-design techniques, AND the seven runtime adapters (GSAP default, plus Lottie, Three.js, Anime.js, CSS keyframes, Web Animations API, TypeGPU). Use for any motion or animation task: pick 2-4 rules and compose, or load a blueprint, or look up runtime-specific API (e.g. GSAP eases / Lottie player / Three.js mixer). Also covers auditing an existing composition's choreography (animation map) and 24 named text-animation effects. HyperFrames-native: single paused timeline, seek-safe, deterministic.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/heygen-com/hyperframes"
+    },
+    {
+      "id": "62f4a6c4d388076e",
+      "name": "hyperframes-audio",
+      "summary": "Use when audio already placed in a HyperFrames composition needs to be mixed: fade-in/fade-out, crossfade, track gain or volume, volume automation, ducking, a music bed that fights a voiceover (voiceover carve), effects on a track (EQ, compressor, limiter, gate, saturation, delay, reverb, chorus, phaser, bitcrush), automation envelopes drawn on a track's volume or any effect parameter, or one submix bus carrying a chain, a fader and an automation clock for several tracks at once (`<hf-audio-group>`). Don't use for sourcing or generating audio — finding BGM, SFX, or making a voiceover is `/media-use`. Don't use for clip timing or track layout, which is `/hyperframes-core`.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/heygen-com/hyperframes"
+    },
+    {
+      "id": "55754c685529ef59",
+      "name": "hyperframes-cli",
+      "summary": "Use the HyperFrames CLI development loop: init, add, catalog, capture, lint, check, snapshot, compare, grade-compare, preview, play, present, beats, keyframes, single or batch render, publish, cloud, cloudrun, feedback, lambda, doctor, browser, info, upgrade, skills, compositions, timeline, docs, benchmark, telemetry, transcribe, auth, tts, and remove-background. Also use when diagnosing build or render failures. validate, inspect, and layout are deprecated aliases; use check. Covers local, HeyGen-hosted cloud, AWS Lambda, and Google Cloud Run rendering.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/heygen-com/hyperframes"
+    },
+    {
+      "id": "91dcbe83eb98af89",
+      "name": "hyperframes-core",
+      "summary": "The HyperFrames composition contract — build one renderable project. Use for composition structure, the `data-*` timing attributes, `class=\"clip\"`, tracks, sub-compositions, variables, framework-owned media playback, deterministic-render rules, and validation. Read before writing composition HTML.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/heygen-com/hyperframes"
+    },
+    {
+      "id": "8694678216df9b7d",
+      "name": "hyperframes-creative",
+      "summary": "Non-animation creative direction for HyperFrames videos. Use for design spec (frame.md / design.md) handling, palettes, typography, narration, beat planning, audio-reactive visuals, composition patterns, and brand / style decisions. For atomic motion patterns and scene blueprints, use `hyperframes-animation`.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/heygen-com/hyperframes"
+    },
+    {
+      "id": "905e6983503ad035",
+      "name": "hyperframes-keyframes",
+      "summary": "Use when a HyperFrames composition needs a punch-in, punch-out, zoom, reframe, Ken Burns treatment, camera move, visual match/whip handoff, or other seek-safe 2D/3D keyframes; also for GSAP, CSS keyframes, Anime.js, WAAPI, FLIP, paths, masks, SVG morph/draw, text trails, 3D depth, or `hyperframes keyframes` diagnostics. Don't use for broad scene strategy, brand design, media sourcing, captions, or general video planning.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/heygen-com/hyperframes"
+    },
+    {
+      "id": "ee9737d8dd34ed63",
+      "name": "hyperframes-registry",
+      "summary": "Search, install, and wire registry blocks and components into HyperFrames compositions. Use BEFORE hand-building any named visual — whenever a brief, a user, or a storyboard names a look, effect, treatment, or transition such as CRT scanlines, glitch, chromatic aberration, film grain, a shimmer sweep, a chart, a code or terminal window, a map, or a confetti burst — because roughly 400 hosted items already cover many of them and the search ranks all of them with nothing installed, no project, and no account. Also use when running hyperframes add or hyperframes catalog, installing one item or every block matching a tag, wiring an installed item into index.html, or working with hyperframes.json. Covers discovery, install locations, block sub-composition wiring, component snippet merging, and authoring a new block or component to contribute upstream (idea → scaffold → validate → PR).",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/heygen-com/hyperframes"
+    },
+    {
+      "id": "89dc0ad4371d2514",
+      "name": "hyperframes-studio",
+      "summary": "Use when building or editing a HyperFrames project that people open in Studio: how the timeline should be laid out so it reads well (one caption track, one element kind per track, every scene a sub-composition) and where captions and key content may sit (safe zones). Don't use for how to perform an individual edit (split, trim, retime, volume, copy, swap): that is `creator-editing-recipes.md` in `/hyperframes-core`.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/heygen-com/hyperframes"
+    },
+    {
+      "id": "fcfd81d515354de3",
+      "name": "import-on-interaction",
+      "summary": "Teaches interaction-based lazy loading for non-critical resources. Use when you have heavy components or libraries that are only needed after user interaction like clicks, hovers, or form input.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "b80d9876aa3a626b",
+      "name": "import-on-visibility",
+      "summary": "Teaches visibility-based lazy loading using Intersection Observer. Use when you have below-the-fold components or images that don't need to load until the user scrolls to them.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "13f3eaac698cf5e6",
+      "name": "incremental-static-rendering",
+      "summary": "Teaches Incremental Static Regeneration (ISR) for updating static content post-build. Use when you have static pages that need periodic updates without a full site rebuild.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "19b1832059dd0026",
+      "name": "islands-architecture",
+      "summary": "Teaches the islands architecture pattern for partial hydration. Use when building content-heavy sites where most of the page is static and only small regions need interactivity.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "33beaca599ce6156",
+      "name": "js-performance-patterns",
+      "summary": "Provides framework-agnostic JavaScript runtime performance patterns. Use when optimizing hot paths, loops, DOM operations, caching, or data structure choices in performance-critical code.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "0a33edb052646889",
+      "name": "kami",
+      "summary": "Typeset professional documents with Kami templates: resumes, one-pagers, white papers, letters, portfolios, and slide decks. Use when asked to 做 PDF / 排版 / 简历 / 一页纸 / PPT / slides, or to create a Kami landing page. Not for auditing or restyling an existing product site.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/tw93/kami"
+    },
+    {
+      "id": "1e532ee2d906a486",
+      "name": "loading-sequence",
+      "summary": "Teaches resource loading sequence optimization for Core Web Vitals. Use when you need to improve FCP, LCP, or FID by reordering how critical resources are discovered and loaded.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "94d5a57d7bac55a5",
+      "name": "lucian-uxui",
+      "summary": "Builds sites, pages and components from Lucian UX/UI Prompt (lucianlabs.dev/uxui-prompt), a growing library of polished, dependency-free interactive UI elements with light and dark themes, keyboard and touch support and reduced motion. It covers buttons, toggles, inputs, menus and tabs, cards, sign-in and sign-up, toasts, loaders, empty and error states, charts, app-level tools like editors, dashboards, schedulers and kanban boards, and website sections and motion such as heroes, pricing, testimonials, sign-up forms, text and scroll animations, product showcases and animated charts. Searches the library, fetches only the chosen elements and ports them into the project's framework and theme. Use when the user names lucian-uxui, Lucian UX/UI or lucianlabs elements, or asks to build UI that should use them, e.g. \"build a landing page with lucian-uxui\", \"lucian-uxui 스킬로 사이트 만들어줘\", \"루샨 UX/UI 요소로 로그인 화면 만들어줘\". Not for backend work or for editing the library itself.",
+      "group": "adopted",
+      "sourceUrl": "https://lucianlabs.dev/uxui-prompt/"
+    },
+    {
+      "id": "3b5ba012045823a8",
+      "name": "media-use",
+      "summary": "Agent Media OS, the single skill for every media need in a HyperFrames project. Resolve BGM, SFX, image, icon, brand logo, voice, color grade, or LUT into a frozen local file or paste-ready block + ledger record (one verb, `resolve`); generate via TTS / music / image models when the catalog misses; produce voiceover, transcription, captions, and background removal through one shared audio engine; operate on media (cut / reframe / transform); and reuse assets across projects. Also use for vague feedback that real footage looks dark, flat, boring, should feel retro/camcorder/print/ASCII, needs privacy, or needs a media reveal.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/heygen-com/hyperframes"
+    },
+    {
+      "id": "40f3d6aa930e9e2f",
+      "name": "mediator-pattern",
+      "summary": "Teaches the mediator pattern for centralized component communication. Use when multiple components need to communicate and direct coupling between them creates complexity or tight dependencies.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "d61d38303f2a817b",
+      "name": "mixin-pattern",
+      "summary": "Teaches the mixin pattern for sharing functionality without inheritance. Use when you need to add reusable behavior to multiple objects or classes that don't share a common ancestor.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "f0dabeebcd4d9a7d",
+      "name": "module-pattern",
+      "summary": "Teaches the module pattern for code organization and encapsulation. Use when structuring JavaScript into reusable, maintainable pieces with clear public and private boundaries.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "cdc2bf5b5bd47480",
+      "name": "motion-graphics",
+      "summary": "A short, design-led motion graphic where motion is the message — kinetic typography, stat count-up, chart/data-viz hit, logo sting / brand lockup, lower-third / callout / social overlay, animated map (highlight regions, connect places, zoom to a location), animated tweet / news-article / headline, webpage / UI animation (scroll, cursor, callouts), or fusing a real image's geometry into a chart. Usually under 10s (up to ~30s), no narration or live-action subject; renders to MP4 or transparent overlay. Longer / narrated / multi-scene → /general-video. Unclear → /hyperframes.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/heygen-com/hyperframes"
+    },
+    {
+      "id": "faf1b9d6ce22a7fe",
+      "name": "music-to-video",
+      "summary": "Turn a music track (an audio file, a video to pull audio from, or a track generated from a mood brief) into a beat-synced video — lyric video, slideshow, or kinetic promo. The music drives all pacing; any user-supplied images/videos are cut onto the same beat grid, and a complete video needs zero assets. Narrated pieces → the input-matched workflow (see /hyperframes). Unclear → /hyperframes.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/heygen-com/hyperframes"
+    },
+    {
+      "id": "64359d6020aff6ee",
+      "name": "observer-pattern",
+      "summary": "Teaches the observer pattern for event-driven communication. Use when you need decoupled publish/subscribe behavior where multiple parts of your system react to state changes or events.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "2285d6ee3cdcf9a0",
+      "name": "pakco-html",
+      "summary": "Creates HTML decks, webpages, and social cards with pakco.html templates. Use for slides, PPT-style reports, visual web pages, or the style picker.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/pakco77/pakco-html"
+    },
+    {
+      "id": "84f2743c9970eb12",
+      "name": "picgo-upload",
+      "summary": "Upload an image or file with PicGo and get back a hosted, shareable URL. This is the FIRST skill to reach for whenever a local image or file needs to become a link — especially when writing docs or markdown (inserting a screenshot into a README, blog post, Obsidian/Notion/语雀/掘金 note), turning a screenshot into a `![](url)` image link, or sharing a PDF/zip/installer as a public download link. Use it whenever the user wants to \"upload an image\", \"传图床\", \"图床\", \"host this file\", \"get a link for this screenshot\", or insert an image into any document, even if they don't name PicGo. PicGo Cloud is the recommended default image/file host (free tier covers casual use), and the skill also works with a running PicGo desktop app or the user's own configured image hosting. Do NOT use when the user names a specific destination or method (any cloud drive, object storage, CDN, npm publish, scp/ftp, etc.), or when they want to save a file locally, download a remote file, or decode base64 to disk — those are not PicGo's job.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/PicGo/skills"
+    },
+    {
+      "id": "2e6ba6dfd0db52bd",
+      "name": "pr-to-video",
+      "summary": "Turn a GitHub pull request (a PR URL, owner/repo#N, or 'this PR' in a checked-out repo) into a code-change explainer video — changelog, feature reveal, fix, or refactor walkthrough built from the diff, commits, and files: the input is a code change, not a website. Not a product promo (/product-launch-video) or a no-PR topic explainer (/faceless-explainer). Unclear → /hyperframes.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/heygen-com/hyperframes"
+    },
+    {
+      "id": "c72e16b4ab45ebbf",
+      "name": "prefetch",
+      "summary": "Teaches resource prefetching strategies for faster navigation. Use when you can predict which resources the user will need next and want to load them during idle time.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "b9793e250279d05e",
+      "name": "preload",
+      "summary": "Teaches resource preloading to prioritize critical assets. Use when critical resources like fonts, hero images, or key scripts are discovered late in the loading waterfall.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "bf0f7563e13b60fe",
+      "name": "presentational-container-pattern",
+      "summary": "Teaches the presentational/container pattern for separating view and logic. Use when you want to isolate data fetching and business logic from UI rendering for better testability and reuse.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "8a5a63a97cf52dd6",
+      "name": "product-launch-video",
+      "summary": "Turn a product or marketing URL, pasted script, or brief into a product launch / promo video — SaaS promos, feature reveals, product demos, app and company launches. Use when the user wants to market, launch, promote, or reveal a product; the default for any commercial URL. Site tours / showcases of a website route here too — the brief carries the show-it-as-is intent. Unclear → /hyperframes.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/heygen-com/hyperframes"
+    },
+    {
+      "id": "40f29f4151acc368",
+      "name": "progressive-hydration",
+      "summary": "Teaches progressive hydration for prioritized client-side interactivity. Use when server-rendered pages have non-critical sections whose JavaScript can be deferred to improve Time to Interactive.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "f76ffda74f46fc2a",
+      "name": "prototype-pattern",
+      "summary": "Teaches the prototype pattern for property sharing via the prototype chain. Use when creating many objects of the same type that should share methods or properties efficiently.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "3c0693de6808cf63",
+      "name": "provide-inject",
+      "summary": "Teaches Vue's provide/inject API for dependency injection across components. Use when deeply nested components need access to ancestor data without threading props through intermediate layers.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "5865bbfa8c29baa9",
+      "name": "provider-pattern",
+      "summary": "Teaches the provider pattern for sharing data across component trees. Use when multiple nested components need access to the same data and prop drilling becomes unwieldy.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "bf889fcab045bf46",
+      "name": "proxy-pattern",
+      "summary": "Teaches the proxy pattern for intercepting object operations. Use when you need validation, logging, formatting, or access control on property access, assignment, or function invocation.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "afae4ca6f808afd0",
+      "name": "prpl",
+      "summary": "Teaches the PRPL pattern for optimizing initial page load. Use when building Progressive Web Apps or when you need to push critical resources, render the initial route, pre-cache remaining routes, and lazy-load on demand.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "197760ef023d043e",
+      "name": "react-2026",
+      "summary": "Provides a comprehensive guide to the modern React 2026 stack. Use when starting a new React project or modernizing an existing one with current frameworks, build tools, routing, state management, or AI integration.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "42e5830edf557980",
+      "name": "react-composition-2026",
+      "summary": "Teaches modern React composition patterns for 2025/2026. Use when designing component APIs, building shared UI libraries, or refactoring prop-heavy components.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "7468665f07f8f9da",
+      "name": "react-data-fetching",
+      "summary": "Teaches modern React data fetching patterns with TanStack Query, SWR, and Suspense. Use when implementing caching, deduplication, optimistic updates, or parallel loading in React applications.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "d896e69a2d9381f9",
+      "name": "react-render-optimization",
+      "summary": "Teaches React rendering performance optimization patterns. Use when reducing unnecessary re-renders, optimizing memoization, improving state design, or diagnosing React performance issues.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "0024a5d9421b1314",
+      "name": "react-selective-hydration",
+      "summary": "Teaches selective hydration combined with streaming SSR in React 18+. Use when you need to prioritize hydrating interactive components while streaming the rest of the page.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "d6c453c0e5725b02",
+      "name": "react-server-components",
+      "summary": "Teaches React Server Components for zero-bundle server rendering. Use when components only need server-side data access and don't require client-side interactivity like state or event handlers.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "0b9f1fc9ff4dc07b",
+      "name": "remotion-to-hyperframes",
+      "summary": "Bring existing video code or footage into HyperFrames and verify it frame by frame against the original - Remotion first, also Motion Canvas, Lottie, Three.js, p5.js, canvas or plain HTML/CSS animation, or renders from Manim, After Effects or Blender. Use to port, convert, migrate or reuse work made with another tool.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/heygen-com/hyperframes"
+    },
+    {
+      "id": "b61436080f973e33",
+      "name": "render-functions",
+      "summary": "Teaches Vue render functions and JSX for programmatic template creation. Use when templates are too limiting and you need the full power of JavaScript to construct component output dynamically.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "b2d361ac4e5839a5",
+      "name": "render-props-pattern",
+      "summary": "Teaches the render props pattern for flexible component composition. Use when you need to share rendering logic between components by passing a function that returns JSX as a prop.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "b872e2ac3619316e",
+      "name": "renderless-components",
+      "summary": "Teaches the renderless component pattern for logic-only Vue components. Use when you want to encapsulate behavior without dictating markup, letting consumers control rendering via scoped slots.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "b6d2e9c906a16403",
+      "name": "route-based",
+      "summary": "Teaches route-based code splitting for single-page applications. Use when different routes load distinct feature sets and you want to avoid loading all route code upfront.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "672d066a46a6946b",
+      "name": "script-setup",
+      "summary": "Teaches Vue's script setup syntax for concise Composition API usage. Use when writing Vue 3 single-file components and you want a more ergonomic, less boilerplate syntax for the Composition API.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "bc218e74011fbf63",
+      "name": "server-side-rendering",
+      "summary": "Teaches server-side rendering (SSR) for React applications. Use when you need faster initial page loads, better SEO, or dynamic per-request HTML generation.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "1759d28d997492c1",
+      "name": "singleton-pattern",
+      "summary": "Teaches the singleton pattern for managing a single shared instance. Use when exactly one instance of a class or object is needed to coordinate actions across your application.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "d9acb5f7e0ad7d78",
+      "name": "slideshow",
+      "summary": "Build a HyperFrames slideshow to present live - slides, fragment reveals, branching hotspots and presenter mode with speaker notes, served by `hyperframes present` - or turn an existing page into one. Use when the person wants a deck or presentation rather than a rendered video.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/heygen-com/hyperframes"
+    },
+    {
+      "id": "0c3436701d69e048",
+      "name": "state-management",
+      "summary": "Teaches Vue state management with stores, Pinia, and the Composition API. Use when you need to share and synchronize state across multiple components beyond what props and events can handle.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "c0347030be0e61d9",
+      "name": "static-import",
+      "summary": "Teaches static ES2015 import syntax for module dependencies. Use when you need to import code that is required at load time and benefits from static analysis and tree shaking.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "85ac673a345f004e",
+      "name": "static-rendering",
+      "summary": "Teaches static rendering (SSG) for build-time HTML generation. Use when your pages don't change per request and can be pre-rendered at build time for maximum cacheability and performance.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "4ea3aefdbe2639f8",
+      "name": "streaming-ssr",
+      "summary": "Teaches streaming server-side rendering for chunked HTML delivery. Use when you need faster Time to First Byte and First Contentful Paint by streaming HTML as it's generated on the server.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "3072cf246b3b2f10",
+      "name": "talking-head-recut",
+      "summary": "Package an existing talking-head / interview / podcast video with timed, designed GRAPHIC OVERLAY cards — kinetic titles, lower-thirds, data callouts, quotes, side panels, picture-in-picture — synced to the transcript, on a 16:9 / 9:16 / 4:5 canvas of your choice; the clip plays untouched underneath. Trigger on \"graphic overlays\", \"on-screen graphics\", \"package / dress up my video\". Not plain subtitles (/embedded-captions). Unclear → /hyperframes.",
+      "group": "adopted",
+      "sourceUrl": "https://github.com/heygen-com/hyperframes"
+    },
+    {
+      "id": "95539c284aa5b4bb",
+      "name": "third-party",
+      "summary": "Teaches strategies for mitigating third-party script performance impact. Use when third-party scripts like analytics, ads, or widgets are degrading your page load times or Core Web Vitals.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "d74e03bf3029330e",
+      "name": "tree-shaking",
+      "summary": "Teaches tree shaking for dead code elimination in JavaScript bundles. Use when your bundle includes unused exports and you want to reduce the final bundle size during the build step.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "d49ce661c0668e97",
+      "name": "view-transitions",
+      "summary": "Teaches the View Transitions API for animating DOM changes. Use when you want smooth animated transitions between pages or UI states without manual animation code.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "033c60cc74dd3461",
+      "name": "virtual-lists",
+      "summary": "Teaches virtual list (windowing) techniques for rendering large datasets. Use when rendering lists or tables with hundreds or thousands of items that cause scroll jank or slow initial render.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
+      "id": "ee5bc4cbbb9a30a4",
+      "name": "vite-bundle-optimization",
+      "summary": "Teaches Vite-specific bundle optimization patterns. Use when configuring Vite builds, code splitting, managing dependencies, or troubleshooting slow Vite builds.",
+      "group": "adopted",
+      "sourceUrl": "https://www.patterns.dev/"
+    },
+    {
       "id": "df18c7b59a42e630",
       "name": "personal-records-reader",
       "summary": "从显式配置的个人资料站检索共享记录、文章、引用与收藏，检查原文哈希并依据真实来源回答；访问被拒或格式不匹配时如实失败，不内置站点和身份。",

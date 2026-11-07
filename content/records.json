@@ -2,6 +2,127 @@
   "version": 2,
   "records": [
     {
+      "id": "21c36679530fa572",
+      "kind": "judgment",
+      "title": "数字分身应该记住什么",
+      "date": "2026-10-28",
+      "recordedAt": "2026-10-28",
+      "text": "AI 时代，不必把通用知识再存一遍。数字分身更该保存一个人的经历、判断、选择和状态变化。",
+      "context": "关于数字分身应该记住什么的思考",
+      "visibility": "shared",
+      "articleId": "2b52d63f7c92ddca",
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "article",
+          "label": "相关完整思考",
+          "articleId": "2b52d63f7c92ddca"
+        },
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-10-28，公开摘要。"
+        }
+      ],
+      "basis": "关于数字分身应该记住什么的思考",
+      "alternatives": [],
+      "outcome": null
+    },
+    {
+      "id": "b16209613c8a1733",
+      "kind": "thought",
+      "title": "记录不必每次都写成长文章",
+      "date": "2026-10-28",
+      "recordedAt": "2026-10-28",
+      "text": "记录不一定是文章。一次判断、一段即时想法，甚至一句牢骚，都能留下当时真实的自己。",
+      "context": "重新设计个人记录的入口",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-10-28，公开摘要。"
+        }
+      ]
+    },
+    {
+      "id": "dd643c3002e85135",
+      "kind": "project",
+      "title": "个人数字分身：记忆、交流与协助行动",
+      "date": null,
+      "recordedAt": "2026-10-29",
+      "text": "持续记录经历、项目、判断与变化，并逐步用于对外交流和协助行动。",
+      "context": "2026-10-29 本次对话确定三个方向及首阶段范围。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-10-29，公开摘要。"
+        }
+      ],
+      "label": "个人记忆与数字分身",
+      "role": "项目所有者与需求提出者",
+      "tags": [
+        "个人记忆",
+        "数字分身"
+      ],
+      "status": "ongoing",
+      "goal": "建立有时间、来源和关联的个人记录，文章作为独立博客保留。",
+      "outcomes": []
+    },
+    {
+      "id": "8a7aa90ed8ebf28a",
+      "kind": "judgment",
+      "title": "数字分身同时覆盖三个方向，先建立个人记忆",
+      "date": "2026-10-29",
+      "recordedAt": "2026-10-29",
+      "text": "数字分身同时覆盖个人记忆、对外交流和协助行动。先建立经历、项目、判断和变化的记录模型，文章作为独立栏目保留。",
+      "context": "2026-10-29，数字分身产品范围与首阶段顺序的讨论；正文为本人明确回复的归纳。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": "dd643c3002e85135",
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-10-29，公开摘要。"
+        }
+      ],
+      "basis": "本人明确要求三个方向都纳入改造范围，并指定先建立经历、项目、判断和变化的记录模型，文章独立保留；当时未说明其他取舍理由。",
+      "alternatives": [],
+      "outcome": null
+    },
+    {
+      "id": "0ece3162950100f7",
+      "kind": "change",
+      "title": "数字分身从文章关联扩展到独立记录",
+      "date": "2026-10-29",
+      "recordedAt": "2026-10-29",
+      "text": "明确经历、项目、判断和变化的独立记录模型，博客单独保留。",
+      "context": "2026-10-29 本次对话中的产品定位与记录组织方式调整。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": "dd643c3002e85135",
+      "relatedIds": [
+        "8a7aa90ed8ebf28a"
+      ],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-10-29，公开摘要。"
+        }
+      ],
+      "subjectId": "dd643c3002e85135",
+      "before": "履历与项目主要放在个人资料中，判断和想法通过短记录及文章关联呈现。",
+      "after": "经历、项目、判断和变化各有独立记录；文章保留为独立博客，记录可以选择关联文章。",
+      "reason": "本人要求三个方向都要做，先建立个人记忆的记录模型。"
+    },
+    {
       "id": "43be17a9c60d825f",
       "kind": "change",
       "title": "Joyally Design 移除景区专名，保留湖色与景观要求",
