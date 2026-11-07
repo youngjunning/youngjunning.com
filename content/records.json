@@ -165,10 +165,10 @@
     {
       "id": "b29ac8375e4106fd",
       "kind": "judgment",
-      "title": "better-imagegen 的 GPT Image 2.6 选型排除 Flare",
+      "title": "better-imagegen 仅使用 GPT Image 2.6",
       "date": "2026-11-07",
       "recordedAt": "2026-11-07",
-      "text": "在 better-imagegen 的默认模型选择上，我要求使用 APIyi GPT Image 2.6，并明确排除 Flare，因为我认为它的画质不符合这次需求。",
+      "text": "在 better-imagegen 的模型选择上，我要求仅使用 APIyi GPT Image 2.6，完全删除模型级联与备用模型路径。我此前已因画质不符合这次需求而明确排除 Flare；本次进一步明确只保留 GPT Image 2.6。",
       "context": "这是针对 better-imagegen 此次模型升级的选择要求，反映画质偏好，不是对所有生图场景的通用选型规则，也不是经过独立测评的模型质量排名。",
       "visibility": "shared",
       "articleId": null,
@@ -177,7 +177,7 @@
       "sources": [
         {
           "kind": "statement",
-          "label": "本人陈述，2026-11-07，公开摘要：要求 better-imagegen 使用 APIyi GPT Image 2.6，并因画质要求排除 Flare。"
+          "label": "本人陈述及补充，2026-11-07，公开摘要：要求 better-imagegen 使用 APIyi GPT Image 2.6，并因画质要求排除 Flare；进一步要求只使用 GPT Image 2.6，完全删除模型级联。"
         }
       ],
       "basis": "本人在此次模型选择中明确表达了对 Flare 画质的不满；未提供独立对比测量或进一步理由。",
