@@ -2,6 +2,25 @@
   "version": 1,
   "favorites": [
     {
+      "id": "d89f4c7a120e6b53",
+      "kind": "project",
+      "title": "Plasma UI：React 液态玻璃组件库",
+      "url": "https://github.com/CruxGarden/plasma-ui",
+      "summary": "CruxGarden 开源的 React 液态玻璃组件库，仓库使用 TypeScript，采用 MIT 许可证，并提供在线演示入口。",
+      "reason": "本人明确要求收藏，留作界面组件资料；尚未核验实际运行效果或项目适配情况。",
+      "tags": ["React", "UI 组件", "液态玻璃", "TypeScript"],
+      "savedAt": "2026-11-07T16:53+08:00",
+      "selection": "explicit",
+      "visibility": "shared",
+      "priority": "lead",
+      "adoption": "unknown",
+      "usages": [],
+      "sources": [
+        { "label": "官方 GitHub 仓库，2026-11-07 核验：https://github.com/CruxGarden/plasma-ui" },
+        { "label": "本人明确收藏，2026-11-07，公开摘要。" }
+      ]
+    },
+    {
       "id": "7de12a9cb68f4305",
       "kind": "project",
       "title": "Impeccable：面向编码 Agent 的设计指导",
