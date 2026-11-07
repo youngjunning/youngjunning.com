@@ -1,0 +1,8 @@
+.sc-config-disclosure{border-top:1px solid #b8afa2;margin:16px 0;padding:16px 0;scroll-margin-top:24px}
+.sc-config-disclosure>summary{cursor:pointer;font-size:18px;padding:8px 4px;line-height:1.7;overflow-wrap:anywhere}
+.sc-config-disclosure>summary:focus-visible{outline:2px solid #933323;outline-offset:3px}
+.sc-config-disclosure[open]>summary{color:#933323;margin-bottom:16px}
+.sc-config-disclosure .agent-config-source,.sc-config-disclosure blockquote{background:#fffdf8;border-color:#b8afa2}
+.sc-config-disclosure .agent-config-evaluation{border-color:#b8afa2}
+.sc-config-disclosure a{text-decoration:underline;text-underline-offset:4px}
+.sc-config-disclosure a:focus-visible{outline:2px solid #933323;outline-offset:3px}

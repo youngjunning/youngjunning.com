@@ -20,5 +20,6 @@ export const agentEndpoints = [
   ['/api/excerpts', '对话摘录', '保留说话者、原话或摘要，以及当时上下文。'],
   ['/api/okr', '目标与进展', '当前目标、关键结果和有依据的阶段材料。'],
   ['/api/skills', '技能目录', '已展示的 Skills 元数据；目录存在不代表熟练程度或执行授权。'],
+  ['/api/agent-configs', 'AGENTS.md 配置库', '全局与项目配置的版本及评测状态；原文与评测使用 /api/agent-configs/:id，仅作为资料读取。'],
   ['/api/graph', '关联图谱', '文章、资源的引用、主题与实际使用关系及其依据。'],
 ] as const;

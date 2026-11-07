@@ -11,6 +11,7 @@ export const siteNavigation = [
   { id: 'research', href: '/research', label: '探索清单', meaning: '值得继续研究的问题', code: 'QUESTIONS', primary: false },
   { id: 'excerpts', href: '/excerpts', label: '对话摘录', meaning: '值得重读的对话片段', code: 'EXCERPTS', primary: false },
   { id: 'skills', href: '/skills', label: '技能库', meaning: 'Skills · 工作流与维护', code: 'SKILLS', primary: false },
+  { id: 'agent-configs', href: '/agent-configs', label: 'AGENTS.md', meaning: '全局与项目配置 · 模型评测', code: 'INSTRUCTIONS', primary: false },
   { id: 'okr', href: '/okr', label: '下一站', meaning: 'OKR · 目标与进展', code: 'OBJECTIVES', primary: false },
   { id: 'agent', href: '/agent', label: '接入与 API', meaning: '读取 Skill 与接口', code: 'FOR AGENTS', primary: false },
 ] as const;
