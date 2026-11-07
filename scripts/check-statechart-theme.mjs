@@ -13,7 +13,7 @@ for (const record of records) {
   const detail = await fetch(origin + '/api/records/' + record.id).then(response => response.json());
   assert.deepEqual(detail.record, record, 'record detail and collection snapshots agree');
 }
-const routes = ['/', '/blog', '/records', '/favorites', '/topics', '/graph', '/chat', '/skills', '/skills/matt', '/okr', '/research', '/excerpts', '/agent', ...(catalog.documents[0] ? [catalog.documents[0].url] : []), ...(records[0] ? [`/records/${records[0].id}`] : [])];
+const routes = ['/', '/blog', '/records', '/favorites', '/topics', '/graph', '/chat', '/skills', '/skills/matt', '/okr', '/agent', ...(catalog.documents[0] ? [catalog.documents[0].url] : []), ...(records[0] ? [`/records/${records[0].id}`] : [])];
 for (const route of routes) {
   for (const theme of ['classic', 'statechart']) {
     const response = await fetch(origin + route, { headers: { Cookie: `zisheng-site-theme=${theme}` } });

@@ -3,28 +3,28 @@
   "name": "junning",
   "directory": "silicon-junning",
   "archiveUrl": "/skills/silicon-junning.zip",
-  "sha256": "3b982d356edc2390b4c317694cb17667fdd558dbeef9a244282232a277ea79d1",
-  "bytes": 12007,
+  "sha256": "5e34c7f820b77f916ac94663a748cb6c533f05e55c89711825d0bc2e15f1f2e5",
+  "bytes": 12021,
   "files": [
     {
       "path": "SKILL.md",
-      "sha256": "c439e829fe3d3d168a81e6a06400960b3fcbfcd5c29ca533a3f17a33e6eaf50b"
+      "sha256": "1bc9414f530be79352898b147914a83f2c7816ab6498e4fe5c8993ccfe086fad"
     },
     {
       "path": "agents/openai.yaml",
-      "sha256": "71fcab8fcd294f7aa3759971760388d436c3b077f4223d1d8ba5eebb7ce259f8"
+      "sha256": "7d45a7c8bd466023a5b6a672a30e6ba2267a59381ba73f8a4e75a11be3addb62"
     },
     {
       "path": "scripts/read.mjs",
-      "sha256": "da120cb991320a11650ba65c4ee19f803bfcffde2a0379a0450539bebd6b3648"
+      "sha256": "2132927d5af5eb30a89ca3ea8995116b3534ea5b13930333a4af440067f5fa3b"
     },
     {
       "path": "scripts/read-core.mjs",
-      "sha256": "ccc0d8aa18ebe254205464b27525af2cd8e3bc170232f86ddd3e94a6154cd8f2"
+      "sha256": "790195a11e87289a1cefe512ceca2d27f07a2dbcbcac9579ddf8e7fe43848226"
     },
     {
       "path": "references/api.md",
-      "sha256": "70fb1efc303bbfd06a8a8ba6e96279192cb3b856668ddbb49b3573f999c4400b"
+      "sha256": "a84f57e65cf135d61b60f7ba28777092d70e1932de9383fe7d9ed028c533c3a7"
     }
   ]
 }

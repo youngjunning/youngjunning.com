@@ -8,18 +8,12 @@ import { publicArticleUrlMap } from '../lib/article-url-map.mjs';
 
 const note = { id: '1111111111111111', kind: 'note', type: 'concept', title: '边界', url: null, summary: '概念解释。', reason: '回查。', subjects: ['engineering'], tags: [], attribution: 'ai', savedAt: '2026-11-07', selection: 'discovered', visibility: 'shared', sources: [{ label: '公开资料整理。' }], note: { body: '解释概念的适用边界。', date: null, recordedAt: '2026-11-07' } };
 
-test('public curation rejects private entries before projection, even with otherwise valid metadata', () => {
+test('public glossary rejects missing article references', () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'public-curation-'));
   try {
     fs.mkdirSync(path.join(root, 'content/posts'), { recursive: true });
     fs.writeFileSync(path.join(root, 'content/records.json'), JSON.stringify({version:2,records:[]}));
     fs.writeFileSync(path.join(root, 'content/favorites.json'), JSON.stringify({version:2,favorites:[note]}));
-    fs.writeFileSync(path.join(root, 'content/research.json'), JSON.stringify({version:1,items:[{visibility:'private'}]}));
-    assert.throws(() => readPublicContent(root), /private research/);
-    fs.writeFileSync(path.join(root, 'content/research.json'), JSON.stringify({version:1,items:[]}));
-    fs.writeFileSync(path.join(root, 'content/excerpts.json'), JSON.stringify({version:1,items:[{visibility:'private'}]}));
-    assert.throws(() => readPublicContent(root), /private excerpts/);
-    fs.writeFileSync(path.join(root, 'content/excerpts.json'), JSON.stringify({version:1,items:[]}));
     fs.writeFileSync(path.join(root, 'content/article-glossary.json'), JSON.stringify({version:1,entries:[{term:'边界',favoriteId:note.id,articleId:'2222222222222222'}]}));
     assert.throws(() => readPublicContent(root), /article or term is missing/);
   } finally { fs.rmSync(root, {recursive:true,force:true}); }

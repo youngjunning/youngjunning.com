@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { run as read } from './read-core.mjs';
 
 // Product configuration; the vendored core is byte-identical to personal-records-reader.
-const target = { defaultBase: 'https://youngjunning.com', baseEnv: 'JUNNING_BASE_URL', articlePath: '/blog', accessMessage: '需要站点访问权限，请在已登录浏览器中检查' };
+const target = { disabledCollections: ['research', 'excerpts'], defaultBase: 'https://youngjunning.com', baseEnv: 'JUNNING_BASE_URL', articlePath: '/blog', accessMessage: '需要站点访问权限，请在已登录浏览器中检查' };
 export function run(args, options = {}) { return read(args, { ...options, ...target }); }
 
 if (process.argv[1] && existsSync(process.argv[1]) && realpathSync(process.argv[1]) === realpathSync(fileURLToPath(import.meta.url))) {

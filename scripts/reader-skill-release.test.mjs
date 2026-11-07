@@ -33,7 +33,8 @@ test('public reader release matches its five whitelisted source files and runs a
   assert.deepEqual(files.sort(), release.files.map(file => 'silicon-junning/' + file.path).sort());
   const script = join(dir, 'silicon-junning/scripts/read.mjs');
   const help = JSON.parse(execFileSync(process.execPath, [script, '--help'], { cwd: dir, encoding: 'utf8' }));
-  assert.equal(help.commands.length, 13);
+  assert.equal(help.commands.length, 11);
+  assert.ok(!help.commands.some(command => /^(research|excerpts)\b/.test(command)));
   assert.ok(help.commands.includes('activity [QUERY]'));
   const failed = spawnSync(process.execPath, [script, 'favorite', 'invalid'], { cwd: dir, encoding: 'utf8' });
   assert.equal(failed.status, 1);

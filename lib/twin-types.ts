@@ -1,7 +1,7 @@
 export type ConversationMessage = { role: 'user' | 'assistant'; content: string };
 export type ConversationSource = {
   id: string;
-  kind: 'record' | 'blog' | 'code' | 'resource' | 'note' | 'research' | 'excerpt';
+  kind: 'record' | 'blog' | 'code' | 'resource' | 'note';
   attribution?: 'user' | 'source' | 'ai' | 'mixed';
   contentType?: string;
   title: string;

@@ -37,7 +37,7 @@
 
 资源可包含 `usages`，每项为 `{ project, projectUrl, stage, purpose, evidence }`。`stage` 只接受 trial、adopted、retired。每项记录具体项目的状态和依据；同一资源可在不同项目处于不同阶段。没有证据时不填写，不再给所有资料和笔记显示“选用未核实”。笔记不承载资源采用关系。
 
-旧的全局 priority/adoption 已退役；待解问题使用探索清单，回看偏好不冒充内容成熟度。图谱 `uses` 只来自使用证据，`tagged` 来自主题或标签，`related` 来自显式内容关系；它们均不自动证明因果。
+旧的全局 priority/adoption 已退役；项目待解问题留所属仓库，回看偏好不冒充内容成熟度。图谱 `uses` 只来自使用证据，`tagged` 来自主题或标签，`related` 来自显式内容关系；它们均不自动证明因果。
 
 ## 文章术语关系
 

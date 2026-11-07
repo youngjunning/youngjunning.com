@@ -29,3 +29,5 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+- 2026-11-08 起撤下探索清单与对话摘录，不再生成或写入 research/excerpt 栏目；旧数据仅保存在 `content/archive/retired-curation-2026-11-08/`，不进入页面、接口、首页统计或对话检索。

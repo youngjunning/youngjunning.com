@@ -19,7 +19,7 @@ export default function PaperCollection({ items, label, initialQuery = '', initi
   const [indexError, setIndexError] = useState(false);
   useEffect(() => {
     const url = new URL(location.href);
-    const kindKey = url.pathname === '/blog' ? 'topic' : url.pathname === '/research' ? 'status' : url.pathname === '/favorites' ? 'type' : 'kind';
+    const kindKey = url.pathname === '/blog' ? 'topic' : url.pathname === '/favorites' ? 'type' : 'kind';
     for (const [key, value] of [['q', query], [kindKey, kind === 'all' ? '' : kind], ['tag', tag], ['subject', subject === 'all' ? '' : subject], ['used', usedOnly ? '1' : '']]) {
       if (value) url.searchParams.set(key, value); else url.searchParams.delete(key);
     }

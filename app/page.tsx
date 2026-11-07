@@ -21,7 +21,6 @@ import { getConversationKnowledge } from '@/lib/twin-server';
 import './home-final.css';
 import { readingMinutes } from '@/lib/article-reading.mjs';
 import { getFavoriteStore } from '@/lib/favorites';
-import { getResearch, getExcerpts } from '@/lib/curation';
 import { buildSiteActivity } from '@/lib/site-activity.mjs';
 import SiteActivity from '@/components/lucian/site-activity';
 
@@ -35,7 +34,7 @@ export default async function Home() {
   const documents = new Map(catalog.documents.map((doc) => [doc.id, doc]));
   const featured = persona.featuredArticleIds.length ? persona.featuredArticleIds.flatMap(id => documents.has(id) ? [documents.get(id)!] : []) : catalog.documents.slice(0, 3);
   const referenceCount = getGraph().edges.filter((edge) => edge.type === 'references').length;
-  const activity = buildSiteActivity({ documents: catalog.documents, records, favorites: getFavoriteStore().favorites, research: getResearch(), excerpts: getExcerpts() });
+  const activity = buildSiteActivity({ documents: catalog.documents, records, favorites: getFavoriteStore().favorites });
   return <Shell active="home">
     <IdentityHero articleCount={catalog.documents.length} recordCount={records.length} projectCount={projects.length} />
 

@@ -87,9 +87,10 @@ function snippet(value, query, chars = 320) {
   return (start ? '…' : '') + text.slice(start, start + chars) + (start + chars < text.length ? '…' : '');
 }
 
-export async function run(args, { fetchImpl = globalThis.fetch, env = process.env, baseEnv = 'RECORDS_BASE_URL', defaultBase, articlePath = '/blog', accessMessage = '需要站点访问权限，请在已登录浏览器中检查' } = {}) {
+export async function run(args, { fetchImpl = globalThis.fetch, env = process.env, baseEnv = 'RECORDS_BASE_URL', defaultBase, articlePath = '/blog', accessMessage = '需要站点访问权限，请在已登录浏览器中检查', disabledCollections = [] } = {}) {
   const options = parseArgs(args);
-  if (options.help || !options.command) return { commands: ['persona', 'search QUERY', 'record ID', 'article ID', 'graph ID|favorite:ID', 'favorites [QUERY]', 'favorite ID', 'research [QUERY]', 'excerpts [QUERY]', 'okr [QUERY]', 'skills [QUERY]', 'subjects [QUERY]', 'activity [QUERY]'], options: ['--base-url URL', '--limit 1..20', '--offset N', '--chars 1..40000', '--type tool|reference|concept|method', '--subject ID', '--used'] };
+  if (options.help || !options.command) return { commands: ['persona', 'search QUERY', 'record ID', 'article ID', 'graph ID|favorite:ID', 'favorites [QUERY]', 'favorite ID', 'research [QUERY]', 'excerpts [QUERY]', 'okr [QUERY]', 'skills [QUERY]', 'subjects [QUERY]', 'activity [QUERY]'].filter(command => !disabledCollections.includes(command.split(' ')[0])), options: ['--base-url URL', '--limit 1..20', '--offset N', '--chars 1..40000', '--type tool|reference|concept|method', '--subject ID', '--used'] };
+  if (disabledCollections.includes(options.command)) throw new Error('本站已撤下该栏目：' + options.command);
   const base = baseUrl(options['base-url'] || env[baseEnv] || defaultBase);
   const urlFor = path => new URL(path, base).href;
   const limit = integer(options.limit, 6, 1, 20, '--limit');
@@ -206,11 +207,11 @@ export async function run(args, { fetchImpl = globalThis.fetch, env = process.en
     }
     case 'search': {
       if (!query) throw new Error('search 需要提供关键词');
-      const [records, catalog, search, favorites, research, excerpts, okr, skills] = await Promise.all([getRecords(), getCatalog(), get('/api/search'), getFavorites(), getResearch(), getExcerpts(), getOkr(), getSkills()]);
+      const [records, catalog, search, favorites, research, excerpts, okr, skills] = await Promise.all([getRecords(), getCatalog(), get('/api/search'), getFavorites(), disabledCollections.includes('research') ? null : getResearch(), disabledCollections.includes('excerpts') ? null : getExcerpts(), getOkr(), getSkills()]);
       if (!Array.isArray(search)) throw new Error('全文索引接口格式不匹配');
       const textById = new Map(search.map(row => [row.id, row.text]));
       const documents = catalog.documents.filter(doc => ID.test(doc.id)).map(doc => ({ ...doc, text: textById.get(doc.id) || '' }));
-      return { query, snapshot: snapshot(catalog), records: rank(records, query, [['title', 8], ['text', 3], ['context', 1]], limit).map(record => ({ id: record.id, kind: record.kind, title: record.title, date: record.date, recordedAt: record.recordedAt, snippet: snippet(record.text, query), url: urlFor(`/records/${record.id}`), relatedIds: record.relatedIds, articleId: record.articleId })), articles: rank(documents, query, [['title', 8], ['tags', 5], ['summary', 3], ['text', 1]], limit).map(doc => ({ ...articleLink(doc), snippet: snippet(doc.text || doc.summary, query) })), favorites: pick(favoriteScope(favorites.favorites), favoriteFields).map(favoriteLink), research: pick(research.items, researchFields).map(researchLink), excerpts: pick(excerpts.items, excerptFields).map(excerptLink), okr: pick(objectives(okr), okrFields), skills: pick(skills.skills, skillFields).map(skillLink) };
+      return { query, snapshot: snapshot(catalog), records: rank(records, query, [['title', 8], ['text', 3], ['context', 1]], limit).map(record => ({ id: record.id, kind: record.kind, title: record.title, date: record.date, recordedAt: record.recordedAt, snippet: snippet(record.text, query), url: urlFor(`/records/${record.id}`), relatedIds: record.relatedIds, articleId: record.articleId })), articles: rank(documents, query, [['title', 8], ['tags', 5], ['summary', 3], ['text', 1]], limit).map(doc => ({ ...articleLink(doc), snippet: snippet(doc.text || doc.summary, query) })), favorites: pick(favoriteScope(favorites.favorites), favoriteFields).map(favoriteLink), ...(research ? { research: pick(research.items, researchFields).map(researchLink) } : {}), ...(excerpts ? { excerpts: pick(excerpts.items, excerptFields).map(excerptLink) } : {}), okr: pick(objectives(okr), okrFields), skills: pick(skills.skills, skillFields).map(skillLink) };
     }
     case 'record': {
       const data = await get(`/api/records/${id}`);

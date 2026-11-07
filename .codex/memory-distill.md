@@ -20,8 +20,6 @@
 | 个人记录 `record` | `content/records.json` version 2；`content/records.README.md`、`lib/record-types.ts`、`lib/record-model.mjs` | 经历、项目、判断、变化、想法映射 experience、project、judgment、change、thought |
 | 外部资源 `reference` | `content/favorites.json` version 2；`content/favorites.README.md`、`lib/favorite-types.ts`、`lib/favorite-model.mjs` | `kind: resource`；`type: tool` 或 `reference`，根据实际资源用途选择 |
 | 知识笔记 `concept` | 同上，资源与笔记共用百宝箱阅读入口 | `kind: note`；`type: concept` 或 `method`；`note.body` 是独立可读正文 |
-| 探索问题 `research` | `content/research.json`；`content/curation.README.md`、`lib/curation-model.mjs` | question、context、reason、nextStep、nextStepSource、status、result 与相关资料 |
-| 对话摘录 `excerpt` | `content/excerpts.json`；同上 | 角色、上下文、原话/摘要、来源和选择方式分别保存 |
 
 所有身份使用 16 位小写十六进制 ID。修正或补全保留身份；真实立场或状态变化使用关联变化记录。文章继续在 `content/posts/` 按文章协议维护，业务仓库的任务、接口和操作手册留原项目。
 
@@ -49,11 +47,9 @@
 
 维护 `content/article-glossary.json` version 1 的 `entries`。每项 `{ term, favoriteId, articleId }` 指向当前共享知识笔记；`articleId` 为实际文章 ID，只有明确适合全站的别名才用 null。正文需实际包含该术语，不从相似标签自动生成关系。修订解释时保留笔记身份，同任务核对关联文章、术语预览、API 与数字分身检索。
 
-### 探索问题与对话摘录
+### 已撤下的栏目
 
-探索问题的状态、nextStepSource 和实际结果按现有 curation 协议映射。开始相关任务时只核对同话题的已有探索项，实际有结果才改 completed；本人后续意图与 AI 建议分开。
-
-本站只接收本人明确挑选、内容和可回查来源均可公开的对话摘录，使用 explicit。保留角色、必要上下文与后续纠正；format 区分 verbatim/summary。没有公共来源的私人会话片段仅列候选，不保存精确位置或原话。公开摘录权限不因统一功能而扩大。
+2026-11-08 起本站不再接收 research/excerpt，不重建源文件或栏目。项目问题留所属项目仓库；本人明确判断按个人记录协议保存，完整思考按文章协议维护。
 
 ## 写入、回读与交付
 
