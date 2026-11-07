@@ -2,6 +2,27 @@
   "version": 2,
   "favorites": [
     {
+      "id": "b7c4a09e1836df52",
+      "kind": "resource",
+      "type": "tool",
+      "title": "terminal-mac：供 Agent 操作的独立 macOS 虚拟机",
+      "url": "https://github.com/govijr/terminal-mac",
+      "summary": "基于 Apple Virtualization 运行独立 macOS 来宾系统，通过终端查看桌面，提供 MCP、CLI 和 Agent Skill。项目采用 MIT 许可，要求 Apple silicon 与 macOS 14+；终端内画面支持 Ghostty、Kitty 和 iTerm2。来宾应用、文件和账户与宿主分离，但仍消耗宿主 CPU、内存和存储。当前为早期候选版本，首次设置需人工完成来宾账户与权限授权。",
+      "reason": "明确收藏，供后续回看 Computer Use Agent 的 macOS 隔离执行环境和实时观察方式；尚未安装或实测。",
+      "tags": ["terminal-mac", "macOS", "MCP", "Computer Use", "Agent 沙盒", "开源工具"],
+      "subjects": ["infra", "agents"],
+      "attribution": "source",
+      "savedAt": "2026-11-07T20:30+08:00",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "terminal-mac 官方 GitHub README 与 MIT 许可，2026-11-07 核对。",
+          "url": "https://github.com/govijr/terminal-mac"
+        }
+      ]
+    },
+    {
       "id": "33226492457fb09f",
       "title": "GitHub Copilot 每周更新：Agent 会话进入更多开发入口",
       "url": "https://github.blog/changelog/2026-11-06-github-copilot-weekly-releases-november-2/",

@@ -28,7 +28,8 @@ test('public curation rejects private entries before projection, even with other
 test('public snapshots join actual note bodies, attribution and glossary while preserving legacy article provenance', () => {
   const snapshot = buildPublicSnapshot();
   const { content, knowledge, catalog, graph } = snapshot;
-  assert.equal(content.favorites.length,103);
+  const stored = JSON.parse(fs.readFileSync(new URL('../content/favorites.json',import.meta.url)));
+  assert.deepEqual(new Set(content.favorites.map(item => item.id)),new Set(stored.favorites.map(item => item.id)));
   for (const favorite of content.favorites) assert.ok(knowledge.entries.some(source => source.id === 'favorite-' + favorite.id && source.attribution === favorite.attribution && source.personalJudgment === false));
   assert.ok(graph.edges.some(edge => edge.type === 'explains'));
   assert.ok(graph.edges.every(edge => graph.nodes.some(node => node.id === edge.source) && graph.nodes.some(node => node.id === edge.target)));
