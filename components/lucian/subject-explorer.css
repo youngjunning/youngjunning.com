@@ -1,2 +1,0 @@
-.subject-explorer{padding:30px 5% 60px;display:grid;gap:24px;min-width:0}.subject-explorer-tools{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;min-width:0}.subject-explorer-tools>.content-filter-scroll{max-width:100%}.subject-explorer>p{font-size:13px;line-height:1.9;color:var(--style-muted)}
-@media(max-width:760px){.subject-explorer-tools>.content-search{width:100%;flex-basis:100%}}

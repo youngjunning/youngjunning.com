@@ -43,7 +43,7 @@ export default function FavoriteCollection({ favorites }: { favorites: Favorite[
         `保留理由：${item.reason}`, `来源：${item.sources.map(source => source.label).join('；')}`,
         `保存于 ${displayContentTime(item.savedAt)}${item.updatedAt ? ` · 更新于 ${displayContentTime(item.updatedAt)}` : ''}`,
       ],
-      links: [...item.subjects.map(id => ({ href: `/topics?subject=${id}`, label: `沿「${subjectLabel(id)}」继续读` })), ...(item.relatedIds || []).map(id => ({ href: `/favorites#${id}`, label: favorites.find(favorite => favorite.id === id)?.title || '关联条目' })), ...(item.usages || []).map(usage => ({ href: usage.projectUrl, label: usage.project }))],
+      links: [...(item.relatedIds || []).map(id => ({ href: `/favorites#${id}`, label: favorites.find(favorite => favorite.id === id)?.title || '关联条目' })), ...(item.usages || []).map(usage => ({ href: usage.projectUrl, label: usage.project }))],
       href: item.url, linkLabel: '打开原始来源',
     }))} /> : <div className="ux u092 empty favorite-empty"><div className="u092-none"><div className="u092-art" aria-hidden="true"><svg viewBox="0 0 150 92"><path className="u092-shelf" d="M8 30h134M8 56h134M8 82h134" /><g className="u092-lens"><circle cx="34" cy="38" r="20" /><path className="gl" d="M24 30a12 12 0 0 1 8-5" /><path d="M48 52l14 14" /></g></svg></div><p className="u092-nt">没有匹配的条目</p><p className="u092-ns">换个主题或关键词，也可以清除筛选。</p><div className="u092-sgs"><button className="u092-sg" type="button" onClick={() => { setQuery(''); setType('all'); setSubject('all'); setUsedOnly(false); }}><span>清除筛选，查看全部</span><b>{favorites.length} 条</b></button></div></div></div>}
   </section>;

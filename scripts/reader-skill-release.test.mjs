@@ -33,8 +33,8 @@ test('public reader release matches its five whitelisted source files and runs a
   assert.deepEqual(files.sort(), release.files.map(file => 'silicon-junning/' + file.path).sort());
   const script = join(dir, 'silicon-junning/scripts/read.mjs');
   const help = JSON.parse(execFileSync(process.execPath, [script, '--help'], { cwd: dir, encoding: 'utf8' }));
-  assert.equal(help.commands.length, 11);
-  assert.ok(!help.commands.some(command => /^(research|excerpts)\b/.test(command)));
+  assert.equal(help.commands.length, 10);
+  assert.ok(!help.commands.some(command => /^(research|excerpts|okr)\b/.test(command)));
   assert.ok(help.commands.includes('activity [QUERY]'));
   const failed = spawnSync(process.execPath, [script, 'favorite', 'invalid'], { cwd: dir, encoding: 'utf8' });
   assert.equal(failed.status, 1);
@@ -52,6 +52,21 @@ test('public wrapper selects its own target, allows explicit overrides, and has 
   assert.equal((await run(['persona', '--base-url', 'https://override.example'], { env: { JUNNING_BASE_URL: 'https://example.test' }, fetchImpl })).url, 'https://override.example/');
   assert.equal(calls.length, 3);
   await assert.rejects(run(['persona'], { env: {}, fetchImpl: async () => new Response('', { status: 403 }) }), error => /HTTP 403/.test(error.message) && !/集团/.test(error.message));
+});
+
+test('public search reads active collections after OKR retirement', async () => {
+  const paths = [];
+  const result = await run(['search', 'Agent'], { env: {}, fetchImpl: async url => {
+    const path = new URL(url).pathname;
+    paths.push(path);
+    const file = { '/api/records': 'records', '/api/catalog': 'catalog', '/api/search': 'search', '/api/favorites': 'favorites', '/api/skills': 'skills' }[path];
+    assert.ok(file, 'unexpected endpoint: ' + path);
+    return new Response(readFileSync(join(root, '.content', file + '.json')), { headers: { 'content-type': 'application/json' } });
+  } });
+  assert.ok(result.articles.length > 0);
+  assert.equal(Object.hasOwn(result, 'okr'), false);
+  assert.equal(paths.includes('/api/okr'), false);
+  await assert.rejects(run(['okr'], { env: {} }), /已撤下/);
 });
 
 test('packager is reproducible, ignores unlisted material, and refuses symlinked runtime files', t => {

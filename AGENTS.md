@@ -32,3 +32,5 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 <!-- END:nextjs-agent-rules -->
 
 - 2026-11-08 起撤下探索清单与对话摘录，不再生成或写入 research/excerpt 栏目；旧数据仅保存在 `content/archive/retired-curation-2026-11-08/`，不进入页面、接口、首页统计或对话检索。
+
+- 2026-11-08 起，按作者要求仅在公开站撤下关注主题与 OKR 栏目：移除 `/topics`、`/okr`、`/api/okr` 及入口，不再打包 OKR 快照。主题分类与百宝箱筛选继续使用；内站栏目保持原状。此项为双站能力对齐的明确例外。

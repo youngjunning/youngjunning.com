@@ -6,11 +6,9 @@ export const siteNavigation = [
   { id: 'library', href: '/blog', label: '手记', meaning: '文章与周刊', code: 'NOTEBOOK', primary: true },
   { id: 'favorites', href: '/favorites', label: '百宝箱', meaning: '资源与知识笔记', code: 'COLLECTION', primary: true },
   { id: 'chat', href: '/chat', label: `和${siteProfile.name}聊聊`, meaning: '有来源的数字分身对话', code: 'CONVERSATION', primary: true },
-  { id: 'topics', href: '/topics', label: '关注主题', meaning: '跨栏目探索内容', code: 'SUBJECTS', primary: false },
   { id: 'graph', href: '/graph', label: '关联图谱', meaning: '引用与关联的依据', code: 'CONNECTIONS', primary: false },
   { id: 'skills', href: '/skills', label: '技能库', meaning: 'Skills · 工作流与维护', code: 'SKILLS', primary: false },
   { id: 'agent-configs', href: '/agent-configs', label: 'AGENTS.md', meaning: '全局与项目配置 · 模型评测', code: 'INSTRUCTIONS', primary: false },
-  { id: 'okr', href: '/okr', label: '下一站', meaning: 'OKR · 目标与进展', code: 'OBJECTIVES', primary: false },
   { id: 'agent', href: '/agent', label: '接入与 API', meaning: '读取 Skill 与接口', code: 'FOR AGENTS', primary: false },
 ] as const;
 export type SiteSection = typeof siteNavigation[number]['id'];
