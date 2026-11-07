@@ -8,11 +8,12 @@
       "title": "om-smart-test：按改动范围选择测试的 Agent Skill",
       "url": "https://github.com/open-mercato/skills/blob/main/skills/om-smart-test/SKILL.md",
       "summary": "开源 Agent Skill：根据 Git diff、仓库维护的测试映射或 workspace 信息选择受影响测试；映射不确定时回退全量，并报告选择依据与覆盖范围。",
-      "reason": "在查找 Owlet 按需测试方案时发现；可作为测试选择流程的参考。Owlet 尚无对应测试映射配置，本轮未安装、试用或采用该 Skill。",
+      "reason": "在查找 Owlet 按需测试方案时发现；已按本人要求安装到全局 Codex Skills，尚未在 Owlet 试用或采用。Owlet 还没有对应测试映射配置。",
       "tags": ["Agent Skill", "Codex", "测试选择", "Swift", "Owlet"],
       "subjects": ["engineering", "agents"],
       "attribution": "source",
       "savedAt": "2026-11-08T04:03+08:00",
+      "updatedAt": "2026-11-08T04:08+08:00",
       "selection": "discovered",
       "visibility": "shared",
       "sources": [
