@@ -12,6 +12,7 @@
     "content:prepare": "node scripts/prepare-content.mjs",
     "wiki:prepare": "node scripts/prepare-wiki.mjs",
     "content:new": "node scripts/new-article.mjs",
+    "weekly:industry": "node --use-env-proxy scripts/weekly-industry.mjs",
     "article:sync": "node scripts/article-sync.mjs",
     "code:connect": "node scripts/connect-code.mjs",
     "code:review": "node scripts/review-code.mjs",
