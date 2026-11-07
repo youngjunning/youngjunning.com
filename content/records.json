@@ -2,6 +2,30 @@
   "version": 2,
   "records": [
     {
+      "id": "b29ac8375e4106fd",
+      "kind": "judgment",
+      "title": "better-imagegen 的 GPT Image 2.6 选型排除 Flare",
+      "date": "2026-11-07",
+      "recordedAt": "2026-11-07",
+      "text": "在 better-imagegen 的默认模型选择上，我要求使用 APIyi GPT Image 2.6，并明确排除 Flare，因为我认为它的画质不符合这次需求。",
+      "context": "这是针对 better-imagegen 此次模型升级的选择要求，反映画质偏好，不是对所有生图场景的通用选型规则，也不是经过独立测评的模型质量排名。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-07，公开摘要：要求 better-imagegen 使用 APIyi GPT Image 2.6，并因画质要求排除 Flare。"
+        }
+      ],
+      "basis": "本人在此次模型选择中明确表达了对 Flare 画质的不满；未提供独立对比测量或进一步理由。",
+      "alternatives": [
+        "Flare"
+      ],
+      "outcome": null
+    },
+    {
       "id": "474415fdb4520361",
       "kind": "judgment",
       "title": "文章概念卡片由记忆蒸馏流程维护",
