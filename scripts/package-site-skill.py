@@ -24,7 +24,7 @@ def package(source: Path, output: Path, reader_source: Path | None = None):
     if not match:
         raise ValueError("Skill name required")
     if reader_source and payload["scripts/read-core.mjs"] != reader_source.read_bytes():
-        raise ValueError("Vendored reader differs from canonical personal-records-reader")
+        raise ValueError("Vendored reader differs from canonical memory-distill reader")
     output.mkdir(parents=True, exist_ok=True)
     archive = output / (directory + ".zip")
     with zipfile.ZipFile(archive, "w", compression=zipfile.ZIP_DEFLATED) as bundle:

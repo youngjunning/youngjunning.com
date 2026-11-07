@@ -2,6 +2,28 @@
   "version": 2,
   "records": [
     {
+      "id": "a918c4f35e702d6b",
+      "kind": "judgment",
+      "title": "个人资料读取能力合入记忆蒸馏技能",
+      "date": "2026-11-08",
+      "recordedAt": "2026-11-08",
+      "text": "我认为，把个人资料站的只读读取能力合入记忆蒸馏技能，比继续单独维护 personal-records-reader 更合理。",
+      "context": "在了解 personal-records-reader 与 memory-distill 的用途后，本人提出将前者合入后者。这里记录本次公开技能的维护归属选择；未说明更具体的取舍理由，也不把工程实施结果归为本人原话。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-08，公开摘要：认为个人资料读取技能合入记忆蒸馏技能更合理。"
+        }
+      ],
+      "basis": "本人明确选择，未说明其他取舍理由。",
+      "alternatives": [],
+      "outcome": null
+    },
+    {
       "id": "d6088b4ba501e3a9",
       "kind": "judgment",
       "title": "内外数字分身保持同一套产品",
