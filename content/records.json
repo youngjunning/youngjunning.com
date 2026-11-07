@@ -2,6 +2,24 @@
   "version": 2,
   "records": [
     {
+      "id": "43be17a9c60d825f",
+      "kind": "change",
+      "title": "Joyally Design 移除青山湖属性并统一图表配色",
+      "date": "2026-11-07",
+      "recordedAt": "2026-11-07",
+      "text": "在 Joyally Design 的维护中，我进一步要求移除青山湖属性，并让内置 Archify 的各种配色适配 Joyally Design 的体系风格。此前我强调 Joyally Design 不应局限于青山湖；这次明确了技能本身应移除这项属性。",
+      "context": "这是对 Joyally Design Skill 及其图表层的设计定位要求，不表示所有历史产品、文章或已复制的主题都要同时迁移。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": ["9b8569ce4568c02c"],
+      "subjectId": "9b8569ce4568c02c",
+      "before": "Joyally Design 不应局限于青山湖，青山湖仍可作为一种视觉方向。",
+      "after": "移除 Joyally Design 的青山湖属性，Archify 配色适配统一体系风格。",
+      "reason": "本人明确提出此次调整，未进一步说明原因。",
+      "sources": [{"kind": "statement", "label": "本人陈述，2026-11-07，公开摘要：Joyally Design 内置 Archify 的各种配色应适配体系风格，并去掉青山湖属性。"}]
+    },
+    {
       "id": "b29ac8375e4106fd",
       "kind": "judgment",
       "title": "better-imagegen 的 GPT Image 2.6 选型排除 Flare",
