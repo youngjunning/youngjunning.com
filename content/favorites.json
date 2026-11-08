@@ -2,6 +2,33 @@
   "version": 2,
   "favorites": [
     {
+      "id": "1e9b082544ece080",
+      "kind": "note",
+      "type": "concept",
+      "title": "Android Custom Tab、WebView 与代理控制边界",
+      "url": null,
+      "summary": "Custom Tab 虽显示在 App 的浏览流程中，却由用户的浏览器承载；App 的 WebView 代理设置不能据此控制 Custom Tab 流量。Android 与 iOS 的原生 WebView 代理能力也不同。",
+      "reason": "回看嵌入式网页的承载进程和代理认证边界，避免把界面看起来在 App 内等同于 App 可控制其网络路径。",
+      "tags": ["Custom Tabs", "Android WebView", "WKWebView", "SOCKS5", "代理"],
+      "subjects": ["browser", "infra"],
+      "attribution": "ai",
+      "savedAt": "2026-11-09T04:13+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {"label": "Chrome for Developers：Android Custom Tabs 由用户首选浏览器承载。", "url": "https://developer.chrome.com/docs/android/custom-tabs/"},
+        {"label": "Android Developers：ProxyController 管理 App 进程中 WebView 的代理覆盖。", "url": "https://developer.android.com/reference/androidx/webkit/ProxyController"},
+        {"label": "Chromium 当前 SOCKS5 握手源码仅发送无认证方式，2026-11-09 核对。", "url": "https://chromium.googlesource.com/chromium/src/+/refs/heads/main/net/socket/socks5_client_socket.cc"},
+        {"label": "Apple Developer：WKWebsiteDataStore 可设置 proxyConfigurations；ProxyConfiguration 支持 SOCKS5 凭据。", "url": "https://developer.apple.com/documentation/webkit/wkwebsitedatastore"}
+      ],
+      "note": {
+        "body": "Android Custom Tab 是由浏览器应用提供的浏览界面，可以显示在原 App 的流程里，但与 App 自己创建的 android.webkit.WebView 是不同的网络承载。AndroidX WebKit 的 ProxyController 只覆盖该 App 进程里的 WebView；配置会影响其中所有 WebView，不能用它控制 Chrome Custom Tab。其 ProxyConfig 代理规则只接受 scheme、host 和 port；当前 Chromium SOCKS5 握手只提供无认证方式，不能直接把带用户名和密码的 SOCKS5 URL 交给 WebView 代理规则。iOS 17 起，WKWebsiteDataStore 可为 WKWebView 设置 ProxyConfiguration，Network 的 SOCKS5 配置可应用用户名和密码。界面截图只能给出 Custom Tab 的线索；确定实现应核对 App 代码或运行时承载。",
+        "boundary": "这些是平台 API 与当前 Chromium 实现的边界，不证明某个具体 App、浏览器版本或代理供应商已成功通过代理；实际出口要在目标设备上分别核验。",
+        "date": null,
+        "recordedAt": "2026-11-09"
+      }
+    },
+    {
       "id": "9d1dacd916d60022",
       "kind": "resource",
       "type": "tool",
