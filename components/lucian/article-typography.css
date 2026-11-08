@@ -1,8 +1,7 @@
 /* Lucian UX/UI Prompt #373 · MIT License (c) 2026 Seokwoooo · https://lucianlabs.dev/uxui-prompt/#373 */
 /* Port #373's dot-stretch underline to article headings. Butterfly-inspired
    prefix links share the existing heading IDs and the site's palette. */
-.article-layout .reader>h1{position:relative;padding-bottom:24px;margin-bottom:25px;font-family:inherit;font-size:clamp(30px,2.7vw,38px);line-height:1.5;font-weight:800;letter-spacing:-.025em;color:var(--style-ink)}
-.article-layout .reader>h1::after{content:"";position:absolute;left:0;bottom:0;width:72px;height:5px;border-radius:3px;background:var(--ux-grad)}
+.article-layout .reader>h1{position:relative;margin-bottom:25px;font-family:inherit;font-size:clamp(30px,2.7vw,38px);line-height:1.5;font-weight:800;letter-spacing:-.025em;color:var(--style-ink)}
 .article-layout .prose{font-size:18px;line-height:1.95;color:color-mix(in srgb,var(--style-ink) 88%,var(--style-muted));letter-spacing:.015em}
 .article-layout .prose p{margin:0 0 1.4em}
 .article-layout .prose li{margin-bottom:.55em}
@@ -32,7 +31,7 @@
 .article-layout .prose pre{font-size:15px;line-height:1.85;border-color:var(--style-line);background:var(--style-surface)}
 .article-layout .prose pre code{font-size:inherit;line-height:inherit;background:none;color:var(--style-ink)}
 @media(max-width:800px){
-  .article-layout .reader>h1{font-size:29px;line-height:1.5;padding-bottom:20px}
+  .article-layout .reader>h1{font-size:29px;line-height:1.5}
   .article-layout .prose{font-size:17px;line-height:1.95}
   .article-layout .prose :is(h1,h2){font-size:25px}
   .article-layout .prose h3{font-size:21px}
@@ -46,7 +45,7 @@
 @media(prefers-reduced-motion:reduce){.article-layout .prose .heading-anchor,.article-layout .article-heading-text::after{transition:none;transform:none}}
 @media print{
   .article-layout .prose :is(h1,h2,h3,h4,h5,h6){padding-left:0;break-after:avoid}
-  .article-layout .prose .heading-anchor,.article-layout .article-heading-text::after,.article-layout .reader>h1::after{display:none}
+  .article-layout .prose .heading-anchor,.article-layout .article-heading-text::after{display:none}
 }
 .article-notice{margin-top:48px;padding:24px 28px;border:1px solid var(--style-line);border-radius:14px;background:var(--style-surface);font-size:14px;line-height:1.8;color:var(--style-ink)}
 .article-notice p{display:grid;grid-template-columns:88px minmax(0,1fr);gap:12px;margin:0;overflow-wrap:anywhere}
