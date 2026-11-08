@@ -1,5 +1,57 @@
-.agent-config-detail{font-size:14px;line-height:1.8;overflow-wrap:anywhere;min-width:0}
-.agent-config-detail h3{font-size:18px;margin:28px 0 8px}.agent-config-detail p{margin:8px 0}.agent-config-detail a{display:inline-block;min-height:28px}
-.agent-config-score{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}.agent-config-score strong{font-size:32px;font-variant-numeric:tabular-nums}.agent-config-score small{font-size:16px;font-weight:400}
-.agent-config-evaluation{border-top:1px solid currentColor;margin-top:20px;padding-top:16px}.agent-config-meta{font-size:12px;overflow-wrap:anywhere}
-.agent-config-dimensions{padding-left:24px}.agent-config-dimensions li{padding:8px 0 16px}.agent-config-dimensions h4{font-size:15px;margin:0}.agent-config-dimensions h4 span{float:right;margin-left:12px;font-variant-numeric:tabular-nums}.agent-config-dimensions blockquote{margin:12px 0;padding:10px 14px;border-left:3px solid currentColor;white-space:pre-wrap}.agent-config-dimensions blockquote small{display:block;font-size:11px}.agent-config-source{max-height:560px;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;border:1px solid currentColor;border-radius:12px;padding:16px;font-size:12px;line-height:1.8;font-family:ui-monospace,monospace}.agent-config-source:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+.agent-config-detail{min-width:0;font-size:14px;line-height:1.75;overflow-wrap:anywhere;color:var(--config-ink)}
+.agent-config-detail h2,.agent-config-detail h3,.agent-config-detail h4,.agent-config-detail p{margin:0}
+.agent-config-detail-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+.agent-config-detail-heading h2{font-size:25px;line-height:1.35;letter-spacing:-.035em;margin:8px 0}
+.agent-config-detail-heading p{font-size:13px;color:var(--config-muted)}
+.agent-config-detail .agent-config-eyebrow{font-size:10px;letter-spacing:.1em;color:var(--config-muted)}
+.agent-config-detail a{color:var(--config-accent);text-underline-offset:4px}
+.agent-config-detail .agent-config-download{display:inline-flex;align-items:center;justify-content:center;gap:12px;flex:none;min-height:42px;font-size:13px;font-weight:650;text-decoration:none;padding:0 14px}
+.agent-config-facts{display:flex;gap:32px;margin:24px 0 14px;font-variant-numeric:tabular-nums}
+.agent-config-facts dt{font-size:11px;color:var(--config-muted);margin-bottom:3px}
+.agent-config-facts dd{margin:0;font-size:13px}
+.agent-config-detail .agent-config-relation{font-size:12px;color:var(--config-muted);margin:0 0 24px}
+.agent-config-panel{padding-top:24px;min-height:420px}
+.agent-config-section-heading{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:14px}
+.agent-config-section-heading h3,.agent-config-score-summary h3{font-size:15px;font-weight:650}
+.agent-config-section-heading>span{font-size:11px;color:var(--config-muted)}
+.agent-config-source{margin:0;max-height:660px;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;border:1px solid var(--config-line);padding:22px;font-size:12px;line-height:1.9;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:var(--config-code);tab-size:2}
+.agent-config-detail .agent-config-hash{display:flex;gap:12px;margin-top:12px;font-size:10px;color:var(--config-muted)}
+.agent-config-hash code{min-width:0;word-break:break-all;font-family:ui-monospace,monospace}
+.agent-config-detail :is(a,button,pre,[role=tabpanel],summary):focus-visible{outline:2px solid var(--config-accent);outline-offset:4px}
+.agent-config-detail .agent-config-evaluation-notice{font-size:12px;line-height:1.8;color:var(--config-muted);border-left:2px solid var(--config-accent);padding:0 0 0 12px;margin:0 0 24px}
+.agent-config-evaluation+.agent-config-evaluation{margin-top:36px;padding-top:28px;border-top:1px solid var(--config-line)}
+.agent-config-score-summary{display:grid;grid-template-columns:135px minmax(0,1fr);gap:24px;align-items:start}
+.agent-config-score{display:flex;flex-direction:column;align-items:flex-start;font-variant-numeric:tabular-nums}
+.agent-config-score>span:first-child{font-size:12px;color:var(--config-muted)}
+.agent-config-score strong{font-size:54px;font-weight:600;line-height:1.4;letter-spacing:-.06em}
+.agent-config-score small{font-size:13px;font-weight:400;letter-spacing:0;color:var(--config-muted)}
+.agent-config-status{font-size:11px;color:var(--config-accent);padding:3px 0}
+.agent-config-status.current{color:var(--config-success)}
+.agent-config-score-summary h3{margin-bottom:8px}
+.agent-config-score-summary p{font-size:13px;line-height:1.9;color:var(--config-muted)}
+.agent-config-dimension-overview{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;margin:24px 0 32px;padding:20px 0;border-top:1px solid var(--config-line);border-bottom:1px solid var(--config-line)}
+.agent-config-dimension-overview dt{font-size:11px;color:var(--config-muted);min-height:34px;line-height:1.6}
+.agent-config-dimension-overview dd{margin:8px 0 0;font-size:22px;line-height:1.2;font-variant-numeric:tabular-nums}
+.agent-config-dimension-overview dd small{font-size:11px;color:var(--config-muted)}
+.agent-config-dimensions{display:grid;gap:12px}
+.agent-config-dimension-score{font-size:12px;font-weight:500;white-space:nowrap;color:var(--config-muted);font-variant-numeric:tabular-nums}
+.agent-config-dimension-content{font-size:13px;line-height:1.9}
+.agent-config-suggestion{margin:16px 0;padding:14px 16px;background:var(--config-code);border-radius:8px}
+.agent-config-suggestion b{font-size:11px;color:var(--config-accent)}
+.agent-config-detail blockquote{margin:12px 0 0;padding:0 0 0 14px;border-left:2px solid var(--config-line);white-space:pre-wrap;color:var(--config-muted)}
+.agent-config-detail blockquote small{display:block;font-size:10px;margin-bottom:4px}
+.agent-config-detail .agent-config-evaluation-meta{font-size:10px;line-height:1.8;color:var(--config-muted);margin:22px 0 0}
+.agent-config-notice{padding:28px;background:var(--config-code);border:1px dashed var(--config-line)}
+.agent-config-notice h3{font-size:16px;margin-bottom:8px}
+.agent-config-notice p{font-size:13px;color:var(--config-muted)}
+.agent-config-versions{list-style:none;margin:24px 0 0;padding:0}
+.agent-config-versions>li{position:relative;display:grid;grid-template-columns:12px minmax(0,1fr);gap:18px;padding:0 0 28px}
+.agent-config-versions>li:not(:last-child)::before{content:"";position:absolute;left:5px;top:12px;bottom:0;border-left:1px solid var(--config-line)}
+.agent-config-version-marker{width:11px;height:11px;border:2px solid var(--config-line);border-radius:50%;margin-top:7px;background:var(--config-surface)}
+.agent-config-versions>li:first-child .agent-config-version-marker{border-color:var(--config-accent)}
+.agent-config-version-heading{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px 16px;margin-bottom:8px}
+.agent-config-version-heading h4{font-size:14px}
+.agent-config-version-heading time,.agent-config-version-size,.agent-config-versions code{font-size:12px;color:var(--config-muted)}
+.agent-config-versions a{display:block;font-size:12px;margin-top:12px;width:fit-content;min-height:28px}
+@media(max-width:600px){.agent-config-detail-heading{flex-direction:column;gap:14px}.agent-config-detail-heading h2{font-size:23px}.agent-config-facts{gap:24px;margin-top:20px}.agent-config-detail .agent-config-relation span{display:block;margin-top:4px}.agent-config-source{padding:14px;font-size:11px;max-height:580px}.agent-config-score-summary{grid-template-columns:1fr;gap:18px}.agent-config-score{flex-direction:row;align-items:baseline;gap:12px;flex-wrap:wrap}.agent-config-score strong{font-size:44px}.agent-config-score>span:first-child{flex-basis:100%}.agent-config-dimension-overview{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.agent-config-dimension-overview dt{min-height:0}.agent-config-dimension-overview>div:last-child{grid-column:1/-1}.agent-config-section-heading{align-items:flex-start}.agent-config-section-heading>span{max-width:50%;text-align:right}.agent-config-panel{padding-top:20px}.agent-config-suggestion{padding:12px}.agent-config-detail .agent-config-hash{flex-direction:column;gap:2px}}
+@media print{.agent-config-source{max-height:none;overflow:visible}.agent-config-panel{min-height:0}.agent-config-detail .ac044-body{grid-template-rows:1fr}.agent-config-detail .ac044-a{opacity:1;transform:none}}

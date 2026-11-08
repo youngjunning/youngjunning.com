@@ -11,7 +11,9 @@ for (const theme of ['classic', 'statechart']) {
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.ok(html.includes('AGENTS.md 配置库'));
-  assert.ok(html.includes(theme === 'classic' ? 'config-panel' : 'sc-config-disclosure') || (theme === 'statechart' && !store.configs.length && html.includes('尚未收录')));
+  assert.ok(html.includes(theme === 'classic' ? 'agent-config-workspace' : 'sc-config-workspace'));
+  assert.ok(html.includes('配置目录'));
+  assert.ok(html.includes(store.configs.length ? 'config-detail-panel' : '还没有配置快照'));
   if (theme === 'statechart') assert.ok(!html.includes('class="ux agent-configs"'));
 }
 const catalogResponse = await get('/api/agent-configs');

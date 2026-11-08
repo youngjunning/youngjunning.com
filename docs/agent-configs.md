@@ -42,4 +42,6 @@ node scripts/agent-configs.mjs check
 
 验证：`npm run content:check`、`npm test`、`npm run typecheck`、`npm run build`，启动服务后用 `AGENT_CONFIG_TEST_ORIGIN=http://127.0.0.1:3197 node scripts/check-agent-configs.mjs` 验证两种主题响应、只读 API、下载字节与错误路径，再用浏览器核对 375px 窄屏、键盘切换和展开。评测需要至少一次真实模型调用和结果回读；测试里的假模型不作为在线验收。
 
-原版控件来源 Lucian #039 Sliding pill tabs、#044 FAQ accordion；尺寸适配长配置，保留标签键盘操作、单项展开、加减号和减少动态效果。纸上状态图主题使用独立披露控件，复用内容和 API。
+页面采用「配置目录 + 详情工作区」布局。目录按全局与项目分组，展示版本数与最近评测；默认选中第一份配置，并支持 `#配置ID` 直达。详情分为配置原文、模型评测和版本记录，切换配置时回到原文。评测先展示结论、总分和五维得分，再按需展开各维度的理由、建议与逐字引用；模型、UTC 时间、配置哈希和量表版本保留在评测末尾。窄屏目录移到详情上方，原文保留独立滚动区。
+
+原版目录与标签来源 Lucian #039 Sliding pill tabs，评测依据来源 #044 FAQ accordion；适配真实配置，保留标签键盘操作、单项展开、加减号和减少动态效果。纸上状态图主题使用独立目录、下划线标签和披露控件，复用内容和 API。
