@@ -50,7 +50,7 @@ export function StatechartHome() {
 }
 export function StatechartBlog({ query = '', topic = 'all', tag = '' }: { query?: string; topic?: string; tag?: string }) {
   const catalog = getCatalog();
-  return <StatechartShell active="/blog" title="手记" subtitle="从问题开始，记录实践，再回看当时的判断。"><PaperCollection key={`${query}:${topic}:${tag}`} label="文章目录" fullText initialQuery={query} initialKind={topic} initialTag={tag} items={catalog.documents.map(doc => ({ id: doc.id, title: doc.title, summary: doc.summary, kind: doc.topic, label: catalog.topics.find(topic => topic.id === doc.topic)?.label || doc.topic, date: doc.updatedAt || doc.date, tags: doc.tags, href: doc.url }))} /></StatechartShell>;
+  return <StatechartShell active="/blog" title="手记" subtitle="从问题开始，记录实践，再回看当时的判断。"><PaperCollection key={`${query}:${topic}:${tag}`} label="文章目录" pageSize={18} fullText initialQuery={query} initialKind={topic} initialTag={tag} items={catalog.documents.map(doc => ({ id: doc.id, title: doc.title, summary: doc.summary, kind: doc.topic, label: catalog.topics.find(topic => topic.id === doc.topic)?.label || doc.topic, date: doc.updatedAt || doc.date, tags: doc.tags, href: doc.url }))} /></StatechartShell>;
 }
 export function RecordDetails({ record }: { record: PersonalRecord }) {
   const records = getRecords();
@@ -65,7 +65,7 @@ export function RecordDetails({ record }: { record: PersonalRecord }) {
   </>;
 }
 export function StatechartRecords({ kind = 'all' }: { kind?: string }) {
-  return <StatechartShell active="/records" title="个人记录" subtitle="经历、项目、判断与变化，各自留下时间和依据。"><PaperCollection key={kind} label="个人记录" initialKind={kind} items={getRecords().map(record => ({ id: record.id, kind: record.kind, label: kindLabel(record.kind), title: record.title, summary: record.text, date: record.date || record.recordedAt, href: `/records/${record.id}`, searchText: record.context, detail: <RecordDetails record={record} /> }))} /></StatechartShell>;
+  return <StatechartShell active="/records" title="个人记录" subtitle="经历、项目、判断与变化，各自留下时间和依据。"><PaperCollection key={kind} label="个人记录" pageSize={12} initialKind={kind} items={getRecords().map(record => ({ id: record.id, kind: record.kind, label: kindLabel(record.kind), title: record.title, summary: record.text, date: record.date || record.recordedAt, href: `/records/${record.id}`, searchText: record.context, detail: <RecordDetails record={record} /> }))} /></StatechartShell>;
 }
 export function StatechartRecord({ record }: { record: PersonalRecord }) {
   const related = getRecords().filter(item => item.id !== record.id && (item.projectId === record.id || item.relatedIds.includes(record.id) || (item.kind === 'change' && item.subjectId === record.id)));

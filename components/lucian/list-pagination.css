@@ -1,0 +1,16 @@
+/* Lucian UX/UI Prompt #043 · MIT License (c) 2026 Seokwoooo · https://lucianlabs.dev/uxui-prompt/#043 */
+.list-pagination{width:min(410px,100%);margin:30px auto 0;color:var(--ux-ink)}
+.personal-record-feed:has(>.list-pagination){padding-bottom:28px}
+.personal-record-feed>.list-pagination{margin-top:0}
+.list-pagination-heading{display:flex;justify-content:space-between;gap:12px;padding:0 4px 10px;font-size:12px;color:var(--ux-ink-2);font-variant-numeric:tabular-nums}
+.list-pagination .u043-pager{position:relative;display:flex;align-items:center;gap:2px;padding:5px;border-radius:999px;background:var(--ux-surface);box-shadow:0 0 0 1px var(--ux-line),0 18px 30px -24px var(--ux-shadow-strong)}
+.list-pagination .u043-ind{position:absolute;top:5px;bottom:5px;left:var(--l,0);right:var(--r,0);border-radius:999px;background:var(--ux-ink);pointer-events:none}
+.list-pagination .u043-pager.go-r .u043-ind{transition:right .32s var(--ux-ease),left .55s var(--ux-spring) .08s}
+.list-pagination .u043-pager.go-l .u043-ind{transition:left .32s var(--ux-ease),right .55s var(--ux-spring) .08s}
+.list-pagination .u043-pg{position:relative;flex:1;height:40px;border:0;padding:0;border-radius:999px;background:none;font-size:14.5px;font-weight:700;color:var(--ux-ink-2);font-variant-numeric:tabular-nums;transition:color .3s;cursor:pointer}
+.list-pagination .u043-pg:hover{color:var(--ux-ink)}.list-pagination .u043-pg[aria-current="page"]{color:var(--ux-page)}
+.list-pagination .u043-ar{position:relative;width:40px;height:40px;flex:none;border:0;padding:0;border-radius:50%;background:var(--ux-surface-2);color:var(--ux-ink);display:grid;place-items:center;transition:transform .35s var(--ux-spring),opacity .3s;cursor:pointer}
+.list-pagination .u043-ar:active{transform:scale(.88)}.list-pagination .u043-ar:disabled{opacity:.3;cursor:not-allowed}
+.list-pagination .u043-ar svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.list-pagination :is(.u043-pg,.u043-ar):focus-visible{outline:2px solid var(--ux-accent);outline-offset:1px}
+@media(prefers-reduced-motion:reduce){.list-pagination *{transition:none!important}}
