@@ -8,7 +8,6 @@ export const siteNavigation = [
   { id: 'chat', href: '/chat', label: `和${siteProfile.name}聊聊`, meaning: '有来源的数字分身对话', code: 'CONVERSATION', primary: true },
   { id: 'graph', href: '/graph', label: '关联图谱', meaning: '引用与关联的依据', code: 'CONNECTIONS', primary: false },
   { id: 'skills', href: '/skills', label: '技能库', meaning: 'Skills · 工作流与维护', code: 'SKILLS', primary: false },
-  { id: 'agent-configs', href: '/agent-configs', label: 'AGENTS.md', meaning: '全局与项目配置 · 模型评测', code: 'INSTRUCTIONS', primary: false },
   { id: 'agent', href: '/agent', label: '接入与 API', meaning: '读取 Skill 与接口', code: 'FOR AGENTS', primary: false },
 ] as const;
 export type SiteSection = typeof siteNavigation[number]['id'];

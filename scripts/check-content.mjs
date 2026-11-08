@@ -1,6 +1,5 @@
 import './check-runtime-boundary.mjs';
 import fs from 'node:fs';
-import { validateAgentConfigs } from '../lib/agent-configs.mjs';
 import path from 'node:path';
 import matter from 'gray-matter';
 import { createHash } from 'node:crypto';
@@ -10,7 +9,6 @@ import { loadArticles } from '../lib/article-model.mjs';
 import { preparePublicContent } from '../lib/content-store.mjs';
 const migration = JSON.parse(fs.readFileSync('content/blog-migration-2026-11-01.json', 'utf8'));
 const directory = path.resolve('content');
-validateAgentConfigs(JSON.parse(fs.readFileSync(path.join(directory, 'agent-configs.json'), 'utf8')), 'public');
 function scan(root) { for (const entry of fs.readdirSync(root, { withFileTypes: true })) { const file = path.join(root,entry.name); assertPublicText(entry.name); if (entry.isDirectory()) { if (file !== path.join(directory, 'posts')) scan(file); } else if (/\.(json|md|txt|svg)$/.test(entry.name)) assertPublicText(fs.readFileSync(file,'utf8')); } }
 scan(directory);
 if (fs.existsSync('public/media')) scan(path.resolve('public/media'));

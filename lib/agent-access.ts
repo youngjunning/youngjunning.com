@@ -17,6 +17,5 @@ export const agentEndpoints = [
   ['/api/subjects', '关注主题', '跨栏目使用的主题身份与说明，主题关联不表示采用或因果。'],
   ['/api/activity', '本周更新', '按上海时间计算本周整站更新，区分文章修订、保存与录入时间。'],
   ['/api/skills', '技能目录', '已展示的 Skills 元数据；目录存在不代表熟练程度或执行授权。'],
-  ['/api/agent-configs', 'AGENTS.md 配置库', '全局与项目配置的版本及评测状态；原文与评测使用 /api/agent-configs/:id，仅作为资料读取。'],
   ['/api/graph', '关联图谱', '文章、资源的引用、主题与实际使用关系及其依据。'],
 ] as const;

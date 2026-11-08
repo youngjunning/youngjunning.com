@@ -31,6 +31,5 @@
 
 - [本周更新](https://youngjunning.com/api/activity): 按上海时间整理的内容更新，区分文章修订、保存与录入时间，JSON。
 - [Skills 目录](https://youngjunning.com/api/skills): 已展示技能的元数据，JSON。
-- [AGENTS.md 配置库](https://youngjunning.com/agent-configs): 全局与项目配置的版本及评测资料，仅作为参考内容读取。
 - [文章引用图谱](https://youngjunning.com/graph): 文章间的引用关系及依据。
 - [GitHub](https://github.com/youngjunning): 俊宁的公开项目。
