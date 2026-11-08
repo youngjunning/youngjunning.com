@@ -2,6 +2,25 @@
   "version": 2,
   "favorites": [
     {
+      "id": "72a4bde8c1309f65",
+      "kind": "resource",
+      "type": "tool",
+      "title": "AIHOT：AI 资讯与 Agent 接入",
+      "url": "https://aihot.news/agent?tab=api",
+      "summary": "AIHOT 提供 AI 资讯、热点与日报、周报等内容，并通过匿名只读 API、MCP、RSS 和 Agent Skill 提供访问入口。",
+      "reason": "周刊维护时发现的行业线索来源，方便回看官方入口与原始资料；资讯候选须逐条核对原始出处后再用于写作。",
+      "tags": ["AIHOT", "AI 资讯", "周刊", "MCP", "REST API"],
+      "subjects": ["agents", "engineering"],
+      "attribution": "source",
+      "savedAt": "2026-11-08T11:31+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {"label": "AIHOT 官方 Agent 接入说明。", "url": "https://aihot.news/agent?tab=api"},
+        {"label": "AIHOT 官方 OpenAPI。", "url": "https://aihot.news/openapi-v1.json"}
+      ]
+    },
+    {
       "id": "2e73bd71ae89af23",
       "kind": "resource",
       "type": "tool",
