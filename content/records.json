@@ -2,6 +2,28 @@
   "version": 2,
   "records": [
     {
+      "id": "152f16fcf1a286c2",
+      "kind": "judgment",
+      "title": "漫画应由连续分镜讲述变化",
+      "date": "2026-11-08",
+      "recordedAt": "2026-11-08",
+      "text": "我不满意把标题、单张插画、图外对白和总结框拼在一起当作漫画的形式；我希望认真研究漫画，并提出让 better-imagegen 集中负责漫画制作，同时寻找优秀的漫画 Skill 融入现有流程。",
+      "context": "针对一页漫画的呈现方式提出批评，并追问漫画创作职责是否可以从文章写作流程移入 better-imagegen。这里记录本人的审美判断与流程提议，不把后续实现或画面效果当作本人已验收的结果。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-08，公开摘要：对拼接式漫画不满意，要求研究漫画、融合优秀 Skill，并提出漫画制作归 better-imagegen。"
+        }
+      ],
+      "basis": "本人对现有漫画形式的明确评价；未给出更多已验证的视觉指标。",
+      "alternatives": [],
+      "outcome": null
+    },
+    {
       "id": "a918c4f35e702d6b",
       "kind": "judgment",
       "title": "个人资料读取能力合入记忆蒸馏技能",

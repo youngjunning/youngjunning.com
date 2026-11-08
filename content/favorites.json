@@ -2,6 +2,64 @@
   "version": 2,
   "favorites": [
     {
+      "id": "9d1dacd916d60022",
+      "kind": "resource",
+      "type": "tool",
+      "title": "baoyu-comic：知识漫画创作 Skill",
+      "url": "https://github.com/JimLiu/baoyu-skills/tree/main/skills/baoyu-comic",
+      "summary": "开源知识漫画 Skill，提供内容分析、分镜、角色设定、图像提示词、逐页生成与局部返工流程；其风格与预设需要按具体作品选择。",
+      "reason": "本轮寻找漫画制作方法时发现，并将其中的流程思路融入 better-imagegen 的漫画规范；没有安装或完整运行原 Skill。",
+      "tags": ["漫画", "知识漫画", "Agent Skill", "分镜", "baoyu-comic"],
+      "subjects": ["design", "agents"],
+      "attribution": "source",
+      "savedAt": "2026-11-08T18:20+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "JimLiu/baoyu-skills 官方 baoyu-comic Skill 与 MIT 许可；2026-11-08 核对。",
+          "url": "https://github.com/JimLiu/baoyu-skills/tree/main/skills/baoyu-comic"
+        }
+      ]
+    },
+    {
+      "id": "66f7ec6ce8a23617",
+      "kind": "note",
+      "type": "method",
+      "title": "连续漫画的分镜与页面验收",
+      "url": null,
+      "summary": "先确定故事变化和阅读路径，再用相邻画格展示观察、行动、反应与后果；对白气泡在分镜阶段规划，成品按实际阅读宽度检查。",
+      "reason": "回看知识漫画为什么不能只把单幅插画与图外对白拼成卡片，以及如何在制作前后检查连续叙事。",
+      "tags": ["漫画", "分镜", "画格", "对白气泡", "条漫"],
+      "subjects": ["design"],
+      "attribution": "ai",
+      "savedAt": "2026-11-08T18:20+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "Scott McCloud 本人对 sequential art 的说明。",
+          "url": "https://www.scottmccloud.com/2010/08/24/why-it-works/"
+        },
+        {
+          "label": "漫画作者 Steve Ellis 的页面缩略分镜教学。",
+          "url": "https://www.clipstudio.net/how-to-draw/archives/160963"
+        },
+        {
+          "label": "Clip Studio 漫画与条漫制作教学。",
+          "url": "https://www.clipstudio.net/en/comics-manga/comic-creation/"
+        }
+      ],
+      "note": {
+        "body": "先用一句话说明场景从什么状态变到什么状态，再在整页缩略稿中安排阅读方向、画格大小和视觉重心。每格应让读者看到新的观察、动作、反应或后果；相邻格共享人物位置、道具和空间关系。对白与气泡尾巴在草图阶段进入相应画格，精确文字可作为可编辑图层加入。成品同时看整页缩略图和手机阅读宽度，检查画格顺序、人物一致性、说话人归属及文字可读性。",
+        "context": "AI 根据漫画作者、编辑与创作工具的原始教学资料整理的制作与验收方法；不是本人已完成漫画创作效果验证的声明。",
+        "example": "假设角色误点两个同名按钮中的一个，可以依次画出不同所属行、误选造成的错误结果、重新检查所属行、正确结果回读，而不是只画角色指着屏幕说两句对白。",
+        "boundary": "画格数与版式由故事和载体决定；页漫与竖向条漫都需要连续阅读。标题、单幅插画和图外聊天记录的组合可以是图文说明，但不能据此声称已完成漫画分镜。",
+        "date": null,
+        "recordedAt": "2026-11-08"
+      }
+    },
+    {
       "id": "2e73bd71ae89af23",
       "kind": "resource",
       "type": "tool",
