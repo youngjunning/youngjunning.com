@@ -1,48 +1,38 @@
 import Link from 'next/link';
 import { getSiteTheme } from '@/lib/site-theme';
 import { getCatalog } from '@/lib/content';
+import { getIndustryFeed } from '@/lib/industry-feed';
 import { siteProfile } from '@/lib/site-profile.mjs';
 import Shell from '@/components/shell';
 import StatechartShell from '@/components/statechart/shell';
-import ResourceCards from '@/components/lucian/resource-cards';
+import IndustryTimeline from '@/components/lucian/industry-timeline';
 import './industry.css';
 
 export const metadata = { title: '行业动态' };
-
-const aihotUrl = 'https://aihot.news/';
-const description = '本站的行业观察按周刊发布。AIHOT（aihot.news）是外部线索来源；每期核对原始发布后，再写下本站的判断。';
+const description = '按自己关注的信源追踪动态，再把值得展开的变化写进本站周刊。';
 
 export default async function AIHOTPage() {
+  const [feed, theme] = await Promise.all([getIndustryFeed(), getSiteTheme()]);
   const weeklies = getCatalog().documents
     .filter((doc): doc is typeof doc & { date: string } => Boolean(doc.date && doc.tags?.some(tag => siteProfile.weeklyTags.includes(tag))))
-    .sort((a, b) => b.date.localeCompare(a.date))
-    .slice(0, 4);
+    .sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3);
+  const status = feed.state === 'unconfigured' ? '自建资讯源尚未接入。接入后，你设置的关注信源会出现在这里。' : feed.state === 'unavailable' ? '资讯源暂时无法读取，请稍后再试。' : '最近 7 天暂无精选动态。可以在自建资讯源后台调整信源和精选规则。';
 
-  if (await getSiteTheme() === 'statechart') {
-    return <StatechartShell active="/aihot" title="行业动态" subtitle={description}>
-      <section className="sc-section industry-statechart">
-        <header><span className="sc-kicker">SITE / WEEKLY REVIEW</span><h2>本站周刊</h2></header>
-        {weeklies.length ? <div className="sc-notes-row">{weeklies.map(doc => <Link className="sc-note" href={doc.url} key={doc.id}><small>{doc.date.slice(0, 10)} · 已核对来源</small><h3>{doc.title}</h3><p>{doc.summary}</p><span>阅读本期 →</span></Link>)}</div> : <p>本站尚未发布行业周刊。<Link href="/blog">先浏览手记 →</Link></p>}
-      </section>
-      <section className="sc-section industry-statechart-source"><header><span className="sc-kicker">SOURCE / EDITORIAL PROCESS</span><h2>AIHOT 在这里做什么</h2></header><p>维护周刊时，AIHOT 提供候选线索；编辑逐条打开原始来源，核对发布时间、实际变化与适用范围，再决定是否写入本站。AIHOT 的精选不代表本站认可。</p><p><a href={aihotUrl} target="_blank" rel="noopener noreferrer">访问 aihot.news ↗</a></p></section>
-    </StatechartShell>;
-  }
-
-  const areas = weeklies.map(doc => ({
-    id: doc.id,
-    title: doc.title,
-    description: doc.summary,
-    status: `${doc.date.slice(0, 10)} · 本站周刊`,
-    details: [],
-    href: doc.url,
-    linkLabel: '阅读本期',
-  }));
+  if (theme === 'statechart') return <StatechartShell active="/aihot" title="行业动态" subtitle={description}>
+    <section className="sc-section industry-statechart"><header><span className="sc-kicker">YOUR SOURCES / LATEST</span><h2>我的关注</h2></header>
+      {feed.items.length ? <div className="industry-sc-feed">{feed.items.map(item => <article className="industry-sc-item" key={item.id}><small>{item.source} · {item.publishedAt?.slice(0, 10) || '时间未标注'}</small><h3><a href={item.itemUrl} target="_blank" rel="noopener noreferrer">{item.title} ↗</a></h3>{item.summary && <p>{item.summary}</p>}{item.originalUrl && <a href={item.originalUrl} target="_blank" rel="noopener noreferrer">原始来源 ↗</a>}</article>)}</div> : <p className="industry-empty">{status}</p>}
+      {feed.homeUrl && <p className="industry-feed-home"><a href={feed.homeUrl} target="_blank" rel="noopener noreferrer">打开我的资讯源 ↗</a></p>}
+    </section>
+    <section className="sc-section industry-statechart"><header><span className="sc-kicker">EDITORIAL / WEEKLY</span><h2>本站周刊</h2></header>{weeklies.length ? <div className="sc-notes-row">{weeklies.map(doc => <Link className="sc-note" href={doc.url} key={doc.id}><small>{doc.date.slice(0, 10)} · 已核对来源</small><h3>{doc.title}</h3><p>{doc.summary}</p><span>阅读本期 →</span></Link>)}</div> : <p>本站尚未发布行业周刊。<Link href="/blog">先浏览手记 →</Link></p>}</section>
+    <section className="sc-section industry-statechart-source"><header><span className="sc-kicker">HOW IT WORKS</span><h2>资讯从哪里来</h2></header><p>本站动态读取你自己部署的资讯源；关注的信源和精选规则由你在该服务后台维护。周刊是本站另行核对原始来源后写成的文章。<a href="https://github.com/KKKKhazix/AIHOT" target="_blank" rel="noopener noreferrer">了解所用的开源引擎 ↗</a></p></section>
+  </StatechartShell>;
 
   return <Shell active="industry"><div className="industry-page">
-    <section className="page-intro"><div className="eyebrow">INDUSTRY / WEEKLY REVIEW</div><h1>行业动态</h1><p>{description}</p></section>
-    <div className="industry-layout">
-      <section className="industry-issues" aria-labelledby="industry-issues-title"><div className="industry-section-heading"><span>01 / PUBLISHED</span><h2 id="industry-issues-title">本站周刊</h2><p>每期保留时间范围、原始来源与适用边界。</p></div>{areas.length ? <ResourceCards ariaLabel="行业周刊" areas={areas} /> : <p className="industry-empty">本站尚未发布行业周刊。<Link href="/blog">先浏览手记 →</Link></p>}</section>
-      <aside className="industry-source" aria-labelledby="industry-source-title"><span>02 / SOURCE</span><h2 id="industry-source-title">AIHOT 在这里做什么</h2><p>AIHOT 是独立的外部资讯站。我们在维护周刊时用它发现候选，再回到原始来源核对事实；入选与判断由本站完成。</p><a href={aihotUrl} target="_blank" rel="noopener noreferrer">访问 aihot.news ↗</a></aside>
-    </div>
+    <section className="page-intro"><div className="eyebrow">INDUSTRY / YOUR SOURCES</div><h1>行业动态</h1><p>{description}</p></section>
+    <div className="industry-layout"><section className="industry-main"><div className="industry-section-heading"><span>01 / MY FEED</span><h2>我的关注</h2><p>由自建资讯源采集、归并和精选；点击条目可查看详情与原始来源。</p></div>
+      {feed.items.length ? <IndustryTimeline items={feed.items} /> : <p className="industry-empty">{status}</p>}
+      {feed.homeUrl && <a className="industry-feed-home" href={feed.homeUrl} target="_blank" rel="noopener noreferrer">打开我的资讯源 ↗</a>}
+    </section><aside className="industry-side"><section className="industry-side-block"><span>02 / WEEKLY</span><h2>本站周刊</h2><p>基于原始来源写下变化、影响和判断。</p>{weeklies.length ? <div className="industry-weeklies">{weeklies.map(doc => <Link href={doc.url} key={doc.id}><small>{doc.date.slice(0, 10)}</small><strong>{doc.title}</strong><span>阅读本期 →</span></Link>)}</div> : <p className="industry-side-empty">尚未发布周刊。<Link href="/blog">浏览手记 →</Link></p>}</section>
+      <section className="industry-side-block"><span>03 / SOURCE</span><h2>接入关系</h2><p>这里读取你自己部署的资讯源，关注规则由你维护。<a href="https://aihot.news" target="_blank" rel="noopener noreferrer">aihot.news</a> 是上游运营站，不是本站的数据入口。</p></section></aside></div>
   </div></Shell>;
 }
