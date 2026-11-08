@@ -1,0 +1,25 @@
+.industry-page .page-intro{padding-top:38px;padding-bottom:30px}
+.industry-page .page-intro h1{margin:10px 0 8px}
+.industry-page .page-intro p{max-width:680px;margin:0;font-size:14px;line-height:1.8}
+.industry-layout{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(260px,1fr);align-items:start;gap:36px;max-width:1320px;padding:38px 5% 72px;margin:auto}
+.industry-section-heading>span,.industry-source>span{color:var(--style-accent);font-size:11px;font-weight:700;letter-spacing:.16em}
+.industry-section-heading h2,.industry-source h2{margin:8px 0;font-size:24px;line-height:1.35;color:var(--style-ink)}
+.industry-section-heading p,.industry-source p,.industry-empty{margin:0;color:var(--style-muted);font-size:14px;line-height:1.8}
+.industry-issues .resource-cards{margin-top:22px}
+.industry-issues .resource-cards .u228-gd{grid-template-columns:1fr;gap:14px}
+.industry-issues .resource-cards .u228-in{padding:20px;gap:8px}
+.industry-issues .resource-cards h3{font-size:19px;line-height:1.4}
+.industry-issues .resource-cards .u228-in>span:not(.u228-ic){display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.industry-issues .resource-cards a{padding-top:4px}
+.industry-empty{margin-top:22px}
+.industry-empty a{display:inline-block;margin-left:8px;color:var(--style-accent);text-decoration:underline;text-underline-offset:4px}
+.industry-source{padding:22px 0 22px 24px;border-left:1px solid var(--style-line)}
+.industry-source p{margin:14px 0 22px}
+.industry-source a{color:var(--style-accent);font-size:14px;text-decoration:underline;text-underline-offset:4px}
+.industry-page a:focus-visible{outline:2px solid var(--style-accent);outline-offset:4px}
+.industry-statechart .sc-notes-row{grid-template-columns:1fr;gap:14px}
+.industry-statechart .sc-note{padding:18px}
+.industry-statechart .sc-note h3{font-size:19px;margin:8px 0}
+.industry-statechart .sc-note p{margin:0 0 10px;-webkit-line-clamp:2}
+.industry-statechart-source p{max-width:700px;line-height:1.8}
+@media(max-width:760px){.industry-layout{grid-template-columns:1fr;gap:26px;padding:28px 22px 52px}.industry-source{padding:20px 0 0;border-left:0;border-top:1px solid var(--style-line)}.industry-page .page-intro{padding:28px 22px}}
