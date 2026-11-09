@@ -2,6 +2,30 @@
   "version": 2,
   "favorites": [
     {
+      "id": "f7b03898d1461131",
+      "kind": "note",
+      "type": "method",
+      "title": "用 curl 区分直连、本地代理与双跳代理",
+      "url": null,
+      "summary": "显式 `--proxy` 会覆盖环境中的代理设置；需要先经本地 SOCKS 代理、再连远端 HTTP 代理时，应明确使用 `--preproxy` 与 `--proxy`，分别核对每条路径的出口。",
+      "reason": "排查“浏览器已走本地代理，但指定远端代理的 curl 仍被源站拒绝”时，可快速确认哪一跳改变了出口。",
+      "tags": ["curl", "SOCKS5", "HTTP 代理", "双跳代理", "网络排障"],
+      "subjects": ["infra", "engineering"],
+      "attribution": "ai",
+      "savedAt": "2026-11-09T10:33+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {"label": "curl 官方手册：--proxy 覆盖代理环境变量，--preproxy 可先经 SOCKS 再连接 HTTP/HTTPS 代理；2026-11-09 核对。", "url": "https://curl.se/docs/manpage.html"}
+      ],
+      "note": {
+        "body": "先分别测直连、本地代理和目标代理的出口与错误码。`curl --noproxy '*'` 可显式绕过代理；用 `--proxy` 指向本地 HTTP 端口可测试本地出口。`--proxy` 指定远端代理时，会覆盖环境中的 HTTP_PROXY、HTTPS_PROXY 等设置，并不会自动把本地代理作为第一跳。若本地端口支持 SOCKS，可用 `--preproxy` 指向本地 SOCKS 端口，同时用 `--proxy` 指向远端 HTTP 代理，明确建立“本地 SOCKS → 远端 HTTP 代理 → 目标站”的路径。比较三条路径的出口国家、IP 和代理错误，才能判断拒绝发生在哪一跳。",
+        "boundary": "`--preproxy` 的这条组合要求本地代理支持 SOCKS，远端使用 HTTP/HTTPS 代理；一次 curl 成功只证明当前机器的这一条请求路径，不证明移动设备、App WebView 或其他网络也可用。不要把真实代理密码写入公开文档或日志。",
+        "date": null,
+        "recordedAt": "2026-11-09"
+      }
+    },
+    {
       "id": "1e9b082544ece080",
       "kind": "note",
       "type": "concept",
