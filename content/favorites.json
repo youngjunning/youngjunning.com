@@ -2,6 +2,31 @@
   "version": 2,
   "favorites": [
     {
+      "id": "2a9e647b0c73f581",
+      "kind": "note",
+      "type": "concept",
+      "title": "软实力有哪些：五个可观察的方向",
+      "url": null,
+      "summary": "可从表达与倾听、协作与共情、影响与带领、自我管理与适应、学习与反思五个方向理解软实力。",
+      "reason": "回答软实力有哪些，并为后续查找具体行为证据和成长建议提供回看框架。",
+      "tags": ["软实力", "表达力", "协作", "成长"],
+      "subjects": ["design", "business"],
+      "attribution": "ai",
+      "savedAt": "2026-11-11T03:12+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        { "label": "OECD《Social and Emotional Skills for Better Lives》；涵盖任务表现、情绪调节、与人交往、开放性与合作。", "url": "https://www.oecd.org/en/publications/social-and-emotional-skills-for-better-lives_35ca7b7c-en.html" },
+        { "label": "世界经济论坛《The Future of Jobs Report 2025》技能展望；涵盖主动倾听、同理心、领导与社会影响、韧性和持续学习。", "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/3-skills-outlook" }
+      ],
+      "note": {
+        "body": "软实力是帮助人与人协作、表达、适应变化并持续改进的行为能力。为便于观察，可把常见方向归为五组：表达与倾听（讲清想法并理解反馈）、协作与共情（理解他人的约束并处理分歧）、影响与带领（让判断被理解并推动共同目标）、自我管理与适应（管理承诺和压力并调整做法）、学习与反思（从实践和反馈中修正行动）。这是参考 OECD 社会与情感技能和世界经济论坛工作技能报告后作的 AI 辅助归纳，不是两份报告共同发布的唯一分类。评价某个人时，应查看具体行为与他人反馈，并区分书面表达、口头表达和协作成效；单凭本人自述或一篇文章不能证明全面能力。",
+        "context": "回应本人对软实力范围的提问；此笔记是资料整理，不代表本人已具备这些能力。",
+        "date": null,
+        "recordedAt": "2026-11-11"
+      }
+    },
+    {
       "id": "6d1788b25a310267",
       "kind": "resource",
       "type": "tool",
