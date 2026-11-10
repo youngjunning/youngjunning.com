@@ -519,9 +519,9 @@
       "id": "9b8569ce4568c02c",
       "kind": "judgment",
       "title": "Joyally Design 扩展设计方法并保留江南山水风格",
-      "text": "我认为 Joyally Design 应有更宽的产品设计适用范围，不局限于单一品牌预设；但它自身的江南山水视觉语言需要保留。吸收其他 UI 设计方法、必要时重构 Joyally Design，也应保留这一自身风格。",
-      "context": "2026-11-02 提出扩大公开 Joyally Design Skill 的适用范围；2026-11-11 要求融合 oil-ui-pro 的方法，并明确保留自身的江南山水风格。具体适用的品牌类型和视觉体系尚未逐一界定。",
-      "basis": "本人先要求扩大 Joyally Design 的定位，后明确要求融合设计方法时保留其原有风格；未另述具体理由。",
+      "text": "我认为 Joyally Design 应有更宽的产品设计适用范围，不局限于单一品牌预设；但它自身的江南山水视觉语言需要保留。接入 oil-ui-pro 时，我要求更完整地融合其能力，不能只加入方向与交付流程；必要时可以重构 Joyally Design。",
+      "context": "2026-11-02 提出扩大公开 Joyally Design Skill 的适用范围；2026-11-11 要求融合 oil-ui-pro 并保留自身风格，随后指出只加入方向与交付流程不足，要求接入更多能力。具体适用的品牌类型和视觉体系尚未逐一界定。",
+      "basis": "本人先要求扩大 Joyally Design 的定位，后明确要求更完整地融合设计能力，同时保留原有风格；未另述具体理由。",
       "alternatives": [],
       "outcome": null,
       "date": "2026-11-02",
@@ -537,7 +537,7 @@
         },
         {
           "kind": "statement",
-          "label": "本人陈述，2026-11-11，公开摘要：将 oil-ui-pro 融入 Joyally Design，必要时可重构，但保留江南山水视觉语言。"
+          "label": "本人陈述及纠正，2026-11-11，公开摘要：将 oil-ui-pro 融入 Joyally Design，必要时可重构并保留江南山水视觉语言；只加入方向与交付流程不足，还需覆盖原包更多能力。"
         }
       ]
     },
