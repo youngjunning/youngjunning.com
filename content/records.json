@@ -518,10 +518,10 @@
     {
       "id": "9b8569ce4568c02c",
       "kind": "judgment",
-      "title": "Joyally Design 不局限于青山湖视觉语言",
-      "text": "我认为 Joyally Design 不应局限于青山湖视觉语言，应有更宽的产品设计适用范围。青山湖可以是其中一种视觉方向，但不是 Joyally Design 的整体边界。",
-      "context": "在维护公开 Joyally Design Skill 时提出的设计定位判断；具体适用的品牌类型和视觉体系尚未逐一界定。",
-      "basis": "本人明确要求扩大 Joyally Design 的定位；未另述具体理由。",
+      "title": "Joyally Design 扩展设计方法并保留江南山水风格",
+      "text": "我认为 Joyally Design 应有更宽的产品设计适用范围，不局限于青山湖视觉语言；但它自身的江南山水风格来源于青山湖风格，需要保留。吸收其他 UI 设计方法、必要时重构 Joyally Design，也应保留这一自身风格。",
+      "context": "2026-11-02 提出扩大公开 Joyally Design Skill 的适用范围；2026-11-11 要求融合 oil-ui-pro 的方法，并明确保留自身的江南山水风格。具体适用的品牌类型和视觉体系尚未逐一界定。",
+      "basis": "本人先要求扩大 Joyally Design 的定位，后明确要求融合设计方法时保留其原有风格；未另述具体理由。",
       "alternatives": [],
       "outcome": null,
       "date": "2026-11-02",
@@ -534,6 +534,10 @@
         {
           "kind": "statement",
           "label": "本人陈述，2026-11-02，公开摘要：Joyally Design 不应该局限青山湖视觉语言，应有更宽的定位。"
+        },
+        {
+          "kind": "statement",
+          "label": "本人陈述，2026-11-11，公开摘要：将 oil-ui-pro 融入 Joyally Design，必要时可重构，但保留源于青山湖风格的江南山水视觉语言。"
         }
       ]
     },
