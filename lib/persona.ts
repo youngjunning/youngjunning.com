@@ -12,7 +12,7 @@ const persona = {
   featuredExperienceIds: shared.filter(record => record.kind === 'experience').map(record => record.id),
   featuredProjectIds: shared.filter(record => record.kind === 'project').map(record => record.id),
   featuredArticleIds: [] as string[],
-  valueRecordIds: [] as string[],
+  valueRecordIds: source.valueRecordIds,
   perspectives: [] as Perspective[],
 };
 export default persona;

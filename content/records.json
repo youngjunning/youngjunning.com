@@ -2,6 +2,23 @@
   "version": 2,
   "records": [
     {
+      "id": "5f9453a80ec3338f",
+      "kind": "judgment",
+      "title": "表达力是一项重要的软实力",
+      "date": "2026-11-11",
+      "recordedAt": "2026-11-11",
+      "text": "我认为表达力也是一项很重要的软实力。",
+      "context": "2026 年 11 月 11 日谈及个人能力时的明确判断；本人未进一步说明表达力的具体范围或评价依据。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [{ "kind": "statement", "label": "本人陈述，2026-11-11，公开摘要：认为表达力也是一项很重要的软实力。" }],
+      "basis": "本人明确表达了对表达力的重视；未说明其他理由。",
+      "alternatives": [],
+      "outcome": null
+    },
+    {
       "id": "a7e262cd6cd3b8f2",
       "kind": "judgment",
       "title": "行业动态接入可自定义关注的自建资讯源",
