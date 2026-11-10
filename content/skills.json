@@ -606,10 +606,10 @@
     },
     {
       "id": "5c6ca4fa2d004a71",
-      "name": "writting-skill",
-      "summary": "仅在用户明确提出写作、续写、改写、润色或审阅正文时调用；支持文章、书稿与绘本，绘本插画指定 better-imagegen。普通问答、代码工作和自动收尾不触发写作流程。",
+      "name": "joyally-writting",
+      "summary": "仅在用户明确提出写作、续写、改写、润色或审阅正文时调用；支持文章、书稿与绘本，绘本插画指定 joyally-imagegen。普通问答、代码工作和自动收尾不触发写作流程。",
       "group": "self",
-      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/writing/writting-skill"
+      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/writing/joyally-writting"
     },
     {
       "id": "faad36c651afcb0d",
@@ -627,10 +627,10 @@
     },
     {
       "id": "b27a941e06cf835d",
-      "name": "better-imagegen",
-      "summary": "图像生成、编辑与素材校验；按 writting-skill 的逐页分镜生成绘本插画，保持角色一致，支持背景扩展和局部修图。",
+      "name": "joyally-imagegen",
+      "summary": "图像生成、编辑与素材校验；按 joyally-writting 的逐页分镜生成绘本插画，保持角色一致，支持背景扩展和局部修图。",
       "group": "self",
-      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/design/better-imagegen"
+      "sourceUrl": "https://github.com/youngjunning/skills/tree/main/skills/design/joyally-imagegen"
     },
     {
       "id": "c8ed10a6f42975b3",
