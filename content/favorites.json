@@ -2,6 +2,26 @@
   "version": 2,
   "favorites": [
     {
+      "id": "6d1788b25a310267",
+      "kind": "resource",
+      "type": "tool",
+      "title": "HeroUI：React 与 React Native 组件库",
+      "url": "https://heroui.com/",
+      "summary": "HeroUI 官网提供 React 与 React Native 的开源 UI 组件及主题配置入口，并介绍付费模板等产品。",
+      "reason": "回看组件目录、跨 Web 与移动端的设计方案及官方文档入口。",
+      "tags": ["HeroUI", "React", "React Native", "UI 组件库"],
+      "subjects": ["design", "engineering"],
+      "attribution": "source",
+      "savedAt": "2026-11-11T01:34+08:00",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        {"label": "HeroUI 官网，2026-11-11 核对。", "url": "https://heroui.com/"},
+        {"label": "本人明确要求收藏 HeroUI 官网，2026-11-11。"}
+      ],
+      "relatedIds": ["3ad86e9295020a3c"]
+    },
+    {
       "id": "f7b03898d1461131",
       "kind": "note",
       "type": "method",
