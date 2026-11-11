@@ -2,6 +2,23 @@
   "version": 2,
   "records": [
     {
+      "id": "8a0624b14190fabd",
+      "kind": "judgment",
+      "title": "Joyally Design 按平台选择 UI 组件基础",
+      "date": "2026-11-11",
+      "recordedAt": "2026-11-11",
+      "text": "在 Joyally Design 的平台组件选型中，我确认 Android 原生 App 使用 Jetpack Compose Material 3，React Web 页面使用 Magic UI；此前选定的 H5 页面和 Chrome 扩展继续使用 daisyUI。",
+      "context": "这是新建界面的默认组件来源选择。React Web 与 H5、Chrome 扩展按交付场景区分，React Native 不属于这次确认的 React Web 范围。现有项目的组件迁移仍需结合项目约束决定；这条记录不代表所有项目已经完成迁移。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [{ "kind": "statement", "label": "本人陈述，2026-11-11，公开摘要：确认 Android 原生 App 使用 Jetpack Compose Material 3、React Web 使用 Magic UI；先前已选择 H5 和 Chrome 扩展使用 daisyUI。" }],
+      "basis": "本人明确确认各平台组件来源；未说明进一步的选型理由。",
+      "alternatives": [],
+      "outcome": "Joyally Design 的公开 Skill 已按该平台映射更新并推送。"
+    },
+    {
       "id": "5f9453a80ec3338f",
       "kind": "judgment",
       "title": "表达力是一项重要的软实力",
