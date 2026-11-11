@@ -1,6 +1,6 @@
 /* Lucian UX/UI Prompt #343 · MIT License (c) 2026 Seokwoooo · https://lucianlabs.dev/uxui-prompt/#343 */
 /* Use the actual document scroll surface instead of the gallery's demo article. */
-.article-back-to-top.u343{position:fixed;right:24px;bottom:24px;width:52px;height:52px;z-index:40;pointer-events:none}
+.article-back-to-top.u343{position:fixed;right:24px;bottom:72px;width:52px;height:52px;z-index:40;pointer-events:none}
 .u343 .u343-up{position:absolute;right:0;bottom:0;width:52px;height:52px;border:0;padding:0;border-radius:50%;background:var(--ux-ink);color:var(--ux-page);box-shadow:0 12px 24px -10px var(--ux-shadow-strong);opacity:0;transform:translateY(20px) scale(.6);pointer-events:none;transition:opacity .3s,transform .5s var(--ux-spring)}
 .u343.show .u343-up{opacity:1;transform:none;pointer-events:auto}
 .u343 .u343-up svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
@@ -14,6 +14,6 @@
 .u343.fly .u343-rk{opacity:1}
 .u343.fly .u343-rk .f{animation:u343-fl .12s linear infinite alternate}
 @keyframes u343-fl{to{transform:scaleY(1.6)}}
-@media(max-width:700px){.article-back-to-top.u343{right:max(16px,env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom))}}
+@media(max-width:700px){.article-back-to-top.u343{right:max(16px,env(safe-area-inset-right));bottom:calc(72px + env(safe-area-inset-bottom))}}
 @media(prefers-reduced-motion:reduce){.u343 .u343-up,.u343 .u343-ar{transition:none}.u343.fly .u343-rk .f{animation:none}}
 @media print{.article-back-to-top.u343{display:none}}
