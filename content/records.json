@@ -2,6 +2,23 @@
   "version": 2,
   "records": [
     {
+      "id": "c295f1531e836f60",
+      "kind": "judgment",
+      "title": "Joyally Design 交付的组件不应停留在原生默认样式",
+      "date": "2026-11-13",
+      "recordedAt": "2026-11-13",
+      "text": "我觉得使用 Joyally Design 后，界面组件仍呈现未经设计处理的原生默认样式是不对的，并希望确认这种情况是否还会发生。",
+      "context": "针对 Joyally Design 的组件落地质量提出的判断；本人未指出具体页面或控件。此次 Skill 修订以 Web 页面浏览器默认样式作为检查对象，不能据此推断本人也反对原生 App 的平台控件。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": ["8a0624b14190fabd"],
+      "sources": [{ "kind": "statement", "label": "俊宁本人陈述，2026-11-13，公开摘要：使用 Joyally Design 后，组件仍用原生默认样式是不对的。" }],
+      "basis": "本人明确评价组件仍呈现原生默认样式不对；未进一步说明理由。",
+      "alternatives": [],
+      "outcome": null
+    },
+    {
       "id": "9a0e4108aef0b1fb",
       "kind": "judgment",
       "title": "落地页首屏不宜套用三段编号横栏",
