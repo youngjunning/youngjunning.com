@@ -2,6 +2,32 @@
   "version": 2,
   "favorites": [
     {
+      "id": "a535cbc0672033b2",
+      "kind": "note",
+      "type": "concept",
+      "title": "可得性启发",
+      "url": null,
+      "summary": "判断事件发生频率或概率时，人容易以相关例子浮现得有多快、多容易作为线索。",
+      "reason": "回看概率判断中的常见捷径，区分容易想起的例子与实际发生比例。",
+      "tags": ["心理学", "认知启发", "概率判断", "可得性启发"],
+      "subjects": ["memory"],
+      "attribution": "ai",
+      "savedAt": "2026-11-13T00:22+08:00",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        { "label": "本人于 2026-11-13 明确要求保存“可得性启发”；概念解释由 AI 整理。" },
+        { "label": "Tversky 与 Kahneman，《Availability: A heuristic for judging frequency and probability》", "url": "https://www.cambridge.org/core/books/abs/judgment-under-uncertainty/availability-a-heuristic-for-judging-frequency-and-probability/91C188C49E8AF2DCFD730F8047117671" }
+      ],
+      "note": {
+        "body": "可得性启发（availability heuristic）指判断频率或概率时，会参考相关事例从记忆中浮现或在脑中构想出来的容易程度。容易想到的事例可能更常见，也可能只是近期接触或印象鲜明，不能直接当作实际发生率。假设最近连续看到几起系统故障，就据此判断某服务故障频繁；要评估故障率，还应查看明确时间范围内的事件总数、请求量等基准数据。",
+        "context": "依据 Tversky 与 Kahneman 的研究作 AI 辅助整理；本人明确要求保存该概念，未表示个人使用或认可其中每项结论。",
+        "date": null,
+        "recordedAt": "2026-11-13",
+        "boundary": "示例是假设情境，并非本人经历；凭直觉判断也不一定每次都错。"
+      }
+    },
+    {
       "id": "0d8a1732839f3b4a",
       "kind": "resource",
       "type": "reference",
