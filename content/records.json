@@ -24,13 +24,13 @@
       "title": "担心 AI 自动补测会增加测试套件负担",
       "date": "2026-11-12",
       "recordedAt": "2026-11-12",
-      "text": "我担心 AI 自己增加的测试用例可能没有实际价值；如果长期积累，测试套件可能熵增并拖慢开发速度。我正在寻找能判断测试是否值得保留、并控制这种负担的 Skill。",
-      "context": "讨论 AI 辅助开发中的测试质量与长期维护成本时提出的疑问；这是探索中的担忧，尚未形成具体项目的测试取舍或实践结论。",
+      "text": "我担心 AI 自己增加的测试用例可能没有实际价值；如果长期积累，测试套件可能熵增并拖慢开发速度。我选定 Test Quality Audit 作为参考，要求新增 joyally-test-quality 来判断测试是否能挡住真实回归，以及哪些测试值得保留或清理。",
+      "context": "讨论 AI 辅助开发中的测试质量与长期维护成本时提出的担忧，随后明确选择一个公开 Skill 作为 Joyally 技能的参考。公开 Skill 已建立并在本机接入；尚未在具体项目审计测试套件，也没有证据表明开发速度已经改善。",
       "visibility": "shared",
       "articleId": null,
       "projectId": null,
       "relatedIds": [],
-      "sources": [{ "kind": "statement", "label": "本人提出的问题，2026-11-12，公开摘要：担心 AI 自动增加的测试可能无效，长期积累会拖慢开发，想寻找合适的 Skill。" }]
+      "sources": [{ "kind": "statement", "label": "本人提出的问题，2026-11-12，公开摘要：担心 AI 自动增加的测试可能无效，长期积累会拖慢开发，想寻找合适的 Skill。" }, { "kind": "statement", "label": "本人后续选择，2026-11-12，公开摘要：以 marcellocurto/skills 的 test-quality-audit 为参考新增 joyally-test-quality。" }]
     },
     {
       "id": "93a5ee5e5d5ac907",
