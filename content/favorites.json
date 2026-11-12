@@ -1697,19 +1697,29 @@
       "id": "f7ab9f83499a05f8",
       "title": "Pakco HTML：可移植 HTML 页面基础",
       "url": "https://github.com/pakco77/pakco-html",
-      "summary": "Pakco HTML 提供基础样式、页面布局和可选的 deck 动画运行时。2026-11-02 核验的上游 HEAD 仍为 8cefc6b6b68d85a1484e066c47ae571b75d0d4e1；Joyally Design 使用其本地文件子集。",
-      "reason": "用于核对 Joyally Design 生成的 HTML 报告与演示文稿所依赖的上游资源。",
+      "summary": "Pakco HTML 提供 HTML deck、网页与社交卡片的模板和视觉参考。Joyally Design 曾使用其本地文件子集；截至 2026-11-13，报告、HTML PPT 与社交卡片均由 Joyally 自有样式和脚本维护，Pakco 仅作为所选视觉做法的参考。",
+      "reason": "回查 HTML 演示与社交图文的版式参考，以及 Joyally Design 借鉴范围的来源。",
       "tags": [
         "HTML",
-        "报告",
+        "HTML PPT",
+        "社交卡片",
         "Pakco"
       ],
       "savedAt": "2026-11-02",
+      "updatedAt": "2026-11-13T02:57+08:00",
       "selection": "discovered",
       "visibility": "shared",
       "sources": [
         {
           "label": "Pakco HTML 官方 GitHub 仓库；2026-11-02 核验上游 HEAD 与打包文件。"
+        },
+        {
+          "label": "Joyally Design 此前打包 Pakco 文件子集的历史版本。",
+          "url": "https://github.com/youngjunning/skills/tree/53dc7a4/skills/design/joyally-design/vendor/pakco-html"
+        },
+        {
+          "label": "Joyally Design 2026-11-13 的独立社交卡片实现与报告精修。",
+          "url": "https://github.com/youngjunning/skills/tree/75d62de/skills/design/joyally-design"
         }
       ],
       "kind": "resource",
@@ -1723,8 +1733,8 @@
           "project": "Joyally Design",
           "projectUrl": "https://github.com/youngjunning/skills",
           "stage": "adopted",
-          "purpose": "为本地 HTML 报告和可选 deck 提供基础样式与运行时文件。",
-          "evidence": "https://github.com/youngjunning/skills/tree/53dc7a4/skills/design/joyally-design/vendor/pakco-html"
+          "purpose": "曾为本地 HTML 报告与 deck 提供文件；当前只参考其演示文稿和社交卡片的部分版式方法，运行与主题资产由 Joyally Design 独立维护。",
+          "evidence": "https://github.com/youngjunning/skills/blob/75d62de/skills/design/joyally-design/references/social-cards.md"
         }
       ]
     },

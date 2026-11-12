@@ -2,6 +2,23 @@
   "version": 2,
   "records": [
     {
+      "id": "9a0e4108aef0b1fb",
+      "kind": "judgment",
+      "title": "落地页首屏不宜套用三段编号横栏",
+      "date": "2026-11-13",
+      "recordedAt": "2026-11-13",
+      "text": "我觉得 AI 常在落地页首屏使用的三段编号横栏不够好；在 Joyally Design 总览首屏，我对截图中的这类表达提出质疑。",
+      "context": "本人指的是首屏底部的三段编号文字横栏，未进一步说明理由；该页随后删除了这条横栏。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [{ "kind": "statement", "label": "俊宁本人陈述，2026-11-13，公开摘要。" }],
+      "basis": "本人明确评价这种首屏表达不够好，未陈述更具体的判断依据。",
+      "alternatives": [],
+      "outcome": null
+    },
+    {
       "id": "c9b947d8bab6afc0",
       "kind": "judgment",
       "title": "全局 AGENTS 只保留跨项目约定",
@@ -673,9 +690,9 @@
       "id": "9b8569ce4568c02c",
       "kind": "judgment",
       "title": "Joyally Design 融合外部设计方法并保留自身优势",
-      "text": "我认为 Joyally Design 应有更宽的产品设计适用范围，不局限于单一品牌预设；它已有的视觉主题和设计能力也要保留。接入 Oil UI Pro 时，我要求完整融合有用的能力，并根据具体任务综合两者的优点；不要让 Joyally Design 原有预设影响对 Oil 方法的判断，也不要认为任何一方的做法全部好或全部不好。Oil 的生图构思与设计稿转页面流程也应融入 Joyally Design，实际生成图片使用 joyally-imagegen。",
-      "context": "2026-11-02 提出扩大公开 Joyally Design Skill 的适用范围；2026-11-11 要求融合 Oil UI Pro 并保留自身风格，指出只加入方向与交付流程不足；2026-11-12 进一步明确应按任务权衡双方能力，避免原有预设主导融合；2026-11-13 澄清生图相关设计流程也要融合，仅由 joyally-imagegen 执行生图。这是针对 Joyally Design 的设计方法选择，不撤销此前明确的主题和平台组件决定。",
-      "basis": "本人明确要求更完整地融合设计能力、保留自有优点、按实际任务综合判断，并指定生图执行工具；未说明某一方整体优劣。",
+      "text": "我认为 Joyally Design 应有更宽的产品设计适用范围，不局限于单一品牌预设；它已有的视觉主题和设计能力也要保留。接入 Oil UI Pro 时，我要求完整融合有用的能力，并根据具体任务综合两者的优点；不要让 Joyally Design 原有预设影响对 Oil 方法的判断，也不要认为任何一方的做法全部好或全部不好。Oil 的生图构思与设计稿转页面流程也应融入 Joyally Design，实际生成图片使用 joyally-imagegen。借鉴 Pakco HTML 时，我只要适合 Joyally 的 HTML PPT 制作能力和更有表现力的报告、社交卡片风格，由 Joyally 独立维护，不完整引入 Pakco 的其他能力与主题。",
+      "context": "2026-11-02 提出扩大公开 Joyally Design Skill 的适用范围；2026-11-11 要求融合 Oil UI Pro 并保留自身风格；2026-11-12 进一步明确按任务权衡双方能力；2026-11-13 澄清生图执行工具，并限定 Pakco HTML 的借鉴范围为 HTML PPT 与报告、社交卡片的优秀视觉做法。这是 Joyally Design 的设计能力选择，不撤销此前明确的主题和平台组件决定。",
+      "basis": "本人明确要求更完整地融合设计能力、保留自有优点、按实际任务综合判断；对 Pakco 则反复限定引入范围并要求独立维护。未说明某一方整体优劣。",
       "alternatives": [],
       "outcome": null,
       "date": "2026-11-02",
@@ -700,6 +717,10 @@
         {
           "kind": "statement",
           "label": "本人澄清，2026-11-13，公开摘要：Oil 的生图相关设计流程也要融入 Joyally Design，实际生图使用 joyally-imagegen。"
+        },
+        {
+          "kind": "statement",
+          "label": "本人要求，2026-11-13，公开摘要：只借鉴 Pakco HTML 的 HTML PPT 能力及报告、社交卡片中更好的设计表达，由 Joyally Design 自己维护。"
         }
       ]
     },

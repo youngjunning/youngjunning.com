@@ -73,8 +73,18 @@ test('reviewed migration preserves all original identities, times, sources and p
   assert.equal(prepareFavorites(current).favorites.length,current.favorites.length);
   for (const old of archive.source.favorites) {
     const value = current.favorites.find(item => item.id === old.id);
-    for (const key of ['title','savedAt','selection','sources','visibility','url']) assert.deepEqual(value[key],old[key]);
-    assert.deepEqual(value.usages || [],old.usages || []);
+    for (const key of ['title','savedAt','selection','visibility','url']) assert.deepEqual(value[key],old[key]);
+    if (value.updatedAt) {
+      assert.deepEqual(value.sources.slice(0, old.sources.length),old.sources);
+      for (const usage of old.usages || []) {
+        assert.ok((value.usages || []).some(currentUsage => currentUsage.project === usage.project));
+        assert.ok(value.sources.some(source => source.url === usage.evidence) ||
+          (value.usages || []).some(currentUsage => currentUsage.evidence === usage.evidence));
+      }
+    } else {
+      assert.deepEqual(value.sources,old.sources);
+      assert.deepEqual(value.usages || [],old.usages || []);
+    }
     assert.equal('adoption' in value || 'priority' in value || 'card' in value,false);
     if (old.card) assert.equal(value.note.body,old.card.understanding);
   }
