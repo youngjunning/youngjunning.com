@@ -15,19 +15,20 @@ for (const record of records) {
 }
 const routes = ['/', '/blog', '/records', '/favorites', '/graph', '/chat', '/skills', '/skills/matt', '/agent', ...(catalog.documents[0] ? [catalog.documents[0].url] : []), ...(records[0] ? [`/records/${records[0].id}`] : [])];
 for (const route of routes) {
-  for (const theme of ['classic', 'statechart']) {
+  for (const theme of ['classic', 'statechart', 'xiaoxiang']) {
     const response = await fetch(origin + route, { headers: { Cookie: `zisheng-site-theme=${theme}` } });
     assert.equal(response.status, 200, `${theme} ${route}`);
     const html = await response.text();
     assert.ok(html.includes(`data-theme="${theme}"`), `server preference: ${route}`);
     assert.equal(/class="sc-site"/.test(html), theme === 'statechart', `independent shell: ${route}`);
-    assert.equal(/class="[^"]*\bsite-shell\b/.test(html), theme === 'classic', `no duplicate classic tree: ${route}`);
+    assert.equal(/class="[^"]*\bsite-shell\b/.test(html), theme !== 'statechart', `selected page tree: ${route}`);
+    if (theme === 'xiaoxiang') assert.ok(html.includes('data-style="xiaoxiang"'), `fashion style: ${route}`);
     if (theme === 'statechart') {
       assert.ok(!/class="[^"]*\b(?:u212|u228|u341|u049)\b/.test(html), `no mounted Lucian UI: ${route}`);
-      assert.ok(html.includes('主题：'), `theme exit: ${route}`);
+      assert.ok(html.includes('小香风'), `theme choices: ${route}`);
     }
   }
-  console.log(`PASS ${route}: two independent server-rendered trees`);
+  console.log(`PASS ${route}: three server-rendered theme preferences`);
 }
 for (const cookie of ['', 'zisheng-site-theme=unknown', 'zisheng-visual-style=statechart']) {
   const html = await fetch(origin, { headers: { Cookie: cookie } }).then(response => response.text());

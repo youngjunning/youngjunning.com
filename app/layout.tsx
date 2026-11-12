@@ -13,5 +13,5 @@ export const metadata: Metadata = {
 };
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const theme = await getSiteTheme();
-  return <html lang="zh-CN" data-theme={theme} data-style="mint" suppressHydrationWarning><head><script dangerouslySetInnerHTML={{ __html: "try{var s=localStorage.getItem('zisheng-visual-style');s=['mint','violet','paper'].includes(s)?s:'mint';document.documentElement.dataset.style=s;localStorage.setItem('zisheng-visual-style',s)}catch(e){}" }} /></head><body>{children}</body></html>;
+  return <html lang="zh-CN" data-theme={theme} data-style={theme === 'xiaoxiang' ? 'xiaoxiang' : 'mint'} suppressHydrationWarning><head><script dangerouslySetInnerHTML={{ __html: "try{var s=localStorage.getItem('zisheng-visual-style');s=['mint','violet','paper'].includes(s)?s:'mint';document.documentElement.dataset.style=document.documentElement.dataset.theme==='xiaoxiang'?'xiaoxiang':s;localStorage.setItem('zisheng-visual-style',s)}catch(e){}" }} /></head><body>{children}</body></html>;
 }

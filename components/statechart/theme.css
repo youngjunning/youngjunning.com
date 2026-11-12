@@ -3,8 +3,15 @@
 @font-face{font-family:"Kevin Serif";src:url('/themes/statechart/KevinSerif-Regular.woff2') format('woff2');font-weight:400;font-display:swap}
 @font-face{font-family:"Kevin Sans";src:url('/themes/statechart/KevinSans-Regular.woff2') format('woff2');font-weight:400;font-display:swap}
 @font-face{font-family:"Kevin Sans";src:url('/themes/statechart/KevinSans-Bold.woff2') format('woff2');font-weight:700;font-display:swap}
-.site-theme-switch{border:1px solid currentColor;background:transparent;color:inherit;padding:7px 9px;font-family:inherit;font-size:12px;line-height:1.4;cursor:pointer;white-space:nowrap}
+.site-theme-switch{display:flex;align-items:center;gap:3px;border:1px solid currentColor;background:var(--style-surface,#faf9f6);color:inherit;padding:3px;font-family:inherit;font-size:12px;line-height:1.4;white-space:nowrap}
+.site-theme-switch>span{padding:4px 6px}
+.site-theme-switch button{border:0;background:transparent;color:inherit;padding:5px 7px;font:inherit;cursor:pointer}
+.site-theme-switch button[aria-pressed="true"]{background:var(--style-ink,#21201f);color:var(--style-surface,#faf9f6)}
+.site-theme-switch button:focus-visible{outline:2px solid currentColor;outline-offset:2px}
 .classic-theme-access{position:fixed;right:18px;bottom:18px;z-index:45;background:var(--style-surface,#fff);color:var(--style-ink,#222);border-radius:4px}
+.sc-site .site-theme-switch button{border:0;background:transparent;color:inherit;padding:5px 7px;font-size:12px}
+.sc-site .site-theme-switch button[aria-pressed="true"]{background:#21201f;color:#faf9f6}
+.sc-site .site-theme-switch button:hover:not([aria-pressed="true"]){background:#f3d78f}
 html[data-theme="statechart"] body{background:#faf9f6;color:#21201f}
 .sc-site{--sc-paper:#faf9f6;--sc-ink:#21201f;--sc-muted:#57534f;--sc-red:#933323;--sc-green:#2f6b3a;--sc-rule:#dcd8d0;--sc-heading:"Kevin Serif","Kaiti SC",KaiTi,"STKaiti","Songti SC",serif;--sc-body:"Kevin Sans","Kaiti SC",KaiTi,"STKaiti","Songti SC",serif;font:17px/1.7 var(--sc-body);color:var(--sc-ink);background:var(--sc-paper) url('/themes/statechart/paper.png');min-height:100vh;padding:0 clamp(16px,4vw,56px);overflow-wrap:anywhere}
 .sc-site *{box-sizing:border-box}

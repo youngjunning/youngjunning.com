@@ -24,6 +24,7 @@ export function renderHtmlArticle(html: string, title: string, id: string) {
   document.head.append(imageStyle);
   const themeStyle = document.createElement('style');
   themeStyle.textContent = 'html[data-style="statechart"] body{font-family:"Kaiti SC",KaiTi,"STKaiti","Songti SC",serif!important;color:#21201f!important}html[data-style="statechart"] :is(section,article,div,header,aside){background-color:#faf9f6!important;background-image:none!important;box-shadow:none!important;border-radius:0!important;border-color:#dcd8d0!important;color:#21201f!important}html[data-style="statechart"] :is(h1,h2,h3,h4,p,li,span){color:#21201f!important}html[data-style="statechart"] a{color:#933323!important}html[data-style="statechart"] :is(pre,code){background:#f2efe8!important;color:#21201f!important}';
+  themeStyle.textContent += 'html[data-style="xiaoxiang"] body{font-family:Inter,-apple-system,"PingFang SC",sans-serif!important;color:#28252a!important}html[data-style="xiaoxiang"] :is(section,article,div,header,aside){background-color:#fffefa!important;border-color:#c9bfc0!important;color:#28252a!important}html[data-style="xiaoxiang"] :is(h1,h2,h3,h4){font-family:Georgia,"Songti SC",serif!important;color:#28252a!important}html[data-style="xiaoxiang"] a{color:#6d354d!important}html[data-style="xiaoxiang"] :is(pre,code){background:#f3edea!important;color:#28252a!important}';
   document.head.append(themeStyle);
   images.forEach((image) => {
     image.dataset.imagePreview = '';
@@ -77,7 +78,7 @@ export function renderHtmlArticle(html: string, title: string, id: string) {
   window.addEventListener('load', measure);
   window.addEventListener('message', (event) => {
     if (event.source === parent && event.data?.type === 'article:theme') {
-      document.documentElement.dataset.style = event.data.style === 'statechart' ? 'statechart' : '';
+      document.documentElement.dataset.style = ['statechart', 'xiaoxiang'].includes(event.data.style) ? event.data.style : '';
       requestAnimationFrame(measure);
     }
     if (event.source === parent && event.data?.type === 'article:navigate' && typeof event.data.hash === 'string') jump(event.data.hash);
