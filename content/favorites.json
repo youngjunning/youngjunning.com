@@ -2,6 +2,33 @@
   "version": 2,
   "favorites": [
     {
+      "id": "5b2a44b5a704ca92",
+      "kind": "note",
+      "type": "concept",
+      "title": "shadcn/ui 在后台、欢迎页与官网中的适用边界",
+      "url": null,
+      "summary": "shadcn/ui 可作为多种 React Web 场景的交互组件基础；后台适配度高，欢迎页与官网还需要独立的版式、视觉和内容设计。",
+      "reason": "判断是否在不同 Web 页面沿用同一组件基础，避免把组件样式当作完整页面设计。",
+      "tags": ["shadcn/ui", "React", "后台", "欢迎页", "官网", "设计系统"],
+      "subjects": ["design", "engineering"],
+      "attribution": "ai",
+      "savedAt": "2026-11-12T15:29+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        { "label": "shadcn/ui 官方介绍：提供可修改源码的组件与代码分发方式。", "url": "https://ui.shadcn.com/docs" },
+        { "label": "shadcn/ui 官方 Dashboard Blocks：提供侧栏、图表和数据表等后台示例。", "url": "https://ui.shadcn.com/blocks/dashboard" },
+        { "label": "shadcn/ui 官方主题文档：通过语义 token 定制颜色、字体和圆角。", "url": "https://ui.shadcn.com/docs/theming" }
+      ],
+      "relatedIds": ["fcbb542c5cf563a3"],
+      "note": {
+        "body": "shadcn/ui 提供可放进项目并修改的交互组件源码，适合用作 React Web 项目的组件基础，但不负责一整页的内容策略和视觉表达。后台常用的表单、弹窗、导航、侧栏、数据表等场景与其组件和 Blocks 很贴合；复杂业务表格、权限流程、图表和密集布局仍需按业务组合与验证。欢迎页和官网也可用它实现按钮、导航、菜单、表单等交互部分，但首屏构图、品牌字体、插画、动效、编辑式排版和响应式节奏应按页面目标设计。判断是否采用时，先看项目是否使用兼容的 React 技术栈，再看团队是否愿意持有和维护组件源码，以及是否需要独特视觉或复杂现成业务组件。",
+        "boundary": "“适用”指组件可参与构建，不代表直接套用默认主题或官方示例就能得到合适的后台、欢迎页或官网。非 React 项目需另查对应框架方案。",
+        "date": null,
+        "recordedAt": "2026-11-12"
+      }
+    },
+    {
       "id": "2a9e647b0c73f581",
       "kind": "note",
       "type": "concept",
