@@ -2,6 +2,26 @@
   "version": 2,
   "records": [
     {
+      "id": "93a5ee5e5d5ac907",
+      "kind": "change",
+      "title": "Joyally Design 中后台组件基础明确为 shadcn/ui",
+      "date": "2026-11-12",
+      "recordedAt": "2026-11-12",
+      "text": "我将 Joyally Design 的 React 中后台组件实现明确为完整基于 shadcn/ui，并结合 Joyally Design 体系构建可用的组件库；组件不逐个从零实现。Magic UI 是这种在 shadcn/ui 基础上扩展组件的参照，可用于合适的展示动效。",
+      "context": "此前 React Web 页面选择 Magic UI 作为组件来源；本次为中后台场景明确底层组件基础，并要求覆盖完整组件集。Android 原生、H5 和 Chrome 扩展的先前选择未在本次改变。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": ["8a0624b14190fabd"],
+      "sources": [
+        { "kind": "statement", "label": "本人公开可述的选择，2026-11-12：Joyally Design 中后台以 shadcn/ui 为完整组件基础，结合自身设计体系实现；Magic UI 作为基于 shadcn/ui 扩展的参照。" }
+      ],
+      "subjectId": "8a0624b14190fabd",
+      "before": "React Web 页面以 Magic UI 为默认组件来源，未单独指定中后台完整组件基础。",
+      "after": "React 中后台以 shadcn/ui 为完整组件基础，Joyally Design 负责视觉语义与组合；Magic UI 用于适合的展示动效。",
+      "reason": "本人要求以已有组件框架为底座完整实现，而不是逐个从零构造组件。"
+    },
+    {
       "id": "7b3acc752d940791",
       "kind": "change",
       "title": "Joyally Design 从江南山水调整为平等主题的中国风审美体系",
