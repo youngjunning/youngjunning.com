@@ -2,6 +2,32 @@
   "version": 2,
   "favorites": [
     {
+      "id": "b8f25e6a703c4d19",
+      "kind": "note",
+      "type": "concept",
+      "title": "BullMQ 使用 Redis 与 PostgreSQL 的取舍",
+      "url": null,
+      "summary": "BullMQ v6 同时支持默认 Redis 后端和可选 PostgreSQL 后端；两者提供相同的主要队列 API，吞吐、持久化和运维方式不同。",
+      "reason": "回看队列后端选型时的版本门槛、性能、持久化和运维差异。",
+      "tags": ["BullMQ", "Redis", "PostgreSQL", "任务队列"],
+      "subjects": ["engineering", "infra"],
+      "attribution": "ai",
+      "savedAt": "2026-11-13T02:27+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        { "label": "BullMQ PostgreSQL backend 官方指南，2026-11-13 核对。", "url": "https://docs.bullmq.io/guide/postgresql" },
+        { "label": "BullMQ v6 官方更新记录，2026-11-13 核对。", "url": "https://docs.bullmq.io/changelog" }
+      ],
+      "note": {
+        "body": "BullMQ 从 v6 起提供可选 PostgreSQL 后端，Redis 仍是默认选项。Queue、Worker、QueueEvents 和 FlowProducer 的主要 API 可以沿用。Redis 以内存数据结构和原子脚本处理任务，通常适合较高吞吐；持久化取决于 Redis 的配置。PostgreSQL 用表和事务中的 SQL 函数管理任务状态，以 LISTEN/NOTIFY 唤醒 worker，默认使用持久事务写入。官方示例显示其处理吞吐通常低于 Redis，实际差异取决于负载。选择 PostgreSQL 可减少独立 Redis 服务，但需要显式运行 schema 迁移，并规划连接池、完成任务保留策略和 VACUUM 负载。",
+        "context": "根据 BullMQ 官方文档整理的技术概念，不代表本人已在某个项目采用特定后端。",
+        "date": null,
+        "recordedAt": "2026-11-13",
+        "boundary": "PostgreSQL 后端要求 BullMQ v6、PostgreSQL 13 或更新版本；官方性能数字只是示例，容量仍需按实际负载测试。"
+      }
+    },
+    {
       "id": "a535cbc0672033b2",
       "kind": "note",
       "type": "concept",
