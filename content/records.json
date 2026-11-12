@@ -2,6 +2,23 @@
   "version": 2,
   "records": [
     {
+      "id": "00ecb1dc3a7cf0f2",
+      "kind": "judgment",
+      "title": "截图脱敏须美观且不可恢复",
+      "date": "2026-11-13",
+      "recordedAt": "2026-11-13",
+      "text": "我希望用于展示和文档的截图遮挡更美观，同时必须真实移除敏感信息；不能只做表面打码，让人通过任何方式从导出图中恢复被遮盖的内容。",
+      "context": "针对已有截图的大块纯黑遮挡提出改进要求，并进一步强调安全边界。该要求适用于截图脱敏效果，不意味着所有截图都应使用同一种遮挡颜色或尺寸。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [{ "kind": "statement", "label": "本人公开可述的要求，2026-11-13：截图遮挡要更好看；敏感内容必须被真实遮盖，不能从导出图中恢复。" }],
+      "basis": "本人先指出现有遮挡不美观，随后明确要求敏感信息不可恢复；未说明其他理由。",
+      "alternatives": [],
+      "outcome": null
+    },
+    {
       "id": "172e6b9bf60ce146",
       "kind": "judgment",
       "title": "要求 Joyally Design 建立有依据的去 AI 味检查",
