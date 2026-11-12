@@ -20,7 +20,7 @@ const roles = {
 type Role = keyof typeof roles;
 
 const sections = [
-  ['skills', '核心能力'], ['experience', '工作经历'], ['projects', '项目经历'],
+  ['skills', '硬实力'], ['experience', '工作经历'], ['projects', '项目经历'],
   ['contributions', '开源贡献'], ['education', '教育背景'],
 ];
 
@@ -73,8 +73,8 @@ export default function ResumeSwitcher() {
       </aside>
       <div className={styles.body}>
         <section id="skills" aria-labelledby="skills-title">
-          <h2 id="skills-title">核心能力</h2>
-          <div className={styles.skills}>{resume.skills.map(skill => <div key={skill.title}><h3>{skill.title}</h3><p>{skill.text}</p></div>)}</div>
+          <h2 id="skills-title">硬实力</h2>
+          <div className={styles.skills}>{resume.skills.map(skill => <div key={skill.title}><h3>{skill.title}</h3><p>{skill.text}</p>{'children' in skill && skill.children?.length ? <ul className={styles.subskills}>{skill.children.map(child => <li key={child.title}><strong>{child.title}</strong><span>{child.text}</span></li>)}</ul> : null}</div>)}</div>
         </section>
         <section id="experience" aria-labelledby="experience-title">
           <h2 id="experience-title">工作经历</h2>

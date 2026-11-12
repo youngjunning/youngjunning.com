@@ -7,10 +7,10 @@
     "template": "resume",
     "formats": ["html", "pdf", "docx"],
     "page_target": 2,
-    "narrative": "保留个人简介、核心能力、工作经历、技术实现、近两年三个重点项目、开源贡献与教育背景",
+    "narrative": "保留个人简介、硬实力、工作经历、技术实现、近两年三个重点项目、开源贡献与教育背景",
     "required_facts": ["Browser Agent", "AI 浏览器开发框架", "客服浏览器", "公开开源贡献"],
     "required_assets": [],
-    "acceptance_checks": ["两页 A4", "两份正文一致，仅岗位标题不同", "不加入旧简历中的传统项目", "内部项目名与内部指标不进入公开仓库"],
+    "acceptance_checks": ["两页 A4", "两份正文一致，仅岗位标题不同", "页面观察与目标定位作为 Browser Agent 子能力", "不加入旧简历中的传统项目", "内部项目名与内部指标不进入公开仓库"],
     "preserve": ["简历署名杨俊宁", "较新 PDF 的三项重点项目与先后顺序"],
     "explicit_deviations": ["公开版将内部项目名概括为业务场景；原稿中的内部性能指标未在公开版复用"]
   },
@@ -20,7 +20,7 @@
     "summary": "阿里高级工程师、AI 开发者，拥有 10 年研发经验。近两年负责 Browser Agent 架构与核心开发，设计 AI 浏览器开发框架，支撑客服浏览器与办公场景。",
     "skills": [
       "产品建设：从 0 到 1 建设浏览器 Agent 与 AI 浏览器开发框架。",
-      "AI Agent 技术：Browser Agent Runtime、Workflow / Skill 协同、云端浏览器执行、人工接管与结果验证。",
+      "AI Agent 技术：Browser Agent Runtime、Workflow / Skill 协同；子能力包括页面观察、目标定位与结果验证。",
       "AI 浏览器技术：Chromium Kernel 定制、Browser Tools / CDP、Profile / Tab 授权与跨平台交付。"
     ],
     "experience": [
@@ -59,7 +59,7 @@
     ],
     "technical": [
       "Agent 执行：Workflow / Skill 承担稳定步骤，Agent 处理页面变化；定义任务计划、失败出口和人工接管。",
-      "浏览器操作：云端浏览器环境；结合 Accessibility Tree、DOM 与 CDP 操作页面，按 Profile / Tab 授权。",
+      "浏览器操作：云端浏览器环境；按运行环境读取 DOM 或原生 AX 数据，形成语义观察并执行动作，按 Profile / Tab 授权。",
       "验证与迭代：用终态、URL、截图和报告验证结果；区分环境故障与 Skill 失效，候选 Skill 经回归与人工审核采纳。",
       "Chromium 工程：管理 Chromium 基线、C++ / GN 补丁与构建输入，支撑跨平台构建交付。",
       "Node.js 全栈：TypeScript、Next.js、Midway.js / FaaS 与 BullMQ，覆盖界面、服务接口、异步任务和交付。"
@@ -72,7 +72,7 @@
         "actions": [
           "设计混合 Browser Agent 与 Workflow：Skill 沉淀稳定流程，Agent 处理页面变化，计划器约束步骤与失败出口。",
           "建设 Node.js 执行集群与云端浏览器环境，支持受限脚本执行页面任务与人工接管。",
-          "结合 DOM、Accessibility Tree 与页面截图定位元素、执行动作并校验效果。",
+          "从 DOM 或浏览器原生 AX 数据形成语义观察；语义信息不足时按需用截图辅助视觉定位，执行动作后回读页面验证结果。",
           "将自然语言目标整理为走查方案，关联会话与提案，人工确认后再启动执行。",
           "将执行日志转为候选 Skill，经回归验证与人工审核后采纳，并保留版本与证据。"
         ],

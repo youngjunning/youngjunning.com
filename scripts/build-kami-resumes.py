@@ -93,7 +93,7 @@ def render(data: dict, head: str, title: str) -> str:
         '<div class="contact"><span class="role">'
         f'{esc(title)}</span><br>{esc(content["contact"])}</div></div>'
         + section("个人简介", f'<div class="summary">{esc(content["summary"])}</div>')
-        + section("核心能力", skills)
+        + section("硬实力", skills)
         + section("工作经历", f'<div class="proj-lines">{employment}</div>')
         + section("技术实现", technical)
         + section("项目经历 · 近两年重点", projects, page_break=True)

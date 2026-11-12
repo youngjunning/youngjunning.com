@@ -5,10 +5,12 @@
   "location": "杭州",
   "email": "luozhu2021@gmail.com",
   "github": "https://github.com/youngjunning",
-  "updatedAt": "2026-10-30",
+  "updatedAt": "2026-11-13",
   "source": "本人提供的简历，2026-10-30 整理为公开版本。",
   "skills": [
-    { "title": "Agent 执行与验证", "text": "Browser Agent Runtime、Workflow / Skill 协同、云端浏览器执行、人工接管与结果验证。" },
+    { "title": "Browser Agent 开发", "text": "Browser Agent Runtime、Workflow / Skill 协同、云端浏览器执行、人工接管与结果验证。", "children": [
+      { "title": "页面观察与目标定位", "text": "按具体实现读取 DOM 或原生 AX 数据形成语义观察；语义信息不足时按需结合截图进行视觉 grounding，动作后回读页面验证结果。" }
+    ] },
     { "title": "AI 浏览器工程", "text": "Chromium 定制、Browser Tools / CDP、Profile / Tab 授权，以及浏览器与 Agent Runtime 的跨平台交付。" },
     { "title": "全栈与跨端开发", "text": "TypeScript、React、React Native、Next.js、Node.js、Midway.js / FaaS 与 BullMQ，覆盖界面、服务接口和异步任务。" }
   ],
@@ -53,7 +55,7 @@
       "description": "将业务目标拆解为浏览器任务，以 Workflow / Skill 处理稳定步骤，Agent 应对页面变化。",
       "details": [
         "建设 Node.js 执行集群与云端浏览器环境，定义任务计划、失败出口和人工接管。",
-        "结合 DOM、Accessibility Tree 与页面截图完成元素定位、动作执行与效果校验。",
+        "从 DOM 或浏览器原生 AX 数据形成语义观察；语义信息不足时按需用截图辅助视觉定位，执行动作后回读页面验证结果。",
         "以终态、URL、截图和报告验证执行结果；执行日志形成候选 Skill，经回归验证与人工审核后采纳。"
       ]
     },

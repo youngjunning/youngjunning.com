@@ -38,6 +38,10 @@
 .skills>div{background:#edf1e5;border:1px solid var(--line);border-radius:12px;padding:22px 18px}
 .skills h3{font-size:14px}
 .skills p{font-size:12px;margin:12px 0 0}
+.subskills{border-top:1px solid var(--line);margin:15px 0 0!important;padding:13px 0 0!important;list-style:none!important}
+.subskills li{padding:0!important;margin:0!important}
+.subskills strong{display:block;font-size:12px;color:inherit}
+.subskills span{display:block;margin-top:5px;font-size:12px;line-height:1.75;color:var(--muted)}
 .timeline{padding-left:22px;border-left:1px solid var(--line)}
 .job{position:relative;padding-bottom:28px}
 .job:last-child{padding-bottom:0}

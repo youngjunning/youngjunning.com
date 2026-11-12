@@ -1,0 +1,18 @@
+.hard-skills{padding:32px 5% 72px}
+.hard-skills-lead{max-width:760px;margin:0 0 30px;color:var(--style-muted);line-height:1.8}
+.hard-skills-list{border-top:1px solid var(--style-line)}
+.hard-skills-area{padding:28px 0;border-bottom:1px solid var(--style-line)}
+.hard-skills-area-head{display:grid;grid-template-columns:42px minmax(0,1fr);gap:16px}
+.hard-skills-area-head>span{padding-top:5px;color:var(--style-accent);font-size:12px;font-variant-numeric:tabular-nums}
+.hard-skills-area h2{margin:0 0 8px;font-size:clamp(21px,2.2vw,28px)}
+.hard-skills-area p{max-width:780px;margin:0;line-height:1.8;color:var(--style-muted)}
+.hard-skills-children{margin:20px 0 0 58px;padding:0;list-style:none}
+.hard-skills-children li{padding:18px 0 0;border-top:1px solid var(--style-line)}
+.hard-skills-children h3{margin:0 0 7px;font-size:16px}
+.hard-skills-source{margin:28px 0 0;color:var(--style-muted);font-size:13px}
+.hard-skills-source a{margin-left:4px;color:var(--style-accent);text-decoration:underline;text-underline-offset:3px}
+.sc-site .hard-skills{padding:20px 0 48px}
+.sc-site .hard-skills-lead,.sc-site .hard-skills-area p,.sc-site .hard-skills-source{color:inherit}
+.sc-site .hard-skills-list,.sc-site .hard-skills-area,.sc-site .hard-skills-children li{border-color:currentColor}
+.sc-site .hard-skills-source a{color:inherit}
+@media(max-width:650px){.hard-skills{padding:26px 5% 48px}.hard-skills-area-head{grid-template-columns:30px minmax(0,1fr);gap:12px}.hard-skills-children{margin-left:42px}}
