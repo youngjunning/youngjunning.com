@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from 'react';
 
-type Order = { id: string; trip: string; status: '待支付' | '已取消' };
+type Order = { id: string; trip: string; route: string; time: string; price: number; status: '待支付' | '已取消' };
 type Row = { depth: number; role: string; name?: string; suffix?: string; ownerId?: string; content?: string };
 type Ref = { role: string; name: string; nth?: number; ownerId?: string; selector: string };
 type Snapshot = { tree: string; refs: Record<string, Ref>; revision: number };
@@ -10,8 +10,8 @@ type Options = { interactive: boolean; compact: boolean; maxDepth: number; scope
 type Selection = { key: string; role: string; name: string; ownerId?: string };
 
 const initialOrders: Order[] = [
-  { id: 'A-1042', trip: '周一出发', status: '待支付' },
-  { id: 'B-2086', trip: '周五出发', status: '待支付' },
+  { id: 'A-1042', trip: '周一出发', route: '杭州东 → 上海虹桥', time: '09:30', price: 268, status: '待支付' },
+  { id: 'B-2086', trip: '周五出发', route: '杭州东 → 南京南', time: '18:20', price: 328, status: '待支付' },
 ];
 const initialOptions: Options = { interactive: false, compact: false, maxDepth: 4, scope: 'all' };
 const interactiveRoles = new Set(['button', 'link', 'textbox']);
@@ -28,12 +28,15 @@ function ariaRows(orders: Order[], scope: Options['scope'], pendingId: string | 
   const base = scope === 'all' ? 3 : 1;
   for (const order of orders) {
     rows.push({ depth: base, role: 'article', name: `${order.id}，${order.trip}`, ownerId: order.id });
+    rows.push({ depth: base + 1, role: 'paragraph', content: `${order.route} · ${order.trip} ${order.time}` });
     rows.push({ depth: base + 1, role: 'paragraph', content: `状态：${order.status}` });
+    rows.push({ depth: base + 1, role: 'paragraph', content: `应付：¥${order.price}` });
     if (order.status === '待支付') rows.push({ depth: base + 1, role: 'button', name: '取消', ownerId: order.id });
   }
   if (scope === 'all' && pendingId) {
     rows.push({ depth: 1, role: 'dialog', name: '确认取消' });
-    rows.push({ depth: 2, role: 'paragraph', content: `即将取消 ${pendingId}` });
+    rows.push({ depth: 2, role: 'paragraph', content: `取消后 ${pendingId} 无法继续支付` });
+    rows.push({ depth: 2, role: 'button', name: '返回订单' });
     rows.push({ depth: 2, role: 'button', name: '确认取消' });
   }
   return rows;
@@ -93,6 +96,7 @@ export default function SnapshotLab() {
   const selectedRef = selected ? snapshot.refs[selected] : undefined;
   const target = selectedRef ? currentTarget(selectedRef, orders) : undefined;
   const selectedOrderId = selectedRef?.role === 'button' ? target?.id : selectedRef?.ownerId;
+  const pendingOrder = orders.find(order => order.id === pendingId);
   const stale = Boolean(frozenSnapshot && snapshot.revision !== revision);
 
   function chooseRef(key: string) {
@@ -101,8 +105,14 @@ export default function SnapshotLab() {
   }
 
   function selectOrderRef(orderId: string, role: Ref['role']) {
-    const match = Object.entries(snapshot.refs).find(([, ref]) => ref.ownerId === orderId && ref.role === role);
+    const refs = Object.entries(snapshot.refs);
+    const match = refs.find(([, ref]) => ref.ownerId === orderId && ref.role === role) ?? refs.find(([, ref]) => ref.ownerId === orderId);
     if (match) chooseRef(match[0]);
+    else {
+      setSelection(null);
+      setMessage(`${orderId} 当前没有可用 ref；调整快照选项后可重新定位。`);
+      setMessageKind('info');
+    }
   }
 
   function updateOptions(next: Options) {
@@ -176,9 +186,10 @@ export default function SnapshotLab() {
     <div className="snapshot-lab-grid">
       <div className="snapshot-browser-stage"><div className="snapshot-stage-label"><strong>独立示例网页</strong><span>example.local/orders · 与本站分离</span></div><div className="snapshot-browser-panel" aria-label="独立的示例订单页面">
         <div className="snapshot-panel-top"><span className="snapshot-window-dots" aria-hidden="true"><i /><i /><i /></span><span>example.local/orders</span><span>模拟站点</span></div>
-        <div className="snapshot-browser-body"><div className={`snapshot-browser-title ${selectedRef?.role === 'heading' ? 'is-linked' : ''}`}><span>订单中心</span><strong>我的订单</strong><p>选择正确的业务对象后再操作。</p></div>
-          <div className={`snapshot-order-list ${selectedRef?.role === 'region' ? 'is-linked' : ''}`}>{orders.map(order => <article id={`snapshot-example-order-${order.id}`} className={`snapshot-order ${order.status === '已取消' ? 'is-cancelled' : ''} ${selectedOrderId === order.id ? 'is-linked' : ''}`} aria-label={`${order.id}，${order.trip}`} key={order.id}><div><span className="snapshot-order-id">{order.id}</span><h3>{order.trip}</h3><p>状态：<b>{order.status}</b></p>{selectedOrderId === order.id && <span className="snapshot-ref-match">快照 @{selected} 当前对应此单</span>}</div>{order.status === '待支付' && <button type="button" className={selectedOrderId === order.id && selectedRef?.role === 'button' ? 'is-linked' : ''} onClick={() => { selectOrderRef(order.id, 'button'); setPendingId(order.id); setRevision(value => value + 1); setMessage(`示例页已打开 ${order.id} 的确认弹窗${frozenSnapshot ? '；冻结快照仍保留旧内容' : '，TREE 和 REFS 已同步'}。这一步绕过了 ref。`); setMessageKind('info'); }}>取消</button>}</article>)}</div>
-          {pendingId && <div className="snapshot-confirm" role="dialog" aria-modal="false" aria-label="确认取消"><strong>确认取消 {pendingId}？</strong><p>演示只修改本页状态，不会产生真实订单操作。</p><div><button type="button" onClick={() => { setPendingId(null); setRevision(value => value + 1); setMessage(frozenSnapshot ? '弹窗已关闭，冻结快照保持旧内容。' : '弹窗已关闭，TREE 和 REFS 已同步。'); setMessageKind('info'); }}>返回</button><button type="button" onClick={confirm}>确认取消</button></div></div>}
+        <div className="snapshot-browser-body"><div className={`snapshot-browser-title ${selectedRef?.role === 'heading' ? 'is-linked' : ''}`}><span>出行服务 / 订单中心</span><strong>我的订单</strong><p>查看行程与付款状态</p></div>
+          <div className="snapshot-order-summary" aria-live="polite"><span><b>{orders.filter(order => order.status === '待支付').length}</b> 笔待支付</span><span>{orders.filter(order => order.status === '已取消').length} 笔已取消</span>{orders.every(order => order.status === '已取消') && <strong>暂无待支付订单</strong>}</div>
+          <div className={`snapshot-order-list ${selectedRef?.role === 'region' ? 'is-linked' : ''}`}>{orders.map(order => <article id={`snapshot-example-order-${order.id}`} className={`snapshot-order ${order.status === '已取消' ? 'is-cancelled' : ''} ${selectedOrderId === order.id ? 'is-linked' : ''}`} aria-label={`${order.id}，${order.trip}`} key={order.id} tabIndex={0} onClick={() => selectOrderRef(order.id, 'article')} onKeyDown={event => { if (event.target === event.currentTarget && (event.key === 'Enter' || event.key === ' ')) { event.preventDefault(); selectOrderRef(order.id, 'article'); } }}><div className="snapshot-order-top"><span className="snapshot-order-id">{order.id}</span><span className={`snapshot-order-status ${order.status === '已取消' ? 'is-cancelled' : ''}`}>{order.status}</span></div><h3>{order.route}</h3><div className="snapshot-order-meta"><span>{order.trip} · {order.time}</span><span>应付 <strong>¥{order.price}</strong></span></div>{selectedOrderId === order.id && <span className="snapshot-ref-match">快照 @{selected} 当前对应此单</span>}<div className="snapshot-order-bottom"><span>{order.status === '已取消' ? '订单已取消，无法继续支付' : '请核对行程后完成支付'}</span>{order.status === '待支付' && <button type="button" className={selectedOrderId === order.id && selectedRef?.role === 'button' ? 'is-linked' : ''} onClick={event => { event.stopPropagation(); selectOrderRef(order.id, 'button'); setPendingId(order.id); setRevision(value => value + 1); setMessage(`示例页已打开 ${order.id} 的确认弹窗${frozenSnapshot ? '；冻结快照仍保留旧内容' : '，TREE 和 REFS 已同步'}。这一步绕过了 ref。`); setMessageKind('info'); }}>取消</button>}</div></article>)}</div>
+          {pendingOrder && <div className="snapshot-confirm" role="dialog" aria-modal="false" aria-label="确认取消"><strong>确认取消 {pendingOrder.id}？</strong><p>{pendingOrder.route} · {pendingOrder.trip} {pendingOrder.time}</p><p>取消后这笔订单无法继续支付。</p><div><button type="button" onClick={() => { setPendingId(null); setRevision(value => value + 1); setMessage(frozenSnapshot ? '弹窗已关闭，冻结快照保持旧内容。' : '弹窗已关闭，TREE 和 REFS 已同步。'); setMessageKind('info'); }}>返回订单</button><button type="button" onClick={confirm}>确认取消</button></div></div>}
         </div>
       </div></div>
 
