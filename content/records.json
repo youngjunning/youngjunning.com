@@ -2,6 +2,23 @@
   "version": 2,
   "records": [
     {
+      "id": "eeb5ec9399582c0f",
+      "kind": "judgment",
+      "title": "Joyally Design 将小香风作为并列主题",
+      "date": "2026-11-12",
+      "recordedAt": "2026-11-12",
+      "text": "我要求 Joyally Design 把小香风作为与其他视觉主题并列的主题，而不是把它归为材质；小香风也应像其他主题一样配备 20 张参考图。",
+      "context": "针对小香风先前只有织纹材质预览、没有成组参考画面的实现所作的纠正。材质是主题中的视觉线索，不代替主题层级。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": ["7b3acc752d940791"],
+      "sources": [{ "kind": "statement", "label": "本人对 Joyally Design 的公开可述要求，2026-11-12：小香风是主题，不是材质；它与其他主题地位相同，也需要 20 张参考图。" }],
+      "basis": "本人明确纠正小香风的层级，并指定与其他主题相同的参考图数量；未进一步说明理由。",
+      "alternatives": [],
+      "outcome": null
+    },
+    {
       "id": "b91c8aebe14cc7a2",
       "kind": "thought",
       "title": "担心 AI 自动补测会增加测试套件负担",
