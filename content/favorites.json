@@ -552,6 +552,51 @@
       "attribution": "source"
     },
     {
+      "id": "1daa2aca290a93ff",
+      "title": "浏览器 Agent 的 ref 如何定位并复核目标",
+      "url": null,
+      "summary": "固定版本 agent-browser 的 ref 保存 role、name 与可选 nth，动作时重建 Locator；同名按钮所在列表重排后，须重新核对业务对象和动作结果。",
+      "reason": "回查短引用的实际绑定方式，以及订单、工单等重复操作场景中的错点风险。",
+      "tags": [
+        "Browser Agent",
+        "agent-browser",
+        "ref",
+        "Playwright"
+      ],
+      "savedAt": "2026-11-12",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "AI 辅助整理自公开文章《拆解 agent-browser snapshot：一张订单页如何变成可执行的引用》，稳定 ID 464258397d391ba6，章节“第二步”与“第四步”；订单为教学场景。",
+          "url": "https://youngjunning.com/blog/464258397d391ba6"
+        },
+        {
+          "label": "agent-browser 固定提交的快照实现与引用解析，2026-11-12 核对。",
+          "url": "https://github.com/vercel-labs/agent-browser/blob/e02bc1a10cf8962a2a171d2b515f14e325dc97ab/src/snapshot.ts"
+        },
+        {
+          "label": "同一固定提交的引用解析实现。",
+          "url": "https://github.com/vercel-labs/agent-browser/blob/e02bc1a10cf8962a2a171d2b515f14e325dc97ab/src/browser.ts#L295-L322"
+        }
+      ],
+      "kind": "note",
+      "type": "method",
+      "subjects": [
+        "browser",
+        "agents"
+      ],
+      "attribution": "ai",
+      "note": {
+        "body": "在固定提交 e02bc1a 的 agent-browser 中，快照把 @e1 一类 ref 映射为 role、name 与可选 nth；动作时按这些字段重新构造 Playwright Locator。ref 是一次观察生成的定位配方，并未永久绑定当时的 DOM 节点。若两张订单都有“取消”按钮，列表重排后旧 nth 可能指向另一笔订单。执行前应重新观察，确认按钮所在的订单号和状态；动作后再次读取结果，确认目标订单真正变为预期状态。",
+        "context": "AI 辅助整理固定提交源码与公开文章，不表示本人已在生产 Agent 中采用此流程。",
+        "example": "教学场景：A-1042 与 B-2086 各有一个“取消”。原先指向 B-2086 第二个按钮的 ref，在订单重排后可能点到 A-1042；应先复核订单身份。",
+        "boundary": "这个绑定方式限于所引用的旧版 Playwright 路径，不直接适用于较新的原生 CDP 实现。Locator 可点击不等于业务取消成功。",
+        "date": "2026-11-12",
+        "recordedAt": "2026-11-12"
+      }
+    },
+    {
       "id": "22e1134e4b38d4c7",
       "title": "Chromium 浏览器的两种接入边界：直接 fork 与独立 Host",
       "url": null,
