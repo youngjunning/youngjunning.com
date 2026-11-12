@@ -1,7 +1,5 @@
 import type { Metadata } from 'next';
-import Shell from '@/components/shell';
 import SnapshotLab from './snapshot-lab';
-import './snapshot.css';
 
 export const metadata: Metadata = {
   title: 'agent-browser snapshot · 交互演示',
@@ -9,8 +7,7 @@ export const metadata: Metadata = {
 };
 
 export default function AgentBrowserSnapshotPage() {
-  return <Shell active={null}>
-    <main className="snapshot-page">
+  return <main className="snapshot-page" id="snapshot-main">
       <header className="snapshot-hero">
         <div className="snapshot-hero-copy">
           <p className="snapshot-eyebrow">INTERACTIVE LAB / 固定源码演示</p>
@@ -30,7 +27,7 @@ export default function AgentBrowserSnapshotPage() {
 
       <SnapshotLab />
 
-      <section className="snapshot-explainer" aria-labelledby="snapshot-explainer-title">
+      <section className="snapshot-explainer" id="source" aria-labelledby="snapshot-explainer-title">
         <p className="snapshot-eyebrow">SOURCE NOTES</p>
         <h2 id="snapshot-explainer-title">这个演示对应哪段源码？</h2>
         <div className="snapshot-note-grid">
@@ -41,6 +38,5 @@ export default function AgentBrowserSnapshotPage() {
         <div className="snapshot-cli"><div><span>REAL BROWSER / 可复现入口</span><h3>用固定版本 CLI 观察此页</h3><p>页面中的订单卡片是真实 DOM。运行以下命令可得到真实 Playwright 快照；引用编号以当次输出为准。</p></div><pre><code>{'agent-browser open https://youngjunning.com/agent-browser-snapshot\nagent-browser snapshot -s ".snapshot-browser-body"\nagent-browser snapshot -s ".snapshot-browser-body" -i'}</code></pre></div>
         <p className="snapshot-source-line">依据：<a href="https://github.com/vercel-labs/agent-browser/blob/e02bc1a10cf8962a2a171d2b515f14e325dc97ab/src/snapshot.ts" target="_blank" rel="noopener noreferrer">固定版本 snapshot.ts ↗</a> · <a href="https://github.com/vercel-labs/agent-browser/blob/e02bc1a10cf8962a2a171d2b515f14e325dc97ab/src/browser.ts#L295-L322" target="_blank" rel="noopener noreferrer">ref 定位实现 ↗</a> · <a href="/blog/464258397d391ba6">文章与适用边界 ↗</a></p>
       </section>
-    </main>
-  </Shell>;
+  </main>;
 }
