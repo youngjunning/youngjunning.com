@@ -74,6 +74,7 @@ export default function ResumeSwitcher() {
       <div className={styles.body}>
         <section id="skills" aria-labelledby="skills-title">
           <h2 id="skills-title">硬实力</h2>
+          <a href="/hard-skills">查看完整能力地图 →</a>
           <div className={styles.skills}>{resume.skills.map(skill => <div key={skill.title}><h3>{skill.title}</h3><p>{skill.text}</p>{'children' in skill && skill.children?.length ? <ul className={styles.subskills}>{skill.children.map(child => <li key={child.title}><strong>{child.title}</strong><span>{child.text}</span></li>)}</ul> : null}</div>)}</div>
         </section>
         <section id="experience" aria-labelledby="experience-title">
