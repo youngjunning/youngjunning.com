@@ -10,7 +10,7 @@
 | `kind` | `resource` 外部资源；`note` 站内知识笔记 |
 | `type` | 资源用 `tool`（项目与工具）或 `reference`（文档、文章、论文、评测等资料）；笔记用 `concept` 或 `method` |
 | `subjects` | 已审阅的关注主题 ID，非空；合法值以 `lib/content-subjects.mjs` 为准。主题可跨类型、文章与记录浏览 |
-| `tags` | 具体技术名、项目名和检索细节，不承担采用、归属或流程状态 |
+| `tags` | 可点选的具体技术名、项目名和检索细节；同类资源使用一致标签，如 `UI 组件库`。不承担采用、归属或流程状态 |
 | `attribution` | `user` 本人表达、`source` 资料整理、`ai` AI 辅助整理、`mixed` 本人表达与补充整理；混合笔记在正文、背景和来源中分清范围 |
 | `selection` | `explicit` 本人要求保存，`discovered` 会话发现；只说明保存方式 |
 | `title`、`summary`、`reason` | 名称、内容摘要与回看理由，均独立可读 |

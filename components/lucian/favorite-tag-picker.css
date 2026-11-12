@@ -1,0 +1,18 @@
+/* Lucian UX/UI Prompt #031 · MIT License (c) 2026 Seokwoooo · https://lucianlabs.dev/uxui-prompt/#031 */
+.favorite-tag-picker.u031{position:relative;width:min(240px,100%);flex:none}
+.favorite-tag-picker .u031-lab{display:block;margin:0 2px 7px;font-size:12.5px;font-weight:700;color:var(--ux-ink-3)}
+.favorite-tag-picker .u031-btn{display:flex;align-items:center;gap:10px;width:100%;height:46px;padding:0 12px;border:0;border-radius:15px;background:var(--ux-surface-2);color:var(--ux-ink);text-align:left;box-shadow:inset 0 0 0 1.5px var(--ux-line);transition:box-shadow .25s var(--ux-ease),background-color .25s}
+.favorite-tag-picker .u031-btn:hover{box-shadow:inset 0 0 0 1.5px var(--ux-line-2)}
+.favorite-tag-picker .u031-btn:focus-visible,.favorite-tag-picker.is-open .u031-btn{outline:0;background:var(--ux-surface);box-shadow:inset 0 0 0 2px var(--ux-accent),0 0 0 5px var(--ux-accent-soft)}
+.favorite-tag-picker .u031-flag{width:26px;height:26px;flex:none;border-radius:8px;display:grid;place-items:center;background:var(--ux-accent);color:var(--ux-page);font-size:14px;font-weight:800}
+.favorite-tag-picker .u031-v{flex:1;min-width:0}.favorite-tag-picker .u031-v b{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:14px;font-weight:680}
+.favorite-tag-picker .u031-car{width:18px;height:18px;flex:none;fill:none;stroke:var(--ux-ink-3);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .45s var(--ux-spring)}
+.favorite-tag-picker .u031-btn[aria-expanded="true"] .u031-car{transform:rotate(180deg)}
+.favorite-tag-picker .u031-list{position:absolute;z-index:20;left:0;right:0;top:calc(100% + 8px);max-height:320px;overflow-y:auto;margin:0;padding:6px;list-style:none;border-radius:18px;background:var(--ux-surface);box-shadow:0 0 0 1px var(--ux-line-2),0 28px 56px -24px var(--ux-shadow-strong);transform-origin:50% 0;outline:none;opacity:0;transform:translateY(-6px) scaleY(.92);visibility:hidden;transition:opacity .2s var(--ux-ease),transform .4s var(--ux-spring),visibility 0s .4s}
+.favorite-tag-picker .u031-list.is-open{opacity:1;transform:none;visibility:visible;transition:opacity .2s var(--ux-ease),transform .45s var(--ux-spring)}
+.favorite-tag-picker .u031-o{position:relative;display:flex;align-items:center;min-height:42px;padding:0 10px;border-radius:12px;cursor:pointer;font-size:13px;font-weight:620;color:var(--ux-ink)}
+.favorite-tag-picker .u031-o.is-active{background:var(--ux-surface-2)}
+.favorite-tag-picker .u031-ck{margin-left:auto;width:18px;height:18px;fill:none;stroke:var(--ux-accent);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;opacity:0;transform:scale(.4);transition:opacity .2s,transform .4s var(--ux-spring)}
+.favorite-tag-picker .u031-o[aria-selected="true"] .u031-ck{opacity:1;transform:none}
+@media(max-width:480px){.favorite-tag-picker.u031{width:100%}}
+@media(prefers-reduced-motion:reduce){.favorite-tag-picker *{animation:none!important;transition:none!important}}

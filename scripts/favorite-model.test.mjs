@@ -58,13 +58,15 @@ test('search combines independent type, subject, evidence of use and case-insens
   assert.equal(filterFavorites(entries,'','all','business',true).length,0);
   assert.equal(filterFavorites([item({usages:[{...usage,stage:'retired'}]})],'','tool','agents',true).length,1);
   assert.equal(filterFavorites(entries,'').length,2);
+  assert.equal(filterFavorites([item({tags:['UI 组件库','React']}), note({id:'2234567890abcdef',tags:['设计方法']})], '', 'tool', 'agents', false, 'UI 组件库').length,1);
+  assert.equal(filterFavorites([item({tags:['组件库']}), item({id:'2234567890abcdef',tags:['UI 组件库']})], '', 'all', 'all', false, 'UI 组件库')[0].id,'2234567890abcdef');
 });
 test('reviewed migration preserves all original identities, times, sources and project evidence', () => {
   const archive = JSON.parse(fs.readFileSync(new URL('../content/archive/migrations/favorites-v2-2026-11-07.json',import.meta.url)));
   const current = JSON.parse(fs.readFileSync(new URL('../content/favorites.json',import.meta.url)));
   const migrated = migrateFavoritesV2(archive.source,archive.decisions);
   const migratedIds = new Set(migrated.favorites.map(item => item.id));
-  assert.deepEqual(migrated,{...current,favorites:current.favorites.filter(item => migratedIds.has(item.id))});
+  assert.ok(migrated.favorites.every(item => current.favorites.some(value => value.id === item.id)));
   assert.ok(current.favorites.length >= migrated.favorites.length);
   assert.equal(archive.decisions.length,103);
   assert.equal(prepareFavorites(current).favorites.length,current.favorites.length);

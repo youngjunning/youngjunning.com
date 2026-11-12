@@ -64,8 +64,8 @@
 .u092-sgs.pop .u092-sg{width:auto;height:36px;padding:0 14px;border-radius:999px}
 
 .favorites-content{padding:32px 5% 60px;display:grid;gap:24px}
-.favorite-subjects{display:grid;gap:12px;min-width:0}.favorite-secondary-filters{display:flex;flex-wrap:wrap;gap:12px;min-width:0;max-width:100%}.favorite-toolbar>*{min-width:0}.favorite-secondary-filters>.content-filter-scroll{flex:0 1 auto}.favorite-subjects .content-filter-scroll{width:100%}
-.favorite-toolbar{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.favorite-subjects{display:grid;gap:12px;min-width:0}.favorite-secondary-filters{display:flex;flex-wrap:wrap;gap:12px;min-width:0;max-width:100%;flex-basis:100%}.favorite-toolbar>*{min-width:0}.favorite-secondary-filters>.content-filter-scroll{flex:0 1 auto}.favorite-subjects .content-filter-scroll{width:100%}
+.favorite-toolbar{display:flex;align-items:flex-end;justify-content:space-between;gap:16px 24px;flex-wrap:wrap}
 .favorite-toolbar .content-search{margin-left:auto}
 .favorite-filters{width:min(440px,100%);max-width:440px;flex:0 1 440px}
 @media(max-width:900px){.favorite-toolbar .content-search{width:100%;flex-basis:100%;margin-left:0}}
