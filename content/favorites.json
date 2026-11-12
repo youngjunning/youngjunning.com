@@ -2,6 +2,22 @@
   "version": 2,
   "favorites": [
     {
+      "id": "0d8a1732839f3b4a",
+      "kind": "resource",
+      "type": "reference",
+      "title": "Tests as data：让 AI 生成的测试更易审阅",
+      "url": "https://martinfowler.com/articles/tests-as-data.html",
+      "summary": "Matteo Vaccari 讨论 AI 生成测试的可读性、实现耦合与可信度问题，提出用面向行为的黑盒场景和简洁测试数据表达预期，并用变异测试及独立依据核验测试是否有效。",
+      "reason": "回看 AI 自动补测的质量审查与维护方法；作为讨论资料保存，不代表已经采用文中的 DSL 或测试流程。",
+      "tags": ["AI 测试", "测试质量", "测试维护", "mutation testing", "tests as data"],
+      "subjects": ["engineering", "agents"],
+      "attribution": "source",
+      "savedAt": "2026-11-12T23:05+08:00",
+      "selection": "discovered",
+      "visibility": "shared",
+      "sources": [{ "label": "Matteo Vaccari，Tests as data，2026-11-11；2026-11-12 核对原文。", "url": "https://martinfowler.com/articles/tests-as-data.html" }]
+    },
+    {
       "id": "5b2a44b5a704ca92",
       "kind": "note",
       "type": "concept",

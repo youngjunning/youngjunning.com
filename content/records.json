@@ -2,6 +2,20 @@
   "version": 2,
   "records": [
     {
+      "id": "b91c8aebe14cc7a2",
+      "kind": "thought",
+      "title": "担心 AI 自动补测会增加测试套件负担",
+      "date": "2026-11-12",
+      "recordedAt": "2026-11-12",
+      "text": "我担心 AI 自己增加的测试用例可能没有实际价值；如果长期积累，测试套件可能熵增并拖慢开发速度。我正在寻找能判断测试是否值得保留、并控制这种负担的 Skill。",
+      "context": "讨论 AI 辅助开发中的测试质量与长期维护成本时提出的疑问；这是探索中的担忧，尚未形成具体项目的测试取舍或实践结论。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [{ "kind": "statement", "label": "本人提出的问题，2026-11-12，公开摘要：担心 AI 自动增加的测试可能无效，长期积累会拖慢开发，想寻找合适的 Skill。" }]
+    },
+    {
       "id": "93a5ee5e5d5ac907",
       "kind": "change",
       "title": "Joyally Design 中后台组件基础明确为 shadcn/ui",
