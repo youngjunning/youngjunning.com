@@ -19,13 +19,15 @@ export default function FavoriteCollection({ favorites }: { favorites: Favorite[
   const params = useSearchParams();
   const tagCounts = new Map<string, number>();
   for (const favorite of favorites) for (const tag of favorite.tags) tagCounts.set(tag, (tagCounts.get(tag) || 0) + 1);
-  const tags = [...tagCounts.keys()].sort((a, b) => (a === 'UI 组件库' ? -1 : b === 'UI 组件库' ? 1 : (tagCounts.get(b)! - tagCounts.get(a)!) || a.localeCompare(b, 'zh-CN')));
+  const priority = (value: string) => value === 'UI' ? 0 : value === '组件库' ? 1 : 2;
+  const tags = [...tagCounts.keys()].sort((a, b) => priority(a) - priority(b) || (tagCounts.get(b)! - tagCounts.get(a)!) || a.localeCompare(b, 'zh-CN'));
   const tagOptions = [{ id: '', label: '全部标签' }, ...tags.map(tag => ({ id: tag, label: `${tag} · ${tagCounts.get(tag)}` }))];
   const [query, setQuery] = useState(params.get('q') || '');
   const [type, setType] = useState(types.some(item => item.id === params.get('type')) ? params.get('type')! : 'all');
   const [subject, setSubject] = useState(contentSubjects.some(item => item.id === params.get('subject')) ? params.get('subject')! : 'all');
   const [usedOnly, setUsedOnly] = useState(params.get('used') === '1');
-  const [tag, setTag] = useState(tags.includes(params.get('tag') || '') ? params.get('tag')! : '');
+  const requestedTag = params.get('tag') === 'UI 组件库' ? '组件库' : (params.get('tag') || '');
+  const [tag, setTag] = useState(tags.includes(requestedTag) ? requestedTag : '');
   const subjects = [{ id: 'all', label: '全部主题' }, ...contentSubjects.filter(item => favorites.some(favorite => favorite.subjects.includes(item.id)))];
   useEffect(() => {
     const url = new URL(location.href);

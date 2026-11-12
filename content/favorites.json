@@ -9,7 +9,7 @@
       "url": null,
       "summary": "shadcn/ui 可作为多种 React Web 场景的交互组件基础；后台适配度高，欢迎页与官网还需要独立的版式、视觉和内容设计。",
       "reason": "判断是否在不同 Web 页面沿用同一组件基础，避免把组件样式当作完整页面设计。",
-      "tags": ["shadcn/ui", "React", "后台", "欢迎页", "官网", "设计系统"],
+      "tags": ["shadcn/ui", "UI", "React", "后台", "欢迎页", "官网", "设计系统"],
       "subjects": ["design", "engineering"],
       "attribution": "ai",
       "savedAt": "2026-11-12T15:29+08:00",
@@ -61,7 +61,7 @@
       "url": "https://heroui.com/",
       "summary": "HeroUI 官网提供 React 与 React Native 的开源 UI 组件及主题配置入口，并介绍付费模板等产品。",
       "reason": "回看组件目录、跨 Web 与移动端的设计方案及官方文档入口。",
-      "tags": ["HeroUI", "React", "React Native", "UI 组件库"],
+      "tags": ["HeroUI", "UI", "组件库", "React", "React Native"],
       "subjects": ["design", "engineering"],
       "attribution": "source",
       "savedAt": "2026-11-11T01:34+08:00",
@@ -795,8 +795,8 @@
       "reason": "本人明确要求收藏，留作界面组件资料；尚未核验实际运行效果或项目适配情况。",
       "tags": [
         "React",
-        "UI 组件",
-        "UI 组件库",
+        "UI",
+        "组件库",
         "液态玻璃",
         "TypeScript"
       ],
@@ -2121,7 +2121,7 @@
       "reason": "用于比较 Skill 驱动的组件发现与移植流程；保留其与 React 原生组件 Registry 的区别。",
       "tags": [
         "AI 辅助开发",
-        "组件库",
+        "UI",
         "Agent Skills"
       ],
       "savedAt": "2026-11-01",
@@ -2151,8 +2151,8 @@
       "reason": "用于在 AI 生成页面时获取真实动效组件源码，按项目技术栈选择变体并核对依赖。",
       "tags": [
         "AI 辅助开发",
+        "UI",
         "组件库",
-        "UI 组件库",
         "MCP"
       ],
       "savedAt": "2026-11-01",
@@ -2191,8 +2191,8 @@
       "reason": "用于轻量、多框架页面的 AI 辅助开发，并区分免费文档上下文与需授权的 MCP 服务。",
       "tags": [
         "AI 辅助开发",
+        "UI",
         "组件库",
-        "UI 组件库",
         "MCP"
       ],
       "savedAt": "2026-11-01",
@@ -2222,8 +2222,8 @@
       "reason": "用于比较 AI 对完整设计系统的接入能力，重点核查组件用法、主题约束与迁移信息。",
       "tags": [
         "AI 辅助开发",
+        "UI",
         "组件库",
-        "UI 组件库",
         "MCP"
       ],
       "savedAt": "2026-11-01",
@@ -2253,8 +2253,8 @@
       "reason": "用于让 AI 根据当前组件 API 和主题变量实现应用界面，减少凭旧版本知识生成代码。",
       "tags": [
         "AI 辅助开发",
+        "UI",
         "组件库",
-        "UI 组件库",
         "MCP"
       ],
       "savedAt": "2026-11-01",
@@ -2284,7 +2284,7 @@
       "reason": "用于比较组件聚合平台与单一组件库的检索方式，接入前核对当前服务配置和账户要求。",
       "tags": [
         "AI 辅助开发",
-        "组件库",
+        "UI",
         "MCP"
       ],
       "savedAt": "2026-11-01",
@@ -2314,8 +2314,8 @@
       "reason": "用于查找 AI 可直接读取和集成的交互组件，比较组件发现、依赖安装与主题适配流程。",
       "tags": [
         "AI 辅助开发",
+        "UI",
         "组件库",
-        "UI 组件库",
         "MCP"
       ],
       "savedAt": "2026-11-01",
@@ -2345,8 +2345,8 @@
       "reason": "为 AI 编程工具建立统一的组件检索与安装入口，可连接项目配置中的第三方 Registry。",
       "tags": [
         "AI 辅助开发",
+        "UI",
         "组件库",
-        "UI 组件库",
         "MCP"
       ],
       "savedAt": "2026-11-01",
@@ -2456,6 +2456,7 @@
       "reason": "用于回查维护改编的上游来源，后续更新 SwiftUI 参考或 Instruments 工具时核对原始实现与许可。作为会话发现保存，不表示本人采纳全部指导或完成目标应用的性能验收。",
       "tags": [
         "SwiftUI",
+        "UI",
         "macOS",
         "Instruments",
         "Agent Skills"
@@ -3158,7 +3159,7 @@
         "UI",
         "React",
         "组件",
-        "UI 组件库"
+        "组件库"
       ],
       "sources": [
         {
