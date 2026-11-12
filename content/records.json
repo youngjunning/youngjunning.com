@@ -2,6 +2,23 @@
   "version": 2,
   "records": [
     {
+      "id": "172e6b9bf60ce146",
+      "kind": "judgment",
+      "title": "为无语义侧边强调条制定去 AI 味规则",
+      "date": "2026-11-13",
+      "recordedAt": "2026-11-13",
+      "text": "我要求 Joyally Design 将卡片或分组侧边缺少明确用途的醒目竖条纳入去 AI 味检查，并明确这项规则与竖条颜色无关。",
+      "context": "针对一张工具界面截图提出的 Skill 改进要求。‘无语义侧边强调条’是本轮由助手拟定并写入规则的名称；本人要求命名，但未另行确认具体措辞。",
+      "visibility": "shared",
+      "articleId": null,
+      "projectId": null,
+      "relatedIds": [],
+      "sources": [{ "kind": "statement", "label": "本人公开可述的要求，2026-11-13：为工具界面里没有明确用途的侧边竖条命名，并作为与颜色无关的去 AI 味规则优化 Joyally Design。" }],
+      "basis": "本人明确要求把该视觉现象转成 Joyally Design 的规则，并指出命名和判定应与颜色无关；具体视觉诊断来自助手。",
+      "alternatives": [],
+      "outcome": null
+    },
+    {
       "id": "eeb5ec9399582c0f",
       "kind": "judgment",
       "title": "Joyally Design 将小香风作为并列主题",
