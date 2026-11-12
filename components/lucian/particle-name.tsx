@@ -11,6 +11,7 @@ export default function ParticleName() {
   useEffect(() => {
     const root = rootRef.current!, canvas = canvasRef.current!, ctx = canvas.getContext('2d')!;
     const media = matchMedia('(prefers-reduced-motion: reduce)');
+    const fashion = document.documentElement.dataset.theme === 'xiaoxiang';
     const words = [persona.siteName, persona.name];
     let width = 1000, height = 360, index = 0, frame = 0, last = 0, visible = true, disposed = false;
     let pointer: { x: number; y: number } | null = null;
@@ -26,7 +27,7 @@ export default function ParticleName() {
       const context = offscreen.getContext('2d')!;
       const size = Math.min(width < 500 ? 145 : 280, Math.floor((width - 30) / words[index].length));
       const headingFont = getComputedStyle(root).getPropertyValue('--font-heading').trim() || '"Songti SC",serif';
-      context.fillStyle = '#fff';context.font = `400 ${size}px ${headingFont}`;context.textAlign = 'center';context.textBaseline = 'middle';
+      context.fillStyle = '#fff';context.font = `${fashion ? 700 : 400} ${size}px ${headingFont}`;context.textAlign = 'center';context.textBaseline = 'middle';
       context.fillText(words[index], width / 2, height / 2 + 8);
       const data = context.getImageData(0, 0, width, height).data;
       const points: Array<[number, number]> = [];
@@ -51,9 +52,9 @@ export default function ParticleName() {
       ctx.translate((rect.width - width * scale) / 2, (rect.height - height * scale) / 2);ctx.scale(scale, scale);
       particles.forEach((particle) => {
         const speed = Math.min(1, Math.hypot(particle.vx, particle.vy) / 300);
-        ctx.globalAlpha = particle.on ? .78 + speed * .22 : .1;
+        ctx.globalAlpha = particle.on ? (fashion ? .94 : .78) + speed * (fashion ? .06 : .22) : .1;
         ctx.fillStyle = colors[particle.tone];
-        const size = particle.on ? 2.6 + speed * 1.4 : 1.6;
+        const size = particle.on ? (fashion ? 3.8 : 2.6) + speed * 1.4 : 1.6;
         ctx.fillRect(particle.x - size / 2, particle.y - size / 2, size, size);
       });
       ctx.globalAlpha = 1;
@@ -78,7 +79,7 @@ export default function ParticleName() {
       const rect = canvas.getBoundingClientRect(), mobile = rect.width < 650;
       width = mobile ? 340 : 1000;height = mobile ? 320 : 360;
       const dpr = Math.min(2, devicePixelRatio || 1);canvas.width = Math.round(rect.width * dpr);canvas.height = Math.round(rect.height * dpr);
-      particles = Array.from({ length: mobile ? 900 : 1500 }, () => ({ x: Math.random() * width, y: Math.random() * height, vx: 0, vy: 0, tx: width / 2, ty: height / 2, on: true, tone: Math.floor(Math.random() * colors.length) }));
+      particles = Array.from({ length: fashion ? (mobile ? 1800 : 4200) : (mobile ? 900 : 1500) }, () => ({ x: Math.random() * width, y: Math.random() * height, vx: 0, vy: 0, tx: width / 2, ty: height / 2, on: true, tone: Math.floor(Math.random() * colors.length) }));
       assign();run();
     }
     function move(event: PointerEvent) {
@@ -95,7 +96,7 @@ export default function ParticleName() {
     theme();resize();
     // Rebuild the particle targets after the web font replaces its fallback.
     const headingFont = getComputedStyle(root).getPropertyValue('--font-heading').trim();
-    document.fonts.load(`400 32px ${headingFont}`, words.join('')).then(() => { if (!disposed) { assign();run(); } }).catch(() => {});
+    document.fonts.load(`${fashion ? 700 : 400} 32px ${headingFont}`, words.join('')).then(() => { if (!disposed) { assign();run(); } }).catch(() => {});
     return () => { disposed = true;cancelAnimationFrame(frame);resizeObserver.disconnect();intersection.disconnect();themeObserver.disconnect();canvas.removeEventListener('pointermove', move);canvas.removeEventListener('pointerleave', leave);canvas.removeEventListener('click', change);canvas.removeEventListener('keydown', key);media.removeEventListener('change', run); };
   }, []);
   return <div ref={rootRef} className="ux u378 particle-name"><canvas ref={canvasRef} className="u378-cv" role="button" tabIndex={0} aria-label={`${persona.siteName}，点击或按 Enter 切换名称`} /></div>;
