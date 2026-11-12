@@ -1,6 +1,6 @@
 import { getSiteTheme } from '@/lib/site-theme';
 import { StatechartHome } from '@/components/statechart/pages';
-import { getCatalog } from '@/lib/content';
+import { getCatalog, getSiteCloud } from '@/lib/content';
 import Link from 'next/link';
 import Shell from '@/components/shell';
 import { getGraph } from '@/lib/content';
@@ -16,8 +16,6 @@ import IdentityHero from '@/components/lucian/identity-hero';
 import { getJourneyRecords, getRecords } from '@/lib/records';
 import type { ProjectRecord } from '@/lib/record-types';
 import WordCloud from '@/components/lucian/word-cloud';
-import { buildSiteCloud } from '@/lib/word-cloud.mjs';
-import { getConversationKnowledge } from '@/lib/twin-server';
 import './home-final.css';
 import { readingMinutes } from '@/lib/article-reading.mjs';
 import { getFavoriteStore } from '@/lib/favorites';
@@ -28,7 +26,7 @@ export default async function Home() {
   if (await getSiteTheme() === 'statechart') return <StatechartHome />;
   const catalog = getCatalog();
   const records = getRecords();
-  const cloud = buildSiteCloud(getConversationKnowledge().entries.filter(entry => entry.kind === 'record' || entry.kind === 'blog'), catalog.documents.flatMap((doc) => doc.tags));
+  const cloud = getSiteCloud();
   const experiences = getJourneyRecords(records);
   const projects = persona.featuredProjectIds.flatMap((id) => records.filter((record): record is ProjectRecord => record.kind === 'project' && record.id === id));
   const documents = new Map(catalog.documents.map((doc) => [doc.id, doc]));

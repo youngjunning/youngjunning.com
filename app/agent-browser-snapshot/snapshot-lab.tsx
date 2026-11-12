@@ -88,7 +88,13 @@ export default function SnapshotLab() {
   const [messageKind, setMessageKind] = useState<'info' | 'warning' | 'success'>('info');
   const selectedRef = selected ? snapshot.refs[selected] : undefined;
   const target = selectedRef ? currentTarget(selectedRef, orders) : undefined;
+  const selectedOrderId = selectedRef?.role === 'button' ? target?.id : selectedRef?.ownerId;
   const stale = snapshot.revision !== revision;
+
+  function selectOrderRef(orderId: string, role: Ref['role']) {
+    const match = Object.entries(snapshot.refs).find(([, ref]) => ref.ownerId === orderId && ref.role === role);
+    if (match) setSelected(match[0]);
+  }
 
   function generate() {
     setSnapshot(buildSnapshot(orders, options, revision, pendingId));
@@ -143,18 +149,18 @@ export default function SnapshotLab() {
   }
 
   return <section className="snapshot-lab" id="lab" aria-labelledby="snapshot-lab-title">
-    <div className="snapshot-section-heading"><div><p className="snapshot-eyebrow">LIVE DEMO / 订单场景</p><h2 id="snapshot-lab-title">亲手走一遍 snapshot</h2><p>目标：取消 <strong>B-2086</strong>，并确认结果。这里是本地教学模拟器，不运行上游 agent-browser。</p></div><button type="button" className="snapshot-reset" onClick={reset}>重置演示</button></div>
+    <div className="snapshot-section-heading"><div><p className="snapshot-eyebrow">LIVE DEMO / 订单场景</p><h2 id="snapshot-lab-title">亲手走一遍 snapshot</h2><p>目标：取消 <strong>B-2086</strong>，并确认结果。点选引用会标出示例页面中的对象；点示例的“取消”也会选中对应引用。这里是本地教学模拟器，不运行上游 agent-browser。</p></div><button type="button" className="snapshot-reset" onClick={reset}>重置演示</button></div>
 
     <div className="snapshot-lab-grid">
-      <div className="snapshot-browser-panel">
-        <div className="snapshot-panel-top"><span className="snapshot-window-dots" aria-hidden="true"><i /><i /><i /></span><span>example.local/orders</span><span>示例页面</span></div>
-        <div className="snapshot-browser-body"><div className="snapshot-browser-title"><span>订单中心</span><strong>我的订单</strong><p>选择正确的业务对象后再操作。</p></div>
-          <div className="snapshot-order-list">{orders.map(order => <article className={`snapshot-order ${order.status === '已取消' ? 'is-cancelled' : ''}`} aria-label={`${order.id}，${order.trip}`} key={order.id}><div><span className="snapshot-order-id">{order.id}</span><h3>{order.trip}</h3><p>状态：<b>{order.status}</b></p></div>{order.status === '待支付' && <button type="button" onClick={() => { setPendingId(order.id); setRevision(value => value + 1); setMessage(`手动打开了 ${order.id} 的确认弹窗；这一步绕过了 ref。`); setMessageKind('info'); }}>取消</button>}</article>)}</div>
+      <div className="snapshot-browser-stage"><div className="snapshot-stage-label"><strong>独立示例网页</strong><span>example.local/orders · 与本站分离</span></div><div className="snapshot-browser-panel" aria-label="独立的示例订单页面">
+        <div className="snapshot-panel-top"><span className="snapshot-window-dots" aria-hidden="true"><i /><i /><i /></span><span>example.local/orders</span><span>模拟站点</span></div>
+        <div className="snapshot-browser-body"><div className={`snapshot-browser-title ${selectedRef?.role === 'heading' ? 'is-linked' : ''}`}><span>订单中心</span><strong>我的订单</strong><p>选择正确的业务对象后再操作。</p></div>
+          <div className={`snapshot-order-list ${selectedRef?.role === 'region' ? 'is-linked' : ''}`}>{orders.map(order => <article id={`snapshot-example-order-${order.id}`} className={`snapshot-order ${order.status === '已取消' ? 'is-cancelled' : ''} ${selectedOrderId === order.id ? 'is-linked' : ''}`} aria-label={`${order.id}，${order.trip}`} key={order.id}><div><span className="snapshot-order-id">{order.id}</span><h3>{order.trip}</h3><p>状态：<b>{order.status}</b></p>{selectedOrderId === order.id && <span className="snapshot-ref-match">快照 @{selected} 对应此单</span>}</div>{order.status === '待支付' && <button type="button" className={selectedOrderId === order.id && selectedRef?.role === 'button' ? 'is-linked' : ''} onClick={() => { selectOrderRef(order.id, 'button'); setPendingId(order.id); setRevision(value => value + 1); setMessage(`手动打开了 ${order.id} 的确认弹窗；这一步绕过了 ref。`); setMessageKind('info'); }}>取消</button>}</article>)}</div>
           {pendingId && <div className="snapshot-confirm" role="dialog" aria-modal="false" aria-label="确认取消"><strong>确认取消 {pendingId}？</strong><p>演示只修改本页状态，不会产生真实订单操作。</p><div><button type="button" onClick={() => { setPendingId(null); setRevision(value => value + 1); }}>返回</button><button type="button" onClick={confirm}>确认取消</button></div></div>}
         </div>
-      </div>
+      </div></div>
 
-      <div className="snapshot-controls-panel"><div className="snapshot-panel-top"><strong>快照选项</strong><span>模拟固定版本的核心过滤规则</span></div><div className="snapshot-controls-body">
+      <div className="snapshot-controls-panel"><div className="snapshot-panel-top"><strong>本站观察台 · 快照选项</strong><span>模拟固定版本的核心过滤规则</span></div><div className="snapshot-controls-body">
         <label className="snapshot-check"><input type="checkbox" checked={options.interactive} onChange={event => setOptions(current => ({ ...current, interactive: event.target.checked }))} /><span><strong>-i 只看交互项</strong><small>订单号和状态会消失</small></span></label>
         <label className="snapshot-check"><input type="checkbox" checked={options.compact} onChange={event => setOptions(current => ({ ...current, compact: event.target.checked }))} /><span><strong>-c 压缩空结构</strong><small>移除无名包装层</small></span></label>
         <label className="snapshot-field"><span>-d 最大深度</span><select value={options.maxDepth} onChange={event => setOptions(current => ({ ...current, maxDepth: Number(event.target.value) }))}><option value={4}>完整深度</option><option value={3}>3 层</option><option value={2}>2 层</option><option value={1}>1 层</option></select></label>
@@ -164,8 +170,8 @@ export default function SnapshotLab() {
       </div></div>
     </div>
 
-    <div className="snapshot-output-grid"><div className="snapshot-tree-panel"><div className="snapshot-output-head"><div><span>01 / TREE</span><h3>Agent 看到的文本</h3></div><small className={stale ? 'is-stale' : ''}>{stale ? '页面已变化 · 旧快照' : '与当前页面一致'}</small></div><pre><code>{snapshot.tree}</code></pre><div className="snapshot-tree-foot">{snapshot.tree.split('\n').length} 行 · {Object.keys(snapshot.refs).length} 个 ref · token 约 {Math.ceil(snapshot.tree.length / 4)}（源码粗估）</div></div>
-      <div className="snapshot-ref-panel"><div className="snapshot-output-head"><div><span>02 / REFS</span><h3>选择一个引用</h3></div></div><div className="snapshot-ref-list">{Object.entries(snapshot.refs).map(([key, ref]) => <button type="button" className={selected === key ? 'is-selected' : ''} key={key} onClick={() => setSelected(key)} aria-pressed={selected === key}><code>@{key}</code><span>{ref.role} “{ref.name}”{ref.nth !== undefined ? ` · nth=${ref.nth}` : ''}</span></button>)}{Object.keys(snapshot.refs).length === 0 && <p>当前过滤条件下没有可选引用。</p>}</div><div className="snapshot-ref-detail">{selectedRef ? <><p>快照里的目标：<strong>{selectedRef.ownerId ?? '内容或非订单操作'}</strong></p><p>当前定位结果：<strong>{target?.id ?? '无可执行订单目标'}</strong></p><code>{selectedRef.selector}{selectedRef.nth !== undefined ? `.nth(${selectedRef.nth})` : ''}</code><button type="button" onClick={runRef} disabled={selectedRef.role !== 'button' || selectedRef.name !== '取消'}>用 @{selected} 查找并打开确认 <span aria-hidden="true">→</span></button></> : <p>选中“取消”引用，查看它如何定位当前页面。</p>}</div></div></div>
+    <div className="snapshot-output-grid"><div className="snapshot-tree-panel"><div className="snapshot-output-head"><div><span>01 / TREE</span><h3>Agent 看到的文本</h3></div><small className={stale ? 'is-stale' : ''}>{stale ? '页面已变化 · 旧快照' : '与当前页面一致'}</small></div><pre><code>{snapshot.tree.split('\n').map((line, index, lines) => <span className={selected && line.includes(`[ref=${selected}]`) ? 'is-linked' : undefined} key={index}>{line}{index < lines.length - 1 ? '\n' : ''}</span>)}</code></pre><div className="snapshot-tree-foot">{snapshot.tree.split('\n').length} 行 · {Object.keys(snapshot.refs).length} 个 ref · token 约 {Math.ceil(snapshot.tree.length / 4)}（源码粗估）</div></div>
+      <div className="snapshot-ref-panel"><div className="snapshot-output-head"><div><span>02 / REFS</span><h3>选择一个引用</h3></div></div><div className="snapshot-ref-list">{Object.entries(snapshot.refs).map(([key, ref]) => { const linkedOrderId = ref.role === 'button' ? currentTarget(ref, orders)?.id : ref.ownerId; return <button type="button" className={selected === key ? 'is-selected' : ''} key={key} onClick={() => setSelected(key)} aria-pressed={selected === key} aria-controls={linkedOrderId ? `snapshot-example-order-${linkedOrderId}` : undefined}><code>@{key}</code><span>{ref.role} “{ref.name}”{ref.nth !== undefined ? ` · nth=${ref.nth}` : ''}</span></button>; })}{Object.keys(snapshot.refs).length === 0 && <p>当前过滤条件下没有可选引用。</p>}</div><div className="snapshot-ref-detail">{selectedRef ? <><p>快照里的目标：<strong>{selectedRef.ownerId ?? '页面内容或区域'}</strong></p><p>页面联动：<strong>{selectedRef.role === 'button' ? (target?.id ?? '当前无对应按钮') : selectedRef.role === 'article' ? (orders.find(order => order.id === selectedRef.ownerId)?.id ?? '页面已无此订单') : selectedRef.role === 'heading' ? '我的订单标题' : selectedRef.role === 'region' ? '订单列表区域' : '非订单目标'}</strong></p><code>{selectedRef.selector}{selectedRef.nth !== undefined ? `.nth(${selectedRef.nth})` : ''}</code><button type="button" onClick={runRef} disabled={selectedRef.role !== 'button' || selectedRef.name !== '取消'}>用 @{selected} 查找并打开确认 <span aria-hidden="true">→</span></button></> : <p>选中“取消”引用，查看它如何定位当前页面。</p>}</div></div></div>
 
     <div className={`snapshot-feedback ${messageKind}`} role="status"><span>{messageKind === 'warning' ? '!' : messageKind === 'success' ? '✓' : 'i'}</span><p>{message}</p><button type="button" onClick={reorder} disabled={orders.every(order => order.status === '已取消')}>交换订单顺序</button></div>
     <p className="snapshot-lab-caption">演示的订单身份检查与过期提示是教学保护逻辑；固定源码的 RefMap 只保存 selector、role、name 和可选 nth。输出是按该规则构造的示意，不是实际 Playwright 运行结果。</p>
