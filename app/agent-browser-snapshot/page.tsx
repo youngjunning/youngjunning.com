@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 export default function AgentBrowserSnapshotPage() {
-  return <Shell active="library">
+  return <Shell active={null}>
     <main className="snapshot-page">
       <header className="snapshot-hero">
         <div className="snapshot-hero-copy">

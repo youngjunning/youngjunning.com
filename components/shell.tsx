@@ -35,7 +35,7 @@ function highlightMoreItem(link: HTMLAnchorElement) {
   list?.classList.add('is-hl');
 }
 
-export default function Shell({ children, active = 'library', toolbar }: { children: ReactNode; active?: SiteSection; toolbar?: ReactNode }) {
+export default function Shell({ children, active = 'library', toolbar }: { children: ReactNode; active?: SiteSection | null; toolbar?: ReactNode }) {
   const moreActive = moreItems.some((item) => item.id === active);
   const hasActiveNavItem = moreActive || items.some((item) => item.id === active);
   const rootRef = useRef<HTMLDivElement>(null);
