@@ -1,14 +1,27 @@
 // Lucian UX/UI Prompt #228 · MIT License (c) 2026 Seokwoooo · https://lucianlabs.dev/uxui-prompt/#228
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useLayoutEffect, useRef } from 'react';
 import './lucian-228.css';
 import './resource-cards.css';
 
 export type ResourceCard = { id: string; title: string; description: string; status: string; details: string[]; href: string | null; linkLabel: string; links?: { href: string; label: string }[] };
 
-export default function ResourceCards({ areas, ariaLabel }: { areas: ResourceCard[]; ariaLabel: string }) {
+export default function ResourceCards({ areas, ariaLabel, masonry = false }: { areas: ResourceCard[]; ariaLabel: string; masonry?: boolean }) {
   const rootRef = useRef<HTMLDivElement>(null);
+
+  useLayoutEffect(() => {
+    if (!masonry || !rootRef.current) return;
+    const cards = [...rootRef.current.querySelectorAll<HTMLElement>('.u228-c')];
+    const update = () => cards.forEach(card => {
+      card.style.gridRowEnd = window.innerWidth > 650 ? `span ${Math.ceil((card.getBoundingClientRect().height + 20) / 10)}` : '';
+    });
+    const observer = new ResizeObserver(update);
+    cards.forEach(card => observer.observe(card));
+    window.addEventListener('resize', update);
+    update();
+    return () => { observer.disconnect(); window.removeEventListener('resize', update); };
+  }, [areas, masonry]);
 
   useEffect(() => {
     const root = rootRef.current;
@@ -65,7 +78,7 @@ export default function ResourceCards({ areas, ariaLabel }: { areas: ResourceCar
     };
   }, [areas]);
 
-  return <div className="ux u228 resource-cards" ref={rootRef}>
+  return <div className={`ux u228 resource-cards${masonry ? ' resource-cards-masonry' : ''}`} ref={rootRef}>
     <div className="u228-gd" role="list" aria-label={ariaLabel}>
       {areas.map((area, index) => <div className="u228-c" role="listitem" key={area.id} id={area.id}>
         <div className="u228-in">

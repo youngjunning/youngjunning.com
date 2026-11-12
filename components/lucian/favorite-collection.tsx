@@ -33,7 +33,7 @@ export default function FavoriteCollection({ favorites }: { favorites: Favorite[
     <div className="favorite-subjects"><span className="eyebrow">先从关注的问题开始</span><ContentFilterTabs options={subjects} value={subject} onChange={setSubject} label="按关注主题筛选" /></div>
     <div className="favorite-toolbar"><div className="favorite-secondary-filters"><ContentFilterTabs options={types} value={type} onChange={setType} label="按内容类型筛选" /><ContentFilterTabs options={[{ id: 'all', label: '全部条目' }, { id: 'used', label: '有使用记录' }]} value={usedOnly ? 'used' : 'all'} onChange={value => setUsedOnly(value === 'used')} label="按使用证据筛选" /></div><ContentSearch label="搜索百宝箱" accessibleLabel="搜索条目正文、来源、用途和标签" placeholder="主题、概念或使用场景" query={query} onChange={setQuery} resultCount={visible.length} /></div>
     <p className="favorite-count" role="status">{visible.length} 条内容 · 资源保留出处，笔记说明表达归属；使用情况按具体项目记录。</p>
-    {visible.length ? <ResourceCards ariaLabel="百宝箱条目" areas={visible.map(item => ({
+    {visible.length ? <ResourceCards ariaLabel="百宝箱条目" masonry areas={visible.map(item => ({
       id: item.id, title: item.title, description: item.summary,
       status: `${favoriteTypeLabels[item.type]} · ${attributionLabels[item.attribution]} · ${item.selection === 'explicit' ? '主动收藏' : '会话发现'}`,
       details: [
