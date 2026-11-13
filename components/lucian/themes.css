@@ -54,32 +54,27 @@ html[data-style] body,html[data-style] .sidebar,html[data-style] .topbar,html[da
 @media(max-width:650px){.theme-picker .theme-picker-caption,.theme-picker .theme-picker-name{display:none}}
 @media(prefers-reduced-motion:reduce){html[data-style] body,html[data-style] .sidebar,html[data-style] .topbar,html[data-style] .persona-hero,html[data-style] .persona-memory,html[data-style] .journey-section,html[data-style] .persona-section#projects,html[data-style] .persona-perspectives,html[data-style] .persona-reading,html[data-style] .persona-ata,html[data-style] .page-intro,html[data-style] .topic-card,html[data-style] .document-card{transition:none}}
 
-/* 小香风取自香奈儿经典套装的黑白对比、米色面料、金色纽扣和精细滚边。 */
-html[data-theme="xiaoxiang"]{--style-page:#f4f0e8;--style-surface:#fffdf8;--style-ink:#1e1d1b;--style-muted:#625e58;--style-line:#c9c1b5;--style-accent:#76562a;--style-accent-ink:#fffdf8;--style-secondary:#24211f;--style-sidebar:#eee8dd;--style-hero:#f8f4ec;--style-memory:#f0e9dd;--style-project:#f6f1e8;--style-perspective:#ece5d9;--style-cover:#e6dccb;--style-tint:#e9dfcf;--style-card:#fffdf8;--ux-shadow:rgba(34,30,24,.12);--ux-shadow-strong:rgba(34,30,24,.22)}
+/* 小香风：奶油白、黑色滚边、柔粉与克制的粗花呢纹理。 */
+html[data-theme="xiaoxiang"]{--style-page:#f8f5f1;--style-surface:#fffefa;--style-ink:#28252a;--style-muted:#625b61;--style-line:#c9bfc0;--style-accent:#8c4d62;--style-accent-ink:#fff;--style-secondary:#6d354d;--style-sidebar:#f3edea;--style-hero:#f8eeef;--style-memory:#f2e8e8;--style-project:#f8f1ed;--style-perspective:#f1e7e9;--style-cover:#e9d8dc;--style-tint:#e8d8dc;--style-card:#fffefa;--ux-shadow:rgba(58,35,43,.13);--ux-shadow-strong:rgba(58,35,43,.24)}
 html[data-theme="xiaoxiang"] .site-shell{font-family:Inter,-apple-system,"PingFang SC",sans-serif;letter-spacing:0}
-html[data-theme="xiaoxiang"] .site-shell .site-header.u212-hd{border:1px solid var(--style-ink);border-radius:2px;background:var(--style-surface);box-shadow:0 3px 0 var(--style-ink),0 16px 35px -30px var(--ux-shadow-strong)}
-html[data-theme="xiaoxiang"] .site-shell .site-identity-mark{border:1px solid #b89762;border-radius:50%;background:#24211f;background-image:none;color:#fffdf8;font-family:"Songti SC",serif;font-weight:600;box-shadow:none}
-html[data-theme="xiaoxiang"] .site-nav.u039-tabs{border-radius:2px;background:var(--style-surface)}
-html[data-theme="xiaoxiang"] .site-nav .u039-pill{border-radius:1px;box-shadow:none}
-html[data-theme="xiaoxiang"] .site-shell :is(.persona-hero,.page-intro){position:relative;border:1px solid var(--style-ink);border-radius:2px;background:var(--style-hero)}
-html[data-theme="xiaoxiang"] .site-shell :is(.persona-hero,.page-intro)::before{background:#9b7842}
+html[data-theme="xiaoxiang"] .site-header.u212-hd{border:1px solid var(--style-ink);border-radius:3px;box-shadow:0 4px 0 #d9c8cb,0 16px 35px -30px var(--ux-shadow-strong)}
+html[data-theme="xiaoxiang"] .site-identity-mark{border:1px solid #f4dce2;border-radius:50%;font-family:"Songti SC",serif;font-weight:400}
+html[data-theme="xiaoxiang"] .site-nav.u039-tabs{border-radius:3px;background:var(--style-surface)}
+html[data-theme="xiaoxiang"] .site-nav .u039-pill{border-radius:2px}
+html[data-theme="xiaoxiang"] .site-shell :is(.persona-hero,.page-intro){position:relative;border:1px solid var(--style-ink);border-radius:3px;background-color:var(--style-hero);background-image:repeating-linear-gradient(0deg,transparent 0 18px,#8c4d6208 18px 19px),repeating-linear-gradient(90deg,transparent 0 18px,#8c4d6208 18px 19px)}
+html[data-theme="xiaoxiang"] .site-shell :is(.persona-hero,.page-intro)::before{background:var(--style-ink)}
 html[data-theme="xiaoxiang"] .site-shell :is(.persona-hero,.page-intro) :is(h1,h2),html[data-theme="xiaoxiang"] .site-shell .persona-section-heading h2{font-family:Georgia,"Songti SC","Noto Serif CJK SC",serif;font-weight:600;letter-spacing:-.025em}
-html[data-theme="xiaoxiang"] .site-shell .persona-hero::after{background-image:none;opacity:0}
-html[data-theme="xiaoxiang"] .site-shell .persona-cover{border:2px solid var(--style-ink);border-radius:2px;background:linear-gradient(90deg,transparent 0 8px,#b49a70 8px 9px,transparent 9px calc(100% - 9px),#b49a70 calc(100% - 9px) calc(100% - 8px),transparent calc(100% - 8px)),linear-gradient(145deg,#eee6d8,#d9cbb6);box-shadow:8px 8px 0 var(--style-ink)}
-html[data-theme="xiaoxiang"] .site-shell .persona-cover::before{background:#d1b984;opacity:.42}
-html[data-theme="xiaoxiang"] .site-shell .persona-cover::after{border-color:#76562a;border-radius:50%}
-html[data-theme="xiaoxiang"] .site-shell .persona-cover-head{border-color:#76562a;color:var(--style-ink)}
-html[data-theme="xiaoxiang"] .site-shell .persona-cover-foot :is(span,p){color:#51483b}
-html[data-theme="xiaoxiang"] .site-shell :is(.topic-card,.document-card,.persona-memory,.journey-section,.persona-reading,.persona-perspectives,.persona-ata){border-radius:2px;border-color:var(--style-line);box-shadow:none}
+html[data-theme="xiaoxiang"] .site-shell .persona-hero::after{background-image:radial-gradient(#8c4d6226 1px,transparent 1px);background-size:18px 18px;opacity:.5}
+html[data-theme="xiaoxiang"] .site-shell .persona-cover{border:2px solid var(--style-ink);border-radius:4px;background:linear-gradient(135deg,#f5e7e9,#ddc5cc);box-shadow:7px 7px 0 var(--style-ink),13px 13px 0 #e5d3d7}
+html[data-theme="xiaoxiang"] .site-shell .persona-cover::after{border-color:#8c4d6255;border-radius:50%}
+html[data-theme="xiaoxiang"] .site-shell :is(.topic-card,.document-card,.persona-memory,.journey-section,.persona-reading,.persona-perspectives,.persona-ata){border-radius:3px;border-color:var(--style-line);box-shadow:0 5px 0 #eee4e3}
 html[data-theme="xiaoxiang"] .site-shell :is(.topic-card,.document-card){border-top:3px solid var(--style-ink)}
 html[data-theme="xiaoxiang"] .site-shell :is(.primary-button,.secondary-button){border-radius:2px}
-html[data-theme="xiaoxiang"] .site-shell .primary-button{background:var(--style-ink);background-image:none;color:#fffdf8;box-shadow:none}
-html[data-theme="xiaoxiang"] .site-shell .primary-button:hover{background:#443d34}
-html[data-theme="xiaoxiang"] .site-shell .page-intro{background-image:none}
-html[data-theme="xiaoxiang"] .site-shell .page-intro h1 span{background-image:none;color:var(--style-ink)}
-html[data-theme="xiaoxiang"] .site-shell .page-footer{border-top:2px solid var(--style-ink);border-image:none}
-html[data-theme="xiaoxiang"] .identity-skill .eyebrow{color:var(--style-accent)}
-html[data-theme="xiaoxiang"] .classic-theme-access{border-radius:2px;box-shadow:0 3px 0 var(--style-ink)}
+html[data-theme="xiaoxiang"] .site-shell .primary-button{background:var(--style-ink);color:#fff}
+html[data-theme="xiaoxiang"] .site-shell .primary-button:hover{background:var(--style-secondary)}
+html[data-theme="xiaoxiang"] .site-shell .page-footer{border-top:2px solid var(--style-ink)}
+html[data-theme="xiaoxiang"] .identity-skill .eyebrow{color:var(--style-secondary)}
+html[data-theme="xiaoxiang"] .classic-theme-access{border-radius:2px;box-shadow:0 4px 0 #d9c8cb}
 html[data-theme="xiaoxiang"] .theme-picker{display:none}
 @media(max-width:760px){html[data-theme="xiaoxiang"] .site-header.u212-hd{border-radius:3px}.classic-theme-access{right:8px;bottom:8px}.site-theme-switch{font-size:10px}.site-theme-switch>span{display:none}.site-theme-switch button{padding:6px 5px}}
 
