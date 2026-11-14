@@ -2,6 +2,25 @@
   "version": 2,
   "favorites": [
     {
+      "id": "0fb854b3aa2b69f7",
+      "kind": "resource",
+      "type": "tool",
+      "title": "backburner",
+      "url": "https://github.com/StayLameBro/backburner",
+      "summary": "StayLameBro 的预发布开源项目，让通过 USB-C 连接的 iPhone 参与 Mac 上的本地大模型推理。仓库 README 说明实现与测试条件，bench 目录提供基准脚本及结果数据。",
+      "reason": "回看跨设备本地推理方案，并从 README 和 bench 脚本核对作者的性能数据；收藏不表示已运行或独立验证。",
+      "tags": ["backburner", "StayLameBro", "iPhone", "Mac", "本地推理", "跨设备推理", "benchmark"],
+      "subjects": ["infra", "engineering"],
+      "attribution": "source",
+      "savedAt": "2026-11-14T14:15+08:00",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        { "label": "StayLameBro/backburner README，2026-11-14 核对作者、项目状态和测试说明。", "url": "https://github.com/StayLameBro/backburner" },
+        { "label": "backburner 基准脚本与结果目录。", "url": "https://github.com/StayLameBro/backburner/tree/main/bench" }
+      ]
+    },
+    {
       "id": "3c99cd1fde1253e8",
       "kind": "resource",
       "type": "tool",
