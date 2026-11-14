@@ -74,7 +74,8 @@
 .favorite-empty.u092{width:100%;max-width:540px;height:auto;min-height:290px;margin:auto;box-shadow:none}
 .favorite-empty .u092-none{position:relative;opacity:1;visibility:visible;transform:none;padding:24px 12px}
 .favorite-count{font-size:13px;color:var(--style-muted)}
-.favorites-content .resource-cards-masonry .u228-gd{grid-auto-rows:10px;column-gap:20px;row-gap:0}
+.favorites-content .resource-cards-masonry .u228-gd{column-gap:20px;row-gap:20px}
+.favorites-content .resource-cards-masonry.resource-cards-masonry-ready .u228-gd{grid-auto-rows:10px;row-gap:0}
 .favorites-content .resource-cards-masonry .u228-c{align-self:start;margin-bottom:20px}
 .favorites-content .resource-cards .u228-in{height:auto}
 @media(max-width:650px){.favorites-content .resource-cards-masonry .u228-gd{display:block}.favorites-content .resource-cards-masonry .u228-c{margin-bottom:20px}}

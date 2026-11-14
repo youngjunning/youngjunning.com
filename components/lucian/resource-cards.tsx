@@ -12,7 +12,8 @@ export default function ResourceCards({ areas, ariaLabel, masonry = false }: { a
 
   useLayoutEffect(() => {
     if (!masonry || !rootRef.current) return;
-    const cards = [...rootRef.current.querySelectorAll<HTMLElement>('.u228-c')];
+    const root = rootRef.current;
+    const cards = [...root.querySelectorAll<HTMLElement>('.u228-c')];
     const update = () => cards.forEach(card => {
       card.style.gridRowEnd = window.innerWidth > 650 ? `span ${Math.ceil((card.getBoundingClientRect().height + 20) / 10)}` : '';
     });
@@ -20,6 +21,7 @@ export default function ResourceCards({ areas, ariaLabel, masonry = false }: { a
     cards.forEach(card => observer.observe(card));
     window.addEventListener('resize', update);
     update();
+    root.classList.add('resource-cards-masonry-ready');
     return () => { observer.disconnect(); window.removeEventListener('resize', update); };
   }, [areas, masonry]);
 
