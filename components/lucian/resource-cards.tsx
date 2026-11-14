@@ -2,6 +2,7 @@
 'use client';
 
 import { useEffect, useLayoutEffect, useRef } from 'react';
+import FavoriteShare from '../favorite-share';
 import './lucian-228.css';
 import './resource-cards.css';
 
@@ -9,6 +10,19 @@ export type ResourceCard = { id: string; title: string; description: string; sta
 
 export default function ResourceCards({ areas, ariaLabel, masonry = false }: { areas: ResourceCard[]; ariaLabel: string; masonry?: boolean }) {
   const rootRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (ariaLabel !== '百宝箱条目') return;
+    let frame = 0;
+    const scrollToCard = () => {
+      const id = window.location.hash.slice(1);
+      if (!areas.some(area => area.id === id)) return;
+      frame = requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({ block: 'center' }));
+    };
+    scrollToCard();
+    window.addEventListener('hashchange', scrollToCard);
+    return () => { cancelAnimationFrame(frame); window.removeEventListener('hashchange', scrollToCard); };
+  }, [areas, ariaLabel]);
 
   useLayoutEffect(() => {
     if (!masonry || !rootRef.current) return;
@@ -91,6 +105,7 @@ export default function ResourceCards({ areas, ariaLabel, masonry = false }: { a
           {area.details.map((detail, i) => <p key={i}>{detail}</p>)}
           {area.links?.map(link => <a key={link.href} href={link.href} target={/^https?:\/\//i.test(link.href) ? '_blank' : undefined} rel={/^https?:\/\//i.test(link.href) ? 'noopener noreferrer' : undefined} aria-label={/^https?:\/\//i.test(link.href) ? `${link.label}（在新标签页打开）` : undefined}>{link.label} ↗</a>)}
           {area.href && <a href={area.href} target={/^https?:\/\//i.test(area.href) ? '_blank' : undefined} rel={/^https?:\/\//i.test(area.href) ? 'noopener noreferrer' : undefined} aria-label={/^https?:\/\//i.test(area.href) ? `${area.linkLabel}（在新标签页打开）` : undefined}>{area.linkLabel} ↗</a>}
+          {ariaLabel === '百宝箱条目' && <FavoriteShare id={area.id} />}
         </div>
       </div>)}
     </div>

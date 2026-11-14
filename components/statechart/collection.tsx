@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { useEffect, useMemo, useState, type ReactNode } from 'react';
 import { contentSubjects } from '@/lib/content-subjects.mjs';
+import FavoriteShare from '../favorite-share';
 
 export type PaperItem = { id: string; title: string; summary: string; kind: string; label: string; date?: string | null; tags?: string[]; subjects?: string[]; hasUsage?: boolean; href?: string; detail?: ReactNode; searchText?: string };
 export default function PaperCollection({ items, label, initialQuery = '', initialKind = 'all', initialTag = '', initialSubject = 'all', fullText = false, pageSize = 0 }: { items: PaperItem[]; label: string; initialQuery?: string; initialKind?: string; initialTag?: string; initialSubject?: string; fullText?: boolean; pageSize?: number }) {
@@ -42,6 +43,19 @@ export default function PaperCollection({ items, label, initialQuery = '', initi
   const pageCount = pageSize ? Math.ceil(visible.length / pageSize) : 1;
   const currentPage = Math.min(page, pageCount || 1);
   const pageItems = pageSize ? visible.slice((currentPage - 1) * pageSize, currentPage * pageSize) : visible;
+  const isFavorites = label === '百宝箱内容';
+  useEffect(() => {
+    if (!isFavorites) return;
+    let frame = 0;
+    const scrollToCard = () => {
+      const id = window.location.hash.slice(1);
+      if (!pageItems.some(item => item.id === id)) return;
+      frame = requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({ block: 'center' }));
+    };
+    scrollToCard();
+    window.addEventListener('hashchange', scrollToCard);
+    return () => { cancelAnimationFrame(frame); window.removeEventListener('hashchange', scrollToCard); };
+  }, [isFavorites, pageItems]);
   const firstPage = Math.max(1, Math.min(currentPage - 2, pageCount - 4));
   const pageNumbers = Array.from({ length: Math.min(5, pageCount) }, (_, index) => firstPage + index);
   const changePage = (next: number) => { setPage(next); document.querySelector('.sc-result')?.scrollIntoView({ block: 'start' }); };
@@ -51,7 +65,7 @@ export default function PaperCollection({ items, label, initialQuery = '', initi
     <div className="sc-tabs" aria-label="按类别筛选"><button type="button" aria-pressed={kind === 'all'} onClick={() => { setKind('all'); setPage(1); }}>全部 · {items.length}</button>{kinds.map(([value, name]) => <button type="button" key={value} aria-pressed={kind === value} onClick={() => { setKind(value); setPage(1); }}>{name} · {items.filter(item => item.kind === value).length}</button>)}</div>
     {items.some(item => item.hasUsage !== undefined) && <div className="sc-tabs" aria-label="按使用证据筛选"><button type="button" aria-pressed={!usedOnly} onClick={() => { setUsedOnly(false); setPage(1); }}>全部条目</button><button type="button" aria-pressed={usedOnly} onClick={() => { setUsedOnly(true); setPage(1); }}>有使用记录</button></div>}
     <p className="sc-result" role="status">找到 {visible.length} 张纸片{indexError ? ' · 全文索引暂不可用，已搜索标题与摘要。' : ''}</p>
-    <div className="sc-paper-grid">{pageItems.map((item, i) => <article className="sc-paper" id={item.id} key={item.id}><header><span>{item.label}</span><small>No. {String((currentPage - 1) * pageSize + i + 1).padStart(2, '0')}</small></header><h2>{item.href ? <Link href={item.href}>{item.title}</Link> : item.title}</h2><p>{item.summary}</p><div className="sc-tags">{item.tags?.map(value => <button key={value} type="button" onClick={() => { setTag(value); setPage(1); }}>{value}</button>)}</div>{item.detail && <details><summary>展开纸片 · 来源与详情</summary><div className="sc-paper-detail">{item.detail}</div></details>}<footer><time>{item.date?.replace('T', ' ').replace('+08:00', '') || '日期未详'}</time>{item.href && <Link href={item.href}>翻开 →</Link>}</footer></article>)}</div>
+    <div className="sc-paper-grid">{pageItems.map((item, i) => <article className="sc-paper" id={item.id} key={item.id}><header><span>{item.label}</span><small>No. {String((currentPage - 1) * pageSize + i + 1).padStart(2, '0')}</small></header><h2>{item.href ? <Link href={item.href}>{item.title}</Link> : item.title}</h2><p>{item.summary}</p><div className="sc-tags">{item.tags?.map(value => <button key={value} type="button" onClick={() => { setTag(value); setPage(1); }}>{value}</button>)}</div>{item.detail && <details><summary>展开纸片 · 来源与详情</summary><div className="sc-paper-detail">{item.detail}</div></details>}<footer><time>{item.date?.replace('T', ' ').replace('+08:00', '') || '日期未详'}</time>{item.href && <Link href={item.href}>翻开 →</Link>}{isFavorites && <FavoriteShare id={item.id} variant="statechart" />}</footer></article>)}</div>
     {pageCount > 1 && <nav className="sc-pagination" aria-label={`${label}分页`}><span>第 {currentPage} / {pageCount} 页</span><button type="button" disabled={currentPage === 1} onClick={() => changePage(currentPage - 1)}>上一页</button>{pageNumbers.map(number => <button type="button" key={number} aria-current={number === currentPage ? 'page' : undefined} onClick={() => changePage(number)}>{number}</button>)}<button type="button" disabled={currentPage === pageCount} onClick={() => changePage(currentPage + 1)}>下一页</button></nav>}
     {!visible.length && <div className="sc-empty">没有找到匹配的纸片。可以换个关键词，或清除筛选。</div>}
   </section>;
