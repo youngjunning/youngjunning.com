@@ -2,6 +2,25 @@
   "version": 2,
   "favorites": [
     {
+      "id": "f0a4eaf4aee28e5b",
+      "kind": "resource",
+      "type": "tool",
+      "title": "Pomerado",
+      "url": "https://github.com/Pomerado/pomerado",
+      "summary": "Pomerado 是把网站操作铸造成 API 或 MCP 集成的开源工具，完整核心代码以 MIT 协议公开。本地铸造需要 Node 24.21 或更高的 Node 24 版本和 OpenAI API key；运行已生成集成不调用模型，也不要求绑定 Pomerado 账号。",
+      "reason": "回看网站到 MCP 集成的本地生成、审查和运行方案；收藏不表示已安装、铸造或在项目中采用。",
+      "tags": ["Pomerado", "MCP", "网站集成", "浏览器自动化", "OpenAI API", "Node.js", "MIT"],
+      "subjects": ["browser", "agents", "engineering"],
+      "attribution": "source",
+      "savedAt": "2026-11-14T14:48+08:00",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        { "label": "Pomerado 官方仓库及 README，2026-11-14 核对功能、本地运行要求、账号边界和开源范围。", "url": "https://github.com/Pomerado/pomerado" },
+        { "label": "Pomerado 当前 MIT 许可证。", "url": "https://github.com/Pomerado/pomerado/blob/main/LICENSE" }
+      ]
+    },
+    {
       "id": "90a001db25881af6",
       "kind": "resource",
       "type": "tool",
