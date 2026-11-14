@@ -101,26 +101,6 @@
       ]
     },
     {
-      "id": "a336e788f770a9b1",
-      "kind": "resource",
-      "type": "tool",
-      "title": "ReactDrops",
-      "url": "https://reactdrops.dev/components",
-      "summary": "ReactDrops 是由 crisjavr 维护的 React 创意组件项目。2026-11-14 官方目录列有 13 个组件，覆盖玻璃折射、地形与物理背景、文字、图像、图库、按钮、光标及 AI 状态视觉效果。",
-      "reason": "作为 Joyally Design 的 React Web 视觉组件选型参考；逐项从官方页面核对和按需接入。收藏与目录收录不表示已在成品项目采用，也不转移原作者权利。",
-      "tags": ["UI", "组件库", "React", "动效", "ReactDrops"],
-      "subjects": ["design", "engineering"],
-      "attribution": "source",
-      "savedAt": "2026-11-14T13:31+08:00",
-      "selection": "explicit",
-      "visibility": "shared",
-      "sources": [
-        { "label": "ReactDrops 官方组件目录，2026-11-14 核对。", "url": "https://reactdrops.dev/components" },
-        { "label": "原作者仓库 crisjavr/reactdrops。", "url": "https://github.com/crisjavr/reactdrops" },
-        { "label": "ReactDrops Component License 1.0；限制独立组件库等形式的再分发。", "url": "https://github.com/crisjavr/reactdrops/blob/main/LICENSE" }
-      ]
-    },
-    {
       "id": "b8f25e6a703c4d19",
       "kind": "note",
       "type": "concept",
