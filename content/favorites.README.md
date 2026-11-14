@@ -39,11 +39,11 @@
 
 旧的全局 priority/adoption 已退役；项目待解问题留所属仓库，回看偏好不冒充内容成熟度。图谱 `uses` 只来自使用证据，`tagged` 来自主题或标签，`related` 来自显式内容关系；它们均不自动证明因果。
 
-## 文章术语关系
+## 文章名词解释
 
-`article-glossary.json` 保存 `{ version:1, entries:[{ term, favoriteId, articleId }] }`。favoriteId 必须指向共享知识笔记；articleId 为实际文章 ID 时限定在该文，构建核对原文含有 term；null 表示人工确认可跨文章匹配的术语。同一作用域的同一术语仅一条，文章专属映射优先。Box 等常见词须限定文章，不能从标签猜关联。
+`article-glossary.json` 保存 `{ version:2, entries:[{ term, definition, articleId }] }`。`definition` 是可独立阅读的简短名词解释，不引用百宝箱正文；`articleId` 为实际文章 ID 时限定在该文，构建核对原文含有 `term`；`null` 表示人工确认适合跨文章使用。同一作用域的同一术语仅一条，文章专属解释优先。
 
-文章蒸馏后，保存或补全笔记还要核对这里的关系。构建验证后写入 `.content/glossary.json`，页面使用同一快照。正文没有解释、仅提到术语时不自动建立关系。
+仅为值得解释的正文术语编写解释。构建验证后写入 `.content/glossary.json`，文章悬浮卡片使用同一快照。百宝箱知识笔记独立维护。
 
 ## 写入、迁移与验收
 

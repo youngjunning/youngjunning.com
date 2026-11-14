@@ -14,18 +14,19 @@ test('public glossary rejects missing article references', () => {
     fs.mkdirSync(path.join(root, 'content/posts'), { recursive: true });
     fs.writeFileSync(path.join(root, 'content/records.json'), JSON.stringify({version:2,records:[]}));
     fs.writeFileSync(path.join(root, 'content/favorites.json'), JSON.stringify({version:2,favorites:[note]}));
-    fs.writeFileSync(path.join(root, 'content/article-glossary.json'), JSON.stringify({version:1,entries:[{term:'边界',favoriteId:note.id,articleId:'2222222222222222'}]}));
+    fs.writeFileSync(path.join(root, 'content/article-glossary.json'), JSON.stringify({version:2,entries:[{term:'边界',definition:'职责发生变化的位置。',articleId:'2222222222222222'}]}));
     assert.throws(() => readPublicContent(root), /article or term is missing/);
   } finally { fs.rmSync(root, {recursive:true,force:true}); }
 });
 
-test('public snapshots join actual note bodies, attribution and glossary while preserving legacy article provenance', () => {
+test('public snapshots keep notes separate from article definitions and preserve legacy article provenance', () => {
   const snapshot = buildPublicSnapshot();
   const { content, knowledge, catalog, graph } = snapshot;
   const stored = JSON.parse(fs.readFileSync(new URL('../content/favorites.json',import.meta.url)));
   assert.deepEqual(new Set(content.favorites.map(item => item.id)),new Set(stored.favorites.map(item => item.id)));
   for (const favorite of content.favorites) assert.ok(knowledge.entries.some(source => source.id === 'favorite-' + favorite.id && source.attribution === favorite.attribution && source.personalJudgment === false));
-  assert.ok(graph.edges.some(edge => edge.type === 'explains'));
+  assert.ok(content.glossary.entries.every(entry => entry.definition && !('favoriteId' in entry)));
+  assert.ok(graph.edges.every(edge => edge.type !== 'explains'));
   assert.ok(graph.edges.every(edge => graph.nodes.some(node => node.id === edge.source) && graph.nodes.some(node => node.id === edge.target)));
   for (const post of content.posts) {
     const doc = catalog.documents.find(item => item.id === post.id);

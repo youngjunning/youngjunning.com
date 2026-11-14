@@ -14,6 +14,5 @@
 .term-preview-related{display:grid;gap:6px;margin-top:14px;padding-top:12px;border-top:1px solid color-mix(in srgb,var(--ux-page) 22%,transparent)}
 .term-preview-related span{font-size:11px;opacity:.7}
 .term-preview-tip a{display:block;color:var(--ux-page);text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
-.term-preview-favorite{margin-top:14px;padding-top:10px;border-top:1px solid color-mix(in srgb,var(--ux-page) 22%,transparent);font-weight:700}
 .term-preview-tip a:focus-visible{outline:2px solid var(--ux-page);outline-offset:3px}
 @media(prefers-reduced-motion:reduce){.term-preview-tip.u076-tip,.term-preview .u076-b{transition:none}}

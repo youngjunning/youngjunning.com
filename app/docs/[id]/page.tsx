@@ -20,7 +20,6 @@ import ArticleToc from '@/components/lucian/article-toc';
 import RecordAreas from '@/components/lucian/record-areas';
 import SignalLink from '@/components/lucian/signal-link';
 import { getCatalog, getDocument, getGraph } from '@/lib/content';
-import { getFavoriteStore } from '@/lib/favorites';
 import { glossaryForArticle } from '@/lib/article-glossary';
 import { readingMinutes } from '@/lib/article-reading.mjs';
 import '@/components/lucian/article-typography.css';
@@ -40,7 +39,7 @@ export default async function DocumentPage({ params }: { params: Promise<{ id: s
   const topic = catalog.topics.find((item) => item.id === doc.topic)!;
   const refs = getGraph().edges.filter((edge) => edge.type === 'references' && (edge.source === doc.id || edge.target === doc.id));
   const related = [...new Set(refs.map((edge) => edge.source === doc.id ? edge.target : edge.source))].map((id) => catalog.documents.find((item) => item.id === id)!).filter(Boolean);
-  const glossary = doc.kind === 'markdown' ? glossaryForArticle(doc, catalog.documents, getFavoriteStore().favorites) : [];
+  const glossary = doc.kind === 'markdown' ? glossaryForArticle(doc, catalog.documents) : [];
   return <Shell><ReadingProgress /><BackToTop key={doc.id} /><div className="reader-top"><Link href="/blog" className="back-link">← 返回手记</Link><div>{doc.kind === 'markdown' && <CopyMarkdown text={doc.content} articleId={doc.id} />}<a href={doc.rawUrl}>查看原文 ↗</a><Link href={`/graph?doc=${doc.id}`}>在图谱中查看 ↗</Link></div></div>
     <div className="reader-layout article-layout"><article className="reader"><div className="reader-meta"><span style={{ color: topic.color }}>{topic.label}</span>{doc.date && <time dateTime={doc.date}>创建 {displayContentTime(doc.date)}</time>}{doc.updatedAt && <time dateTime={doc.updatedAt}>更新 {displayContentTime(doc.updatedAt)}</time>}<ArticleReadingStats words={doc.words} /></div><h1 id="article-title" tabIndex={-1}>{doc.title}<a className="heading-anchor" href="#article-title" aria-label="文章标题的永久链接">#</a></h1>
       <ArticleTags tags={doc.tags} />

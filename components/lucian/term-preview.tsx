@@ -69,7 +69,6 @@ export default function TermPreview({ entry }: { entry: GlossaryEntry }) {
       onPointerEnter={() => clearTimers()} onPointerLeave={() => hide(150)} onBlur={event => { if (!trigger.current?.contains(event.relatedTarget as Node) && !panel.current?.contains(event.relatedTarget as Node)) hide(150); }}>
       <div className="u076-box term-preview-box"><strong>{entry.title}</strong><p>{entry.summary}</p>
         {entry.related.length > 0 && <div className="term-preview-related"><span>相关阅读</span>{entry.related.map(item => <a key={item.url} href={item.url}>{item.title}</a>)}</div>}
-        <a className="term-preview-favorite" href={`/favorites#${entry.favoriteId}`}>查看百宝箱卡片 ↗</a>
       </div><i className="u076-arr" aria-hidden="true" /></div>, document.body)}
   </span>;
 }

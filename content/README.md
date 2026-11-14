@@ -16,7 +16,7 @@ experience 增加 period、start、end、ongoing，start/end 支持年、月、�
 
 ## 百宝箱
 
-`favorites.json` version 2 区分外部资源（tool/reference）与知识笔记（concept/method），共同按主题浏览；保存方式、表达归属和实际项目使用分别记录。完整字段、来源、去重、最小笔记、文章术语关系和迁移验收见 [favorites.README.md](favorites.README.md)。所有内容先通过公开受众审查，旧 ID、保存日期和定位锚点保留。
+`favorites.json` version 2 区分外部资源（tool/reference）与知识笔记（concept/method），共同按主题浏览；保存方式、表达归属和实际项目使用分别记录。文章名词解释独立保存在 `article-glossary.json`。完整字段、来源、去重、最小笔记和迁移验收见 [favorites.README.md](favorites.README.md)。所有内容先通过公开受众审查，旧 ID、保存日期和定位锚点保留。
 
 ## 文章
 

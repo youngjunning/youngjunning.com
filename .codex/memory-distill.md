@@ -43,9 +43,9 @@
 
 `savedAt` 是首次保存时间，旧时间不重写为迁移时间；`updatedAt` 仅在有依据的实质修订时填写。新保存时间使用上海时间 `YYYY-MM-DDTHH:mm+08:00`，历史仅有日期时保留精度。
 
-### 文章术语与知识笔记的关系
+### 文章名词解释
 
-维护 `content/article-glossary.json` version 1 的 `entries`。每项 `{ term, favoriteId, articleId }` 指向当前共享知识笔记；`articleId` 为实际文章 ID，只有明确适合全站的别名才用 null。正文需实际包含该术语，不从相似标签自动生成关系。修订解释时保留笔记身份，同任务核对关联文章、术语预览、API 与数字分身检索。
+维护 `content/article-glossary.json` version 2 的 `entries`。每项 `{ term, definition, articleId }` 直接保存给文章读者看的简短解释；`articleId` 为实际文章 ID，只有明确适合全站的术语才用 null。正文需实际包含该术语，不从相似标签自动生成解释。名词解释与百宝箱笔记独立去重、修订和验收。
 
 ### 已撤下的栏目
 

@@ -38,7 +38,7 @@ export default function Markdown({ content, urls, title, glossary = [], unavaila
       if (/^[A-Za-z0-9]$/.test(match[0][0]) && (/[A-Za-z0-9]/.test(before) || /[A-Za-z0-9]/.test(after))) continue;
       const entry = terms.find(item => item.term === match[0]);
       if (!entry) continue;
-      result.push(value.slice(end, start), <TermPreview key={`${entry.favoriteId}-${start}`} entry={entry} />);
+      result.push(value.slice(end, start), <TermPreview key={`${entry.term}-${start}`} entry={entry} />);
       end = start + match[0].length;
     }
     result.push(value.slice(end));
