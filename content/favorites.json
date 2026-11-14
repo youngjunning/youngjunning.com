@@ -2,6 +2,25 @@
   "version": 2,
   "favorites": [
     {
+      "id": "90a001db25881af6",
+      "kind": "resource",
+      "type": "tool",
+      "title": "Blood 编程语言",
+      "url": "https://blood-lang.org/",
+      "summary": "Kit Langton 正在开发的编程语言。作者提出内容寻址代码存储、SQLite、语义合并、代数效果与编译期元编程等设计方向，并计划用于重写 Anomaly 的部分软件；官网目前只展示预告页。",
+      "reason": "回看面向 AI 编程的语言设计构想及后续公开进展。性能、编译速度、语义合并效果和作者所述提交数尚无可供独立核验的公开源码或基准，不能视作已实现或已验证。",
+      "tags": ["Blood", "Kit Langton", "编程语言", "内容寻址", "语义合并", "代数效果", "Comptime", "AI 编程"],
+      "subjects": ["engineering", "agents"],
+      "attribution": "source",
+      "savedAt": "2026-11-14T14:45+08:00",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        { "label": "Blood 官方预告页，2026-11-14 核对。", "url": "https://blood-lang.org/" },
+        { "label": "Kit Langton 公开介绍 Blood 的原始动态，2026-11-07。", "url": "https://x.com/kitlangton/status/2119137520529375499" }
+      ]
+    },
+    {
       "id": "0fb854b3aa2b69f7",
       "kind": "resource",
       "type": "tool",
