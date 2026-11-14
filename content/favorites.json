@@ -2,6 +2,24 @@
   "version": 2,
   "favorites": [
     {
+      "id": "3c99cd1fde1253e8",
+      "kind": "resource",
+      "type": "tool",
+      "title": "GitNexus",
+      "url": "https://github.com/abhigyanpatwari/GitNexus",
+      "summary": "GitNexus 将代码库中的符号、调用和依赖关系索引为可查询的关系图，提供代码探索、调用链查询、依赖查看和改动影响分析，并支持通过 MCP 供编程 Agent 查询。",
+      "reason": "作为代码理解和改动评估时可回看的开源工具；收藏不表示已在项目中采用或验证分析结果。",
+      "tags": ["GitNexus", "代码分析", "代码理解", "MCP", "开发者工具", "AI 编程", "开源项目"],
+      "subjects": ["engineering", "agents"],
+      "attribution": "source",
+      "savedAt": "2026-11-14T13:59+08:00",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        { "label": "GitNexus 原作者仓库及 README，2026-11-14 核对。", "url": "https://github.com/abhigyanpatwari/GitNexus" }
+      ]
+    },
+    {
       "id": "a336e788f770a9b1",
       "kind": "resource",
       "type": "tool",
