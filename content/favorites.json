@@ -2,6 +2,30 @@
   "version": 2,
   "favorites": [
     {
+      "id": "6192afbdab8a1425",
+      "kind": "note",
+      "type": "method",
+      "title": "写 UI 前锁定设计方向，减少模板感",
+      "url": null,
+      "summary": "在 Codex 开始写界面前，连同具体需求提供产品任务、首屏主角、设计方向和反模板约束，再根据实际画面检查结果。",
+      "reason": "回看把去 AI 味规则前置到 UI 生成输入的做法，并用于 Joyally Design 的设计流程。",
+      "tags": ["UI", "Codex", "设计方向", "反模板感", "unslop", "提示词"],
+      "subjects": ["design", "engineering"],
+      "attribution": "user",
+      "savedAt": "2026-11-14T15:01+08:00",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        { "label": "俊宁在 2026-11-14 对视频中 unslop 用法的概述；原视频链接未提供，未核对其提示词包原文。" }
+      ],
+      "note": {
+        "body": "使用 Codex 做新界面时，先确定用户任务、首屏需要识别的对象与依据、主动作、品牌和设备约束，再写出有产品依据的单一设计方向。把这些规则放在界面需求之前或同一份输入里，明确要求容器、装饰和文案各有职责，避免重复卡片、无语义强调和空泛占位内容。先生成一个方向的首屏，再对照真实内容与视口检查任务焦点、状态反馈和视觉层级。",
+        "boundary": "这是一段由用户概述的方法，原视频和提示词包尚未提供；不能据此声称逐字核对了原 Skill，或保证所有界面的首屏质量。项目已有设计规范和品牌约束优先。",
+        "date": null,
+        "recordedAt": "2026-11-14"
+      }
+    },
+    {
       "id": "f0a4eaf4aee28e5b",
       "kind": "resource",
       "type": "tool",
