@@ -14,12 +14,6 @@ collection: docs
 cover: /media/visual-grounding-box-cover.webp
 updatedAt: '2026-11-07'
 ---
-## 修订记录
-
-| 版本 | 修订时间 | 修订内容 |
-| --- | --- | --- |
-| 第 2 次修订 | 2026.11.07 | 同步 Noul 与 Box 的同次请求、结果采纳和坐标换算边界。 |
-| 第 1 次修订 | 2026.11.04 | 删除与正文无关的写作、配图技能推广署名。 |
 
 
 ![视觉 Grounding 概念封面](/media/e196ba9ba7b3b8ed-4c0b6b2aa822b415.webp)

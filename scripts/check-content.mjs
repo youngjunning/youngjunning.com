@@ -5,6 +5,7 @@ import matter from 'gray-matter';
 import { createHash } from 'node:crypto';
 import { assertPublicText, validateRecords, validateFavorites } from '../lib/model.mjs';
 import { assertArticleText } from '../lib/article-validation.mjs';
+import { validateArticleRevisions } from '../lib/article-revisions.mjs';
 import { loadArticles } from '../lib/article-model.mjs';
 import { preparePublicContent } from '../lib/content-store.mjs';
 const migration = JSON.parse(fs.readFileSync('content/blog-migration-2026-11-01.json', 'utf8'));
@@ -30,6 +31,11 @@ for (const post of loadArticles(process.cwd(), { includeDrafts: true })) {
   if (data.source && !/^https:\/\/github\.com\/youngjunning\/blog\.zisheng\.pro\/blob\/[a-f0-9]{40}\//.test(data.source)) throw new Error('Invalid imported article provenance: ' + file);
   if (data.migrationReport && data.migrationReport !== '/blog/website-migration') throw new Error('Invalid migration report: ' + file);
   if (data.draft !== true) { visibleIds.add(data.id); articles++; }
+}
+const revisionStore = validateArticleRevisions(JSON.parse(fs.readFileSync('content/article-revisions.json', 'utf8')), visibleIds);
+for (const article of revisionStore.articles) {
+  const post = loadArticles(process.cwd()).find(item => item.id === article.id);
+  if (/^## 修订记录\s*$/m.test(post.body)) throw new Error('Article revision log belongs to site metadata: ' + post.file);
 }
 const records = validateRecords(JSON.parse(fs.readFileSync(path.join(directory,'records.json'),'utf8')),visibleIds);
 const favorites = validateFavorites(JSON.parse(fs.readFileSync(path.join(directory,'favorites.json'),'utf8')));

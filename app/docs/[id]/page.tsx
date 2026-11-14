@@ -10,6 +10,7 @@ import HtmlArticle from '@/components/html-article';
 import CopyMarkdown from '@/components/copy-markdown';
 import ArticleNotice from '@/components/article-notice';
 import ArticleProvenance from '@/components/article-provenance';
+import ArticleRevisions from '@/components/article-revisions';
 import { siteProfile } from '@/lib/site-profile.mjs';
 import ReadingProgress from '@/components/lucian/reading-progress';
 import BackToTop from '@/components/lucian/back-to-top';
@@ -44,6 +45,7 @@ export default async function DocumentPage({ params }: { params: Promise<{ id: s
     <div className="reader-layout article-layout"><article className="reader"><div className="reader-meta"><span style={{ color: topic.color }}>{topic.label}</span>{doc.date && <time dateTime={doc.date}>创建 {displayContentTime(doc.date)}</time>}{doc.updatedAt && <time dateTime={doc.updatedAt}>更新 {displayContentTime(doc.updatedAt)}</time>}<ArticleReadingStats words={doc.words} /></div><h1 id="article-title" tabIndex={-1}>{doc.title}<a className="heading-anchor" href="#article-title" aria-label="文章标题的永久链接">#</a></h1>
       <ArticleTags tags={doc.tags} />
       <ArticleProvenance doc={doc} />
+      <ArticleRevisions articleId={doc.id} />
       {doc.kind === 'html' ? <HtmlArticle id={doc.id} title={doc.title} /> : <div className="prose"><Markdown content={doc.content} urls={doc.urls} title={doc.title} glossary={glossary} unavailableAssets={doc.unavailableAssets} /></div>}
       <div className="source-note">源稿位置 <code>{catalog.source.root}/{doc.sourcePath}</code></div>
       <ArticleNotice id={doc.id} />

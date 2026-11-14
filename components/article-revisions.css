@@ -1,0 +1,17 @@
+.article-revisions{margin:24px 0 34px;border-block:1px solid var(--line,#dcd8d0);font-size:14px}
+.article-revisions summary{cursor:pointer;list-style:none;padding:16px 0;font-weight:700}
+.article-revisions summary::-webkit-details-marker{display:none}
+.article-revisions summary::before{content:'＋';display:inline-block;margin-right:10px;color:var(--accent,#933323)}
+.article-revisions[open] summary::before{content:'－'}
+.article-revisions summary span{margin-left:10px;color:var(--muted,#777);font-weight:400}
+.article-revisions ol{list-style:none;margin:0;padding:0 0 12px}
+.article-revisions li{border-top:1px solid var(--line,#dcd8d0);padding:14px 0}
+.article-revisions li>div{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.article-revisions time{color:var(--muted,#777);font-size:12px}
+.article-revisions a{margin-left:auto;text-decoration:underline;text-underline-offset:3px;color:var(--accent,#933323)}
+.article-revisions a:focus-visible,.article-revisions summary:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+.article-revisions p{margin:6px 0 0;font-size:13px;line-height:1.6;color:var(--muted,#777)}
+.article-diff{margin-top:8px}.article-diff summary{display:inline-block;padding:4px 0;color:var(--accent,#933323);font-size:13px;text-decoration:underline;text-underline-offset:3px}.article-diff summary::before{content:'';margin:0}.article-diff[open] summary::before{content:''}
+.article-diff pre{overflow:auto;max-height:460px;margin:10px 0;padding:12px 0;background:color-mix(in srgb,var(--line,#dcd8d0) 22%,transparent);font:12px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;tab-size:2}.article-diff code{display:block}.article-diff code span{display:block;min-width:max-content;padding:0 12px;white-space:pre}.article-diff .diff-add{background:#dff4e8;color:#155b38}.article-diff .diff-remove{background:#fce6e5;color:#8b2d2d}.article-diff .diff-hunk{background:#e8edf8;color:#365a92}.article-diff>a{display:inline-block;margin:4px 0 2px;font-size:12px}
+@media(max-width:600px){.article-revisions summary span{display:block;margin:4px 0 0 27px}.article-revisions a{margin-left:0}}
+@media print{.article-revisions{display:none}}

@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "articles": [
+    {
+      "id": "08de6927bb8b9143",
+      "revisions": [
+        {
+          "label": "3d220f39",
+          "date": "2026-11-07",
+          "summary": "content: sync reviewed articles, favorites, records and skills",
+          "commit": "3d220f3953d3d7e141f8a75e01542c7f74f52215",
+          "preview": "@@ -26,22 +35,20 @@ cover: \"/media/08de6927bb8b9143-a9c339c97eba9342.webp\"\n ## 第一幕与第二幕：箱子里自带引擎，铭牌还要再核对\n \n-![第一、二幕：应用包自带 Chromium；外部名称是 ChatGPT，内部仍保留 Codex 标识](/media/08de6927bb8b9143-c7bdfede635a956a.webp)\n+[![第一、二幕：应用包自带 Chromium；外部名称是 ChatGPT，内部仍保留 Codex 标识](/media/08de6927bb8b9143-5c498d23d045483e.webp)](/media/08de6927bb8b9143-5c498d23d045483e.webp)\n \n 小狐最先问的是：“这个浏览器是不是系统提供的？”小机没有先猜框架，而是打开安装目录。`Frameworks` 下存在 `Codex Framework.framework`，其中的版本目录为 `156.0.8078.48`；应用 `Info.plist` 中的 `ChromiumBaseVersion` 与它一致。\n \n-这说明内核随应用一起分发。**这里的 Electron `<webview>` 使用内置 Chromium，不是 macOS 的 `WKWebView`，也不需要借用另外安装的 Chrome。** 不过，自带浏览器内核不等于整个应用脱离操作系统：窗口、权限和输入等能力仍需要平台支持。\n+这说明内核随应用一起分发。**这里的 Electron `<webview>` 使用随包提供的 Chromium，不是 macOS 的 `WKWebView`，也不依赖另外安装的 Chrome。** “自己内置”说的是交付方式，不等于 OpenAI 从零写了浏览器内核。应用窗口、输入和系统权限仍要调用 macOS 能力。\n \n 继续读铭牌，会发现一个容易忽略的细节：显示名称是 ChatGPT，Bundle ID 却是 `com.openai.codex`；`app.asar/package.json` 的包名是 `openai-codex-electron`。因此，文章只判断眼前的安装包，不用产品名称反推它与过去版本的实现关系。\n \n-| 看到的证据 | 可以确认什么 |\n-| --- | --- |\n-| `openai-codex-electron`，以及 `BrowserWindow`、`ipcMain` 调用 | 桌面应用使用 Electron 接口 |\n-| 前端 bundle 中的 React runtime、Hooks 和 JSX 调用 | 应用界面使用 React |\n … 省略 11 行 …\n-依赖存在能证明组件被打包，不能单独证明每项功能都已启用或在当前账号可用。\n+其余原生模块、构建产物与更新组件也能在包中找到，但“文件存在”和“当前功能实际运行”是两种证据；本篇只把与浏览器链路直接相关的材料放进主表。\n \n 表中的 `ipcMain` 是 Electron 主进程接收渲染进程消息的接口。界面代码可通过对应的 `ipcRenderer` 发送消息；主进程用 `ipcMain.on` 监听消息，或用 `ipcMain.handle` 处理需要返回结果的调用。它负责应用内部的跨进程通信，不负责渲染网页，也不是下文 Agent 控制页面所用的 CDP。这里查到 `ipcMain` 调用，只能作为应用使用 Electron 接口的证据；具体消息处理什么业务，仍要看对应的 channel 和处理代码。[Electron 的 `ipcMain` 文档](https://www.electronjs.org/docs/latest/api/ipc-main)列出了这两种接收方式。\n@@ -49,5 +56,5 @@ cover: \"/media/08de6927bb8b9143-a9c339c97eba9342.webp\"\n ## 第三幕与第四幕：把网页装进窗口，把权限留给管理层\n \n-![第三、四幕：界面创建 webview，主进程管理网页；网页关闭 Node 集成并启用隔离配置](/media/08de6927bb8b9143-e2fe568689e0fcc7.webp)\n+[![第三、四幕：界面创建 webview，主进程管理网页；网页关闭 Node 集成并启用隔离配置](/media/08de6927bb8b9143-c357ff2752c0432a.webp)](/media/08de6927bb8b9143-c357ff2752c0432a.webp)\n \n 找到内核后，小狐沿着网页继续走。前端共享代码里有一个直接的入口：\n … 更多差异可查看完整提交 …"
+        },
+        {
+          "label": "e9115f24",
+          "date": "2026-11-03",
+          "summary": "content: sync reviewed runtime articles cards and publishing choices",
+          "commit": "e9115f2487f2b8690f6aa9e61ea5268b016dfbe0",
+          "preview": "@@ -44,4 +45,6 @@ cover: \"/media/08de6927bb8b9143-a9c339c97eba9342.webp\"\n 依赖存在能证明组件被打包，不能单独证明每项功能都已启用或在当前账号可用。\n \n+表中的 `ipcMain` 是 Electron 主进程接收渲染进程消息的接口。界面代码可通过对应的 `ipcRenderer` 发送消息；主进程用 `ipcMain.on` 监听消息，或用 `ipcMain.handle` 处理需要返回结果的调用。它负责应用内部的跨进程通信，不负责渲染网页，也不是下文 Agent 控制页面所用的 CDP。这里查到 `ipcMain` 调用，只能作为应用使用 Electron 接口的证据；具体消息处理什么业务，仍要看对应的 channel 和处理代码。[Electron 的 `ipcMain` 文档](https://www.electronjs.org/docs/latest/api/ipc-main)列出了这两种接收方式。\n+\n ## 第三幕与第四幕：把网页装进窗口，把权限留给管理层\n \n … 其余 1 个变更片段见完整提交 …"
+        },
+        {
+          "label": "cd9fafd2",
+          "date": "2026-11-02",
+          "summary": "docs: explain app.asar in ChatGPT browser article",
+          "commit": "cd9fafd26a4c09e9750dcfc94cf4223b7ffa62fe",
+          "preview": "@@ -15,4 +15,6 @@ cover: \"/media/08de6927bb8b9143-a9c339c97eba9342.webp\"\n 在桌面应用里打开一张网页，看起来只是多了一块浏览区域。它背后却可能是系统 WebView，也可能是一套随应用分发的浏览器内核。为了弄清这台 Mac 上的 ChatGPT 属于哪一种，这次从 `ChatGPT.app/Contents` 入手，检查了应用元数据、Framework 和 `app.asar` 中的代码。\n \n+`app.asar` 是 Electron 应用常用的资源归档文件，里面打包了应用代码和前端资源。本文通过它查看应用如何创建、管理网页；浏览器内核本身不在这个文件里，而是随应用放在 `Frameworks` 目录。\n+\n ![封面：小狐和小机打开应用箱，发现里面装着完整的浏览器引擎](/media/08de6927bb8b9143-a9c339c97eba9342.webp)\n "
+        },
+        {
+          "label": "e0a5cf1b",
+          "date": "2026-11-02",
+          "summary": "Show article provenance in site footer and copied Markdown",
+          "commit": "e0a5cf1b043d2ecc96e2d403a1db432fad1efea4",
+          "preview": "@@ -132,4 +131,2 @@ ls '/Applications/ChatGPT.app/Contents/Frameworks/Codex Framework.framework/Vers\n \n 这次检查的价值，是把“内置浏览器”拆成可回查的四层：**随应用分发的 Chromium，承载网页的 `<webview>`，管理生命周期的主进程，以及连接 Agent 的 CDP 通道。** Owl 的定制接口位于这条链路中，但底层补丁范围仍需源码或更多运行证据才能回答。\n-\n-> 本文使用 [writting-skill](https://github.com/zisheng-ai/writting-skill) 辅助写作，配图使用 [better-imagegen](https://github.com/zisheng-ai/better-imagegen) 生成。项目已开源，欢迎在 GitHub 点个 Star。\n … 其余 1 个变更片段见完整提交 …"
+        },
+        {
+          "label": "428323e9",
+          "date": "2026-11-02",
+          "summary": "feat: align twin modules and sync reviewed public articles",
+          "commit": "428323e93acb640440aa307953b09d6dd5d73b77",
+          "preview": "@@ -0,0 +1,135 @@\n+\n+沿用原稿记录的特定 macOS 应用版本，解释 Electron 宿主、内嵌 Chromium 与任务控制层的关系，不推导未经验证的运行时能力。\n+\n+> 本文讨论通用机制和设计判断；示意不对应任何具体产品的已交付状态。源码阅读坐标沿用原稿，本次整理不构成新的运行时验收。\n+\n+在桌面应用里打开一张网页，看起来只是多了一块浏览区域。它背后却可能是系统 WebView，也可能是一套随应用分发的浏览器内核。为了弄清这台 Mac 上的 ChatGPT 属于哪一种，这次从 `ChatGPT.app/Contents` 入手，检查了应用元数据、Framework 和 `app.asar` 中的代码。\n+\n+![封面：小狐和小机打开应用箱，发现里面装着完整的浏览器引擎](/media/08de6927bb8b9143-a9c339c97eba9342.webp)\n+\n+**结论是：这个安装版本直接携带 Chromium，应用使用 Electron 和 React；内置浏览器通过 `<webview>` 挂载，主进程管理页面，Agent 通过 CDP 接入。**\n+\n+下面的角色和场景是机制示意，不是产品界面截图。分析对象为 macOS 上的 **ChatGPT 26.1023.51421，build 22530**，检查日期为 2026 年 10 月 31 日。这是一轮安装包静态分析，没有执行真实网页任务，也不代表其他平台或历史版本采用相同实现。\n+\n+## 第一幕与第二幕：箱子里自带引擎，铭牌还要再核对\n+\n+![第一、二幕：应用包自带 Chromium；外部名称是 ChatGPT，内部仍保留 Codex 标识](/media/08de6927bb8b9143-c7bdfede635a956a.webp)\n+\n+小狐最先问的是：“这个浏览器是不是系统提供的？”小机没有先猜框架，而是打开安装目录。`Frameworks` 下存在 `Codex Framework.framework`，其中的版本目录为 `156.0.8078.48`；应用 `Info.plist` 中的 `ChromiumBaseVersion` 与它一致。\n+\n+这说明内核随应用一起分发。**这里的 Electron `<webview>` 使用内置 Chromium，不是 macOS 的 `WKWebView`，也不需要借用另外安装的 Chrome。** 不过，自带浏览器内核不等于整个应用脱离操作系统：窗口、权限和输入等能力仍需要平台支持。\n+\n+继续读铭牌，会发现一个容易忽略的细节：显示名称是 ChatGPT，Bundle ID 却是 `com.openai.codex`；`app.asar/package.json` 的包名是 `openai-codex-electron`。因此，文章只判断眼前的安装包，不用产品名称反推它与过去版本的实现关系。\n+\n … 省略 96 行 …\n+| `.vite/build/browser-page-preload.js` | 浏览器页面的 preload 产物 |\n+| `webview/assets/page-ce7ec66128b2.js` | 页面宿主、窗口转移准备与接管调用 |\n+\n+这次检查的价值，是把“内置浏览器”拆成可回查的四层：**随应用分发的 Chromium，承载网页的 `<webview>`，管理生命周期的主进程，以及连接 Agent 的 CDP 通道。** Owl 的定制接口位于这条链路中，但底层补丁范围仍需源码或更多运行证据才能回答。\n+\n+> 本文使用 [writting-skill](https://github.com/zisheng-ai/writting-skill) 辅助写作，配图使用 [better-imagegen](https://github.com/zisheng-ai/better-imagegen) 生成。项目已开源，欢迎在 GitHub 点个 Star。"
+        }
+      ]
+    },
+    {
+      "id": "873215a5db96ccec",
+      "revisions": [
+        {
+          "label": "V2.3",
+          "date": "2026-11-14",
+          "summary": "补充 AI 加速任务与长期理解积累之间的关系；在首季度行动和复盘中增加业务规则、判断依据与知识缺口的检查。",
+          "commit": "077f8b15db24d1a5b6d0d426fc6149173afc807b",
+          "preview": "@@ -40,4 +41,6 @@ migrationNote: \"2026-11-02 修正加粗标记边界；按作者要求修订为 V\n 这次校准来自一个更明确的判断：单靠写代码建立竞争力，溢价正在下降。这里说的是把已经明确的需求翻译成代码这部分工作；它是我选择投入方向的判断，不是对所有研发岗位或薪酬趋势的统计结论。接下来更值得积累的，是理解某个行业如何做生意、判断什么值得做，并把结果交付得更稳。\n \n+AI 可以帮我先推进任务、形成可检查的结果；任务完成得快，却不能证明我已经理解支撑结果的行业规则、系统约束和产品取舍。对准备长期投入的方向，我要在交付后弄清方案为什么成立、何时会失效，补上知识缺口，再用下一次真实任务检验判断是否更准确。AI 带来的速度应服务于发现问题和持续学习。\n+\n 因此，未来三年仍沿技术专家序列成长，亲自写代码、调试系统，同时向业务问题的定义和产品结果的验收延伸。技术架构要解释它解决了哪项经营或用户问题，产品承诺也要有可靠的实现、运行与支持能力承担。\n \n@@ -66,4 +69,6 @@ Staff 是未来希望承担的问题范围，而不是今天已经拥有的头\n 我准备选择一个能够持续接触真实问题和结果的行业或业务领域，围绕代表性流程积累判断。具体方向由问题接触机会、数据与授权、持续需求和可验证价值决定，目前不预设行业。每次实践都应补充对业务规则、利益关系和异常处理的理解，让下一次选题和估算更准确。\n \n+每次借助 AI 完成任务后，记下尚不能解释的业务术语、规则例外与取舍依据，向熟悉流程的人核对，再用实际案例验证。能讲清成功路径，也能说明失败条件、接管责任和代价，才算把交付经验转化为可以迁移的理解。\n+\n ### 产品是方向：AI Product Engineering\n \n@@ -195,5 +200,5 @@ Staff 是未来希望承担的问题范围，而不是今天已经拥有的头\n 验收材料至少包括：一组可复现任务与故障用例；工具不存在、参数越权、预算耗尽、授权撤销和绕过尝试的拒绝记录；失败后的恢复说明；一次真实用户反馈。验收器和工具授权由受控代码执行，模型自述“已经完成”只能是待核验证据。\n \n-**首季度（约 90 天）的起步动作：2026.11.01—2027.01.31**。前 30 天选定场景，梳理业务流程、使用者与责任人，确认替代方式、权限、基线和验收口径；第 31—60 天交付一个完整任务，验证授权、结果检查和异常恢复；第 61—90 天观察重复使用、完整成本与支持负担，完成方案对照、失败回放和首次评审，决定扩大、修正或停止，季度结束前整理评审材料。没有基线时不预先承诺百分比收益。\n+**首季度（约 90 天）的起步动作：2026.11.01—2027.01.31**。前 30 天选定场景，梳理业务流程、使用者与责任人，确认替代方式、权限、基线和验收口径，并列出尚未理解的关键规则；第 31—60 天交付一个完整任务，在需要时借助 AI 推进，验证授权、结果检查和异常恢复，同时核对方案所依赖的业务与技术依据；第 61—90 天观察重复使用、完整成本与支持负担，回看知识缺口是否影响判断，完成方案对照、失败回放和首次评审，决定扩大、修正或停止。没有基线时不预先承诺百分比收益。\n \n ### 第二阶段：对持续使用与稳定交付负责\n@@ -220,4 +225,5 @@ Staff 是未来希望承担的问题范围，而不是今天已经拥有的头\n | --- | --- | --- |\n | 行业与业务 | 代表性流程、使用者与受益者、业务规则、替代方式、投入与完整结果成本 | 只复述需求，不清楚问题代价；将省时直接当作利润 |\n+| 理解与学习 | 交付中暴露的知识缺口、核对过的规则与例外、下一次取舍如何变化 | AI 已产出结果，却无法解释关键假设、失败条件或判断依据 |\n | 技术与结果 | 固定任务集、模型和工具版本、样本数、成功标准、延迟与成功任务成本 | 只比较成功样本，或用模型的自评代替独立验收 |\n | 授权与安全 | 动作及数据范围、审批依据、越权测试、误拦与漏拦、规则版本 | 任务完成但有未授权副作用；拒绝后可换路径绕过 |\n … 其余 2 个变更片段见完整提交 …"
+        },
+        {
+          "label": "V2.2",
+          "date": "2026-11-05",
+          "summary": "将行业生意理解、产品判断、技术深度与稳定交付作为共同成长主线；调整能力模型、三阶段验收、首季度起步安排和季度复盘，保留原规划周期与公开版职业定位。",
+          "commit": "75ece577169e864544258b17dfce60e9803151d3",
+          "preview": "@@ -32,7 +38,7 @@ migrationNote: \"2026-11-02 修正加粗标记边界；按作者要求修订为 V\n *AI Systems & Product Engineering · Agentic Computing · 2026.11.01—2029.11.01*\n \n-过去几年，我的关注点逐渐从 Web 工程、全栈开发延伸到 AI Agent。最初关心的是如何让模型调用工具、执行 Workflow；后来开始深入 Browser Automation、Agent Runtime、技能沉淀以及 AI 原生软件的实现方式。技术问题越来越复杂，我也越来越确定，自己感兴趣的并非某个框架，而是**如何用新的计算能力，构建真正有价值的软件产品**。\n+这次校准来自一个更明确的判断：单靠写代码建立竞争力，溢价正在下降。这里说的是把已经明确的需求翻译成代码这部分工作；它是我选择投入方向的判断，不是对所有研发岗位或薪酬趋势的统计结论。接下来更值得积累的，是理解某个行业如何做生意、判断什么值得做，并把结果交付得更稳。\n \n-这种变化让我重新思考未来三年的职业方向。我不想离开工程一线，转成传统意义上的产品经理；也不希望职业身份被“前端”“浏览器”或某项短期热门技术锁定。我希望沿着技术专家序列继续成长：既能够设计复杂 AI 系统，也有能力发现问题、判断产品机会，并将想法交付成真实产品。\n+因此，未来三年仍沿技术专家序列成长，亲自写代码、调试系统，同时向业务问题的定义和产品结果的验收延伸。技术架构要解释它解决了哪项经营或用户问题，产品承诺也要有可靠的实现、运行与支持能力承担。\n \n 这篇文章是一次阶段性自我校准。我会明确区分三个容易混淆的东西：**职业身份是我想成为谁，技术判断是我选择研究什么，实践成果是我用什么证明判断与能力**。三者相关，但不能互相替代。\n@@ -54,11 +60,23 @@ Staff 是未来希望承担的问题范围，而不是今天已经拥有的头\n 我仍然会投入编码和系统调试。产品技术专家需要保有足够的一线工程判断力，否则很容易只会描述方向，却无法判断技术代价和实现风险。\n \n+### 业务是判断依据：理解一个行业的生意\n+\n+熟悉需求和流程，还不足以判断一项投入是否值得。需要沿一笔交易或一次服务，理解谁使用、谁付费、谁审批、谁履约，收入从哪里来，成本消耗在哪里，哪些错误会产生赔付、客户流失或合规风险。用户提出的功能，也要与现有人工处理、已有工具和暂不处理的代价比较。\n+\n+我准备选择一个能够持续接触真实问题和结果的行业或业务领域，围绕代表性流程积累判断。具体方向由问题接触机会、数据与授权、持续需求和可验证价值决定，目前不预设行业。每次实践都应补充对业务规则、利益关系和异常处理的理解，让下一次选题和估算更准确。\n+\n ### 产品是方向：AI Product Engineering\n \n 同样，一个架构先进的系统也可能毫无产品价值。技术工程师常常习惯先看到某项能力，再寻找适合使用它的场景；但真正的产品思维应当能够反过来，先识别问题，再选择必要的技术。\n \n-我希望补强 Product Discovery、用户研究、产品定位、方案取舍、Human-AI Interaction 和端到端交付。能够讨论的不只是 *How*，还包括 *Why* 和 *What*：为什么值得做、什么才是关键需求，以及哪些功能即使能做也应该暂时不做。\n+我希望补强 Product Discovery、用户研究、产品定位、方案取舍和 Human-AI Interaction。先选一类用户和一个完整任务，明确触发时机、现有替代方式、首次获得价值的路径和失败后的恢复，再决定必要功能。优先级应依据问题代价、证据、实现与运营成本，以及占用资源后放弃了什么。\n+\n+产品价值要通过实际采用检验：用户是否完成任务、是否愿意再次使用，结果能否接入原有流程，付费者或内部发起者是否认为值得持续投入。模型调用量、演示效果和功能数量只能解释部分过程。\n … 省略 5 行 …\n+\n+交付成本也要按完整结果计算。一次被验收的任务，需要计入失败尝试、重试、模型与工具调用、人工审核、接管、返工和后续支持。节省工时首先意味着释放处理能力，是否进一步形成成本减少或收入增加，还需要业务证据。工程可靠性与经济性共同决定方案能否持续使用。\n \n ## 二、对照国内与国际岗位，选择可迁移的能力\n … 更多差异可查看完整提交 …"
+        },
+        {
+          "label": "V2.1",
+          "date": "2026-11-02",
+          "summary": "移除具体产品绑定，按长期能力、研究问题与验证标准组织规划；具体产品仅作为阶段实践载体，三年规划周期不变。",
+          "commit": "e28e7a99b0df323bf03ba87da4b900f6f80fe022",
+          "preview": "@@ -109,5 +110,5 @@ Staff 是未来希望承担的问题范围，而不是今天已经拥有的头\n ### 跨环境执行的研究位置\n \n-研究仍以 Agentic Computing 为主线。当前从浏览器执行环境切入，关注 Chromium、CDP、DOM/Accessibility/视觉混合感知，以及任务恢复与安全操作；同时把 **Browser、Android、iPhone、Computer** 作为四类独立环境，分别理解它们的身份、权限、设备与生命周期约束。\n+跨环境执行的研究围绕感知、操作、身份、权限、生命周期与任务恢复展开，覆盖浏览器、移动设备、桌面与云端环境。具体产品作为阶段性的实践载体，长期规划以可迁移的系统能力、产品判断和验证标准组织；实践载体调整时，继续检查这些能力是否得到积累。\n \n 浏览器或某一移动端可以先落地，但不能把单端成功等同于跨环境完成。桌面与系统接口的研究，也不等于要从内核、驱动开始自建操作系统。基础能力优先沿用已有执行器、设备管理和隔离机制，只有现有链路不能解决的实际问题才增加新边界。\n … 其余 1 个变更片段见完整提交 …"
+        },
+        {
+          "label": "V2.0 与初稿迁入",
+          "date": "2026-11-01",
+          "summary": "保留原始职业规划与 V2.0 修订；该次为公开旧博客迁入，两个历史版本没有本站各自的独立提交差异。",
+          "commit": "b691a83346ed3cd2617e071d4ca3d3b645d91ba0",
+          "preview": "@@ -0,0 +1,218 @@\n+## 一、职业身份：AI Systems & Product Engineering\n+\n+我给自己的职业定位是 **AI 产品技术专家**，英文能力方向为 **AI Systems & Product Engineering**；长期对标的国际岗位是 **Staff AI Engineer / Staff Software Engineer (AI)**。\n+\n+Staff 是未来希望承担的问题范围，而不是今天已经拥有的头衔。我更倾向于 Individual Contributor（IC）的专家路径：可以影响技术战略、协调复杂工作，却不以正式带团队和人员管理作为身份的必要条件。\n+\n+### 技术是根基：AI Systems Engineering\n+\n+今天构建一个 Agent Demo 并不困难。真正困难的是把它交给真实用户之后：任务运行到一半中断怎么办？登录态失效怎么办？模型反复调用错误工具怎么办？多个 Agent 如何共享资源又不越权？结果如何验证？成本和延迟是否能接受？\n+\n+这些问题无法单靠更强的 Prompt 解决，它们要求软件架构、分布式系统、执行环境、状态管理、安全隔离、评测与可观测能力共同工作。因此，我希望形成的深度不是“熟悉很多 Agent 框架”，而是**能够设计、实现和持续改进生产级 AI 系统**。\n+\n+我仍然会投入编码和系统调试。产品技术专家需要保有足够的一线工程判断力，否则很容易只会描述方向，却无法判断技术代价和实现风险。\n+\n+### 产品是方向：AI Product Engineering\n+\n+同样，一个架构先进的系统也可能毫无产品价值。技术工程师常常习惯先看到某项能力，再寻找适合使用它的场景；但真正的产品思维应当能够反过来，先识别问题，再选择必要的技术。\n+\n+我希望补强 Product Discovery、用户研究、产品定位、方案取舍、Human-AI Interaction 和端到端交付。能够讨论的不只是 *How*，还包括 *Why* 和 *What*：为什么值得做、什么才是关键需求，以及哪些功能即使能做也应该暂时不做。\n+\n+这并不意味着要同时扮演所有产品与工程角色，而是希望具备跨越两边的判断力。**技术深度决定能实现什么，产品判断决定什么值得实现。**它们结合起来，才构成我想长期积累的职业壁垒。\n+\n+## 二、对照国内与国际岗位，选择可迁移的能力\n … 省略 150 行 …\n+\n+我希望成为的，不是只会追逐最新 AI 工具的人，也不是脱离工程细节谈产品愿景的人，而是**能够理解技术演进、识别值得解决的问题、构建复杂系统，并把技术创新转化为实际价值的产品技术专家**。\n+\n+*Deep Technical Expertise · Strong Product Judgment · Real-World Impact*\n+\n+**技术深度是根基，产品判断是方向，真实价值是最终标准。**"
+        }
+      ]
+    },
+    {
+      "id": "88cddc5b581be236",
+      "revisions": [
+        {
+          "label": "3d220f39",
+          "date": "2026-11-07",
+          "summary": "content: sync reviewed articles, favorites, records and skills",
+          "commit": "3d220f3953d3d7e141f8a75e01542c7f74f52215",
+          "preview": "@@ -0,0 +1,285 @@\n+## 一句话总结\n+\n+**SDK 主要回答“开发者怎样接入和调用”；Runtime 主要回答“程序运行时由什么执行、维持和约束”。两者可以同时存在于一个产品或安装包中，区别取决于职责，不取决于文件后缀、语言、是否开源，或厂商给它取的名字。** API 是双方约定的接口，SDK 常把 API 封装为库和工具；Runtime 则在程序运行期间承载代码、状态、资源和生命周期。调用成功的接口与真正完成工作的执行端，有时在同一进程，有时隔着网络或进程边界。\n+\n+拿 OWL 来说，OpenAI 对 Atlas 的公开说明同时描述了 OWL Client API 和运行 Chromium 的 OWL Host。只称它为 SDK，会遗漏 Host 及进程隔离；只说“一个浏览器内核”，又会漏掉 Client、通信和应用侧集成。[OpenAI 的 OWL 工程说明](https://openai.com/index/building-chatgpt-atlas/)可以支持这个判断。ChatGPT 桌面版安装包出现 `runtimeName: \"owl\"`，说明所检查的版本打包了名为 OWL 的运行时；它不自动证明桌面版和 Atlas 的每个进程、每组补丁都相同。\n+\n+这篇文章给出一条贯穿全文的检查线：**先找调用入口，再找执行主体；再查状态归属、分发边界和失败现场。** 如果五个问题能分别回答，SDK 与 Runtime 就很难混淆。\n+\n+## 第一幕：遥控器有按钮，机器却没有通电\n+\n+![第一幕：小界拿到调用接口，小南指出没有启动的执行机器](/media/88cddc5b581be236-32b01db19a119aaa.webp)\n+\n+小界拿着一块“控制器”，按钮上可以画出打开页面、截图、下载文件。她按下按钮，机房没有动静。小南指向旁边的主机：电源没有接上，浏览器进程也不存在。**一个调用入口写得再漂亮，也不能凭空产生执行能力。**\n+\n+这个场景故意把两种职责拉开。SDK 可以提供函数、类型、示例、认证封装、重试策略、命令行工具、调试工具，甚至打包一个二进制。但应用能否完成任务，还取决于某个执行主体是否存在：本机进程、浏览器内核、移动设备、远程服务，或者操作系统的能力。SDK 是开发者使用能力的入口，不保证自己就是能力的全部来源。\n+\n+先看一个最简化的远程服务例子：\n+\n+```ts\n+const client = new ExampleClient({ endpoint, token });\n+const result = await client.renderPage({ url });\n+```\n+\n … 省略 226 行 …\n+\n+- [OpenAI：How we built OWL](https://openai.com/index/building-chatgpt-atlas/)：OWL 的名称、Atlas Client/Host、Mojo、Chromium 补丁与内部二进制交付。\n+- [OpenAI：Introducing ChatGPT Atlas](https://openai.com/index/introducing-chatgpt-atlas/)：Atlas 产品公告及当前弃用标识。\n+- [OpenAI：ChatGPT desktop 内置浏览器说明](https://help.openai.com/en/articles/20001277-using-the-built-in-browser-in-the-chatgpt-desktop-app)：当前桌面产品的浏览、状态与扩展能力说明。\n+- [Electron：Patches in Electron](https://www.electronjs.org/docs/latest/development/patches)：上游补丁的用途与维护方式。\n+- [Node.js 介绍](https://nodejs.org/learn/getting-started/introduction-to-nodejs)、[React DOM createRoot](https://react.dev/reference/react-dom/client/createRoot)：Runtime 与 UI 库的两个对照。"
+        }
+      ]
+    },
+    {
+      "id": "98c0567121f59475",
+      "revisions": [
+        {
+          "label": "3d220f39",
+          "date": "2026-11-07",
+          "summary": "content: sync reviewed articles, favorites, records and skills",
+          "commit": "3d220f3953d3d7e141f8a75e01542c7f74f52215",
+          "preview": "@@ -75,5 +88,5 @@ cover: \"/media/98c0567121f59475-8382d1de4c6b2ca4.webp\"\n ### Tab 能不能到达，不是 AX Tree 的收录标准\n \n-普通标题和段落通常不需要成为 Tab 停靠点，但它们仍可暴露标题、层级和文本。屏幕阅读器可以通过自己的标题导航等方式读取；浏览器 Agent 也可以从 AX 观察中读取。反过来，一个 `tabindex=\"0\"` 的普通容器虽然通常能被 Tab 到达，也不因此自动拥有按钮的语义与行为。\n+这里其实在说两件事：按 Tab 时，键盘焦点会不会停在一个元素上；浏览器的 AX Tree 会怎样描述这个元素。**能被 Tab 选中，不等于它是按钮；不能被 Tab 选中，也不等于 Agent 读不到它。**\n \n ```html\n@@ -81,12 +94,18 @@ cover: \"/media/98c0567121f59475-8382d1de4c6b2ca4.webp\"\n <p>这段文字供用户阅读，不需要每次按 Tab 都停在这里。</p>\n \n-<!-- 通常可由 Tab 到达，但仍只是一个容器 -->\n+<!-- 可由 Tab 到达，但仍只是普通容器 -->\n <div tabindex=\"0\">普通容器</div>\n \n-<!-- 通常不进入 Tab 顺序，但可由程序 focus() 聚焦 -->\n+<!-- Tab 通常会跳过；程序可以在显示结果后让它获得焦点 -->\n <h2 id=\"result\" tabindex=\"-1\">查询结果</h2>\n ```\n \n-`tabindex=\"0\"` 通常让元素参与顺序焦点导航；`-1` 通常把它排除在 Tab 顺序之外，同时允许程序聚焦。不要用正数 tabindex 编排一套与文档顺序脱节的跳转路线。操作系统、浏览器和用户偏好也会影响实际 Tab 路径，macOS 上尤其不能假定所有配置完全一致。[WHATWG 焦点与 tabindex](https://html.spec.whatwg.org/multipage/interaction.html#the-tabindex-attribute)\n+| 上面的元素 | 按 Tab 时 | AX Tree 能提供什么 |\n+| --- | --- | --- |\n+| `<h2>工具与运行底座</h2>` 和段落 | 通常跳过，因为它们是供阅读的内容，不是要操作的控件 | 标题、标题层级和段落文字仍可被读取 |\n+| `<div tabindex=\"0\">普通容器</div>` | 通常会停在这里；`0` 表示加入正常的 Tab 顺序 | 仍是普通容器，不会仅凭 `tabindex` 变成按钮，也不会自动响应 Enter |\n+| `<h2 tabindex=\"-1\">查询结果</h2>` | 通常跳过；`-1` 表示不加入正常的 Tab 顺序 | 仍是标题。程序可以在结果出现后调用 `focus()`，把焦点移到这里，方便用户听到新结果 |\n+\n+所以，`tabindex` 主要管理**焦点怎么走**；元素本身的 HTML 语义和 ARIA 等信息决定**它是什么、叫什么**。`tabindex=\"-1\"` 也不会自行移动焦点，必须由程序主动调用 `focus()`。正数 `tabindex` 会人为改变 Tab 顺序，通常不建议使用。实际按键路径可能受浏览器和系统设置影响，但不改变这里对焦点导航与元素语义的区分。[MDN tabindex 示例与说明](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/tabindex)、[WHATWG 焦点与 tabindex](https://html.spec.whatwg.org/multipage/interaction.html#the-tabindex-attribute)\n \n ## 一、先明确“只使用”约束了哪一层\n … 其余 1 个变更片段见完整提交 …"
+        },
+        {
+          "label": "428323e9",
+          "date": "2026-11-02",
+          "summary": "feat: align twin modules and sync reviewed public articles",
+          "commit": "428323e93acb640440aa307953b09d6dd5d73b77",
+          "preview": "@@ -0,0 +1,225 @@\n+\n+从焦点、角色、名称、状态和观察范围入手，判断 Accessibility Tree 何时足以支撑受控的浏览器自动化。\n+\n+> 本文讨论通用机制和设计判断；示意不对应任何具体产品的已交付状态。源码阅读坐标沿用原稿，本次整理不构成新的运行时验收。\n+\n+浏览器自动化常把 DOM、Accessibility Tree 与截图并列。判断 AX Tree 能否独立承担观察，需要先分清页面语义、动作定位与业务结果核验。\n+\n+## 从 Tab 外框开始：Accessibility 到底是什么\n+\n+文章标题旁有一个很小的永久链接图标。按 Tab 到达它时，图标周围出现外框。这是在提示**链接获得了键盘焦点**，也就是接下来的键盘操作会作用于这里。它是 Accessibility 的一个可见表现；可访问性还要求页面把“这是什么、叫什么、现在什么状态、与谁有关”提供给辅助技术和用户。\n+\n+![原创四格漫画：Tab 焦点、链接名称、可读标题与自定义按钮的区别](/media/98c0567121f59475-dc4a3d5c0fd87985.webp)\n+\n+用一个简化的链接说明这些信息怎样形成。下面是教学示例，不是对真实页面截图的复制：\n+\n+```html\n+<a class=\"heading-link\"\n+   href=\"#tools\"\n+   aria-label=\"此章节的永久链接\">#</a>\n+```\n+\n+| 检查器显示的信息 | 信息从哪里来 | 应怎样理解 |\n+| --- | --- | --- |\n … 省略 186 行 …\n+\n+语义完整、任务范围受控的后台表单，值得把 AX-only 观察作为可测量的基线。它能帮助判断一次失败发生在观察、候选构造、目标绑定还是结果验收，也会直接暴露页面语义质量问题。\n+\n+面对第三方站点，应先检查真实任务中的关键控件，再决定是否坚持这条路线。缺少必要语义时，可以明确转入混合观察，也可以保持 AX-only 并报告受阻；两者都需要如实记录实验条件。\n+\n+最值得保留的是一个工程判断：**每次声称“Agent 看到了页面”，都应说明它实际收到了哪种表示；每次声称“任务成功”，都应指出由什么证据确认了业务结果。**"
+        }
+      ]
+    },
+    {
+      "id": "e196ba9ba7b3b8ed",
+      "revisions": [
+        {
+          "label": "3d220f39",
+          "date": "2026-11-07",
+          "summary": "content: sync reviewed articles, favorites, records and skills",
+          "commit": "3d220f3953d3d7e141f8a75e01542c7f74f52215",
+          "preview": "@@ -34,5 +54,7 @@ cover: \"/media/visual-grounding-box-cover.webp\"\n Jev 1.14 的 `Box` 则是视觉 Grounding 的一个具体接口。请求中放入图片，再用一句话描述要找的对象，例如“截图中的查询按钮”。模型返回图像中该对象的矩形位置。[TypeSafe 的 Box 文档](https://docs.typesafe.ai/primitives/box)把四条边定义为相对于图像宽高的比例，取值范围是 0 到 1。\n \n-## 从 Box 到点击坐标，还要走两步\n+## Box 给出边界框，点击坐标由动作系统计算\n+\n+下面的两步是**接入 Jev 的工程代码**负责的，不是 `Box` 已处理好的结果。`Box` 只返回相对输入图片宽高的四条边和位置答案的 `confidence`；它不返回截图像素坐标、设备点击坐标，也不负责判断点击后页面是否按预期变化。\n \n 假设截图是 400×400 像素，目标边界框为：\n@@ -47,5 +69,5 @@ Jev 1.14 的 `Box` 则是视觉 Grounding 的一个具体接口。请求中放\n ```\n \n-四条边对应像素区域 `(80, 160)` 到 `(320, 240)`。如果目标适合点击中心，点击点是 `(200, 200)`：\n+**第一步：换算图像像素。** 动作系统用截图的宽高乘以四条边，得到像素区域 `(80, 160)` 到 `(320, 240)`。如果目标适合点击中心，图像中的候选点击点是 `(200, 200)`；下面的代码是工程侧的计算示意，不是 Jev `Box` 的返回值：\n \n ```ts\n@@ -54,7 +76,7 @@ const y = Math.round(((box.top + box.bottom) / 2) * imageHeight);\n ```\n \n-![一张 400×400 图中，目标矩形、模型返回的边界框及中心点的位置关系](/media/visual-grounding-box-example.svg)\n+![一张 400×400 图中，目标矩形、模型返回的边界框及中心点的位置关系](/media/e196ba9ba7b3b8ed-77e872d332472174.svg)\n \n-这是图像坐标。实际设备可能存在截图缩放、裁剪、旋转、状态栏或内容视口偏移。动作系统必须使用**执行点击时所用坐标系**重新映射，不能把缩略图上的像素直接交给手机。点击前还应确认截图版本没有被新页面取代。\n+**第二步：映射到设备并复核画面。** `(200, 200)` 仍是图像坐标。实际设备可能存在截图缩放、裁剪、旋转、状态栏或内容视口偏移。动作系统必须按**执行点击时所用坐标系**重新映射，不能把缩略图上的像素直接交给手机；点击前还应确认截图没有被新页面取代。点击后的页面变化另行验证。\n \n ## Box 找不到目标时也会给框\n@@ -67,6 +89,7 @@ const y = Math.round(((box.top + box.bottom) / 2) * imageHeight);\n \n ```text\n-采集当前截图 → 判断目标是否存在 → 获取 Box\n-→ 校验位置与截图版本 → 换算设备坐标\n+采集当前截图 → 同次提问 Noul（是否存在）与 Box（目标位置）\n+→ 检查 Noul；证据不足时丢弃 Box 并停止\n+→ 证据足够时校验 Box 与截图版本，换算设备坐标\n → 点击 → 重新观察并验证页面效果\n ```\n … 其余 1 个变更片段见完整提交 …"
+        },
+        {
+          "label": "a35ebd94",
+          "date": "2026-11-04",
+          "summary": "Remove tool promotion from grounding article",
+          "commit": "a35ebd94ae4d637a0452281557c7e82667778c0c",
+          "preview": "@@ -87,4 +93,2 @@ Accessibility Tree 能提供控件文本、角色、状态和 bounds；信息完\n \n 我会把 Box 作为“按描述找区域”的能力来评估，把目标边界框当作待验证的坐标证据。只有存在性、坐标系和点击后的效果都闭合，视觉 Grounding 才真正参与了可靠的自动化。\n-\n-> 本文使用 [writting-skill](https://github.com/youngjunning/skills/tree/main/skills/writing/writting-skill) 辅助写作，配图使用 [better-imagegen](https://github.com/youngjunning/skills/tree/main/skills/design/better-imagegen) 生成。项目已开源，欢迎在 GitHub 点个 Star。\n … 其余 1 个变更片段见完整提交 …"
+        },
+        {
+          "label": "a6d48688",
+          "date": "2026-11-03",
+          "summary": "docs: explain visual grounding and bounding boxes",
+          "commit": "a6d48688c0ca497858e394a37879969702725982",
+          "preview": "@@ -0,0 +1,90 @@\n+\n+一个手机 Agent 收到“点击查询”后，需要先在当前截图中找到那个按钮。模型返回一组坐标，看似已经完成定位；但按钮可能根本不在屏幕上，截图也可能在点击前过期。我在接入 Jev 图像能力时，发现“视觉 Grounding”“Box”“目标边界框”很容易被当作同一件事。把它们放回一次真实的动作流程，边界就清楚了。\n+\n+## 一句话总结\n+\n+**视觉 Grounding 是把目标描述对应到图像位置的过程；Box 是 Jev 提供的一种定位问题；目标边界框是定位结果的数据形式。** 边界框给出区域，动作系统还要确认目标存在、换算坐标、检查截图是否仍然有效，并验证点击后的页面变化。\n+\n+## 三个词分别处在哪一层\n+\n+| 名称 | 回答的问题 | 输入或输出 |\n+| --- | --- | --- |\n+| 视觉 Grounding | “截图里说的那个目标在哪？” | 输入截图和目标描述，输出目标位置 |\n+| Jev `Box` | “请在这张图中找到指定目标” | 一种模型问题类型，返回边界框和置信度 |\n+| 目标边界框（bounding box） | “目标占据哪个矩形区域？” | `left`、`top`、`right`、`bottom` 四条边 |\n+\n+“目标边界框”是通用的数据结构。目标检测、OCR、无障碍节点和视觉 Grounding 都可能给出框；**有框不等于用了视觉 Grounding**。区别在于位置如何得到：视觉 Grounding 依据图像和目标描述寻找对应区域；无障碍树的 bounds 来自应用暴露的控件信息。\n+\n+Jev 1.14 的 `Box` 则是视觉 Grounding 的一个具体接口。请求中放入图片，再用一句话描述要找的对象，例如“截图中的查询按钮”。模型返回图像中该对象的矩形位置。[TypeSafe 的 Box 文档](https://docs.typesafe.ai/primitives/box)把四条边定义为相对于图像宽高的比例，取值范围是 0 到 1。\n+\n+## 从 Box 到点击坐标，还要走两步\n+\n+假设截图是 400×400 像素，目标边界框为：\n+\n … 省略 51 行 …\n+- **可以再等**：无障碍节点已经稳定暴露目标与边界，额外的图片请求只增加延迟；或当前无法保证截图与点击使用同一画面状态。\n+- **重点关注**：目标缺失时的误框、多个相似目标、缩放与视口偏移、截图过期，以及真实页面上的成功率和耗时。单次 Box 命中只能算定位探针通过。\n+\n+我会把 Box 作为“按描述找区域”的能力来评估，把目标边界框当作待验证的坐标证据。只有存在性、坐标系和点击后的效果都闭合，视觉 Grounding 才真正参与了可靠的自动化。\n+\n+> 本文使用 [writting-skill](https://github.com/youngjunning/skills/tree/main/skills/writing/writting-skill) 辅助写作，配图使用 [better-imagegen](https://github.com/youngjunning/skills/tree/main/skills/design/better-imagegen) 生成。项目已开源，欢迎在 GitHub 点个 Star。"
+        }
+      ]
+    }
+  ]
+}
