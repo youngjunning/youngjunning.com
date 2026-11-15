@@ -14,6 +14,14 @@ export default function ContentFilterTabs({ options, value, onChange, label }: {
     const position = () => { const button = root.querySelector<HTMLElement>('[aria-pressed="true"]'); if (button) { indicator.style.setProperty('--x', button.offsetLeft + 'px'); indicator.style.setProperty('--w', button.offsetWidth + 'px'); } };
     const observer = new ResizeObserver(position); observer.observe(root); position(); return () => observer.disconnect();
   }, [value, options]);
+  const centerTab = (button: HTMLButtonElement) => {
+    const scroll = button.closest<HTMLElement>('.content-filter-scroll');
+    if (!scroll || scroll.scrollWidth <= scroll.clientWidth) return;
+    scroll.scrollTo({
+      left: button.offsetLeft + button.offsetWidth / 2 - scroll.clientWidth / 2,
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+    });
+  };
   const stopDrag = (event: PointerEvent<HTMLDivElement>) => {
     if (drag.current?.pointerId !== event.pointerId) return;
     if (drag.current.moved) {
@@ -43,5 +51,5 @@ export default function ContentFilterTabs({ options, value, onChange, label }: {
     event.preventDefault();
     event.stopPropagation();
     suppressClick.current = false;
-  }}><div className="ux u039-tabs content-filter-tabs" role="group" aria-label={label} ref={nav}><span className="u039-pill" ref={pill} aria-hidden="true" />{options.map(option => <button className="u039-tab" type="button" key={option.id} aria-pressed={value === option.id} onClick={() => onChange(option.id)} onFocus={event => event.currentTarget.scrollIntoView({ block: 'nearest', inline: 'nearest' })}>{option.label}</button>)}</div></div>;
+  }}><div className="ux u039-tabs content-filter-tabs" role="group" aria-label={label} ref={nav}><span className="u039-pill" ref={pill} aria-hidden="true" />{options.map(option => <button className="u039-tab" type="button" key={option.id} aria-pressed={value === option.id} onClick={event => { centerTab(event.currentTarget); onChange(option.id); }} onFocus={event => centerTab(event.currentTarget)}>{option.label}</button>)}</div></div>;
 }
