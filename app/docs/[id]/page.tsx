@@ -40,13 +40,15 @@ export default async function DocumentPage({ params }: { params: Promise<{ id: s
   const refs = getGraph().edges.filter((edge) => edge.type === 'references' && (edge.source === doc.id || edge.target === doc.id));
   const related = [...new Set(refs.map((edge) => edge.source === doc.id ? edge.target : edge.source))].map((id) => catalog.documents.find((item) => item.id === id)!).filter(Boolean);
   const glossary = doc.kind === 'markdown' ? glossaryForArticle(doc, catalog.documents) : [];
-  return <Shell><ReadingProgress /><BackToTop key={doc.id} /><div className="reader-top"><Link href="/blog" className="back-link">← 返回手记</Link><div>{doc.kind === 'markdown' && <CopyMarkdown text={doc.content} articleId={doc.id} />}<a href={doc.rawUrl}>查看原文 ↗</a><Link href={`/graph?doc=${doc.id}`}>在图谱中查看 ↗</Link></div></div>
+  return <Shell><ReadingProgress /><BackToTop key={doc.id} /><div className="reader-top"><Link href="/blog" className="back-link">← 返回手记</Link></div>
     <div className="reader-layout article-layout"><article className="reader"><div className="reader-meta"><span style={{ color: topic.color }}>{topic.label}</span>{doc.date && <time dateTime={doc.date}>创建 {displayContentTime(doc.date)}</time>}{doc.updatedAt && <time dateTime={doc.updatedAt}>更新 {displayContentTime(doc.updatedAt)}</time>}<ArticleReadingStats words={doc.words} /></div><h1 id="article-title" tabIndex={-1}>{doc.title}<a className="heading-anchor" href="#article-title" aria-label="文章标题的永久链接">#</a></h1>
       <ArticleTags tags={doc.tags} />
       <ArticleProvenance doc={doc} />
       <ArticleRevisions articleId={doc.id} />
       {doc.kind === 'html' ? <HtmlArticle id={doc.id} title={doc.title} /> : <div className="prose"><Markdown content={doc.content} urls={doc.urls} title={doc.title} glossary={glossary} unavailableAssets={doc.unavailableAssets} /></div>}
-      <div className="source-note">源稿位置 <code>{catalog.source.root}/{doc.sourcePath}</code></div>
+      <div className="source-note">源稿位置 <code>{catalog.source.root}/{doc.sourcePath}</code>
+        <nav className="article-source-actions" aria-label="文章操作">{doc.kind === 'markdown' && <CopyMarkdown text={doc.content} articleId={doc.id} />}<a href={doc.rawUrl}>查看原文 ↗</a><Link href={`/graph?doc=${doc.id}`}>在图谱中查看 ↗</Link></nav>
+      </div>
       <ArticleNotice id={doc.id} />
     </article><div className="article-sidebar"><ArticleToc documentId={doc.id} /></div></div>
     <section className="ux u228 article-connections" aria-labelledby="article-connections-title">

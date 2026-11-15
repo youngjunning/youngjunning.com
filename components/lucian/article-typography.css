@@ -30,6 +30,10 @@
 .article-layout .prose code{font-size:.86em;background:color-mix(in srgb,var(--style-tint) 55%,var(--style-surface));color:var(--style-secondary)}
 .article-layout .prose pre{font-size:15px;line-height:1.85;border-color:var(--style-line);background:var(--style-surface)}
 .article-layout .prose pre code{font-size:inherit;line-height:inherit;background:none;color:var(--style-ink)}
+.article-source-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px 22px;margin-top:20px;font-size:12px;color:var(--style-secondary)}
+.article-source-actions>a{padding:7px 0;text-decoration:underline;text-decoration-color:transparent;text-underline-offset:4px}
+.article-source-actions>a:hover,.article-source-actions>a:focus-visible{text-decoration-color:currentColor}
+.article-source-actions .copy-markdown-button{font-size:12px}
 @media(max-width:800px){
   .article-layout .reader>h1{font-size:29px;line-height:1.5}
   .article-layout .prose{font-size:17px;line-height:1.95}
