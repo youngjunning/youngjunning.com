@@ -18,7 +18,7 @@
 
 - [文章目录](https://youngjunning.com/api/catalog): 已发布文章的稳定 ID、标题、主题、摘要、原文地址与 SHA-256；原文入口为 /raw/{id}，阅读页为 /blog/{id}。
 - [文章全文索引](https://youngjunning.com/api/search): 用于查找文章的检索文本，JSON。
-- [手记](https://youngjunning.com/blog): 按栏目浏览技术文章与周刊。
+- [文章](https://youngjunning.com/blog): 按栏目浏览技术文章与周刊。
 - [百宝箱目录](https://youngjunning.com/api/favorites): 外部资源与知识笔记，保留来源、保存方式、表达归属与实际使用证据，JSON；单条内容使用 /api/favorites/{id}。
 - [Wiki](https://youngjunning.com/wiki): 按主题整理的资料与来源入口。
 

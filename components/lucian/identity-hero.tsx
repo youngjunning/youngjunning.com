@@ -9,7 +9,7 @@ import './identity-hero.css';
 
 export default function IdentityHero({ articleCount, recordCount, projectCount }: { articleCount: number; recordCount: number; projectCount: number }) {
   return <section className="identity-hero" aria-labelledby="identity-title">
-    <div className="identity-overline"><span>{persona.siteName} / DIGITAL SELF</span><span>{siteProfile.name}的经历 · 判断 · 手记</span></div>
+    <div className="identity-overline"><span>{persona.siteName} / DIGITAL SELF</span><span>{siteProfile.name}的经历 · 判断 · 文章</span></div>
     <ReaderSkillEntry />
     <h1 id="identity-title" className="identity-sr">我是{persona.siteName}，{persona.siteSubtitle}。</h1>
     <div className="identity-stage"><ParticleName /></div>

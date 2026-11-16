@@ -41,7 +41,7 @@ export default async function DocumentPage({ params }: { params: Promise<{ id: s
   const refs = getGraph().edges.filter((edge) => edge.type === 'references' && (edge.source === doc.id || edge.target === doc.id));
   const related = [...new Set(refs.map((edge) => edge.source === doc.id ? edge.target : edge.source))].map((id) => catalog.documents.find((item) => item.id === id)!).filter(Boolean);
   const glossary = doc.kind === 'markdown' ? glossaryForArticle(doc, catalog.documents) : [];
-  return <Shell><ReadingProgress /><BackToTop key={doc.id} /><div className="reader-top"><Link href="/blog" className="back-link">← 返回手记</Link></div>
+  return <Shell><ReadingProgress /><BackToTop key={doc.id} /><div className="reader-top"><Link href="/blog" className="back-link">← 返回文章</Link></div>
     <div className="reader-layout article-layout"><article className="reader"><div className="reader-meta"><span style={{ color: topic.color }}>{topic.label}</span>{doc.date && <time dateTime={doc.date}>创建 {displayContentTime(doc.date)}</time>}{doc.updatedAt && <time dateTime={doc.updatedAt}>更新 {displayContentTime(doc.updatedAt)}</time>}<ArticleReadingStats words={doc.words} /></div><h1 id="article-title" tabIndex={-1}>{doc.title}<a className="heading-anchor" href="#article-title" aria-label="文章标题的永久链接">#</a></h1>
       <ArticleTags tags={doc.tags} />
       <ArticleProvenance doc={doc} />

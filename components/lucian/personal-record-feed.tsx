@@ -63,7 +63,7 @@ export default function PersonalRecordFeed({ records, allRecords = records, init
         {record.kind === 'change' && <div className="record-change"><p><strong>之前：</strong>{record.before}</p><p><strong>之后：</strong>{record.after}</p><p><strong>变化原因：</strong>{record.reason}</p></div>}
         <p className="record-feed-context">{record.context}</p>
         {relationIds.length > 0 && <div className="record-relations">{relationIds.map((id) => <Link key={id} href={`/records/${id}`}>{byId.get(id)?.title || '关联记录'} ↗</Link>)}</div>}
-        {record.articleId && <Link className="record-feed-source" href={`/docs/${record.articleId}`}>阅读相关手记 ↗</Link>}
+        {record.articleId && <Link className="record-feed-source" href={`/docs/${record.articleId}`}>阅读相关文章 ↗</Link>}
         {detail && <div className="record-provenance"><p>录入日期：{record.recordedAt} · 发生时间与录入时间分别记录</p>{record.sources.map((source, index) => <p key={index}>来源：{source.articleId ? <Link href={`/docs/${source.articleId}`}>{source.label} ↗</Link> : source.label}</p>)}</div>}
       </article></div></div>;
     })}</div>{!filteredRecords.length && <p className="record-feed-empty">这类记录还没有内容。</p>}</div>

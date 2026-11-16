@@ -36,7 +36,7 @@ export default async function AIHOTPage() {
     <section className="sc-section industry-statechart"><header><span className="sc-kicker">YOUR SOURCES / LATEST</span><h2>我的关注</h2></header>
       <Suspense fallback={<p className="industry-empty" role="status">正在读取关注源…</p>}><StatechartFeed /></Suspense>
     </section>
-    <section className="sc-section industry-statechart"><header><span className="sc-kicker">EDITORIAL / WEEKLY</span><h2>本站周刊</h2></header>{weeklies.length ? <div className="sc-notes-row">{weeklies.map(doc => <Link className="sc-note" href={doc.url} key={doc.id}><small>{doc.date.slice(0, 10)} · 已核对来源</small><h3>{doc.title}</h3><p>{doc.summary}</p><span>阅读本期 →</span></Link>)}</div> : <p>本站尚未发布行业周刊。<Link href="/blog">先浏览手记 →</Link></p>}</section>
+    <section className="sc-section industry-statechart"><header><span className="sc-kicker">EDITORIAL / WEEKLY</span><h2>本站周刊</h2></header>{weeklies.length ? <div className="sc-notes-row">{weeklies.map(doc => <Link className="sc-note" href={doc.url} key={doc.id}><small>{doc.date.slice(0, 10)} · 已核对来源</small><h3>{doc.title}</h3><p>{doc.summary}</p><span>阅读本期 →</span></Link>)}</div> : <p>本站尚未发布行业周刊。<Link href="/blog">先浏览文章 →</Link></p>}</section>
     <section className="sc-section industry-statechart-source"><header><span className="sc-kicker">HOW IT WORKS</span><h2>资讯从哪里来</h2></header><p>本站动态读取你自己部署的资讯源；关注的信源和精选规则由你在该服务后台维护。周刊是本站另行核对原始来源后写成的文章。<a href="https://github.com/KKKKhazix/AIHOT" target="_blank" rel="noopener noreferrer">了解所用的开源引擎 ↗</a></p></section>
   </StatechartShell>;
 
@@ -44,7 +44,7 @@ export default async function AIHOTPage() {
     <section className="page-intro"><div className="eyebrow">INDUSTRY / YOUR SOURCES</div><h1>行业动态</h1><p>{description}</p></section>
     <div className="industry-layout"><section className="industry-main"><div className="industry-section-heading"><span>01 / MY FEED</span><h2>我的关注</h2><p>由自建资讯源采集、归并和精选；点击条目可查看详情与原始来源。</p></div>
       <Suspense fallback={<p className="industry-empty" role="status">正在读取关注源…</p>}><ClassicFeed /></Suspense>
-    </section><aside className="industry-side"><section className="industry-side-block"><span>02 / WEEKLY</span><h2>本站周刊</h2><p>基于原始来源写下变化、影响和判断。</p>{weeklies.length ? <div className="industry-weeklies">{weeklies.map(doc => <Link href={doc.url} key={doc.id}><small>{doc.date.slice(0, 10)}</small><strong>{doc.title}</strong><span>阅读本期 →</span></Link>)}</div> : <p className="industry-side-empty">尚未发布周刊。<Link href="/blog">浏览手记 →</Link></p>}</section>
+    </section><aside className="industry-side"><section className="industry-side-block"><span>02 / WEEKLY</span><h2>本站周刊</h2><p>基于原始来源写下变化、影响和判断。</p>{weeklies.length ? <div className="industry-weeklies">{weeklies.map(doc => <Link href={doc.url} key={doc.id}><small>{doc.date.slice(0, 10)}</small><strong>{doc.title}</strong><span>阅读本期 →</span></Link>)}</div> : <p className="industry-side-empty">尚未发布周刊。<Link href="/blog">浏览文章 →</Link></p>}</section>
       <section className="industry-side-block"><span>03 / SOURCE</span><h2>接入关系</h2><p>这里读取你自己部署的资讯源，关注规则由你维护。<a href="https://aihot.news" target="_blank" rel="noopener noreferrer">aihot.news</a> 是上游运营站，不是本站的数据入口。</p></section></aside></div>
   </div></Shell>;
 }

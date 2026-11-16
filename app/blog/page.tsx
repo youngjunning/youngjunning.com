@@ -5,7 +5,7 @@ import { getCatalog } from '@/lib/content';
 import Library from '@/components/library';
 import { articleFilters } from '@/lib/article-navigation.mjs';
 
-export const metadata = { title: `${siteProfile.name}的手记` };
+export const metadata = { title: `${siteProfile.name}的文章` };
 export default async function BlogPage({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
   const params = await searchParams;
   const filters = articleFilters(params);

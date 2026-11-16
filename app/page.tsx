@@ -38,7 +38,7 @@ export default async function Home() {
 
     <MotionSection id="this-week" eyebrow="THIS WEEK" title="本周在生长" description="这一周新写、修订或收进来的内容。"><SiteActivity activity={activity} /></MotionSection>
 
-    <MotionSection id="word-cloud" className="site-wordcloud-section" eyebrow="THE SHAPE OF A MIND" title="全站词云 · 关注的事" description="从个人记录与手记正文中，看看哪些词持续出现。"><WordCloud title="全站词云" description="从共享个人记录与手记正文提取高频词，按正文出现次数展示；点击词语查看对应记录和文章。" words={cloud} scopes={['全站', '个人记录', '手记']} groups={[{id:'both',label:'共同主题',color:'var(--style-secondary)'},{id:'record',label:'个人记录',color:'var(--style-accent)'},{id:'blog',label:'手记',color:'var(--style-muted)'}]} unit="次出现" /></MotionSection>
+    <MotionSection id="word-cloud" className="site-wordcloud-section" eyebrow="THE SHAPE OF A MIND" title="全站词云 · 关注的事" description="从个人记录与文章正文中，看看哪些词持续出现。"><WordCloud title="全站词云" description="从共享个人记录与文章正文提取高频词，按正文出现次数展示；点击词语查看对应记录和文章。" words={cloud} scopes={['全站', '个人记录', '文章']} groups={[{id:'both',label:'共同主题',color:'var(--style-secondary)'},{id:'record',label:'个人记录',color:'var(--style-accent)'},{id:'blog',label:'文章',color:'var(--style-muted)'}]} unit="次出现" /></MotionSection>
 
     <MotionSection className="persona-records" eyebrow="IN THE MOMENT" title="最近的判断与想法" action={<Link className="text-link" href="/records">全部个人记录 ↗</Link>}><RecordStories records={records.filter((record) => record.kind === 'judgment' || record.kind === 'thought')} /></MotionSection>
 
@@ -48,7 +48,7 @@ export default async function Home() {
 
     <MotionSection id="thinking" className="persona-perspectives" eyebrow="HOW I THINK" title="价值观与判断原则" description="从本人记录与文章中，看到我重视什么、如何做取舍。"><div id="decisions"><PerspectiveCards views={[...persona.valueRecordIds.flatMap((id) => records.filter((record) => record.id === id).map((record) => ({ title: record.title, description: record.kind === 'change' ? record.after : record.text, href: `/records/${record.id}` }))), ...persona.perspectives.flatMap((view) => documents.has(view.articleId) ? [{ ...view, href: documents.get(view.articleId)!.url }] : [])]} /></div><p className="perspective-basis">价值观来自本人明确表达的记录；其余观点根据站内文章归纳，点击可查看依据与适用条件。</p></MotionSection>
 
-    <MotionSection className="persona-reading" eyebrow="THE WRITTEN RECORD" title="手记 · 实践与思考" action={<Link className="text-link" href="/blog">进入手记 ↗</Link>}><div className="persona-featured lucian-featured">{featured.map((doc, index) => { const id = doc.id; return <div className="motion-reveal reading-reveal" key={id}><EditorialCard href={doc.url} title={doc.title} summary={doc.summary} category={catalog.topics.find((topic) => topic.id === doc.topic)?.label || '文章'} minutes={readingMinutes(doc.words)} tone={index} /></div>; })}</div></MotionSection>
+    <MotionSection className="persona-reading" eyebrow="THE WRITTEN RECORD" title="文章 · 实践与思考" action={<Link className="text-link" href="/blog">进入文章 ↗</Link>}><div className="persona-featured lucian-featured">{featured.map((doc, index) => { const id = doc.id; return <div className="motion-reveal reading-reveal" key={id}><EditorialCard href={doc.url} title={doc.title} summary={doc.summary} category={catalog.topics.find((topic) => topic.id === doc.topic)?.label || '文章'} minutes={readingMinutes(doc.words)} tone={index} /></div>; })}</div></MotionSection>
 
     <KnowledgePortal articles={catalog.documents.length} topics={catalog.topics.length} references={referenceCount} />
   </Shell>;

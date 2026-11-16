@@ -81,10 +81,10 @@ export default function WordCloud({ title, description, words, scopes, groups, u
       <div className="u399-ft"><span className="u399-in" aria-live="polite">{hoveredWord ? `${hoveredWord.label} · ${hoveredWord.counts[scope]}${unit}` : '词越大，出现越多 · 点击探索'}</span><div className="u399-lg">{groups.map((group) => <button key={group.id} type="button" aria-label={`突出显示${group.label}相关词`} aria-pressed={focusedGroup === group.id} onPointerEnter={() => setFocusedGroup(group.id)} onPointerLeave={() => setFocusedGroup(null)} onFocus={() => setFocusedGroup(group.id)} onBlur={() => setFocusedGroup(null)} onClick={() => setFocusedGroup(focusedGroup === group.id ? null : group.id)}><i style={{ background: group.color }} />{group.label}</button>)}</div></div>
     </div>
     <aside className="wordcloud-detail" aria-label={`${title}详情`}>
-      <span className="eyebrow">{onSelect ? 'NOTES TAGS' : 'WORDS IN CONTEXT'}</span>
+      <span className="eyebrow">{onSelect ? 'ARTICLE TAGS' : 'WORDS IN CONTEXT'}</span>
       <h3>{value?.label || (onSelect ? '从一个标签，读进一组文章。' : '持续关注的事，逐渐浮现。')}</h3>
       <p>{description}</p>
-      {value ? <><div className="wordcloud-measure"><strong>{value.counts[scope]}</strong><span>{unit}{scopes.length > 1 ? ` · ${scopes[scope]}` : ''}</span></div>{matches.length ? <div className="wordcloud-matches">{matches.map((match) => <Link key={match.url} href={match.url}><span>{match.scope === 1 ? '个人记录' : '手记'} · {match.title}</span><i aria-hidden="true">↗</i></Link>)}</div> : <p>当前范围没有这个词，试试另一个词。</p>}</> : <div className="wordcloud-hints"><span>01 / 悬停，突出同类词语</span><span>02 / 切换范围，观察重排</span><span>03 / 点击，沿来源继续阅读</span></div>}
+      {value ? <><div className="wordcloud-measure"><strong>{value.counts[scope]}</strong><span>{unit}{scopes.length > 1 ? ` · ${scopes[scope]}` : ''}</span></div>{matches.length ? <div className="wordcloud-matches">{matches.map((match) => <Link key={match.url} href={match.url}><span>{match.scope === 1 ? '个人记录' : '文章'} · {match.title}</span><i aria-hidden="true">↗</i></Link>)}</div> : <p>当前范围没有这个词，试试另一个词。</p>}</> : <div className="wordcloud-hints"><span>01 / 悬停，突出同类词语</span><span>02 / 切换范围，观察重排</span><span>03 / 点击，沿来源继续阅读</span></div>}
       <Link className="text-link" href={onSelect ? '#blog-results' : '/records'}>{onSelect ? '查看筛选后的文章' : '看看这些经历与判断'} ↗</Link>
     </aside>
   </div>;
