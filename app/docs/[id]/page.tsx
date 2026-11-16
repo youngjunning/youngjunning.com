@@ -17,6 +17,7 @@ import BackToTop from '@/components/lucian/back-to-top';
 import ArticleTags from '@/components/lucian/article-tags';
 import ArticleReadingStats from '@/components/lucian/article-reading-stats';
 import ArticleToc from '@/components/lucian/article-toc';
+import FeynmanLearning from '@/components/feynman-learning';
 import RecordAreas from '@/components/lucian/record-areas';
 import SignalLink from '@/components/lucian/signal-link';
 import { getCatalog, getDocument, getGraph } from '@/lib/content';
@@ -45,6 +46,7 @@ export default async function DocumentPage({ params }: { params: Promise<{ id: s
       <ArticleTags tags={doc.tags} />
       <ArticleProvenance doc={doc} />
       <ArticleRevisions articleId={doc.id} />
+      <FeynmanLearning documentId={doc.id} title={doc.title} headings={doc.headings} />
       {doc.kind === 'html' ? <HtmlArticle id={doc.id} title={doc.title} /> : <div className="prose"><Markdown content={doc.content} urls={doc.urls} title={doc.title} glossary={glossary} unavailableAssets={doc.unavailableAssets} /></div>}
       <div className="source-note">源稿位置 <code>{catalog.source.root}/{doc.sourcePath}</code>
         <nav className="article-source-actions" aria-label="文章操作">{doc.kind === 'markdown' && <CopyMarkdown text={doc.content} articleId={doc.id} />}<a href={doc.rawUrl}>查看原文 ↗</a><Link href={`/graph?doc=${doc.id}`}>在图谱中查看 ↗</Link></nav>
