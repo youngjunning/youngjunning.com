@@ -1,0 +1,42 @@
+/* Lucian UX/UI Prompt #046 · MIT License (c) 2026 Seokwoooo · https://lucianlabs.dev/uxui-prompt/#046 */
+.article-filter-menu.u046{position:relative;width:auto;height:44px;flex:none;z-index:8}
+.article-filter-trigger{display:flex;align-items:center;gap:8px;height:44px;min-width:112px;padding:0 12px;border:1px solid var(--ux-line);border-radius:12px;background:color-mix(in srgb,var(--ux-surface) 82%,transparent);color:var(--ux-ink-2);font:inherit;font-size:12px;font-weight:650;cursor:pointer;transition:border-color .2s,background-color .2s,box-shadow .2s}
+.article-filter-trigger:hover{border-color:var(--ux-line-2);background:var(--ux-surface)}
+.article-filter-trigger:focus-visible,.article-filter-menu.is-open .article-filter-trigger{outline:0;border-color:var(--ux-accent);box-shadow:0 0 0 4px color-mix(in srgb,var(--ux-accent) 8%,transparent)}
+.article-filter-trigger>svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.article-filter-trigger>span{max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.article-filter-trigger>small{display:grid;place-items:center;min-width:20px;height:20px;padding:0 5px;border-radius:999px;background:var(--ux-accent-soft);color:var(--ux-accent);font-size:10px}
+.article-filter-trigger .article-filter-chevron{width:15px;height:15px;margin-left:auto;transition:transform .35s var(--ux-spring)}
+.article-filter-menu.is-open .article-filter-chevron{transform:rotate(180deg)}
+.article-filter-panel{position:absolute;right:0;top:calc(100% + 8px);display:flex;width:min(380px,calc(100vw - 44px));max-height:min(520px,calc(100vh - 120px));flex-direction:column;border-radius:18px;background:var(--ux-surface);box-shadow:0 0 0 1px var(--ux-line),0 28px 56px -24px var(--ux-shadow-strong);overflow:hidden;transform-origin:90% 0;animation:article-filter-open .28s var(--ux-spring)}
+.article-filter-panel[hidden]{display:none}
+@keyframes article-filter-open{from{opacity:0;transform:translateY(-6px) scale(.97)}}
+.article-filter-panel .u046-field{position:relative;display:flex;align-items:center;gap:10px;height:52px;flex:none;padding:0 14px 0 16px;border-bottom:1px solid var(--ux-line);cursor:text;transition:border-color .3s}
+.article-filter-panel .u046-field>svg{width:19px;height:19px;flex:none;fill:none;stroke:var(--ux-ink-3);stroke-width:2;stroke-linecap:round}
+.article-filter-panel .u046-in{flex:1;min-width:0;height:100%;border:0;padding:0;background:none;font:inherit;font-size:14px;font-weight:560;color:var(--ux-ink);outline:none}
+.article-filter-panel .u046-in:focus-visible{outline:none}
+.article-filter-panel .u046-in::placeholder{color:var(--ux-ink-3)}
+.article-filter-panel .u046-field:has(.u046-in:focus-visible){box-shadow:inset 0 -2px 0 var(--ux-accent)}
+.article-filter-query-clear{display:grid;place-items:center;width:30px;height:30px;border:0;border-radius:8px;background:transparent;color:var(--ux-ink-3);font:20px/1 inherit;cursor:pointer}
+.article-filter-query-clear:hover{background:var(--ux-surface-2);color:var(--ux-ink)}
+.article-filter-panel .u046-body{position:relative;flex:1;min-height:140px;max-height:390px;overflow-y:auto;scrollbar-width:none;overscroll-behavior:contain;padding:6px 8px}
+.article-filter-panel .u046-body::-webkit-scrollbar{display:none}
+.article-filter-panel .u046-list{position:relative;margin:0;padding:0;list-style:none}
+.article-filter-panel .u046-g{padding:7px 10px 6px;font-size:11px;font-weight:800;letter-spacing:.08em;color:var(--ux-ink-3)}
+.article-filter-panel .u046-op{display:flex;align-items:center;gap:12px;height:42px;padding:0 10px;border-radius:13px;font-size:13px;font-weight:620;color:var(--ux-ink-2);cursor:pointer}
+.article-filter-panel .u046-op[data-active=true]{background:var(--ux-accent-soft);box-shadow:inset 3px 0 0 var(--ux-accent);color:var(--ux-ink)}
+.article-filter-panel .u046-op>small{margin-left:auto;color:var(--ux-ink-3);font-size:11px;font-weight:600}
+.article-filter-panel .u046-op mark{background:none;color:var(--ux-accent);font-weight:800}
+.article-filter-tag-icon{display:grid;place-items:center;width:27px;height:27px;flex:none;border-radius:8px;background:var(--ux-surface-2);color:var(--ux-ink-3);font-size:11px;font-weight:800}
+.article-filter-check{width:17px;height:17px;flex:none;fill:none;stroke:var(--ux-accent);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;opacity:0;transform:scale(.5);transition:opacity .2s,transform .35s var(--ux-spring)}
+.article-filter-panel .u046-op[aria-selected=true] .article-filter-check{opacity:1;transform:none}
+.article-filter-panel .u046-empty{padding:30px 12px;text-align:center;font-size:14px;color:var(--ux-ink-3)}
+.article-filter-panel .u046-empty b{display:block;margin-bottom:4px;font-size:15px;color:var(--ux-ink)}
+.article-filter-panel .u046-foot{display:flex;align-items:center;justify-content:flex-end;gap:8px;height:50px;flex:none;padding:0 12px;border-top:1px solid var(--ux-line)}
+.article-filter-reset,.article-filter-done{min-height:32px;padding:0 11px;border:0;border-radius:8px;background:transparent;color:var(--ux-ink-3);font:inherit;font-size:11px;font-weight:650;cursor:pointer}
+.article-filter-reset:disabled{opacity:.4;cursor:default}.article-filter-reset:not(:disabled):hover{background:var(--ux-surface-2);color:var(--ux-ink)}
+.article-filter-done{background:var(--ux-ink);color:var(--ux-page)}
+.article-filter-reset:focus-visible,.article-filter-done:focus-visible,.article-filter-query-clear:focus-visible{outline:2px solid var(--ux-accent);outline-offset:2px}
+.article-browse-actions{display:flex;align-items:center;justify-content:flex-end;gap:10px;min-width:0;flex:1}
+@media(max-width:650px){.article-browse-actions{width:100%;flex-basis:100%;flex-wrap:wrap;justify-content:stretch}.article-filter-menu.u046{flex:1;z-index:70}.article-filter-trigger{width:100%}.article-browse-actions .content-search.u025{flex:1 0 100%}.article-filter-panel{position:fixed;z-index:70;inset:74px 12px 12px;width:auto;max-height:none;border-radius:18px;transform-origin:50% 0}.article-filter-panel .u046-body{max-height:none}}
+@media(prefers-reduced-motion:reduce){.article-filter-panel{animation:none}.article-filter-trigger,.article-filter-chevron,.article-filter-check{transition:none}}

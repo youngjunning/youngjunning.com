@@ -13,6 +13,7 @@ import ArticleSort from './lucian/article-sort';
 import { articleFilters, articleHref } from '@/lib/article-navigation.mjs';
 import { displayContentTime } from '@/lib/content-time.mjs';
 import ListPagination from './lucian/list-pagination';
+import ArticleFilterMenu from './lucian/article-filter-menu';
 
 type ArticleFilters = { topic: string; query: string; tag: string; sort: 'updated' | 'created' };
 const PAGE_SIZE = 18;
@@ -47,11 +48,17 @@ export default function Library({ catalog, initialFilters }: { catalog: Catalog;
     }).then((data) => { setSearchIndex(data); setSearchError(false); }).catch((error) => { if (error.name !== 'AbortError') setSearchError(true); });
     return () => controller.abort();
   }, [query, searchIndex]);
-  const docs = useMemo(() => {
+  const filterBaseDocs = useMemo(() => {
     const terms = query.toLowerCase().trim().split(/\s+/).filter(Boolean);
     const fulltext = new Map(searchIndex?.map((entry) => [entry.id, entry.text]));
-    return catalog.documents.filter((doc) => (topic === 'all' || topic === doc.topic) && (!tag || doc.tags.includes(tag)) && terms.every((term) => `${doc.title} ${doc.summary} ${doc.headings.join(' ')} ${doc.tags.join(' ')} ${fulltext.get(doc.id) || ''}`.toLowerCase().includes(term))).sort((a, b) => (sort === 'created' ? (b.date || '').localeCompare(a.date || '') : (b.updatedAt || b.date || '').localeCompare(a.updatedAt || a.date || '')) || a.title.localeCompare(b.title, 'zh-CN'));
-  }, [catalog, topic, query, tag, sort, searchIndex]);
+    return catalog.documents.filter((doc) => (topic === 'all' || topic === doc.topic) && terms.every((term) => `${doc.title} ${doc.summary} ${doc.headings.join(' ')} ${doc.tags.join(' ')} ${fulltext.get(doc.id) || ''}`.toLowerCase().includes(term))).sort((a, b) => (sort === 'created' ? (b.date || '').localeCompare(a.date || '') : (b.updatedAt || b.date || '').localeCompare(a.updatedAt || a.date || '')) || a.title.localeCompare(b.title, 'zh-CN'));
+  }, [catalog, topic, query, sort, searchIndex]);
+  const docs = useMemo(() => tag ? filterBaseDocs.filter((doc) => doc.tags.includes(tag)) : filterBaseDocs, [filterBaseDocs, tag]);
+  const tagOptions = useMemo(() => {
+    const counts = new Map<string, number>();
+    filterBaseDocs.forEach((doc) => doc.tags.forEach((label) => counts.set(label, (counts.get(label) || 0) + 1)));
+    return [...counts].map(([label, count]) => ({ label, count })).sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'zh-CN'));
+  }, [filterBaseDocs]);
   const pageCount = Math.ceil(docs.length / PAGE_SIZE);
   const visibleDocs = docs.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
   const changePage = (next: number) => { setPage(next); document.getElementById('blog-results')?.scrollIntoView({ block: 'start' }); };
@@ -60,7 +67,7 @@ export default function Library({ catalog, initialFilters }: { catalog: Catalog;
     <section className="library-content"><div className="section-heading"><div><span className="eyebrow">BROWSE BY QUESTION</span><h2>从一个问题开始</h2></div><span className="muted">原理、设计、实践、诊断与复盘</span></div>
       <div className="topic-grid">{catalog.topics.map((item, index) => <button key={item.id} className={`topic-card ${topic === item.id ? 'selected' : ''}`} style={{ '--topic-color': item.color } as React.CSSProperties} onClick={() => setTopic(topic === item.id ? 'all' : item.id)} aria-pressed={topic === item.id}><span className="topic-symbol">{['◇', '⌁', '↗', '◉', '✳'][index]}</span><span className="topic-count">{catalog.documents.filter((doc) => doc.topic === item.id).length} 篇</span><h3>{item.label}</h3><p>{item.description}</p><span className="topic-arrow">↗</span></button>)}</div>
       <section className="blog-wordcloud" aria-label="文章标签云"><WordCloud title="文章标签云" description="这里仅统计文章标签，大小按带有该标签的文章数区分。点击标签筛选下方文章，可与分类和关键词组合。" words={cloud} scopes={['文章']} groups={catalog.topics.map((item) => ({id:item.id,label:item.label,color:item.color}))} unit="篇文章" selectedLabel={tag} onSelect={(word) => setTag(tag === word ? '' : word)} /></section>
-      <div id="blog-results" className="documents-header"><h2>{topic === 'all' ? '全部文章' : catalog.topics.find((item) => item.id === topic)?.label}<span>{docs.length}</span></h2><ContentSearch label="搜索文章" accessibleLabel="搜索文章全文" placeholder="标题、全文、标签…" query={query} onChange={setQuery} resultCount={docs.length} loading={searchLoading} /></div>
+      <div id="blog-results" className="documents-header"><h2>{topic === 'all' ? '全部文章' : catalog.topics.find((item) => item.id === topic)?.label}<span>{docs.length}</span></h2><div className="article-browse-actions"><ArticleFilterMenu tag={tag} tags={tagOptions} tagTotal={filterBaseDocs.length} onTagChange={setTag} /><ContentSearch label="搜索文章" accessibleLabel="搜索文章全文" placeholder="标题、全文、标签…" query={query} onChange={setQuery} resultCount={docs.length} loading={searchLoading} /></div></div>
       <div className="document-filters unified-document-filters"><div className="muted article-filter-status" aria-live="polite"><span>{searchError ? '全文索引暂不可用，已搜索标题和摘要' : query && !searchIndex ? '正在载入全文索引…' : tag ? `标签：${tag}` : '按主题、标签和关键词浏览文章'}</span>{(topic !== 'all' || tag || query) && <button className="reset-filter" onClick={() => updateFilters((current) => ({ ...current, topic: 'all', query: '', tag: '' }))}>清除全部筛选 ×</button>}</div><ArticleSort value={sort} onChange={setSort} /></div>
       <div className="document-grid">{visibleDocs.map((doc) => {
         const category = catalog.topics.find((item) => item.id === doc.topic)!;
