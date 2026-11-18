@@ -8,7 +8,8 @@ export default function HtmlArticle({ id, title }: { id: string; title: string }
   useEffect(() => {
     let initialNavigation = true;
     function theme() {
-      frameRef.current?.contentWindow?.postMessage({ type: 'article:theme', style: document.documentElement.dataset.theme === 'statechart' ? 'statechart' : document.documentElement.dataset.style }, '*');
+      const siteTheme = document.documentElement.dataset.theme;
+      frameRef.current?.contentWindow?.postMessage({ type: 'article:theme', style: ['statechart', 'xiaoxiang', 'qingshan', 'westlake', 'maldives'].includes(siteTheme || '') ? siteTheme : document.documentElement.dataset.style }, '*');
     }
     const observer = new MutationObserver(theme);
     observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-style', 'data-theme'] });

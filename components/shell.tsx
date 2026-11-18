@@ -9,7 +9,6 @@ import { Ellipsis, MessageCircle, Milestone, NotebookPen, Orbit, PackageOpen } f
 import { useEffect, useId, useRef, useState, type CSSProperties, type KeyboardEvent, type ReactNode } from 'react';
 import persona from '@/lib/persona';
 import { siteNavigation, type SiteSection } from '@/lib/site-navigation';
-import ThemePicker from './lucian/theme-picker';
 import SiteThemeSwitch from './site-theme-switch';
 import ImagePreview from './lucian/image-preview';
 import SiteVisitStats from './lucian/site-visit-stats';
@@ -141,7 +140,7 @@ export default function Shell({ children, active = 'library', toolbar }: { child
           </div>
         </div>
       </nav>
-      <div className="site-header-actions"><ThemePicker />{toolbar}</div>
+      <div className="site-header-actions">{toolbar}</div>
       <span className="u212-pg" aria-hidden="true" ref={progressRef} />
     </header>
     <main className="workspace site-workspace">{children}<footer className="page-footer">让每一次判断，都能回到实践。<div className="site-footer-meta"><SiteVisitStats /><span className="site-footer-label">{siteProfile.siteName} · 记忆与对话</span></div></footer></main>

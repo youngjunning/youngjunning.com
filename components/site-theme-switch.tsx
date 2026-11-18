@@ -6,6 +6,9 @@ const themes = [
   { id: 'classic', label: '原版' },
   { id: 'statechart', label: '纸上状态图' },
   { id: 'xiaoxiang', label: '小香风' },
+  { id: 'qingshan', label: '青山湖' },
+  { id: 'westlake', label: '西湖' },
+  { id: 'maldives', label: '马尔代夫' },
 ] as const;
 type SiteTheme = (typeof themes)[number]['id'];
 

@@ -25,6 +25,9 @@ export function renderHtmlArticle(html: string, title: string, id: string) {
   const themeStyle = document.createElement('style');
   themeStyle.textContent = 'html[data-style="statechart"] body{font-family:"Kaiti SC",KaiTi,"STKaiti","Songti SC",serif!important;color:#21201f!important}html[data-style="statechart"] :is(section,article,div,header,aside){background-color:#faf9f6!important;background-image:none!important;box-shadow:none!important;border-radius:0!important;border-color:#dcd8d0!important;color:#21201f!important}html[data-style="statechart"] :is(h1,h2,h3,h4,p,li,span){color:#21201f!important}html[data-style="statechart"] a{color:#933323!important}html[data-style="statechart"] :is(pre,code){background:#f2efe8!important;color:#21201f!important}';
   themeStyle.textContent += 'html[data-style="xiaoxiang"] body{font-family:Inter,-apple-system,"PingFang SC",sans-serif!important;color:#28252a!important}html[data-style="xiaoxiang"] :is(section,article,div,header,aside){background-color:#fffefa!important;border-color:#c9bfc0!important;color:#28252a!important}html[data-style="xiaoxiang"] :is(h1,h2,h3,h4){font-family:Georgia,"Songti SC",serif!important;color:#28252a!important}html[data-style="xiaoxiang"] a{color:#6d354d!important}html[data-style="xiaoxiang"] :is(pre,code){background:#f3edea!important;color:#28252a!important}';
+  themeStyle.textContent += 'html[data-style="qingshan"] body{color:#23443f!important;background:#eff5ee!important}html[data-style="qingshan"] :is(section,article,div,header,aside){background-color:#fcfffb!important;border-color:#cfdfd4!important;color:#23443f!important}html[data-style="qingshan"] a{color:#2f7460!important}html[data-style="qingshan"] :is(pre,code){background:#e5f0e7!important;color:#23443f!important}';
+  themeStyle.textContent += 'html[data-style="westlake"] body{color:#24394e!important;background:#eff3f5!important}html[data-style="westlake"] :is(section,article,div,header,aside){background-color:#fbfcfc!important;border-color:#b9ccd5!important;color:#24394e!important}html[data-style="westlake"] a{color:#315c7b!important}html[data-style="westlake"] :is(pre,code){background:#e3edf1!important;color:#24394e!important}';
+  themeStyle.textContent += 'html[data-style="maldives"] body{color:#173b4c!important;background:#f3f9f8!important}html[data-style="maldives"] :is(section,article,div,header,aside){background-color:#fffdf8!important;border-color:#b8d9d8!important;color:#173b4c!important}html[data-style="maldives"] a{color:#176b84!important}html[data-style="maldives"] :is(pre,code){background:#e2f1ef!important;color:#173b4c!important}';
   document.head.append(themeStyle);
   images.forEach((image) => {
     image.dataset.imagePreview = '';
@@ -78,7 +81,7 @@ export function renderHtmlArticle(html: string, title: string, id: string) {
   window.addEventListener('load', measure);
   window.addEventListener('message', (event) => {
     if (event.source === parent && event.data?.type === 'article:theme') {
-      document.documentElement.dataset.style = ['statechart', 'xiaoxiang'].includes(event.data.style) ? event.data.style : '';
+      document.documentElement.dataset.style = ['statechart', 'xiaoxiang', 'qingshan', 'westlake', 'maldives'].includes(event.data.style) ? event.data.style : '';
       requestAnimationFrame(measure);
     }
     if (event.source === parent && event.data?.type === 'article:navigate' && typeof event.data.hash === 'string') jump(event.data.hash);
