@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 960" role="img" aria-labelledby="title desc">
+  <title id="title">多人派对游戏的实时语音架构插画</title>
+  <desc id="desc">八个抽象玩家围绕圆桌，湖绿色声波连接到云与游戏服务器。</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5f5ed"/><stop offset="1" stop-color="#dcece7"/></linearGradient>
+    <radialGradient id="table" cx="50%" cy="35%" r="70%"><stop stop-color="#d5eee8"/><stop offset="1" stop-color="#7bb7ae"/></radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="10"/></filter>
+  </defs>
+  <rect width="1600" height="960" fill="url(#sky)"/>
+  <path d="M0 650 Q220 535 420 650 T820 630 T1190 620 T1600 650 V960 H0Z" fill="#b8d7d3" opacity=".55"/>
+  <path d="M0 710 Q250 620 480 720 T910 700 T1260 690 T1600 720 V960 H0Z" fill="#86b7b0" opacity=".38"/>
+  <path d="M0 240 L210 90 L380 245 L560 120 L760 280 L960 90 L1160 260 L1370 115 L1600 265 V410 H0Z" fill="#6c8d90" opacity=".14"/>
+  <g fill="none" stroke="#4a9b96" opacity=".36">
+    <circle cx="805" cy="500" r="290" stroke-width="4"/>
+    <circle cx="805" cy="500" r="235" stroke-width="3"/>
+    <circle cx="805" cy="500" r="180" stroke-width="3"/>
+  </g>
+  <ellipse cx="805" cy="520" rx="250" ry="150" fill="url(#table)" stroke="#518f8c" stroke-width="7"/>
+  <ellipse cx="805" cy="490" rx="170" ry="92" fill="#eff6ed" opacity=".75"/>
+  <g fill="#2f6968" stroke="#eef6ef" stroke-width="8">
+    <circle cx="545" cy="392" r="43"/><circle cx="646" cy="302" r="43"/><circle cx="800" cy="270" r="43"/><circle cx="957" cy="304" r="43"/>
+    <circle cx="1062" cy="395" r="43"/><circle cx="1065" cy="608" r="43"/><circle cx="804" cy="720" r="43"/><circle cx="543" cy="608" r="43"/>
+  </g>
+  <g fill="none" stroke="#4a9b96" stroke-linecap="round" opacity=".88">
+    <path d="M633 464 Q692 430 744 464" stroke-width="8"/><path d="M865 463 Q919 425 981 464" stroke-width="8"/>
+    <path d="M664 580 Q724 618 771 587" stroke-width="8"/><path d="M846 586 Q898 618 955 580" stroke-width="8"/>
+  </g>
+  <g transform="translate(1165 150)">
+    <path d="M30 136 C-4 136 -14 84 25 75 C29 38 78 26 103 57 C143 38 180 68 169 100 C205 108 195 136 168 136Z" fill="#f8fcf7" stroke="#5d9f9c" stroke-width="6"/>
+    <path d="M99 142 V225" stroke="#5d9f9c" stroke-width="7" stroke-dasharray="12 14"/>
+  </g>
+  <g transform="translate(1290 555)">
+    <rect x="0" y="0" width="170" height="120" rx="20" fill="#e6f2e9" stroke="#467f7d" stroke-width="7"/>
+    <path d="M35 40 H135 M35 75 H135" stroke="#649c95" stroke-width="9" stroke-linecap="round"/>
+    <path d="M-32 -20 L0 35" stroke="#5d9f9c" stroke-width="7" stroke-dasharray="12 14"/>
+  </g>
+  <g filter="url(#soft)" opacity=".25" fill="#f7fcf8"><circle cx="260" cy="350" r="115"/><circle cx="1375" cy="390" r="140"/></g>
+</svg>
