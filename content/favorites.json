@@ -3663,6 +3663,40 @@
         "design"
       ],
       "attribution": "source"
+    },
+    {
+      "id": "84c5dfe0e3fed465",
+      "title": "140 万张免费商用像素图中文 Skill",
+      "url": "https://www.bilibili.com/video/BV18ZsG6EEgK",
+      "summary": "UP 主“没有意义但可以用”介绍 pixel-search-zh：用中文检索 Pixel Art Atlas 的 140 万张 16×16 像素图，并按需求导出透明底 PNG；项目说明其代码和中文词表为 MIT，上游素材与部分数据为 CC0。",
+      "reason": "明确收藏，供后续回看游戏道具、小怪和地图块的中文检索与成套选图流程；尚未安装或试用，商用前仍需逐项检查素材质量与项目的许可说明。",
+      "tags": [
+        "Agent Skill",
+        "游戏素材",
+        "像素图",
+        "Claude Code",
+        "CC0"
+      ],
+      "savedAt": "2026-11-19T17:24+08:00",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "哔哩哔哩视频及简介，UP 主“没有意义但可以用”，2026-11-19 核对。",
+          "url": "https://www.bilibili.com/video/BV18ZsG6EEgK"
+        },
+        {
+          "label": "nativejie/pixel-search-zh 公开仓库 README、LICENSE 与 NOTICE，2026-11-19 核对。",
+          "url": "https://github.com/nativejie/pixel-search-zh"
+        }
+      ],
+      "kind": "resource",
+      "type": "reference",
+      "subjects": [
+        "design",
+        "agents"
+      ],
+      "attribution": "source"
     }
   ]
 }
