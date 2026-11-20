@@ -117,7 +117,6 @@ export const files = [
   'components/lucian/spring-graph.tsx',
   'components/lucian/term-preview.css',
   'components/lucian/term-preview.tsx',
-  'components/lucian/theme-picker.tsx',
   'components/lucian/themes.css',
   'components/lucian/twin-conversation.css',
   'components/lucian/twin-conversation.tsx',
