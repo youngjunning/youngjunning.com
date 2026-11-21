@@ -3697,6 +3697,35 @@
         "agents"
       ],
       "attribution": "source"
+    },
+    {
+      "id": "b376c383fecf21c4",
+      "title": "做游戏角色太费劲？让所有角色共用一套动画！",
+      "url": "https://www.bilibili.com/video/BV1Vas46YEZH",
+      "summary": "UP 主“大大丶大菠萝”演示用 2D 纸娃娃系统制作可换装角色，并让不同角色共用同一套动画。",
+      "reason": "明确收藏到硅基俊宁，供后续回看游戏角色换装与动画复用的实现思路；收藏不表示已经在项目中采用或验证。",
+      "tags": [
+        "游戏开发",
+        "2D 纸娃娃",
+        "角色换装",
+        "动画复用"
+      ],
+      "savedAt": "2026-11-21T20:02+08:00",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "哔哩哔哩视频及简介，UP 主“大大丶大菠萝”，2026-11-21 核对。",
+          "url": "https://www.bilibili.com/video/BV1Vas46YEZH"
+        }
+      ],
+      "kind": "resource",
+      "type": "reference",
+      "subjects": [
+        "design",
+        "engineering"
+      ],
+      "attribution": "source"
     }
   ]
 }
