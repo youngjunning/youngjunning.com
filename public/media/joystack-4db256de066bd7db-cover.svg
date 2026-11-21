@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">JoyStack：让工程能力按需出现</title>
+  <desc id="desc">暖白背景上，三层错落的深绿与橙色卡片组成一摞工程能力，左侧是 JoyStack 标题。</desc>
+  <rect width="1200" height="675" fill="#f4f0e8"/>
+  <circle cx="1080" cy="88" r="238" fill="#e6dccb"/>
+  <path d="M78 112H1122M78 566H1122" stroke="#cbbfae" stroke-width="2"/>
+  <g transform="translate(800 175) rotate(-7 130 160)">
+    <rect x="0" y="40" width="260" height="300" rx="28" fill="#d36c3f"/>
+    <rect x="-42" y="12" width="260" height="300" rx="28" fill="#6f8b72"/>
+    <rect x="-84" y="-16" width="260" height="300" rx="28" fill="#233c35"/>
+    <circle cx="-28" cy="40" r="10" fill="#f4f0e8" opacity="0.9"/>
+    <path d="M-18 40H112" stroke="#f4f0e8" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+    <path d="M-28 88H84M-28 118H120M-28 148H58" stroke="#f4f0e8" stroke-width="6" stroke-linecap="round" opacity="0.58"/>
+  </g>
+  <g fill="#26352f" font-family="PingFang SC, Microsoft YaHei, sans-serif">
+    <text x="78" y="82" font-size="20" letter-spacing="4">俊宁 / NOTES &amp; ESSAYS</text>
+    <text x="78" y="272" font-size="92" font-weight="650" letter-spacing="1">JoyStack</text>
+    <text x="82" y="342" font-size="38" font-weight="500">让工程能力按需出现</text>
+    <text x="82" y="612" font-size="20" fill="#6f766f" letter-spacing="2">ENGINEERING · AGENT SKILLS</text>
+  </g>
+</svg>
