@@ -5,6 +5,7 @@
 
 import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import { ArrowLeft, ArrowRight, BookOpenText, Check, Lightbulb, Search, X } from 'lucide-react';
+import { loadLearningStore, saveLearningStore } from '@/lib/article-learning-storage.mjs';
 import './lucian/lucian-028.css';
 import './lucian/lucian-042.css';
 import './lucian/feynman-learning.css';
@@ -30,14 +31,6 @@ type GuidedProgress = {
   confidence: Confidence;
   completedAt?: string;
 };
-type LegacyStore = { version: 1; activeTopic: string; topics: Record<string, TopicProgress> };
-type PreviousStore = {
-  version: 2;
-  activeMode: LearningMode;
-  activeTopic: string;
-  guided: Record<string, GuidedProgress>;
-  feynman: Record<string, TopicProgress>;
-};
 type LearningStore = {
   version: 3;
   activeMode: LearningMode;
@@ -50,9 +43,6 @@ type Topic = { id: string; label: string; headingIndex: number | null };
 
 const blankProgress = (): TopicProgress => ({ step: 1, explanation: '', gaps: '', simple: '', confidence: '' });
 const blankGuidedProgress = (): GuidedProgress => ({ step: 1, focus: '', note: '', takeaway: '', confidence: '' });
-const storageKey = (documentId: string) => `article-learning:v3:${documentId}`;
-const previousStorageKey = (documentId: string) => `article-learning:v2:${documentId}`;
-const legacyStorageKey = (documentId: string) => `feynman-learning:v1:${documentId}`;
 const feynmanStepLabels = ['选主题', '讲清楚', '查缺口', '再简化'];
 const guidedStepLabels: Record<SupportLevel, string[]> = {
   full: ['选小节', '看示范', '一起练', '收反馈'],
@@ -79,24 +69,6 @@ const guidedConfidenceOptions: Array<{ value: Exclude<Confidence, ''>; label: st
   { value: 'clear', label: '这一小步懂了', detail: '已经抓住今天的重点' },
   { value: 'teach', label: '可以继续下一节', detail: '状态不错，愿意再往前一点' },
 ];
-
-function validStore(value: unknown): value is LearningStore {
-  if (!value || typeof value !== 'object') return false;
-  const store = value as Partial<LearningStore>;
-  return store.version === 3 && (store.activeMode === 'guided' || store.activeMode === 'feynman') && typeof store.activeTopic === 'string' && (store.guidedSupport === 'full' || store.guidedSupport === 'light' || store.guidedSupport === 'independent') && Boolean(store.guided) && typeof store.guided === 'object' && Boolean(store.feynman) && typeof store.feynman === 'object';
-}
-
-function validPreviousStore(value: unknown): value is PreviousStore {
-  if (!value || typeof value !== 'object') return false;
-  const store = value as Partial<PreviousStore>;
-  return store.version === 2 && (store.activeMode === 'guided' || store.activeMode === 'feynman') && typeof store.activeTopic === 'string' && Boolean(store.guided) && typeof store.guided === 'object' && Boolean(store.feynman) && typeof store.feynman === 'object';
-}
-
-function validLegacyStore(value: unknown): value is LegacyStore {
-  if (!value || typeof value !== 'object') return false;
-  const store = value as Partial<LegacyStore>;
-  return store.version === 1 && typeof store.activeTopic === 'string' && Boolean(store.topics) && typeof store.topics === 'object';
-}
 
 function nextSupportLevel(current: SupportLevel, confidence: Exclude<Confidence, ''>): SupportLevel {
   if (confidence === 'review') return 'full';
@@ -139,7 +111,8 @@ export default function FeynmanLearning({ documentId, title, headings, variant =
   const [ready, setReady] = useState(false);
   const [storageAvailable, setStorageAvailable] = useState(true);
   const [showSupport, setShowSupport] = useState(false);
-  const [store, setStore] = useState<LearningStore>({ version: 3, activeMode: 'guided', activeTopic: 'article', guidedSupport: 'full', guided: {}, feynman: {} });
+  const [store, setStoreState] = useState<LearningStore>({ version: 3, activeMode: 'guided', activeTopic: 'article', guidedSupport: 'full', guided: {}, feynman: {} });
+  const canPersistRef = useRef(false);
   const topics = useMemo<Topic[]>(() => [
     { id: 'article', label: `整篇：${title}`, headingIndex: null },
     ...headings.filter(Boolean).map((label, index) => ({ id: `heading-${index}`, label, headingIndex: index })),
@@ -155,41 +128,28 @@ export default function FeynmanLearning({ documentId, title, headings, variant =
     let active = true;
     queueMicrotask(() => {
       if (!active) return;
-      try {
-        const raw = window.localStorage.getItem(storageKey(documentId));
-        if (raw) {
-          const parsed: unknown = JSON.parse(raw);
-          if (validStore(parsed)) setStore(parsed);
-        } else {
-          const previousRaw = window.localStorage.getItem(previousStorageKey(documentId));
-          if (previousRaw) {
-            const previous: unknown = JSON.parse(previousRaw);
-            if (validPreviousStore(previous)) setStore({ ...previous, version: 3, guidedSupport: 'full' });
-          } else {
-            const legacyRaw = window.localStorage.getItem(legacyStorageKey(documentId));
-            if (legacyRaw) {
-              const legacy: unknown = JSON.parse(legacyRaw);
-              if (validLegacyStore(legacy)) setStore({ version: 3, activeMode: 'guided', activeTopic: legacy.activeTopic, guidedSupport: 'full', guided: {}, feynman: legacy.topics });
-            }
-          }
-        }
-      } catch {
-        setStorageAvailable(false);
-      } finally {
-        setReady(true);
-      }
+      const loaded = loadLearningStore(window.localStorage, documentId);
+      canPersistRef.current = loaded.canPersist;
+      setStoreState(loaded.store as LearningStore);
+      setStorageAvailable(loaded.storageAvailable);
+      setReady(true);
     });
     return () => { active = false; };
   }, [documentId]);
 
   useEffect(() => {
-    if (!ready) return;
+    if (!ready || !canPersistRef.current) return;
     try {
-      window.localStorage.setItem(storageKey(documentId), JSON.stringify(store));
+      saveLearningStore(window.localStorage, documentId, store);
     } catch {
       queueMicrotask(() => setStorageAvailable(false));
     }
   }, [documentId, ready, store]);
+
+  function setStore(next: LearningStore | ((current: LearningStore) => LearningStore)) {
+    canPersistRef.current = true;
+    setStoreState(next);
+  }
 
   useEffect(() => {
     if (!open) return;
