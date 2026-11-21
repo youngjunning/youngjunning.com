@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">AI 游戏工作流文章封面</title>
+  <desc id="desc">湖绿色的人工地基承托由雾状 AI 生成层逐步收束为稳定作品，表达原型阶段广泛生成、交付阶段收紧约束。</desc>
+  <defs>
+    <linearGradient id="canvas" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F4F6F1"/>
+      <stop offset="1" stop-color="#E2ECE8"/>
+    </linearGradient>
+    <linearGradient id="mist" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#DCEFEB" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#2E948A" stop-opacity=".75"/>
+    </linearGradient>
+    <linearGradient id="block" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FBFCFA"/>
+      <stop offset="1" stop-color="#DCEFEB"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="22"/></filter>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#183B40" flood-opacity=".14"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#canvas)"/>
+  <path d="M0 660 Q220 570 420 650 T820 640 T1200 610 T1600 650 V900 H0Z" fill="#B8D7D3" opacity=".45"/>
+  <path d="M0 725 Q260 650 510 730 T980 710 T1320 700 T1600 730 V900 H0Z" fill="#86B7B0" opacity=".28"/>
+  <path d="M0 175 L185 74 L350 200 L525 105 L700 225 L920 82 L1130 210 L1370 98 L1600 215 V330 H0Z" fill="#6C8D90" opacity=".11"/>
+
+  <g transform="translate(120 182)" fill="#183B40">
+    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="40" font-weight="650" letter-spacing="4">AI GAME WORKFLOW</text>
+    <text x="0" y="92" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="72" font-weight="760">AI 游戏工作流</text>
+    <text x="0" y="168" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="38" font-weight="520" fill="#4D676B">从 100% 原型到 30% 精修</text>
+    <g transform="translate(0 230)">
+      <rect width="495" height="64" rx="32" fill="#DCEFEB"/>
+      <circle cx="38" cy="32" r="10" fill="#2E948A"/>
+      <text x="68" y="42" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="27" font-weight="650" fill="#286B66">地基由开发者决定</text>
+    </g>
+  </g>
+
+  <g transform="translate(830 118)">
+    <g filter="url(#blur)" opacity=".72">
+      <circle cx="250" cy="90" r="92" fill="#DCEFEB"/>
+      <circle cx="420" cy="150" r="120" fill="#B8D7D3"/>
+      <circle cx="300" cy="260" r="145" fill="#86B7B0"/>
+    </g>
+    <path d="M124 42 C218 -12 356 8 437 78 C515 146 506 252 428 305 C351 357 205 342 129 265 C58 195 45 91 124 42Z" fill="url(#mist)" opacity=".78"/>
+    <g fill="none" stroke="#2E948A" stroke-linecap="round">
+      <path d="M126 118 C214 74 328 77 419 126" stroke-width="10" opacity=".34"/>
+      <path d="M112 176 C215 130 344 137 447 194" stroke-width="12" opacity=".5"/>
+      <path d="M126 234 C226 198 339 205 417 252" stroke-width="14" opacity=".7"/>
+    </g>
+
+    <g transform="translate(92 304)" filter="url(#shadow)">
+      <path d="M0 130 L300 0 L600 130 L300 272Z" fill="#E8EEEA" stroke="#D4DFDC" stroke-width="6"/>
+      <path d="M0 130 V210 L300 356 V272Z" fill="#9FC8C0" stroke="#78AFA7" stroke-width="6"/>
+      <path d="M600 130 V210 L300 356 V272Z" fill="#6EA69F" stroke="#5B918B" stroke-width="6"/>
+      <g transform="translate(75 70)">
+        <path d="M0 76 L112 28 L224 76 L112 130Z" fill="url(#block)" stroke="#2E948A" stroke-width="5"/>
+        <path d="M0 76 V124 L112 180 V130Z" fill="#B8D7D3" stroke="#2E948A" stroke-width="5"/>
+        <path d="M224 76 V124 L112 180 V130Z" fill="#86B7B0" stroke="#2E948A" stroke-width="5"/>
+      </g>
+      <g transform="translate(298 68)">
+        <path d="M0 76 L112 28 L224 76 L112 130Z" fill="url(#block)" stroke="#356439" stroke-width="5"/>
+        <path d="M0 76 V124 L112 180 V130Z" fill="#BFCFB9" stroke="#356439" stroke-width="5"/>
+        <path d="M224 76 V124 L112 180 V130Z" fill="#88A887" stroke="#356439" stroke-width="5"/>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(124 756)" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="24" fill="#4D676B">
+    <text x="0" y="0">点子</text><circle cx="78" cy="-8" r="4" fill="#2E948A"/>
+    <text x="101" y="0">AI 原型</text><circle cx="222" cy="-8" r="4" fill="#2E948A"/>
+    <text x="245" y="0">可玩性筛选</text><circle cx="402" cy="-8" r="4" fill="#2E948A"/>
+    <text x="425" y="0">人工精修</text><circle cx="558" cy="-8" r="4" fill="#2E948A"/>
+    <text x="581" y="0">Demo</text><circle cx="665" cy="-8" r="4" fill="#2E948A"/>
+    <text x="688" y="0">正式版循环</text>
+  </g>
+</svg>
