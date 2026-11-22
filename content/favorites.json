@@ -3726,6 +3726,43 @@
         "engineering"
       ],
       "attribution": "source"
+    },
+    {
+      "id": "eaee0fdda41f2bbb",
+      "kind": "resource",
+      "type": "tool",
+      "title": "Mino创作：游戏策划与制作平台",
+      "url": "https://www.xinglu3d.com/mino-home/index.html",
+      "summary": "星露Studio 面向游戏开发者的一站式策划与制作平台，用于统一管理 GDD、角色、世界观、任务与剧情关系、文档、概念图、日程和开发日志，并提供 AI 助手与资料导入。",
+      "reason": "明确收藏，供后续回看游戏策划工作台、世界观管理和 AI 辅助创作的产品思路；收藏不表示已试用或采用。官方视频声称开源、免费且支持数据导入导出，但未找到公开代码仓库或许可证，该边界尚待核对。",
+      "tags": [
+        "Mino创作",
+        "游戏开发",
+        "游戏策划",
+        "GDD",
+        "世界观",
+        "AI 助手",
+        "创作平台"
+      ],
+      "subjects": [
+        "design",
+        "engineering",
+        "agents"
+      ],
+      "attribution": "source",
+      "savedAt": "2026-11-22T18:06+08:00",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "Mino创作官方产品页，2026-11-22 核对产品定位与功能范围。",
+          "url": "https://www.xinglu3d.com/mino-home/index.html"
+        },
+        {
+          "label": "哔哩哔哩宣传视频及简介，UP 主“星露Studio”，2026-11-22 完整核对 1 分 54 秒界面演示与官方声明。",
+          "url": "https://www.bilibili.com/video/BV1gHsz6ZE5H"
+        }
+      ]
     }
   ]
 }
