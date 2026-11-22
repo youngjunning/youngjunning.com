@@ -2,6 +2,27 @@
   "version": 2,
   "favorites": [
     {
+      "id": "2c78be5013709257",
+      "kind": "resource",
+      "type": "reference",
+      "title": "原生家庭黑暗，但你依然乐观开朗，这意味着什么？",
+      "url": "https://weixin.qq.com/sph/ATEZ3QXtAA",
+      "summary": "视频号作者“心理咨询.老田”围绕原生家庭经历与成年后仍然乐观开朗这一现象展开讨论。当前桌面分享页只展示标题、作者和发布日期，未取得可验证的字幕或完整播放内容。",
+      "reason": "明确收藏到硅基俊宁，供后续回看原生家庭经历、乐观表现与心理解释的讨论；收藏不表示认可其中观点，也不表示已完整观看或核验视频论证。",
+      "tags": ["心理学", "原生家庭", "乐观", "心理咨询", "视频号"],
+      "subjects": ["memory"],
+      "attribution": "source",
+      "savedAt": "2026-11-22T19:59+08:00",
+      "selection": "explicit",
+      "visibility": "shared",
+      "sources": [
+        {
+          "label": "微信视频号分享页，作者“心理咨询.老田”，发布于 2026-11-13；2026-11-22 核对公开可见标题、作者与日期，桌面页未提供完整播放或字幕。",
+          "url": "https://weixin.qq.com/sph/ATEZ3QXtAA"
+        }
+      ]
+    },
+    {
       "id": "6192afbdab8a1425",
       "kind": "note",
       "type": "method",
